@@ -2,25 +2,25 @@ package app.service;
 
 import app.servicemodel.SaveRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.entity.Card;
-import model.entity.Conditions;
-import model.entity.PassiveNode;
-import model.entity.Shop;
+import model.entity.*;
 import model.entity.items.*;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
+import model.type.CardType;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import util.StatTranslateUtil;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -48,7 +48,223 @@ public class ServiceDatabase {
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
         loadMongo();
-        // ...
+        mapAllUnit();
+        updateEverything();
+        initCounterAllUnit();
+    }
+
+    public void initCounterAllUnit() {
+        for (Unit unit : allUnit.values()) {
+            unit.initCounter();
+        }
+
+        for (Summon summon : allSummon.values()) {
+            summon.initCounter();
+        }
+    }
+
+    public void updateEverything() {
+        updateUnitObjects();
+        updateShopObjects();
+    }
+
+    public void updateShopObjects() {
+        if (allItemMap == null) {
+            System.out.println("allItem is null");
+            return;
+        }
+        if (allShop == null) {
+            System.out.println("allShop is null");
+            return;
+        }
+        for (Shop shop : allShop.values()) {
+            for (Map.Entry<Integer, ShopItem> shopItemEntry : shop.getList().entrySet()) {
+                if (shopItemEntry.getValue().getItem() == null) continue;
+                String item_name = shopItemEntry.getValue().getItem().getName();
+                Item newItem = allItemMap.get(item_name);
+                Equipment newEquipment = allEquipmentMap.get(item_name);
+                Dream newDream = allDreamItem.get(item_name);
+                Consumable newConsumable = allConsumableMap.get(item_name);
+                Rune newRune = allRuneMap.get(item_name);
+
+                if (newItem != null) {
+                    shopItemEntry.getValue().setItem(newItem);
+                }
+                if (newEquipment != null) {
+                    shopItemEntry.getValue().setItem(newEquipment);
+                }
+                if (newDream != null) {
+                    shopItemEntry.getValue().setItem(newDream);
+                }
+                if (newConsumable != null) {
+                    shopItemEntry.getValue().setItem(newConsumable);
+                }
+                if (newRune != null) {
+                    shopItemEntry.getValue().setItem(newRune);
+                }
+            }
+        }
+    }
+
+    public void updateUnitObjects() {
+        if (allItemMap == null) {
+            System.out.println("allItem is null");
+            return;
+        }
+        if (allCardMap == null) {
+            System.out.println("allCard is null");
+            return;
+        }
+        if (allConditionMap == null) {
+            System.out.println("allCondition is null");
+            return;
+        }
+        for (Unit unit : allUnit.values()) {
+            for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
+                if (entry.getValue() instanceof Rune rune) {
+                    if (!rune.isUnique_rune()) continue;
+                }
+
+                String name = entry.getValue().getName();
+                Item newItem = allItemMap.get(name);
+                Equipment newEquipment = allEquipmentMap.get(name);
+                Dream newDream = allDreamItem.get(name);
+                Consumable newConsumable = allConsumableMap.get(name);
+                Rune newRune = new Rune();
+                if (allRuneMap != null) {
+                    newRune = allRuneMap.get(name);
+                }
+
+                if (newItem != null) {
+                    entry.setValue(newItem);
+                }
+                if (newEquipment != null) {
+                    entry.setValue(newEquipment);
+                }
+                if (newDream != null) {
+                    entry.setValue(newDream);
+                }
+                if (newConsumable != null) {
+                    entry.setValue(newConsumable);
+                }
+                if (newRune != null) {
+                    entry.setValue(newRune);
+                }
+            }
+
+            for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
+                if (entry.getValue() instanceof Rune rune) {
+                    if (!rune.isUnique_rune()) continue;
+                }
+
+                String name = entry.getValue().getName();
+                Item newItem = allItemMap.get(name);
+                Equipment newEquipment = allEquipmentMap.get(name);
+                Dream newDream = allDreamItem.get(name);
+                Consumable newConsumable = allConsumableMap.get(name);
+                Rune newRune = allRuneMap.get(name);
+
+                if (newItem != null) {
+                    entry.setValue(newItem);
+                }
+                if (newEquipment != null) {
+                    entry.setValue(newEquipment);
+                }
+                if (newDream != null) {
+                    entry.setValue(newDream);
+                }
+                if (newConsumable != null) {
+                    entry.setValue(newConsumable);
+                }
+                if (newRune != null) {
+                    entry.setValue(newRune);
+                }
+            }
+
+            for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
+                int id = entry.getValue().getId();
+                PassiveNode newObject = allPassiveMap.get(id);
+
+                if (newObject != null) {
+                    if (entry.getValue().isDream()) {
+                        double x = newObject.getX();
+                        double y = newObject.getY();
+                        List<Integer> connectedNodes = newObject.getConnectedNodes();
+                        PassiveNode dream = allDream.get(entry.getValue().getName());
+                        dream.setX(x);
+                        dream.setY(y);
+                        dream.setConnectedNodes(connectedNodes);
+                    } else {
+                        entry.setValue(newObject);
+                    }
+                }
+            }
+            for (Map.Entry<CardType, Card> entry : unit.getCard().entrySet()) {
+                String name = entry.getValue().getName();
+                Card newObject = allCardMap.get(name);
+
+                if (newObject != null) {
+                    entry.setValue(newObject);
+                }
+            }
+            for (Map.Entry<Integer, EquipmentSlot> entry : unit.getEquipmentSlots().entrySet()) {
+                if (entry.getValue().getEquipment() == null) continue;
+                String name = entry.getValue().getEquipment().getName();
+                Equipment newObject = allEquipmentMap.get(name);
+
+                if (newObject != null) {
+                    entry.getValue().setEquipment(newObject);
+                }
+            }
+            for (Map.Entry<Integer, ConditionInstance> entry : unit.getConditionInstances().entrySet()) {
+                String name = entry.getValue().getCondition().getName();
+                Conditions newObject = allConditionMap.get(name);
+
+                if (newObject != null) {
+                    entry.getValue().setCondition(newObject);
+                }
+
+                Unit source = allUnit.get(entry.getValue().getSourceName());
+                if (source != null) {
+                    entry.getValue().setSource(source);
+                }
+            }
+            unit.calculateEverything();
+        }
+    }
+
+
+
+    public void mapAllUnit() {
+        if (allPlayerMap != null)
+            allUnit.putAll(allPlayerMap);
+        if (allNPCMap != null)
+            allUnit.putAll(allNPCMap);
+        if (allMonsterMap != null)
+            allUnit.putAll(allMonsterMap);
+
+        for (Unit unit : allUnit.values()) {
+            for (Summon summon : unit.getSummons().values()) {
+                allSummon.put(summon.getName(), summon);
+            }
+        }
+        if (allDreamItem != null) {
+            for (Item item : allDreamItem.values()) {
+                if (item instanceof Dream) {
+                    Dream dream = (Dream) item;
+                    PassiveNode node = new PassiveNode();
+                    node.setName(dream.getName());
+                    node.setModifiers(dream.getModifiers());
+                    node.setStatusDescription(StatTranslateUtil.translateStatusDesc(dream.getModifiers(), null));
+                    node.setDescription(dream.getDescription());
+                    node.setLore(dream.getLore());
+                    node.setNodeType(dream.getNodeType());
+                    node.setDream(true);
+                    allDream.put(dream.getName(), node);
+                }
+            }
+        }
+        allUnit.putAll(allSummon);
     }
 
     public Unit findUnit(String key) {
