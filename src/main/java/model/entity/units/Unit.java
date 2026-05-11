@@ -266,6 +266,19 @@ public class Unit {
         });
     }
 
+    public void writeToSheet() {
+        try {
+            GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
+            List<Request> requests = buildWriteRequests();
+            sheetsUtil.takeRequests(requests);
+
+            sheetsUtil.requestSet();
+            sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public List<Request> buildWriteRequests() {
         List<Request> requests = new ArrayList<>();
 

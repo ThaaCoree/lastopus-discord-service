@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import util.GoogleSheetsUtil;
 
 import java.util.Map;
 
@@ -37,6 +38,8 @@ public class DiscordController {
         if (unit != null) {
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
+                unit.writeToSheet();
+
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
