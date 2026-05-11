@@ -53,6 +53,13 @@ public class ServiceDatabase {
         initCounterAllUnit();
     }
 
+    public Equipment findEquipment(String name) {
+        if (allEquipmentMap.containsKey(name)) {
+            return allEquipmentMap.get(name);
+        }
+        return null;
+    }
+
     public void initCounterAllUnit() {
         for (Unit unit : allUnit.values()) {
             unit.initCounter();

@@ -3,11 +3,15 @@ package app.servicecontroller;
 import app.Database;
 import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
+import model.entity.items.Equipment;
+import model.entity.items.EquipmentSlot;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @RestController
 public class DiscordController {
@@ -29,11 +33,44 @@ public class DiscordController {
             }
         }
         Unit unit = database.findUnit(name);
-        System.out.println("------------------------------------------------------------");
-        System.out.println(unit);
-        System.out.println("------------------------------------------------------------");
+        Equipment equipment = database.findEquipment(playerMessage.message);
         if (unit != null) {
-            return name + " : " + playerMessage.message + " [" + unit.getUnitType().writeAsString() + "]";
+            if (equipment != null) {
+                unit.getEquipmentManager().equip(equipment, 1);
+                return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
+            } else {
+                return "ไม่พบ Equipment";
+            }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/unequip")
+    public String unequip(@RequestBody PlayerMessage playerMessage) {
+        String name = "";
+        for (String role : playerMessage.roles) {
+            if (role.equals("Christ")) {
+                name = "Christ";
+            }
+        }
+        Equipment equipment = null;
+        Unit unit = database.findUnit(name);
+        int slot = 0;
+
+        if (unit != null) {
+        for (Map.Entry<Integer, EquipmentSlot> entry : unit.getEquipmentSlots().entrySet()) {
+            if (entry.getValue().getEquipment().getName().equals(playerMessage.message)) {
+                slot = entry.getKey();
+                equipment = entry.getValue().getEquipment();
+            }
+        }
+            if (equipment != null) {
+                unit.getEquipmentManager().unequip(slot);
+                return "ถอด "+equipment.getName()+" จากช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
+            } else {
+                return "ไม่พบ Equipment";
+            }
         } else {
             return "No Role!";
         }

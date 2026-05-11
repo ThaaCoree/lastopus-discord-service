@@ -77,6 +77,25 @@ public class EquipmentManager {
         unit.calculateEverything();
     }
 
+    public void equip(Equipment equipment, Integer sub_slot) {
+        int slot = 0;
+        switch (equipment.getEquipmentType()) {
+            case HELMET -> slot = 1;
+            case ARMOR -> slot = 2;
+            case BOOTS -> slot = 3;
+            case GLOVES -> slot = 4;
+            case ACCESSORY -> slot = 5;
+            case WEAPON -> slot = 7;
+            case BACKPACK -> slot = 9;
+        }
+
+        if (sub_slot != null) {
+            slot += sub_slot-1;
+        }
+        unequip(slot);
+        equip(slot, equipment);
+    }
+
     public void unequip(int slot) {
         EquipmentSlot currentSlot = unit.getEquipmentSlots().get(slot);
         if (currentSlot == null) {
