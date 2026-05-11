@@ -29,6 +29,10 @@ public class DiscordController {
             }
         }
         Unit unit = database.findUnit(name);
-        return name+" : "+playerMessage.message+ " ["+unit.getUnitType().writeAsString()+"]";
+        if (unit != null) {
+            return name + " : " + playerMessage.message + " [" + unit.getUnitType().writeAsString() + "]";
+        } else {
+            return "No Role!";
+        }
     }
 }
