@@ -62,6 +62,7 @@ public class DiscordController {
 
         if (unit != null) {
         for (Map.Entry<Integer, EquipmentSlot> entry : unit.getEquipmentSlots().entrySet()) {
+            if (entry.getValue().getEquipment() == null) continue;
             if (entry.getValue().getEquipment().getName().equals(playerMessage.message)) {
                 slot = entry.getKey();
                 equipment = entry.getValue().getEquipment();
