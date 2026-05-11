@@ -272,9 +272,16 @@ public class Unit {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
             List<Request> requests = buildWriteRequests();
             sheetsUtil.takeRequests(requests);
-
             sheetsUtil.requestSet();
+            String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้
+            long startTime = System.currentTimeMillis();
+            System.out.println("Start processRequest: " + startTime + " Session: " + sessionId);
+
             sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
+
+            long endTime = System.currentTimeMillis();
+            long duration = endTime - startTime;
+            System.out.println("End processRequest: took " + duration + " ms Session: " + sessionId);
         } catch (Exception e) {
             e.printStackTrace();
         }
