@@ -29,6 +29,9 @@ public class DiscordController {
             }
         }
         Unit unit = database.findUnit(name);
+        System.out.println("------------------------------------------------------------");
+        System.out.println(unit);
+        System.out.println("------------------------------------------------------------");
         if (unit != null) {
             return name + " : " + playerMessage.message + " [" + unit.getUnitType().writeAsString() + "]";
         } else {
