@@ -17,10 +17,12 @@ public class DiscordController {
 
     @PostMapping("/equip")
     public String equip(@RequestBody PlayerMessage playerMessage) {
-        String role = "";
-        if (playerMessage.roles.equals("Christ")) {
-            role = "Christ";
+        String name = "";
+        for (String role : playerMessage.roles) {
+            if (role.equals("Christ")) {
+                name = "Christ";
+            }
         }
-        return role+" : "+playerMessage.message+" ...";
+        return name+" : "+playerMessage.message+" ...";
     }
 }
