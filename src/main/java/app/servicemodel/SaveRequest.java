@@ -1,4 +1,4 @@
-package main.java.model;
+package servicemodel;
 
 import model.entity.Card;
 import model.entity.Conditions;

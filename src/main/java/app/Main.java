@@ -1,10 +1,9 @@
-package main;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import main.ui.MainPane;
+import app.Database;
+import ui.MainPane;
 import model.type.CurrencyType;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

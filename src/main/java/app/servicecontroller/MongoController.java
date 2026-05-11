@@ -1,6 +1,6 @@
-package main.java.controller;
+package servicecontroller;
 
-import main.java.model.SaveRequest;
+import servicemodel.SaveRequest;
 import model.entity.Card;
 import model.entity.Conditions;
 import model.entity.PassiveNode;

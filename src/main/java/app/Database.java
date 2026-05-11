@@ -1,6 +1,3 @@
-package main;
-
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.services.sheets.v4.model.Request;
@@ -9,14 +6,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import main.java.servicemodel.SaveRequest;
 import model.entity.*;
 import model.entity.items.*;
-import model.entity.units.Monster;
-import model.entity.units.Summon;
-import model.entity.units.Unit;
-import model.type.CardType;
-import model.type.UnitType;
-import util.GoogleSheetsUtil;
-import util.JsonUtils;
-import util.StatTranslateUtil;
+import main.java.model.entity.units.Monster;
+import main.java.model.entity.units.Summon;
+import main.java.model.entity.units.Unit;
+import main.java.model.type.CardType;
+import main.java.model.type.UnitType;
+import main.java.util.GoogleSheetsUtil;
+import main.java.util.JsonUtils;
+import main.java.util.StatTranslateUtil;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -26,19 +23,19 @@ import java.util.*;
 
 public class Database {
 
-    private Map<String, Item> allItemMap;
-    private Map<String, Equipment> allEquipmentMap;
-    private Map<String, Consumable> allConsumableMap;
-    private Map<String, Dream> allDreamItem;
-    private Map<String, PassiveNode> allDream = new LinkedHashMap<>();
-    private Map<String, Rune> allRuneMap;
+    private Map<String, main.java.model.entity.items.Item> allItemMap;
+    private Map<String, main.java.model.entity.items.Equipment> allEquipmentMap;
+    private Map<String, main.java.model.entity.items.Consumable> allConsumableMap;
+    private Map<String, main.java.model.entity.items.Dream> allDreamItem;
+    private Map<String, main.java.model.entity.PassiveNode> allDream = new LinkedHashMap<>();
+    private Map<String, main.java.model.entity.items.Rune> allRuneMap;
     private Map<String, Unit> allPlayerMap;
     private Map<String, Unit> allNPCMap;
     private Map<String, Monster> allMonsterMap;
-    private Map<String, Conditions> allConditionMap ;
-    private Map<String, Card> allCardMap;
-    private Map<Integer, PassiveNode> allPassiveMap;
-    private Map<String, Shop> allShop;
+    private Map<String, main.java.model.entity.Conditions> allConditionMap ;
+    private Map<String, main.java.model.entity.Card> allCardMap;
+    private Map<Integer, main.java.model.entity.PassiveNode> allPassiveMap;
+    private Map<String, main.java.model.entity.Shop> allShop;
     private Map<String, Unit> allUnit = new LinkedHashMap<>();
     private Map<String, Summon> allSummon = new LinkedHashMap<>();
     private CombatFlow combatFlow = JsonUtils.loadFromFile("/json/combatFlow.json", new TypeReference<CombatFlow>() {});
@@ -248,10 +245,10 @@ public class Database {
             }
         }
         if (allDreamItem != null) {
-            for (Item item : allDreamItem.values()) {
-                if (item instanceof Dream) {
-                    Dream dream = (Dream) item;
-                    PassiveNode node = new PassiveNode();
+            for (main.java.model.entity.items.Item item : allDreamItem.values()) {
+                if (item instanceof main.java.model.entity.items.Dream) {
+                    main.java.model.entity.items.Dream dream = (Dream) item;
+                    main.java.model.entity.PassiveNode node = new PassiveNode();
                     node.setName(dream.getName());
                     node.setModifiers(dream.getModifiers());
                     node.setStatusDescription(StatTranslateUtil.translateStatusDesc(dream.getModifiers(), null));
