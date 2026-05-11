@@ -1,6 +1,7 @@
 package app.servicecontroller;
 
 import app.Database;
+import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -12,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class DiscordController {
 
     private MongoTemplate mongoTemplate;
-    private Database database;
+    private ServiceDatabase database;
 
-    public DiscordController(MongoTemplate mongoTemplate, Database database) {
+    public DiscordController(MongoTemplate mongoTemplate, ServiceDatabase database) {
         this.mongoTemplate = mongoTemplate;
         this.database = database;
     }
