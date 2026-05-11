@@ -1,0 +1,63 @@
+package model.entity.skills.list.item.utility;
+
+import main.controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.type.SkillType;
+
+public class Pressure_Wound extends Skill {
+
+    public static String NAME = "Pressure Wound";
+
+    public Pressure_Wound() {
+        super();
+        setDescription("เมื่อโจมตีเป้าหมายด้วยคริติคอล จะมอบสถานะ Pressure Venom ให้เป็นเวลา XA รอบเทิร์นด้วย\n" +
+                "\n" +
+                "Pressure Venom : ไม่สามารถใช้งาน Combined Action ได้\n" +
+                "เมื่อได้รับ Pressure Venom สองสแต็คพร้อมกัน สถานะจะกลายเป็น Paralyze\n" +
+                "Paralyze : ไม่สามารถใช้งาน Action ได้");
+        setActionType("Action");
+        setManaCost(0);
+        setCooldown(0);
+        getPureTags().add(SkillType.DEBUFF);
+        getSkillMultiplier().put("XA",new SkillMultiplier("1"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.DURATION);
+    }
+
+    @Override
+    public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
+        SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
+//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+        );
+//        spec    .addFields(
+//                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
+//                        .options(List.of("choice","choice"), 0)
+//                        .labelProvider(String::toString, 0)
+//        , 0, 0)
+//                .addFields(
+//                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
+//                , 0, 1);
+        return spec;
+    }
+
+    @Override
+    public void calculateExtra() {
+
+    }
+
+    @Override
+    public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
+    }
+
+    @Override
+    public void initializeEvent(CombatFlow combatFlow) {
+
+    }
+
+    @Override
+    public String getName() {
+        return NAME;
+    }
+}
