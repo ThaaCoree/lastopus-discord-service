@@ -1,6 +1,7 @@
 package app.service;
 
 import app.servicemodel.SaveRequest;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
@@ -390,12 +391,21 @@ public class ServiceDatabase {
         }
     }
 
-    public String save_player(Map<String, Unit> allPlayerMap) {
+    public String save_player(String json) {
+        ObjectMapper mapper = new ObjectMapper();
 
-        Unit unit = new Unit();
-//        allPlayerMap.put("_id", unit);
-        mongoTemplate.save(allPlayerMap, "players");
-
+        try {
+            Map<String, Unit> map = mapper.readValue(
+                    json,
+                    new TypeReference<Map<String, Unit>>() {
+                    }
+            );
+            Unit unit = new Unit();
+            allPlayerMap.put("_id", unit);
+            mongoTemplate.save(map, "players");
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
         System.out.println("saved player");
         return "saved";
     }

@@ -2,6 +2,8 @@ package app.servicecontroller;
 
 import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.units.Unit;
@@ -82,9 +84,16 @@ public class DiscordController {
     }
 
     public void writeintoSheet(Unit unit) {
-        System.out.println("before save_player");
-        database.save_player(database.allPlayerMap);
-        System.out.println("after save_player and before writeToSheet");
-        unit.writeToSheet(database.load_credentials());
+        try {
+            System.out.println("before save_player");
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            String json = mapper.writeValueAsString(database.allPlayerMap);
+            database.save_player(json);
+            System.out.println("after save_player and before writeToSheet");
+            unit.writeToSheet(database.load_credentials());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
