@@ -1,14 +1,14 @@
 package util;
 
-import main.java.factory.SkillFactory;
-import main.java.model.entity.*;
-import main.java.model.entity.items.Consumable;
-import main.java.model.entity.skills.SkillInstance;
-import main.java.model.entity.units.Unit;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.modifier.SkillModifier;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.*;
+import factory.SkillFactory;
+import model.entity.*;
+import model.entity.items.Consumable;
+import model.entity.skills.SkillInstance;
+import model.entity.units.Unit;
+import model.modifier.BasicModifier;
+import model.modifier.SkillModifier;
+import model.modifier.TransferModifier;
+import model.type.*;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;

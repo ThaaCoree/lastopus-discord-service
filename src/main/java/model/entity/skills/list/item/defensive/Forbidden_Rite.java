@@ -1,12 +1,12 @@
-package main.java.model.entity.skills.list.item.defensive;
+package model.entity.skills.list.item.defensive;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.controller.event.events.ResourceEvent;
-import main.java.model.entity.Conditions;
-import main.java.model.entity.skills.*;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import controller.event.events.ResourceEvent;
+import model.entity.Conditions;
+import model.entity.skills.*;
+import model.type.*;
 
 public class Forbidden_Rite extends Skill implements SkillWithCondition {
 

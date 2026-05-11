@@ -1,11 +1,11 @@
-package main.ui;
+package ui;
 
 import com.google.api.services.sheets.v4.model.Request;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
-import main.Database;
+import app.Database;
 import model.entity.Shop;
 import model.entity.ShopItem;
 import model.entity.items.Equipment;
@@ -31,7 +31,7 @@ public class MainPane extends BorderPane {
     private List<Button> allLeftNavigatorButtons = new ArrayList<>();
     private Map<String, Button> allUnitButtons = new HashMap<>();
     private TreePane treePane = new TreePane();
-    private Button combat1Button = new Button("Main Combat");
+    private Button combat1Button = new Button("app.Main Combat");
     private Button inventoryButton = new Button("Inventory");
     private Button treeButton = new Button("Passive Tree");
     private Button cardCollectButton = new Button("Card");

@@ -1,6 +1,6 @@
-package servicecontroller;
+package app.servicecontroller;
 
-import servicemodel.SaveRequest;
+import app.servicemodel.SaveRequest;
 import model.entity.Card;
 import model.entity.Conditions;
 import model.entity.PassiveNode;

@@ -1,4 +1,4 @@
-package main.java.manager;
+package manager;
 
 import model.entity.units.Unit;
 import model.type.StatusType;

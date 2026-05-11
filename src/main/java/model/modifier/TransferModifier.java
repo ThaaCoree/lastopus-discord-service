@@ -1,8 +1,8 @@
-package main.java.model.modifier;
+package model.modifier;
 
-import main.java.model.type.StatType;
-import main.java.model.type.StatusType;
-import main.java.model.type.TransferType;
+import model.type.StatType;
+import model.type.StatusType;
+import model.type.TransferType;
 
 public class TransferModifier {
     private StatType sourceStat;

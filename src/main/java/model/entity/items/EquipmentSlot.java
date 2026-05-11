@@ -1,7 +1,7 @@
-package main.java.model.entity.items;
+package model.entity.items;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.java.model.type.EquipmentType;
+import model.type.EquipmentType;
 
 public class EquipmentSlot {
     private EquipmentType equipmentType;

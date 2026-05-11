@@ -1,9 +1,9 @@
-package main.java.model.entity.summon_scales;
+package model.entity.summon_scales;
 
-import main.java.model.entity.units.Summon;
-import main.java.model.entity.units.Unit;
-import main.java.model.modifier.ModValue;
-import main.java.model.type.StatType;
+import model.entity.units.Summon;
+import model.entity.units.Unit;
+import model.modifier.ModValue;
+import model.type.StatType;
 
 import java.util.HashMap;
 import java.util.Map;

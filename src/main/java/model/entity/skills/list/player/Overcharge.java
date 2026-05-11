@@ -1,13 +1,13 @@
-package main.java.model.entity.skills.list.player;
+package model.entity.skills.list.player;
 
 import javafx.beans.InvalidationListener;
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.modifier.BasicModifier;
+import model.type.*;
 
 public class Overcharge extends Skill {
 

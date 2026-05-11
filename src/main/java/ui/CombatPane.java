@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.common.util.concurrent.AtomicDouble;
@@ -20,10 +20,10 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
 import javafx.util.Duration;
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.ActionEvent;
-import main.java.controller.event.events.ResourceEvent;
-import main.java.controller.event.events.SkillUse;
+import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import controller.event.events.ResourceEvent;
+import controller.event.events.SkillUse;
 import manager.ConditionManager;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;

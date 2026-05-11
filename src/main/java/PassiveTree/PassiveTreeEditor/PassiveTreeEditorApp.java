@@ -1,8 +1,7 @@
-package main.PassiveTree.PassiveTreeEditor;
+package PassiveTree.PassiveTreeEditor;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import main.PassiveTree.PassiveNodeView;
-import main.PassiveTree.EditorTreePane;
+import PassiveTree.PassiveNodeView;
+import PassiveTree.EditorTreePane;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,14 +10,12 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.Line;
 import javafx.stage.Stage;
-import model.entity.units.Unit;
 import util.StatTranslateUtil;
 import model.entity.PassiveNode;
 import util.JsonUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 public class PassiveTreeEditorApp extends Application {

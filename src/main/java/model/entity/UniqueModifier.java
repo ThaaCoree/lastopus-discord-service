@@ -1,6 +1,6 @@
-package main.java.model.entity;
+package model.entity;
 
-import main.java.model.type.UniqueType;
+import model.type.UniqueType;
 
 public class UniqueModifier {
 

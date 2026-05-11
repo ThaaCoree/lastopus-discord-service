@@ -1,13 +1,13 @@
-package main.java.model.entity.skills.list.player;
+package model.entity.skills.list.player;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.controller.event.events.RoundEvent;
-import main.java.model.entity.skills.*;
-import main.java.model.type.CounterName;
-import main.java.model.type.EventPhase;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import controller.event.events.RoundEvent;
+import model.entity.skills.*;
+import model.type.CounterName;
+import model.type.EventPhase;
+import model.type.SkillType;
 
 public class ZephyrEko extends Skill {
 

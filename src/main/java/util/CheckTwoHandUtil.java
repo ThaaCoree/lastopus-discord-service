@@ -1,8 +1,8 @@
 package util;
 
-import main.java.model.entity.items.Equipment;
-import main.java.model.type.HandType;
-import main.java.model.type.WeaponType;
+import model.entity.items.Equipment;
+import model.type.HandType;
+import model.type.WeaponType;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

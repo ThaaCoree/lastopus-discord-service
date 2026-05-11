@@ -1,12 +1,12 @@
-package main.java.model.entity.units;
+package model.entity.units;
 
-import main.java.model.entity.ResourceData;
-import main.java.model.entity.items.Item;
-import main.java.model.entity.ModifierBundle;
-import main.java.model.entity.skills.SkillInstance;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.modifier.ModValue;
-import main.java.model.type.*;
+import model.entity.ResourceData;
+import model.entity.items.Item;
+import model.entity.ModifierBundle;
+import model.entity.skills.SkillInstance;
+import model.modifier.BasicModifier;
+import model.modifier.ModValue;
+import model.type.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

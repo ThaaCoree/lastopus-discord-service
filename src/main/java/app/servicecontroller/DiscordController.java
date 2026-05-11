@@ -1,4 +1,4 @@
-package servicecontroller;
+package app.servicecontroller;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;

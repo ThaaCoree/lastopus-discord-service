@@ -1,4 +1,4 @@
-package main.java.manager;
+package manager;
 
 import model.entity.PassiveNode;
 import model.entity.units.Unit;

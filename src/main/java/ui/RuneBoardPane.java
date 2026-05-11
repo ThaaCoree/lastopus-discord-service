@@ -1,25 +1,20 @@
-package main.ui;
+package ui;
 
-import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Rectangle;
-import main.Database;
+import app.Database;
 import model.entity.items.Rune;
 import model.entity.units.Unit;
-import util.WeightedRandom;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class RuneBoardPane extends StackPane {

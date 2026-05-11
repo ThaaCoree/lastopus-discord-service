@@ -1,6 +1,6 @@
-package main.java.model.entity;
+package model.entity;
 
-import main.java.model.entity.items.Item;
+import model.entity.items.Item;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

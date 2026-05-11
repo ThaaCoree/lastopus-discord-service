@@ -1,4 +1,4 @@
-package main.java.controller.event.events;
+package controller.event.events;
 
 public class RoundEvent {
     public int current_round;

@@ -1,4 +1,4 @@
-package main.PassiveTree;
+package PassiveTree;
 
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.effect.DropShadow;

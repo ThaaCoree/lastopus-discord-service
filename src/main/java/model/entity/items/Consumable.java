@@ -1,8 +1,8 @@
-package main.java.model.entity.items;
+package model.entity.items;
 
-import main.java.model.entity.TimedCondition;
-import main.java.model.type.ItemType;
-import main.java.model.type.ResourceType;
+import model.entity.TimedCondition;
+import model.type.ItemType;
+import model.type.ResourceType;
 
 import java.util.*;
 

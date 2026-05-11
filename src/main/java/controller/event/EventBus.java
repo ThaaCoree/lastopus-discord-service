@@ -1,4 +1,4 @@
-package main.java.controller.event;
+package controller.event;
 import model.type.EventPhase;
 
 import java.util.*;

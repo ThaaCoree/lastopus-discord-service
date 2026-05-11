@@ -1,4 +1,4 @@
-package main.PassiveTree;
+package PassiveTree;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;

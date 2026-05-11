@@ -1,4 +1,4 @@
-package main.java.manager;
+package manager;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.entity.units.Unit;

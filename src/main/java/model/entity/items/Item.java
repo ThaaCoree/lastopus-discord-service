@@ -1,6 +1,6 @@
-package main.java.model.entity.items;
+package model.entity.items;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import main.java.model.type.*;
+import model.type.*;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Item {

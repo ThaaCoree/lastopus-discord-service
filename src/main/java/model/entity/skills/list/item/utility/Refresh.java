@@ -1,8 +1,8 @@
-package main.java.model.entity.skills.list.item.utility;
+package model.entity.skills.list.item.utility;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.*;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import model.entity.skills.*;
+import model.type.SkillType;
 
 import java.util.Map;
 

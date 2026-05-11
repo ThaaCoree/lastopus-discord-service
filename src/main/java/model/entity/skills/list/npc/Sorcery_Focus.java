@@ -1,10 +1,10 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.*;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.type.SkillType;
-import main.java.model.type.StatType;
+import controller.CombatFlow;
+import model.entity.skills.*;
+import model.modifier.BasicModifier;
+import model.type.SkillType;
+import model.type.StatType;
 
 public class Sorcery_Focus extends Skill {
 

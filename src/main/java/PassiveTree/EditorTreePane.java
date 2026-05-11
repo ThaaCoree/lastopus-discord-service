@@ -1,9 +1,7 @@
-package main.PassiveTree;
+package PassiveTree;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import javafx.scene.Group;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;

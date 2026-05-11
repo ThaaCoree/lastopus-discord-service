@@ -1,4 +1,4 @@
-package main.java.manager;
+package manager;
 
 import model.entity.ResourceData;
 import model.entity.skills.SkillInstance;

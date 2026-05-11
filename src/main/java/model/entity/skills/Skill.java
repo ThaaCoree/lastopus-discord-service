@@ -1,13 +1,13 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.*;
-import main.java.model.entity.items.EquipmentSlot;
-import main.java.model.entity.skills.list.player.Pride_Of_The_Blood_Pact;
-import main.java.model.entity.units.Unit;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import model.entity.*;
+import model.entity.items.EquipmentSlot;
+import model.entity.skills.list.player.Pride_Of_The_Blood_Pact;
+import model.entity.units.Unit;
+import model.type.*;
 import util.FormulaEvaluatorUtil;
 import util.LogWriterUtil;
 

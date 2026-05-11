@@ -1,7 +1,7 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.java.model.entity.ModifierBundle;
+import model.entity.ModifierBundle;
 
 public class SkillInstance {
     @JsonIgnore

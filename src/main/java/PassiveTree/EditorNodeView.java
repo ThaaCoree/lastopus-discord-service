@@ -1,4 +1,4 @@
-package main.PassiveTree;
+package PassiveTree;
 
 public class EditorNodeView {
 }

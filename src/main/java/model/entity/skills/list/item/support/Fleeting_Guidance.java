@@ -1,14 +1,14 @@
-package main.java.model.entity.skills.list.item.support;
+package model.entity.skills.list.item.support;
 
-import main.java.controller.CombatFlow;
-import main.java.manager.ConditionManager;
-import main.java.model.entity.Conditions;
-import main.java.model.entity.skills.*;
-import main.java.model.entity.units.Unit;
-import main.java.model.type.ConditionTierType;
-import main.java.model.type.ConditionType;
-import main.java.model.type.SkillType;
-import main.java.model.type.StatType;
+import controller.CombatFlow;
+import manager.ConditionManager;
+import model.entity.Conditions;
+import model.entity.skills.*;
+import model.entity.units.Unit;
+import model.type.ConditionTierType;
+import model.type.ConditionType;
+import model.type.SkillType;
+import model.type.StatType;
 
 import java.util.ArrayList;
 import java.util.List;

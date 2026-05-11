@@ -1,15 +1,15 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.controller.event.events.RoundEvent;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.entity.units.Unit;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import controller.event.events.RoundEvent;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.entity.units.Unit;
+import model.type.*;
 
 import java.util.LinkedHashMap;
 import java.util.List;

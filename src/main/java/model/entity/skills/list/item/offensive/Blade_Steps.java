@@ -1,14 +1,14 @@
-package main.java.model.entity.skills.list.item.offensive;
+package model.entity.skills.list.item.offensive;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.Card;
-import main.java.model.entity.PassiveNode;
-import main.java.model.entity.UniqueModifier;
-import main.java.model.entity.items.Equipment;
-import main.java.model.entity.items.EquipmentSlot;
-import main.java.model.entity.skills.*;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import model.entity.Card;
+import model.entity.PassiveNode;
+import model.entity.UniqueModifier;
+import model.entity.items.Equipment;
+import model.entity.items.EquipmentSlot;
+import model.entity.skills.*;
+import model.modifier.TransferModifier;
+import model.type.*;
 
 import java.util.HashMap;
 import java.util.Map;

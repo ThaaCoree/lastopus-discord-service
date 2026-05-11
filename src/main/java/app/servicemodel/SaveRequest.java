@@ -1,4 +1,4 @@
-package servicemodel;
+package app.servicemodel;
 
 import model.entity.Card;
 import model.entity.Conditions;

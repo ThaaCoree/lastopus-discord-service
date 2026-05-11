@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
@@ -8,8 +8,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
-import main.Database;
-import main.java.factory.SkillFactory;
+import app.Database;
+import factory.SkillFactory;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.skills.SkillInstance;

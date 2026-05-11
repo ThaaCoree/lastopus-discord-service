@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
@@ -10,9 +10,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.ActionEvent;
-import main.java.controller.event.events.ResourceEvent;
+import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import controller.event.events.ResourceEvent;
 import manager.ConditionManager;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;

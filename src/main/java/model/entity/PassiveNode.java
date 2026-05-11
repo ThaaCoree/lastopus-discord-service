@@ -1,9 +1,9 @@
-package main.java.model.entity;
+package model.entity;
 
-import main.java.model.modifier.BasicModifier;
-import main.java.model.modifier.SkillModifier;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.*;
+import model.modifier.BasicModifier;
+import model.modifier.SkillModifier;
+import model.modifier.TransferModifier;
+import model.type.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

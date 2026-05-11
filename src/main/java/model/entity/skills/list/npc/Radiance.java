@@ -1,8 +1,8 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.*;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import model.entity.skills.*;
+import model.type.SkillType;
 
 public class Radiance extends Skill {
 

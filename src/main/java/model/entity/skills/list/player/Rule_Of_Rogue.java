@@ -1,17 +1,17 @@
-package main.java.model.entity.skills.list.player;
+package model.entity.skills.list.player;
 
 import javafx.beans.InvalidationListener;
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.ConditionInstance;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.entity.units.Unit;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import model.entity.ConditionInstance;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.entity.units.Unit;
+import model.modifier.BasicModifier;
+import model.type.*;
 import util.LogWriterUtil;
 
 import java.util.List;

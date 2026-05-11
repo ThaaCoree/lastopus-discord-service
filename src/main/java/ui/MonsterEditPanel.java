@@ -1,11 +1,11 @@
-package main.ui;
+package ui;
 
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
-import main.Database;
+import app.Database;
 import model.entity.*;
 import model.entity.units.Monster;
 import model.type.*;

@@ -1,4 +1,4 @@
-package main.java.controller.event;
+package controller.event;
 
 public interface GameEventListener<T> {
     void onEvent(T event);

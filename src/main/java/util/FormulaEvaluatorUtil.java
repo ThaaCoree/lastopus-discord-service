@@ -1,9 +1,9 @@
 package util;
 
-import main.java.model.entity.units.Unit;
-import main.java.model.type.ResourceType;
-import main.java.model.type.StatType;
-import main.java.model.type.StatusType;
+import model.entity.units.Unit;
+import model.type.ResourceType;
+import model.type.StatType;
+import model.type.StatusType;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 

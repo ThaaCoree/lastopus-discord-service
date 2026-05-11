@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import com.google.api.services.sheets.v4.model.Request;
 import javafx.collections.FXCollections;
@@ -10,8 +10,8 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
 import javafx.stage.Popup;
-import main.Database;
-import main.java.factory.SkillFactory;
+import app.Database;
+import factory.SkillFactory;
 import model.entity.*;
 import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;

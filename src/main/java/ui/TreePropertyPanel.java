@@ -1,11 +1,10 @@
-package main.ui;
+package ui;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-import manager.InventoryManager;
 import model.entity.PassiveNode;
 import model.entity.items.Dream;
 import model.entity.items.Item;

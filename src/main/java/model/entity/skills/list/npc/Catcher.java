@@ -1,12 +1,12 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.type.SkillType;
-import main.java.model.type.StatType;
+import controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.type.SkillType;
+import model.type.StatType;
 
 public class Catcher extends Skill {
 

@@ -1,6 +1,6 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
-import main.java.controller.CombatFlow;
+import controller.CombatFlow;
 
 public interface SkillWithCondition {
     void refreshCondition(CombatFlow combatFlow);

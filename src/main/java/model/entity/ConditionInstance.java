@@ -1,8 +1,8 @@
-package main.java.model.entity;
+package model.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.java.model.entity.units.Unit;
+import model.entity.units.Unit;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

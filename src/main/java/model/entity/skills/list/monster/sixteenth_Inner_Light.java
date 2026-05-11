@@ -1,10 +1,10 @@
-package main.java.model.entity.skills.list.monster;
+package model.entity.skills.list.monster;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.Conditions;
-import main.java.model.entity.skills.*;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import model.entity.Conditions;
+import model.entity.skills.*;
+import model.type.*;
 
 public class sixteenth_Inner_Light extends Skill implements SkillWithCondition {
 

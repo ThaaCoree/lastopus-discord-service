@@ -1,14 +1,14 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.SkillType;
-import main.java.model.type.StatusType;
-import main.java.model.type.TransferType;
+import controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.modifier.TransferModifier;
+import model.type.SkillType;
+import model.type.StatusType;
+import model.type.TransferType;
 
 public class Sixth_Sense extends Skill {
 

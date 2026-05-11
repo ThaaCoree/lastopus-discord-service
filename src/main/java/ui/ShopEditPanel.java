@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
@@ -14,7 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
-import main.Database;
+import app.Database;
 import manager.InventoryManager;
 import model.entity.Shop;
 import model.entity.ShopItem;

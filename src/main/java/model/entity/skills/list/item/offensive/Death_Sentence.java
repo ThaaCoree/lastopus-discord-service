@@ -1,17 +1,17 @@
-package main.java.model.entity.skills.list.item.offensive;
+package model.entity.skills.list.item.offensive;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEffect;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.units.Unit;
-import main.java.model.type.ActType;
-import main.java.model.type.ActionEffectType;
-import main.java.model.type.EventPhase;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEffect;
+import controller.event.events.ActionEvent;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.units.Unit;
+import model.type.ActType;
+import model.type.ActionEffectType;
+import model.type.EventPhase;
+import model.type.SkillType;
 
 import java.util.List;
 

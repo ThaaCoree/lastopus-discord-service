@@ -1,4 +1,4 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
 import java.util.*;
 

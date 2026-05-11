@@ -1,4 +1,4 @@
-package main.java.model.type;
+package model.type;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

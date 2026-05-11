@@ -1,6 +1,6 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
-import main.java.model.type.SkillType;
+import model.type.SkillType;
 
 import java.text.DecimalFormat;
 import java.util.HashSet;

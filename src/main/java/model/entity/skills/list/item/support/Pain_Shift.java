@@ -1,10 +1,10 @@
-package main.java.model.entity.skills.list.item.support;
+package model.entity.skills.list.item.support;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.type.SkillType;
 
 public class Pain_Shift extends Skill {
 

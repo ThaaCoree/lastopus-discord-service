@@ -1,9 +1,9 @@
-package main.java.model.entity.skills.list.item.utility;
+package model.entity.skills.list.item.utility;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
+import controller.CombatFlow;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
 
 public class Time_Bank extends Skill {
 

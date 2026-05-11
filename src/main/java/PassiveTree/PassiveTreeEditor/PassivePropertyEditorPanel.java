@@ -1,6 +1,6 @@
-package main.PassiveTree.PassiveTreeEditor;
+package PassiveTree.PassiveTreeEditor;
 
-import main.PassiveTree.PassiveNodeView;
+import PassiveTree.PassiveNodeView;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

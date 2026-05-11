@@ -1,4 +1,4 @@
-package main.factory;
+package factory;
 
 import model.entity.skills.list.item.defensive.*;
 import model.entity.skills.list.item.offensive.*;

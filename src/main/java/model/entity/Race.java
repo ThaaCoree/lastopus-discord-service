@@ -1,7 +1,7 @@
-package main.java.model.entity;
+package model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.java.model.type.StatusType;
+import model.type.StatusType;
 
 public class Race {
     private String name;

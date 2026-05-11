@@ -1,16 +1,16 @@
-package main.java.model.entity.skills.list.player;
+package model.entity.skills.list.player;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.ActionEvent;
-import main.java.manager.ConditionManager;
-import main.java.model.entity.Conditions;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillWithCondition;
-import main.java.model.entity.units.Unit;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import manager.ConditionManager;
+import model.entity.Conditions;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillWithCondition;
+import model.entity.units.Unit;
+import model.modifier.TransferModifier;
+import model.type.*;
 
 import java.util.List;
 

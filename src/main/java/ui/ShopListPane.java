@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,11 +11,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import main.Database;
+import app.Database;
 import model.entity.Shop;
 import model.entity.ShopItem;
-import model.entity.UniqueModifier;
-import model.entity.units.Unit;
 
 import java.util.Map;
 

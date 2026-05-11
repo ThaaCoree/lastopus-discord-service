@@ -1,10 +1,10 @@
-package main.java.model.entity;
+package model.entity;
 
-import main.java.model.modifier.BasicModifier;
-import main.java.model.modifier.TransferModifier;
-import main.java.model.type.CardType;
-import main.java.model.type.StatType;
-import main.java.model.type.StatusType;
+import model.modifier.BasicModifier;
+import model.modifier.TransferModifier;
+import model.type.CardType;
+import model.type.StatType;
+import model.type.StatusType;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

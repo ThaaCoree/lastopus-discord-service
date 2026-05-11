@@ -1,4 +1,4 @@
-package main.java.model.type;
+package model.type;
 
 public enum ActionEffectType {
     DAMAGE_PHYSICAL,

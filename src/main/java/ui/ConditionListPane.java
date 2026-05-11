@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -6,7 +6,7 @@ import javafx.collections.transformation.FilteredList;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import main.Database;
+import app.Database;
 import model.entity.Conditions;
 
 public class ConditionListPane extends StackPane {

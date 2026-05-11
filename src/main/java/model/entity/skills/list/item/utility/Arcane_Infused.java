@@ -1,16 +1,16 @@
-package main.java.model.entity.skills.list.item.utility;
+package model.entity.skills.list.item.utility;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.type.ActType;
-import main.java.model.type.ActionEffectType;
-import main.java.model.type.EventPhase;
-import main.java.model.type.SkillType;
+import controller.CombatFlow;
+import controller.event.EventBus;
+import controller.event.events.ActionEvent;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.type.ActType;
+import model.type.ActionEffectType;
+import model.type.EventPhase;
+import model.type.SkillType;
 
 public class Arcane_Infused extends Skill {
 

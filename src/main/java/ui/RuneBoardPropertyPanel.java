@@ -1,4 +1,4 @@
-package main.ui;
+package ui;
 
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
@@ -10,17 +10,12 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
-import main.Database;
-import model.entity.PassiveNode;
-import model.entity.items.Dream;
+import app.Database;
 import model.entity.items.Item;
 import model.entity.items.Rune;
 import model.entity.units.Unit;
 import util.SearchableListView;
-import util.StatTranslateUtil;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

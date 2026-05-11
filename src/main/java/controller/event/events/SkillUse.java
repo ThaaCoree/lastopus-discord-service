@@ -1,4 +1,4 @@
-package main.java.controller.event.events;
+package controller.event.events;
 
 import model.entity.skills.SkillInstance;
 import model.entity.units.Unit;

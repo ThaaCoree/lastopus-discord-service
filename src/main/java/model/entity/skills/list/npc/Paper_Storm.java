@@ -1,9 +1,9 @@
-package main.java.model.entity.skills.list.npc;
+package model.entity.skills.list.npc;
 
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.ActionEvent;
-import main.java.model.entity.skills.*;
-import main.java.model.type.*;
+import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import model.entity.skills.*;
+import model.type.*;
 
 public class Paper_Storm extends Skill {
 

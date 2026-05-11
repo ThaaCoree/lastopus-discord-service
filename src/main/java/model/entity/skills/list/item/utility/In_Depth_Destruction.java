@@ -1,17 +1,17 @@
-package main.java.model.entity.skills.list.item.utility;
+package model.entity.skills.list.item.utility;
 
 import javafx.beans.InvalidationListener;
-import main.java.controller.CombatFlow;
-import main.java.controller.event.events.RoundEvent;
-import main.java.model.entity.skills.Skill;
-import main.java.model.entity.skills.SkillInputSpec;
-import main.java.model.entity.skills.SkillTarget;
-import main.java.model.entity.skills.SkillMultiplier;
-import main.java.model.modifier.BasicModifier;
-import main.java.model.type.CounterName;
-import main.java.model.type.EventPhase;
-import main.java.model.type.SkillType;
-import main.java.model.type.StatType;
+import controller.CombatFlow;
+import controller.event.events.RoundEvent;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillTarget;
+import model.entity.skills.SkillMultiplier;
+import model.modifier.BasicModifier;
+import model.type.CounterName;
+import model.type.EventPhase;
+import model.type.SkillType;
+import model.type.StatType;
 
 public class In_Depth_Destruction extends Skill {
 

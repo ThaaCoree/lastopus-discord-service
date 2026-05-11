@@ -1,12 +1,12 @@
-package main.java.model.entity.skills;
+package model.entity.skills;
 
-import main.java.controller.CombatFlow;
-import main.java.model.entity.items.EquipmentSlot;
-import main.java.model.entity.items.Item;
-import main.java.model.entity.units.Unit;
-import main.java.model.type.CounterName;
-import main.java.model.type.StatType;
-import main.java.model.type.StatusType;
+import controller.CombatFlow;
+import model.entity.items.EquipmentSlot;
+import model.entity.items.Item;
+import model.entity.units.Unit;
+import model.type.CounterName;
+import model.type.StatType;
+import model.type.StatusType;
 
 import java.util.*;
 import java.util.function.Function;

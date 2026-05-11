@@ -1,4 +1,4 @@
-package main.java.model.modifier;
+package model.modifier;
 
 public class BasicModifier {
     private double flat;

@@ -1,10 +1,10 @@
-package main.ui;
+package ui;
 
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import main.Database;
+import app.Database;
 import model.entity.*;
 import model.modifier.BasicModifier;
 import model.modifier.SkillModifier;

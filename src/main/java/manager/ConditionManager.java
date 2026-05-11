@@ -1,6 +1,6 @@
-package main.java.manager;
+package manager;
 
-import main.java.controller.CombatFlow;
+import controller.CombatFlow;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;
 import model.entity.units.Unit;

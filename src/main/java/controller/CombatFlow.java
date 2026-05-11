@@ -1,9 +1,9 @@
-package main.java.controller;
+package controller;
 
-import main.Database;
+import app.Database;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.java.controller.event.EventBus;
-import main.java.controller.event.events.RoundEvent;
+import controller.event.EventBus;
+import controller.event.events.RoundEvent;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;
 import model.entity.items.Item;

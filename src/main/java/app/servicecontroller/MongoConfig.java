@@ -1,4 +1,4 @@
-package servicecontroller;
+package app.servicecontroller;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
