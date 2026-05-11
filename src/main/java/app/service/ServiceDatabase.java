@@ -393,7 +393,7 @@ public class ServiceDatabase {
     public String save_player(Map<String, Unit> allPlayerMap) {
 
         Unit unit = new Unit();
-        allPlayerMap.put("_id", unit);
+//        allPlayerMap.put("_id", unit);
         mongoTemplate.save(allPlayerMap, "players");
 
         System.out.println("saved player");
