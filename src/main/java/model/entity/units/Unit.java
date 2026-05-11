@@ -291,6 +291,9 @@ public class Unit {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(googleCredential);
             List<Request> requests = buildWriteRequests();
+            System.out.println("--------------------------------------");
+            System.out.println(buildWriteRequests());
+            System.out.println("--------------------------------------");
             sheetsUtil.takeRequests(requests);
             sheetsUtil.requestSet();
             sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
