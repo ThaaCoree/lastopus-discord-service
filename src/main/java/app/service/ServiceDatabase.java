@@ -77,6 +77,10 @@ public class ServiceDatabase {
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
 
+            System.out.println(allPlayerMap);
+            System.out.println("--------------------------------------------------------");
+            System.out.println(allItemMap);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
