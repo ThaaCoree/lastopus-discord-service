@@ -1,6 +1,8 @@
 package app.servicecontroller;
 
+import app.Database;
 import app.servicemodel.PlayerMessage;
+import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,9 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class DiscordController {
 
     private MongoTemplate mongoTemplate;
+    private Database database;
 
-    public DiscordController(MongoTemplate mongoTemplate) {
+    public DiscordController(MongoTemplate mongoTemplate, Database database) {
         this.mongoTemplate = mongoTemplate;
+        this.database = database;
     }
 
     @PostMapping("/equip")
@@ -23,6 +27,7 @@ public class DiscordController {
                 name = "Christ";
             }
         }
-        return name+" : "+playerMessage.message+" ...";
+        Unit unit = database.findUnit(name);
+        return name+" : "+playerMessage.message+ " ["+unit.getUnitType().writeAsString()+"]";
     }
 }

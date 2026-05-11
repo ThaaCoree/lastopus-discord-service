@@ -13,6 +13,7 @@ import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
 import model.type.UnitType;
+import org.springframework.stereotype.Service;
 import util.GoogleSheetsUtil;
 import util.JsonUtils;
 import util.StatTranslateUtil;
@@ -23,6 +24,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.*;
 
+@Service
 public class Database {
 
     private Map<String, Item> allItemMap;
