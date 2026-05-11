@@ -90,7 +90,7 @@ public class DiscordController {
             String json = mapper.writeValueAsString(database.allPlayerMap);
             database.save_player(json);
             System.out.println("after save_player and before writeToSheet");
-            unit.writeToSheet();
+            unit.writeToSheet(database.load_credentials());
         } catch (Exception e) {
             e.printStackTrace();
         }

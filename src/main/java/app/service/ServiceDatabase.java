@@ -52,11 +52,10 @@ public class ServiceDatabase {
     public Map<String, Shop> allShop;
     public Map<String, Unit> allUnit = new LinkedHashMap<>();
     public Map<String, Summon> allSummon = new LinkedHashMap<>();
-    public static final String credentialsPath = "/json/sheet_credentials.json";
 
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
-        save_credentials();
+//        save_credentials();
         loadMongo();
         mapAllUnit();
         updateEverything();
@@ -362,19 +361,15 @@ public class ServiceDatabase {
         saveRequest.setAllShop(allShops);
         return saveRequest;
     }
-
-    public String save_credentials() {
-        try {
-            String json = new String(new ClassPathResource(credentialsPath)
-                    .getInputStream().readAllBytes());
-            Document doc = Document.parse(json);
-            mongoTemplate.save(doc, "credentials");
-            return "saved";
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "error";
-        }
-    }
+//
+//    public void save_credentials() {
+//        try {
+//            Document doc = mongoTemplate.findOne(new Query(), Document.class, "credentials");
+//            mongoTemplate.save(doc, "credentials");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public GoogleCredential load_credentials() {
         try {

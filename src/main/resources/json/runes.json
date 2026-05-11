@@ -18,9 +18,9 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 2,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "Z-Shape Rune" : {
     "name" : "Z-Shape Rune",
@@ -41,9 +41,9 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 4,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "J-Shape Rune" : {
     "name" : "J-Shape Rune",
@@ -64,9 +64,9 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "L-Shape Rune" : {
     "name" : "L-Shape Rune",
@@ -87,9 +87,9 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 0,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "T-Shape Rune" : {
     "name" : "T-Shape Rune",
@@ -110,9 +110,9 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "Cube-Shape Rune" : {
     "name" : "Cube-Shape Rune",
@@ -133,9 +133,9 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "C-Shape Rune" : {
     "name" : "C-Shape Rune",
@@ -156,9 +156,9 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "Three-Block Rune" : {
     "name" : "Three-Block Rune",
@@ -179,9 +179,9 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "Two-Block Rune" : {
     "name" : "Two-Block Rune",
@@ -202,9 +202,9 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 3,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   },
   "One-Block Rune" : {
     "name" : "One-Block Rune",
@@ -234,6 +234,8 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "transferModifiers" : { },
+    "statModifiers" : { },
     "statusModifiers" : {
       "INTELLIGENCE" : {
         "flat" : 2.0,
@@ -243,9 +245,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Flower Rune" : {
     "name" : "Flower Rune",
@@ -266,8 +266,8 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { },
-    "transferModifiers" : { }
+    "statusModifiers" : { }
   }
 }
