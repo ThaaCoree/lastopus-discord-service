@@ -1,6 +1,5 @@
 package app.servicecontroller;
 
-import app.Database;
 import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
 import model.entity.items.Equipment;
@@ -10,7 +9,6 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import util.GoogleSheetsUtil;
 
 import java.util.List;
 import java.util.Map;
@@ -34,7 +32,7 @@ public class DiscordController {
         if (unit != null) {
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
-                writeToSheet(unit);
+                writeintoSheet(unit);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
@@ -61,7 +59,7 @@ public class DiscordController {
         }
             if (equipment != null) {
                 unit.getEquipmentManager().unequip(slot);
-                writeToSheet(unit);
+                writeintoSheet(unit);
                 return "ถอด "+equipment.getName()+" จากช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
@@ -83,8 +81,10 @@ public class DiscordController {
         return "";
     }
 
-    public void writeToSheet(Unit unit) {
+    public void writeintoSheet(Unit unit) {
+        System.out.println("before save_player");
         database.save_player(database.allPlayerMap);
+        System.out.println("after save_player and before writeToSheet");
         unit.writeToSheet(database.load_credentials());
     }
 }
