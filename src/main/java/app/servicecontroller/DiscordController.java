@@ -38,8 +38,7 @@ public class DiscordController {
         if (unit != null) {
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
-                unit.writeToSheet();
-                database.save_player(database.allPlayerMap);
+                writeToSheet(unit);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
@@ -70,6 +69,7 @@ public class DiscordController {
         }
             if (equipment != null) {
                 unit.getEquipmentManager().unequip(slot);
+                writeToSheet(unit);
                 return "ถอด "+equipment.getName()+" จากช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
@@ -77,5 +77,10 @@ public class DiscordController {
         } else {
             return "No Role!";
         }
+    }
+
+    public void writeToSheet(Unit unit) {
+        database.save_player(database.allPlayerMap);
+        unit.writeToSheet(database.load_credentials());
     }
 }

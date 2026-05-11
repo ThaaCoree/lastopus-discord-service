@@ -32,6 +32,10 @@ public class GoogleSheetsUtil {
         sheetsService = createSheetsService();
     }
 
+    public GoogleSheetsUtil(GoogleCredential googleCredential) throws IOException, GeneralSecurityException {
+        sheetsService = createSheetsService(googleCredential);
+    }
+
     private Sheets createSheetsService() throws IOException, GeneralSecurityException {
         HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
         GoogleCredential credential = GoogleCredential
@@ -39,6 +43,14 @@ public class GoogleSheetsUtil {
                 .createScoped(Arrays.asList(SheetsScopes.SPREADSHEETS));
 
         return new Sheets.Builder(httpTransport, JSON_FACTORY, credential)
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+    }
+
+    private Sheets createSheetsService(GoogleCredential googleCredential) throws IOException, GeneralSecurityException {
+        HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
+
+        return new Sheets.Builder(httpTransport, JSON_FACTORY, googleCredential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
     }

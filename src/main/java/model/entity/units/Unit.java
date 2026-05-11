@@ -2,6 +2,7 @@ package model.entity.units;
 import calculator.StatCalculator;
 import calculator.StatusCalculator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.common.util.concurrent.AtomicDouble;
 import javafx.collections.FXCollections;
@@ -269,6 +270,19 @@ public class Unit {
     public void writeToSheet() {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
+            List<Request> requests = buildWriteRequests();
+            sheetsUtil.takeRequests(requests);
+
+            sheetsUtil.requestSet();
+            sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void writeToSheet(GoogleCredential googleCredential) {
+        try {
+            GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(googleCredential);
             List<Request> requests = buildWriteRequests();
             sheetsUtil.takeRequests(requests);
 

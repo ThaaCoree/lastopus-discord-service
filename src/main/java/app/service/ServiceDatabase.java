@@ -2,12 +2,16 @@ package app.service;
 
 import app.servicemodel.SaveRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.services.sheets.v4.SheetsScopes;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
+import org.bson.Document;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
@@ -15,10 +19,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import util.StatTranslateUtil;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,9 +51,11 @@ public class ServiceDatabase {
     public Map<String, Shop> allShop;
     public Map<String, Unit> allUnit = new LinkedHashMap<>();
     public Map<String, Summon> allSummon = new LinkedHashMap<>();
+    public static final String credentialsPath = "/json/sheet_credentials.json";
 
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
+        save_credentials();
         loadMongo();
         mapAllUnit();
         updateEverything();
@@ -357,7 +366,35 @@ public class ServiceDatabase {
         return saveRequest;
     }
 
-    public String save_player(@RequestBody Map<String, Unit> allPlayerMap) {
+    public String save_credentials() {
+        try {
+            String json = new String(new ClassPathResource(credentialsPath)
+                    .getInputStream().readAllBytes());
+            Document doc = Document.parse(json);
+            mongoTemplate.save(doc, "credentials");
+            return "saved";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
+    }
+
+    public GoogleCredential load_credentials() {
+        try {
+            Document doc = mongoTemplate.findOne(
+                    new Query(), Document.class, "credentials"
+            );
+            String json = doc.toJson();
+            InputStream stream = new ByteArrayInputStream(json.getBytes());
+            return GoogleCredential.fromStream(stream)
+                    .createScoped(Arrays.asList(SheetsScopes.SPREADSHEETS));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public String save_player(Map<String, Unit> allPlayerMap) {
 
         Unit unit = new Unit();
         allPlayerMap.put("_id", unit);
@@ -367,7 +404,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_npc(@RequestBody Map<String, Unit> map) {
+    public String save_npc(Map<String, Unit> map) {
 
         Unit unit = new Unit();
         map.put("_id", unit);
@@ -377,7 +414,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_monster(@RequestBody Map<String, Monster> map) {
+    public String save_monster(Map<String, Monster> map) {
 
         Monster monster = new Monster();
         map.put("_id", monster);
@@ -387,7 +424,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_item(@RequestBody Map<String, Item> map) {
+    public String save_item(Map<String, Item> map) {
 
         Item item = new Item();
         map.put("_id", item);
@@ -397,7 +434,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_equip(@RequestBody Map<String, Equipment> map) {
+    public String save_equip(Map<String, Equipment> map) {
 
         map = map.entrySet().stream()
                 .collect(Collectors.toMap(
@@ -413,7 +450,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_consumable(@RequestBody Map<String, Consumable> map) {
+    public String save_consumable(Map<String, Consumable> map) {
 
         Consumable item = new Consumable();
         map.put("_id", item);
@@ -423,7 +460,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_dream(@RequestBody Map<String, Dream> map) {
+    public String save_dream(Map<String, Dream> map) {
 
         Dream item = new Dream();
         map.put("_id", item);
@@ -433,7 +470,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_rune(@RequestBody Map<String, Rune> map) {
+    public String save_rune(Map<String, Rune> map) {
 
         Rune item = new Rune();
         map.put("_id", item);
@@ -443,7 +480,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_card(@RequestBody Map<String, Card> map) {
+    public String save_card(Map<String, Card> map) {
 
         Card item = new Card();
         map.put("_id", item);
@@ -453,7 +490,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_condition(@RequestBody Map<String, Conditions> map) {
+    public String save_condition(Map<String, Conditions> map) {
 
         Conditions item = new Conditions();
         map.put("_id", item);
@@ -463,7 +500,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_shop(@RequestBody Map<String, Shop> map) {
+    public String save_shop(Map<String, Shop> map) {
 
         Shop item = new Shop();
         map.put("_id", item);
@@ -473,7 +510,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_summon(@RequestBody Map<String, Summon> map) {
+    public String save_summon(Map<String, Summon> map) {
 
         Summon item = new Summon();
         map.put("_id", item);
@@ -483,7 +520,7 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_passive(@RequestBody Map<Integer, PassiveNode> map) {
+    public String save_passive(Map<Integer, PassiveNode> map) {
 
         Map<String, PassiveNode> re_map = new LinkedHashMap<>();
         PassiveNode item = new PassiveNode();
