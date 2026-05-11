@@ -3,6 +3,7 @@ package model.entity.units;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import model.type.UnitType;
+import org.springframework.data.annotation.Transient;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Map;
 public class Summon extends Unit {
 
     @JsonIgnore
+    @Transient
     private Unit owner;
 
     private final Map<Integer, String> opusMove = new LinkedHashMap<>();

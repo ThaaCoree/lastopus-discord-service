@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import util.GoogleSheetsUtil;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -27,12 +28,7 @@ public class DiscordController {
 
     @PostMapping("/equip")
     public String equip(@RequestBody PlayerMessage playerMessage) {
-        String name = "";
-        for (String role : playerMessage.roles) {
-            if (role.equals("Christ")) {
-                name = "Christ";
-            }
-        }
+        String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findUnit(name);
         Equipment equipment = database.findEquipment(playerMessage.message);
         if (unit != null) {
@@ -50,12 +46,7 @@ public class DiscordController {
 
     @PostMapping("/unequip")
     public String unequip(@RequestBody PlayerMessage playerMessage) {
-        String name = "";
-        for (String role : playerMessage.roles) {
-            if (role.equals("Christ")) {
-                name = "Christ";
-            }
-        }
+        String name = getPlayerName(playerMessage.roles);
         Equipment equipment = null;
         Unit unit = database.findUnit(name);
         int slot = 0;
@@ -78,6 +69,18 @@ public class DiscordController {
         } else {
             return "No Role!";
         }
+    }
+
+    public String getPlayerName(List<String> roles) {
+        for (String role : roles) {
+            if (role.equals("Christ")) {
+                return "Christ";
+            }
+            if (role.equals("Leda")) {
+                return "Leda";
+            }
+        }
+        return "";
     }
 
     public void writeToSheet(Unit unit) {
