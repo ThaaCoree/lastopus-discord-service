@@ -377,6 +377,7 @@ public class ServiceDatabase {
                     new Query(), Document.class, "credentials"
             );
             String json = doc.toJson();
+            System.out.println(json);
             InputStream stream = new ByteArrayInputStream(json.getBytes());
             return GoogleCredential.fromStream(stream)
                     .createScoped(Arrays.asList(SheetsScopes.SPREADSHEETS));

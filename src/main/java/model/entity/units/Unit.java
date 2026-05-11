@@ -292,7 +292,6 @@ public class Unit {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(googleCredential);
             List<Request> requests = buildWriteRequests();
             sheetsUtil.takeRequests(requests);
-
             sheetsUtil.requestSet();
             sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
         } catch (Exception e) {
