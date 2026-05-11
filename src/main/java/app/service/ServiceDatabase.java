@@ -29,21 +29,21 @@ public class ServiceDatabase {
 
     private MongoTemplate mongoTemplate;
 
-    private Map<String, Item> allItemMap;
-    private Map<String, Equipment> allEquipmentMap;
-    private Map<String, Consumable> allConsumableMap;
-    private Map<String, Dream> allDreamItem;
-    private Map<String, PassiveNode> allDream = new LinkedHashMap<>();
-    private Map<String, Rune> allRuneMap;
-    private Map<String, Unit> allPlayerMap;
-    private Map<String, Unit> allNPCMap;
-    private Map<String, Monster> allMonsterMap;
-    private Map<String, Conditions> allConditionMap ;
-    private Map<String, Card> allCardMap;
-    private Map<Integer, PassiveNode> allPassiveMap;
-    private Map<String, Shop> allShop;
-    private Map<String, Unit> allUnit = new LinkedHashMap<>();
-    private Map<String, Summon> allSummon = new LinkedHashMap<>();
+    public Map<String, Item> allItemMap;
+    public Map<String, Equipment> allEquipmentMap;
+    public Map<String, Consumable> allConsumableMap;
+    public Map<String, Dream> allDreamItem;
+    public Map<String, PassiveNode> allDream = new LinkedHashMap<>();
+    public Map<String, Rune> allRuneMap;
+    public Map<String, Unit> allPlayerMap;
+    public Map<String, Unit> allNPCMap;
+    public Map<String, Monster> allMonsterMap;
+    public Map<String, Conditions> allConditionMap ;
+    public Map<String, Card> allCardMap;
+    public Map<Integer, PassiveNode> allPassiveMap;
+    public Map<String, Shop> allShop;
+    public Map<String, Unit> allUnit = new LinkedHashMap<>();
+    public Map<String, Summon> allSummon = new LinkedHashMap<>();
 
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;

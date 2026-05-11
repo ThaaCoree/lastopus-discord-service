@@ -39,7 +39,7 @@ public class DiscordController {
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
                 unit.writeToSheet();
-
+                database.save_player(database.allPlayerMap);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
