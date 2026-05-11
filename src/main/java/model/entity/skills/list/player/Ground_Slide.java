@@ -1,0 +1,97 @@
+package main.java.model.entity.skills.list.player;
+
+import main.java.controller.CombatFlow;
+import main.java.controller.event.events.ActionEvent;
+import main.java.manager.ConditionManager;
+import main.java.model.entity.Conditions;
+import main.java.model.entity.skills.*;
+import main.java.model.entity.units.Unit;
+import main.java.model.type.*;
+
+public class Ground_Slide extends Skill implements SkillWithCondition {
+
+    public static String NAME = "Ground Slide";
+
+    public Ground_Slide() {
+        super();
+        setDescription("เข้าสู่ท่วงท่า ไถลพื้น ในระหว่างนี้จะเพิ่มระยะการเคลื่อนที่ได้ XA เป็นเวลา XB เทิร์น\n" +
+                "เมื่อพันธมิตรในระยะ 3 เมตรรอบตัวถูกจู่โจม จะเข้าไปรับการจู่โจมนั้นแทนโดยเคลื่อนตัวไปที่การจู่โจมนั้น และยกเลิกท่วงท่าไถลพื้น");
+        setActionType("Combine");
+        setManaCost(3);
+        setCooldown(3);
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.4*(1+BuffAMP)"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.PHYSICAL);
+        getSkillMultiplier().get("XA").getTags().add(SkillType.BUFF);
+        getSkillMultiplier().get("XA").getTags().add(SkillType.MOVEMENT);
+        getSkillMultiplier().get("XA").setPercent(true);
+
+        getSkillMultiplier().put("XB",new SkillMultiplier("4"));
+        getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
+    }
+
+    @Override
+    public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
+        SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
+//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+        );
+//        spec    .addFields(
+//                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
+//                        .options(List.of("choice","choice"), 0)
+//                        .labelProvider(String::toString, 0)
+//        , 0, 0)
+//                .addFields(
+//                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
+//                , 0, 1);
+        return spec;
+    }
+
+    @Override
+    public void calculateExtra() {
+
+    }
+
+    @Override
+    public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
+        if (!skillTarget.getTarget(0).isEmpty()) {
+
+        } else {
+            skillTarget.getTarget(0).add(getUser().getName());
+        }
+        int duration = (int) getSkillMultiplier().get("XB").getResult();
+        Conditions condition = combatFlow.getDatabase().getAllConditionMap().get("Ground Slide");
+        sendActionEvent(combatFlow.getEventBus(),
+                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                        .condition(condition, duration)
+                        .addActType(ActType.CONDITION_GIVEN)
+                        .build());
+    }
+
+    @Override
+    public void refreshCondition(CombatFlow combatFlow) {
+        double buffAMP = 1+getUser().getStats().get(StatType.BUFFAMPLIFIER).getFinal();
+        double debuffAMP = 1+getUser().getStats().get(StatType.DEBUFFAMPLIFIER).getFinal();
+        Conditions condition = new Conditions("Ground Slide");
+        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+
+        condition.setConditionType(ConditionType.BUFF);
+        condition.setConditionTierType(ConditionTierType.UNDISPELLABLE);
+
+        //remove and re-add to database
+        combatFlow.getDatabase().getAllConditionMap().entrySet().removeIf(entry -> entry.getValue().getName().equals(condition.getName()));
+        combatFlow.getDatabase().getAllConditionMap().put(condition.getName(), condition);
+
+        for (Unit unit : combatFlow.getAllUnit().values()) {
+            ConditionManager.reapplyCondition(condition, unit);
+        }
+    }
+
+    @Override
+    public void initializeEvent(CombatFlow combatFlow) {
+
+    }
+
+    @Override
+    public String getName() {
+        return NAME;
+    }
+}

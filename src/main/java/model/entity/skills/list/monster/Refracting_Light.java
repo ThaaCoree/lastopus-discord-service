@@ -1,0 +1,83 @@
+package main.java.model.entity.skills.list.monster;
+
+import main.java.controller.CombatFlow;
+import main.java.manager.ConditionManager;
+import main.java.model.entity.Conditions;
+import main.java.model.entity.skills.*;
+import main.java.model.entity.units.Unit;
+import main.java.model.type.ConditionTierType;
+import main.java.model.type.ConditionType;
+import main.java.model.type.SkillType;
+import main.java.model.type.StatType;
+
+public class Refracting_Light extends Skill implements SkillWithCondition {
+
+    public static String NAME = "Refracting Light";
+
+    public Refracting_Light() {
+        super();
+        setDescription("ใช้งานสกิลนี้ได้เมื่อสร้างลำแสง\n" +
+                "เปลี่ยนทิศทางของลำแสงนั้น สร้างความเสียหายอีกครั้งให้กับยูนิตที่ได้รับผล\n" +
+                "ยูนิตที่ได้รับความเสียหายจากลำแสงที่ถูกเปลี่ยนทิศนี้ รับสถานะ Refracted เป็นเวลา XA รอบเทิร์นด้วย\n" +
+                "Refracted : DEF กลายเป็น 0");
+        setActionType("Reaction");
+        setManaCost(0);
+        setCooldown(2);
+        getPureTags().add(SkillType.SPELL);
+        getSkillMultiplier().put("XA",new SkillMultiplier("2"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.DURATION);
+    }
+
+    @Override
+    public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
+        SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
+//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+        );
+//        spec    .addFields(
+//                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
+//                        .options(List.of("choice","choice"), 0)
+//                        .labelProvider(String::toString, 0)
+//        , 0, 0)
+//                .addFields(
+//                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
+//                , 0, 1);
+        return spec;
+    }
+
+    @Override
+    public void calculateExtra() {
+
+    }
+
+    @Override
+    public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
+    }
+
+    @Override
+    public void refreshCondition(CombatFlow combatFlow) {
+        Conditions condition = new Conditions("Refracted");
+        condition.getStatModifiers(StatType.PHYSICALDEFENSE).setOverride(0);
+        condition.getStatModifiers(StatType.MAGICALDEFENSE).setOverride(0);
+
+        condition.setConditionType(ConditionType.DEBUFF);
+        condition.setConditionTierType(ConditionTierType.ADVANCED);
+
+        //remove and re-add to database
+        combatFlow.getDatabase().getAllConditionMap().entrySet().removeIf(entry -> entry.getValue().getName().equals(condition.getName()));
+        combatFlow.getDatabase().getAllConditionMap().put(condition.getName(), condition);
+
+        for (Unit unit : combatFlow.getAllUnit().values()) {
+            ConditionManager.reapplyCondition(condition, unit);
+        }
+    }
+
+    @Override
+    public void initializeEvent(CombatFlow combatFlow) {
+
+    }
+
+    @Override
+    public String getName() {
+        return NAME;
+    }
+}
