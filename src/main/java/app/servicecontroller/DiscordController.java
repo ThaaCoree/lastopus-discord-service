@@ -85,13 +85,12 @@ public class DiscordController {
 
     public void writeintoSheet(Unit unit) {
         try {
-            System.out.println("before save_player");
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             String json = mapper.writeValueAsString(database.allPlayerMap);
             database.save_player(json);
             System.out.println("after save_player and before writeToSheet");
-            unit.writeToSheet(database.load_credentials());
+            unit.writeToSheet();
         } catch (Exception e) {
             e.printStackTrace();
         }
