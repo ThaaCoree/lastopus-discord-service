@@ -1,4 +1,4 @@
-package main.controller.event;
+package main.java.controller.event;
 
 class ListenerWrapper<T> {
     GameEventListener<T> listener;

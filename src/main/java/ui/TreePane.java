@@ -6,7 +6,7 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
-import main.PassiveTree.PassiveNodeView;
+import main.java.PassiveTree.PassiveNodeView;
 import model.entity.PassiveNode;
 import model.entity.units.Unit;
 import model.type.NodeType;

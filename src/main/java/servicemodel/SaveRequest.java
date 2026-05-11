@@ -1,20 +1,14 @@
-package main.service_model;
+package main.java.model;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import main.controller.CombatFlow;
 import model.entity.Card;
 import model.entity.Conditions;
 import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.items.*;
 import model.entity.units.Monster;
-import model.entity.units.Summon;
 import model.entity.units.Unit;
-import util.JsonUtils;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class SaveRequest {
     private Map<String, Item> allItemMap;

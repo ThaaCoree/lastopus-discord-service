@@ -1,13 +1,12 @@
-package main.controller;
+package main.java.controller;
 
 import main.Database;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import main.controller.event.EventBus;
-import main.controller.event.events.RoundEvent;
+import main.java.controller.event.EventBus;
+import main.java.controller.event.events.RoundEvent;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;
 import model.entity.items.Item;
-import model.entity.skills.Skill;
 import model.entity.skills.SkillInstance;
 import model.entity.units.Monster;
 import model.entity.units.Summon;

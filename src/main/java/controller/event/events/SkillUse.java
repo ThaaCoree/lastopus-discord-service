@@ -1,12 +1,10 @@
-package main.controller.event.events;
+package main.java.controller.event.events;
 
 import model.entity.skills.SkillInstance;
 import model.entity.units.Unit;
-import model.type.DamageType;
 import model.type.SkillType;
 
 import java.util.Collection;
-import java.util.List;
 
 public class SkillUse {
     public Unit source;

@@ -1,11 +1,4 @@
-package main.controller.event.events;
-
-import model.entity.ConditionInstance;
-import model.entity.units.Unit;
-import model.type.ActType;
-
-import java.util.ArrayList;
-import java.util.List;
+package main.java.controller.event.events;
 
 public class RoundEvent {
     public int current_round;

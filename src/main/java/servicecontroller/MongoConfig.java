@@ -1,4 +1,4 @@
-package main;
+package main.java.controller;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

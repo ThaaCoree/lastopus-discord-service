@@ -11,7 +11,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
 import javafx.stage.Popup;
 import main.Database;
-import main.factory.SkillFactory;
+import main.java.factory.SkillFactory;
 import model.entity.*;
 import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;

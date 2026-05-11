@@ -1,4 +1,4 @@
-package main.controller.event.events;
+package main.java.controller.event.events;
 
 import model.type.ActionEffectType;
 

@@ -9,7 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
 import main.Database;
-import main.factory.SkillFactory;
+import main.java.factory.SkillFactory;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.skills.SkillInstance;
