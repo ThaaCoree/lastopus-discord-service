@@ -270,7 +270,7 @@ public class Unit {
     public void writeToSheet() {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
-            List<Request> requests = buildWriteRequests();
+            List<Request> requests = buildWriteRequests(sheetsUtil);
             sheetsUtil.takeRequests(requests);
             sheetsUtil.requestSet();
             String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้
@@ -290,10 +290,7 @@ public class Unit {
     public void writeToSheet(GoogleCredential googleCredential) {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(googleCredential);
-            List<Request> requests = buildWriteRequests();
-            System.out.println("--------------------------------------");
-            System.out.println(buildWriteRequests());
-            System.out.println("--------------------------------------");
+            List<Request> requests = buildWriteRequests(sheetsUtil);
             sheetsUtil.takeRequests(requests);
             sheetsUtil.requestSet();
             sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
@@ -302,12 +299,11 @@ public class Unit {
         }
     }
 
-    public List<Request> buildWriteRequests() {
+    public List<Request> buildWriteRequests(GoogleSheetsUtil sheetsUtil) {
         List<Request> requests = new ArrayList<>();
 
         if (unitType == UnitType.PLAYER || unitType == UnitType.NPC) {
             try {
-                GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
 
                 // หา sheetId
                 Integer sheetId = sheetsUtil.getSheetIdByName(GoogleSheetsUtil.viewerSheetId, name);

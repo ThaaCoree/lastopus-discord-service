@@ -99,7 +99,7 @@ public class MainPane extends BorderPane {
                     AtomicInteger skillStartRow = new AtomicInteger(1);
                     for (Unit unit : database.getAllUnit().values()) {
                         if (unit.getUnitType() == UnitType.PLAYER || unit.getUnitType() == UnitType.NPC){
-                            List<Request> requests = unit.buildWriteRequests();
+                            List<Request> requests = unit.buildWriteRequests(sheetsUtil);
                             sheetsUtil.takeRequests(requests);
                             if (unit.getUnitType() == UnitType.PLAYER) {
                                 sheetsUtil.takeRequests(skillWrite(unit, skillStartRow));

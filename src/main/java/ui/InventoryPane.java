@@ -124,7 +124,7 @@ public class InventoryPane extends ScrollPane {
         write.setOnAction(e -> {
             AsyncUtil.runAsync(() -> {
                 try {
-                    List<Request> requests = unit.buildWriteRequests();
+                    List<Request> requests = unit.buildWriteRequests(sheetsUtil);
                     sheetsUtil.takeRequests(requests);
                     sheetsUtil.requestSet();
                     String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้

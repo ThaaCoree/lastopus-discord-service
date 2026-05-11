@@ -1477,7 +1477,7 @@ public class CombatPane extends ScrollPane {
             //update unit sheets
             for (Unit unit : combatFlow.getAllUnit().values()) {
                 if (unit.isPlayer() || unit.isNpc()) {
-                    List<Request> requests = unit.buildWriteRequests();
+                    List<Request> requests = unit.buildWriteRequests(sheetsUtil);
                     sheetsUtil.takeRequests(requests);
                 }
             }
