@@ -2,6 +2,7 @@ package app.service;
 
 import app.servicemodel.SaveRequest;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
@@ -416,7 +417,7 @@ public class ServiceDatabase {
 
     public String save_player(String json) {
         ObjectMapper mapper = new ObjectMapper();
-
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         try {
             Map<String, Unit> map = mapper.readValue(
                     json,
