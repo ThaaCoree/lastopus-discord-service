@@ -146,7 +146,7 @@ public class InventoryManager {
         for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
             if (entry.getValue().getName().equals(name)) {
                 int slotNum = entry.getKey();
-                int current = getQuantity(slotNum);
+                int current = getQuantityFromInventory(slotNum);
                 if (current <= amount) {
                     replaceItem(slotNum, new Item(""));
                     setQuantity(slotNum, 0);
@@ -176,14 +176,8 @@ public class InventoryManager {
         unit.getInventoryItemAmount().put(slot, amount);
     }
 
-    public Integer getQuantity(String name) {
+    public Integer getQuantityFromInventory(String name) {
         for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
-            if (entry.getValue().getName().equals(name)) {
-                int slotNum = entry.getKey();
-                return unit.getInventoryItemAmount().get(slotNum);
-            }
-        }
-        for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
             if (entry.getValue().getName().equals(name)) {
                 int slotNum = entry.getKey();
                 return unit.getInventoryItemAmount().get(slotNum);
@@ -192,7 +186,7 @@ public class InventoryManager {
         return 0;
     }
 
-    public Integer getQuantity(int slotNum) {
+    public Integer getQuantityFromInventory(int slotNum) {
         return unit.getInventoryItemAmount().get(slotNum);
     }
 }

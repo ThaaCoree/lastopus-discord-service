@@ -898,6 +898,13 @@ public class Unit {
         return null;
     }
 
+    public Item findItemInventory(String name) {
+        for (Item item : inventoryItems.values()) {
+            if (item.getName().equals(name)) return item;
+        }
+        return null;
+    }
+
     public Equipment findEquipment(String name) {
         for (Item item : inventoryItems.values()) {
             if (item.getName().equals(name) && item instanceof Equipment equipment) return equipment;

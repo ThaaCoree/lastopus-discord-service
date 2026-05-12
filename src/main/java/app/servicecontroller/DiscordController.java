@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.text.NumberFormat;
 import java.util.List;
 import java.util.Map;
 
@@ -80,9 +79,11 @@ public class DiscordController {
     @PostMapping("/give")
     public String give(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
-        Equipment equipment = null;
         Unit giver = database.findPlayer(name);
         if (giver != null) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
             String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
@@ -95,9 +96,9 @@ public class DiscordController {
             if (amount <= 0) {
                 return "จำนวนต้องมากกว่า 0";
             }
-            Item item = giver.findItem(playerMessage.args.get(1));
-            int original_amount = giver.getInventoryManager().getQuantity(item.getName());
-
+            Item item = giver.findItemInventory(playerMessage.args.get(1));
+            if (item == null) return "ไม่พบไอเทม";
+            int original_amount = giver.getInventoryManager().getQuantityFromInventory(item.getName());
             if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
 
             if (item instanceof Rune rune) {
