@@ -72,6 +72,7 @@ public class DiscordController {
     }
 
     public String getPlayerName(List<String> roles) {
+        database.load_player();
         for (String role : roles) {
             if (role.equals("Christ")) {
                 return "Christ";
@@ -119,7 +120,6 @@ public class DiscordController {
                 return "Scarlet";
             }
         }
-        database.load_player();
         return "";
     }
 
