@@ -312,6 +312,7 @@ public class ServiceDatabase {
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
 
+            updateUnitObjects();
         } catch (Exception e) {
             e.printStackTrace();
         }

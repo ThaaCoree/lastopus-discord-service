@@ -77,7 +77,7 @@ public class DiscordController {
     }
 
     public String getPlayerName(List<String> roles) {
-        database.load_player();
+        database.load_all();
         for (String role : roles) {
             if (role.equals("Christ")) {
                 return "Christ";
