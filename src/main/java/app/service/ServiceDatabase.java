@@ -317,9 +317,10 @@ public class ServiceDatabase {
     }
 
     public void load_player() {
+        System.out.println("before allPlayers load");
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
-        allPlayers.remove("_id");
         System.out.println("allPlayers loaded "+ allPlayers);
+        allPlayers.remove("_id");
         allPlayerMap = allPlayers;
     }
 
