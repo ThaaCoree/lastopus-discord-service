@@ -321,7 +321,10 @@ public class ServiceDatabase {
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
         System.out.println("after load_player");
         allPlayers.remove("_id");
-        allPlayerMap = allPlayers;
+        SaveRequest saveRequest = new SaveRequest();
+        saveRequest.setAllPlayerMap(allPlayerMap);
+
+        allPlayerMap = saveRequest.getAllPlayerMap();
     }
 
     public SaveRequest load_all() {

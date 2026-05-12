@@ -36,7 +36,7 @@ public class DiscordController {
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
                 writeintoSheet(unit);
-                return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
+                return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
             }
