@@ -32,7 +32,7 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
         Equipment equipment;
         if (unit != null) {
-            equipment = (Equipment) unit.findItem(playerMessage.message);
+            equipment = unit.findEquipment(playerMessage.message);
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
                 writeintoSheet(unit);
