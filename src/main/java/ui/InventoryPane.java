@@ -855,7 +855,7 @@ public class InventoryPane extends ScrollPane {
 
         Button randomise = new Button("Randomise Stat");
         randomise.setOnAction(e -> {
-            rune.randomise_stats();
+            rune.randomise_stats(unit);
             refreshContents();
         });
         HBox slotNumBox = new HBox(slotNum);

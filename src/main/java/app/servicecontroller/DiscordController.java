@@ -30,8 +30,9 @@ public class DiscordController {
     public String equip(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
-        Equipment equipment = database.findEquipment(playerMessage.message);
+        Equipment equipment;
         if (unit != null) {
+            equipment = (Equipment) unit.findItem(playerMessage.message);
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, 1);
                 writeintoSheet(unit);

@@ -151,7 +151,17 @@ public class ItemEditPanel extends ScrollPane {
         });
 
         createButton.setOnAction(e -> {
-            database.getAllTypeItemMap().put(toMake.getName(),toMake);
+            if (toMake instanceof Rune item) {
+                database.getAllRuneMap().put(toMake.getName(), item);
+            } else if (toMake instanceof Consumable item) {
+                database.getAllConsumableMap().put(toMake.getName(), item);
+            } else if (toMake instanceof Equipment item) {
+                database.getAllEquipmentMap().put(toMake.getName(), item);
+            } else if (toMake instanceof Dream item) {
+                database.getAllDreamItem().put(toMake.getName(), item);
+            } else {
+                database.getAllTypeItemMap().put(toMake.getName(),toMake);
+            }
             database.translateEverything();
             listPane.getItemList().setAll(database.getAllTypeItemMap().values());
             listPane.getListView().refresh();

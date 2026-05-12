@@ -13,6 +13,7 @@ public class Item {
     private String price;
     private int weight;
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public Item(String name) {
         this.name = name;
         this.itemType = ItemType.NONE;

@@ -450,31 +450,22 @@ public class Database {
         for (PassiveNode node : allPassiveMap.values()) {
             StatTranslateUtil.translatePassiveNodeStatusDesc(node);
         }
-        if (allNormalItemMap != null)
-        for (Item item : allNormalItemMap.values()) {
-            if (item instanceof Equipment) {
-                Equipment equipment = (Equipment) item;
-                equipment.setStatusDescription(StatTranslateUtil.translateStatusDesc(equipment.getModifiers(),equipment.getSkills()));
-            }
+        if (allEquipmentMap != null) for (Equipment item : allEquipmentMap.values()) {
+            item.setStatusDescription(StatTranslateUtil.translateStatusDesc(item.getModifiers(), item.getSkills()));
         }
-        if (allNormalItemMap != null)
-        for (Item item : allNormalItemMap.values()) {
-            if (item instanceof Consumable) {
-                Consumable consumable = (Consumable) item;
-                StatTranslateUtil.translateConsumableStatusDesc(consumable);
-            }
+        if (allConsumableMap != null) for (Consumable item : allConsumableMap.values()) {
+            StatTranslateUtil.translateConsumableStatusDesc(item);
         }
-        if (allNormalItemMap != null)
-            for (Item item : allNormalItemMap.values()) {
-                if (item instanceof Dream) {
-                    Dream dream = (Dream) item;
-                    dream.setStatusDescription(StatTranslateUtil.translateStatusDesc(dream.getModifiers(),null));
-                    dream.addStatusDescription("\n");
-                    dream.addStatusDescription("Node : "+dream.getNodeType().writeAsString());
-                }
+        if (allRuneMap != null) for (Rune item : getAllRuneMap().values()) {
+                item.setStatusDescription(StatTranslateUtil.translateStatusDesc(item.getModifiers(), item.getSkills()));
             }
-        if (allConditionMap != null)
-        for (Conditions condition : allConditionMap.values()) {
+        if (allDreamItem != null)
+            for (Dream item : allDreamItem.values()) {
+                item.setStatusDescription(StatTranslateUtil.translateStatusDesc(item.getModifiers(), null));
+                item.addStatusDescription("\n");
+                item.addStatusDescription("Node : " + item.getNodeType().writeAsString());
+            }
+        if (allConditionMap != null) for (Conditions condition : allConditionMap.values()) {
             condition.setStatusDescription(StatTranslateUtil.translateStatusDesc(condition.getModifiers(),null));
         }
         if (allCardMap != null)

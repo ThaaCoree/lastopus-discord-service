@@ -40,4 +40,12 @@ public class WeightedRandom<T> {
 
         return null; // fallback (ปกติไม่ควรเกิด)
     }
+
+    public void clear() {
+        weights.clear();
+    }
+
+    public void remove(T item) {
+        weights.remove(item);
+    }
 }

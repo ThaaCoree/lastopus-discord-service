@@ -20,8 +20,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "2" : {
     "id" : 2,
@@ -44,8 +44,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "3" : {
     "id" : 3,
@@ -68,8 +68,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "4" : {
     "id" : 4,
@@ -92,8 +92,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "5" : {
     "id" : 5,
@@ -116,8 +116,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "6" : {
     "id" : 6,
@@ -140,8 +140,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "7" : {
     "id" : 7,
@@ -164,8 +164,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "8" : {
     "id" : 8,
@@ -188,8 +188,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "9" : {
     "id" : 9,
@@ -212,8 +212,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "10" : {
     "id" : 10,
@@ -236,8 +236,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "11" : {
     "id" : 11,
@@ -278,8 +278,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "12" : {
     "id" : 12,
@@ -302,8 +302,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "13" : {
     "id" : 13,
@@ -326,8 +326,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "14" : {
     "id" : 14,
@@ -350,8 +350,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "15" : {
     "id" : 15,
@@ -374,8 +374,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "16" : {
     "id" : 16,
@@ -403,13 +403,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "HEALING" : {
         "flat" : 0.0,
         "mult" : 1.0
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "17" : {
     "id" : 17,
@@ -441,6 +441,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
@@ -450,8 +451,7 @@
         "flat" : 0.0,
         "mult" : -0.8
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "18" : {
     "id" : 18,
@@ -556,8 +556,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "19" : {
     "id" : 19,
@@ -580,8 +580,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "20" : {
     "id" : 20,
@@ -604,8 +604,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "21" : {
     "id" : 21,
@@ -646,8 +646,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "22" : {
     "id" : 22,
@@ -670,8 +670,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "23" : {
     "id" : 23,
@@ -694,8 +694,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "24" : {
     "id" : 24,
@@ -718,8 +718,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "25" : {
     "id" : 25,
@@ -760,8 +760,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "26" : {
     "id" : 26,
@@ -802,8 +802,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "27" : {
     "id" : 27,
@@ -862,8 +862,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "28" : {
     "id" : 28,
@@ -920,8 +920,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "29" : {
     "id" : 29,
@@ -978,8 +978,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "30" : {
     "id" : 30,
@@ -1036,8 +1036,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "31" : {
     "id" : 31,
@@ -1078,8 +1078,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "32" : {
     "id" : 32,
@@ -1120,8 +1120,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "33" : {
     "id" : 33,
@@ -1162,8 +1162,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "34" : {
     "id" : 34,
@@ -1204,8 +1204,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "35" : {
     "id" : 35,
@@ -1246,8 +1246,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "36" : {
     "id" : 36,
@@ -1288,8 +1288,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "37" : {
     "id" : 37,
@@ -1330,8 +1330,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "38" : {
     "id" : 38,
@@ -1372,8 +1372,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "39" : {
     "id" : 39,
@@ -1414,8 +1414,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "40" : {
     "id" : 40,
@@ -1456,8 +1456,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "41" : {
     "id" : 41,
@@ -1498,8 +1498,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "42" : {
     "id" : 42,
@@ -1540,8 +1540,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "43" : {
     "id" : 43,
@@ -1582,8 +1582,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "44" : {
     "id" : 44,
@@ -1624,8 +1624,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "45" : {
     "id" : 45,
@@ -1682,8 +1682,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "46" : {
     "id" : 46,
@@ -1740,8 +1740,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "47" : {
     "id" : 47,
@@ -1798,8 +1798,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "48" : {
     "id" : 48,
@@ -1840,8 +1840,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "49" : {
     "id" : 49,
@@ -1882,8 +1882,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "50" : {
     "id" : 50,
@@ -1924,8 +1924,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "51" : {
     "id" : 51,
@@ -1966,8 +1966,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "52" : {
     "id" : 52,
@@ -2024,8 +2024,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "53" : {
     "id" : 53,
@@ -2082,8 +2082,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "54" : {
     "id" : 54,
@@ -2124,8 +2124,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "55" : {
     "id" : 55,
@@ -2166,8 +2166,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "56" : {
     "id" : 56,
@@ -2226,8 +2226,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "57" : {
     "id" : 57,
@@ -2286,8 +2286,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "58" : {
     "id" : 58,
@@ -2328,8 +2328,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "59" : {
     "id" : 59,
@@ -2370,8 +2370,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "60" : {
     "id" : 60,
@@ -2403,6 +2403,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
@@ -2412,8 +2413,7 @@
         "flat" : 0.0,
         "mult" : 0.1
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "61" : {
     "id" : 61,
@@ -2445,6 +2445,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
@@ -2454,8 +2455,7 @@
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "62" : {
     "id" : 62,
@@ -2487,6 +2487,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
@@ -2496,8 +2497,7 @@
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "63" : {
     "id" : 63,
@@ -2538,8 +2538,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "64" : {
     "id" : 64,
@@ -2580,8 +2580,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "65" : {
     "id" : 65,
@@ -2609,13 +2609,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "EARTH" : {
         "flat" : 0.0,
         "mult" : 0.16
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "66" : {
     "id" : 66,
@@ -2688,8 +2688,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "67" : {
     "id" : 67,
@@ -2762,8 +2762,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "68" : {
     "id" : 68,
@@ -2836,8 +2836,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "69" : {
     "id" : 69,
@@ -2878,8 +2878,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "70" : {
     "id" : 70,
@@ -2936,8 +2936,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "71" : {
     "id" : 71,
@@ -2994,8 +2994,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "72" : {
     "id" : 72,
@@ -3052,8 +3052,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "73" : {
     "id" : 73,
@@ -3094,8 +3094,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "74" : {
     "id" : 74,
@@ -3136,8 +3136,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "75" : {
     "id" : 75,
@@ -3178,8 +3178,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "76" : {
     "id" : 76,
@@ -3252,8 +3252,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "77" : {
     "id" : 77,
@@ -3326,8 +3326,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "78" : {
     "id" : 78,
@@ -3400,8 +3400,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "79" : {
     "id" : 79,
@@ -3490,8 +3490,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "80" : {
     "id" : 80,
@@ -3580,8 +3580,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "81" : {
     "id" : 81,
@@ -3670,8 +3670,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "82" : {
     "id" : 82,
@@ -3808,8 +3808,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "83" : {
     "id" : 83,
@@ -3850,8 +3850,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "84" : {
     "id" : 84,
@@ -3892,8 +3892,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "85" : {
     "id" : 85,
@@ -3934,8 +3934,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "86" : {
     "id" : 86,
@@ -3976,8 +3976,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "87" : {
     "id" : 87,
@@ -4018,8 +4018,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "88" : {
     "id" : 88,
@@ -4047,13 +4047,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DARK" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "89" : {
     "id" : 89,
@@ -4081,13 +4081,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DARK" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "90" : {
     "id" : 90,
@@ -4115,13 +4115,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DARK" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "91" : {
     "id" : 91,
@@ -4162,8 +4162,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "92" : {
     "id" : 92,
@@ -4241,7 +4241,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : null,
@@ -4297,7 +4296,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "93" : {
     "id" : 93,
@@ -4338,8 +4338,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "94" : {
     "id" : 94,
@@ -4380,8 +4380,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "95" : {
     "id" : 95,
@@ -4422,8 +4422,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "96" : {
     "id" : 96,
@@ -4464,8 +4464,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "97" : {
     "id" : 97,
@@ -4506,8 +4506,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "98" : {
     "id" : 98,
@@ -4548,8 +4548,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "99" : {
     "id" : 99,
@@ -4590,8 +4590,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "100" : {
     "id" : 100,
@@ -4624,7 +4624,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "MANAREGEN",
@@ -4635,7 +4634,8 @@
         "transferRatio" : 0.3,
         "transferType" : "CONVERSION"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "101" : {
     "id" : 101,
@@ -4663,13 +4663,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.16
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "102" : {
     "id" : 102,
@@ -4697,13 +4697,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "103" : {
     "id" : 103,
@@ -4731,13 +4731,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "104" : {
     "id" : 104,
@@ -4770,7 +4770,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -4781,7 +4780,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "105" : {
     "id" : 105,
@@ -4814,7 +4814,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -4825,7 +4824,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "106" : {
     "id" : 106,
@@ -4858,7 +4858,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -4869,7 +4868,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "107" : {
     "id" : 107,
@@ -4902,7 +4902,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -4913,7 +4912,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "108" : {
     "id" : 108,
@@ -4954,8 +4954,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "109" : {
     "id" : 109,
@@ -4996,8 +4996,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "110" : {
     "id" : 110,
@@ -5038,8 +5038,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "111" : {
     "id" : 111,
@@ -5064,8 +5064,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "112" : {
     "id" : 112,
@@ -5090,8 +5090,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "113" : {
     "id" : 113,
@@ -5116,8 +5116,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "114" : {
     "id" : 114,
@@ -5142,8 +5142,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "115" : {
     "id" : 115,
@@ -5168,8 +5168,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "116" : {
     "id" : 116,
@@ -5194,8 +5194,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "117" : {
     "id" : 117,
@@ -5220,8 +5220,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "118" : {
     "id" : 118,
@@ -5246,8 +5246,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "119" : {
     "id" : 119,
@@ -5272,8 +5272,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "120" : {
     "id" : 120,
@@ -5303,8 +5303,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "121" : {
     "id" : 121,
@@ -5332,13 +5332,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "122" : {
     "id" : 122,
@@ -5366,13 +5366,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "123" : {
     "id" : 123,
@@ -5400,13 +5400,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.04
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "124" : {
     "id" : 124,
@@ -5447,8 +5447,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "125" : {
     "id" : 125,
@@ -5489,8 +5489,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "126" : {
     "id" : 126,
@@ -5531,8 +5531,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "127" : {
     "id" : 127,
@@ -5573,8 +5573,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "128" : {
     "id" : 128,
@@ -5615,8 +5615,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "129" : {
     "id" : 129,
@@ -5657,8 +5657,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "130" : {
     "id" : 130,
@@ -5699,8 +5699,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "131" : {
     "id" : 131,
@@ -5741,8 +5741,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "132" : {
     "id" : 132,
@@ -5783,8 +5783,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "133" : {
     "id" : 133,
@@ -5825,8 +5825,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "134" : {
     "id" : 134,
@@ -5867,8 +5867,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "135" : {
     "id" : 135,
@@ -5909,8 +5909,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "136" : {
     "id" : 136,
@@ -5951,8 +5951,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "137" : {
     "id" : 137,
@@ -5993,8 +5993,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "138" : {
     "id" : 138,
@@ -6051,8 +6051,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "139" : {
     "id" : 139,
@@ -6109,8 +6109,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "140" : {
     "id" : 140,
@@ -6167,8 +6167,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "141" : {
     "id" : 141,
@@ -6209,8 +6209,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "142" : {
     "id" : 142,
@@ -6251,8 +6251,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "143" : {
     "id" : 143,
@@ -6293,8 +6293,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "144" : {
     "id" : 144,
@@ -6335,8 +6335,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "145" : {
     "id" : 145,
@@ -6368,6 +6368,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
@@ -6377,8 +6378,7 @@
         "flat" : 0.0,
         "mult" : 0.09
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "146" : {
     "id" : 146,
@@ -6406,13 +6406,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DRAWBACK" : {
         "flat" : 0.0,
         "mult" : -0.1
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "147" : {
     "id" : 147,
@@ -6435,8 +6435,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "148" : {
     "id" : 148,
@@ -6459,8 +6459,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "149" : {
     "id" : 149,
@@ -6483,8 +6483,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "150" : {
     "id" : 150,
@@ -6507,8 +6507,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "151" : {
     "id" : 151,
@@ -6531,8 +6531,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "152" : {
     "id" : 152,
@@ -6555,8 +6555,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "153" : {
     "id" : 153,
@@ -6579,8 +6579,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "154" : {
     "id" : 154,
@@ -6603,8 +6603,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "155" : {
     "id" : 155,
@@ -6627,8 +6627,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "156" : {
     "id" : 156,
@@ -6651,8 +6651,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "157" : {
     "id" : 157,
@@ -6675,8 +6675,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "158" : {
     "id" : 158,
@@ -6699,8 +6699,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "159" : {
     "id" : 159,
@@ -6723,8 +6723,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "160" : {
     "id" : 160,
@@ -6747,8 +6747,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "161" : {
     "id" : 161,
@@ -6771,8 +6771,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "162" : {
     "id" : 162,
@@ -6795,8 +6795,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "163" : {
     "id" : 163,
@@ -6819,8 +6819,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "164" : {
     "id" : 164,
@@ -6843,8 +6843,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "165" : {
     "id" : 165,
@@ -6867,8 +6867,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "166" : {
     "id" : 166,
@@ -6891,8 +6891,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "167" : {
     "id" : 167,
@@ -6915,8 +6915,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "168" : {
     "id" : 168,
@@ -6939,8 +6939,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "169" : {
     "id" : 169,
@@ -6963,8 +6963,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "170" : {
     "id" : 170,
@@ -6987,8 +6987,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "171" : {
     "id" : 171,
@@ -7011,8 +7011,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "172" : {
     "id" : 172,
@@ -7035,8 +7035,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "173" : {
     "id" : 173,
@@ -7059,8 +7059,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "174" : {
     "id" : 174,
@@ -7083,8 +7083,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "175" : {
     "id" : 175,
@@ -7107,8 +7107,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "176" : {
     "id" : 176,
@@ -7131,8 +7131,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "177" : {
     "id" : 177,
@@ -7155,8 +7155,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "178" : {
     "id" : 178,
@@ -7179,8 +7179,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "179" : {
     "id" : 179,
@@ -7203,8 +7203,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "180" : {
     "id" : 180,
@@ -7227,8 +7227,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "181" : {
     "id" : 181,
@@ -7251,8 +7251,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "182" : {
     "id" : 182,
@@ -7275,8 +7275,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "183" : {
     "id" : 183,
@@ -7299,8 +7299,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "184" : {
     "id" : 184,
@@ -7323,8 +7323,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "185" : {
     "id" : 185,
@@ -7347,8 +7347,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "186" : {
     "id" : 186,
@@ -7371,8 +7371,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "187" : {
     "id" : 187,
@@ -7395,8 +7395,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "188" : {
     "id" : 188,
@@ -7419,8 +7419,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "189" : {
     "id" : 189,
@@ -7443,8 +7443,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "190" : {
     "id" : 190,
@@ -7467,8 +7467,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "191" : {
     "id" : 191,
@@ -7491,8 +7491,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "192" : {
     "id" : 192,
@@ -7515,8 +7515,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "193" : {
     "id" : 193,
@@ -7539,8 +7539,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "194" : {
     "id" : 194,
@@ -7563,8 +7563,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "195" : {
     "id" : 195,
@@ -7587,8 +7587,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "196" : {
     "id" : 196,
@@ -7629,8 +7629,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "197" : {
     "id" : 197,
@@ -7671,8 +7671,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "198" : {
     "id" : 198,
@@ -7713,8 +7713,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "199" : {
     "id" : 199,
@@ -7755,8 +7755,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "200" : {
     "id" : 200,
@@ -7797,8 +7797,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "201" : {
     "id" : 201,
@@ -7821,8 +7821,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "202" : {
     "id" : 202,
@@ -7863,8 +7863,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "203" : {
     "id" : 203,
@@ -7905,8 +7905,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "204" : {
     "id" : 204,
@@ -7947,8 +7947,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "205" : {
     "id" : 205,
@@ -7989,8 +7989,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "206" : {
     "id" : 206,
@@ -8031,8 +8031,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "207" : {
     "id" : 207,
@@ -8073,8 +8073,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "208" : {
     "id" : 208,
@@ -8115,8 +8115,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "209" : {
     "id" : 209,
@@ -8157,8 +8157,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "210" : {
     "id" : 210,
@@ -8199,8 +8199,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "211" : {
     "id" : 211,
@@ -8241,8 +8241,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "212" : {
     "id" : 212,
@@ -8283,8 +8283,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "213" : {
     "id" : 213,
@@ -8325,8 +8325,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "214" : {
     "id" : 214,
@@ -8367,8 +8367,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "215" : {
     "id" : 215,
@@ -8409,8 +8409,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "216" : {
     "id" : 216,
@@ -8451,8 +8451,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "217" : {
     "id" : 217,
@@ -8493,8 +8493,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "218" : {
     "id" : 218,
@@ -8535,8 +8535,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "219" : {
     "id" : 219,
@@ -8577,8 +8577,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "220" : {
     "id" : 220,
@@ -8619,8 +8619,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "221" : {
     "id" : 221,
@@ -8662,6 +8662,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "STRIKE" : {
         "flat" : 0.0,
@@ -8679,8 +8680,7 @@
         "flat" : 0.0,
         "mult" : -0.35
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "222" : {
     "id" : 222,
@@ -8737,8 +8737,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "223" : {
     "id" : 223,
@@ -8761,8 +8761,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "224" : {
     "id" : 224,
@@ -8785,8 +8785,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "225" : {
     "id" : 225,
@@ -8809,8 +8809,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "226" : {
     "id" : 226,
@@ -8833,8 +8833,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "227" : {
     "id" : 227,
@@ -8857,8 +8857,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "228" : {
     "id" : 228,
@@ -8881,8 +8881,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "229" : {
     "id" : 229,
@@ -8905,8 +8905,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "230" : {
     "id" : 230,
@@ -8929,8 +8929,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "231" : {
     "id" : 231,
@@ -8953,8 +8953,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "232" : {
     "id" : 232,
@@ -8982,13 +8982,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "STRIKE" : {
         "flat" : 0.0,
         "mult" : 0.12
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "233" : {
     "id" : 233,
@@ -9011,8 +9011,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "234" : {
     "id" : 234,
@@ -9035,8 +9035,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "235" : {
     "id" : 235,
@@ -9059,8 +9059,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "236" : {
     "id" : 236,
@@ -9085,8 +9085,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "237" : {
     "id" : 237,
@@ -9114,13 +9114,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "238" : {
     "id" : 238,
@@ -9148,13 +9148,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "239" : {
     "id" : 239,
@@ -9182,13 +9182,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "240" : {
     "id" : 240,
@@ -9216,13 +9216,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WATER" : {
         "flat" : 0.0,
         "mult" : 0.11
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "241" : {
     "id" : 241,
@@ -9250,13 +9250,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "LIMIT" : {
         "flat" : 1.0,
         "mult" : 0.0
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "242" : {
     "id" : 242,
@@ -9284,13 +9284,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DISTANCE" : {
         "flat" : 0.0,
         "mult" : 0.13
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "243" : {
     "id" : 243,
@@ -9318,13 +9318,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DISTANCE" : {
         "flat" : 0.0,
         "mult" : 0.025
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "244" : {
     "id" : 244,
@@ -9352,13 +9352,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DISTANCE" : {
         "flat" : 0.0,
         "mult" : 0.025
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "245" : {
     "id" : 245,
@@ -9386,13 +9386,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DISTANCE" : {
         "flat" : 0.0,
         "mult" : 0.025
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "246" : {
     "id" : 246,
@@ -9433,8 +9433,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "247" : {
     "id" : 247,
@@ -9475,8 +9475,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "248" : {
     "id" : 248,
@@ -9517,8 +9517,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "249" : {
     "id" : 249,
@@ -9543,8 +9543,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "250" : {
     "id" : 250,
@@ -9585,8 +9585,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "251" : {
     "id" : 251,
@@ -9643,8 +9643,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "252" : {
     "id" : 252,
@@ -9701,8 +9701,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "253" : {
     "id" : 253,
@@ -9743,8 +9743,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "254" : {
     "id" : 254,
@@ -9785,8 +9785,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "255" : {
     "id" : 255,
@@ -9827,8 +9827,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "256" : {
     "id" : 256,
@@ -9869,8 +9869,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "257" : {
     "id" : 257,
@@ -9911,8 +9911,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "258" : {
     "id" : 258,
@@ -9953,8 +9953,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "259" : {
     "id" : 259,
@@ -9979,8 +9979,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "260" : {
     "id" : 260,
@@ -10021,8 +10021,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "261" : {
     "id" : 261,
@@ -10063,8 +10063,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "262" : {
     "id" : 262,
@@ -10105,8 +10105,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "263" : {
     "id" : 263,
@@ -10147,8 +10147,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "264" : {
     "id" : 264,
@@ -10189,8 +10189,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "265" : {
     "id" : 265,
@@ -10218,13 +10218,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "EARTH" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "266" : {
     "id" : 266,
@@ -10252,13 +10252,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "EARTH" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "267" : {
     "id" : 267,
@@ -10286,13 +10286,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "EARTH" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "268" : {
     "id" : 268,
@@ -10320,13 +10320,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "EARTH" : {
         "flat" : 0.0,
         "mult" : 0.11
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "269" : {
     "id" : 269,
@@ -10367,8 +10367,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "270" : {
     "id" : 270,
@@ -10409,8 +10409,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "271" : {
     "id" : 271,
@@ -10451,8 +10451,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "272" : {
     "id" : 272,
@@ -10493,8 +10493,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "273" : {
     "id" : 273,
@@ -10517,8 +10517,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "274" : {
     "id" : 274,
@@ -10541,8 +10541,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "275" : {
     "id" : 275,
@@ -10565,8 +10565,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "276" : {
     "id" : 276,
@@ -10589,8 +10589,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "277" : {
     "id" : 277,
@@ -10615,8 +10615,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "278" : {
     "id" : 278,
@@ -10641,8 +10641,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "279" : {
     "id" : 279,
@@ -10665,8 +10665,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "280" : {
     "id" : 280,
@@ -10691,8 +10691,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "281" : {
     "id" : 281,
@@ -10717,8 +10717,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "282" : {
     "id" : 282,
@@ -10746,13 +10746,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "283" : {
     "id" : 283,
@@ -10780,13 +10780,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "284" : {
     "id" : 284,
@@ -10814,13 +10814,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.03
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "285" : {
     "id" : 285,
@@ -10848,13 +10848,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "WIND" : {
         "flat" : 0.0,
         "mult" : 0.11
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "286" : {
     "id" : 286,
@@ -10895,8 +10895,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "287" : {
     "id" : 287,
@@ -10937,8 +10937,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "288" : {
     "id" : 288,
@@ -10979,8 +10979,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "289" : {
     "id" : 289,
@@ -11003,8 +11003,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "290" : {
     "id" : 290,
@@ -11027,8 +11027,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "291" : {
     "id" : 291,
@@ -11051,8 +11051,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "292" : {
     "id" : 292,
@@ -11075,8 +11075,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "293" : {
     "id" : 293,
@@ -11099,8 +11099,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "294" : {
     "id" : 294,
@@ -11123,8 +11123,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "295" : {
     "id" : 295,
@@ -11147,8 +11147,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "296" : {
     "id" : 296,
@@ -11199,7 +11199,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "PHYSICALATTACK",
@@ -11228,7 +11227,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "297" : {
     "id" : 297,
@@ -11285,8 +11285,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "298" : {
     "id" : 298,
@@ -11337,7 +11337,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "PHYSICALATTACK",
@@ -11366,7 +11365,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "299" : {
     "id" : 299,
@@ -11407,8 +11407,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "300" : {
     "id" : 300,
@@ -11449,8 +11449,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "301" : {
     "id" : 301,
@@ -11491,8 +11491,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "302" : {
     "id" : 302,
@@ -11533,8 +11533,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "303" : {
     "id" : 303,
@@ -11575,8 +11575,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "304" : {
     "id" : 304,
@@ -11609,7 +11609,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "DEBUFFAMPLIFIER",
@@ -11620,7 +11619,8 @@
         "transferRatio" : 0.2,
         "transferType" : "CONVERSION"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "305" : {
     "id" : 305,
@@ -11643,8 +11643,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "306" : {
     "id" : 306,
@@ -11667,8 +11667,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "307" : {
     "id" : 307,
@@ -11691,8 +11691,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "308" : {
     "id" : 308,
@@ -11715,8 +11715,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "309" : {
     "id" : 309,
@@ -11773,8 +11773,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "310" : {
     "id" : 310,
@@ -11797,8 +11797,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "311" : {
     "id" : 311,
@@ -11821,8 +11821,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "312" : {
     "id" : 312,
@@ -11845,8 +11845,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "313" : {
     "id" : 313,
@@ -11869,8 +11869,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "314" : {
     "id" : 314,
@@ -11902,6 +11902,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "STRIKE" : {
         "flat" : 0.0,
@@ -11911,8 +11912,7 @@
         "flat" : 0.0,
         "mult" : 0.1
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "315" : {
     "id" : 315,
@@ -11935,8 +11935,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "316" : {
     "id" : 316,
@@ -11959,8 +11959,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "317" : {
     "id" : 317,
@@ -12001,8 +12001,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "318" : {
     "id" : 318,
@@ -12043,8 +12043,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "319" : {
     "id" : 319,
@@ -12085,8 +12085,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "320" : {
     "id" : 320,
@@ -12127,8 +12127,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "321" : {
     "id" : 321,
@@ -12169,8 +12169,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "322" : {
     "id" : 322,
@@ -12211,8 +12211,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "323" : {
     "id" : 323,
@@ -12245,7 +12245,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -12256,7 +12255,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "324" : {
     "id" : 324,
@@ -12289,7 +12289,6 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
     "transferModifiers" : {
       "1" : {
         "sourceStat" : "ACCURACY",
@@ -12300,7 +12299,8 @@
         "transferRatio" : 1.0,
         "transferType" : "GAIN"
       }
-    }
+    },
+    "skillModifiers" : { }
   },
   "325" : {
     "id" : 325,
@@ -12328,13 +12328,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "326" : {
     "id" : 326,
@@ -12362,13 +12362,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "327" : {
     "id" : 327,
@@ -12396,13 +12396,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "328" : {
     "id" : 328,
@@ -12430,13 +12430,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "329" : {
     "id" : 329,
@@ -12464,13 +12464,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "330" : {
     "id" : 330,
@@ -12498,13 +12498,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "331" : {
     "id" : 331,
@@ -12532,13 +12532,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "332" : {
     "id" : 332,
@@ -12566,13 +12566,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
         "mult" : 0.1
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "333" : {
     "id" : 333,
@@ -12595,8 +12595,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "334" : {
     "id" : 334,
@@ -12619,8 +12619,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "335" : {
     "id" : 335,
@@ -12643,8 +12643,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "336" : {
     "id" : 336,
@@ -12667,8 +12667,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "337" : {
     "id" : 337,
@@ -12691,8 +12691,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "338" : {
     "id" : 338,
@@ -12715,8 +12715,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "339" : {
     "id" : 339,
@@ -12757,8 +12757,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "340" : {
     "id" : 340,
@@ -12799,8 +12799,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "341" : {
     "id" : 341,
@@ -12841,8 +12841,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "342" : {
     "id" : 342,
@@ -12883,8 +12883,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "343" : {
     "id" : 343,
@@ -12925,8 +12925,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "344" : {
     "id" : 344,
@@ -12999,8 +12999,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "345" : {
     "id" : 345,
@@ -13073,8 +13073,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "346" : {
     "id" : 346,
@@ -13147,8 +13147,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "347" : {
     "id" : 347,
@@ -13221,8 +13221,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "348" : {
     "id" : 348,
@@ -13245,8 +13245,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "349" : {
     "id" : 349,
@@ -13269,8 +13269,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "350" : {
     "id" : 350,
@@ -13293,8 +13293,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "351" : {
     "id" : 351,
@@ -13317,8 +13317,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "352" : {
     "id" : 352,
@@ -13359,8 +13359,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "353" : {
     "id" : 353,
@@ -13383,8 +13383,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "354" : {
     "id" : 354,
@@ -13407,8 +13407,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "355" : {
     "id" : 355,
@@ -13431,8 +13431,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "356" : {
     "id" : 356,
@@ -13460,8 +13460,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "357" : {
     "id" : 357,
@@ -13507,13 +13507,13 @@
       }
     },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DURATION" : {
         "flat" : 1.0,
         "mult" : 0.0
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "358" : {
     "id" : 358,
@@ -13536,8 +13536,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "359" : {
     "id" : 359,
@@ -13560,8 +13560,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "360" : {
     "id" : 360,
@@ -13602,8 +13602,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "361" : {
     "id" : 361,
@@ -13626,8 +13626,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "362" : {
     "id" : 362,
@@ -13650,8 +13650,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "363" : {
     "id" : 363,
@@ -13674,8 +13674,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "364" : {
     "id" : 364,
@@ -13698,8 +13698,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "365" : {
     "id" : 365,
@@ -13722,8 +13722,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "366" : {
     "id" : 366,
@@ -13746,8 +13746,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "367" : {
     "id" : 367,
@@ -13770,8 +13770,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "368" : {
     "id" : 368,
@@ -13819,6 +13819,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "FIRE" : {
         "flat" : 0.0,
@@ -13844,8 +13845,7 @@
         "flat" : 0.0,
         "mult" : 0.08
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "369" : {
     "id" : 369,
@@ -13873,13 +13873,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SPELL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "370" : {
     "id" : 370,
@@ -13907,13 +13907,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SPELL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "371" : {
     "id" : 371,
@@ -13941,13 +13941,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SPELL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "372" : {
     "id" : 372,
@@ -13975,13 +13975,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SPELL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "373" : {
     "id" : 373,
@@ -14009,13 +14009,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SPELL" : {
         "flat" : 0.0,
         "mult" : 0.07
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "374" : {
     "id" : 374,
@@ -14038,8 +14038,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "375" : {
     "id" : 375,
@@ -14062,8 +14062,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "376" : {
     "id" : 376,
@@ -14086,8 +14086,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "377" : {
     "id" : 377,
@@ -14112,8 +14112,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "378" : {
     "id" : 378,
@@ -14136,8 +14136,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "379" : {
     "id" : 379,
@@ -14226,8 +14226,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "380" : {
     "id" : 380,
@@ -14284,8 +14284,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "381" : {
     "id" : 381,
@@ -14308,8 +14308,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "382" : {
     "id" : 382,
@@ -14332,8 +14332,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "383" : {
     "id" : 383,
@@ -14374,8 +14374,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "384" : {
     "id" : 384,
@@ -14416,8 +14416,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "385" : {
     "id" : 385,
@@ -14458,8 +14458,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "386" : {
     "id" : 386,
@@ -14500,8 +14500,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "387" : {
     "id" : 387,
@@ -14529,13 +14529,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.07
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "388" : {
     "id" : 388,
@@ -14563,13 +14563,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "389" : {
     "id" : 389,
@@ -14597,13 +14597,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "390" : {
     "id" : 390,
@@ -14631,13 +14631,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "391" : {
     "id" : 391,
@@ -14665,13 +14665,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "392" : {
     "id" : 392,
@@ -14712,8 +14712,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "393" : {
     "id" : 393,
@@ -14754,8 +14754,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "394" : {
     "id" : 394,
@@ -14796,8 +14796,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "395" : {
     "id" : 395,
@@ -14838,8 +14838,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "396" : {
     "id" : 396,
@@ -14880,8 +14880,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "397" : {
     "id" : 397,
@@ -14922,8 +14922,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "398" : {
     "id" : 398,
@@ -14964,8 +14964,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "399" : {
     "id" : 399,
@@ -15006,8 +15006,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "400" : {
     "id" : 400,
@@ -15048,8 +15048,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "401" : {
     "id" : 401,
@@ -15090,8 +15090,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "402" : {
     "id" : 402,
@@ -15132,8 +15132,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "403" : {
     "id" : 403,
@@ -15174,8 +15174,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "404" : {
     "id" : 404,
@@ -15216,8 +15216,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "405" : {
     "id" : 405,
@@ -15274,8 +15274,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "406" : {
     "id" : 406,
@@ -15300,8 +15300,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "407" : {
     "id" : 407,
@@ -15342,8 +15342,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "408" : {
     "id" : 408,
@@ -15371,13 +15371,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "ELEMENTAL" : {
         "flat" : 0.0,
         "mult" : 0.1
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "409" : {
     "id" : 409,
@@ -15400,8 +15400,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "410" : {
     "id" : 410,
@@ -15424,8 +15424,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "411" : {
     "id" : 411,
@@ -15448,8 +15448,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "412" : {
     "id" : 412,
@@ -15472,8 +15472,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "413" : {
     "id" : 413,
@@ -15496,8 +15496,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "414" : {
     "id" : 414,
@@ -15520,8 +15520,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "415" : {
     "id" : 415,
@@ -15562,8 +15562,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "416" : {
     "id" : 416,
@@ -15604,8 +15604,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "417" : {
     "id" : 417,
@@ -15646,8 +15646,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "418" : {
     "id" : 418,
@@ -15688,8 +15688,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "419" : {
     "id" : 419,
@@ -15730,8 +15730,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "420" : {
     "id" : 420,
@@ -15772,8 +15772,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "421" : {
     "id" : 421,
@@ -15814,8 +15814,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "422" : {
     "id" : 422,
@@ -15872,8 +15872,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "423" : {
     "id" : 423,
@@ -15930,8 +15930,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "424" : {
     "id" : 424,
@@ -15988,8 +15988,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "425" : {
     "id" : 425,
@@ -16046,8 +16046,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "426" : {
     "id" : 426,
@@ -16104,8 +16104,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "427" : {
     "id" : 427,
@@ -16162,8 +16162,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "428" : {
     "id" : 428,
@@ -16220,8 +16220,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "429" : {
     "id" : 429,
@@ -16278,8 +16278,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "430" : {
     "id" : 430,
@@ -16304,8 +16304,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "431" : {
     "id" : 431,
@@ -16330,8 +16330,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "432" : {
     "id" : 432,
@@ -16356,8 +16356,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "433" : {
     "id" : 433,
@@ -16382,8 +16382,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "434" : {
     "id" : 434,
@@ -16406,8 +16406,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "435" : {
     "id" : 435,
@@ -16430,8 +16430,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "436" : {
     "id" : 436,
@@ -16454,8 +16454,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "437" : {
     "id" : 437,
@@ -16483,13 +16483,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "PHYSICAL" : {
         "flat" : 0.0,
         "mult" : 0.11
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "438" : {
     "id" : 438,
@@ -16546,8 +16546,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "439" : {
     "id" : 439,
@@ -16604,8 +16604,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "440" : {
     "id" : 440,
@@ -16662,8 +16662,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "441" : {
     "id" : 441,
@@ -16720,8 +16720,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "442" : {
     "id" : 442,
@@ -16778,8 +16778,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "443" : {
     "id" : 443,
@@ -16820,8 +16820,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "444" : {
     "id" : 444,
@@ -16862,8 +16862,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "445" : {
     "id" : 445,
@@ -16904,8 +16904,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "446" : {
     "id" : 446,
@@ -16946,8 +16946,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "447" : {
     "id" : 447,
@@ -16988,8 +16988,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "448" : {
     "id" : 448,
@@ -17030,8 +17030,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "449" : {
     "id" : 449,
@@ -17054,8 +17054,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "450" : {
     "id" : 450,
@@ -17078,8 +17078,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "451" : {
     "id" : 451,
@@ -17136,8 +17136,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "452" : {
     "id" : 452,
@@ -17178,8 +17178,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "453" : {
     "id" : 453,
@@ -17220,8 +17220,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "454" : {
     "id" : 454,
@@ -17244,8 +17244,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "455" : {
     "id" : 455,
@@ -17268,8 +17268,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "456" : {
     "id" : 456,
@@ -17292,8 +17292,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "457" : {
     "id" : 457,
@@ -17321,13 +17321,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.15
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "458" : {
     "id" : 458,
@@ -17368,8 +17368,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "459" : {
     "id" : 459,
@@ -17410,8 +17410,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "460" : {
     "id" : 460,
@@ -17452,8 +17452,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "461" : {
     "id" : 461,
@@ -17494,8 +17494,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "462" : {
     "id" : 462,
@@ -17552,8 +17552,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "463" : {
     "id" : 463,
@@ -17594,8 +17594,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "464" : {
     "id" : 464,
@@ -17636,8 +17636,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "465" : {
     "id" : 465,
@@ -17678,8 +17678,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "466" : {
     "id" : 466,
@@ -17720,8 +17720,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "467" : {
     "id" : 467,
@@ -17762,8 +17762,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "468" : {
     "id" : 468,
@@ -17804,8 +17804,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "469" : {
     "id" : 469,
@@ -17833,13 +17833,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DRAWBACK" : {
         "flat" : 0.0,
         "mult" : -0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "470" : {
     "id" : 470,
@@ -17867,13 +17867,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DRAWBACK" : {
         "flat" : 0.0,
         "mult" : -0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "471" : {
     "id" : 471,
@@ -17901,13 +17901,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DRAWBACK" : {
         "flat" : 0.0,
         "mult" : -0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "472" : {
     "id" : 472,
@@ -17935,13 +17935,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "DRAWBACK" : {
         "flat" : 0.0,
         "mult" : -0.05
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "473" : {
     "id" : 473,
@@ -17969,13 +17969,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "474" : {
     "id" : 474,
@@ -18003,13 +18003,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "475" : {
     "id" : 475,
@@ -18037,13 +18037,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "476" : {
     "id" : 476,
@@ -18071,13 +18071,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "477" : {
     "id" : 477,
@@ -18105,13 +18105,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.02
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "478" : {
     "id" : 478,
@@ -18139,13 +18139,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "SCALING" : {
         "flat" : 0.0,
         "mult" : 0.12
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "479" : {
     "id" : 479,
@@ -18186,8 +18186,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "480" : {
     "id" : 480,
@@ -18228,8 +18228,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "481" : {
     "id" : 481,
@@ -18270,8 +18270,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "482" : {
     "id" : 482,
@@ -18312,8 +18312,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "483" : {
     "id" : 483,
@@ -18354,8 +18354,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "484" : {
     "id" : 484,
@@ -18428,8 +18428,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "485" : {
     "id" : 485,
@@ -18502,8 +18502,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "486" : {
     "id" : 486,
@@ -18576,8 +18576,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "487" : {
     "id" : 487,
@@ -18714,8 +18714,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "488" : {
     "id" : 488,
@@ -18756,8 +18756,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "489" : {
     "id" : 489,
@@ -18798,8 +18798,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "490" : {
     "id" : 490,
@@ -18840,8 +18840,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "491" : {
     "id" : 491,
@@ -18882,8 +18882,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "492" : {
     "id" : 492,
@@ -18924,8 +18924,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "493" : {
     "id" : 493,
@@ -18966,8 +18966,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "494" : {
     "id" : 494,
@@ -19008,8 +19008,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "495" : {
     "id" : 495,
@@ -19050,8 +19050,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "496" : {
     "id" : 496,
@@ -19092,8 +19092,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "497" : {
     "id" : 497,
@@ -19134,8 +19134,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "498" : {
     "id" : 498,
@@ -19176,8 +19176,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "499" : {
     "id" : 499,
@@ -19218,8 +19218,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "500" : {
     "id" : 500,
@@ -19260,8 +19260,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "501" : {
     "id" : 501,
@@ -19302,8 +19302,8 @@
         "passiveMult" : 0.0
       }
     },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "502" : {
     "id" : 502,
@@ -19328,8 +19328,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "503" : {
     "id" : 503,
@@ -19352,8 +19352,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "504" : {
     "id" : 504,
@@ -19376,8 +19376,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "505" : {
     "id" : 505,
@@ -19400,8 +19400,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "506" : {
     "id" : 506,
@@ -19424,8 +19424,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "507" : {
     "id" : 507,
@@ -19466,8 +19466,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "508" : {
     "id" : 508,
@@ -19508,8 +19508,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "509" : {
     "id" : 509,
@@ -19550,8 +19550,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "510" : {
     "id" : 510,
@@ -19592,8 +19592,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "511" : {
     "id" : 511,
@@ -19634,8 +19634,8 @@
       }
     },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "512" : {
     "id" : 512,
@@ -19663,13 +19663,13 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "skillModifiers" : {
       "REQUIREMENT" : {
         "flat" : -1.0,
         "mult" : 0.0
       }
-    },
-    "transferModifiers" : { }
+    }
   },
   "513" : {
     "id" : 513,
@@ -19694,8 +19694,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "514" : {
     "id" : 514,
@@ -19720,8 +19720,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "515" : {
     "id" : 515,
@@ -19746,8 +19746,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "516" : {
     "id" : 516,
@@ -19772,8 +19772,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "517" : {
     "id" : 517,
@@ -19798,8 +19798,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "518" : {
     "id" : 518,
@@ -19824,8 +19824,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "519" : {
     "id" : 519,
@@ -19850,8 +19850,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "520" : {
     "id" : 520,
@@ -19876,8 +19876,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "521" : {
     "id" : 521,
@@ -19902,8 +19902,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "522" : {
     "id" : 522,
@@ -19928,8 +19928,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "523" : {
     "id" : 523,
@@ -19954,8 +19954,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "524" : {
     "id" : 524,
@@ -19980,8 +19980,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "525" : {
     "id" : 525,
@@ -20006,8 +20006,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "526" : {
     "id" : 526,
@@ -20032,8 +20032,8 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   },
   "527" : {
     "id" : 527,
@@ -20058,7 +20058,7 @@
     "dream" : false,
     "statModifiers" : { },
     "statusModifiers" : { },
-    "skillModifiers" : { },
-    "transferModifiers" : { }
+    "transferModifiers" : { },
+    "skillModifiers" : { }
   }
 }

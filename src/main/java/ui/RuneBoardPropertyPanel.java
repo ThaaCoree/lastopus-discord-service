@@ -29,6 +29,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
     Button remove_all_runes = new Button("Remove All Runes");
     Button add = new Button("+");
     Button remove = new Button("-");
+    Button random_rune = new Button("Random Rune");
     VBox whole_box = new VBox();
 
     public RuneBoardPropertyPanel(Unit unit, RuneBoardPane runeBoardPane, Database database) {
@@ -50,12 +51,16 @@ public class RuneBoardPropertyPanel extends ScrollPane {
             unit.decreaseRuneInventory();
             refreshContents();
         });
+        random_rune.setOnAction(e-> {
+            unit.addRuneToInventory(Rune.randomRune(unit));
+            refreshContents();
+        });
 
         remove_all_runes.setOnAction(e-> {
             removeAllRunes();
             runeBoardPane.refreshContent();
         });
-        whole_box.getChildren().addAll(remove_all_runes,add,remove);
+        whole_box.getChildren().addAll(remove_all_runes,add,remove, random_rune );
         for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
             VBox row = createRuneInventoryRow(entry);
             whole_box.getChildren().add(row);
@@ -82,7 +87,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
 
     public void refreshContents() {
         whole_box.getChildren().clear();
-        whole_box.getChildren().addAll(remove_all_runes,add, remove);
+        whole_box.getChildren().addAll(remove_all_runes,add, remove, random_rune);
 
         for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
             VBox row = createRuneInventoryRow(entry);
@@ -124,7 +129,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
 
         Button randomise = new Button("Randomise Stat");
         randomise.setOnAction(e -> {
-            rune.randomise_stats();
+            rune.randomise_stats(unit);
             refreshContents();
         });
 
