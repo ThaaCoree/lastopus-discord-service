@@ -4,6 +4,10 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.units.Unit;
 import model.type.EquipmentType;
+import model.type.WeaponType;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EquipmentManager {
     private final Unit unit;
@@ -75,6 +79,7 @@ public class EquipmentManager {
         } else {
             System.out.println("Equipment type does not match the slot type.");
         }
+        handleMixTwoHanded(unit);
         unit.calculateEverything();
     }
 
@@ -122,6 +127,26 @@ public class EquipmentManager {
             System.out.println("Invalid slot number: " + slot);
             return null;
         }
+        handleMixTwoHanded(unit);
         return equipmentSlot.getEquipment();
+    }
+
+    public boolean handleMixTwoHanded(Unit unit) {
+        Equipment equipment1 = unit.getEquipmentSlots().get(7).getEquipment();
+        Equipment equipment2 = unit.getEquipmentSlots().get(8).getEquipment();
+        if (equipment1 == null || equipment2 == null) {
+            return false;
+        }
+        List<WeaponType> weaponType = new ArrayList<>();
+        weaponType.add(equipment1.getWeaponType());
+        weaponType.add(equipment2.getWeaponType());
+
+        for (WeaponType type : weaponType) {
+            if (type == WeaponType.SHIELD ||
+                type == WeaponType.CHAIN) {
+                return false;
+            }
+        }
+        return true;
     }
 }

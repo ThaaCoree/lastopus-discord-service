@@ -71,6 +71,10 @@ public class DiscordController {
         }
     }
 
+    public boolean isGM(List<String> roles) {
+        return roles.contains("GM");
+    }
+
     public String getPlayerName(List<String> roles) {
         database.load_player();
         for (String role : roles) {
