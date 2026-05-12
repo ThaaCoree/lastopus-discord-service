@@ -319,15 +319,11 @@ public class ServiceDatabase {
     }
 
     public void load_player() {
-        System.out.println("before load_player");
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
-        System.out.println("after load_player");
-        System.out.println("allPlayers : "+allPlayers);
         allPlayers.remove("_id");
-        SaveRequest saveRequest = new SaveRequest();
-        saveRequest.setAllPlayerMap(allPlayers);
-        System.out.println("allPlayerMap : "+allPlayerMap);
-        allPlayerMap = saveRequest.getAllPlayerMap();
+
+        allPlayerMap.clear();
+        allPlayerMap = allPlayers;  // ใช้ allPlayers ที่โหลดใหม่จาก DB
         updateUnitObjects();
     }
 
