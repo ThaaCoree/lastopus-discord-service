@@ -245,6 +245,7 @@ public class ServiceDatabase {
 
 
     public void mapAllUnit() {
+        allUnit.clear();
         if (allPlayerMap != null)
             allUnit.putAll(allPlayerMap);
         if (allNPCMap != null)
