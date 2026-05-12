@@ -142,15 +142,24 @@ public class InventoryManager {
         }
     }
 
-    public void removeItem(String name) {
+    public void removeItem(String name, int amount) {
         for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
             if (entry.getValue().getName().equals(name)) {
                 int slotNum = entry.getKey();
-                replaceItem(slotNum, new Item(""));
-                setQuantity(slotNum, 0);
+                int current = getQuantity(slotNum);
+                if (current <= amount) {
+                    replaceItem(slotNum, new Item(""));
+                    setQuantity(slotNum, 0);
+                } else {
+                    setQuantity(slotNum, current - amount);
+                }
                 return;
             }
         }
+    }
+
+    public void removeItem(String name) {
+        removeItem(name, 1);
     }
 
     public int findItem(String name) {
@@ -181,5 +190,9 @@ public class InventoryManager {
             }
         }
         return 0;
+    }
+
+    public Integer getQuantity(int slotNum) {
+        return unit.getInventoryItemAmount().get(slotNum);
     }
 }

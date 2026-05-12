@@ -98,10 +98,7 @@ public class DiscordController {
                         "<@" + playerMessage.mentionedUsers.get(0).id + ">";
             } else {
                 target.getInventoryManager().addItem(item, amount);
-                giver.getInventoryManager().removeItem(item.getName());
-                if (original_amount > amount) {
-                    giver.getInventoryManager().addItem(item, original_amount - amount);
-                }
+                giver.getInventoryManager().removeItem(item.getName(), amount);
                 writeintoSheet(giver);
                 writeintoSheet(target);
                 return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
