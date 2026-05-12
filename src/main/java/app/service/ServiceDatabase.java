@@ -328,7 +328,7 @@ public class ServiceDatabase {
         saveRequest.setAllPlayerMap(allPlayerMap);
         System.out.println("allPlayerMap : "+allPlayerMap);
         allPlayerMap.clear();
-        allPlayerMap = saveRequest.getAllPlayerMap();
+        allPlayerMap.putAll(saveRequest.getAllPlayerMap());
         updateUnitObjects();
     }
 
