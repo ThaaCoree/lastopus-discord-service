@@ -325,6 +325,7 @@ public class ServiceDatabase {
 
         allPlayerMap.clear();
         allPlayerMap = allPlayers;  // ใช้ allPlayers ที่โหลดใหม่จาก DB
+        allUnit.putAll(allPlayerMap);
         updateUnitObjects();
     }
 
