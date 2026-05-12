@@ -424,8 +424,7 @@ public class ServiceDatabase {
                     new TypeReference<Map<String, Unit>>() {
                     }
             );
-            Unit unit = new Unit();
-            allPlayerMap.put("_id", unit);
+            mongoTemplate.dropCollection("players");
             mongoTemplate.save(map, "players");
         }catch (Exception e) {
             e.printStackTrace();
