@@ -892,6 +892,9 @@ public class Unit {
         for (Item item : backpackItems.values()) {
             if (item.getName().equals(name)) return item;
         }
+        for (Item item : rune_inventory.values()) {
+            if (item.getName().equals(name)) return item;
+        }
         return null;
     }
 

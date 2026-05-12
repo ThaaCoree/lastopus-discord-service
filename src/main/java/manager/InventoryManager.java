@@ -53,12 +53,14 @@ public class InventoryManager {
         unit.getInventoryItemAmount().remove(lastSlot);
     }
 
-    public void addItem(Item item) {
+    public void addItem(Item item, int amount) {
         for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
             int slotNum = entry.getKey();
 
             if (entry.getValue().getName().equals(item.getName())) {
-                increaseQuantityByOne(slotNum);
+                for (int i = 0; i < amount; i++) {
+                    increaseQuantityByOne(slotNum);
+                }
                 return;
             }
         }
@@ -68,11 +70,15 @@ public class InventoryManager {
 
             if (entry.getValue().getName().equals("")) {
                 replaceItem(slotNum, item);
-                setQuantity(slotNum, 1);
+                setQuantity(slotNum, amount);
                 return;
             }
         }
         increaseSlot(item);
+    }
+
+    public void addItem(Item item) {
+        addItem(item, 1);
     }
 
     public void addItemToBackpack(Item item) {
@@ -159,5 +165,21 @@ public class InventoryManager {
 
     public void setQuantity(Integer slot, int amount) {
         unit.getInventoryItemAmount().put(slot, amount);
+    }
+
+    public Integer getQuantity(String name) {
+        for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
+            if (entry.getValue().getName().equals(name)) {
+                int slotNum = entry.getKey();
+                return unit.getInventoryItemAmount().get(slotNum);
+            }
+        }
+        for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
+            if (entry.getValue().getName().equals(name)) {
+                int slotNum = entry.getKey();
+                return unit.getInventoryItemAmount().get(slotNum);
+            }
+        }
+        return 0;
     }
 }

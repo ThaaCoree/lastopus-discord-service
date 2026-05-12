@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
+import model.entity.items.Item;
+import model.entity.items.Rune;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -63,13 +65,49 @@ public class DiscordController {
             if (equipment != null) {
                 unit.getEquipmentManager().unequip(slot);
                 writeintoSheet(unit);
-                return "ถอด "+equipment.getName()+" จากช่อง "+equipment.getEquipmentType().writeAsString()+" แล้ว";
+                return "ถอด "+equipment.getName()+" จากช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
             } else {
                 return "ไม่พบ Equipment";
             }
         } else {
             return "No Role!";
         }
+
+
+    }
+
+    @PostMapping("/give")
+    public String give(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Equipment equipment = null;
+        Unit giver = database.findPlayer(name);
+        if (giver != null) {
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit target = database.findPlayer(target_name);
+            if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int amount = Integer.parseInt(playerMessage.args.get(2));
+            Item item = giver.findItem(playerMessage.args.get(1));
+            int original_amount = giver.getInventoryManager().getQuantity(item.getName());
+
+            if (item instanceof Rune rune) {
+            target.addRuneToInventory((Rune) rune);
+            giver.removeRuneFromInventory((Rune) rune);
+            return giver.getName()+" มอบ "+item.getName()+" ให้กับ "+target_name+" "+amount+" หน่วย\n" +
+                    playerMessage.mentionedUsers.get(0).id;
+        } else {
+            target.getInventoryManager().addItem(item, amount);
+            giver.getInventoryManager().removeItem(item.getName());
+            if (original_amount > amount) {
+                giver.getInventoryManager().addItem(item, original_amount-amount);
+            }
+            return giver.getName()+" มอบ "+item.getName()+" ให้กับ "+target_name+" "+amount+" หน่วย\n" +
+                    playerMessage.mentionedUsers.get(0).id;
+        }
+        } else {
+            return "No Role!";
+        }
+
+
     }
 
     public boolean isGM(List<String> roles) {
