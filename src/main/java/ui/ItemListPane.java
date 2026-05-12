@@ -25,7 +25,7 @@ public class ItemListPane extends StackPane {
 
         getStylesheets().add(getClass().getResource("/styles/theme.css").toExternalForm());
 
-        this.itemList = FXCollections.observableArrayList(database.getAllItemMap().values());
+        this.itemList = FXCollections.observableArrayList(database.getAllTypeItemMap().values());
 
         this.filteredItems = new FilteredList<>(itemList, p -> true);
 

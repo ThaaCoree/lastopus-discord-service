@@ -48,12 +48,12 @@ public class Equinox extends Skill {
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         for (Map.Entry<Integer, EquipmentSlot> entry : getUser().getEquipmentSlots().entrySet()) {
             if (entry.getValue().getEquipment().getName().equals("Clear Blue")) {
-                Equipment equipment = (Equipment) combatFlow.getDatabase().getAllItemMap().get("Bright Red");
+                Equipment equipment = (Equipment) combatFlow.getDatabase().getAllTypeItemMap().get("Bright Red");
                 entry.getValue().setEquipment(equipment);
             }
 
             if (entry.getValue().getEquipment().getName().equals("Bright Red")) {
-                Equipment equipment = (Equipment) combatFlow.getDatabase().getAllItemMap().get("Clear Blue");
+                Equipment equipment = (Equipment) combatFlow.getDatabase().getAllTypeItemMap().get("Clear Blue");
                 entry.getValue().setEquipment(equipment);
             }
         }

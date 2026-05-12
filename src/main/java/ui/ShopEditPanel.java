@@ -271,8 +271,8 @@ public class ShopEditPanel extends ScrollPane {
         Button add = new Button("Add");
 
         add.setOnAction(e -> {
-            if (database.getAllItemMap().get(addingItemName) != null) {
-                Item item = database.getAllItemMap().get(addingItemName);
+            if (database.getAllTypeItemMap().get(addingItemName) != null) {
+                Item item = database.getAllTypeItemMap().get(addingItemName);
                 int stockNum;
                 if (isNumber(addingItemStock)) {
                     stockNum = Integer.parseInt(addingItemStock);
@@ -399,7 +399,7 @@ public class ShopEditPanel extends ScrollPane {
 
     private ListView<String> createItemSearchList(TextField itemName, Popup popup, Shop shop) {
         ListView<String> listView = new ListView<>();
-        List<String> itemNames = database.getAllItemMap().values().stream()
+        List<String> itemNames = database.getAllTypeItemMap().values().stream()
                 .map(Item::getName)
                 .collect(Collectors.toList());
         SearchableListView.makeSearchable(listView, FXCollections.observableArrayList(itemNames), itemName);

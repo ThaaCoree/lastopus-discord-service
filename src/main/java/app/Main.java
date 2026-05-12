@@ -35,11 +35,11 @@ public class Main extends Application {
             System.out.println("Saved database to Json");
         });
 
-        database.getAllMonsterMap().forEach((key,value) -> {
-            for (CurrencyType type : CurrencyType.values()) {
-                value.getPurse().put(type,0);
-            }
-        });
+//        database.getAllMonsterMap().forEach((key,value) -> {
+//            for (CurrencyType type : CurrencyType.values()) {
+//                value.getPurse().put(type,0);
+//            }
+//        });
 
 //        for (Unit player : database.getAllPlayerMap().values()) {
 //            if (player.getName().equals("Acheros Aki")) {

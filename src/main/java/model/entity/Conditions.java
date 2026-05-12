@@ -10,7 +10,7 @@ public class Conditions {
     private String name;
     private String description;
     private String statusDescription;
-    private final ModifierBundle modifiers = new ModifierBundle();
+    private ModifierBundle modifiers = new ModifierBundle();
     private ConditionType conditionType;
     private ConditionTierType conditionTierType;
 

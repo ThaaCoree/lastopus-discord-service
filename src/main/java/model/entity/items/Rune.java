@@ -1,6 +1,7 @@
 package model.entity.items;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import model.entity.ModifierBundle;
 import model.entity.skills.SkillInstance;
 import model.modifier.BasicModifier;
@@ -15,7 +16,7 @@ import java.util.Map;
 
 public class Rune extends Item {
     private ModifierBundle modifiers = new ModifierBundle();
-    private final Map<String, SkillInstance> skills = new HashMap<>();
+    private Map<String, SkillInstance> skills = new HashMap<>();
     private boolean[][] shape;
     private boolean unique_rune;
     private int baseRow;

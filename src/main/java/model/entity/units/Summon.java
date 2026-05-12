@@ -15,7 +15,7 @@ public class Summon extends Unit {
     @Transient
     private Unit owner;
 
-    private final Map<Integer, String> opusMove = new LinkedHashMap<>();
+    private Map<Integer, String> opusMove = new LinkedHashMap<>();
     private String nick_name;
     private String behavior;
     private String intimacy;

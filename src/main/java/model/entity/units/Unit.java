@@ -76,37 +76,37 @@ public class Unit {
     private ObservableMap<CounterName, Double> counter;
     @JsonIgnore
     @Transient
-    private final StatCalculator statCalculator;
+    private StatCalculator statCalculator;
     @JsonIgnore
     @Transient
-    private final StatusCalculator statusCalculator;
+    private StatusCalculator statusCalculator;
     @JsonIgnore
     @Transient
-    private final EquipmentManager equipmentManager;
+    private EquipmentManager equipmentManager;
     @JsonIgnore
     @Transient
-    private final PassiveManager passiveManager;
+    private PassiveManager passiveManager;
     @JsonIgnore
     @Transient
-    private final StatusManager statusManager;
+    private StatusManager statusManager;
     @JsonIgnore
     @Transient
-    private final UniqueManager uniqueManager;
+    private UniqueManager uniqueManager;
     @JsonIgnore
     @Transient
-    private final RaceManager raceManager;
+    private RaceManager raceManager;
     @JsonIgnore
     @Transient
-    private final ResourceManager resourceManager;
+    private ResourceManager resourceManager;
     @JsonIgnore
     @Transient
-    private final CardManager cardManager;
+    private CardManager cardManager;
     @JsonIgnore
     @Transient
-    private final InventoryManager inventoryManager;
+    private InventoryManager inventoryManager;
     @JsonIgnore
     @Transient
-    private final SkillModifierManager skillModifierManager;
+    private SkillModifierManager skillModifierManager;
 
     public Unit(String name, UnitType unitType) {
         this.name = name;
@@ -194,6 +194,7 @@ public class Unit {
                 summon.setOwner(this);
                 summon.calculateEverything();
             }
+
             calculateBackpackSlot();
             calculateSoulPoint();
         }
@@ -1448,6 +1449,50 @@ public class Unit {
 
     public void setSocketed_runes(List<Rune> socketed_runes) {
         this.socketed_runes = socketed_runes;
+    }
+
+    public void setSkillModifierManager(SkillModifierManager skillModifierManager) {
+        this.skillModifierManager = skillModifierManager;
+    }
+
+    public void setInventoryManager(InventoryManager inventoryManager) {
+        this.inventoryManager = inventoryManager;
+    }
+
+    public void setCardManager(CardManager cardManager) {
+        this.cardManager = cardManager;
+    }
+
+    public void setResourceManager(ResourceManager resourceManager) {
+        this.resourceManager = resourceManager;
+    }
+
+    public void setRaceManager(RaceManager raceManager) {
+        this.raceManager = raceManager;
+    }
+
+    public void setUniqueManager(UniqueManager uniqueManager) {
+        this.uniqueManager = uniqueManager;
+    }
+
+    public void setStatusManager(StatusManager statusManager) {
+        this.statusManager = statusManager;
+    }
+
+    public void setPassiveManager(PassiveManager passiveManager) {
+        this.passiveManager = passiveManager;
+    }
+
+    public void setEquipmentManager(EquipmentManager equipmentManager) {
+        this.equipmentManager = equipmentManager;
+    }
+
+    public void setStatusCalculator(StatusCalculator statusCalculator) {
+        this.statusCalculator = statusCalculator;
+    }
+
+    public void setStatCalculator(StatCalculator statCalculator) {
+        this.statCalculator = statCalculator;
     }
 
     @JsonIgnore

@@ -1,5 +1,6 @@
 package model.entity.items;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import model.entity.ModifierBundle;
 import model.entity.skills.SkillInstance;
 import model.modifier.BasicModifier;
@@ -12,8 +13,8 @@ import java.util.Map;
     public class Equipment extends Item {
         private EquipmentType equipmentType;
         private WeaponType weaponType;
-        private final ModifierBundle modifiers = new ModifierBundle();
-        private final Map<String, SkillInstance> skills = new HashMap<>();
+        private ModifierBundle modifiers = new ModifierBundle();
+        private Map<String, SkillInstance> skills = new HashMap<>();
         private int backpackSlot = 0;
 
         public Equipment(String name) {

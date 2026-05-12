@@ -1,5 +1,6 @@
 package model.entity.items;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import model.entity.TimedCondition;
 import model.type.ItemType;
 import model.type.ResourceType;

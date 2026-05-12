@@ -113,7 +113,6 @@ public class StatusCalculator {
                     }
                 }
                 if (modifier == null) continue;
-
                 equipFlatSum.merge(type, modifier.getFlat() * handMultiplier * equipmentMod, Double::sum);
                 equipMultSum.merge(type, modifier.getEquipmentMult() * handMultiplier * equipmentMod, Double::sum);
                 passiveMultSum.merge(type,modifier.getPassiveMult() * handMultiplier * equipmentMod, Double::sum);

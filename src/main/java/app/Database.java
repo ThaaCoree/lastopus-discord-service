@@ -1,11 +1,14 @@
 package app;
 
+import calculator.StatCalculator;
+import calculator.StatusCalculator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.services.sheets.v4.model.Request;
 import controller.CombatFlow;
 import com.fasterxml.jackson.core.type.TypeReference;
 import app.servicemodel.SaveRequest;
+import manager.*;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.units.Monster;
@@ -13,7 +16,6 @@ import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
 import model.type.UnitType;
-import org.springframework.stereotype.Service;
 import util.GoogleSheetsUtil;
 import util.JsonUtils;
 import util.StatTranslateUtil;
@@ -26,7 +28,8 @@ import java.util.*;
 
 public class Database {
 
-    private Map<String, Item> allItemMap;
+    private Map<String, Item> allTypeItemMap = new LinkedHashMap<>();
+    private Map<String, Item> allNormalItemMap;
     private Map<String, Equipment> allEquipmentMap;
     private Map<String, Consumable> allConsumableMap;
     private Map<String, Dream> allDreamItem;
@@ -45,6 +48,7 @@ public class Database {
 
     public Database() {
         loadMongo();
+//        loadItemFromJson();
         mapAllUnit();
         updateEverything();
         initCounterAllUnit();
@@ -75,8 +79,8 @@ public class Database {
             JsonUtils.saveToFile(allNPCMap, "src/main/resources/json/npcs.json");
 
             JsonUtils.saveToFile(allPassiveMap, "src/main/resources/json/passives.json");
-        if (allItemMap != null)
-            JsonUtils.saveToFile(allItemMap, "src/main/resources/json/items.json");
+        if (allNormalItemMap != null)
+            JsonUtils.saveToFile(allNormalItemMap, "src/main/resources/json/items.json");
         if (allConditionMap != null)
             JsonUtils.saveToFile(allConditionMap, "src/main/resources/json/conditions.json");
         if (allCardMap != null)
@@ -92,6 +96,17 @@ public class Database {
         JsonUtils.saveToFile(allRuneMap, "src/main/resources/json/runes.json");
 
         saveMongo();
+    }
+
+    public void loadItemFromJson() {
+        allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
+        allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
+        allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
+        allNormalItemMap = JsonUtils.loadFromFile("/json/items.json", new TypeReference<Map<String, Item>>() {});
+        allConsumableMap = JsonUtils.loadFromFile("/json/consumables.json", new TypeReference<Map<String, Consumable>>() {});
+        allDreamItem = JsonUtils.loadFromFile("/json/dreams.json", new TypeReference<Map<String, Dream>>() {});
+        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
+        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
     }
 
     public void loadMongo() {
@@ -110,7 +125,7 @@ public class Database {
             ObjectMapper mapper = new ObjectMapper();
 
             SaveRequest res = mapper.readValue(body, SaveRequest.class);
-            allItemMap = res.getAllItemMap();
+            allNormalItemMap = res.getAllItemMap();
             allCardMap = res.getAllCardMap();
             allConditionMap = res.getAllConditionMap();
             allConsumableMap = res.getAllConsumableMap();
@@ -122,7 +137,6 @@ public class Database {
             allPlayerMap = res.getAllPlayerMap();
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -131,12 +145,6 @@ public class Database {
     public void saveMongo() {
         translateEverything();
         updateEverything();
-//        SaveRequest saveRequest = new SaveRequest();
-//        saveRequest.setAllCardMap(allCardMap);
-//        saveRequest.setAllConditionMap(allConditionMap);
-//        saveRequest.setAllShop(allShop);
-//        saveRequest.setAllSummon(allSummon);
-//        saveRequest.setAllPassiveMap(allPassiveMap);
 
         try {
             HttpClient client = HttpClient.newHttpClient();
@@ -175,8 +183,8 @@ public class Database {
                     json = mapper.writeValueAsString(allMonsterMap);
                 }
                 if (filler.equals("item")) {
-                    if (allItemMap == null) continue;
-                    json = mapper.writeValueAsString(allItemMap);
+                    if (allNormalItemMap == null) continue;
+                    json = mapper.writeValueAsString(allNormalItemMap);
                 }
                 if (filler.equals("equipment")) {
                     if (allEquipmentMap == null) continue;
@@ -188,7 +196,7 @@ public class Database {
                 }
                 if (filler.equals("dream")) {
                     if (allDream == null) continue;
-                    json = mapper.writeValueAsString(allDream);
+                    json = mapper.writeValueAsString(allDreamItem);
                 }
                 if (filler.equals("rune")) {
                     if (allRuneMap == null) continue;
@@ -242,6 +250,13 @@ public class Database {
         if (allMonsterMap != null)
         allUnit.putAll(allMonsterMap);
 
+        if (allEquipmentMap != null) allTypeItemMap.putAll(allEquipmentMap);
+        if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
+        if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
+        if (allRuneMap != null) allTypeItemMap.putAll(allRuneMap);
+        if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
+
+
         for (Unit unit : allUnit.values()) {
             for (Summon summon : unit.getSummons().values()) {
                 allSummon.put(summon.getName(), summon);
@@ -267,7 +282,7 @@ public class Database {
     }
 
     public void updateUnitObjects() {
-        if (allItemMap == null) {
+        if (allNormalItemMap == null) {
             System.out.println("allItem is null");
             return;
         }
@@ -286,7 +301,7 @@ public class Database {
                 }
 
                 String name = entry.getValue().getName();
-                Item newItem = allItemMap.get(name);
+                Item newItem = allNormalItemMap.get(name);
                 Equipment newEquipment = allEquipmentMap.get(name);
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
@@ -318,7 +333,7 @@ public class Database {
                 }
 
                 String name = entry.getValue().getName();
-                Item newItem = allItemMap.get(name);
+                Item newItem = allNormalItemMap.get(name);
                 Equipment newEquipment = allEquipmentMap.get(name);
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
@@ -394,7 +409,7 @@ public class Database {
     }
 
     public void updateShopObjects() {
-        if (allItemMap == null) {
+        if (allNormalItemMap == null) {
             System.out.println("allItem is null");
             return;
         }
@@ -406,7 +421,7 @@ public class Database {
             for (Map.Entry<Integer, ShopItem> shopItemEntry : shop.getList().entrySet()) {
                 if (shopItemEntry.getValue().getItem() == null) continue;
                 String item_name = shopItemEntry.getValue().getItem().getName();
-                Item newItem = allItemMap.get(item_name);
+                Item newItem = allNormalItemMap.get(item_name);
                 Equipment newEquipment = allEquipmentMap.get(item_name);
                 Dream newDream = allDreamItem.get(item_name);
                 Consumable newConsumable = allConsumableMap.get(item_name);
@@ -435,22 +450,22 @@ public class Database {
         for (PassiveNode node : allPassiveMap.values()) {
             StatTranslateUtil.translatePassiveNodeStatusDesc(node);
         }
-        if (allItemMap != null)
-        for (Item item : allItemMap.values()) {
+        if (allNormalItemMap != null)
+        for (Item item : allNormalItemMap.values()) {
             if (item instanceof Equipment) {
                 Equipment equipment = (Equipment) item;
                 equipment.setStatusDescription(StatTranslateUtil.translateStatusDesc(equipment.getModifiers(),equipment.getSkills()));
             }
         }
-        if (allItemMap != null)
-        for (Item item : allItemMap.values()) {
+        if (allNormalItemMap != null)
+        for (Item item : allNormalItemMap.values()) {
             if (item instanceof Consumable) {
                 Consumable consumable = (Consumable) item;
                 StatTranslateUtil.translateConsumableStatusDesc(consumable);
             }
         }
-        if (allItemMap != null)
-            for (Item item : allItemMap.values()) {
+        if (allNormalItemMap != null)
+            for (Item item : allNormalItemMap.values()) {
                 if (item instanceof Dream) {
                     Dream dream = (Dream) item;
                     dream.setStatusDescription(StatTranslateUtil.translateStatusDesc(dream.getModifiers(),null));
@@ -520,7 +535,7 @@ public class Database {
         String range = "B2";
         List<List<Object>> toAppend = new ArrayList<>();
 
-        for (Item item : allItemMap.values()) {
+        for (Item item : allNormalItemMap.values()) {
             List<Object> row = new ArrayList<>();
 
             row.add(item.getName());
@@ -647,10 +662,6 @@ public class Database {
         return allConditionMap;
     }
 
-    public Map<String, Item> getAllItemMap() {
-        return allItemMap;
-    }
-
     public Map<String, Consumable> getAllConsumableMap() {
         return allConsumableMap;
     }
@@ -673,5 +684,17 @@ public class Database {
 
     public Map<String, PassiveNode> getAllDream() {
         return allDream;
+    }
+
+    public Map<String, Item> getAllTypeItemMap() {
+        return allTypeItemMap;
+    }
+
+    public Map<String, Item> getAllNormalItemMap() {
+        return allNormalItemMap;
+    }
+
+    public Map<String, Dream> getAllDreamItem() {
+        return allDreamItem;
     }
 }

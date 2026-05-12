@@ -29,7 +29,7 @@ public class DiscordController {
     @PostMapping("/equip")
     public String equip(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
-        Unit unit = database.findUnit(name);
+        Unit unit = database.findPlayer(name);
         Equipment equipment = database.findEquipment(playerMessage.message);
         if (unit != null) {
             if (equipment != null) {
@@ -48,7 +48,7 @@ public class DiscordController {
     public String unequip(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
         Equipment equipment = null;
-        Unit unit = database.findUnit(name);
+        Unit unit = database.findPlayer(name);
         int slot = 0;
 
         if (unit != null) {
@@ -79,7 +79,47 @@ public class DiscordController {
             if (role.equals("Leda")) {
                 return "Leda";
             }
+            if (role.equals("Akivili")) {
+                return "Akivili";
+            }
+            if (role.equals("Pumpkin'Slayerman")) {
+                return "Pumpkin'Slayerman";
+            }
+            if (role.equals("Acheros Aki")) {
+                return "Acheros Aki";
+            }
+            if (role.equals("Twelve")) {
+                return "Twelve";
+            }
+            if (role.equals("Slafier")) {
+                return "Slafier";
+            }
+            if (role.equals("Shiranui")) {
+                return "Shiranui";
+            }
+            if (role.equals("Four-Leaf Clover777")) {
+                return "Four-Leaf Clover777";
+            }
+            if (role.equals("Onebrek")) {
+                return "Onebrek";
+            }
+            if (role.equals("Aard Archer")) {
+                return "Aard Archer";
+            }
+            if (role.equals("Esther")) {
+                return "Esther";
+            }
+            if (role.equals("Yasha")) {
+                return "Yasha";
+            }
+            if (role.equals("Voahri")) {
+                return "Voahri";
+            }
+            if (role.equals("Scarlet")) {
+                return "Scarlet";
+            }
         }
+        database.load_player();
         return "";
     }
 

@@ -151,9 +151,9 @@ public class ItemEditPanel extends ScrollPane {
         });
 
         createButton.setOnAction(e -> {
-            database.getAllItemMap().put(toMake.getName(),toMake);
+            database.getAllTypeItemMap().put(toMake.getName(),toMake);
             database.translateEverything();
-            listPane.getItemList().setAll(database.getAllItemMap().values());
+            listPane.getItemList().setAll(database.getAllTypeItemMap().values());
             listPane.getListView().refresh();
             editMode();
         });
@@ -178,9 +178,9 @@ public class ItemEditPanel extends ScrollPane {
                 System.out.println("Delete button clicked, click again to confirm deletion.");
                 confirmDeletion = true;
             } else {
-                database.getAllItemMap().remove(item.getName());
+                database.getAllTypeItemMap().remove(item.getName());
                 listPane.getListView().refresh();
-                listPane.getItemList().setAll(database.getAllItemMap().values());
+                listPane.getItemList().setAll(database.getAllTypeItemMap().values());
                 setButtonToSelected(createModeBtn, allBtn);
                 editMode();
             }

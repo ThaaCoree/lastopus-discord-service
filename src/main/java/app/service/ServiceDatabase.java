@@ -12,24 +12,14 @@ import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
 import org.bson.Document;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import util.StatTranslateUtil;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -37,7 +27,8 @@ public class ServiceDatabase {
 
     private MongoTemplate mongoTemplate;
 
-    public Map<String, Item> allItemMap;
+    public Map<String, Item> allTypeItemMap = new LinkedHashMap<>();
+    public Map<String, Item> allNormalItemMap;
     public Map<String, Equipment> allEquipmentMap;
     public Map<String, Consumable> allConsumableMap;
     public Map<String, Dream> allDreamItem;
@@ -56,10 +47,10 @@ public class ServiceDatabase {
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
 //        save_credentials();
-        loadMongo();
-        mapAllUnit();
-        updateEverything();
-        initCounterAllUnit();
+//        loadMongo();
+//        mapAllUnit();
+//        updateEverything();
+//        initCounterAllUnit();
     }
 
     public Equipment findEquipment(String name) {
@@ -85,7 +76,7 @@ public class ServiceDatabase {
     }
 
     public void updateShopObjects() {
-        if (allItemMap == null) {
+        if (allNormalItemMap == null) {
             System.out.println("allItem is null");
             return;
         }
@@ -97,7 +88,7 @@ public class ServiceDatabase {
             for (Map.Entry<Integer, ShopItem> shopItemEntry : shop.getList().entrySet()) {
                 if (shopItemEntry.getValue().getItem() == null) continue;
                 String item_name = shopItemEntry.getValue().getItem().getName();
-                Item newItem = allItemMap.get(item_name);
+                Item newItem = allNormalItemMap.get(item_name);
                 Equipment newEquipment = allEquipmentMap.get(item_name);
                 Dream newDream = allDreamItem.get(item_name);
                 Consumable newConsumable = allConsumableMap.get(item_name);
@@ -123,7 +114,7 @@ public class ServiceDatabase {
     }
 
     public void updateUnitObjects() {
-        if (allItemMap == null) {
+        if (allNormalItemMap == null) {
             System.out.println("allItem is null");
             return;
         }
@@ -142,7 +133,7 @@ public class ServiceDatabase {
                 }
 
                 String name = entry.getValue().getName();
-                Item newItem = allItemMap.get(name);
+                Item newItem = allNormalItemMap.get(name);
                 Equipment newEquipment = allEquipmentMap.get(name);
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
@@ -174,7 +165,7 @@ public class ServiceDatabase {
                 }
 
                 String name = entry.getValue().getName();
-                Item newItem = allItemMap.get(name);
+                Item newItem = allNormalItemMap.get(name);
                 Equipment newEquipment = allEquipmentMap.get(name);
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
@@ -251,6 +242,7 @@ public class ServiceDatabase {
 
 
 
+
     public void mapAllUnit() {
         if (allPlayerMap != null)
             allUnit.putAll(allPlayerMap);
@@ -279,8 +271,18 @@ public class ServiceDatabase {
                     allDream.put(dream.getName(), node);
                 }
             }
+
         }
         allUnit.putAll(allSummon);
+    }
+
+    public Unit findPlayer(String key) {
+        for (Map.Entry<String, Unit> entry : allPlayerMap.entrySet()) {
+            if (entry.getKey().equals(key)) {
+                return entry.getValue();
+            }
+        }
+        return null;
     }
 
     public Unit findUnit(String key) {
@@ -296,7 +298,7 @@ public class ServiceDatabase {
         try {
 
             SaveRequest res = load_all();
-            allItemMap = res.getAllItemMap();
+            allNormalItemMap = res.getAllItemMap();
             allCardMap = res.getAllCardMap();
             allConditionMap = res.getAllConditionMap();
             allConsumableMap = res.getAllConsumableMap();
@@ -314,6 +316,12 @@ public class ServiceDatabase {
         }
     }
 
+    public void load_player() {
+        Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
+        allPlayers.remove("_id");
+        allPlayerMap = allPlayers;
+    }
+
     public SaveRequest load_all() {
         SaveRequest saveRequest = new SaveRequest();
         Map<String, Item> allItem = mongoTemplate.findOne(new Query(), Map.class, "items");
@@ -329,18 +337,33 @@ public class ServiceDatabase {
         Map<String, Rune> allRunes = mongoTemplate.findOne(new Query(), Map.class, "runes");
         Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
 
-        allItem.remove("_id");
-        allPlayers.remove("_id");
-        allCards.remove("_id");
-        allConditions.remove("_id");
-        allConsumables.remove("_id");
-        allDreams.remove("_id");
-        allEquipments.remove("_id");
-        allNPCs.remove("_id");
-        allMonsters.remove("_id");
-        allPassives.remove("_id");
-        allRunes.remove("_id");
-        allShops.remove("_id");
+
+        List<Map<String, ?>> maps = new ArrayList<>(Arrays.asList(
+                allItem,
+                allPlayers,
+                allCards,
+                allConditions,
+                allConsumables,
+                allDreams,
+                allEquipments,
+                allNPCs,
+                allMonsters,
+                allPassives,
+                allRunes,
+                allShops
+        ));
+
+        for (Map<String, ?> map : maps) {
+            if (map != null) {
+                map.remove("_id");
+            }
+        }
+
+        allEquipments = allEquipments.entrySet().stream()
+                .collect(Collectors.toMap(
+                        e -> e.getKey().replace("_", "."),
+                        Map.Entry::getValue
+                ));
 
         Map<Integer, PassiveNode> allPassivesToPut = new LinkedHashMap<>();
         allPassives.forEach((integer, node) -> {

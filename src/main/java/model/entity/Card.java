@@ -14,7 +14,7 @@ public class Card {
     private Map<CardType, String> abilityName = new LinkedHashMap<>();
     private Map<CardType, String> description = new LinkedHashMap<>();
     private Map<CardType, String> statusDescription = new LinkedHashMap<>();
-    private final Map<CardType, ModifierBundle> modifiers = new LinkedHashMap<>();
+    private Map<CardType, ModifierBundle> modifiers = new LinkedHashMap<>();
 
     public Card(String name) {
         this.name = name;

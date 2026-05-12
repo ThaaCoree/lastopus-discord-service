@@ -70,6 +70,7 @@ public class EquipmentManager {
         }
         if (equipment.getEquipmentType() == slotType) {
             currentSlot.setEquipment(equipment);
+            unit.getInventoryManager().removeItem(equipment.getName());
             System.out.println("Equipped " + equipment.getName() + " to slot " + slot);
         } else {
             System.out.println("Equipment type does not match the slot type.");
@@ -94,6 +95,7 @@ public class EquipmentManager {
         }
         unequip(slot);
         equip(slot, equipment);
+        unit.calculateEverything();
     }
 
     public void unequip(int slot) {
@@ -106,6 +108,7 @@ public class EquipmentManager {
         Equipment removed = currentSlot.getEquipment();
         if (removed != null) {
             currentSlot.setEquipment(null);
+            unit.getInventoryManager().addItem(removed);
             System.out.println("Unequipped " + removed.getName() + " from slot " + slot);
         } else {
             System.out.println("No equipment to unequip from slot " + slot);

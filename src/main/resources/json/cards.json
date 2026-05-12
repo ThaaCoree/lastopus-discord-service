@@ -10,18 +10,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "5% GlobalHP\n\n",
+      "SECONDARY" : "6 HP\n6 PDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 6.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "PHYSICALDEFENSE" : {
+            "flat" : 6.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -39,18 +65,36 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "1 HealthRegen\n\n",
+      "SECONDARY" : "14 PDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHREGEN" : {
+            "flat" : 1.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 14.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -68,18 +112,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "7% PoisonAMP\n\n",
+      "SECONDARY" : "2% GlobalPDEF\n6% GlobalMDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "POISONAMP" : {
+            "flat" : 0.07,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.02,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -97,18 +167,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "0.5 MSPD\n6% GlobalMSPD\n\n",
+      "SECONDARY" : "11% GlobalPDEF\n-7% GlobalMDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.5,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -126,18 +222,60 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "4% GlobalPATK\n4% GlobalMATK\n4% GlobalRATK\n\n",
+      "SECONDARY" : "-5% GlobalPDEF\n3% GlobalMSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -155,18 +293,36 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "15% GlobalHealAMP\n\n",
+      "SECONDARY" : "9% GlobalMSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.09,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -214,7 +370,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "8% GlobalMSPD\n12% GlobalBuffAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -224,7 +380,24 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -242,19 +415,62 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "7% GlobalPATK\n7% GlobalMATK\n7% GlobalRATK\n\n",
+      "SECONDARY" : "3% GlobalAGI\n4% GlobalMSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
-        "statusModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -271,18 +487,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "21% GlobalPATK\n-20% GlobalMSPD\n\n",
+      "SECONDARY" : "14% GlobalHP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.2,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -301,7 +543,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "Gain 1777% of ManaRegen as Extra HealthRegen\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -313,7 +555,17 @@
       "SECONDARY" : {
         "statModifiers" : { },
         "statusModifiers" : { },
-        "transferModifiers" : { },
+        "transferModifiers" : {
+          "0" : {
+            "sourceStat" : "MANAREGEN",
+            "targetStat" : "HEALTHREGEN",
+            "sourceStatus" : null,
+            "targetStatus" : null,
+            "transferPercent" : 17.77,
+            "transferRatio" : 1.0,
+            "transferType" : "GAIN"
+          }
+        },
         "skillModifiers" : { }
       }
     }
@@ -359,7 +611,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "3% GlobalPATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -369,7 +621,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -388,7 +649,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "10% GlobalCritChance\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -398,7 +659,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -417,7 +687,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "4% GlobalMATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -427,7 +697,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -446,7 +725,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "15% GlobalPDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -456,7 +735,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -503,18 +791,36 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "7% GlobalPATK\n\n",
+      "SECONDARY" : "0.4 MSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.4,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -533,7 +839,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "7% GlobalSpeed\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -543,7 +849,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -562,7 +877,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "7% GlobalPDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -572,7 +887,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -590,18 +914,52 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "8% GlobalPATK\n3% GlobalHP\n3% GlobalMSPD\n\n",
+      "SECONDARY" : "11% AttackSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "ATTACKSPEED" : {
+            "flat" : 0.11,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -648,18 +1006,45 @@
       "SECONDARY" : "ไม่สามารถโจมตีจากระยะไกลกว่า 10 เมตรได้"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "8% GlobalSTR\n22 HP\n\n",
+      "SECONDARY" : "28% GlobalCritDamage\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
-        "statusModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 22.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CRITDAMAGE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.28,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -677,12 +1062,21 @@
       "SECONDARY" : "การโจมตีระยะไกลที่ถูกบล็อก จะทำให้เป้าหมายยังรับความเสียหายครึ่งหนึ่ง"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
+      "PRIMARY" : "2% GlobalHP\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.02,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -706,12 +1100,21 @@
       "SECONDARY" : "ยูนิตทั้งหมดในระยะ 1 เมตรจะได้รับสถานะ Chilled"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
+      "PRIMARY" : "5 HP\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 5.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -735,18 +1138,36 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "9% GlobalHP\n\n",
+      "SECONDARY" : "15% GlobalHealAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.09,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -794,7 +1215,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "12% GlobalMSPD\n-50% GlobalCritChance\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -804,7 +1225,24 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.5,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -880,19 +1318,37 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "12% CastSPD\n\n",
+      "SECONDARY" : "6% GlobalINT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CASTSPEED" : {
+            "flat" : 0.12,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -1200,7 +1656,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "3% GlobalAGI\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1211,7 +1667,16 @@
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -1345,7 +1810,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "11% GlobalRATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1355,7 +1820,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1402,13 +1876,70 @@
       "SECONDARY" : "เพิ่ม Combined Action หนึ่งหน่วย\nไม่สามารถใช้งานสกิลที่เป็น Combined Action ได้อีกต่อไป"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
+      "PRIMARY" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\n10% GlobalLUK\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
       "PRIMARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "LUCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
@@ -1663,19 +2194,33 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "ตัวคูณสกิลประเภท Movement เพิ่มขึ้น 25%\n\n",
+      "SECONDARY" : "8% GlobalDEX\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
         "statModifiers" : { },
         "statusModifiers" : { },
         "transferModifiers" : { },
-        "skillModifiers" : { }
+        "skillModifiers" : {
+          "MOVEMENT" : {
+            "flat" : 0.0,
+            "mult" : 0.25
+          }
+        }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -1780,7 +2325,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "7% GlobalRATK\n5% PoisonAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1790,7 +2335,24 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "POISONAMP" : {
+            "flat" : 0.05,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1808,18 +2370,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "14% GlobalPATK\n\n",
+      "SECONDARY" : "3% GlobalPATK\n7% GlobalMSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1837,18 +2425,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "14% GlobalHealAMP\n\n",
+      "SECONDARY" : "3% GlobalHealAMP\n7% GlobalBuffAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1866,19 +2480,62 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "14% GlobalPDEF\n14% GlobalMDEF\n\n",
+      "SECONDARY" : "3% GlobalVIT\n7% GlobalPDEF\n7% GlobalMDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
-        "statusModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -1895,18 +2552,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "14% GlobalMATK\n\n",
+      "SECONDARY" : "3% GlobalMATK\n14% GlobalMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MANAPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1925,7 +2608,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "3% GlobalSTR\n3% GlobalAGI\n3% GlobalVIT\n3% GlobalDEX\n3% GlobalWIS\n3% GlobalINT\n3% GlobalLUK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1936,7 +2619,64 @@
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "LUCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -1953,18 +2693,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "14% GlobalSpeed\n\n",
+      "SECONDARY" : "3% GlobalMSPD\n7% GlobalSpeed\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -1982,18 +2748,36 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "37% GlobalCritChance\n\n",
+      "SECONDARY" : "37% GlobalCritDamage\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.37,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CRITDAMAGE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.37,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2012,7 +2796,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "21% GlobalAccuracy\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2022,7 +2806,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "ACCURACY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2301,18 +3094,68 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "11% GlobalPBLOCK\n8% GlobalMBLOCK\n\n",
+      "SECONDARY" : "-11% GlobalPBLOCK\n-8% GlobalMBLOCK\n6% GlobalPhysicalPen\n6% GlobalMagicalPen\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "PHYSICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2360,7 +3203,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "13% GlobalPATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2370,7 +3213,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.13,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2475,12 +3327,21 @@
       "SECONDARY" : "ความเสียหายจะถูกแบ่งให้เท่ากันระหว่างผู้มีความสามารถนี้"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
+      "PRIMARY" : "12% GlobalHP\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2504,18 +3365,44 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "21% GlobalPhysicalPen\n\n",
+      "SECONDARY" : "15% GlobalRATK\n-15% AttackSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "ATTACKSPEED" : {
+            "flat" : -0.15,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2794,12 +3681,21 @@
       "SECONDARY" : "ความเสียหายทั้งหมดที่ได้รับจะไม่ทะลุผ่าน Debris อีกต่อไป"
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
+      "PRIMARY" : "80% Debuff Resistance\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "DEBUFFRESISTANCE" : {
+            "flat" : 0.8,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -2997,19 +3893,69 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "-10% GlobalDEX\n\n",
+      "SECONDARY" : "10% GlobalSTR\n10% GlobalAGI\n-10% GlobalDEX\n-10% GlobalWIS\n-10% GlobalINT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -3027,7 +3973,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "8% GlobalINT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3038,7 +3984,16 @@
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -3085,7 +4040,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "15% GlobalPBLOCK\n15% GlobalMBLOCK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3095,7 +4050,24 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -3114,7 +4086,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "5% GlobalRATK\n15% GlobalAccuracy\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3124,7 +4096,24 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "ACCURACY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -3143,7 +4132,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "SECONDARY" : "10% GlobalCastSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3153,7 +4142,16 @@
         "skillModifiers" : { }
       },
       "SECONDARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "CASTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
@@ -3490,19 +4488,85 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "Set HealAMP to 0%\nSet BuffAMP to 0%\nSet DebuffAMP to 0%\nSet CritChance to 0%\nSet Reservation to 100%\n\n",
+      "SECONDARY" : "34% GlobalSTR\n34% GlobalDEX\n34% GlobalINT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEBUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RESERVATION" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 1.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -3664,20 +4728,84 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "-75% GlobalPATK\n-75% GlobalMATK\n-75% GlobalRATK\n-75% GlobalHealAMP\n-75% GlobalBuffAMP\n-75% GlobalDebuffAMP\nตัวคูณสกิลประเภท Limit เพิ่มขึ้น 1\n\n",
+      "SECONDARY" : "50% of MDEF Converted to PDEF at 150%\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
-        "statModifiers" : { },
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEBUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "statusModifiers" : { },
         "transferModifiers" : { },
-        "skillModifiers" : { }
+        "skillModifiers" : {
+          "LIMIT" : {
+            "flat" : 1.0,
+            "mult" : 0.0
+          }
+        }
       },
       "SECONDARY" : {
         "statModifiers" : { },
         "statusModifiers" : { },
-        "transferModifiers" : { },
+        "transferModifiers" : {
+          "0" : {
+            "sourceStat" : "MAGICALDEFENSE",
+            "targetStat" : "PHYSICALDEFENSE",
+            "sourceStatus" : null,
+            "targetStatus" : null,
+            "transferPercent" : 0.5,
+            "transferRatio" : 1.5,
+            "transferType" : "CONVERSION"
+          }
+        },
         "skillModifiers" : { }
       }
     }
@@ -3722,19 +4850,49 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "ตัวคูณสกิลประเภท Spell เพิ่มขึ้น 9%\n\n",
+      "SECONDARY" : "7% GlobalSTR\n7% GlobalDEX\n7% GlobalINT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
         "statModifiers" : { },
         "statusModifiers" : { },
         "transferModifiers" : { },
-        "skillModifiers" : { }
+        "skillModifiers" : {
+          "SPELL" : {
+            "flat" : 0.0,
+            "mult" : 0.09
+          }
+        }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }

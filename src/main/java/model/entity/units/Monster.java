@@ -13,8 +13,8 @@ import java.util.Map;
 
 public class Monster extends Unit {
 
-    private final ModifierBundle monsterModifier = new ModifierBundle();
-    private final Map<Integer, String> opusMove;
+    private ModifierBundle monsterModifier = new ModifierBundle();
+    private Map<Integer, String> opusMove;
     private MonsterType monsterType;
     private String monsterModify;
     private String behavior;

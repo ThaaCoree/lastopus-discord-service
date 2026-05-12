@@ -519,15 +519,9 @@ public class InventoryPane extends ScrollPane {
             equipName.valueProperty().addListener((obs, oldVal, newVal) -> {
                 String selected = equipName.getValue();
                 if (selected.equals("None")) {
-                    if (slotEntry.getValue().getEquipment() != null) {
-                        unit.getInventoryManager().addItem(database.getAllItemMap().get(slotEntry.getValue().getEquipment().getName()));
-                    }
                     unit.getEquipmentManager().unequip(slotEntry.getKey());
                 } else {
-                    unit.getInventoryManager().removeItem(selected);
-                    if (slotEntry.getValue().getEquipment() != null) {
-                        unit.getInventoryManager().addItem(database.getAllItemMap().get(slotEntry.getValue().getEquipment().getName()));
-                    }
+                    unit.getEquipmentManager().unequip(slotEntry.getKey());
                     unit.getEquipmentManager().equip(slotEntry.getKey(), database.getAllEquipmentMap().get(selected));
                 }
                 refreshContents();
@@ -897,7 +891,7 @@ public class InventoryPane extends ScrollPane {
 
     private ListView<String> createItemSearchList(TextField itemName, Popup popup, int slotIndex) {
         ListView<String> listView = new ListView<>();
-        List<String> itemNames = database.getAllItemMap().values().stream()
+        List<String> itemNames = database.getAllTypeItemMap().values().stream()
                 .map(Item::getName)
                 .collect(Collectors.toList());
         SearchableListView.makeSearchable(listView, FXCollections.observableArrayList(itemNames), itemName);
@@ -906,7 +900,7 @@ public class InventoryPane extends ScrollPane {
             String selected = listView.getSelectionModel().getSelectedItem();
             if (selected != null) {
                 popup.hide();
-                unit.getInventoryManager().replaceItem(slotIndex, database.getAllItemMap().get(selected));
+                unit.getInventoryManager().replaceItem(slotIndex, database.getAllTypeItemMap().get(selected));
                 refreshContents();
             }
         });
@@ -916,7 +910,7 @@ public class InventoryPane extends ScrollPane {
                 String selected = listView.getSelectionModel().getSelectedItem();
                 if (selected != null) {
                     popup.hide();
-                    unit.getInventoryManager().replaceItem(slotIndex, database.getAllItemMap().get(selected));
+                    unit.getInventoryManager().replaceItem(slotIndex, database.getAllTypeItemMap().get(selected));
                     refreshContents();
                 }
             } else if (e.getCode() == KeyCode.ESCAPE) {

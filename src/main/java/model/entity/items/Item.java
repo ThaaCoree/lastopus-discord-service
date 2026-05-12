@@ -1,8 +1,9 @@
 package model.entity.items;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import model.type.*;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Item {
     private String name;
     private ItemType itemType;
