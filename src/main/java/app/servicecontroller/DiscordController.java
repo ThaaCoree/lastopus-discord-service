@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.NumberFormat;
 import java.util.List;
 import java.util.Map;
 
@@ -85,9 +86,19 @@ public class DiscordController {
             String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
-            int amount = Integer.parseInt(playerMessage.args.get(2));
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(2));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนต้องมากกว่า 0";
+            }
             Item item = giver.findItem(playerMessage.args.get(1));
             int original_amount = giver.getInventoryManager().getQuantity(item.getName());
+
+            if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
 
             if (item instanceof Rune rune) {
                 target.addRuneToInventory((Rune) rune);
