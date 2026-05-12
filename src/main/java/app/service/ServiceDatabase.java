@@ -325,10 +325,9 @@ public class ServiceDatabase {
         System.out.println("allPlayers : "+allPlayers);
         allPlayers.remove("_id");
         SaveRequest saveRequest = new SaveRequest();
-        saveRequest.setAllPlayerMap(allPlayerMap);
+        saveRequest.setAllPlayerMap(allPlayers);
         System.out.println("allPlayerMap : "+allPlayerMap);
-        allPlayerMap.clear();
-        allPlayerMap.putAll(saveRequest.getAllPlayerMap());
+        allPlayerMap = saveRequest.getAllPlayerMap();
         updateUnitObjects();
     }
 
