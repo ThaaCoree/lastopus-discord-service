@@ -90,24 +90,26 @@ public class DiscordController {
             int original_amount = giver.getInventoryManager().getQuantity(item.getName());
 
             if (item instanceof Rune rune) {
-            target.addRuneToInventory((Rune) rune);
-            giver.removeRuneFromInventory((Rune) rune);
-            return giver.getName()+" มอบ "+item.getName()+" ให้กับ "+target_name+" "+amount+" หน่วย\n" +
-                    playerMessage.mentionedUsers.get(0).id;
-        } else {
-            target.getInventoryManager().addItem(item, amount);
-            giver.getInventoryManager().removeItem(item.getName());
-            if (original_amount > amount) {
-                giver.getInventoryManager().addItem(item, original_amount-amount);
+                target.addRuneToInventory((Rune) rune);
+                giver.removeRuneFromInventory((Rune) rune);
+                writeintoSheet(giver);
+                writeintoSheet(target);
+                return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
+                        "<@" + playerMessage.mentionedUsers.get(0).id + ">";
+            } else {
+                target.getInventoryManager().addItem(item, amount);
+                giver.getInventoryManager().removeItem(item.getName());
+                if (original_amount > amount) {
+                    giver.getInventoryManager().addItem(item, original_amount - amount);
+                }
+                writeintoSheet(giver);
+                writeintoSheet(target);
+                return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
+                        "<@" + playerMessage.mentionedUsers.get(0).id + ">";
             }
-            return giver.getName()+" มอบ "+item.getName()+" ให้กับ "+target_name+" "+amount+" หน่วย\n" +
-                    playerMessage.mentionedUsers.get(0).id;
-        }
         } else {
             return "No Role!";
         }
-
-
     }
 
     public boolean isGM(List<String> roles) {
