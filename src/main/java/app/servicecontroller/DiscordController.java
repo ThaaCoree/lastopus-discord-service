@@ -84,7 +84,7 @@ public class DiscordController {
             if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
                 return "กรุณาแท็กเป้าหมาย";
             }
-            String target_name = getPlayerName(playerMessage.roles, false);
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
             int amount = 0;
