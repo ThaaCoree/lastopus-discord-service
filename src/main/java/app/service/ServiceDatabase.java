@@ -14,6 +14,7 @@ import model.entity.units.Unit;
 import model.type.CardType;
 import org.bson.Document;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import util.StatTranslateUtil;
@@ -416,21 +417,22 @@ public class ServiceDatabase {
         }
     }
 
-    public String save_player(String json) {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    public String save_player(Unit unit) {
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         try {
-            Map<String, Unit> map = mapper.readValue(
-                    json,
-                    new TypeReference<Map<String, Unit>>() {
-                    }
-            );
-            mongoTemplate.dropCollection("players");
-            mongoTemplate.save(map, "players");
+//            Map<String, Unit> map = mapper.readValue(
+//                    json,
+//                    new TypeReference<Map<String, Unit>>() {
+//                    }
+//            );
+            Query query = new Query(Criteria.where("_id").is(unit));
+
+            mongoTemplate.findAndReplace(query, unit);
         }catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("saved player");
+        System.out.println("saved player : "+unit.getName());
         return "saved";
     }
 

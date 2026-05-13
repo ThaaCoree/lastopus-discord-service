@@ -193,7 +193,7 @@ public class DiscordController {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             String json = mapper.writeValueAsString(database.allPlayerMap);
-            database.save_player(json);
+            database.save_player(unit);
             System.out.println("after save_player and before writeToSheet");
             unit.writeToSheet(database.load_credentials());
         } catch (Exception e) {
