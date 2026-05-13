@@ -111,6 +111,10 @@ public class DiscordController {
             } else {
                 target.getInventoryManager().addItem(item, amount);
                 giver.getInventoryManager().removeItem(item.getName(), amount);
+
+                System.out.println("giver inventory: " + giver.getInventoryItems());
+                System.out.println("giver in map: " + database.allPlayerMap.get(name).getInventoryItems());
+                
                 writeintoSheet(giver);
                 writeintoSheet(target);
                 return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
