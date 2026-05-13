@@ -89,14 +89,15 @@ public class DiscordController {
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
             int amount = 0;
             try {
-                amount = Integer.parseInt(playerMessage.args.get(2));
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
             } catch (NumberFormatException e) {
                 return "จำนวนไม่ถูกต้อง";
             }
             if (amount <= 0) {
                 return "จำนวนต้องมากกว่า 0";
             }
-            Item item = giver.findItemInventory(playerMessage.args.get(1));
+            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            Item item = giver.findItemInventory(itemName);
             if (item == null) return "ไม่พบไอเทม";
             int original_amount = giver.getInventoryManager().getQuantityFromInventory(item.getName());
             if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
