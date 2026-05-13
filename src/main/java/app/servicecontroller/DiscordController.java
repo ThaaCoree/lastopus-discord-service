@@ -84,7 +84,7 @@ public class DiscordController {
             if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
                 return "กรุณาแท็กเป้าหมาย";
             }
-            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            String target_name = getPlayerName(playerMessage.roles, false);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
             int amount = 0;
@@ -114,7 +114,7 @@ public class DiscordController {
 
                 System.out.println("giver inventory: " + giver.getInventoryItems());
                 System.out.println("giver in map: " + database.allPlayerMap.get(name).getInventoryItems());
-                
+
                 writeintoSheet(giver);
                 writeintoSheet(target);
                 return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
@@ -129,7 +129,7 @@ public class DiscordController {
         return roles.contains("GM");
     }
 
-    public String getPlayerName(List<String> roles) {
+    public String getPlayerName(List<String> roles, boolean load_mongo) {
         database.load_player();
         for (String role : roles) {
             if (role.equals("Christ")) {
@@ -179,6 +179,10 @@ public class DiscordController {
             }
         }
         return "";
+    }
+
+    public String getPlayerName(List<String> roles) {
+        return getPlayerName(roles, true);
     }
 
     public void writeintoSheet(Unit unit) {
