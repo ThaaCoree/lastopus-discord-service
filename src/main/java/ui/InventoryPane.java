@@ -1042,7 +1042,12 @@ public class InventoryPane extends ScrollPane {
             uniqueBox.setAlignment(Pos.CENTER_LEFT); // จัดให้อยู่ชิดซ้ายและเรียงกลางแนวตั้ง
             uniqueBox.setStyle("-fx-border-color: #ccc; -fx-background-color: #292929;");
 
-            Label name = new Label(uniqueModifier.getName().writeAsString());
+            UniqueType to_get_string = uniqueModifier.getName();
+            String unique_name = "";
+            if (uniqueModifier.getName() != null) {
+                unique_name = uniqueModifier.getName().writeAsString();
+            }
+            Label name = new Label(unique_name);
             name.setMinWidth(100);
 
             CheckBox active = new CheckBox();
