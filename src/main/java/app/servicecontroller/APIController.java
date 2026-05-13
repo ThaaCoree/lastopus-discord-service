@@ -4,11 +4,13 @@ import app.service.ServiceDatabase;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class APIController {
 
