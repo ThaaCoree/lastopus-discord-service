@@ -1,0 +1,239 @@
+.button {
+    -fx-background-color: #191919;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-background-radius: 2;
+    -fx-border-radius: 2;
+    -fx-border-color: #A2A2A2;
+    -fx-border-width: 0.5;
+}
+
+.button:hover {
+    -fx-background-color: #292929;
+}
+
+.button:pressed {
+    -fx-background-color: #494949;
+}
+
+.text-field {
+    -fx-background-color: #191919;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-border-color: gray;
+    -fx-border-width: 1;
+    -fx-cursor: default;
+}
+
+.text-field:focused {
+    -fx-border-color: #393939;
+    -fx-border-width: 2;
+    -fx-cursor: default;
+}
+
+.text-field:hover {
+    -fx-cursor: default;
+}
+
+.text-area .content {
+    -fx-background-color: #191919;
+    -fx-border-color: gray;
+    -fx-border-width: 1;
+    -fx-cursor: default;
+}
+
+.text-area {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.text-area .text {
+    -fx-fill: white;
+}
+
+.text-area .content:focused {
+    -fx-border-color: #393939;
+    -fx-border-width: 2;
+    -fx-cursor: default;
+}
+
+.text-area .content:hover {
+    -fx-cursor: default;
+}
+
+.combo-box {
+    -fx-background-color: #191919;
+    -fx-border-color: gray;
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #191919;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #191919;
+    -fx-border-color: gray;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-width: 10px;
+}
+
+.combo-box .text-field {
+    -fx-background-color: transparent;  /* ทำให้พื้นหลังฟิลด์โปร่งใส */
+    -fx-text-fill: #ffffff;  /* สีข้อความ */
+    -fx-border-width: 1;  /* เอาขอบออก */
+    -fx-font-size: 16px;  /* ขนาดฟอนต์ */
+    -fx-padding: 0 5px;  /* เพิ่ม padding เล็กน้อยสำหรับข้อความ */
+}
+
+.scroll-pane {
+    -fx-background: #282828;
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #666666;
+    -fx-background-insets: 2;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #333333;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #666666;
+    -fx-background-insets: 2;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: #333333;
+}
+
+.custom-panel {
+    -fx-background-color: #282828; /* สีเทาเข้ม */
+    -fx-background-radius: 8;       /* มนมุม 8px */
+    -fx-border-color: gray;         /* ถ้ามี border */
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+}
+
+Label {
+    -fx-text-fill: white;        /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    -fx-font-size: 14px;         /* กำหนดขนาดฟอนต์ */
+}
+
+.check-box {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-padding: 4px;
+
+}
+
+.check-box:selected .box {
+    -fx-background-color: #3b82f6; /* ฟ้าเข้มตอนติ๊ก */
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+}
+
+.check-box .box {
+    -fx-background-color: #1d1f29; /* สีเทาเข้มพื้นหลัง */
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4;
+}
+
+.left-pane {
+    -fx-background-color: #262626;
+    -fx-border-color: transparent #969696 transparent transparent;
+    -fx-border-width: 0 3 0 0;
+    -fx-padding: 5px;
+}
+
+.right-pane {
+    -fx-background-color: #262626;
+    -fx-border-color: transparent transparent transparent #969696;
+    -fx-border-width: 0 0 0 3;
+    -fx-padding: 5px;
+}
+
+.top-pane {
+    -fx-background-color: #262626;
+    -fx-border-color: transparent transparent #969696 transparent;
+    -fx-border-width: 0 0 3 0;
+    -fx-padding: 5px;
+}
+
+.sub-pane {
+    -fx-background-color: #262626;
+    -fx-border-color: gray;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+.button-selected {
+    -fx-background-color: #393939;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+}
+
+.list-view {
+    -fx-background-color: #292929;
+    -fx-border-color: #999;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+.list-cell {
+    -fx-background-color: #292929;
+    -fx-padding: 8px;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #ddd;
+}
+.list-cell:hover {
+    -fx-background-color: #494949;
+}
+
+.list-cell:selected {
+    -fx-background-color: #696969;
+}
+
+.popup-content {
+    -fx-background-color: #292929;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0, 2, 2);
+}
+
+.grid-cell {
+    -fx-border-color: black;
+    -fx-background-color: #2b2b2b;
+}
+
+.grid-cell.filled {
+    -fx-background-color: blue;
+}
+
+.grid-cell.highlight {
+    -fx-background-color: yellow;
+}

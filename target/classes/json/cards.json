@@ -1,0 +1,5336 @@
+{
+  "Giant Rattus Card" : {
+    "name" : "Giant Rattus Card",
+    "abilityName" : {
+      "PRIMARY" : "Giant Sized",
+      "SECONDARY" : "Thin Fur"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "5% GlobalHP\n\n",
+      "SECONDARY" : "6 HP\n6 PDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 6.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "PHYSICALDEFENSE" : {
+            "flat" : 6.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Knight Paper Bee Card" : {
+    "name" : "Knight Paper Bee Card",
+    "abilityName" : {
+      "PRIMARY" : "Pollen Regenerate",
+      "SECONDARY" : "Paper Shell"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "1 HealthRegen\n\n",
+      "SECONDARY" : "14 PDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHREGEN" : {
+            "flat" : 1.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 14.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Giant Fire Ant Card" : {
+    "name" : "Giant Fire Ant Card",
+    "abilityName" : {
+      "PRIMARY" : "Stinging Burn",
+      "SECONDARY" : "Transparent Shell"
+    },
+    "description" : {
+      "PRIMARY" : "รับความเสียหายจากผู้สวมใส่การ์ด Queen Fire Ant มากขึ้น 50%",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "7% PoisonAMP\n\n",
+      "SECONDARY" : "2% GlobalPDEF\n6% GlobalMDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "POISONAMP" : {
+            "flat" : 0.07,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.02,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Runt Wolf Card" : {
+    "name" : "Runt Wolf Card",
+    "abilityName" : {
+      "PRIMARY" : "Agile",
+      "SECONDARY" : "Swaying"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "0.5 MSPD\n6% GlobalMSPD\n\n",
+      "SECONDARY" : "11% GlobalPDEF\n-7% GlobalMDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.5,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Goblin Card" : {
+    "name" : "Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "Disgusting Tradition",
+      "SECONDARY" : "Dastard Move"
+    },
+    "description" : {
+      "PRIMARY" : "มีแนวโน้มที่จะถูกชิงชังโดยเพศหญิงมากขึ้น",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "4% GlobalPATK\n4% GlobalMATK\n4% GlobalRATK\n\n",
+      "SECONDARY" : "-5% GlobalPDEF\n3% GlobalMSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Twilight Nightingale Card" : {
+    "name" : "Twilight Nightingale Card",
+    "abilityName" : {
+      "PRIMARY" : "Nightingale´s Embrace",
+      "SECONDARY" : "Nightingale´s Alacrity"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "15% GlobalHealAMP\n\n",
+      "SECONDARY" : "9% GlobalMSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.09,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Queen Paper Bee Card" : {
+    "name" : "Queen Paper Bee Card",
+    "abilityName" : {
+      "PRIMARY" : "Queen´s Command",
+      "SECONDARY" : "Last Stand"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อมีพลังชีวิตเต็มอยู่ พันธมิตรอื่นทั้งหมดจะรับความเสียหายน้อยลง 50%",
+      "SECONDARY" : "เมื่อกลายเป็นยูนิตพันธมิตรสุดท้ายที่ยังมีสติอยู่บนสนาม\nรับความเสียหายน้อยลง 50%\nสร้างความเสียหายมากขึ้น 100%"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Runt Wolf Alpha Card" : {
+    "name" : "Runt Wolf Alpha Card",
+    "abilityName" : {
+      "PRIMARY" : "Long Stride",
+      "SECONDARY" : "Nimble Stride"
+    },
+    "description" : {
+      "PRIMARY" : "การโจมตีผนวกความเร็วในระยะมากกว่า 6 เมตรจะทำให้ความเสียหายเพิ่มขึ้นอีก 1.4 เท่า",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "8% GlobalMSPD\n12% GlobalBuffAMP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Goblin Elite Card" : {
+    "name" : "Goblin Elite Card",
+    "abilityName" : {
+      "PRIMARY" : "Tradition Expert",
+      "SECONDARY" : "Dastard Expert"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "7% GlobalPATK\n7% GlobalMATK\n7% GlobalRATK\n\n",
+      "SECONDARY" : "3% GlobalAGI\n4% GlobalMSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Hob Goblin Card" : {
+    "name" : "Hob Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "Hob Strength",
+      "SECONDARY" : "Hob Vitality"
+    },
+    "description" : {
+      "PRIMARY" : "ไม่สามารถใช้ Combined Action เพื่อพุ่งได้อีกต่อไป",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "21% GlobalPATK\n-20% GlobalMSPD\n\n",
+      "SECONDARY" : "14% GlobalHP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.2,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Oru The Rainbow Catastrophe Card" : {
+    "name" : "Oru The Rainbow Catastrophe Card",
+    "abilityName" : {
+      "PRIMARY" : "Oru´s Wisdom",
+      "SECONDARY" : "Flow of Rainbow"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถใช้งานสกิลรูปแบบ Turn เป็น Action ได้\nเมื่อใช้งานความสามารถนี้ ไม่สามารถใช้งาน Combined Action ได้อีกจนกว่าจะถึงเทิร์นหน้าของตนเอง",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "Gain 1777% of ManaRegen as Extra HealthRegen\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : {
+          "0" : {
+            "sourceStat" : "MANAREGEN",
+            "targetStat" : "HEALTHREGEN",
+            "sourceStatus" : null,
+            "targetStatus" : null,
+            "transferPercent" : 17.77,
+            "transferRatio" : 1.0,
+            "transferType" : "GAIN"
+          }
+        },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Blood Mosquito Card" : {
+    "name" : "Blood Mosquito Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Taily Alligator Card" : {
+    "name" : "Taily Alligator Card",
+    "abilityName" : {
+      "PRIMARY" : "Chilling Fin",
+      "SECONDARY" : "Taily"
+    },
+    "description" : {
+      "PRIMARY" : "ศัตรูทั้งหมดในรัศมี 1 เมตรจะได้รับสถานะ Chilled",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "3% GlobalPATK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Sharp Eye Snake Card" : {
+    "name" : "Sharp Eye Snake Card",
+    "abilityName" : {
+      "PRIMARY" : "Sharp Reaction",
+      "SECONDARY" : "Sharp Strike"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถใช้งานเพิ่มได้อีกหนึ่ง Reaction เพื่อตอบโต้สิ่งที่ตัวเองสามารถมองเห็นได้\nเมื่ออยู่ในที่มืด จะได้รับสถานะ Blindness",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "10% GlobalCritChance\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Scarlet Fox Card" : {
+    "name" : "Scarlet Fox Card",
+    "abilityName" : {
+      "PRIMARY" : "Scarlet Flame",
+      "SECONDARY" : "Dim Spark"
+    },
+    "description" : {
+      "PRIMARY" : "เพิ่มความเสียหาย Ignite ที่ทำได้ 20%",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "4% GlobalMATK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.04,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "White Elk Card" : {
+    "name" : "White Elk Card",
+    "abilityName" : {
+      "PRIMARY" : "Size Advantage",
+      "SECONDARY" : "Elk´s Resilience"
+    },
+    "description" : {
+      "PRIMARY" : "สร้างความเสียหายต่อศัตรูที่ขนาดเล็กกว่าตนเองเป็นสองเท่า\nรับความเสียหายจากศัตรูที่ขนาดใหญ่กว่าตนเองเป็นสองเท่า",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "15% GlobalPDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Unarmed Goblin Card" : {
+    "name" : "Unarmed Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Horned Bunny Card" : {
+    "name" : "Horned Bunny Card",
+    "abilityName" : {
+      "PRIMARY" : "Pointy",
+      "SECONDARY" : "Spring"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "7% GlobalPATK\n\n",
+      "SECONDARY" : "0.4 MSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.4,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Reaper Tiger Card" : {
+    "name" : "Reaper Tiger Card",
+    "abilityName" : {
+      "PRIMARY" : "Reaper Tread",
+      "SECONDARY" : "Quick Paw"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่ออยู่ในพื้นที่มืดหรือสลัว การโจมตีจาก [สเตลท์] จะทำให้ล่องหนเป็นเวลา 1 เทิร์น\nผลพิเศษนี้จะไม่เกิดขึ้นหากโจมตีจากสถานะล่องหนของการ์ดใบนี้",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "7% GlobalSpeed\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spiked Wheel Card" : {
+    "name" : "Spiked Wheel Card",
+    "abilityName" : {
+      "PRIMARY" : "Crushing",
+      "SECONDARY" : "Hardened"
+    },
+    "description" : {
+      "PRIMARY" : "การโจมตีผนวกความเร็วจะทำให้โอกาสคริติคอลกลายเป็นแบบโชคดี",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "7% GlobalPDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Wolf Card" : {
+    "name" : "Flower Wolf Card",
+    "abilityName" : {
+      "PRIMARY" : "Swift Impact",
+      "SECONDARY" : "Quick Impact"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "8% GlobalPATK\n3% GlobalHP\n3% GlobalMSPD\n\n",
+      "SECONDARY" : "11% AttackSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "ATTACKSPEED" : {
+            "flat" : 0.11,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Treant Card" : {
+    "name" : "Flower Treant Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Black Bear Card" : {
+    "name" : "Flower Black Bear Card",
+    "abilityName" : {
+      "PRIMARY" : "Massive Paw",
+      "SECONDARY" : "Massive Claw"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : "ไม่สามารถโจมตีจากระยะไกลกว่า 10 เมตรได้"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "8% GlobalSTR\n22 HP\n\n",
+      "SECONDARY" : "28% GlobalCritDamage\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 22.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "CRITDAMAGE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.28,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Noise Shoebill Card" : {
+    "name" : "Flower Noise Shoebill Card",
+    "abilityName" : {
+      "PRIMARY" : "Flowered Noise Penetration",
+      "SECONDARY" : "Noise Penetration"
+    },
+    "description" : {
+      "PRIMARY" : "การโจมตีที่ถูกบล็อก จะทำให้เป้าหมายยังรับความเสียหายครึ่งหนึ่ง",
+      "SECONDARY" : "การโจมตีระยะไกลที่ถูกบล็อก จะทำให้เป้าหมายยังรับความเสียหายครึ่งหนึ่ง"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "2% GlobalHP\n\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.02,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Taily Alligator Card" : {
+    "name" : "Flower Taily Alligator Card",
+    "abilityName" : {
+      "PRIMARY" : "Flowered Chilling Fin",
+      "SECONDARY" : "Chilling Fin"
+    },
+    "description" : {
+      "PRIMARY" : "เพิ่มความเสียหาย Ignite ที่ทำได้ 8%",
+      "SECONDARY" : "ยูนิตทั้งหมดในระยะ 1 เมตรจะได้รับสถานะ Chilled"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "5 HP\n\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 5.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Flower Twilight Nightingale Card" : {
+    "name" : "Flower Twilight Nightingale Card",
+    "abilityName" : {
+      "PRIMARY" : "Flowered Nightingale´s Embrace",
+      "SECONDARY" : "Nightingale´s Embrace"
+    },
+    "description" : {
+      "PRIMARY" : "การฮีลเป้าหมายที่มีพลังชีวิตต่ำที่สุด \nจะทำให้เป้าหมายได้รับฮีลเพิ่มเติม 10% ของฮีลนั้น ",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "9% GlobalHP\n\n",
+      "SECONDARY" : "15% GlobalHealAMP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.09,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Polayne Koala Card" : {
+    "name" : "Polayne Koala Card",
+    "abilityName" : {
+      "PRIMARY" : "Accelerated Rest",
+      "SECONDARY" : "Abundant Being"
+    },
+    "description" : {
+      "PRIMARY" : "ทำให้การหลับเป็นแบบเร่งรีบ\nการงีบหลับแบบเร่งรีบจะทำให้พลังชีวิตฟื้นฟูเป็น 50% จากพลังชีวิตทั้งหมดแทน\nการนอนหลับแบบเร่งรีบจะทำให้พลังชีวิตฟื้นฟูเป็น 100% จากพลังชีวิตทั้งหมดแทน\nแต่เมื่อตื่นมานาจะเหลือ 0 จนกว่าจะเข้าสู่การต่อสู้ หรือจนกว่าจะนอนหลับอย่างปกติ",
+      "SECONDARY" : "รับการฟื้นฟูมากขึ้น 12%"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Polayne Mantis Card" : {
+    "name" : "Polayne Mantis Card",
+    "abilityName" : {
+      "PRIMARY" : "Executive Speed",
+      "SECONDARY" : "Spring Hop"
+    },
+    "description" : {
+      "PRIMARY" : "การโจมตีผนวกความเร็วในระยะไม่เกินกว่า 7 เมตร จะไม่ทำให้ผู้ใช้การ์ดรับความเสียหายย้อนกลับ",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "12% GlobalMSPD\n-50% GlobalCritChance\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.5,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Hecatia Card" : {
+    "name" : "Hecatia Card",
+    "abilityName" : {
+      "PRIMARY" : "Leading Pebble",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "สามารถใช้งานความสามารถ Track ได้",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Gallus Card" : {
+    "name" : "Gallus Card",
+    "abilityName" : {
+      "PRIMARY" : "สามารถใช้งานความสามารถ Track ได้",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "ได้รับความรู้เรื่องไม้ป่าเทียบเท่าแกลลัส",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Hooded Goblin Card" : {
+    "name" : "Hooded Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "Ritualist",
+      "SECONDARY" : "Disgusting Intellect"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "12% CastSPD\n\n",
+      "SECONDARY" : "6% GlobalINT\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "CASTSPEED" : {
+            "flat" : 0.12,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Jake Card" : {
+    "name" : "Jake Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Stinger Paper Bee Card" : {
+    "name" : "Stinger Paper Bee Card",
+    "abilityName" : {
+      "PRIMARY" : "Long Sting",
+      "SECONDARY" : "Short Sting"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อโจมตีระยะไกล สร้างความเสียหายเพิ่ม 3 หน่วย",
+      "SECONDARY" : "เมื่อโจมตีระยะใกล้ สร้างความเสียหายเพิ่ม 3 หน่วย"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Verifyr The Glittering Nightmare Card" : {
+    "name" : "Verifyr The Glittering Nightmare Card",
+    "abilityName" : {
+      "PRIMARY" : "Reality Reconstruct",
+      "SECONDARY" : "Dream Align"
+    },
+    "description" : {
+      "PRIMARY" : "ใช้งานได้เมื่อจะเกิดความเสียหาย\nยกเลิกความเสียหายในเหตุการณ์นั้นทั้งหมด\nความเสียหายประเภทเดียวกับที่ถูกยกเลิกในเหตุการณ์ดังกล่าวจะไม่เกิดขึ้นอีกในรอบเทิร์นนี้\nคูลดาวน์ 3 รอบเทิร์น",
+      "SECONDARY" : "เมื่อใช้งาน เลือกความเสียหายหนึ่งประเภท ในรอบเทิร์นนี้ ผู้ใช้จะสามารถหยุดยั้งความเสียหายนั้นได้สี่เหตุการณ์\nคูลดาวน์ 3 รอบเทิร์น"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Nokon Card" : {
+    "name" : "Nokon Card",
+    "abilityName" : {
+      "PRIMARY" : "Nokon´s Rage",
+      "SECONDARY" : "Partial Nokon´s Rage"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อพลังชีวิตต่ำกว่า 30% จะสามารถใช้งาน Combined Action ได้เพิ่มเติมหนึ่งหน่วย",
+      "SECONDARY" : "เมื่อพลังชีวิตต่ำกว่า 15% จะสามารถใช้งาน Combined Action ได้เพิ่มเติมหนึ่งหน่วย"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dianne Card" : {
+    "name" : "Dianne Card",
+    "abilityName" : {
+      "PRIMARY" : "Dianne´s Aiming",
+      "SECONDARY" : "Partial Dianne´s Aiming"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถเลือกที่จะเล็งหัวของเป้าหมายได้ หากเลือกเล็งหัว เป้าหมายจะมีโอกาสหลบเป็นสองเท่า เมื่อโจมตีโดนหัว สร้างความเสียหาย 1.5 เท่า",
+      "SECONDARY" : "สามารถเลือกที่จะเล็งหัวของเป้าหมายได้ หากเลือกเล็งหัว เป้าหมายจะมีโอกาสหลบเป็นสองเท่า เมื่อโจมตีโดนหัวการโจมตีจะกลายเป็นคริติคอล"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Ingra Card" : {
+    "name" : "Ingra Card",
+    "abilityName" : {
+      "PRIMARY" : "Ingra´s Control",
+      "SECONDARY" : "Partial Ingra´s Control"
+    },
+    "description" : {
+      "PRIMARY" : "การใช้เวทมนตร์ที่เป็นโปรเจกต์ไทล์จะเป็นแบบ [รอ]\nทำให้โปรเจกต์ไทล์ไม่ทำงานในทันที แต่สามารถเลือกใช้ตามช่วงเวลาที่ต้องการได้",
+      "SECONDARY" : "การใช้เวทมนตร์ที่เป็นโปรเจกต์ไทล์จะเป็นแบบ [รอ] นานสุดหนึ่งเทิร์น\nทำให้โปรเจกต์ไทล์ไม่ทำงานในทันที แต่สามารถเลือกใช้ตามช่วงเวลาที่ต้องการได้"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Meira Card" : {
+    "name" : "Meira Card",
+    "abilityName" : {
+      "PRIMARY" : "Meira´s Strike",
+      "SECONDARY" : "Partial Meira´s Strike"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อโจมตีคริติคอล จะสามารถโจมตีได้อีกครั้ง ใช้ได้หนึ่งครั้งต่อเทิร์น",
+      "SECONDARY" : "เมื่อโจมตีระยะไกลคริติคอล จะสามารถโจมตีได้อีกครั้ง ใช้ได้หนึ่งครั้งต่อเทิร์น"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Xesty Card" : {
+    "name" : "Xesty Card",
+    "abilityName" : {
+      "PRIMARY" : "Xesty´s Collection",
+      "SECONDARY" : "Partial Xesty´s Collection"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถใช้ Reaction เพื่อขว้างสิ่งของได้",
+      "SECONDARY" : "สามารถใช้ Reaction ร่วมกับ Combined Action เพื่อขว้างสิ่งของได้ทุกเหตุการณ์"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Korun Card" : {
+    "name" : "Korun Card",
+    "abilityName" : {
+      "PRIMARY" : "Korun´s Ambush",
+      "SECONDARY" : "Partial Korun´s Ambush"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อโจมตีเป้าหมายจากด้านหลัง สร้างความเสียหายเป็น 1.5 เท่า",
+      "SECONDARY" : "เมื่อโจมตีเป้าหมายจาก [สเตลท์] สร้างความเสียหายเป็น 1.5 เท่า"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Karlaz The Brood Emperor Card" : {
+    "name" : "Karlaz The Brood Emperor Card",
+    "abilityName" : {
+      "PRIMARY" : "Emperor´s Pride",
+      "SECONDARY" : "Emperor´s Execution"
+    },
+    "description" : {
+      "PRIMARY" : "การจู่โจมโดนจังๆจะสร้างความเสียหายโดยตรง\nไม่เกิดการลดทอนหากสร้างความเสียหายโดนแบบเฉียดๆ",
+      "SECONDARY" : "การจู่โจมที่ทำให้ศัตรูเหลือพลังชีวิตน้อยกว่า 10% จะฆ่าศัตรูประเภทมอนสเตอร์ และทำให้ศัตรูประเภทผู้เล่นหมดสติทันที"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Bamboo Spider Card" : {
+    "name" : "Bamboo Spider Card",
+    "abilityName" : {
+      "PRIMARY" : "Puppeteer",
+      "SECONDARY" : "Swift Six Legs"
+    },
+    "description" : {
+      "PRIMARY" : "ในระหว่างที่ควบคุม Soul Covenant อยู่ สามารถใช้งาน Reaction ได้",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "3% GlobalAGI\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Giant Bamboo Spider Card" : {
+    "name" : "Giant Bamboo Spider Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Tower Mage Goblin Card" : {
+    "name" : "Tower Mage Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Tower Archer Goblin Card" : {
+    "name" : "Tower Archer Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Emie Card" : {
+    "name" : "Emie Card",
+    "abilityName" : {
+      "PRIMARY" : "Storm Caller",
+      "SECONDARY" : "Storm Controller"
+    },
+    "description" : {
+      "PRIMARY" : "ความเสียหายของเวทมนตร์สายฟ้าที่สร้างจะเพิ่มเป็นสองเท่า รับความเสียหายทั้งหมดยกเว้นสายฟ้าเพิ่มขึ้นสองเท่า",
+      "SECONDARY" : "การสร้างความเสียหายสายฟ้าด้วยเวทมนตร์ จะมอบสถานะ Shock ให้ด้วย"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Polna Card" : {
+    "name" : "Polna Card",
+    "abilityName" : {
+      "PRIMARY" : "Focus Throw",
+      "SECONDARY" : "Heavy Throw"
+    },
+    "description" : {
+      "PRIMARY" : "การโจมตีระยะไกลใส่เป้าหมายที่ถูก Ministun อยู่ จะไม่มีทางพลาด",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "11% GlobalRATK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Danus Card" : {
+    "name" : "Danus Card",
+    "abilityName" : {
+      "PRIMARY" : "Untempering Rage",
+      "SECONDARY" : "Unbreakable Rage"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อพลังชีวิตต่ำกว่า 50% ทุกๆการจู่โจมจะสร้างความเสียหายเพิ่มเติม 7 หน่วย",
+      "SECONDARY" : "ต้านทานต่อสถานะ Ministun"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Kozan Card" : {
+    "name" : "Kozan Card",
+    "abilityName" : {
+      "PRIMARY" : "Pure Might",
+      "SECONDARY" : "Pure Talent"
+    },
+    "description" : {
+      "PRIMARY" : "ไม่สามารถใช้งานสกิลที่เป็น Action ได้อีกต่อไป",
+      "SECONDARY" : "เพิ่ม Combined Action หนึ่งหน่วย\nไม่สามารถใช้งานสกิลที่เป็น Combined Action ได้อีกต่อไป"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\n10% GlobalLUK\n\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "LUCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Lia Card" : {
+    "name" : "Lia Card",
+    "abilityName" : {
+      "PRIMARY" : "Lia´s Blessing",
+      "SECONDARY" : "Twilight´s Blessing"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อสัมผัสกับต้นไม้ ฟื้นฟูพลังชีวิตจากสูงสุด 5% เมื่อจบเทิร์น",
+      "SECONDARY" : "ไม่รับผลเสียจากพืชเขตป่าสนธยา"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Eve Card" : {
+    "name" : "Eve Card",
+    "abilityName" : {
+      "PRIMARY" : "Eve´s Technique",
+      "SECONDARY" : "Night Seeker"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อยิงธนูด้วยเท้า เป้าหมายจะต้องใช้ 2 Reaction ในการหลบ",
+      "SECONDARY" : "ความเร็วในการเข้าพื้นที่มืดเป็นสองเท่า"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Yon Card" : {
+    "name" : "Yon Card",
+    "abilityName" : {
+      "PRIMARY" : "Glacial Cage",
+      "SECONDARY" : "Magical Shot"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อสร้างความเสียหายด้วยเวทมนตร์มากกว่า 42 ในครั้งเดียว สามารถ Imprison ยูนิตเป้าหมายด้วยพลังชีวิต 42 ได้",
+      "SECONDARY" : "7% GlobalRATK\n7% GlobalMATK"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Barut Card" : {
+    "name" : "Barut Card",
+    "abilityName" : {
+      "PRIMARY" : "Footstep Perception",
+      "SECONDARY" : "Backstab"
+    },
+    "description" : {
+      "PRIMARY" : "จะรับรู้เสียงฝีเท้าของศัตรูเสมอ",
+      "SECONDARY" : "12% CritDamage"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Amel Card" : {
+    "name" : "Amel Card",
+    "abilityName" : {
+      "PRIMARY" : "Amel´s Voice",
+      "SECONDARY" : "Truth Out Of Illusions"
+    },
+    "description" : {
+      "PRIMARY" : "หนึ่งครั้งต่อเทิร์น เมื่ออ้อนวอนสิ่งมีชีวิตที่สามารถฟังเข้าใจและมีความเห็นใจ การโจมตีครั้งถัดไปของสิ่งมีชีวิตนั้นจะลดความเสียหายลงครึ่งหนึ่ง",
+      "SECONDARY" : "สามารถแยกแยะได้ว่าสิ่งใดเป็นเวทธาตุแสง"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Khong Kha Card" : {
+    "name" : "Khong Kha Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "ALL MIGHT Card" : {
+    "name" : "ALL MIGHT Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Agatha Card" : {
+    "name" : "Agatha Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Sea Zephyr Card" : {
+    "name" : "Sea Zephyr Card",
+    "abilityName" : {
+      "PRIMARY" : "Zephyr",
+      "SECONDARY" : "Wind Blow"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "ตัวคูณสกิลประเภท Movement เพิ่มขึ้น 25%\n\n",
+      "SECONDARY" : "8% GlobalDEX\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : {
+          "MOVEMENT" : {
+            "flat" : 0.0,
+            "mult" : 0.25
+          }
+        }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Queen Fire Ant Card" : {
+    "name" : "Queen Fire Ant Card",
+    "abilityName" : {
+      "PRIMARY" : "Flaming Pheromones",
+      "SECONDARY" : "Diversion Pheromones"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อใช้งาน พันธมิตรทุกยูนิตรับความเสียหาย 10% จากพลังชีวิตสูงสุด และได้รับเพิ่มเติม 1 Action ในเทิร์นหน้าของตนเอง\nคูลดาวน์ 5 เทิร์น",
+      "SECONDARY" : "มอนสเตอร์ที่ใช้สัญชาตญาณ มีแนวโน้มที่จะโจมตีผู้ใช้น้อยกว่ายูนิตอื่น"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Vanguard Fire Ant Card" : {
+    "name" : "Vanguard Fire Ant Card",
+    "abilityName" : {
+      "PRIMARY" : "Rushing Crush",
+      "SECONDARY" : "Vanguard Shell"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อสตันเป้าหมายสำเร็จ เลือกพันธมิตรหนึ่งคนให้โจมตีไปที่เป้าหมายด้วย Reaction ได้\nพันธมิตรคนที่เลือกจะได้รับความเร็วในการเคลื่อนที่เป็นสองเท่าระหว่างเหตุการณ์นี้",
+      "SECONDARY" : "12% GlobalPDEF\n13% GlobalMDEF\n8% GlobalPATK"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Guardian Fire Ant Card" : {
+    "name" : "Guardian Fire Ant Card",
+    "abilityName" : {
+      "PRIMARY" : "Slashing Mandible",
+      "SECONDARY" : "Punishing Slash"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อสร้างความเสียหายกายภาพระยะใกล้สำเร็จ สามารถใช้งาน Reaction ร่วมกับ Combined Action ในการกระชากการโจมตีเพื่อมอบสถานะ Tremble ให้เป้าหมายเป็นเวลาสองเทิร์นได้",
+      "SECONDARY" : "การโจมตียูนิตที่ใช้งาน Movement ไม่ได้จะสร้างความเสียหายเพิ่มเติม 40 หน่วย"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Venom Fire Ant Card" : {
+    "name" : "Venom Fire Ant Card",
+    "abilityName" : {
+      "PRIMARY" : "Venomous Mandible",
+      "SECONDARY" : "Venom Spit"
+    },
+    "description" : {
+      "PRIMARY" : "ความเสียหายกายภาพต่อยูนิตที่ถูก Poison เพิ่มขึ้นเป็น 1.2 เท่า",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "7% GlobalRATK\n5% PoisonAMP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "POISONAMP" : {
+            "flat" : 0.05,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Red Fin Fish Card" : {
+    "name" : "Red Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Red Fury",
+      "SECONDARY" : "Red Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "14% GlobalPATK\n\n",
+      "SECONDARY" : "3% GlobalPATK\n7% GlobalMSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Blue Fin Fish Card" : {
+    "name" : "Blue Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Blue Empath",
+      "SECONDARY" : "Blue Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "14% GlobalHealAMP\n\n",
+      "SECONDARY" : "3% GlobalHealAMP\n7% GlobalBuffAMP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Purple Fin Fish Card" : {
+    "name" : "Purple Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Purple Sentinel",
+      "SECONDARY" : "Purple Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "14% GlobalPDEF\n14% GlobalMDEF\n\n",
+      "SECONDARY" : "3% GlobalVIT\n7% GlobalPDEF\n7% GlobalMDEF\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALDEFENSE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : {
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Indigo Fin Fish Card" : {
+    "name" : "Indigo Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Indigo Potency",
+      "SECONDARY" : "Indigo Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "14% GlobalMATK\n\n",
+      "SECONDARY" : "3% GlobalMATK\n14% GlobalMP\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MANAPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Green Fin Fish Card" : {
+    "name" : "Green Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Green Bane",
+      "SECONDARY" : "Green Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "ต้านทานพิษทั่วไปทั้งหมด",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "3% GlobalSTR\n3% GlobalAGI\n3% GlobalVIT\n3% GlobalDEX\n3% GlobalWIS\n3% GlobalINT\n3% GlobalLUK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "VITALITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "LUCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Yellow Fin Fish Card" : {
+    "name" : "Yellow Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Yellow Sight",
+      "SECONDARY" : "Yellow Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "14% GlobalSpeed\n\n",
+      "SECONDARY" : "3% GlobalMSPD\n7% GlobalSpeed\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.14,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "MOVEMENTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.03,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "SPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Orange Fin Fish Card" : {
+    "name" : "Orange Fin Fish Card",
+    "abilityName" : {
+      "PRIMARY" : "Orange Ravage",
+      "SECONDARY" : "Orange Fin Empower"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "37% GlobalCritChance\n\n",
+      "SECONDARY" : "37% GlobalCritDamage\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.37,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "CRITDAMAGE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.37,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Desert Crawler Card" : {
+    "name" : "Desert Crawler Card",
+    "abilityName" : {
+      "PRIMARY" : "Focus Strike",
+      "SECONDARY" : "Targeted Strike"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อโจมตีจากสเตลท์แล้วคริติคอล เพิ่ม CritDamage 35% ให้กับการโจมตีนั้น",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "21% GlobalAccuracy\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "ACCURACY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Gong Card" : {
+    "name" : "Gong Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Karlaz Leg Card" : {
+    "name" : "Karlaz Leg Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Karlaz´s Warrior Card" : {
+    "name" : "Karlaz´s Warrior Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Karlaz´s Webber Card" : {
+    "name" : "Karlaz´s Webber Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Karlaz´s Spinner Card" : {
+    "name" : "Karlaz´s Spinner Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Twilight Treant Card" : {
+    "name" : "Twilight Treant Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Twilight Lotus Card" : {
+    "name" : "Twilight Lotus Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Twilight Moss Card" : {
+    "name" : "Twilight Moss Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Kana Card" : {
+    "name" : "Kana Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Pungle Card" : {
+    "name" : "Pungle Card",
+    "abilityName" : {
+      "PRIMARY" : "Multi-Layered Shell",
+      "SECONDARY" : "Spiked Shell"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "11% GlobalPBLOCK\n8% GlobalMBLOCK\n\n",
+      "SECONDARY" : "-11% GlobalPBLOCK\n-8% GlobalMBLOCK\n6% GlobalPhysicalPen\n6% GlobalMagicalPen\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.11,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "PHYSICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.06,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Crystal Salamander Card" : {
+    "name" : "Crystal Salamander Card",
+    "abilityName" : {
+      "PRIMARY" : "Crystal Immune",
+      "SECONDARY" : "Crystal Resonance"
+    },
+    "description" : {
+      "PRIMARY" : "ต้านทานเวทมนตร์ประเภทเสียงทั้งหมด",
+      "SECONDARY" : "เพิ่มระยะส่งผลของเวทมนตร์ประเภทเสียงทั้งหมด"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Fossilized Nef Card" : {
+    "name" : "Fossilized Nef Card",
+    "abilityName" : {
+      "PRIMARY" : "Fourth Claw",
+      "SECONDARY" : "Fosilized Claw"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อโจมตีครั้งที่สี่ในเทิร์นเดียว การโจมตีนั้นสร้างความเสียหาย 1.7 เท่า",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "13% GlobalPATK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.13,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Fossilized Rai Card" : {
+    "name" : "Fossilized Rai Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Fossilized Ceb Card" : {
+    "name" : "Fossilized Ceb Card",
+    "abilityName" : {
+      "PRIMARY" : "Tri Element",
+      "SECONDARY" : "Tri Sensation"
+    },
+    "description" : {
+      "PRIMARY" : "หนึ่งครั้งต่อเทิร์น เมื่อสร้างความเสียหายเวทธาตุน้ำ ไฟ หรือ ดิน จู่โจมเพิ่มหนึ่งครั้ง",
+      "SECONDARY" : "เพิ่มระดับประสาทสัมผัสเป็น 3 เท่า"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Sand Strider Card" : {
+    "name" : "Sand Strider Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Corrupted Slime Card" : {
+    "name" : "Corrupted Slime Card",
+    "abilityName" : {
+      "PRIMARY" : "Extensive Immunity",
+      "SECONDARY" : "Singular Sensation"
+    },
+    "description" : {
+      "PRIMARY" : "ไม่ได้รับผลเวทประเภทพื้นที่",
+      "SECONDARY" : "ความเสียหายจะถูกแบ่งให้เท่ากันระหว่างผู้มีความสามารถนี้"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "12% GlobalHP\n\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALTHPOINT" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.12,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Black Tiny Drake Card" : {
+    "name" : "Black Tiny Drake Card",
+    "abilityName" : {
+      "PRIMARY" : "Melting Acid",
+      "SECONDARY" : "Steady Fire"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "21% GlobalPhysicalPen\n\n",
+      "SECONDARY" : "15% GlobalRATK\n-15% AttackSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALPENETRATE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.21,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "ATTACKSPEED" : {
+            "flat" : -0.15,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Ebon Fox Card" : {
+    "name" : "Ebon Fox Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dusk Zombie Card" : {
+    "name" : "Dusk Zombie Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dusk Wraith Card" : {
+    "name" : "Dusk Wraith Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dusk Flame Spirit Card" : {
+    "name" : "Dusk Flame Spirit Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dusk Frost Spirit Card" : {
+    "name" : "Dusk Frost Spirit Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Novos Zwell Card" : {
+    "name" : "Novos Zwell Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Chlorin The Tissart Necromancia Card" : {
+    "name" : "Chlorin The Tissart Necromancia Card",
+    "abilityName" : {
+      "PRIMARY" : "The Last Bond",
+      "SECONDARY" : "The Necromancia"
+    },
+    "description" : {
+      "PRIMARY" : "ตราบเท่าที่ยังมีพันธมิตรอื่นอยู่ในสนาม รับความเสียหายหลังลดทอนน้อยลง 50%\nเมื่อเป็นยูนิตพันธมิตรสุดท้ายในสนาม ทุกความเสียหายที่รับกลายเป็นความเสียหายจริง",
+      "SECONDARY" : "สามารถสั่งให้พันธมิตรสองยูนิตจู่โจมยูนิตละครั้ง แทนการจู่โจมด้วย Action ได้\nเมื่อมีการจู่โจมใดๆของพันธมิตรเกิดขึ้น หากการจู่โจมนั้นมีความเสียหายก่อนลดทอนน้อยกว่า MATK ของผู้ใช้\nทำให้ความเสียหายนั้นมีค่าเท่า MATK"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Dusk Knight Card" : {
+    "name" : "Dusk Knight Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Grova Card" : {
+    "name" : "Grova Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Venus The Fallen Star Card" : {
+    "name" : "Venus The Fallen Star Card",
+    "abilityName" : {
+      "PRIMARY" : "Identity of Light",
+      "SECONDARY" : "Light Refracts"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : "ความเสียหายทั้งหมดที่ได้รับจะไม่ทะลุผ่าน Debris อีกต่อไป"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "80% Debuff Resistance\n\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "DEBUFFRESISTANCE" : {
+            "flat" : 0.8,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Test Goblin Card" : {
+    "name" : "Test Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Test Hob Goblin Card" : {
+    "name" : "Test Hob Goblin Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Cave Stalker Card" : {
+    "name" : "Cave Stalker Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "KM-L Card" : {
+    "name" : "KM-L Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "KM-R Card" : {
+    "name" : "KM-R Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Adult Desert Crawler Card" : {
+    "name" : "Adult Desert Crawler Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Cannibal Card" : {
+    "name" : "Cannibal Card",
+    "abilityName" : {
+      "PRIMARY" : "Unsatiable",
+      "SECONDARY" : "Merciless Hunger"
+    },
+    "description" : {
+      "PRIMARY" : "ไม่สูญเสีย HP และ MP จากการดื่มและกิน",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "-10% GlobalDEX\n\n",
+      "SECONDARY" : "10% GlobalSTR\n10% GlobalAGI\n-10% GlobalDEX\n-10% GlobalWIS\n-10% GlobalINT\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "AGILITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Mage Cannibal Card" : {
+    "name" : "Mage Cannibal Card",
+    "abilityName" : {
+      "PRIMARY" : "Faint of Concious",
+      "SECONDARY" : "Faint of Magic"
+    },
+    "description" : {
+      "PRIMARY" : "ทำให้การสลักเวทมนตร์ลงใน Magic Book ไม่ใช้ Combined Action",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "8% GlobalINT\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.08,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Merveil The Endless Hunger Card" : {
+    "name" : "Merveil The Endless Hunger Card",
+    "abilityName" : {
+      "PRIMARY" : "Hunger Itself",
+      "SECONDARY" : "Written In Bones"
+    },
+    "description" : {
+      "PRIMARY" : "หนึ่งครั้งต่อรอบเทิร์น เมื่อกำลังจะได้รับความเสียหายที่ทำให้หมดสภาพต่อสู้\nเลือกหนึ่งยูนิตพันธมิตรที่หมดสภาพต่อสู้อยู่ กลืนกินพลังชีวิตของยูนิตนั้นเท่ากับความเสียหายที่จะได้รับ\nทำให้พลังชีวิตของตัวเองเหลือ 1 หน่วย\n\nยูนิตพันธมิตรที่ถูกกลืนกินจะมีพลังชีวิตติดลบ",
+      "SECONDARY" : "สามารถใช้งานสกิลที่ไม่ใช่รูปแบบ Turn เป็น Reaction ได้หนึ่งครั้งต่อรอบเทิร์น"
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spellbound Knight Card" : {
+    "name" : "Spellbound Knight Card",
+    "abilityName" : {
+      "PRIMARY" : "Mobile Shield",
+      "SECONDARY" : "Shield Grasp"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถเคลื่อนไหวในขณะบล็อกได้",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "15% GlobalPBLOCK\n15% GlobalMBLOCK\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "PHYSICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALBLOCK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spellbound Ranger Card" : {
+    "name" : "Spellbound Ranger Card",
+    "abilityName" : {
+      "PRIMARY" : "Sentry",
+      "SECONDARY" : "Ranger Aim"
+    },
+    "description" : {
+      "PRIMARY" : "เมื่อกำลังใช้งานอาวุธระยะไกล สามารถใช้งาน Combine Action เพื่อ 'เตรียมยิง' ได้\nเมื่อมียูนิตศัตรูใช้งาน Reaction เพื่อเคลื่อนที่ระหว่างที่เตรียมยิง โจมตียูนิตนั้น",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "5% GlobalRATK\n15% GlobalAccuracy\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.05,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "ACCURACY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.15,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spellbound Mage Card" : {
+    "name" : "Spellbound Mage Card",
+    "abilityName" : {
+      "PRIMARY" : "Redirect",
+      "SECONDARY" : "Inscribed"
+    },
+    "description" : {
+      "PRIMARY" : "สามารถใช้งาน Reaction เปลี่ยนทิศทางของเวทมนตร์ได้หนึ่งครั้งต่อเทิร์น",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "10% GlobalCastSPD\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : {
+          "CASTSPEED" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Aira Card" : {
+    "name" : "Aira Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Lens Card" : {
+    "name" : "Lens Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Mael Card" : {
+    "name" : "Mael Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Yura Card" : {
+    "name" : "Yura Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Pasiz Card" : {
+    "name" : "Pasiz Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Nairis Card" : {
+    "name" : "Nairis Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Infernal Beast Card" : {
+    "name" : "Infernal Beast Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Infernal Beast (Reindeer) Card" : {
+    "name" : "Infernal Beast (Reindeer) Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Oslania Card" : {
+    "name" : "Oslania Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Moon Servant Card" : {
+    "name" : "Moon Servant Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Roth Card" : {
+    "name" : "Roth Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Fossilized Leva The Resurrected Cataclysm Card" : {
+    "name" : "Fossilized Leva The Resurrected Cataclysm Card",
+    "abilityName" : {
+      "PRIMARY" : "Three-Headed",
+      "SECONDARY" : "Cataclysm"
+    },
+    "description" : {
+      "PRIMARY" : "ได้รับเพิ่มเติม 2 Action ต่อเทิร์น\nเมื่อถอดหรือสลับตำแหน่งของการ์ดใบนี้ สูญเสีย 2 Action\nหากไม่มี Action เหลือพอให้สูญเสีย สูญเสียพลังชีวิตครึ่งหนึ่งจากสูงสุดแทน",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "Set HealAMP to 0%\nSet BuffAMP to 0%\nSet DebuffAMP to 0%\nSet CritChance to 0%\nSet Reservation to 100%\n\n",
+      "SECONDARY" : "34% GlobalSTR\n34% GlobalDEX\n34% GlobalINT\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEBUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "CRITCHANCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 0.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RESERVATION" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : 1.0,
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.34,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Lilia 'White' Nervimera The Frozen Flame Card" : {
+    "name" : "Lilia 'White' Nervimera The Frozen Flame Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Arania Card" : {
+    "name" : "Arania Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Elfos Card" : {
+    "name" : "Elfos Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Murada Card" : {
+    "name" : "Murada Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Lan Card" : {
+    "name" : "Lan Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spellbound Scarab Card" : {
+    "name" : "Spellbound Scarab Card",
+    "abilityName" : {
+      "PRIMARY" : "Spell Engrave",
+      "SECONDARY" : "Spell Ward"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "-75% GlobalPATK\n-75% GlobalMATK\n-75% GlobalRATK\n-75% GlobalHealAMP\n-75% GlobalBuffAMP\n-75% GlobalDebuffAMP\nตัวคูณสกิลประเภท Limit เพิ่มขึ้น 1\n\n",
+      "SECONDARY" : "50% of MDEF Converted to PDEF at 150%\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : {
+          "PHYSICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "MAGICALATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "RANGEDATTACK" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "HEALAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEBUFFAMPLIFIER" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : -0.75,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : {
+          "LIMIT" : {
+            "flat" : 1.0,
+            "mult" : 0.0
+          }
+        }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : {
+          "0" : {
+            "sourceStat" : "MAGICALDEFENSE",
+            "targetStat" : "PHYSICALDEFENSE",
+            "sourceStatus" : null,
+            "targetStatus" : null,
+            "transferPercent" : 0.5,
+            "transferRatio" : 1.5,
+            "transferType" : "CONVERSION"
+          }
+        },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Solar Cultist Lamia Card" : {
+    "name" : "Solar Cultist Lamia Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Solar Cultist Acolyte Card" : {
+    "name" : "Solar Cultist Acolyte Card",
+    "abilityName" : {
+      "PRIMARY" : "Worshipper",
+      "SECONDARY" : "Solar Blessed"
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "ตัวคูณสกิลประเภท Spell เพิ่มขึ้น 9%\n\n",
+      "SECONDARY" : "7% GlobalSTR\n7% GlobalDEX\n7% GlobalINT\n\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : {
+          "SPELL" : {
+            "flat" : 0.0,
+            "mult" : 0.09
+          }
+        }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : {
+          "STRENGTH" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "DEXTERITY" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Solar Cultist Mummy Card" : {
+    "name" : "Solar Cultist Mummy Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Spellbound Urn Card" : {
+    "name" : "Spellbound Urn Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Sand Lurker Card" : {
+    "name" : "Sand Lurker Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Solar Owl Card" : {
+    "name" : "Solar Owl Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Solar Cultist Knight Card" : {
+    "name" : "Solar Cultist Knight Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Terania Card" : {
+    "name" : "Terania Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Darlazen The Lord of Sands Card" : {
+    "name" : "Darlazen The Lord of Sands Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Meisef The Sun Prophet Card" : {
+    "name" : "Meisef The Sun Prophet Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Ernazik The Empress of Thousand Suns Card" : {
+    "name" : "Ernazik The Empress of Thousand Suns Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Night Ender, Chimera Card" : {
+    "name" : "Night Ender, Chimera Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Mezi Card" : {
+    "name" : "Mezi Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Unda Card" : {
+    "name" : "Unda Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Moran Card" : {
+    "name" : "Moran Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Ramoon Card" : {
+    "name" : "Ramoon Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Harun Card" : {
+    "name" : "Harun Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  }
+}

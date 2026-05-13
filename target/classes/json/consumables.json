@@ -1,0 +1,3662 @@
+{
+  "Koteosia Leaf" : {
+    "name" : "Koteosia Leaf",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "Recover 31 Health\n",
+    "lore" : "ใบของต้นโคทีโอเซีย มีรสชาติขมปร่า แต่กลับฟื้นฟูพลังกายภาพให้ได้พอสมควร",
+    "price" : "Sell 1 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 31.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Koteosia Berry" : {
+    "name" : "Koteosia Berry",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 68 Health\n",
+    "lore" : "ผลของต้นโคทีโอเซีย มีรสชาติหวานแหลมจนแสบคอ ฟื้นฟูพลังกายให้ได้พอสมควรแม้จะกินดิบๆ เสียสรรพคุณเมื่อผ่านกระบวนการปรุงยา",
+    "price" : "Sell 1 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 68.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Mishia Root" : {
+    "name" : "Mishia Root",
+    "itemType" : "HERB",
+    "description" : "หลังจากสถานะ Mishia Root หมดลง รับ Stun 2 รอบเทิร์น",
+    "statusDescription" : "สถานะ Mishia Root เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "รากของมิเชีย มีผลในการเพิ่มกำลังกายเป็นอย่างมาก แต่ทันทีหลังจากที่ผลของการเพิ่มกำลังกายหมดลง จะทำให้เวียนหัวรุนแรง",
+    "price" : "Sell 8 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Mishia Root",
+        "description" : "",
+        "statusDescription" : "9% GlobalPATK\n5% GlobalRATK\n5% GlobalMSPD\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Mishia Leaf" : {
+    "name" : "Mishia Leaf",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "สถานะ Blindness เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ใบของมิเชีย หากบริโภคใบของมิเชียเข้าไปโดยไม่ผ่านความร้อนก่อน จะทำให้ดวงตาทำงานผิดปกติ (ตาบอดชั่วขณะ)\nหากใบของมิเชียผ่านความร้อนมาแล้ว มันจะกรอบและอร่อยมาก ผลของพิษที่ใบจะหายไปโดยสิ้นเชิง",
+    "price" : "Sell 2 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Blindness",
+        "description" : "มองเห็นไกลกว่ารัศมี 1 เมตรไม่ได้",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "DEBUFF",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Mishia Flower" : {
+    "name" : "Mishia Flower",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ดอกของมิเชีย เป็นพิษรุนแรงมาก เพียงแค่ใช้ร่างกายสัมผัสแล้วปล่อยให้ผ่านไปไม่กี่นาที ก็จะรู้สึกได้ถึงความคัน ต่อมาแผลจะเริ่มพุพองปวดแสบปวดร้อน โดยทั่วไปแล้วจะใช้เวลากว่า 2 วันถึงจะหายดี ไม่มีสรรพคุณทางยา ",
+    "price" : "Sell 1 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Crispy Mishia Leaf" : {
+    "name" : "Crispy Mishia Leaf",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 25 Health\n",
+    "lore" : "ใบของมิเชียที่ผ่านความร้อนมาแล้ว ทานได้ไม่มีพิษภัย มีรสชาติหวานมัน",
+    "price" : "Sell 2 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 25.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Koteosia Leaf Potion" : {
+    "name" : "Koteosia Leaf Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 287 Health\n",
+    "lore" : "ยาที่สกัดกลั่นจากใบโคทีโอเซีย เมื่อดื่มจะฟื้นฟูพลังชีวิตจำนวนหนึ่ง",
+    "price" : "Buy 1.1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 287.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Mishia Root Potion" : {
+    "name" : "Mishia Root Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "หลังจากสถานะ Mishia Root Potion หมดลง Stun 1 รอบเทิร์น",
+    "statusDescription" : "สถานะ Mishia Root Potion เป็นเวลา 6 รอบเทิร์น\n",
+    "lore" : "ยาที่่สกัดกลั่นจากรากของมิเชีย เมื่อดื่มจะเสริมพลังกายมหาศาล แต่ผลที่ตามมาหลังจากนั้นคืออาการเวียนหัวจนถึงขั้นอาเจียนได้",
+    "price" : "Buy 2.6 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Mishia Root Potion",
+        "description" : "",
+        "statusDescription" : "17% GlobalPATK\n17% GlobalRATK\n9% GlobalMSPD\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 6.0
+    } ]
+  },
+  "MoonIveen" : {
+    "name" : "MoonIveen",
+    "itemType" : "HERB",
+    "description" : "ฟื้นฟู MP อีก d23-11 หน่วย",
+    "statusDescription" : "Recover 1 Mana\n",
+    "lore" : "ดอกมูนไอวีน ตัวดอกอัดแน่นไปด้วยพลังงานเวทมนตร์ หากกินดิบๆ อาจทำให้เวทมนตร์ไม่เสถียรนัก แต่หากนำไปปรุงเป็นยา ก็สามารถดึงคุณสมบัติของดอกมูนไอวีนออกมาได้อย่างเต็มประสิทธิภาพ",
+    "price" : "Buy 2 Silver",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 1.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ikidamon" : {
+    "name" : "Ikidamon",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "สถานะ Sleep เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "อิคิดามอน ตัวมันเองมีพิษอ่อนๆ แต่ถ้าหากนำไปผสมรวมกับหญ้าเทเซอรี ก็สามารถที่จะกลายเป็นยาระงับความเจ็บปวดได้",
+    "price" : "Buy 3.4 Silver",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Sleep",
+        "description" : "หลับ ไม่สามารถใช้งาน Action, Combined Action, Reaction หรือ Hold Action ได้\nตื่นเมื่อถูกรบกวน",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Tecery" : {
+    "name" : "Tecery",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "สถานะ Awaken เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "หญ้าเทเซอรี เมื่อทานดิบๆหรือใช้ประกอบสิ่งบริโภคใดๆ จะมีผลลดความง่วง และถ้าหากบริโภคในปริมาณมาก อาจทำให้ร่างกายทำงานหนักได้",
+    "price" : "Buy 6 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Awaken",
+        "description" : "ไม่สามารถหลับ หรือถูกทำให้หลับได้",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Elaj" : {
+    "name" : "Elaj",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 106 Health\n",
+    "lore" : "ต้นอีลัจ ไม่มีสรรพคุณทางยา แต่รสชาติเค็ม หวาน มัน ลงตัวในต้นเดียว ไม่นิยมนำไปผ่านกระบวนการ เพราะจะทำให้เสียความชื้นได้ง่าย และเมื่อต้นอีลัจแห้งเกินไป ผิวสัมผัสของมันจะแย่ลงมาก",
+    "price" : "Buy 3 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 106.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Bottled Honey" : {
+    "name" : "Bottled Honey",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Recover 49 Health\nRecover 1 Mana\n",
+    "lore" : "น้ำผึ้งที่ถูกบรรจุไว้ในภาชนะ สามารถดื่มสดๆได้ หรือจะเอาไว้ใช้ประกอบอาหารก็เป็นอีกทางเลือกหนึ่ง",
+    "price" : "Sell 1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 49.0,
+      "MANA" : 1.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Resilience Potion" : {
+    "name" : "Resilience Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Ikidamon Resilience เป็นเวลา 6 รอบเทิร์น\n",
+    "lore" : "ยาที่มีอิคิดามอนเป็นส่วนผสมหลัก ส่งผลกับระบบประสาทโดยตรง แต่ไม่มีผลทำให้ง่วงอีกต่อไป เป็นผลให้ระบบประสาทการรับรู้ความเจ็บปวดลดลง",
+    "price" : "Buy 1.7 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Ikidamon Resilience",
+        "description" : "",
+        "statusDescription" : "43% GlobalPDEF\n43% GlobalMDEF\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 6.0
+    } ]
+  },
+  "Distilled Tecery Potion" : {
+    "name" : "Distilled Tecery Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Distilled Tecery Adrenaline เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาที่สกัดกลั่นจากเทเซอรีเข้มข้น เร่งการทำงานของสภาพร่างกายอย่างมาก แต่ในขณะเดียวกันก็ส่งผลกับสภาพร่างกายพอสมควรเพราะใช้งานหนักกว่าที่ควรจะเป็น",
+    "price" : "Buy 2.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Distilled Tecery Adrenaline",
+        "description" : "",
+        "statusDescription" : "16% GlobalMSPD\n28% GlobalCritDamage\n37% GlobalRATK\n37% GlobalPATK\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "MoonIveen Potion" : {
+    "name" : "MoonIveen Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ MoonIveen Amplifier เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาที่มีมูนไอวีนเป็นส่วนผสมหลัก ส่งผลกับลักษณะการทำงานของมานาในร่างกายเป็นอย่างมาก เวทมนตร์ที่ใช้งานระหว่างผลพิเศษจะถูกเสริมพลัง",
+    "price" : "Buy 2.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "MoonIveen Amplifier",
+        "description" : "",
+        "statusDescription" : "26% GlobalMATK\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Blue Ink Berry" : {
+    "name" : "Blue Ink Berry",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 38 Health\nRecover 1 Mana\n",
+    "lore" : "บลูอิงค์เบอร์รี่ มีรสชาติเปรี้ยวหวานกลมกล่อม มีความชุ่มชื้นเป็นอย่างมาก สามารถทานทดแทนน้ำได้เลย",
+    "price" : "Buy 3 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 38.0,
+      "MANA" : 1.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Rainbow Fin Fish Blood" : {
+    "name" : "Rainbow Fin Fish Blood",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 77 Health\nRecover 77 Mana\nสถานะ Rainbow Fin Blessing เป็นเวลา 7 รอบเทิร์น\n",
+    "lore" : "เลือดของปลาครีปรุ้งมีรสทุกรสชาติแม้แต่ความขมผสมผสานกันอย่างลงตัว ตัวเลือดจะต้องเก็บไว้ในที่เย็น ไม่เช่นนั้นอาจจะเน่าเสียไปได้ง่ายๆ และด้วยความเย็นดั้งเดิมของเลือด เมื่อดื่มดิบๆก็จะทำให้รู้สึกได้ถึงพลังที่ล้นหลามจนแทบควบคุมไม่ได้ อีกทั้งจะยังรู้สึกได้ถึงการต้านทานเวทมนตร์หลายรูปแบบ",
+    "price" : "Buy 36 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 77.0,
+      "MANA" : 77.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Rainbow Fin Blessing",
+        "description" : "",
+        "statusDescription" : "7% GlobalPDEF\n7% GlobalPATK\n7% GlobalRATK\n7% GlobalMDEF\n7% GlobalMSPD\n7% GlobalCritDamage\n7% GlobalMATK\n7% GlobalHP\n7% GlobalCritChance\n7% GlobalHealAMP\n7 ManaRegen\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 7.0
+    } ]
+  },
+  "Twilight Fungus" : {
+    "name" : "Twilight Fungus",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 190 Health\n",
+    "lore" : "เห็ดสนธยา เป็นสาเหตุที่นักเดินป่าทั้งหลายมักจะสะดุดจนล้มลงในเวลากลางวัน เพราะไม่สามารถมองเห็นมันได้ แต่ก็สามารถใช้ประโยชน์จากจุดนั้นเพื่อสังเกตได้เช่นกัน ถ้าเป็นแบบนั้นก็สามารถเก็บเห็ดสนธยาได้โดยไม่ต้องรอให้ตกกลางคืนเลย ตัวเห็ดมีความชุ่มชื้น นิยมทานเป็นของกินเล่นกัน",
+    "price" : "Buy 4 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 190.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Twilight Cattail" : {
+    "name" : "Twilight Cattail",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "Recover 7 Health\n",
+    "lore" : "แค็ทเทล์สนธยา หากหลงป่าแล้วเกิดตกค่ำขึ้นมา มันคือผู้ช่วยชีวิตที่แท้จรืง เพราะแค็ทเทล์สนธยาขึ้นได้เกือบทุกแห่งกลางป่าสนธยา ตัวปลายยอดของมันมีทั้งสรรพคุณทางยา และสามารถกินสดๆได้ จะผ่านกระบวนการแปรรูปก็ยังได้",
+    "price" : "Buy 4 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 7.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Meat" : {
+    "name" : "Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -64 Health\n",
+    "lore" : "เนื้อสัตว์ทั่วไป กลิ่นฉุนมากรสชาติคาวมาก เหนียว ควรนำไปผ่านกระบวนการประกอบอาหารเสียก่อน",
+    "price" : "Sell 1 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -64.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Bone" : {
+    "name" : "Bone",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -95 Health\n",
+    "lore" : "กระดูกทั่วๆไป สามารถคว้านเอาไขกระดูกไปทำเป็นของหวานได้ ตัวกระดูกที่เหลืออยู่สามารถนำไปบดเป็นผงแล้วตาก นำไปปรุงยาเสริมกระดูกได้",
+    "price" : "Sell 1 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -95.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Blood" : {
+    "name" : "Blood",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -38 Health\nRecover -4 Mana\n",
+    "lore" : "เลือดสดๆ ทั้งคาวและไม่มีสรรพคุณของยา รสฝาดผสมกับความคาวทำให้แทบอ้วกเมื่อต้องจำใจกิน",
+    "price" : "Sell 1 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -38.0,
+      "MANA" : -4.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Meat" : {
+    "name" : "Cooked Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 46 Health\n",
+    "lore" : "เนื้อที่ผ่านการย่างหรือต้มเป็นที่เรียบร้อยแล้ว ยังพอสัมผัสได้ถึงกลิ่นคาว แต่รสชาติก็ค่อนข้างหวานนุ่ม ชุ่มฉ่ำ",
+    "price" : "Buy 2 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 46.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Anesthesia" : {
+    "name" : "Anesthesia",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Sleep เป็นเวลา 5 รอบเทิร์น\n",
+    "lore" : "ยาสลบที่ถูกผสมขึ้นโดยใช้อิคิดามอนเป็นส่วนผสมหลัก",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Sleep",
+        "description" : "หลับ ไม่สามารถใช้งาน Action, Combined Action, Reaction หรือ Hold Action ได้\nตื่นเมื่อถูกรบกวน",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 5.0
+    } ]
+  },
+  "Hand-Made Bandaid" : {
+    "name" : "Hand-Made Bandaid",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 14% Max Health\n",
+    "lore" : "ผ้าปิดแผลที่ถูกสร้างขึ้นมาอย่างเร่งรีบ ปิดแผลเบื้องต้นได้ดี",
+    "price" : "0",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.14,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Antidote Bandaid" : {
+    "name" : "Antidote Bandaid",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 7 Health\n",
+    "lore" : "ผ้าปิดแผลที่มีผลในการขจัดพิษบางส่วนออกไปด้วย",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 7.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ikidamon Candle" : {
+    "name" : "Ikidamon Candle",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Sleep เป็นเวลา 11 รอบเทิร์น\n",
+    "lore" : "อิคิดามอนบริสุทธิ์ที่จับตัวกันเป็นก้อน ไวต่อเปลวไฟมาก และเมื่อถูกเผา จะปล่อยกลิ่นที่มีผลต่อระบบประสาททำให้ง่วงอย่างมาก",
+    "price" : "Buy 5 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Sleep",
+        "description" : "หลับ ไม่สามารถใช้งาน Action, Combined Action, Reaction หรือ Hold Action ได้\nตื่นเมื่อถูกรบกวน",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 11.0
+    } ]
+  },
+  "Sharp Eye Snake Bone" : {
+    "name" : "Sharp Eye Snake Bone",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -140 Health\n",
+    "lore" : "กระดูกงูชาร์ปอาย มีความยาวเป็นอย่างมาก เบา และเปราะบาง มีคุณสมบัติความเป็นพิษ",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -140.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Sharp Eye Snake Meat" : {
+    "name" : "Sharp Eye Snake Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -50 Health\n",
+    "lore" : "เนื้องูชาร์ปอาย ไม่คาวนัก และที่สำคัญคือไม่มีพิษปะปนอยู่เลย ด้วยลักษณะที่นุ่ม ละลายในปากได้ง่ายดาย ทำให้มันเป็นหนึ่งในเมนูที่ผู้คนมักจะไขว่คว้ามากินกัน",
+    "price" : "Sell 3 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -50.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Sharp Eye Snake Eye" : {
+    "name" : "Sharp Eye Snake Eye",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -130 Health\n",
+    "lore" : "ดวงตาของงูชาร์ปอาย มีความเป็นพิษสูง แต่เมื่อใช้สร้างเป็นเครื่องดื่มก็มีผลช่วยเสริมการมองเห็นด้วย",
+    "price" : "Sell 4 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -130.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Sharp Eye Snake Poison Gland" : {
+    "name" : "Sharp Eye Snake Poison Gland",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ต่อมพิษของงูชาร์ปอาย",
+    "price" : "Sell 8 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Sharp Eye Snake Meat" : {
+    "name" : "Cooked Sharp Eye Snake Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 67 Health\n",
+    "lore" : "เนื้อของงูชาร์ปอายที่ย่างแล้ว รสชาติดี ติดตรงที่ค่อนข้างเหนียวไปหน่อย",
+    "price" : "Buy 6 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 67.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Sharp Eye Snake Eye" : {
+    "name" : "Cooked Sharp Eye Snake Eye",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 45 Health\n",
+    "lore" : "ดวงตาของงูชาร์ปอายที่ย่างแล้ว ลดความเป็นพิษลงอย่างมาก เหมาะกับการเป็นของกินเล่น",
+    "price" : "Buy 6 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 45.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Fire Ant Meat" : {
+    "name" : "Fire Ant Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -60 Health\n",
+    "lore" : "เนื้อของมดเพลิง มีรสชาติเผ็ดแผดเผาลิ้นถ้าหากไม่นำไปปรุงสุกเสียก่อน",
+    "price" : "Sell 3 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -60.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Fire Ant Entrails" : {
+    "name" : "Fire Ant Entrails",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -38 Health\n",
+    "lore" : "เครื่องในของมดเพลิง มีเนื้อสัมผัสที่ค่อนข้างนุ่ม แต่ก็มีความเผ็ดในตัว",
+    "price" : "Sell 2 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : -38.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Fire Ant Meat" : {
+    "name" : "Cooked Fire Ant Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 164 Health\n",
+    "lore" : "เนื้อของมดเพลิงที่ย่างแล้ว มีความเผ็ดแห้ง และความชุ่มฉ่ำมีค่อนข้างน้อย",
+    "price" : "Buy 5 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 164.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Fire Ant Entrails" : {
+    "name" : "Cooked Fire Ant Entrails",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 107 Health\n",
+    "lore" : "เครื่องในของมดเพลิง ที่ย่างแล้ว มีความเผ็ดมาก หากไม่นำพิษออกให้ดีก็อาจทำให้ปากพองได้",
+    "price" : "Buy 4 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 107.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Fire Ant Egg" : {
+    "name" : "Fire Ant Egg",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 1050 Health\n",
+    "lore" : "ไข่ของมดเพลิง มีขนาดใหญ่ราวๆหนึ่งฝ่ามือ มักจะใช้เวลาอย่างยาวนานในการฟักแต่ละครั้ง สิ่งที่จำเป็นต่อการฟักตัวคืออุณหภูมิที่ต้องสูงอยู่ตลอดเวลาหลายวัน",
+    "price" : "Buy 1.6 Silver",
+    "weight" : 3,
+    "restoredFlat" : {
+      "HEALTH" : 1050.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Black Carrot" : {
+    "name" : "Black Carrot",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 285 Health\n",
+    "lore" : "แคร์ร็อตดำ มักจะกินกันเป็นอาหารว่าง เนื่องจากรสชาติที่หวานแหลมจนใช้ประกอบอาหารได้ยาก แต่ก็ยังมีเครื่องดื่มหลายเมนูที่ใช้แคร์ร็อตดำในการประกอบ",
+    "price" : "Buy 1.4 Silver",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 285.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Black Carrot Flower" : {
+    "name" : "Black Carrot Flower",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "สถานะ Black Carrot Flower เป็นเวลา 7 รอบเทิร์น\n",
+    "lore" : "ดอกของแคร์ร็อตดำ จะบานออกมาซ้ำแล้วซ้ำเล่าเมื่อถูกเด็ดออกไป เมื่อทานจะส่งผลให้อวัยวะส่วนขาเกิดชา ทำให้เคลื่อนไหวได้ยาก แคร์ร็อตดำจะล่อลวงสัตว์ต่างๆให้เข้ามาด้วยดอกไม้นี้",
+    "price" : "Buy 1.8 Silver",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Black Carrot Flower",
+        "description" : "",
+        "statusDescription" : "17% GlobalMSPD\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 7.0
+    } ]
+  },
+  "Taily Alligator Meat" : {
+    "name" : "Taily Alligator Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -64 Health\n",
+    "lore" : "เนื้อของจะเข้หางยาว มีรสชาติคล้ายไก่ มีความชุ่มฉ่ำเป็นอย่างมาก แต่หากปล่อยทิ้งไว้นานเกินไป จะกลายเป็นเนื้อแห้งอย่างรวดเร็ว มีกลิ่นคาวของเลือดติด",
+    "price" : "Buy 8 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -64.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Taily Alligator Skin" : {
+    "name" : "Taily Alligator Skin",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Recover -165 Health\n",
+    "lore" : "หนังของจะเข้หางยาว มีความหนาในระดับที่ดี ต้องใช้ฝีมืออย่างมากในการเลาะออกจากเนื้อ",
+    "price" : "Buy 1.7 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -165.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Taily Alligator Tail" : {
+    "name" : "Taily Alligator Tail",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -32 Health\n",
+    "lore" : "หางของจะเข้หางยาว คล้ายกับเนื้อ แต่เป็นหางของจะเข้ที่มีความยาวกว่าปกติอย่างมาก และมีกล้ามเนื้อแทรกอยู่จำนวนมาก",
+    "price" : "Buy 1.8 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -32.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ไม้เสียบเสือร้องไห้" : {
+    "name" : "ไม้เสียบเสือร้องไห้",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 264 Health\n",
+    "lore" : "วิธีการประกอบเมนูคือ การนำเนื้อของสัตว์ไปเสียบไม้ร่วมกับเห็ดสนธยาแล้วเริ่มย่าง หลังจากที่สุกได้ที่แล้วก็ขยำต้นอีลัจโปรยท็อป",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 264.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Berry Grilled Meat" : {
+    "name" : "Berry Grilled Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 86 Health\n",
+    "lore" : "วิธีการประกอบเมนูคือ การนำเนื้อของสัตว์ไปย่างกับไฟให้สุกกำลังดี บดบลูอิงค์เบอร์รี่ให้เละแล้วเทราดลงไปเป็นการเพิ่มมิติรสชาติ",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 86.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Bamboo Beer" : {
+    "name" : "Bamboo Beer",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 4 Mana\n",
+    "lore" : "แบมบูเบียร์ เป็นเบียร์ที่สกัดออกมาจากไผ่โพเลยน์ด้วยกรรมวิธีที่ละเอียดอ่อน มีผลทำให้เมาก็จริงอยู่ แต่ก็เบากว่าเบียร์ทั่วๆไป แถมยังหวานกว่าอย่างเห็นได้ชัด เหมาะกับคนชอบหวานมากๆ",
+    "price" : "Buy 1.2 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 4.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Tecery Potion" : {
+    "name" : "Tecery Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Tecery Adrenaline เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ยาที่สกัดกลั่นจากเทเซอรี เร่งการทำงานของสภาพร่างกาย แต่ก็มีผลย้อนกลับเล็กน้อยเพราะใช้งานหนักกว่าที่ควรจะเป็น",
+    "price" : "Buy 2.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Tecery Adrenaline",
+        "description" : "",
+        "statusDescription" : "22% GlobalPATK\n22% GlobalRATK\n70% GlobalMSPD\n14% GlobalCritDamage\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BASIC"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Distilled Koteosia Leaf Potion" : {
+    "name" : "Distilled Koteosia Leaf Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 566 Health\n",
+    "lore" : "ยาที่สกัดกลั่นจากใบโคทีโอเซียเข้มข้นและส่วนผสมสำคัญอื่นๆ เมื่อดื่มจะฟื้นฟูพลังชีวิตจำนวนมาก",
+    "price" : "Buy 2.6 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 566.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "LAz Inscribed Bone" : {
+    "name" : "LAz Inscribed Bone",
+    "itemType" : "TOOL",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "กระดูกที่ถูกสลักด้วยตัวอักษรประหลาด เมื่อส่งพลังเวทเข้าไป เวทมนตร์ ´Ratia´ จะถูกร่ายออกมา",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Uep Inscribed Bone" : {
+    "name" : "Uep Inscribed Bone",
+    "itemType" : "TOOL",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "กระดูกที่ถูกสลักด้วยตัวอักษรประหลาด เมื่อส่งพลังเวทเข้าไป เวทมนตร์ ´Misvr´ จะถูกร่ายออกมา",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ave Inscribed Bone" : {
+    "name" : "Ave Inscribed Bone",
+    "itemType" : "TOOL",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "กระดูกที่ถูกสลักด้วยตัวอักษรประหลาด เมื่อส่งพลังเวทเข้าไป เวทมนตร์ ´Althohm´ จะถูกร่ายออกมา",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Qur Inscribed Bone" : {
+    "name" : "Qur Inscribed Bone",
+    "itemType" : "TOOL",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "กระดูกที่ถูกสลักด้วยตัวอักษรประหลาด เมื่อส่งพลังเวทเข้าไป เวทมนตร์ ´Jenev´ จะถูกร่ายออกมา",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Polayne Koala Brown Dust" : {
+    "name" : "Polayne Koala Brown Dust",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ผงสีน้ำตาลที่เกิดจากโคอาล่าโพเลย์น เมื่อโปรยใส่พืชจะทำให้ผู้ใช้สามารถควบคุมพืชนั้นได้ชั่วขณะหนึ่ง",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Polayne Koala Green Dust" : {
+    "name" : "Polayne Koala Green Dust",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 295 Health\n",
+    "lore" : "ผงสีเขียวที่เกิดจากโคอาล่าโพเลย์น เมื่อโปรยใส่พืชหรือบริโภค จะฟื้นฟูพลังกายให้",
+    "price" : "0",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 295.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "บ้องตันสามส่วน" : {
+    "name" : "บ้องตันสามส่วน",
+    "itemType" : "FOOD",
+    "description" : "3 VIT\n10% MSPD\n5% ATK , RATK\nตลอดวัน",
+    "statusDescription" : "Recover 607 Health\n",
+    "lore" : "วัตถุดิบหลักคือ Taily Alligator Tail และ Orus Leaf\nวิธีประกอบอาหารคือตั้งหม้อให้ร้อน ล้างเนื้อและซับให้แห้งด้วยใบโอรุส จากนั้นปรุงรสด้วยเครื่องเทศที่ชอบ นำเนื้อลงหม้อ ใส่สมุนไพรสามอย่าง แล้วรอให้สุก เนื้อจะแบ่งออกเป็นสามชั้นกับสมุนไพรสามชนิด เนื้อแต่ละส่วนจะซึมซับสมุนไพรคนละชนิดกัน ส่งผลให้รสชาติออกมาแตกต่าง",
+    "price" : "Buy 5 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 607.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Paper Bee Pollen Gland" : {
+    "name" : "Paper Bee Pollen Gland",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Recover 67 Health\n",
+    "lore" : "ต่อมเกสรของผึ้งหัวเสือ สามารถใช้ทาแผลตื้นๆได้ นิยมใช้ร่วมกับใบโคทีโอเซียเพื่อปิดแผล",
+    "price" : "Buy 7 Copper",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 67.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Awakening Potion" : {
+    "name" : "Awakening Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Awaken เป็นเวลา 8 รอบเทิร์น\n",
+    "lore" : "ยาที่เกิดจากการนำหญ้าเทเซอรีไปผสมน้ำเกลือเพื่อให้ผลอดรีนาลีนของเทเซอรีลดน้อยลง ช่วยป้องกันไม่ให้ง่วง",
+    "price" : "Buy 9 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Awaken",
+        "description" : "ไม่สามารถหลับ หรือถูกทำให้หลับได้",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 8.0
+    } ]
+  },
+  "Bread" : {
+    "name" : "Bread",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 95 Health\n",
+    "lore" : "ขนมปังธรรมดาๆที่ใช้ประทังความหิวได้ดี เพราะเน่าเสียได้ยาก รสชาติเองก็พอกินได้",
+    "price" : "Buy 8 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 95.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Red Berry Juice" : {
+    "name" : "Red Berry Juice",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 65 Health\nRecover 2 Mana\n",
+    "lore" : "น้ำเบอร์รี่สีแดง ไม่แน่ใจนักว่ามันทำมาจากอะไร แต่มีรสชาติเปรี้ยวหวาน เหมาะกับการดื่มให้กระปรี้กระเปร่า",
+    "price" : "Buy 7 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 65.0,
+      "MANA" : 2.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Honey Jar" : {
+    "name" : "Honey Jar",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 200 Health\n",
+    "lore" : "น้ำผึ้งที่ถูกบรรจุเอาไว้ในขวดโหล ใช้ทำอาหารก็เหมาะ ใช้กินสดๆก็ยังได้",
+    "price" : "Buy 3.5 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 200.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Bug Meat" : {
+    "name" : "Bug Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "เนื้อของแมลงที่ยังดิบๆอยู่",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Cooked Bug Meat" : {
+    "name" : "Cooked Bug Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "Recover 105 Health\n",
+    "lore" : "เนื้อของแมลงที่สุกดีแล้ว",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 105.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Mejel" : {
+    "name" : "Mejel",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "โสมเมเจล มีคุณลักษณะพิเศษหลายอย่างทำให้เติบโตในทะเลทรายได้ หาพบได้ยาก มีคุณสมบัติทางยาที่ช่วยในการระบายความเครียดได้เป็นอย่างดี",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Lorie" : {
+    "name" : "Lorie",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ต้นลอรี่",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Katef´s Root" : {
+    "name" : "Katef´s Root",
+    "itemType" : "HERB",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "รากของต้นคาเทฟ มีคุณสมบัติของเพลิงในหลายๆด้าน เปลี่ยนแปลงไปขึ้นอยู่กับวิธีใช้มัน",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ikres Bean" : {
+    "name" : "Ikres Bean",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "สถานะ Sleep เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "เมล็ดอิเครส มีผลทำให้ร่างกายผ่อนคลายเป็นอย่างมาก มักจะใช้ผสมกับน้ำดื่มเป็นคล้ายสมุนไพรที่ใช้ดื่มได้ทุกวัน หากกินเปล่าๆอาจส่งผลรุนแรงจนทำให้หลับได้",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Sleep",
+        "description" : "หลับ ไม่สามารถใช้งาน Action, Combined Action, Reaction หรือ Hold Action ได้\nตื่นเมื่อถูกรบกวน",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Koteosia Seed" : {
+    "name" : "Koteosia Seed",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Mejel Root" : {
+    "name" : "Mejel Root",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "รากของโสมเมเจล",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Polayne Shoot" : {
+    "name" : "Polayne Shoot",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover 32 Health\n",
+    "lore" : "หน่อไม้โพเลย์น หาพบได้ไม่ยากนัก ในช่วงแรกมันจะเติบโตได้ช้ามาก แต่หลังจากที่สภาพแวดล้อมการเติบโตพร้อม มันจะเติบโตอย่างรวดเร็ว",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 32.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Polayne Spider Egg" : {
+    "name" : "Polayne Spider Egg",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ไข่แมงมุมโพเลย์น เกิดจากแมงมุมตัวเล็กที่วางไข่เอาไว้ในไผ่โพเลย์น นิยมใช้ทำอาหารหลากหลายรูปแบบ",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ผัดป่าโพเลย์น" : {
+    "name" : "ผัดป่าโพเลย์น",
+    "itemType" : "FOOD",
+    "description" : "STR 4 ตลอดวัน\nDEX 2 ตลอดวัน\nVIT 1 ตลอดวัน",
+    "statusDescription" : "Recover 607 Health\nRecover 9 Mana\n",
+    "lore" : "ตั้งกระทะไฟเบา นำไข่แมงมุมลงกระทะสักพักหนึ่งจนกว่าจะได้กลิ่นของไข่แมงมุมที่อบอวล จากนั้นนำไข่แมงมุมขึ้นจากน้ำมันทันที แล้วนำหน่อไม้ลงผัดต่อจนกว่าจะสุก ในตอนท้ายที่สุด เมื่อหน่อไม้สุกแล้วนำไข่แมงมุมลงผัดคลุกเคล้าแล้วนำขึ้นจากกระทะทันที",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 607.0,
+      "MANA" : 9.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Sleep Potion" : {
+    "name" : "Sleep Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Sleep เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาที่สกัดกลั่นจากอิคิดามอน มีผลทำให้ง่วงเป็นอย่างมากแม้จะใช้ทาก็ตาม สามารถใช้ได้กับสิ่งมีชีวิตแทบทุกชนิด",
+    "price" : "Buy 1.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Sleep",
+        "description" : "หลับ ไม่สามารถใช้งาน Action, Combined Action, Reaction หรือ Hold Action ได้\nตื่นเมื่อถูกรบกวน",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Lucky Potion" : {
+    "name" : "Lucky Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Eleven Clover´s Luck เป็นเวลา 6 รอบเทิร์น\n",
+    "lore" : "ยาที่มีส่วนผสมหลักเป็นใบโคลเวอร์สิบเอ็ดแฉก ผสมร่วมกับน้ำ",
+    "price" : "Buy 7 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Eleven Clover´s Luck",
+        "description" : "",
+        "statusDescription" : "11% CritChance\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 6.0
+    } ]
+  },
+  "Verdant Poison Potion" : {
+    "name" : "Verdant Poison Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Green Fin Poison เป็นเวลา 8 รอบเทิร์น\nสถานะ Blindness เป็นเวลา 8 รอบเทิร์น\n",
+    "lore" : "ยาสีเขียวสว่าง ดูเหมือนจะมีพิษรุนแรงผสมอยู่สองสามชนิด เมื่อดื่มแล้วจะเริ่มรู้สึกทรมานจากส่วนปลายสุดของร่างกายอย่างนิ้วเท้าหรือมือก่อน จากนั้นจะค่อยๆเริ่มชา",
+    "price" : "Buy 2.5 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Green Fin Poison",
+        "description" : "",
+        "statusDescription" : "60% GlobalMSPD\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "DEBUFF",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 8.0
+    }, {
+      "condition" : {
+        "name" : "Blindness",
+        "description" : "มองเห็นไกลกว่ารัศมี 1 เมตรไม่ได้",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "DEBUFF",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 8.0
+    } ]
+  },
+  "Sweet Blue Potion" : {
+    "name" : "Sweet Blue Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 207 Health\nRecover 4 Mana\n",
+    "lore" : "ยาสีน้ำเงินเข้ม รสชาติหวานปะแล่ม เมื่อชิมดูแล้วจะรู้สึกได้ว่ารสชาติของวัตถุดิบไม่เข้ากันเป็นอย่างมาก",
+    "price" : "Buy 1.2 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 207.0,
+      "MANA" : 4.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Flexible Potion" : {
+    "name" : "Flexible Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Flexible Potion เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาสีเขียวอ่อน เหม็นและรสชาติขมปร่า ช่วยเพิ่มความยืดหยุ่นของร่างกายได้ได้เหมือนกับไผ่โพเลย์น ",
+    "price" : "Buy 1.8 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Flexible Potion",
+        "description" : "",
+        "statusDescription" : "24% GlobalPDEF\n40% GlobalManaRegen\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Fire Ant Poison Potion" : {
+    "name" : "Fire Ant Poison Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Fire Ant Poison เป็นเวลา 6 รอบเทิร์น\n",
+    "lore" : "ยาสีแดงอ่อนๆ ดูเหมือนจะผสมเลือดเข้ากับอะไรบางอย่างเพราะมีความเหนียวข้นเป็นอย่างมาก ถ้าสัมผัสกับมันโดยตรงจะรู้สึกแสบร้อนเอาการ",
+    "price" : "Buy 1.1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Fire Ant Poison",
+        "description" : "",
+        "statusDescription" : "-15% GlobalMSPD\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "DEBUFF",
+        "conditionTierType" : "BASIC"
+      },
+      "duration" : 6.0
+    } ]
+  },
+  "Sharp Eye Snake Poison Potion" : {
+    "name" : "Sharp Eye Snake Poison Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ยาที่ผสมพิษของงูชาร์ปอาย เหลวและไหลไปทั่วขวดได้อย่างรวดเร็ว แต่มันจะซึมเข้าไปในร่างกายได้ง่ายดายมาก คงเป็นอันตรายหากเผลอทำหก",
+    "price" : "Buy 2.1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ikres Potion" : {
+    "name" : "Ikres Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Ikres Potion เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ยาที่มีอิเครสเป็นส่วนผสมหลัก ยังต้องผสมสิ่งอื่นๆเพื่อให้กระจายคุณสมบัติที่ออกจะมากเกินไปของอิเครส ส่งผลให้สภาพร่างกายผ่อนคลายและคล่องแคล่วมากขึ้น",
+    "price" : "Buy 1.8 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Ikres Potion",
+        "description" : "",
+        "statusDescription" : "26% GlobalMSPD\n-6% GlobalRATK\n-6% GlobalPATK\n7% GlobalMATK\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Honey Sweet Potion" : {
+    "name" : "Honey Sweet Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 159 Health\nRecover 6 Mana\nสถานะ Honey Sweet Regeneration เป็นเวลา 5 รอบเทิร์น\n",
+    "lore" : "เกิดจากการผสมผสานของเหลวที่มีความหวานเป็นอย่างมากเข้ากับน้ำผึ้ง มีผลทำให้ร่างกายผ่อนคลายและช่วยให้สมองปลอดโปร่ง",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 159.0,
+      "MANA" : 6.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Honey Sweet Regeneration",
+        "description" : "",
+        "statusDescription" : "2.5 ManaRegen\n5 HealthRegen\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 5.0
+    } ]
+  },
+  "Melting Acid Potion" : {
+    "name" : "Melting Acid Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Melting Acid เป็นเวลา 7 รอบเทิร์น\n",
+    "lore" : "กรดที่ถูกสร้างขึ้นจากวัสดุหลายอย่าง มีความเข้มข้นเป็นอย่างมาก อุณหภูมิสูงอยู่ตลอดเวลา",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Melting Acid",
+        "description" : "",
+        "statusDescription" : "Set PDEF to 0\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "DEBUFF",
+        "conditionTierType" : "GENERAL"
+      },
+      "duration" : 7.0
+    } ]
+  },
+  "Infusion Liquid" : {
+    "name" : "Infusion Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "เมื่อใช้เคลือบอาวุธ การโจมตีด้วยอาวุธจะสร้างความเสียหายเวทมนตร์แทนกายภาพเป็นเวลาสองรอบเทิร์น",
+    "statusDescription" : "Recover 3 Mana\n",
+    "lore" : "ของเหลวที่ถูกสร้างขึ้นจากการสกัดกลั่นสื่อเวทมนตร์จำนวนหนึ่ง ใช้ในการร่ายเวทแทนมานาได้",
+    "price" : "Buy 2.3 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 3.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Sharp Liquid" : {
+    "name" : "Sharp Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "เมื่อใช้เคลือบอาวุธ การโจมตีด้วยอาวุธจะสร้างความเสียหายกายภาพมากขึ้น 18%",
+    "statusDescription" : "Recover -340 Health\n",
+    "lore" : "ของเหลวที่กลั่นจากโลหะปะปนเวทมนตร์ มีความสามารถในการเพิ่มความคมของอาวุธได้หลากหลายชนิด",
+    "price" : "Buy 2.7 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -340.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Steel Coating Liquid" : {
+    "name" : "Steel Coating Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "เมื่อใช้เคลือบเกราะ รับสถานะ Steady เป็นเวลา 3 รอบเทิร์น",
+    "statusDescription" : "",
+    "lore" : "ของเหลวสีเงิน เมื่อใช้เคลือบเกราะแล้วก็ทำให้ความทนทานเพิ่มขึ้นเป็นอย่างมาก รวมทั้งแรงปะทะเองก็ลดลงด้วย",
+    "price" : "Buy 1.9 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Magic Diversion Liquid" : {
+    "name" : "Magic Diversion Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "เมื่อใช้เคลือบเกราะ รับสถานะ Magic Divert เป็นเวลา 3 รอบเทิร์น",
+    "statusDescription" : "",
+    "lore" : "ของเหลวสีฟ้า เมื่อใช้เคลือบเกราะแล้วก็ทำให้ความต้านทานเวทมนตร์เพิ่มขึ้นเป็นอย่างมาก ช่วยให้มีโอกาสลบล้างเวทมนตร์บางชนิดได้ด้วย",
+    "price" : "Buy 2.8 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Magic Magnify Liquid" : {
+    "name" : "Magic Magnify Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "มีผลในการเพิ่มอนุภาคของเวทมนตร์ที่เข้ามาเป็นอย่างมาก เร่งให้เวทมนตร์รุนแรงขึ้น",
+    "price" : "Buy 3.1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Pungle Meat" : {
+    "name" : "Pungle Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "เนื้อของพังเกิ้ล นุ่ม ชุ่มฉ่ำในตัวเอง แค่ใช้ย่างกินก็เป็นอาหารชั้นดีแล้ว",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Desert Crawler Meat" : {
+    "name" : "Desert Crawler Meat",
+    "itemType" : "FOOD",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "เนื้อของเดเซิร์ทครอวเลอร์ เหนียว เมื่อนำไปปรุงให้นุ่มแล้วก็มีรสสัมผัสที่ยอดเยี่ยม ซึมซับความชื้นได้ดี",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "White Cactus Flower" : {
+    "name" : "White Cactus Flower",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ดอกกระบองเพชรสีขาว ดูผิวเผินอาจจะเหมือนใช้ทำอะไรไม่ได้ แต่ดูเหมือนว่าจะหอมมาก ตอนใช้ปรุงอาหารก็อย่าลืมหยิบกากมันไปทิ้งล่ะ",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Crystal Salamander Meat" : {
+    "name" : "Crystal Salamander Meat",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "เนื้อของซาลามันเดอร์คริสตัล เหนียว แต่กลับไม่มีความคาวอยู่เลย บางทีอาจเป็นเพราะในตัวของซาลามันเดอร์คริสตัลไม่มีเลือด",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Mil Cream" : {
+    "name" : "Mil Cream",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ครีมของมิล มีคุณสมบัติในการปกป้องผิวจากแสงแดดเป็นอย่างดี โดยปกติแล้วจะนิยมผ่านกระบวนการเจือจางเพื่อให้ได้ครีมในปริมาณมาก แต่ก็ใช้งานสดๆได้เลยเหมือนกัน",
+    "price" : "Buy 4 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Soul Brewed Potion" : {
+    "name" : "Soul Brewed Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 445 Health\nRecover 2 Mana\n",
+    "lore" : "ยาที่ถูกปรุงขึ้นด้วยจิตวิญญาณของสิ่งมีชีวิต ฟื้นฟูพลังชีวิตจำนวนมาก แต่อาจมีผลข้างเคียง",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 445.0,
+      "MANA" : 2.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Ordinary Healing Potion" : {
+    "name" : "Ordinary Healing Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 161 Health\n",
+    "lore" : "ยาที่เกิดจากการผสมผสานระหว่างของกินได้หลายชนิด เรียบง่าย แต่ก็ช่วยให้ฟื้นฟูสภาพร่างกายได้ดี",
+    "price" : "Buy 8 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 161.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Tiny Drake Leg" : {
+    "name" : "Tiny Drake Leg",
+    "itemType" : "FOOD_INGREDIENT",
+    "description" : "",
+    "statusDescription" : "Recover -69 Health\n",
+    "lore" : "ขาของเดรคจิ๋ว ถึงจะเล็กไปหน่อย แต่ก็น่าจะใช้ทำของกินเล่นสักมื้อได้",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : -69.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Glowing Liquid" : {
+    "name" : "Glowing Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Glowing เป็นเวลา 6 รอบเทิร์น\n",
+    "lore" : "ของเหลวที่ส่องสว่างตลอดเวลา แม้จะไม่มากเท่าตะเกียงหรือคบเพลิง แต่เมื่อกระแทกแรงๆมันจะสว่างวาบออกมาพริบตาหนึ่ง",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Glowing",
+        "description" : "ร่างกายส่องแสงสว่างออกมา",
+        "statusDescription" : "",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "ADVANCED"
+      },
+      "duration" : 6.0
+    } ]
+  },
+  "Deep-Fried Red Fin Fish With Fisn Sauce" : {
+    "name" : "Deep-Fried Red Fin Fish With Fisn Sauce",
+    "itemType" : "FOOD",
+    "description" : "8 STR\n10% GlobalSTR\n6 VIT\n4 DEX\n15% GlobalPATK\nตลอดวัน",
+    "statusDescription" : "Recover 806 Health\nRecover 10 Mana\n",
+    "lore" : "วิธีการทำ เริ่มจากนำผ้ามาซับน้ำออกจากปลาให้หมาด ตั้งน้ำมันในกระทะจนร้อนจัด แล้วใส่ปลาทอดลงไป ปล่อยทิ้งไว้ประมาณหกถึงเจ็ดนาที จากนั้นพลิก แล้วรออีกประมาณสามถึงสี่นาที  แล้วจึงยกปลาขึ้นมาพัก ราดด้วยซอสที่สร้างขึ้นจากการนำน้ำตาล, เกลือ, น้ำเปล่าลงกระทะ แล้วเคี่ยวให้เข้ากัน",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 806.0,
+      "MANA" : 10.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Deep-Fried Purple Fin Fish With Fish Sauce" : {
+    "name" : "Deep-Fried Purple Fin Fish With Fish Sauce",
+    "itemType" : "FOOD",
+    "description" : "16 VIT\n15% GlobalVIT\n15% GlobalPDEF\n15% GlobalMDEF\nตลอดวัน",
+    "statusDescription" : "Recover 1405 Health\nRecover 11 Mana\n",
+    "lore" : "วิธีการทำ เริ่มจากนำผ้ามาซับน้ำออกจากปลาให้หมาด ตั้งน้ำมันในกระทะจนร้อนจัด แล้วใส่ปลาทอดลงไป ปล่อยทิ้งไว้ประมาณหกถึงเจ็ดนาที จากนั้นพลิก แล้วรออีกประมาณสามถึงสี่นาที  แล้วจึงยกปลาขึ้นมาพัก ราดด้วยซอสที่สร้างขึ้นจากการนำน้ำตาล, เกลือ, น้ำเปล่าลงกระทะ แล้วเคี่ยวให้เข้ากัน",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 1405.0,
+      "MANA" : 11.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Crystal Salamander Steak" : {
+    "name" : "Crystal Salamander Steak",
+    "itemType" : "FOOD",
+    "description" : "2 DEX\n2 WIS\n4 VIT\n5 MATK",
+    "statusDescription" : "Recover 684 Health\nRecover 12 Mana\n",
+    "lore" : "สเต็กเนื้อคริสตัลซาลามันเดอร์ที่ทำออกมาสุกเกินไปหน่อย การประกอบอาหารคือ ซับความชื้นให้ผิวด้านนอกแห้งก่อน จากนั้นเลาะเอามันเนื้อออกมาตั้งกระทะ ปรุงรสเนื้อด้วยพริกไทยดำกับเกลือ พอมันบนกระทะเริ่มเปลี่ยนเป็นสีเหลืองทองก็ตั้งไฟให้แรงสุด รอจนกระทะร้อนแล้วเอาเนื้อลงจี้บนกระทะ แล้วคอยพลิกจนสุก",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 684.0,
+      "MANA" : 12.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Skyblue Potion" : {
+    "name" : "Skyblue Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 6 Mana\nสถานะ Skyblue Flourish เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ขวดยาที่บรรจุของเหลวสีฟ้า มันส่องแสงประกายเล็กๆตลอดเวลา มีผลในการส่งเสริมเวทมนตร์ฟื้นฟูและเวทมนตร์เสริมพลัง รวมไปถึงช่วยในการฟื้นฟูมานาด้วย",
+    "price" : "Buy 2.2 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 6.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Skyblue Flourish",
+        "description" : "",
+        "statusDescription" : "24% HealAMP\n11% BuffAMP\n1.3 ManaRegen\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Basic Heal Scroll" : {
+    "name" : "Basic Heal Scroll",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 650 Health\n",
+    "lore" : "กระดาษคุณภาพดีที่สลักเวทมนตร์ไว้บนนั้น เมื่ออ่าน จะร่ายเวทมนตร์ Basic Heal ออกมา",
+    "price" : "Buy 3 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 650.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Nitron Liquid" : {
+    "name" : "Nitron Liquid",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ยาที่สกัดกลั่นจากไนตรอนอย่างยากลำบาก มีความไม่สเถียรสูงมาก ทันทีที่ของเหลวหลุดออกจากขวดแล้วปะทะกับวัตถุภายนอก มันจะเกิดระเบิดขนาดย่อมๆขึ้น",
+    "price" : "Buy 5.9 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Red Cerelia Potion" : {
+    "name" : "Red Cerelia Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover -8 Mana\nสถานะ Red Cerelia Potion เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาที่มีเซเรลเลียเป็นส่วนผสมหลัก ประกอบกับวัตถุดิบเร่งสภาพร่างกายอย่างรากมิเชีย หรือต้นเทเซอรี ลดทอนผลด้านลบและเพิ่มสมรรถภาพทางกาย มีรสชาติขมปร่า ไม่เหมาะกับการดื่มเพื่อความอร่อยเลยสักนิด",
+    "price" : "Buy 3.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : -8.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Red Cerelia Potion",
+        "description" : "",
+        "statusDescription" : "19% GlobalPATK\n19% GlobalRATK\n25% GlobalEvasion\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "Mejel Potion" : {
+    "name" : "Mejel Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 140 Health\nสถานะ Mejel Potion เป็นเวลา 5 รอบเทิร์น\n",
+    "lore" : "ยาที่สกัดกลั่นจากโสมเมเจล มีผลในการรักษาบาดแผล ถึงแม้จะไม่ใช่ทันที แต่การฟื้นฟูของมันก็ทรงพลังมาก",
+    "price" : "Buy 2.9 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 140.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Mejel Potion",
+        "description" : "",
+        "statusDescription" : "21 HealthRegen\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 5.0
+    } ]
+  },
+  "Blue Cerelia Potion" : {
+    "name" : "Blue Cerelia Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 3 Mana\nสถานะ Blue Cerelia Potion เป็นเวลา 4 รอบเทิร์น\n",
+    "lore" : "ยาที่มีเซเรลเลียเป็นส่วนผสมหลัก ประกอบกับวัตถุดิบเร่งการไหลเวียนของมานาอย่างดอกมูนไอวีน\nส่งเสริมเวทมนตร์ที่ร่าย อีกทั้งยังช่วยฟื้นฟูมานาได้ดี",
+    "price" : "Buy 3.1 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 3.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Blue Cerelia Potion",
+        "description" : "",
+        "statusDescription" : "3 ManaRegen\n21% GlobalMATK\n18% GlobalHealAMP\n15% GlobalBuffAMP\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 4.0
+    } ]
+  },
+  "White Cerelia Potion" : {
+    "name" : "White Cerelia Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 835 Health\nRecover 2 Mana\n",
+    "lore" : "ยาที่มีเซเรลเลียเป็นส่วนผสมหลัก ประกอบกับวัตถุดิบที่ช่วยรักษาบาดแผล ทำให้มันฟื้นฟูสภาพร่างกายได้ดี",
+    "price" : "Buy 3.4 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 835.0,
+      "MANA" : 2.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Hand-Craft Mil Cream" : {
+    "name" : "Hand-Craft Mil Cream",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ถึงจะไม่ครีมของมิลแท้ๆแต่เป็นสิ่งที่สังเคราะห์ขึ้นมาจากแร่บางชนิด แต่ดูเหมือนว่าจะใช้กันแดดแทนได้อยู่นะ",
+    "price" : "Buy 5 Copper",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Unstable Liquidated Mana" : {
+    "name" : "Unstable Liquidated Mana",
+    "itemType" : "CONSUMABLE",
+    "description" : "ร่ายเวทมนตร์แบบสุ่ม",
+    "statusDescription" : "",
+    "lore" : "ของเหลวประจุเวทมนตร์ที่ไม่สเถียรเป็นอย่างมาก อย่าเผลอปล่อยให้มันปะทะกับอากาศภายนอกเป็นอันขาด ไม่อย่างนั้นเวทมนตร์ที่ไม่รู้ว่าอันตรายแค่ไหนจะถูกร่ายออกมาทันที",
+    "price" : "Buy 10 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Diverted Lucky Potion" : {
+    "name" : "Diverted Lucky Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 300 Health\nสถานะ Diverted Luck Potion เป็นเวลา 5 รอบเทิร์น\n",
+    "lore" : "ยาที่ถูกสร้างขึ้นจากใบโคลเวอร์สิบเอ็ดแฉก แต่กลับถูกผสมผสานโดยเปลี่ยนคุณสมบัติของยาให้กลายเป็นขั้วตรงข้าม",
+    "price" : "Buy 9 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 300.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Diverted Luck Potion",
+        "description" : "",
+        "statusDescription" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\nSet LUK to 0\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 5.0
+    } ]
+  },
+  "Invisible Potion" : {
+    "name" : "Invisible Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "",
+    "lore" : "ยาสีใสจนมองเห็นได้ยากมาก มีผลทำให้ผู้บริโภคและสิ่งที่กำลังสัมผัสล่องหนไปด้วย",
+    "price" : "Buy 21 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ต้มหน่อไม้ปลาแดง" : {
+    "name" : "ต้มหน่อไม้ปลาแดง",
+    "itemType" : "FOOD",
+    "description" : "11 VIT\n8% GlobalVIT\n10% GlobalWIS\n15% GlobalDEX\n20% GlobalHP\n25 PATK\nตลอดวัน",
+    "statusDescription" : "Recover 2954 Health\nRecover 15 Mana\n",
+    "lore" : "ตั้งหม้อ เทน้ำเปล่าลงไปครึ่งหม้อ หั่นเนื้อสองหน่วยเป็นลูกเต๋าแล้วเทลงหม้อ\nนำปลาครีปที่ลอกเกล็ดแล้วมาหั่นเป็นสองส่วนลงหม้อตามไป\nเลาะก้างทิ้ง ใส่หัวปลาลงไปในหม้อด้วย\nต้มไฟกลาง ใส่ เทเซอรีหนึ่งหน่วย หน่อไม้โพเลย์สองหน่วย ใบโอรุสหนึ่งหน่วย ดอกกระบองเพชรขาวหนึ่งหน่วย เกลือหมาป่าหนึ่งหน่วย ปิดฝาหม้อแล้วรอให้เดือด\nพอเดือดแล้วก็เอาตะแกงช้อนซากดอกกระบองเพชรและใบโอรุสออก เป็นอันเสร็จ",
+    "price" : "Buy 3.5 Silver",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2954.0,
+      "MANA" : 15.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ทอดปลาแดงราดซอส" : {
+    "name" : "ทอดปลาแดงราดซอส",
+    "itemType" : "FOOD",
+    "description" : "9 STR\n15% GlobalSTR\n25% GlobalHP\n20% GlobalMSPD\nตัวคูณสกิลประเภท Physical เพิ่มขึ้น 20%\nตลอดวัน",
+    "statusDescription" : "Recover 2130 Health\nRecover 19 Mana\n",
+    "lore" : "ตั้งหม้อ เทน้ำลงไปครึ่งหม้อ\nนำปลาครีปม่วงและครีปแดงมาลอกเกล็ดออก หั่นแคร์ร็อตดำ จากนั้นนำปลาครีปม่วงกับแคร์ร็อตดำลงหม้อ ตั้งไฟกลาง รอให้เดือด\nในขณะเดียวกันตั้งกระทะ ใส่น้ำมัน เปิดไฟต่ำ โรยเกลือหมาป่าลงไป ใช้ตะหลิวเกลี่ยเกลือให้ทั่วกระทะ จากนั้นนำปลาครีปแดงที่เตรียมไว้ลงทอดให้ทั้งสองด้านสุกเท่ากัน\nจากนั้นปิดไฟ ใส่จานไว้รอ\nเร่งไฟที่หม้อให้แรงขึ้น เคี่ยวปลาและแคร์ร็อตจนสังเกตว่าระดับของน้ำจะลดลงเหลือแค่หนึ่งในสี่\nจากนั้น ปิดไฟ ตักเนื้อปลาม่วงในหม้อออกมาจัดจาน ใช้ซอสจากหม้อเดียวกันมาราดปลาที่ทอดไว้",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2130.0,
+      "MANA" : 19.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Red Teceris Potion" : {
+    "name" : "Red Teceris Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Red Teceris Potion เป็นเวลา 2 รอบเทิร์น\n",
+    "lore" : "เกิดจากการผสมผสานเทเซอรีและเกล็ดของปลาครีปแดงที่เข้ากันเป็นอย่างดี แม้จะมีผลเร่งการทำงานของร่างกาย แต่ก็ไม่ถึงกับทำให้ร่างกายรับภาระอะไร",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Red Teceris Potion",
+        "description" : "",
+        "statusDescription" : "43% GlobalRATK\n20% GlobalPhysicalPen\n24% GlobalMSPD\n20% GlobalEvasion\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 2.0
+    } ]
+  },
+  "Moonlight Potion" : {
+    "name" : "Moonlight Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 8 Mana\nสถานะ Moonlight Potion เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ยาที่ในขวดประดับประดาไปด้วยของเหลวสีฟ้าขาวส่องสว่าง มีประกายสีเหลืองปะปนสวยงามดูราวกับแสงจันทร์ในยามค่ำคืน\n",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 8.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Moonlight Potion",
+        "description" : "",
+        "statusDescription" : "9% GlobalINT\n85 HealthRegen\n10 ManaRegen\n15% GlobalMATK\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "Blue Mishia Potion" : {
+    "name" : "Blue Mishia Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "หลังจากสถานะ Mishia Root Potion หมดลบ รับ Stun 2 รอบเทิร์น",
+    "statusDescription" : "Recover 3 Mana\nสถานะ Mishia Root Potion เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ยาที่ถูกกลั่นด้วยมิเชียกับวัตถุดิบฟื้นฟูกำลังอื่นๆ ยังเก็บคุณสมบัติของมิเชียเอาไว้ได้ดี แต่ผลการเร่งสภาพร่างกายที่มากเกินไปหน่อยของมิเชียก็ทำให้ร่างกายรับภาระหนัก",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 3.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Mishia Root Potion",
+        "description" : "",
+        "statusDescription" : "17% GlobalPATK\n17% GlobalRATK\n9% GlobalMSPD\n\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
+  },
+  "แซนด์วิชเจลลี่เบียร์เนื้อปลา" : {
+    "name" : "แซนด์วิชเจลลี่เบียร์เนื้อปลา",
+    "itemType" : "FOOD",
+    "description" : "9 INT\n1.3 ManaRegen\n26% GlobalINT\n14% GlobalWIS\nตลอดวัน",
+    "statusDescription" : "Recover 2684 Health\nRecover 9 Mana\n",
+    "lore" : "ตั้งหม้อและปรับไฟให้ต่ำ เทแบมบูเบียร์และน้ำผึ้งลงไปในหม้อและต้มประมาณชั่วโมงครึ่งระหว่างนั้น จะเคี่ยวทุกๆห้านาที เพื่อไม่ให้เบียร์ไหม้ติดหม้อ จนกว่าตัวเบียร์จะเหนียวได้ที่ และกลายเป็นวุ้น \nเตรียมชาม ใส่เนื้อปลาครีปม่วงที่ชำแหละแล้ว หมักด้วยแบมบูเบียร์พร้อมกับใส่เกลือหมาป่าคลุกเคล้าให้เข้ากัน และทิ้งไว้ประมาณสามสิบนาที จากนั้นเทเบียร์ออก สุดท้าย ใส่วุ้นเบียร์น้ำผึ้งลงไปผสมกับเนื้อปลา คลุกให้เข้ากัน \nตั้งกระทะให้ร้อนด้วยไฟต่ำ จากนั้นวางขนมปังลงบนกระทะให้ผิวขนมปังเกรียมได้ที่ ใส่เนื้อปลาคลุกวุ้นเบียร์น้ำผึ้งลงบนขนมปัง ประกบเข้าด้วยกัน กดให้แน่นด้วยเขียงและหั่นครึ่งเพื่อเสิร์ฟ ",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2684.0,
+      "MANA" : 9.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ลูกชิ้นปลาสามสีราดซอสหวาน" : {
+    "name" : "ลูกชิ้นปลาสามสีราดซอสหวาน",
+    "itemType" : "FOOD",
+    "description" : "31% GlobalPATK\n26% GlobalPDEF\n26% GlobalMDEF\n45% GlobalHealAMP\nตลอดวัน",
+    "statusDescription" : "Recover 2749 Health\nRecover 5 Mana\n",
+    "lore" : "นำปลาครีปแดง ครีปม่วง และครีปน้ำเงินที่แล่แล้วมาสับให้ละเอียดจนเป็นเนื้อเดียว ผสมกับแป้งข้าวโพดหนึ่งหน่วยแล้วปั้นให้เป็นลูกชิ้น\nตั้งกระทะ เทน้ำมันสองหน่วยให้นองกระทะ รอให้น้ำมันเดือดแล้วนำลูกชิ้นทั้งหมดลงทอดจนสีเหลืองทอง จากนั้นนำขึ้นมาพักไว้\nตั้งหม้อเทน้ำหนึ่งหน่วย ใช้ไฟอ่อน นำหัวของปลาทั้งสามที่แล่มาต้ม ปิดฝาตุ๋นทำน้ำสต็อกสองชั่วโมงครึ่ง\nกรองหัวปลาออกไปทิ้ง จากนั้นตั้งกระทะใช้ไฟอ่อน เทน้ำสต็อกใส่กระทะ ใส่น้ำตาลสองหน่วย แป้งข้าวโพดละลายน้ำหนึ่งหน่วยและดอกกระบองเพชรขาวหนึ่งหน่วย ผัดโดยใช้ไฟอ่อนจนกลายเป็นซอสแล้วนำดอกกระบองเพชรออก\nนำลูกชิ้นขึ้นจาน ราดซอสพร้อมเสิร์ฟ",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2749.0,
+      "MANA" : 5.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ยำปลาทอดกรอบสองสี" : {
+    "name" : "ยำปลาทอดกรอบสองสี",
+    "itemType" : "FOOD",
+    "description" : "18% GlobalSTR\n18% GlobalAGI\n24% GlobalSpeed\n",
+    "statusDescription" : "Recover 2866 Health\nRecover 3 Mana\n",
+    "lore" : "หันเนื้อปลาให้เป็นชิ้นพอดีคำ จากนั้นหมักเนื้อปลาครีปแดงและปลาครีปเหลืองนานยี่สิบนาที\nระหว่างนั้นนำใบโอรุสหนึ่งหน่วยมาหั่นเป็นชิ้นเล็กๆไปต้มด้วยไฟต่ำห้านาที ก่อนจะนำขึ้นมาสะเด็ดนั้น\nนำเนื้อปลาไปคลุกกับแป้งที่ผสมกับเกลือหมาป่าหนึ่งหน่วย ทอดน้ำมันไฟกลางสิบห้านาที\nนำปลาที่ทอดมาชุบไข่สองหน่วย ชุบแป้งหนึ่งหน่วยก่อนจะนำไปทอดซ้ำด้วยไฟกลางอีกสิบนาที จากนั้นนำขึ้นสะเด็ดน้ำมัน\nเสิร์ฟพร้อมผงเทเซอรีหนึ่งหน่วย",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2866.0,
+      "MANA" : 3.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "Fried Orange Fin Fish" : {
+    "name" : "Fried Orange Fin Fish",
+    "itemType" : "FOOD",
+    "description" : "7% GlobalLUK\nตลอดวัน",
+    "statusDescription" : "Recover 103 Health\n",
+    "lore" : "ปลาครีปส้มย่างไฟ รสชาติห่วยแตกเกินบรรยาย",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 103.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "BlueIveen Potion" : {
+    "name" : "BlueIveen Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "Recover 10 Mana\nสถานะ BlueIveen Potion เป็นเวลา 2 รอบเทิร์น\n",
+    "lore" : "ขวดยาสีฟ้าเข้ม ดูเหมือนจะยังไม่ใสเหมือนกับสีของมูนไอวีน แต่ด้วยวัตถุดิบอื่นๆที่ผสมปนเปอย่างริฟิสหรือเมเจล ก็ทำให้มันมีผลของการฟื้นฟูด้วย",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 10.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "BlueIveen Potion",
+        "description" : "",
+        "statusDescription" : "7% GlobalINT\n16 ManaRegen\n41 HealthRegen\n\n",
+        "modifiers" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "BUFF",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 2.0
+    } ]
+  },
+  "ลาบเลือดปลาลืมคืน" : {
+    "name" : "ลาบเลือดปลาลืมคืน",
+    "itemType" : "FOOD",
+    "description" : "36% GlobalMATK\n89% GlobalCritDamage\n34 HealthRegen\nตลอดวัน",
+    "statusDescription" : "Recover 3451 Health\nRecover 4 Mana\n",
+    "lore" : "วิธีการทำ เริ่มจากหั่นปลาและหมักเข้ากับเกลือและสมุนไพรก่อนจะดองเอาไว้ 1 วัน และนำมาต้มพร้อมกับสมุนไพรและปลาอีกชนิด แล้วจึงนำไปสะเด็ดน้ำและเก็บน้ำเอาไว้ ก่อนจะนำเนื้อปลามาหั่น และผัดในกระทะด้วยน้ำมันเป็นเวลาแล้วต่อด้วยเลือด ก่อนจะใส่ผักกับน้ำที่เก็บไว้ลงไปพร้อมผัดต่ออีกหน่อยก่อนนำขึ้นจัดจาน ",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 3451.0,
+      "MANA" : 4.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ลูกอมทดลอง รุ่นที่ 1" : {
+    "name" : "ลูกอมทดลอง รุ่นที่ 1",
+    "itemType" : "FOOD",
+    "description" : "15% GlobalRATK\n15% GlobalPATK\nตลอดวัน",
+    "statusDescription" : "Recover 841 Health\nRecover 1.5 Mana\n",
+    "lore" : "วิธีการทำ บดครีปปลากับสมุนไพรและนำไปตำ ก่อนจะใส่ลงในหม้อที่ต้มน้ำไว้ด้วยไฟปานกลาง เมื่อเคี่ยวเสร็จจึงนำไปกรอง ก่อนจะตั้งกระทะ เทน้ำผึ้งกับน้ำตาลลงไปเคี่ยวด้วยกันตามด้วยเทน้ำกับครีปปลาบดสมุนไพรลงไปทีละหยดช้าๆ และเตรียมแป้งโรยใส่ถาดรอเอาไว้ก่อนจะนำวัตถุดิบที่เคี่ยวเสร็จเทลงไปในถาดจนมันแข็งตัวแล้วตัดเป็นสี่เหลี่ยมและนำมาห่อกับกระดาษเป็นขนมพกพาขนาดเล็ก",
+    "price" : "",
+    "weight" : 1,
+    "restoredFlat" : {
+      "HEALTH" : 841.0,
+      "MANA" : 1.5,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ผัดกะเพราปลารวมญาติ" : {
+    "name" : "ผัดกะเพราปลารวมญาติ",
+    "itemType" : "FOOD",
+    "description" : "15% GlobalAGI\n15% GlobalHP\n28% GlobalPATK\n-76% GlobalMSPD\nตลอดวัน",
+    "statusDescription" : "Recover 3210 Health\nRecover 12 Mana\n",
+    "lore" : "นำเนื้อปลาคลุกเคล้ากับเกลือก่อนจะนำไปล้างน้ำลดความคาว ก่อนจะนำไปแล่ทั้งเกล็ดและก้างออก แล้วนำมาหั่นละเอียดรวมให้เป็นเนื้อเดียวกัน หั่นหน้อไม้เตรียมรอเอาไว้แล้วตั้งกระทะพร้อมน้ำมันก่อนนำเนื้อปลาลงผัด โรยเกลือตามลงไปตามด้วยหน่อไม้ที่หั่นเอาไว้ ก่อนจะใบแครอทและดอกกระบองเพชรลงไปเสริมกลิ่นและความน่าทาน ก่อนนำขึ้นจานพร้อมทานด้วยกลิ่นหอมที่ครบรส",
+    "price" : "",
+    "weight" : 0,
+    "restoredFlat" : {
+      "HEALTH" : 3210.0,
+      "MANA" : 12.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "แซนวิชมีทแอนด์ฟิชแซ่บ" : {
+    "name" : "แซนวิชมีทแอนด์ฟิชแซ่บ",
+    "itemType" : "FOOD",
+    "description" : "13% GlobalMSPD\nตลอดวัน",
+    "statusDescription" : "Recover 1477 Health\n",
+    "lore" : "วิธีการทำ แล่ปลาก่อนจะนำเนื้อปลา และ เนื้อมาหั่นแยกกันเอาไว้และปรุงมันด้วยสมุนไพรและพริกก่อนจะนำไปแช่เย็นพักไว้ ต่อด้วยตั้งน้ำมันร้อนๆฉีกขนมปังลงไปทอดจนกรอบแล้วนำขึ้นมาพักไว้จนแห้งก่อนจะทุบให้กลายเป็นเกล็ดเล็กๆ และหั่นขนมปังอีกก้อนเป็น 2 แผ่น ก่อนจะนำแป้งทอดกรอบกับไข่ปรุงเข้าด้วยกันแยกไว้ ต่อด้วยการทำซอสด้วยการตั้งน้ำให้เดือดปลอกโสมแล้วใส่ลงไป ตามด้วยเกลือและสมุนไพรเคี่ยวจนเริ่มเป็นซอส แล้วไปเตรียมแม่พิมพ์สำหรับใส่เนื้อที่แช่เอาไว้ และนำซอสมาทาแต่ละด้านพร้อมห่อกระดาษต่อด้วยการคลุกเคล้ากับแป้งและเกล็ดขนมปัง แล้วนำไปทอดในหม้อร้อนๆให้เหลืองกรอบก่อนนำขึ้นมาประกบด้วยขนมปังพร้อมทาน",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 1477.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "ขนมจีนน้ำยาปลาบด" : {
+    "name" : "ขนมจีนน้ำยาปลาบด",
+    "itemType" : "FOOD",
+    "description" : "36% GlobalPATK\n36% GlobalMATK\n31% GlobalSpeed",
+    "statusDescription" : "Recover 3687 Health\nRecover 8 Mana\n",
+    "lore" : "วิธีการทำ นำแป้งกับน้ำผสมเข้าด้วยกันและนวดจนขึ้นรูปก่อน ตัดแบ่งให้เป็นเส้นๆเอาไว้ ต่อด้วยแล่เกล็ดปลาออกและนำไปต้มกับสมุนไพรเพื่อลดความคาว และนำขึ้นจากน้ำก่อนจะแยกใบทิ้งไปและนำปลามาแล่ต่อให้ครบขั้นตอน และนำพริก เกลือ ผัก ใส่ลงไปในหม้อต้มปลาก่อนหน้าเคี่ยวจนได้ที่แล้วตักกากดอกไม้ออก ต่อด้วยนำปลาที่แล่เสร็จแล้วเทลงต้มรวมกัน ระหว่างนี้เตรียมหม้ออีกใบสำหรับต้มเส้นข้างๆกัน เมื่อเสร็จแล้วนำเส้นขึ้นมาสะเด็ดน้ำ ก่อนที่จะนำลงจานแล้วตักน้ำที่เคี่ยวอย่างดีจากอีกหม้อราดลงไปบนเส้นแบบพอเหมาะเป็นอันพร้อมทาน",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 3687.0,
+      "MANA" : 8.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  },
+  "เกี๊ยวซ่าปลาร่ำไห้" : {
+    "name" : "เกี๊ยวซ่าปลาร่ำไห้",
+    "itemType" : "FOOD",
+    "description" : "17% GlobalVIT\n34% GlobalMATK\nตลอดวัน",
+    "statusDescription" : "Recover 2777 Health\nRecover 7 Mana\n",
+    "lore" : "วิธีการทำ นำแป้งมาผสมกับน้ำก่อนจะปั้นจนได้ที่แล้วนำไปหั่นเป็นแผ่นสี่เหลี่ยม แล้วจึงไปแล่ปลาเพื่อนำไปต้มพร้อมกับสมุนไพรก่อนจะนำขึ้นมาพักไว้ก่อน ต่อด้วยซอยกระหล่ำนำไปใส่ชามเอาไว้บีบเบอร์รี่ตามลงไปแล้วคลุกให้เข้ากันจนได้ที่จึงปิดฝาพักเอาไว้ และนำเนื้อปลามาหั่นละเอียดเพื่อนำไปคลุกกับเกลือก่อนจะนำไปคลุกกับชามผักต่อ และแบ่งเนื้อห่อลงแป้งไว้สำหรับลงกระทะ โดยจะเตรียมกระทะไว้โดยใช้น้ำมันเล็กน้อยแล้วนำแป้งที่ห่อไว้วางลงไปต่อด้วยเทน้ำลงไปเพื่อนึ่งมันช้าๆ จนน้ำระเหยหมดแล้วค่อยนำขึ้นจัดจานพร้อมทานได้เลย",
+    "price" : "",
+    "weight" : 2,
+    "restoredFlat" : {
+      "HEALTH" : 2777.0,
+      "MANA" : 7.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ ]
+  }
+}
