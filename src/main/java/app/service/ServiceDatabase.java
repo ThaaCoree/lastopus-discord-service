@@ -417,22 +417,22 @@ public class ServiceDatabase {
         }
     }
 
-    public String save_player(Unit unit) {
-//        ObjectMapper mapper = new ObjectMapper();
-//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    public String save_player(String json) {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         try {
-//            Map<String, Unit> map = mapper.readValue(
-//                    json,
-//                    new TypeReference<Map<String, Unit>>() {
-//                    }
-//            );
-            Query query = new Query(Criteria.where("_id").is(unit));
+            Unit unit = mapper.readValue(
+                    json,
+                    new TypeReference<Unit>() {
+                    }
+            );
+            Query query = new Query(Criteria.where("_id").is(unit.getName()));
 
             mongoTemplate.findAndReplace(query, unit);
         }catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("saved player : "+unit.getName());
+        System.out.println("saved player");
         return "saved";
     }
 
