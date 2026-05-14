@@ -36,11 +36,14 @@ public class APIController {
     public String updateUnit(@RequestBody RuneboardRequest request) {
         database.load_player();
         Unit unit = database.findPlayer(request.player_name);
-        System.out.println("socketed runes : "+request.socketed_runes);
-        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());
+//        System.out.println("socketed runes : "+request.socketed_runes);
+//        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());
+        System.out.println("rune_inventory : "+request.rune_inventory);
+        System.out.println("unit's rune_inventory before set : "+request.rune_inventory);
         unit.setRune_inventory(request.rune_inventory);
         unit.setSocketed_runes(request.socketed_runes);
-        System.out.println("unit's socketed runes after set "+unit.getSocketed_runes());
+        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);
+//        System.out.println("unit's socketed runes after set "+unit.getSocketed_runes());
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
