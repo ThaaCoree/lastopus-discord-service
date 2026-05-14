@@ -29,6 +29,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
     Button remove_all_runes = new Button("Remove All Runes");
     Button add = new Button("+");
     Button remove = new Button("-");
+    Button remove_ten = new Button("-10");
     Button random_rune = new Button("Random Rune");
     VBox whole_box = new VBox();
 
@@ -51,6 +52,12 @@ public class RuneBoardPropertyPanel extends ScrollPane {
             unit.decreaseRuneInventory();
             refreshContents();
         });
+        remove_ten.setOnAction(e-> {
+            for (int i = 0; i < 10; i++) {
+                unit.decreaseRuneInventory();
+            }
+            refreshContents();
+        });
         random_rune.setOnAction(e-> {
             unit.addRuneToInventory(Rune.randomRune(unit, database.getAllRuneMap()));
             refreshContents();
@@ -60,7 +67,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
             removeAllRunes();
             runeBoardPane.refreshContent();
         });
-        whole_box.getChildren().addAll(remove_all_runes,add,remove, random_rune );
+        whole_box.getChildren().addAll(remove_all_runes,add,remove, remove_ten, random_rune );
         for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
             VBox row = createRuneInventoryRow(entry);
             whole_box.getChildren().add(row);
@@ -87,7 +94,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
 
     public void refreshContents() {
         whole_box.getChildren().clear();
-        whole_box.getChildren().addAll(remove_all_runes,add, remove, random_rune);
+        whole_box.getChildren().addAll(remove_all_runes,add, remove, remove_ten, random_rune);
 
         for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
             VBox row = createRuneInventoryRow(entry);

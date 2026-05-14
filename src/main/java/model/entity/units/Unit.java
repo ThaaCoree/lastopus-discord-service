@@ -1515,6 +1515,34 @@ public class Unit {
         this.statCalculator = statCalculator;
     }
 
+    public void reduceCopperCoin(int reduce) {
+        Map<CurrencyType, Integer> purse = getPurse();
+        int copper   = purse.get(CurrencyType.COPPER);
+        int silver   = purse.get(CurrencyType.SILVER);
+        int gold     = purse.get(CurrencyType.GOLD);
+        int platinum = purse.get(CurrencyType.PLATINUM);
+
+        // 1 silver =    10 copper
+        // 1 gold   =  1000 copper  (100 silver)
+        // 1 plat   = 98000 copper  (98 gold)
+        int total = copper + (silver * 10) + (gold * 1000) + (platinum * 98000);
+        total -= reduce;
+
+        if (total < 0) {
+            throw new IllegalArgumentException("Not enough currency!");
+        }
+
+        int newPlatinum = total / 98000;  total %= 98000;
+        int newGold     = total / 1000;   total %= 1000;
+        int newSilver   = total / 10;     total %= 10;
+        int newCopper   = total;
+
+        purse.put(CurrencyType.PLATINUM, newPlatinum);
+        purse.put(CurrencyType.GOLD,     newGold);
+        purse.put(CurrencyType.SILVER,   newSilver);
+        purse.put(CurrencyType.COPPER,   newCopper);
+    }
+
     @JsonIgnore
     public double getSpeed() {
         return stats.get(StatType.SPEED).getFinal();
