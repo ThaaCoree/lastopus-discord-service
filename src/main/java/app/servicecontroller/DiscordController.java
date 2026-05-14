@@ -133,9 +133,6 @@ public class DiscordController {
         if (unit != null) {
             int amount;
             int price = 20;
-            if (price > unit.getCopperCoin()) {
-                return "มีเงินไม่เพียงพอ!";
-            }
         try {
             amount = Integer.parseInt(playerMessage.message);
         } catch (NumberFormatException e) {
@@ -144,6 +141,9 @@ public class DiscordController {
         if (amount > 20) {
             return "จำกัดการซื้อครั้งละไม่เกิน 20 ชิ้น!";
         }
+            if (price*amount > unit.getCopperCoin()) {
+                return "มีเงินไม่เพียงพอ!";
+            }
             StringBuilder stringBuilder = new StringBuilder(unit.getName());
             stringBuilder.append(" ได้รับ\n");
 
