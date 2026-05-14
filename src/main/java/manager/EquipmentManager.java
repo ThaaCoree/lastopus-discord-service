@@ -135,6 +135,7 @@ public class EquipmentManager {
         Equipment equipment2 = unit.getEquipmentSlots().get(8).getEquipment();
         if (equipment1 == null || equipment2 == null) {
             unit.setMixTwoHanded(false);
+            return;
         }
         List<WeaponType> weaponType = new ArrayList<>();
         weaponType.add(equipment1.getWeaponType());
@@ -144,6 +145,7 @@ public class EquipmentManager {
             if (type == WeaponType.SHIELD ||
                 type == WeaponType.CHAIN) {
                 unit.setMixTwoHanded(false);
+                return;
             }
         }
         unit.setMixTwoHanded(true);
