@@ -33,6 +33,7 @@ public class APIController {
 
     @PostMapping("/update_unit")
     public String updateUnit(@RequestBody Unit unit) {
+        System.out.println(unit);
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
