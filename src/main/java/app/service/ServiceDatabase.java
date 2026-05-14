@@ -427,9 +427,12 @@ public class ServiceDatabase {
                     new TypeReference<Unit>() {
                     }
             );
+
+            System.out.println("Unit Object : "+unit);
+
             Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
             Document doc = mongoTemplate.findOne(query, Document.class, "players");
-
+            
             Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
             Update update = new Update().set(unit.getName(), unit);
             mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
