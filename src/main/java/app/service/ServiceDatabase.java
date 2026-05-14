@@ -16,6 +16,7 @@ import org.bson.Document;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 import util.StatTranslateUtil;
 
@@ -426,11 +427,12 @@ public class ServiceDatabase {
                     new TypeReference<Unit>() {
                     }
             );
-            Query query = new Query(Criteria.where("_id").is(unit.getName()));
-            Unit existing = mongoTemplate.findOne(query, Unit.class); // เช็คว่าหาเจอมั้ย
-            System.out.println("Found existing: " + existing);
-            
-            mongoTemplate.findAndReplace(query, unit);
+            Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
+            Document doc = mongoTemplate.findOne(query, Document.class, "ชื่อ collection");
+
+            Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
+            Update update = new Update().set(unit.getName(), unit);
+            mongoTemplate.updateFirst(updateQuery, update, Document.class, "ชื่อ collection");
         }catch (Exception e) {
             e.printStackTrace();
         }
