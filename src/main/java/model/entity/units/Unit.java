@@ -911,9 +911,6 @@ public class Unit {
         for (Item item : inventoryItems.values()) {
             if (item.getName().equals(name) && item instanceof Equipment equipment) return equipment;
         }
-        for (Item item : backpackItems.values()) {
-            if (item.getName().equals(name) && item instanceof Equipment equipment) return equipment;
-        }
         return null;
     }
 
