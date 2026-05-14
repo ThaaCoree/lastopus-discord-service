@@ -431,8 +431,6 @@ public class ServiceDatabase {
                     }
             );
 
-            System.out.println("Unit Object : "+unit);
-
             Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
             Document doc = mongoTemplate.findOne(query, Document.class, "players");
 

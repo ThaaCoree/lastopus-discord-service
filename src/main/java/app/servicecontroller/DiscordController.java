@@ -189,6 +189,7 @@ public class DiscordController {
     }
 
     public void writeintoSheet(Unit unit) {
+        System.out.println("Unit Object : "+unit);
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
