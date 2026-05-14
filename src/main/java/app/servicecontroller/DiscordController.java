@@ -143,12 +143,13 @@ public class DiscordController {
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.randomRune(unit, database.allRuneMap);
                 unit.addRuneToInventory(rune);
-                stringBuilder.append("\n").append(rune.getName());
+                stringBuilder.append(i+1).append(". ").append("\n[").append(rune.getName()).append("]");
                 if (rune.isUnique_rune()) {
-                    stringBuilder.append(" [UNIQUE RUNE!] ");
+                    stringBuilder.append(" UNIQUE RUNE! ");
                 }
-                stringBuilder.append(rune.getStatusDescription()).append(rune.getStatusDescription());
+                stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getStatusDescription());
             }
+            writeintoSheet(unit);
             return stringBuilder.toString();
         } else {
             return "No Role!";
@@ -218,14 +219,23 @@ public class DiscordController {
     }
 
     public void writeintoSheet(Unit unit) {
-        System.out.println("Unit Object : "+unit);
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             String json = mapper.writeValueAsString(unit);
             database.save_player(json);
-            System.out.println("after save_player and before writeToSheet");
             unit.writeToSheet(database.load_credentials());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void savePlayer(Unit unit) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            String json = mapper.writeValueAsString(unit);
+            database.save_player(json);
         } catch (Exception e) {
             e.printStackTrace();
         }
