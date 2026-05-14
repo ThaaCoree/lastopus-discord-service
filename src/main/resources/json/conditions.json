@@ -21618,7 +21618,7 @@
   },
   "Impending Stab" : {
     "name" : "Impending Stab",
-    "description" : "รับความเสียหายกายภาพ 795.2397366898754 หน่วยเมื่อจบรอบเทิร์น",
+    "description" : "รับความเสียหายกายภาพ 827.4914292177211 หน่วยเมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -28052,14 +28052,14 @@
   "Mythic Gleaming" : {
     "name" : "Mythic Gleaming",
     "description" : "",
-    "statusDescription" : "20.33% GlobalHealAMP\n\n",
+    "statusDescription" : "20.36% GlobalHealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.20328778508872264,
+          "globalMult" : 0.2035554025551261,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -28074,14 +28074,14 @@
   "Elemental Drain" : {
     "name" : "Elemental Drain",
     "description" : "",
-    "statusDescription" : "-15.25% GlobalCastSPD\n-15.25% GlobalAttackSPD\n-22.36% GlobalEvasion\n\n",
+    "statusDescription" : "-15.27% GlobalCastSPD\n-15.27% GlobalAttackSPD\n-22.39% GlobalEvasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CASTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.15246583881654197,
+          "globalMult" : -0.15266655191634457,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28089,7 +28089,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.15246583881654197,
+          "globalMult" : -0.15266655191634457,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28097,7 +28097,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.2236165635975949,
+          "globalMult" : -0.2239109428106387,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }

@@ -103,18 +103,10 @@ public class DiscordController {
             if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
 
             if (item instanceof Rune rune) {
-                target.addRuneToInventory((Rune) rune);
-                giver.removeRuneFromInventory((Rune) rune);
-                writeintoSheet(giver);
-                writeintoSheet(target);
-                return giver.getName() + " มอบ " + item.getName() + " ให้กับ " + target_name + " " + amount + " หน่วย\n" +
-                        "<@" + playerMessage.mentionedUsers.get(0).id + ">";
+                return "กรุณาใช้คำสั่ง ?giverune";
             } else {
                 target.getInventoryManager().addItem(item, amount);
                 giver.getInventoryManager().removeItem(item.getName(), amount);
-
-                System.out.println("giver inventory: " + giver.getInventoryItems());
-                System.out.println("giver in map: " + database.allPlayerMap.get(name).getInventoryItems());
 
                 writeintoSheet(giver);
                 writeintoSheet(target);
@@ -159,6 +151,54 @@ public class DiscordController {
             }
             writeintoSheet(unit);
             return stringBuilder.toString();
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/giverune")
+    public String giverune(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit giver = database.findPlayer(name);
+        if (giver != null) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
+            Unit target = database.findPlayer(target_name);
+            if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int index = 0;
+            try {
+                index = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "หมายเลขไม่ถูกต้อง";
+            }
+            if (index <= 0) {
+                return "หมายเลขต้องมากกว่า 0";
+            }
+            Rune rune = giver.findRune(index);
+            if (rune == null) return "ไม่พบรูน";
+            {
+                target.addRuneToInventory(rune);
+                giver.removeRuneFromInventory(rune);
+
+                writeintoSheet(giver);
+                writeintoSheet(target);
+                return giver.getName() + " มอบ " + rune.getName() + " ให้กับ " + target_name + " แล้ว\n" +
+                        "<@" + playerMessage.mentionedUsers.get(0).id + ">";
+            }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/update")
+    public String update(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit updater = database.findPlayer(name);
+        if (updater != null) {
+            updater.writeToSheet(database.load_credentials());
+            return "อัพเดทชีทของ "+updater.getName()+" เสร็จสิ้น";
         } else {
             return "No Role!";
         }

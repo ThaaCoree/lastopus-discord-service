@@ -908,6 +908,16 @@ public class Unit {
         return null;
     }
 
+    public Rune findRune(int index) {
+        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
+        int i = 0;
+        for (Rune rune_reindex : rune_inventory.values()) {
+            reindexed.put(i++, rune_reindex);
+        }
+        rune_inventory = reindexed;
+        return rune_inventory.get(index);
+    }
+
     public Equipment findEquipment(String name) {
         for (Item item : inventoryItems.values()) {
             if (item.getName().equals(name) && item instanceof Equipment equipment) return equipment;
