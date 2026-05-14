@@ -148,6 +148,7 @@ public class DiscordController {
                     stringBuilder.append(" UNIQUE RUNE! ");
                 }
                 stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription());
+                stringBuilder.append(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
             }
             writeintoSheet(unit);
             return stringBuilder.toString();
