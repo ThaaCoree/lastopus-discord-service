@@ -4,6 +4,7 @@ import app.service.ServiceDatabase;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
@@ -31,16 +32,13 @@ public class APIController {
     }
 
     @PostMapping("/update_unit")
-    public String updateUnit(@RequestBody String json) {
-        database.save_player(json);
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    public String updateUnit(@RequestBody Unit unit) {
         try {
-            Unit unit = mapper.readValue(
-                    json,
-                    new TypeReference<Unit>() {
-                    }
-            );
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            String json = mapper.writeValueAsString(unit);
+
+            database.save_player(json);
             unit.writeToSheet(database.load_credentials());
         } catch (Exception e) {
             e.printStackTrace();
