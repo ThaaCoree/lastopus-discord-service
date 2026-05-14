@@ -1,4 +1,4 @@
-package app.servicecontroller;
+package app.config;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
