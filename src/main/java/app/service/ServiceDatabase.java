@@ -427,7 +427,9 @@ public class ServiceDatabase {
                     }
             );
             Query query = new Query(Criteria.where("_id").is(unit.getName()));
-
+            Unit existing = mongoTemplate.findOne(query, Unit.class); // เช็คว่าหาเจอมั้ย
+            System.out.println("Found existing: " + existing);
+            
             mongoTemplate.findAndReplace(query, unit);
         }catch (Exception e) {
             e.printStackTrace();
