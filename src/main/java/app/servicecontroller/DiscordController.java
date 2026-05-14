@@ -33,10 +33,19 @@ public class DiscordController {
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
         Equipment equipment;
+        int slot = 0;
+        try {
+            slot = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+        } catch (NumberFormatException e) {
+            return "จำนวนไม่ถูกต้อง";
+        }
+        if (slot != 2) {
+            slot = 1;
+        }
         if (unit != null) {
             equipment = unit.findEquipment(playerMessage.message);
             if (equipment != null) {
-                unit.getEquipmentManager().equip(equipment, 1);
+                unit.getEquipmentManager().equip(equipment, slot);
                 writeintoSheet(unit);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
             } else {
@@ -57,7 +66,7 @@ public class DiscordController {
         if (unit != null) {
         for (Map.Entry<Integer, EquipmentSlot> entry : unit.getEquipmentSlots().entrySet()) {
             if (entry.getValue().getEquipment() == null) continue;
-            if (entry.getValue().getEquipment().getName().equals(playerMessage.message)) {
+            if (entry.getValue().getEquipment().getName().equalsIgnoreCase(playerMessage.message)) {
                 slot = entry.getKey();
                 equipment = entry.getValue().getEquipment();
             }

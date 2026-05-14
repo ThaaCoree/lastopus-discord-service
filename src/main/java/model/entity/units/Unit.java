@@ -920,7 +920,7 @@ public class Unit {
 
     public Equipment findEquipment(String name) {
         for (Item item : inventoryItems.values()) {
-            if (item.getName().equals(name) && item instanceof Equipment equipment) return equipment;
+            if (item.getName().equalsIgnoreCase(name) && item instanceof Equipment equipment) return equipment;
         }
         return null;
     }

@@ -21143,11 +21143,11 @@
   "Icarus" : {
     "name" : "Icarus",
     "description" : "",
-    "statusDescription" : "1533.21 Accuracy\n\n",
+    "statusDescription" : "1809.21 Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ACCURACY" : {
-          "flat" : 1533.2059232375548,
+          "flat" : 1809.209038790867,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21165,11 +21165,11 @@
   "Revenos" : {
     "name" : "Revenos",
     "description" : "",
-    "statusDescription" : "109.51 LUK\n175.22% AttackSPD\n\n",
+    "statusDescription" : "129.23 LUK\n206.77% AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
-          "flat" : 1.7522353408429199,
+          "flat" : 2.0676674729038482,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21179,7 +21179,7 @@
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 109.51470880268248,
+          "flat" : 129.2292170564905,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21196,11 +21196,11 @@
   "Titan" : {
     "name" : "Titan",
     "description" : "",
-    "statusDescription" : "481.86 PDEF\n481.86 MDEF\n\n",
+    "statusDescription" : "568.61 PDEF\n568.61 MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
-          "flat" : 481.86471873180295,
+          "flat" : 568.6085550485583,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21208,7 +21208,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALDEFENSE" : {
-          "flat" : 481.86471873180295,
+          "flat" : 568.6085550485583,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21226,14 +21226,14 @@
   "Melovas" : {
     "name" : "Melovas",
     "description" : "",
-    "statusDescription" : "71.67% GlobalCritDamage\n61.43% GlobalAccuracy\n\n",
+    "statusDescription" : "72.73% GlobalCritDamage\n62.34% GlobalAccuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.7166938362499999,
+          "globalMult" : 0.7272844005836365,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21241,7 +21241,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.6143090025000001,
+          "globalMult" : 0.6233866290716884,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21256,21 +21256,21 @@
   "Muro" : {
     "name" : "Muro",
     "description" : "",
-    "statusDescription" : "153.32 LUK\n73.72% GlobalAttackSPD\n\n",
+    "statusDescription" : "180.92 LUK\n74.81% GlobalAttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.737170803,
+          "globalMult" : 0.7480639548860262,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 153.32059232375548,
+          "flat" : 180.9209038790867,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21287,11 +21287,11 @@
   "Tyranovia" : {
     "name" : "Tyranovia",
     "description" : "",
-    "statusDescription" : "645.56 MDEF\n645.56 PDEF\n204.77% GlobalCritShield\n\n",
+    "statusDescription" : "776.96 MDEF\n776.96 PDEF\n207.8% GlobalCritShield\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALDEFENSE" : {
-          "flat" : 645.5625606875527,
+          "flat" : 776.9561034775456,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21299,7 +21299,7 @@
           "passiveMult" : 0.0
         },
         "PHYSICALDEFENSE" : {
-          "flat" : 645.5625606875527,
+          "flat" : 776.9561034775456,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -21310,7 +21310,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.047696675,
+          "globalMult" : 2.0779554302389616,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21325,14 +21325,14 @@
   "Rex" : {
     "name" : "Rex",
     "description" : "",
-    "statusDescription" : "102.38% GlobalEvasion\n102.38% GlobalMSPD\n\n",
+    "statusDescription" : "103.9% GlobalEvasion\n103.9% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0238483375,
+          "globalMult" : 1.0389777151194808,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21340,7 +21340,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0238483375,
+          "globalMult" : 1.0389777151194808,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21355,14 +21355,14 @@
   "Fade" : {
     "name" : "Fade",
     "description" : "",
-    "statusDescription" : "40.95% GlobalMSPD\n\n",
+    "statusDescription" : "41.56% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.40953933500000006,
+          "globalMult" : 0.4155910860477924,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21377,14 +21377,14 @@
   "Regalia Maelstorm" : {
     "name" : "Regalia Maelstorm",
     "description" : "",
-    "statusDescription" : "37.52% GlobalSTR\n37.52% GlobalPATK\n107.21% GlobalMSPD\n\n",
+    "statusDescription" : "38.08% GlobalSTR\n38.08% GlobalPATK\n108.79% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21392,7 +21392,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0720925000000001,
+          "globalMult" : 1.087934780229823,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21402,7 +21402,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21416,14 +21416,14 @@
   "Regalia Icarus" : {
     "name" : "Regalia Icarus",
     "description" : "",
-    "statusDescription" : "37.52% GlobalDEX\n37.52% GlobalRATK\n107.21% GlobalMSPD\n\n",
+    "statusDescription" : "38.08% GlobalDEX\n38.08% GlobalRATK\n108.79% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "RANGEDATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21431,7 +21431,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0720925000000001,
+          "globalMult" : 1.087934780229823,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21441,7 +21441,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21455,14 +21455,14 @@
   "Regalia Geneva" : {
     "name" : "Regalia Geneva",
     "description" : "",
-    "statusDescription" : "37.52% GlobalINT\n37.52% GlobalMATK\n107.21% GlobalMSPD\n\n",
+    "statusDescription" : "38.08% GlobalINT\n38.08% GlobalMATK\n108.79% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21470,7 +21470,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0720925000000001,
+          "globalMult" : 1.087934780229823,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21480,7 +21480,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21494,14 +21494,14 @@
   "Regalia Revenos" : {
     "name" : "Regalia Revenos",
     "description" : "",
-    "statusDescription" : "37.52% GlobalCritDamage\n284.96% GlobalMSPD\n\n",
+    "statusDescription" : "38.08% GlobalCritDamage\n288.3% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21509,7 +21509,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.8496086899946875,
+          "globalMult" : 2.8829726834220604,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21524,14 +21524,14 @@
   "Regalia Titan" : {
     "name" : "Regalia Titan",
     "description" : "",
-    "statusDescription" : "37.52% GlobalVIT\n37.52% GlobalPDEF\n37.52% GlobalMDEF\n107.21% GlobalMSPD\n\n",
+    "statusDescription" : "38.08% GlobalVIT\n38.08% GlobalPDEF\n38.08% GlobalMDEF\n108.79% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21539,7 +21539,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -21547,7 +21547,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0720925000000001,
+          "globalMult" : 1.087934780229823,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21557,7 +21557,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.375232375,
+          "globalMult" : 0.380777173080438,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21735,7 +21735,7 @@
   },
   "Twilight Seafloor" : {
     "name" : "Twilight Seafloor",
-    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 35.474999999999994 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
+    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 41.265 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26000,7 +26000,7 @@
   },
   "Crux Mortis" : {
     "name" : "Crux Mortis",
-    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 9.969679762019503 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 17.446939583534128 หน่วย",
+    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 11.209115790888557 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 19.61595263405497 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26767,7 +26767,7 @@
   },
   "Starving Beast" : {
     "name" : "Starving Beast",
-    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 20.49336 หน่วย, หากครบเงื่อนไข ฟื้นฟู 40.98672 หน่วยแทน",
+    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 22.092299999999998 หน่วย, หากครบเงื่อนไข ฟื้นฟู 44.184599999999996 หน่วยแทน",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -27166,7 +27166,7 @@
   },
   "Open The Pages HP" : {
     "name" : "Open The Pages HP",
-    "description" : "จะถูกฮีลเป็นจำนวน 993.63 เมื่อจบรอบเทิร์น",
+    "description" : "จะถูกฮีลเป็นจำนวน 1336.98 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -27179,7 +27179,7 @@
   },
   "Open The Pages MP" : {
     "name" : "Open The Pages MP",
-    "description" : "จะฟื้นฟู MP เป็นจำนวน 16 เมื่อจบรอบเทิร์น",
+    "description" : "จะฟื้นฟู MP เป็นจำนวน 18.84 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -27592,14 +27592,14 @@
   "Nebula Maelstorm" : {
     "name" : "Nebula Maelstorm",
     "description" : "",
-    "statusDescription" : "109268.66% GlobalPATK\n\n",
+    "statusDescription" : "127061.29% GlobalPATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1092.6865596239998,
+          "globalMult" : 1270.6128948149997,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27614,14 +27614,14 @@
   "Nebula Icarus" : {
     "name" : "Nebula Icarus",
     "description" : "",
-    "statusDescription" : "80.41% GlobalAccuracy\n80.41% GlobalCritDamage\n\n",
+    "statusDescription" : "81.6% GlobalAccuracy\n81.6% GlobalCritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ACCURACY" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.8040693750000001,
+          "globalMult" : 0.8159510851723673,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27629,7 +27629,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.8040693750000001,
+          "globalMult" : 0.8159510851723673,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27657,14 +27657,14 @@
   "Nebula Revenos" : {
     "name" : "Nebula Revenos",
     "description" : "",
-    "statusDescription" : "17.52 LUK\n350.45% GlobalMSPD\n51.19% GlobalAttackSPD\n102.15 MATK\n\n",
+    "statusDescription" : "20.68 LUK\n413.53% GlobalMSPD\n51.95% GlobalAttackSPD\n118.78 MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 3.5044706816858398,
+          "globalMult" : 4.1353349458076964,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27672,12 +27672,12 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.51192416875,
+          "globalMult" : 0.5194888575597404,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
         "MAGICALATTACK" : {
-          "flat" : 102.15042899999997,
+          "flat" : 118.78397437499997,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -27687,7 +27687,7 @@
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 17.522353408429197,
+          "flat" : 20.67667472903848,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -27704,11 +27704,11 @@
   "Nebula Titan" : {
     "name" : "Nebula Titan",
     "description" : "",
-    "statusDescription" : "613.28 PDEF\n613.28 MDEF\n\n",
+    "statusDescription" : "723.68 PDEF\n723.68 MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
-          "flat" : 613.2823692950219,
+          "flat" : 723.6836155163468,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -27716,7 +27716,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALDEFENSE" : {
-          "flat" : 613.2823692950219,
+          "flat" : 723.6836155163468,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -27733,7 +27733,7 @@
   },
   "Fatima" : {
     "name" : "Fatima",
-    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 602.85 หน่วยทุกเทิร์น",
+    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 724.33 หน่วยทุกเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -28052,14 +28052,14 @@
   "Mythic Gleaming" : {
     "name" : "Mythic Gleaming",
     "description" : "",
-    "statusDescription" : "20.36% GlobalHealAMP\n\n",
+    "statusDescription" : "20.56% GlobalHealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.2035554025551261,
+          "globalMult" : 0.20559666190029272,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -28074,14 +28074,14 @@
   "Elemental Drain" : {
     "name" : "Elemental Drain",
     "description" : "",
-    "statusDescription" : "-15.27% GlobalCastSPD\n-15.27% GlobalAttackSPD\n-22.39% GlobalEvasion\n\n",
+    "statusDescription" : "-15.42% GlobalCastSPD\n-15.42% GlobalAttackSPD\n-22.62% GlobalEvasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CASTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.15266655191634457,
+          "globalMult" : -0.15419749642521952,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28089,7 +28089,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.15266655191634457,
+          "globalMult" : -0.15419749642521952,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28097,7 +28097,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.2239109428106387,
+          "globalMult" : -0.226156328090322,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }

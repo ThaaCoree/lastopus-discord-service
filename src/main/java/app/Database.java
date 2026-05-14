@@ -96,6 +96,7 @@ public class Database {
     }
 
     public void loadItemFromJson() {
+        allPlayerMap = JsonUtils.loadFromFile("/json/players.json", new TypeReference<Map<String, Unit>>() {});
         allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
         allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
         allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
