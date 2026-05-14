@@ -1379,6 +1379,9 @@ public class Unit {
     }
 
     public void addRuneToInventory(Rune rune) {
+        if (rune_inventory == null) {
+            rune_inventory = new LinkedHashMap<>();
+        }
         for (Map.Entry<Integer, Rune> entry : rune_inventory.entrySet()) {
             int slotNum = entry.getKey();
 
