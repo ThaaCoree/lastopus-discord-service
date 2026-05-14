@@ -33,6 +33,8 @@ public class DiscordController {
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
         Equipment equipment;
+        String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+
         int slot = 0;
         try {
             slot = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
@@ -43,7 +45,7 @@ public class DiscordController {
             slot = 0;
         }
         if (unit != null) {
-            equipment = unit.findEquipment(playerMessage.message);
+            equipment = unit.findEquipment(itemName);
             if (equipment != null) {
                 unit.getEquipmentManager().equip(equipment, slot);
                 writeintoSheet(unit);
