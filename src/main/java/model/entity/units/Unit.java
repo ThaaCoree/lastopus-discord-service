@@ -33,6 +33,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Document(collection = "units")
 public class Unit {
+    @Id
     private String name;
 
     private boolean inSession;
