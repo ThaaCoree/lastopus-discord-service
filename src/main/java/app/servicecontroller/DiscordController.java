@@ -126,6 +126,35 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/buyrune")
+    public String buyrune(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount;
+        try {
+            amount = Integer.parseInt(playerMessage.message);
+        } catch (NumberFormatException e) {
+            return "จำนวนไม่ถูกต้อง";
+        }
+            StringBuilder stringBuilder = new StringBuilder(unit.getName());
+            stringBuilder.append(" ได้รับ\n");
+
+            for (int i = 0; i < amount; i++) {
+                Rune rune = Rune.randomRune(unit, database.allRuneMap);
+                unit.addRuneToInventory(rune);
+                stringBuilder.append("\n").append(rune.getName());
+                if (rune.isUnique_rune()) {
+                    stringBuilder.append(" [UNIQUE RUNE!] ");
+                }
+                stringBuilder.append(rune.getStatusDescription()).append(rune.getStatusDescription());
+            }
+            return stringBuilder.toString();
+        } else {
+            return "No Role!";
+        }
+    }
+
     public boolean isGM(List<String> roles) {
         return roles.contains("GM");
     }

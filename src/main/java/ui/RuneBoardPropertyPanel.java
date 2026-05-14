@@ -52,7 +52,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
             refreshContents();
         });
         random_rune.setOnAction(e-> {
-            unit.addRuneToInventory(Rune.randomRune(unit));
+            unit.addRuneToInventory(Rune.randomRune(unit, database.getAllRuneMap()));
             refreshContents();
         });
 

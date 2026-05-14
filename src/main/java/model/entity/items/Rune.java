@@ -1,5 +1,6 @@
 package model.entity.items;
 
+import app.Database;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.entity.ModifierBundle;
 import model.entity.skills.SkillInstance;
@@ -20,6 +21,7 @@ public class Rune extends Item {
     private boolean unique_rune;
     private int baseRow;
     private int baseCol;
+    private int unique_weight;
 
     public Rune(String name) {
         this.setName(name);
@@ -33,6 +35,7 @@ public class Rune extends Item {
                 {true, true, false}
         };
         unique_rune = false;
+        unique_weight = 1;
         //default shape = S
     }
 
@@ -338,7 +341,7 @@ public class Rune extends Item {
         setStatusDescription(StatTranslateUtil.translateStatusDesc(modifiers, skills));
     }
 
-    public static Rune randomRune(Unit unit) {
+    public static Rune randomRune(Unit unit, Map<String, Rune> allRuneMap) {
         WeightedRandom<String> random_shape = new WeightedRandom<>();
         random_shape.add("S", 15);
         random_shape.add("Z", 15);
@@ -363,6 +366,15 @@ public class Rune extends Item {
 
         if (random_shape.roll().equals("Unique")) {
             Rune rune = new Rune();
+            WeightedRandom<Rune> random = new WeightedRandom<>();
+            for (Rune value : allRuneMap.values()) {
+                if (value.isUnique_rune()) {
+                    random.add(value, value.getUnique_weight());
+                }
+            }
+            if (!random.isEmpty()) {
+                rune = random.roll();
+            }
             return rune;
         } else {
             Rune rune = new Rune();
@@ -524,8 +536,14 @@ public class Rune extends Item {
                     if (blocks > 2) {
                         range_random.add(range(minRangeCalculate(unit, 3, min), maxRangeCalculate(unit, 3, max)), 3);
                         if (blocks > 3) {
+                            range_random.clear();
+                            range_random.add(range(minRangeCalculate(unit, 2, min), maxRangeCalculate(unit, 2, max)), 3);
+                            range_random.add(range(minRangeCalculate(unit, 3, min), maxRangeCalculate(unit, 3, max)), 3);
                             range_random.add(range(minRangeCalculate(unit, 4, min), maxRangeCalculate(unit, 4, max)), 2);
                             if (blocks > 4) {
+                                range_random.clear();
+                                range_random.add(range(minRangeCalculate(unit, 3, min), maxRangeCalculate(unit, 3, max)), 3);
+                                range_random.add(range(minRangeCalculate(unit, 4, min), maxRangeCalculate(unit, 4, max)), 2);
                                 range_random.add(range(minRangeCalculate(unit, 5, min), maxRangeCalculate(unit, 5, max)), 1);
                             }
                         }
@@ -548,8 +566,14 @@ public class Rune extends Item {
                     if (blocks > 2) {
                         range_random.add(range(minRangeCalculate(unit, 3, stat_min), maxRangeCalculate(unit, 3, stat_max)), 3);
                         if (blocks > 3) {
+                            range_random.clear();
+                            range_random.add(range(minRangeCalculate(unit, 2, stat_min), maxRangeCalculate(unit, 2, stat_max)), 3);
+                            range_random.add(range(minRangeCalculate(unit, 3, stat_min), maxRangeCalculate(unit, 3, stat_max)), 3);
                             range_random.add(range(minRangeCalculate(unit, 4, stat_min), maxRangeCalculate(unit, 4, stat_max)), 2);
                             if (blocks > 4) {
+                                range_random.clear();
+                                range_random.add(range(minRangeCalculate(unit, 3, stat_min), maxRangeCalculate(unit, 3, stat_max)), 3);
+                                range_random.add(range(minRangeCalculate(unit, 4, stat_min), maxRangeCalculate(unit, 4, stat_max)), 2);
                                 range_random.add(range(minRangeCalculate(unit, 5, stat_min), maxRangeCalculate(unit, 5, stat_max)), 1);
                             }
                         }
@@ -598,6 +622,14 @@ public class Rune extends Item {
 
     private static List<Double> range(double min, double max) {
         return List.of(min, max);
+    }
+
+    public int getUnique_weight() {
+        return unique_weight;
+    }
+
+    public void setUnique_weight(int unique_weight) {
+        this.unique_weight = unique_weight;
     }
 
     @Override

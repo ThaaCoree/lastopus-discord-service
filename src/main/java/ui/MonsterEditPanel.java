@@ -122,7 +122,7 @@ public class MonsterEditPanel extends ScrollPane {
         createButton.setOnAction(e -> {
             database.getAllMonsterMap().put(toMake.getName(),toMake);
             database.getAllCardMap().put(toMake.getName() + " Card", new Card(toMake.getName() + " Card"));
-            database.mapAllUnit();
+            database.mapEverything();
             database.initCounterAllUnit();
             database.translateEverything();
             listPane.getMonsterList().setAll(database.getAllMonsterMap().values());

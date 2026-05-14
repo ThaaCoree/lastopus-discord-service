@@ -40,7 +40,7 @@ public class RuneBoardPane extends StackPane {
         grid = buildGrid();
         VBox content_box = new VBox();
         ComboBox<String> base_type = new ComboBox<>();
-        base_type.getItems().addAll("Standard","1","2","3","4","5","6","7","8","9","10","11","12");
+        base_type.getItems().addAll("None","Standard","1","2","3","4","5","6","7","8","9","10","11","12");
         content_box.getChildren().add(base_type);
         content_box.getChildren().add(grid);
 
@@ -452,6 +452,18 @@ public class RuneBoardPane extends StackPane {
 
     public void chooseSocket(String socket_name) {
         propertyPanel.removeAllRunes();
+
+        if (socket_name.equals("None")) {
+            unit.setRune_board(new boolean[][]{
+                    {false, false, false,  false,  false, false},
+                    {false, false,  false,  false,  false,  false},
+                    {false,  false,  false,  false,  false,  false },
+                    {false,  false,  false,  false,  false,  false },
+                    {false, false,  false,  false,  false,  false},
+                    {false, false, false,  false,  false, false}
+            });
+        }
+
         if (socket_name.equals("Standard")) {
             unit.setRune_board(new boolean[][]{
                     {false, false, true,  true,  false, false},

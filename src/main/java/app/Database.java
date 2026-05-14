@@ -1,14 +1,11 @@
 package app;
 
-import calculator.StatCalculator;
-import calculator.StatusCalculator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.services.sheets.v4.model.Request;
 import controller.CombatFlow;
 import com.fasterxml.jackson.core.type.TypeReference;
 import app.servicemodel.SaveRequest;
-import manager.*;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.units.Monster;
@@ -49,7 +46,7 @@ public class Database {
     public Database() {
         loadMongo();
 //        loadItemFromJson();
-        mapAllUnit();
+        mapEverything();
         updateEverything();
         initCounterAllUnit();
         if (combatFlow != null) {
@@ -242,7 +239,7 @@ public class Database {
         updateShopObjects();
     }
 
-    public void mapAllUnit() {
+    public void mapEverything() {
         if (allPlayerMap != null)
         allUnit.putAll(allPlayerMap);
         if (allNPCMap != null)
@@ -250,11 +247,11 @@ public class Database {
         if (allMonsterMap != null)
         allUnit.putAll(allMonsterMap);
 
-        if (allEquipmentMap != null) allTypeItemMap.putAll(allEquipmentMap);
-        if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
-        if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
-        if (allRuneMap != null) allTypeItemMap.putAll(allRuneMap);
         if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
+        if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
+        if (allEquipmentMap != null) allTypeItemMap.putAll(allEquipmentMap);
+        if (allRuneMap != null) allTypeItemMap.putAll(allRuneMap);
+        if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
 
 
         for (Unit unit : allUnit.values()) {

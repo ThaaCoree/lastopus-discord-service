@@ -1375,10 +1375,8 @@ public class Unit {
     }
 
     public void decreaseRuneInventory() {
-        int lastSlot = -1;
-        for (Item item : rune_inventory.values()) {
-            lastSlot++;
-        }
+        if (rune_inventory.isEmpty()) return;
+        int lastSlot = Collections.max(rune_inventory.keySet());
         rune_inventory.remove(lastSlot);
     }
 

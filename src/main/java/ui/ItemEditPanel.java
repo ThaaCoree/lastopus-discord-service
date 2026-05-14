@@ -163,6 +163,7 @@ public class ItemEditPanel extends ScrollPane {
                 database.getAllTypeItemMap().put(toMake.getName(),toMake);
             }
             database.translateEverything();
+            database.mapEverything();
             listPane.getItemList().setAll(database.getAllTypeItemMap().values());
             listPane.getListView().refresh();
             editMode();
@@ -576,18 +577,23 @@ public class ItemEditPanel extends ScrollPane {
         Label indicatorLabel = new Label("Rune ");
         if (item instanceof Rune rune) {
             CheckBox runeType = new CheckBox("Unique Rune");
-            TextArea runeShape = new TextArea("Rune Shape");
+            TextField runeShape = new TextField("Rune Shape");
+            TextField runeWeight = new TextField("Rune Weight");
             runeShape.setText(rune.getShapeName());
             runeType.setSelected(rune.isUnique_rune());
             runeType.setWrapText(true);
             runeType.setMaxHeight(50);
             runeType.setMaxWidth(350);
+            runeWeight.setText(Integer.toString(rune.getUnique_weight()));
             runeType.setOnAction(event -> {
                 rune.setUnique_rune(runeType.isSelected());
                 listPane.getListView().refresh();
             });
             runeShape.setOnKeyReleased(e-> {
                 rune.promptShape(runeShape.getText());
+            });
+            runeWeight.setOnKeyReleased(e-> {
+                rune.setUnique_weight(Integer.parseInt(runeWeight.getText()));
             });
 
             VBox statBox = new VBox();
@@ -625,7 +631,7 @@ public class ItemEditPanel extends ScrollPane {
             editSkillModifierField(rune.getModifiers(), skillModBox);
 
 
-            contentBox.getChildren().addAll(indicatorLabel, runeShape,runeType, statusBox, statBox, transferBox, skillModBox);
+            contentBox.getChildren().addAll(indicatorLabel, runeShape,runeType, runeWeight, statusBox, statBox, transferBox, skillModBox);
             return contentBox;
         } else {
             return new VBox();

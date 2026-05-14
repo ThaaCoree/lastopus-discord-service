@@ -88,7 +88,7 @@ public class SummonUtilityPanel extends ScrollPane {
             } else {
                 if (selectedSummon != null) {
                     selectedSummon.getOwner().getSummons().remove(selectedSummon.getName());
-                    database.mapAllUnit();
+                    database.mapEverything();
                     refreshEditPanel();
                 }
                 listPane.getListView().refresh();
@@ -127,7 +127,7 @@ public class SummonUtilityPanel extends ScrollPane {
         createButton.setOnAction(e -> {
             if (toMake.getOwner() != null) {
                 toMake.getOwner().getSummons().put(toMake.getName(), toMake);
-                database.mapAllUnit();
+                database.mapEverything();
                 listPane.getSummonList().setAll(database.getAllSummon().values());
                 listPane.getListView().refresh();
                 editMode();

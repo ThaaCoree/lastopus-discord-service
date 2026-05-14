@@ -18,6 +18,7 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 2,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -41,6 +42,7 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 4,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -64,6 +66,7 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -87,6 +90,7 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 0,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -110,6 +114,7 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -133,6 +138,7 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -152,10 +158,11 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "shape" : [ [ false, true ], [ true, true ] ],
+    "shape" : [ [ true, false ], [ true, true ] ],
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -179,6 +186,7 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -202,6 +210,7 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 3,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -225,6 +234,7 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "unique_weight" : 0,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }
@@ -248,6 +258,31 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
+    "unique_weight" : 0,
+    "statModifiers" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
+  },
+  "Talented" : {
+    "name" : "Talented",
+    "itemType" : "RUNE",
+    "description" : "เพิ่มผล Attribute ทั้งหมดในหน้ารูน 50%",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, false, true ], [ false, true, false ], [ true, false, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 3,
     "statModifiers" : { },
     "transferModifiers" : { },
     "statusModifiers" : { }

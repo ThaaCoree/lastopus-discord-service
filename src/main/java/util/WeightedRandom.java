@@ -48,4 +48,8 @@ public class WeightedRandom<T> {
     public void remove(T item) {
         weights.remove(item);
     }
+
+    public boolean isEmpty() {
+        return weights.isEmpty();
+    }
 }

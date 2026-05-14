@@ -18,9 +18,10 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 2,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Z-Shape Rune" : {
     "name" : "Z-Shape Rune",
@@ -41,9 +42,10 @@
     "unique_rune" : false,
     "baseRow" : 3,
     "baseCol" : 4,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "J-Shape Rune" : {
     "name" : "J-Shape Rune",
@@ -64,9 +66,10 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "L-Shape Rune" : {
     "name" : "L-Shape Rune",
@@ -87,9 +90,10 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "T-Shape Rune" : {
     "name" : "T-Shape Rune",
@@ -110,9 +114,10 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Cube-Shape Rune" : {
     "name" : "Cube-Shape Rune",
@@ -133,9 +138,10 @@
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "C-Shape Rune" : {
     "name" : "C-Shape Rune",
@@ -152,13 +158,14 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "shape" : [ [ false, true ], [ true, true ] ],
+    "shape" : [ [ true, false ], [ true, true ] ],
     "unique_rune" : false,
     "baseRow" : 4,
     "baseCol" : 4,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Three-Block Rune" : {
     "name" : "Three-Block Rune",
@@ -179,9 +186,10 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Two-Block Rune" : {
     "name" : "Two-Block Rune",
@@ -202,9 +210,10 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 3,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "One-Block Rune" : {
     "name" : "One-Block Rune",
@@ -225,9 +234,10 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Flower Rune" : {
     "name" : "Flower Rune",
@@ -248,8 +258,713 @@
     "unique_rune" : false,
     "baseRow" : 0,
     "baseCol" : 0,
-    "statModifiers" : { },
+    "unique_weight" : 0,
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Talented" : {
+    "name" : "Talented",
+    "itemType" : "RUNE",
+    "description" : "เพิ่มผล Attribute ทั้งหมดในหน้ารูน 50%",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, false, true ], [ false, true, false ], [ true, false, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 3,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Echoes" : {
+    "name" : "Echoes",
+    "itemType" : "RUNE",
+    "description" : "ก็อปปี้ความสามารถสแตทหรือแอททริบิวท์ของรูนที่อยู่ติดกันด้านบน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 1,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Tinkerer" : {
+    "name" : "Tinkerer",
+    "itemType" : "RUNE",
+    "description" : "ทำให้การคว้าไอเทมจาก Backpack กลายเป็น Combined Action แทน Turn",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true, false ], [ true, false, false ], [ true, true, false ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 10,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Hawk Eyes" : {
+    "name" : "Hawk Eyes",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "100% GlobalCritChance\nSet CritDamage to 150%\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITCHANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 1.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : 1.5,
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true, false ], [ false, true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 1,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : {
+      "CRITCHANCE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 1.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "CRITDAMAGE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : 1.5,
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Stardiver" : {
+    "name" : "Stardiver",
+    "itemType" : "RUNE",
+    "description" : "เพิ่มแต้ม Starmap 1 แต้มต่อช่องรูนที่ว่างเปล่า",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ false, true, false ], [ true, true, true ], [ false, true, false ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 3,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Mountain Grip" : {
+    "name" : "Mountain Grip",
+    "itemType" : "RUNE",
+    "description" : "เมื่อหน้ารูนมอบ STR อย่างน้อย 150 หน่วย\nสามารถใช้งานอาวุธสองมือในมือแต่ละข้างได้",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true, false ], [ true, false, false ], [ true, true, false ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 2,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Might of the Beast" : {
+    "name" : "Might of the Beast",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "20% GlobalSTR\n-50% GlobalINT\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 7,
+    "transferModifiers" : { },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.2,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "INTELLIGENCE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.5,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statModifiers" : { }
+  },
+  "Wisdom of the Mage" : {
+    "name" : "Wisdom of the Mage",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "20% GlobalINT\n-50% GlobalDEX\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 7,
+    "transferModifiers" : { },
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.2,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DEXTERITY" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.5,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statModifiers" : { }
+  },
+  "Trick of the Hunter" : {
+    "name" : "Trick of the Hunter",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "20% GlobalDEX\n-50% GlobalSTR\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 7,
+    "transferModifiers" : { },
+    "statusModifiers" : {
+      "DEXTERITY" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.2,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "STRENGTH" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.5,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statModifiers" : { }
+  },
+  "Perfect Guard" : {
+    "name" : "Perfect Guard",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "100% of PDEF Converted to PBLOCK at 15%\n100% of MDEF Converted to MBLOCK at 15%\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : {
+        "0" : {
+          "sourceStat" : "PHYSICALDEFENSE",
+          "targetStat" : "PHYSICALBLOCK",
+          "sourceStatus" : null,
+          "targetStatus" : null,
+          "transferPercent" : 1.0,
+          "transferRatio" : 0.15,
+          "transferType" : "CONVERSION"
+        },
+        "1" : {
+          "sourceStat" : "MAGICALDEFENSE",
+          "targetStat" : "MAGICALBLOCK",
+          "sourceStatus" : null,
+          "targetStatus" : null,
+          "transferPercent" : 1.0,
+          "transferRatio" : 0.15,
+          "transferType" : "CONVERSION"
+        }
+      },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ false, true, true ], [ true, true, false ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 6,
+    "transferModifiers" : {
+      "0" : {
+        "sourceStat" : "PHYSICALDEFENSE",
+        "targetStat" : "PHYSICALBLOCK",
+        "sourceStatus" : null,
+        "targetStatus" : null,
+        "transferPercent" : 1.0,
+        "transferRatio" : 0.15,
+        "transferType" : "CONVERSION"
+      },
+      "1" : {
+        "sourceStat" : "MAGICALDEFENSE",
+        "targetStat" : "MAGICALBLOCK",
+        "sourceStatus" : null,
+        "targetStatus" : null,
+        "transferPercent" : 1.0,
+        "transferRatio" : 0.15,
+        "transferType" : "CONVERSION"
+      }
+    },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Considerate" : {
+    "name" : "Considerate",
+    "itemType" : "RUNE",
+    "description" : "",
+    "statusDescription" : "50% Ignore MDEF\n50% Ignore PDEF\n100% Reservation\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : {
+        "IGNOREPDEF" : {
+          "flat" : 0.5,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNOREMDEF" : {
+          "flat" : 0.5,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RESERVATION" : {
+          "flat" : 1.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true, true, true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 5,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : {
+      "IGNOREPDEF" : {
+        "flat" : 0.5,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "IGNOREMDEF" : {
+        "flat" : 0.5,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "RESERVATION" : {
+        "flat" : 1.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Chemist" : {
+    "name" : "Chemist",
+    "itemType" : "RUNE",
+    "description" : "เพิ่มบัพของไอเทมประเภท Consumable ที่ได้รับตาม BuffAMP ที่มี",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true, true, true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 1,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Enlightenment" : {
+    "name" : "Enlightenment",
+    "itemType" : "RUNE",
+    "description" : "การวิเคราะห์เป็นครั้งแรกในรอบเทิร์นจะสำเร็จเสมอ",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ false, true, false ], [ true, true, true ], [ false, true, false ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 6,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Might]" : {
+    "name" : "Grand Spectrum [Might]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalSTR ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Quick]" : {
+    "name" : "Grand Spectrum [Quick]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalAGI ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Tough]" : {
+    "name" : "Grand Spectrum [Tough]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalVIT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Alert]" : {
+    "name" : "Grand Spectrum [Alert]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalDEX ต่อ Grand Spectruum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Insight]" : {
+    "name" : "Grand Spectrum [Insight]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalWIS ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Wise]" : {
+    "name" : "Grand Spectrum [Wise]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalINT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
+  },
+  "Grand Spectrum [Bless]" : {
+    "name" : "Grand Spectrum [Bless]",
+    "itemType" : "RUNE",
+    "description" : "7% GlobalLUK ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "statusDescription" : "\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "shape" : [ [ true, true ], [ true, true ] ],
+    "unique_rune" : true,
+    "baseRow" : 0,
+    "baseCol" : 0,
+    "unique_weight" : 4,
+    "transferModifiers" : { },
+    "statusModifiers" : { },
+    "statModifiers" : { }
   }
 }
