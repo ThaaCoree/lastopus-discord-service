@@ -428,11 +428,11 @@ public class ServiceDatabase {
                     }
             );
             Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
-            Document doc = mongoTemplate.findOne(query, Document.class, "ชื่อ collection");
+            Document doc = mongoTemplate.findOne(query, Document.class, "players");
 
             Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
             Update update = new Update().set(unit.getName(), unit);
-            mongoTemplate.updateFirst(updateQuery, update, Document.class, "ชื่อ collection");
+            mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
         }catch (Exception e) {
             e.printStackTrace();
         }
