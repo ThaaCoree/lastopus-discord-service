@@ -1,7 +1,9 @@
 package model.entity.units;
 import calculator.StatCalculator;
 import calculator.StatusCalculator;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.common.util.concurrent.AtomicDouble;
@@ -178,6 +180,11 @@ public class Unit {
         inventoryManager = new InventoryManager(this);
         skillModifierManager = new SkillModifierManager(this);
         statCalculator.calculateBaseStatsFromCurrentStatus();
+    }
+
+    @JsonCreator
+    public Unit(@JsonProperty("name") String name) {
+        
     }
 
     public void calculateEverything() {
