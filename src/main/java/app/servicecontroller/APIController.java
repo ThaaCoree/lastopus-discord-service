@@ -1,6 +1,7 @@
 package app.servicecontroller;
 
 import app.service.ServiceDatabase;
+import app.servicemodel.RuneboardRequest;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -32,8 +33,13 @@ public class APIController {
     }
 
     @PostMapping("/update_unit")
-    public String updateUnit(@RequestBody Unit unit) {
-        System.out.println(unit);
+    public String updateUnit(@RequestBody RuneboardRequest request) {
+        database.load_player();
+        Unit unit = database.findPlayer(request.player_name);
+        System.out.println("rune_inventory : "+request.rune_inventory);
+        System.out.println("socketed runes : "+request.socketed_runes);
+        unit.setRune_inventory(request.rune_inventory);
+        unit.setSocketed_runes(request.socketed_runes);
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);

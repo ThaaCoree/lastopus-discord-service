@@ -184,7 +184,7 @@ public class Unit {
 
     @JsonCreator
     public Unit(@JsonProperty("name") String name) {
-        
+
     }
 
     public void calculateEverything() {
