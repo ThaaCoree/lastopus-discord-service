@@ -33,21 +33,31 @@ public class DiscordController {
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
         Equipment equipment;
-        String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+        List<String> args = playerMessage.args;
+        String lastArg = args.get(args.size() - 1);
 
-        int slot = 0;
-        try {
-            slot = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
-        } catch (NumberFormatException e) {
-            slot = 0;
+        int sub_slot = 1;
+        int nameEndIndex = args.size();
+
+        if (lastArg.matches("\\d+")) {
+            try {
+                sub_slot = Integer.parseInt(lastArg);
+            } catch (NumberFormatException e) {
+                sub_slot = 0;
+            }
+            nameEndIndex = args.size() - 1;
         }
-        if (slot != 1) {
-            slot = 0;
+
+        if (sub_slot != 1) {
+            sub_slot = 0;
         }
+
+        String itemName = String.join(" ", args.subList(1, nameEndIndex));
+
         if (unit != null) {
             equipment = unit.findEquipment(itemName);
             if (equipment != null) {
-                unit.getEquipmentManager().equip(equipment, slot);
+                unit.getEquipmentManager().equip(equipment, sub_slot);
                 writeintoSheet(unit);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
             } else {
