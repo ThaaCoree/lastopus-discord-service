@@ -90,13 +90,9 @@ public class EquipmentManager {
             case ARMOR -> slot = 2;
             case BOOTS -> slot = 3;
             case GLOVES -> slot = 4;
-            case ACCESSORY -> slot = 5;
-            case WEAPON -> slot = 7;
+            case ACCESSORY -> slot = 5+sub_slot;
+            case WEAPON -> slot = 7+sub_slot;
             case BACKPACK -> slot = 9;
-        }
-
-        if (sub_slot != null) {
-            slot += sub_slot-1;
         }
         unequip(slot);
         equip(slot, equipment);

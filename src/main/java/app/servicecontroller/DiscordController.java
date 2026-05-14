@@ -37,10 +37,10 @@ public class DiscordController {
         try {
             slot = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
         } catch (NumberFormatException e) {
-            return "จำนวนไม่ถูกต้อง";
+            slot = 0;
         }
-        if (slot != 2) {
-            slot = 1;
+        if (slot != 1) {
+            slot = 0;
         }
         if (unit != null) {
             equipment = unit.findEquipment(playerMessage.message);
