@@ -137,6 +137,9 @@ public class DiscordController {
         } catch (NumberFormatException e) {
             return "จำนวนไม่ถูกต้อง";
         }
+        if (amount > 20) {
+            return "จำกัดการซื้อครั้งละไม่เกิน 20 ชิ้น!";
+        }
             StringBuilder stringBuilder = new StringBuilder(unit.getName());
             stringBuilder.append(" ได้รับ\n");
 
@@ -147,8 +150,7 @@ public class DiscordController {
                 if (rune.isUnique_rune()) {
                     stringBuilder.append(" UNIQUE RUNE! ");
                 }
-                stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription());
-                stringBuilder.append(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>").append("\n");
+                stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
             }
             writeintoSheet(unit);
             return stringBuilder.toString();
