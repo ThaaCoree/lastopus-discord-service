@@ -109,6 +109,7 @@ public class RuneBoardPropertyPanel extends ScrollPane {
 
         int slotIndex = entry.getKey();
         Rune rune = entry.getValue();
+        if (rune == null) return new VBox();
 
         Label slotNum = createLabel(String.valueOf(slotIndex + 1), 50);
         Label itemStatus = createWrappingLabel(rune.getStatusDescription() + rune.getDescription(), 300);

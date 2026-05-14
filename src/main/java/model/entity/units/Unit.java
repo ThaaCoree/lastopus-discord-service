@@ -1384,7 +1384,7 @@ public class Unit {
         }
         for (Map.Entry<Integer, Rune> entry : rune_inventory.entrySet()) {
             int slotNum = entry.getKey();
-
+            if (entry.getValue() == null) continue;
             if (entry.getValue().getName().equals("")) {
                 rune_inventory.put(slotNum, rune);
                 return;
