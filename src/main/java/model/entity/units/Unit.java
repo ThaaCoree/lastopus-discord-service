@@ -1382,6 +1382,14 @@ public class Unit {
         if (rune_inventory == null) {
             rune_inventory = new LinkedHashMap<>();
         }
+
+        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
+        int i = 0;
+        for (Rune rune_reindex : rune_inventory.values()) {
+            reindexed.put(i++, rune_reindex);
+        }
+        rune_inventory = reindexed;
+        
         for (Map.Entry<Integer, Rune> entry : rune_inventory.entrySet()) {
             int slotNum = entry.getKey();
             if (entry.getValue() == null) continue;

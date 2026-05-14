@@ -6,11 +6,13 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import model.entity.items.Rune;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @CrossOrigin(origins = "*")
@@ -40,7 +42,12 @@ public class APIController {
 //        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());
 //        System.out.println("rune_inventory : "+request.rune_inventory);
 //        System.out.println("unit's rune_inventory before set : "+request.rune_inventory);
-        unit.setRune_inventory(request.rune_inventory);
+        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
+        int i = 0;
+        for (Rune rune : request.rune_inventory.values()) {
+            reindexed.put(i++, rune);
+        }
+        unit.setRune_inventory(reindexed);
         unit.setSocketed_runes(request.socketed_runes);
 //        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);
 //        System.out.println("unit's socketed runes after set "+unit.getSocketed_runes());
