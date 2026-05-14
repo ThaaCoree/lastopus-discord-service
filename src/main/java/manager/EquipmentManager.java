@@ -131,11 +131,11 @@ public class EquipmentManager {
         return equipmentSlot.getEquipment();
     }
 
-    public boolean handleMixTwoHanded(Unit unit) {
+    public void handleMixTwoHanded(Unit unit) {
         Equipment equipment1 = unit.getEquipmentSlots().get(7).getEquipment();
         Equipment equipment2 = unit.getEquipmentSlots().get(8).getEquipment();
         if (equipment1 == null || equipment2 == null) {
-            return false;
+            unit.setMixTwoHanded(false);
         }
         List<WeaponType> weaponType = new ArrayList<>();
         weaponType.add(equipment1.getWeaponType());
@@ -144,9 +144,9 @@ public class EquipmentManager {
         for (WeaponType type : weaponType) {
             if (type == WeaponType.SHIELD ||
                 type == WeaponType.CHAIN) {
-                return false;
+                unit.setMixTwoHanded(false);
             }
         }
-        return true;
+        unit.setMixTwoHanded(true);
     }
 }
