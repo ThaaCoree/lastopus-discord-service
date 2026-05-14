@@ -14629,7 +14629,7 @@
   "ลาบเลือดปลาลืมคืน" : {
     "name" : "ลาบเลือดปลาลืมคืน",
     "description" : "",
-    "statusDescription" : "36% GlobalMATK\n89% GlobalCritDamage\n98 HealthRegen\n\n",
+    "statusDescription" : "36% GlobalMATK\n89% CritDamage\n98 HealthRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -14729,10 +14729,10 @@
           "passiveMult" : 0.0
         },
         "CRITDAMAGE" : {
-          "flat" : 0.0,
+          "flat" : 0.89,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.89,
+          "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -25724,7 +25724,7 @@
   },
   "Connect" : {
     "name" : "Connect",
-    "description" : "เมื่อจู่โจม, Shiranui จะจู่โจมออกไปพร้อมกันด้วย สร้างความเสียหายเวท 131.64021481965014 หน่วย",
+    "description" : "เมื่อจู่โจม, Shiranui จะจู่โจมออกไปพร้อมกันด้วย สร้างความเสียหายเวท 109.62757026521719 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26000,7 +26000,7 @@
   },
   "Crux Mortis" : {
     "name" : "Crux Mortis",
-    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 17.88269751663661 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 31.294720654114066 หน่วย",
+    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 9.969679762019503 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 17.446939583534128 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26767,7 +26767,7 @@
   },
   "Starving Beast" : {
     "name" : "Starving Beast",
-    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 15.65073 หน่วย, หากครบเงื่อนไข ฟื้นฟู 31.30146 หน่วยแทน",
+    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 20.49336 หน่วย, หากครบเงื่อนไข ฟื้นฟู 40.98672 หน่วยแทน",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },

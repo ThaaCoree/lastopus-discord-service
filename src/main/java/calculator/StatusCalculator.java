@@ -50,8 +50,8 @@ public class StatusCalculator {
         Map<StatusType, Double> cardFlatSum = new HashMap<>();
         Map<StatusType, Double> raceFlatSum = new HashMap<>();
         Map<StatusType, Double> skillFlatSum = new HashMap<>();
+        Map<StatusType, Double> runeFlatSum = new HashMap<>();
         Map<StatusType, Double> globalMultProduct = new HashMap<>();
-
         // เริ่มต้นค่า
         for (StatusType type : StatusType.values()) {
             equipFlatSum.put(type, 0.0);
@@ -62,6 +62,7 @@ public class StatusCalculator {
             raceFlatSum.put(type, 0.0);
             skillFlatSum.put(type, 0.0);
             cardFlatSum.put(type, 0.0);
+            runeFlatSum.put(type, 0.0);
         }
 
         for (StatusType statusType : StatusType.values()) {
@@ -88,6 +89,14 @@ public class StatusCalculator {
                 double skillToAdd = instance.getInstanceBundle().getStatusModifiers().get(type).getFlat();
                 skillFlatSum.merge(type, skillToAdd, Double::sum);
             }
+        }
+
+        unit.setRune_modifiers(RuneCalculator.calculateRuneForUnit(unit));
+
+        for (StatusType type : StatusType.values()) {
+            if (unit.getRune_modifiers().getStatusModifiers().get(type) == null) continue;
+            double runeToAdd = unit.getRune_modifiers().getStatusModifiers().get(type).getFlat();
+            skillFlatSum.merge(type, runeToAdd, Double::sum);
         }
 
         for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
@@ -224,6 +233,10 @@ public class StatusCalculator {
                 if (Double.isNaN(modifier) || modifier == 0.0) continue;
                 globalMultProduct.merge(type,modifier+1, (oldVal,newVal) -> oldVal * newVal);
             }
+            if (unit.getRune_modifiers().getStatusModifiers().get(type) != null) {
+                modifier = unit.getRune_modifiers().getStatusModifiers().get(type).getGlobalMult();
+                globalMultProduct.merge(type, modifier + 1, (oldVal, newVal) -> oldVal * newVal);
+            }
         }
 
         // Apply Flat + EquipMult + PassiveMult
@@ -235,12 +248,14 @@ public class StatusCalculator {
             double raceFlat = raceFlatSum.get(type);
             double cardFlat = cardFlatSum.get(type);
             double skillFlat = skillFlatSum.get(type);
+            double runeFlat = runeFlatSum.get(type);
             unit.getStatuses().get(type).sumToCurrent(equipFlat + passiveFlat);
             unit.getStatuses().get(type).sumToCurrent(equipFlat * equipMult);
             unit.getStatuses().get(type).sumToCurrent(passiveFlat * passiveMult);
             unit.getStatuses().get(type).sumToCurrent(raceFlat);
             unit.getStatuses().get(type).sumToCurrent(cardFlat);
             unit.getStatuses().get(type).sumToCurrent(skillFlat);
+            unit.getStatuses().get(type).sumToCurrent(runeFlat);
         }
 
         // Apply Global Mult
@@ -277,7 +292,11 @@ public class StatusCalculator {
                 equipMultSum.merge(type, basicModifier.getEquipmentMult(), Double::sum);
                 passiveMultSum.merge(type, basicModifier.getPassiveMult(), Double::sum);
             }
-
+            //rune multSum
+            if (unit.getRune_modifiers().getStatusModifiers().get(type) != null) {
+                modifier = unit.getRune_modifiers().getStatusModifiers().get(type).getGlobalMult();
+                globalMultProduct.merge(type, modifier+1, (oldVal, newVal) -> oldVal * newVal);
+            }
             for (PassiveNode node : unit.getAllocatedPassives().values()) {
                 if (node.getStatusModifiers().get(type) == null) continue;
                 modifier = node.getStatusModifiers().get(type).getGlobalMult();
@@ -336,6 +355,10 @@ public class StatusCalculator {
                 calculateConversion(modifier.getModifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added);
             }
         }
+        //convert rune
+        if (unit.getRune_modifiers().getTransferModifiers() != null) {
+            calculateConversion(unit.getRune_modifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added);
+        }
 
         for (SkillInstance instance : unit.getAllSkill().values()) {
             if (instance.getInstanceBundle().getTransferModifiers() == null) continue;
@@ -391,6 +414,11 @@ public class StatusCalculator {
             if (modifier.getModifiers().getTransferModifiers() != null) {
                 calculateGain(modifier.getModifiers().getTransferModifiers(), added);
             }
+        }
+
+        //gain rune
+        if (unit.getRune_modifiers().getTransferModifiers() != null) {
+            calculateGain(unit.getRune_modifiers().getTransferModifiers(), added);
         }
 
         //gain skills

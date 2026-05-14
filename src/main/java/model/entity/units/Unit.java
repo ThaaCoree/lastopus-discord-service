@@ -72,6 +72,7 @@ public class Unit {
     private boolean[][] rune_board = new boolean[6][6];
     private Map<Integer, Rune> rune_inventory = new LinkedHashMap<>();
     private List<Rune> socketed_runes = new ArrayList<>();
+    private ModifierBundle rune_modifiers = new ModifierBundle();
 
     @JsonIgnore
     @Transient
@@ -1510,6 +1511,24 @@ public class Unit {
 
     public void setStatCalculator(StatCalculator statCalculator) {
         this.statCalculator = statCalculator;
+    }
+
+    public ModifierBundle getRune_modifiers() {
+        return rune_modifiers;
+    }
+
+    public void setRune_modifiers(ModifierBundle rune_modifiers) {
+        this.rune_modifiers = rune_modifiers;
+    }
+
+    @JsonIgnore
+    public Integer getCopperCoin() {
+        Map<CurrencyType, Integer> purse = getPurse();
+        int copper   = purse.get(CurrencyType.COPPER);
+        int silver   = purse.get(CurrencyType.SILVER);
+        int gold     = purse.get(CurrencyType.GOLD);
+        int platinum = purse.get(CurrencyType.PLATINUM);
+        return copper + (silver * 10) + (gold * 1000) + (platinum * 98000);
     }
 
     public void reduceCopperCoin(int reduce) {

@@ -132,6 +132,10 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
         if (unit != null) {
             int amount;
+            int price = 20;
+            if (price > unit.getCopperCoin()) {
+                return "มีเงินไม่เพียงพอ!";
+            }
         try {
             amount = Integer.parseInt(playerMessage.message);
         } catch (NumberFormatException e) {
@@ -146,7 +150,7 @@ public class DiscordController {
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.randomRune(unit, database.allRuneMap);
                 unit.addRuneToInventory(rune);
-                unit.reduceCopperCoin(20);
+                unit.reduceCopperCoin(price);
                 stringBuilder.append("## ").append(i+1).append(". ").append("[").append(rune.getName()).append("]");
                 if (rune.isUnique_rune()) {
                     stringBuilder.append(" UNIQUE RUNE! ");
