@@ -143,7 +143,7 @@ public class DiscordController {
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.randomRune(unit, database.allRuneMap);
                 unit.addRuneToInventory(rune);
-                stringBuilder.append(i+1).append(". ").append("\n[").append(rune.getName()).append("]");
+                stringBuilder.append("## ").append(i+1).append(". ").append("\n[").append(rune.getName()).append("]");
                 if (rune.isUnique_rune()) {
                     stringBuilder.append(" UNIQUE RUNE! ");
                 }
