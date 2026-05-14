@@ -34,30 +34,33 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
         Equipment equipment;
         List<String> args = playerMessage.args;
-        String lastArg = args.get(args.size() - 1);
-
-        int sub_slot = 1;
-        int nameEndIndex = args.size();
-
-        if (lastArg.matches("\\d+")) {
-            try {
-                sub_slot = Integer.parseInt(lastArg);
-            } catch (NumberFormatException e) {
-                sub_slot = 0;
-            }
-            nameEndIndex = args.size() - 1;
-        }
-
-        if (sub_slot != 1) {
-            sub_slot = 0;
-        }
-
-        String itemName = String.join(" ", args.subList(1, nameEndIndex));
+        String itemName = playerMessage.message;
 
         if (unit != null) {
             equipment = unit.findEquipment(itemName);
             if (equipment != null) {
-                unit.getEquipmentManager().equip(equipment, sub_slot);
+                unit.getEquipmentManager().equip(equipment, 1);
+                writeintoSheet(unit);
+                return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
+            } else {
+                return "ไม่พบ Equipment";
+            }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/equip2")
+    public String equip2(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        Equipment equipment;
+        String itemName = playerMessage.message;
+
+        if (unit != null) {
+            equipment = unit.findEquipment(itemName);
+            if (equipment != null) {
+                unit.getEquipmentManager().equip(equipment, 2);
                 writeintoSheet(unit);
                 return "สวมใส่ "+equipment.getName()+" ในช่อง "+equipment.getEquipmentType().writeAsString()+" ของ "+unit.getName()+" แล้ว";
             } else {

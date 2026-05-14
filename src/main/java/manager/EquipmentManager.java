@@ -85,6 +85,9 @@ public class EquipmentManager {
 
     public void equip(Equipment equipment, Integer sub_slot) {
         int slot = 0;
+        if (sub_slot != null) {
+            sub_slot -= 1;
+        }
         switch (equipment.getEquipmentType()) {
             case HELMET -> slot = 1;
             case ARMOR -> slot = 2;
