@@ -142,7 +142,7 @@ public class RuneBoardPane extends StackPane {
             }
 
             rune_count++;
-            if (rune_count > colors.toArray().length) {
+            if (rune_count >= colors.toArray().length) {
                 rune_count = 0;
             }
         }

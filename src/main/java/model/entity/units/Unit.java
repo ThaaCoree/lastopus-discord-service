@@ -1389,7 +1389,7 @@ public class Unit {
             reindexed.put(i++, rune_reindex);
         }
         rune_inventory = reindexed;
-        
+
         for (Map.Entry<Integer, Rune> entry : rune_inventory.entrySet()) {
             int slotNum = entry.getKey();
             if (entry.getValue() == null) continue;
