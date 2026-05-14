@@ -182,11 +182,6 @@ public class Unit {
         statCalculator.calculateBaseStatsFromCurrentStatus();
     }
 
-    @JsonCreator
-    public Unit(@JsonProperty("name") String name) {
-
-    }
-
     public void calculateEverything() {
         for (int i = 0; i < 2; i++) {
             recalculateRemainingPassiveTreePoint();
