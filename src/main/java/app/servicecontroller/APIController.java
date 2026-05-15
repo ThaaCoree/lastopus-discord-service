@@ -97,9 +97,7 @@ public class APIController {
             e.printStackTrace();
         }
 
-        for (Rune rune : request.socketed_runes) {
-            identical_removed.put(index++, rune);
-        }
+        save_rune_data(request.socketed_runes);
         save_rune_data(identical_removed.values());
         return "บันทึกหน้ารูนแล้ว";
     }
