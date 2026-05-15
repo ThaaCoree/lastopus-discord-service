@@ -54,9 +54,17 @@ public class APIController {
         set.addAll(unit.getSocketed_runes());
         set.addAll(request.socketed_runes);
 
+        System.out.println("logging rune checking ");
         for (Rune socketedRune : request.socketed_runes) {
             for (Rune socketed_rune : unit.getSocketed_runes()) {
-                if (socketed_rune.equals(socketedRune)) {
+                if (socketedRune.getId() == null) {
+                    socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
+                }
+                if (socketed_rune.getId() == null) {
+                    socketed_rune.setId(Rune.generateId(socketed_rune.getShapeName()));
+                }
+
+                if (socketed_rune.getId().equals(socketedRune.getId())) {
                     System.out.println("same rune found : "+socketedRune);
                 }
             }

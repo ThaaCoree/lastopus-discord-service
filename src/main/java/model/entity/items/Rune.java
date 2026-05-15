@@ -22,6 +22,7 @@ public class Rune extends Item {
     private int baseRow;
     private int baseCol;
     private int unique_weight;
+    private String id;
 
     public Rune(String name) {
         this.setName(name);
@@ -642,13 +643,18 @@ public class Rune extends Item {
                 "}";
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Rune)) return false;
-        Rune other = (Rune) o;
-        return isUnique_rune() == other.isUnique_rune() &&
-                Objects.equals(modifiers, other.modifiers);
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public static String generateId(String runeShape) {
+        String suffix = Long.toHexString(ThreadLocalRandom.current().nextLong() & 0xFFFFFFFFL)
+                .toUpperCase();          // ได้ 8 หลักเต็มๆ
+        return "RUNE-" + runeShape.toUpperCase() + "-" + suffix;
+        // → "RUNE-FIRE-A3F9C21B"
     }
 }
