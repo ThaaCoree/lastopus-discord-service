@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -324,9 +325,37 @@ public class DiscordController {
             } catch (NumberFormatException e) {
                 return "จำนวนไม่ถูกต้อง";
             }
-            Item dust = database.allNormalItemMap.get("Rune Dust");
+            if (amount > 20) {
+                return "สร้างรูนมากกว่า 20 ชิ้นต่อครั้งไม่ได้";
+            }
+            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
 
-            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+amount+" Rune Dust";
+            StringBuilder stringBuilder = new StringBuilder(unit.getName()+" สร้างรูน\n");
+
+            List<Rune> created_list = new ArrayList<>();
+            for (int i = 0; i < amount; i++) {
+                Rune rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
+                created_list.add(rune);
+                stringBuilder.append("## ").append(i+1).append(". ").append("[").append(rune.getName()).append("]");
+                if (rune.isUnique_rune()) {
+                    stringBuilder.append(" UNIQUE RUNE! ");
+                }
+                stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
+            }
+            int used_dust = 0;
+            for (Rune rune : created_list) {
+                used_dust += rune.occupying_slots();
+            }
+            int have_dust = unit.findItemAmount("Rune Dust");
+            if (used_dust > have_dust) {
+                return "มีผงรูนไม่พอ";
+            }
+
+            for (Rune rune : created_list) {
+                unit.addRuneToInventory(rune);
+            }
+            unit.getInventoryManager().reduceItem("Rune Dust", used_dust);
+            return stringBuilder.toString();
         } else {
             return "No Role!";
         }

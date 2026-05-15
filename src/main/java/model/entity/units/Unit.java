@@ -881,6 +881,20 @@ public class Unit {
         return null;
     }
 
+    public Integer findItemAmount(String name) {
+        int index = -1;
+        for (Map.Entry<Integer, Item> inventory : inventoryItems.entrySet()) {
+            if (inventory.getValue().getName().equals(name)) {
+                index = inventory.getKey();
+            }
+        }
+        if (index == -1) {
+            return 0;
+        } else {
+            return index;
+        }
+    }
+
     public SkillInstance findSkill(String name) {
         for (SkillInstance instance : skillList.values()) {
             if (instance.getSkillData().getName().equals(name)) return instance;

@@ -365,6 +365,31 @@ public class Rune extends Item {
         setStatusDescription(StatTranslateUtil.translateStatusDesc(modifiers, skills));
     }
 
+    public static Rune createRandomRune(Unit unit, Map<String, Rune> allRuneMap, String rune_name) {
+        WeightedRandom<Boolean> unique_weight = new WeightedRandom<>();
+        unique_weight.add(true, 1);
+        unique_weight.add(false, 319);
+        if (unique_weight.roll()) {
+            Rune rune = new Rune();
+            WeightedRandom<Rune> random = new WeightedRandom<>();
+            for (Rune value : allRuneMap.values()) {
+                if (value.isUnique_rune()) {
+                    random.add(value, value.getUnique_weight());
+                }
+            }
+            if (!random.isEmpty()) {
+                rune = random.roll();
+            }
+            rune.setId(generateId(rune.getShapeName()));
+            return rune;
+        } else {
+            Rune rune = allRuneMap.get(rune_name);
+            rune.randomise_stats(unit);
+            rune.setId(generateId(rune.getShapeName()));
+            return rune;
+        }
+    }
+
     public static Rune randomRune(Unit unit, Map<String, Rune> allRuneMap) {
         WeightedRandom<String> random_shape = new WeightedRandom<>();
         random_shape.add("S", 15);

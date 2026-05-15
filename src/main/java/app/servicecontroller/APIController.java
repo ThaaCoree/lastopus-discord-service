@@ -76,7 +76,9 @@ public class APIController {
         }
 
         for (Rune socketedRune : request.socketed_runes) {
+            if (socketedRune == null) continue;
             for (Rune inventoryRune : identical_inventory) {
+                if (inventoryRune == null) continue;
                 if (socketedRune.getId().equals(inventoryRune.getId())) {
                     identical_inventory.remove(inventoryRune);
                 }
