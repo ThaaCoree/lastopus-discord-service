@@ -17,13 +17,14 @@ public class InventoryManager {
     }
 
     public void increaseQuantityByOne(Integer slot) {
-        int oldAmount = unit.getInventoryItemAmount().get(slot);
-        unit.getInventoryItemAmount().put(slot, oldAmount+1);
+        unit.getInventoryItemAmount().compute(slot, (k, oldAmount) -> oldAmount + 1);
     }
 
     public void decreaseQuantityByOne(Integer slot) {
-        int oldAmount = unit.getInventoryItemAmount().get(slot);
-        unit.getInventoryItemAmount().put(slot, oldAmount-1);
+        unit.getInventoryItemAmount().compute(slot, (k, oldAmount) -> oldAmount - 1);
+        if (unit.getInventoryItemAmount().get(slot) <= 0) {
+            unit.getInventoryItems().put(slot, new Item(""));
+        }
     }
 
     public void increaseSlot() {
