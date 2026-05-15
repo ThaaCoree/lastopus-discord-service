@@ -22,6 +22,7 @@ public class Rune extends Item {
     private int baseRow;
     private int baseCol;
     private int unique_weight;
+
     private String id;
 
     public Rune(String name) {
@@ -155,7 +156,10 @@ public class Rune extends Item {
 
     @JsonIgnore
     public String getShapeName() {
-        boolean[][] copy_shape = this.shape.clone();
+        boolean[][] copy_shape = Arrays.stream(this.shape)
+                .map(boolean[]::clone)
+                .toArray(boolean[][]::new);
+
         for (int i = 0; i<4 ; i++) {
 
             if (Arrays.deepEquals(copy_shape, new boolean[][]{
@@ -251,7 +255,7 @@ public class Rune extends Item {
                 return "X";
             }
 
-            rotate90(copy_shape);
+            copy_shape = rotate90(copy_shape);
         }
 
         return "No Match Shape";
@@ -273,17 +277,18 @@ public class Rune extends Item {
         rune.setShape(result);
     }
 
-    public static void rotate90(boolean[][] shape) {
+    public static boolean[][] rotate90(boolean[][] shape) {
         int rows = shape.length;
         int cols = shape[0].length;
 
-        boolean[][] result = new boolean[cols][rows];
+        boolean[][] rotated = new boolean[cols][rows]; // สลับขนาด
 
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
-                result[c][rows - 1 - r] = shape[r][c];
+                rotated[c][rows - 1 - r] = shape[r][c];
             }
         }
+        return rotated;
     }
 
     public int occupying_slots() {
