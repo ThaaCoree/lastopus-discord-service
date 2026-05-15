@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 public class DiscordController {
@@ -286,6 +287,48 @@ public class DiscordController {
             return "มอบเงิน "+amount+" ให้กับ "+unit.getName()+" แล้ว";
         } else {
             return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
+        }
+    }
+
+    @PostMapping("/runecrush")
+    public String runecrush(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            List<Integer> numbers = playerMessage.args.stream()
+                    .filter(arg -> arg.matches("\\d+"))
+                    .map(Integer::parseInt)
+                    .toList();
+            int dust_amount = 0;
+            for (Integer number : numbers) {
+                unit.getRune_inventory().remove(number);
+                dust_amount++;
+            }
+            Item dust = database.allNormalItemMap.get("Rune Dust");
+            unit.getInventoryManager().addItem(dust, dust_amount);
+
+            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/runecreate")
+    public String runecreate(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            Item dust = database.allNormalItemMap.get("Rune Dust");
+
+            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+amount+" Rune Dust";
+        } else {
+            return "No Role!";
         }
     }
 

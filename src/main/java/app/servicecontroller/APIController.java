@@ -59,18 +59,26 @@ public class APIController {
         identical_inventory.addAll(request.rune_inventory.values());
         identical_inventory.addAll(unit.getRune_inventory().values());
 
-        for (Rune socketedRune : request.rune_inventory.values()) {
-            if (socketedRune == null) continue;
-            for (Rune socketed_rune : unit.getRune_inventory().values()) {
-                if (socketed_rune == null) continue;
-                if (socketedRune.getId() == null) {
-                    socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
+        for (Rune request_inventory_rune : request.rune_inventory.values()) {
+            if (request_inventory_rune == null) continue;
+            for (Rune unit_inventory_rune : unit.getRune_inventory().values()) {
+                if (unit_inventory_rune == null) continue;
+                if (request_inventory_rune.getId() == null) {
+                    request_inventory_rune.setId(Rune.generateId(request_inventory_rune.getShapeName()));
                 }
-                if (socketed_rune.getId() == null) {
-                    socketed_rune.setId(Rune.generateId(socketed_rune.getShapeName()));
+                if (unit_inventory_rune.getId() == null) {
+                    unit_inventory_rune.setId(Rune.generateId(unit_inventory_rune.getShapeName()));
                 }
-                if (socketed_rune.getId().equals(socketedRune.getId())) {
-                    identical_inventory.remove(socketed_rune);
+                if (unit_inventory_rune.getId().equals(request_inventory_rune.getId())) {
+                    identical_inventory.remove(unit_inventory_rune);
+                }
+            }
+        }
+
+        for (Rune socketedRune : request.socketed_runes) {
+            for (Rune inventoryRune : identical_inventory) {
+                if (socketedRune.getId().equals(inventoryRune.getId())) {
+                    identical_inventory.remove(inventoryRune);
                 }
             }
         }
