@@ -78,7 +78,7 @@ public class APIController {
         int index = 1;
         Map<Integer, Rune> identical_removed = new LinkedHashMap<>();
         for (Rune rune : identical_inventory) {
-            identical_removed.put(index++, rune);
+            if (rune != null) identical_removed.put(index++, rune);
         }
 //        System.out.println("set's socketed runes : "+set);
 
