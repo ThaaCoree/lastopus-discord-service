@@ -117,6 +117,7 @@ public class EquipmentManager {
         } else {
             System.out.println("No equipment to unequip from slot " + slot);
         }
+        handleMixTwoHanded(unit);
         unit.calculateEverything();
     }
 

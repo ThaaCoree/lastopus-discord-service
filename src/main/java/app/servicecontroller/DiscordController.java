@@ -226,14 +226,16 @@ public class DiscordController {
 
             int amount;
             try {
-                amount = Integer.parseInt(playerMessage.message);
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
             } catch (NumberFormatException e) {
                 return "จำนวนไม่ถูกต้อง";
             }
             if (amount <= 0) {
-                return "จำนวนไม่สามารถน้อยกว่า 0 ได้";
+                return "จำนวนน้อยกว่า 0 ไม่ได้";
             }
 
+            if (amount > giver.getCopperCoin()) return "มีเงินไม่มากพอ";
+            
             target.increaseCopperCoin(amount);
             giver.reduceCopperCoin(amount);
             writeintoSheet(giver);
