@@ -329,13 +329,14 @@ public class DiscordController {
             if (amount > 20) {
                 return "สร้างรูนมากกว่า 20 ชิ้นต่อครั้งไม่ได้";
             }
-            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
 
             StringBuilder stringBuilder = new StringBuilder(unit.getName()+" สร้างรูน\n");
 
             List<Rune> created_list = new ArrayList<>();
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
+                if (rune == null) return "กรุณาใส่ชื่อรูนที่ถูกต้อง";
                 WeightedRandom<Boolean> chance_one_break = new WeightedRandom<>();
                 chance_one_break.add(true, 2);
                 chance_one_break.add(false, 8);
