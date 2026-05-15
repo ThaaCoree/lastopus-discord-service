@@ -216,6 +216,35 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/pay")
+    public String pay(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit giver = database.findPlayer(name);
+        if (giver != null) {
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
+            Unit target = database.findPlayer(target_name);
+
+            int amount;
+            try {
+                amount = Integer.parseInt(playerMessage.message);
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนไม่สามารถน้อยกว่า 0 ได้";
+            }
+
+            target.increaseCopperCoin(amount);
+            giver.reduceCopperCoin(amount);
+            writeintoSheet(giver);
+            writeintoSheet(target);
+            return giver.getName() + " มอบเงินมูลค่า "+amount+" ให้กับ "+target.getName()+" แล้ว\n" +
+                    "<@" + playerMessage.mentionedUsers.get(0).id + ">";
+        } else {
+            return "No Role!";
+        }
+    }
+
     @PostMapping("/update")
     public String update(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
@@ -225,6 +254,16 @@ public class DiscordController {
             return "อัพเดทชีทของ "+updater.getName()+" เสร็จสิ้น";
         } else {
             return "No Role!";
+        }
+    }
+
+    @PostMapping("/load_database")
+    public String load_database(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            database.loadMongo();
+            return "อัพเดท Database แล้ว";
+        } else {
+            return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
         }
     }
 
