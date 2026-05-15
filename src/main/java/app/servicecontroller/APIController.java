@@ -57,7 +57,7 @@ public class APIController {
         list.addAll(request.socketed_runes);
 
         System.out.println("list's socketed runes : "+list);
-        
+
         unit.setRune_inventory(reindexed);
         unit.setSocketed_runes(request.socketed_runes);
 //        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);

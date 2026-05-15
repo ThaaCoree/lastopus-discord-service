@@ -208,7 +208,7 @@ public class DiscordController {
 
                 writeintoSheet(giver);
                 writeintoSheet(target);
-                return giver.getName() + " มอบ " + rune.getName() + " ให้กับ " + target_name + " แล้ว\n" +
+                return giver.getName() + " มอบ \n" + rune.getName()+ "\n" + rune.getStatusDescription() + rune.getDescription() + " ให้กับ " + target_name + " แล้ว\n" +
                         "<@" + playerMessage.mentionedUsers.get(0).id + ">";
             }
         } else {
