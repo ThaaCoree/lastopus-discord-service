@@ -197,8 +197,8 @@ public class DiscordController {
             } catch (NumberFormatException e) {
                 return "หมายเลขไม่ถูกต้อง";
             }
-            if (index <= 0) {
-                return "หมายเลขต้องมากกว่า 0";
+            if (index < 0) {
+                return "หมายเลขต้องมากกว่า -1";
             }
             Rune rune = giver.findRune(index);
             if (rune == null) return "ไม่พบรูน";

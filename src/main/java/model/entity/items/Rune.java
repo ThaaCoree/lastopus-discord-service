@@ -131,9 +131,9 @@ public class Rune extends Item {
 
         if (name.equals("C")) {
             this.shape = new boolean[][]{
-                    {true,true, false},
-                    {true, false, false},
-                    {true,true, false}
+                    {true,true},
+                    {true, false},
+                    {true,true}
             };
         }
 
@@ -229,9 +229,9 @@ public class Rune extends Item {
                 return "Italic";
             }
             if (Arrays.deepEquals(this.shape, new boolean[][]{
-                    {true, true, false},
-                    {true, false, false},
-                    {true, true, false}
+                    {true, true},
+                    {true, false},
+                    {true, true}
             })) {
                 return "C";
             }

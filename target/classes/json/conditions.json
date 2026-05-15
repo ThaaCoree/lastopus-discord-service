@@ -21657,7 +21657,7 @@
   },
   "Fall Unwritten" : {
     "name" : "Fall Unwritten",
-    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 31.15665หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
+    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 33.38811หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -24282,14 +24282,14 @@
   "Istenta" : {
     "name" : "Istenta",
     "description" : "",
-    "statusDescription" : "25.37% GlobalPATK\n25.37% GlobalMATK\n25.37% GlobalRATK\n25.37% GlobalMDEF\n25.37% GlobalPDEF\n\n",
+    "statusDescription" : "25.47% GlobalPATK\n25.47% GlobalMATK\n25.47% GlobalRATK\n25.47% GlobalMDEF\n25.47% GlobalPDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.253700925,
+          "globalMult" : 0.2547066,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24297,7 +24297,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.253700925,
+          "globalMult" : 0.2547066,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24305,7 +24305,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.253700925,
+          "globalMult" : 0.2547066,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24313,7 +24313,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.253700925,
+          "globalMult" : 0.2547066,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24321,7 +24321,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.253700925,
+          "globalMult" : 0.2547066,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27747,14 +27747,14 @@
   "Twisted Force" : {
     "name" : "Twisted Force",
     "description" : "",
-    "statusDescription" : "123.12% GlobalPATK\n123.12% GlobalMATK\n123.12% GlobalRATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
+    "statusDescription" : "133.85% GlobalPATK\n133.85% GlobalMATK\n133.85% GlobalRATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27762,7 +27762,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27770,7 +27770,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27817,14 +27817,14 @@
   "Twisted Wrath" : {
     "name" : "Twisted Wrath",
     "description" : "",
-    "statusDescription" : "369.36% GlobalCritDamage\nSet CritChance to 0%\n\n",
+    "statusDescription" : "401.54% GlobalCritDamage\nSet CritChance to 0%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 3.693637912395324,
+          "globalMult" : 4.015416814300356,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27847,14 +27847,14 @@
   "Twisted Haste" : {
     "name" : "Twisted Haste",
     "description" : "",
-    "statusDescription" : "184.68% GlobalMSPD\n123.12% GlobalAttackSPD\n123.12% GlobalCastSPD\nSet PDEF to 0\nSet MDEF to 0\n\n",
+    "statusDescription" : "200.77% GlobalMSPD\n133.85% GlobalAttackSPD\n133.85% GlobalCastSPD\nSet PDEF to 0\nSet MDEF to 0\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.846818956197662,
+          "globalMult" : 2.007708407150178,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27862,7 +27862,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27870,7 +27870,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27901,14 +27901,14 @@
   "Twisted Dense" : {
     "name" : "Twisted Dense",
     "description" : "",
-    "statusDescription" : "184.68% GlobalMBLOCK\n184.68% GlobalPBLOCK\n184.68% GlobalPDEF\n184.68% GlobalMDEF\nSet PATK to 0\nSet MATK to 0\nSet RATK to 0\n\n",
+    "statusDescription" : "200.77% GlobalMBLOCK\n200.77% GlobalPBLOCK\n200.77% GlobalPDEF\n200.77% GlobalMDEF\nSet PATK to 0\nSet MATK to 0\nSet RATK to 0\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALBLOCK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.846818956197662,
+          "globalMult" : 2.007708407150178,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27916,7 +27916,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.846818956197662,
+          "globalMult" : 2.007708407150178,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27924,7 +27924,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.846818956197662,
+          "globalMult" : 2.007708407150178,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27932,7 +27932,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.846818956197662,
+          "globalMult" : 2.007708407150178,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27971,14 +27971,14 @@
   "Twisted Bless" : {
     "name" : "Twisted Bless",
     "description" : "",
-    "statusDescription" : "123.12% GlobalHealAMP\n61.56% GlobalBuffAMP\n61.56% GlobalDebuffAMP\n-200% GlobalManaRegen\n\n",
+    "statusDescription" : "133.85% GlobalHealAMP\n66.92% GlobalBuffAMP\n66.92% GlobalDebuffAMP\n-200% GlobalManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.231212637465108,
+          "globalMult" : 1.338472271433452,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27986,7 +27986,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.615606318732554,
+          "globalMult" : 0.669236135716726,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27994,7 +27994,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.615606318732554,
+          "globalMult" : 0.669236135716726,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28030,14 +28030,14 @@
   "Moon Infused" : {
     "name" : "Moon Infused",
     "description" : "",
-    "statusDescription" : "147.07% GlobalMATK\n\n",
+    "statusDescription" : "147.66% GlobalMATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.47073,
+          "globalMult" : 1.47656,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -28125,14 +28125,14 @@
   "Paper Marching" : {
     "name" : "Paper Marching",
     "description" : "",
-    "statusDescription" : "31.16% GlobalEvasion\n41.54% GlobalMSPD\n\n",
+    "statusDescription" : "31.33% GlobalEvasion\n41.78% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3115681566,
+          "globalMult" : 0.3133356366,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28140,7 +28140,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.4154242088,
+          "globalMult" : 0.41778084880000005,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
