@@ -8,7 +8,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import model.entity.items.Rune;
 import model.entity.units.Unit;
+import org.springframework.data.mongodb.core.BulkOperations;
+import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.*;
 
@@ -93,6 +96,22 @@ public class APIController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        for (Rune rune : request.socketed_runes) {
+            identical_removed.put(index++, rune);
+        }
+        save_rune_data(identical_removed.values());
         return "บันทึกหน้ารูนแล้ว";
+    }
+
+    private void save_rune_data(Collection<Rune> runes) {
+        BulkOperations bulk = mongoTemplate.bulkOps(BulkOperations.BulkMode.UNORDERED, Rune.class);
+
+        runes.forEach(rune -> {
+            Query query = Query.query(Criteria.where("_id").is(rune.getId()));
+            bulk.replaceOne(query, rune, FindAndReplaceOptions.options().upsert());
+        });
+
+        bulk.execute();
     }
 }

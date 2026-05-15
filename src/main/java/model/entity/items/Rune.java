@@ -8,12 +8,15 @@ import model.entity.units.Unit;
 import model.modifier.BasicModifier;
 import model.modifier.TransferModifier;
 import model.type.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import util.StatTranslateUtil;
 import util.WeightedRandom;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+@Document(collection = "rune_database")
 public class Rune extends Item {
     private ModifierBundle modifiers = new ModifierBundle();
     private Map<String, SkillInstance> skills = new HashMap<>();
@@ -22,7 +25,7 @@ public class Rune extends Item {
     private int baseRow;
     private int baseCol;
     private int unique_weight;
-
+    @Id
     private String id;
 
     public Rune(String name) {
