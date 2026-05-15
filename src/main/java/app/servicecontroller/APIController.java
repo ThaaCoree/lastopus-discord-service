@@ -12,7 +12,9 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 @CrossOrigin(origins = "*")
@@ -47,6 +49,15 @@ public class APIController {
         for (Rune rune : request.rune_inventory.values()) {
             reindexed.put(i++, rune);
         }
+        System.out.println("unit's socketed runes : "+unit.getSocketed_runes());
+        System.out.println("request's socketed runes : "+request.socketed_runes);
+
+        List<Rune> list = new ArrayList<>();
+        list.addAll(unit.getSocketed_runes());
+        list.addAll(request.socketed_runes);
+
+        System.out.println("list's socketed runes : "+list);
+        
         unit.setRune_inventory(reindexed);
         unit.setSocketed_runes(request.socketed_runes);
 //        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);
