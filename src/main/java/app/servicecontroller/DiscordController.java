@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import util.WeightedRandom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -307,7 +308,7 @@ public class DiscordController {
             }
             Item dust = database.allNormalItemMap.get("Rune Dust");
             unit.getInventoryManager().addItem(dust, dust_amount);
-
+            writeintoSheet(unit);
             return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust";
         } else {
             return "No Role!";
@@ -335,12 +336,19 @@ public class DiscordController {
             List<Rune> created_list = new ArrayList<>();
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
-                created_list.add(rune);
-                stringBuilder.append("## ").append(i+1).append(". ").append("[").append(rune.getName()).append("]");
-                if (rune.isUnique_rune()) {
-                    stringBuilder.append(" UNIQUE RUNE! ");
+                WeightedRandom<Boolean> chance_one_break = new WeightedRandom<>();
+                chance_one_break.add(true, 2);
+                chance_one_break.add(false, 8);
+                if (chance_one_break.roll() && rune.occupying_slots() == 1) {
+                    stringBuilder.append("## ").append(i + 1).append(". ").append("[Rune Break!]");
+                } else {
+                    created_list.add(rune);
+                    stringBuilder.append("## ").append(i + 1).append(". ").append("[").append(rune.getName()).append("]");
+                    if (rune.isUnique_rune()) {
+                        stringBuilder.append(" UNIQUE RUNE! ");
+                    }
+                    stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
                 }
-                stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
             }
             int used_dust = 0;
             for (Rune rune : created_list) {
@@ -355,6 +363,7 @@ public class DiscordController {
                 unit.addRuneToInventory(rune);
             }
             unit.getInventoryManager().reduceItem("Rune Dust", used_dust);
+            writeintoSheet(unit);
             return stringBuilder.toString();
         } else {
             return "No Role!";

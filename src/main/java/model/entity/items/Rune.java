@@ -368,7 +368,7 @@ public class Rune extends Item {
     public static Rune createRandomRune(Unit unit, Map<String, Rune> allRuneMap, String rune_name) {
         WeightedRandom<Boolean> unique_weight = new WeightedRandom<>();
         unique_weight.add(true, 1);
-        unique_weight.add(false, 319);
+        unique_weight.add(false, 300);
         if (unique_weight.roll()) {
             Rune rune = allRuneMap.get(rune_name);
             String shape_name = rune.getShapeName();
