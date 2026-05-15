@@ -235,7 +235,7 @@ public class DiscordController {
             }
 
             if (amount > giver.getCopperCoin()) return "มีเงินไม่มากพอ";
-            
+
             target.increaseCopperCoin(amount);
             giver.reduceCopperCoin(amount);
             writeintoSheet(giver);
@@ -264,6 +264,26 @@ public class DiscordController {
         if (isGM(playerMessage.roles)) {
             database.loadMongo();
             return "อัพเดท Database แล้ว";
+        } else {
+            return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
+        }
+    }
+
+    @PostMapping("/copper_coin")
+    public String copper_coin(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            String name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit unit = database.findPlayer(name);
+            int amount;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+
+            unit.increaseCopperCoin(amount);
+            writeintoSheet(unit);
+            return "มอบเงิน "+amount+" ให้กับ "+unit.getName()+" แล้ว";
         } else {
             return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
         }
