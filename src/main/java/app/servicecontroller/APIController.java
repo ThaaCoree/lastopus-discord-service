@@ -103,6 +103,7 @@ public class APIController {
     }
 
     private void save_rune_data(Collection<Rune> runes) {
+        if (runes == null || runes.isEmpty()) return;
         BulkOperations bulk = mongoTemplate.bulkOps(BulkOperations.BulkMode.UNORDERED, Rune.class);
 
         runes.forEach(rune -> {
