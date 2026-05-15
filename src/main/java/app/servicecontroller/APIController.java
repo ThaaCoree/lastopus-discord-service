@@ -41,15 +41,10 @@ public class APIController {
 //        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());
 //        System.out.println("rune_inventory : "+request.rune_inventory);
 //        System.out.println("unit's rune_inventory before set : "+request.rune_inventory);
-        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
-        int i = 0;
-        for (Rune rune : request.rune_inventory.values()) {
-            reindexed.put(i++, rune);
-        }
+
+
 //        System.out.println("unit's socketed runes : "+unit.getSocketed_runes());
 //        System.out.println("request's socketed runes : "+request.socketed_runes);
-
-        System.out.println("logging rune checking ");
 
         for (Rune socketedRune : request.socketed_runes) {
             if (socketedRune.getId() == null) {

@@ -155,93 +155,95 @@ public class Rune extends Item {
 
     @JsonIgnore
     public String getShapeName() {
+        boolean[][] copy_shape = this.shape.clone();
         for (int i = 0; i<4 ; i++) {
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {false,true, true},
                     {true, true, false}
             })) {
                 return "S";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true,true, false},
                     {false, true, true}
             })) {
                 return "Z";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {false,true},
                     {false,true},
                     {true, true}
             })) {
                 return "J";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, false},
                     {true, false},
                     {true, true}
             })) {
                 return "L";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true,true, true},
                     {false, true, false}
             })) {
                 return "T";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true,true, true}
             })) {
                 return "3";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true,true}
             })) {
                 return "2";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true}
             })) {
                 return "1";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, false},
                     {true, true}
             })) {
                 return "Corner";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, true},
                     {true, true}
             })) {
                 return "Cube";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {false, true, false},
                     {true, true, true},
                     {false, true, false}
             })) {
                 return "Flower";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {false, false, true},
                     {false, true, false},
                     {true, false, false}
             })) {
                 return "Italic";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, true},
                     {true, false},
                     {true, true}
             })) {
                 return "C";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, true, true, true ,true}
             })) {
                 return "5";
             }
-            if (Arrays.deepEquals(this.shape, new boolean[][]{
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
                     {true, false, true},
                     {false, true, false},
                     {true, false, true}
@@ -249,7 +251,7 @@ public class Rune extends Item {
                 return "X";
             }
 
-            rotate90(this);
+            rotate90(copy_shape);
         }
 
         return "No Match Shape";
@@ -269,6 +271,19 @@ public class Rune extends Item {
         }
 
         rune.setShape(result);
+    }
+
+    public static void rotate90(boolean[][] shape) {
+        int rows = shape.length;
+        int cols = shape[0].length;
+
+        boolean[][] result = new boolean[cols][rows];
+
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                result[c][rows - 1 - r] = shape[r][c];
+            }
+        }
     }
 
     public int occupying_slots() {
