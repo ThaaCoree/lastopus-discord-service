@@ -51,8 +51,18 @@ public class APIController {
 
         System.out.println("logging rune checking ");
 
+        for (Rune socketedRune : request.socketed_runes) {
+            if (socketedRune.getId() == null) {
+                socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
+            }
+        }
+
         List<Rune> identical_inventory = new ArrayList<>();
+        identical_inventory.addAll(request.rune_inventory.values());
+        identical_inventory.addAll(unit.getRune_inventory().values());
+        
         for (Rune socketedRune : request.rune_inventory.values()) {
+            identical_inventory.add(socketedRune);
             for (Rune socketed_rune : unit.getRune_inventory().values()) {
                 if (socketedRune.getId() == null) {
                     socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
@@ -60,8 +70,6 @@ public class APIController {
                 if (socketed_rune.getId() == null) {
                     socketed_rune.setId(Rune.generateId(socketed_rune.getShapeName()));
                 }
-                identical_inventory.add(socketedRune);
-                identical_inventory.add(socketed_rune);
                 if (socketed_rune.getId().equals(socketedRune.getId())) {
                     identical_inventory.remove(socketed_rune);
                 }
