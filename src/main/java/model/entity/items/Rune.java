@@ -370,10 +370,11 @@ public class Rune extends Item {
         unique_weight.add(true, 1);
         unique_weight.add(false, 319);
         if (unique_weight.roll()) {
-            Rune rune = new Rune();
+            Rune rune = allRuneMap.get(rune_name);
+            String shape_name = rune.getShapeName();
             WeightedRandom<Rune> random = new WeightedRandom<>();
             for (Rune value : allRuneMap.values()) {
-                if (value.isUnique_rune()) {
+                if (value.isUnique_rune() && value.getShapeName().equals(shape_name)) {
                     random.add(value, value.getUnique_weight());
                 }
             }

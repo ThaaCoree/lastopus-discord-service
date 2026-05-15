@@ -160,7 +160,7 @@ public class ItemEditPanel extends ScrollPane {
             } else if (toMake instanceof Dream item) {
                 database.getAllDreamItem().put(toMake.getName(), item);
             } else {
-                database.getAllTypeItemMap().put(toMake.getName(),toMake);
+                database.getAllNormalItemMap().put(toMake.getName(),toMake);
             }
             database.translateEverything();
             database.mapEverything();
@@ -189,7 +189,17 @@ public class ItemEditPanel extends ScrollPane {
                 System.out.println("Delete button clicked, click again to confirm deletion.");
                 confirmDeletion = true;
             } else {
-                database.getAllTypeItemMap().remove(item.getName());
+                if (item instanceof Rune to_delete) {
+                    database.getAllRuneMap().remove(item.getName());
+                } else if (item instanceof Consumable to_delete) {
+                    database.getAllConsumableMap().remove(item.getName());
+                } else if (item instanceof Equipment to_delete) {
+                    database.getAllEquipmentMap().remove(item.getName());
+                } else if (item instanceof Dream to_delete) {
+                    database.getAllDreamItem().remove(item.getName());
+                } else {
+                    database.getAllNormalItemMap().remove(item.getName());
+                }
                 listPane.getListView().refresh();
                 listPane.getItemList().setAll(database.getAllTypeItemMap().values());
                 setButtonToSelected(createModeBtn, allBtn);

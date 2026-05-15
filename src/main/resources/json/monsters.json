@@ -80015,6 +80015,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -80042,16 +80052,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -80124,6 +80124,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 10.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -80151,16 +80161,6 @@
             },
             "WISDOM" : {
               "flat" : 3.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 10.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -80233,6 +80233,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -80260,16 +80270,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -80337,6 +80337,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -80371,7 +80372,6 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { },
           "transferModifiers" : { }
         }
       },
@@ -81160,6 +81160,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -81187,16 +81197,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -81269,6 +81269,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 10.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -81296,16 +81306,6 @@
             },
             "WISDOM" : {
               "flat" : 3.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 10.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -81378,6 +81378,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -81405,16 +81415,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -81478,6 +81478,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -81512,7 +81513,6 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { },
           "transferModifiers" : { }
         }
       },
@@ -82325,6 +82325,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -82352,16 +82362,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -82434,6 +82434,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 10.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -82461,16 +82471,6 @@
             },
             "WISDOM" : {
               "flat" : 3.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 10.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -82543,6 +82543,16 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : {
+            "HEALTHPOINT" : {
+              "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -82570,16 +82580,6 @@
             },
             "LUCK" : {
               "flat" : 1.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            }
-          },
-          "statModifiers" : {
-            "HEALTHPOINT" : {
-              "flat" : 7.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -82647,6 +82647,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -82681,7 +82682,6 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { },
           "transferModifiers" : { }
         }
       },
