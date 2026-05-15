@@ -16,6 +16,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -75,15 +76,12 @@ public class APIController {
             }
         }
 
-        for (Rune socketedRune : request.socketed_runes) {
-            if (socketedRune == null) continue;
-            for (Rune inventoryRune : identical_inventory) {
-                if (inventoryRune == null) continue;
-                if (socketedRune.getId().equals(inventoryRune.getId())) {
-                    identical_inventory.remove(inventoryRune);
-                }
-            }
-        }
+        Set<String> socketedIds = request.socketed_runes.stream()
+                .filter(r -> r != null)
+                .map(Rune::getId)
+                .collect(Collectors.toSet());
+
+        identical_inventory.removeIf(r -> r != null && socketedIds.contains(r.getId()));
 
         int index = 1;
         Map<Integer, Rune> identical_removed = new LinkedHashMap<>();
