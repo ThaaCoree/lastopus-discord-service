@@ -376,6 +376,7 @@ public class Rune extends Item {
             if (!random.isEmpty()) {
                 rune = random.roll();
             }
+            rune.setId(generateId(rune.getShapeName()));
             return rune;
         } else {
             Rune rune = new Rune();
@@ -394,6 +395,7 @@ public class Rune extends Item {
             } else {
                 rune.setName(shape_name+"-Shape Rune");
             }
+            rune.setId(generateId(rune.getShapeName()));
             return rune;
         }
     }

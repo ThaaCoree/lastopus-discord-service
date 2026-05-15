@@ -49,27 +49,34 @@ public class APIController {
 //        System.out.println("unit's socketed runes : "+unit.getSocketed_runes());
 //        System.out.println("request's socketed runes : "+request.socketed_runes);
 
-
-        Set<Rune> set = new LinkedHashSet<>();
-        set.addAll(unit.getSocketed_runes());
-        set.addAll(request.socketed_runes);
-
         System.out.println("logging rune checking ");
-        for (Rune socketedRune : request.socketed_runes) {
-            for (Rune socketed_rune : unit.getSocketed_runes()) {
+
+        List<Rune> identical_inventory = new ArrayList<>();
+        for (Rune socketedRune : request.rune_inventory.values()) {
+            for (Rune socketed_rune : unit.getRune_inventory().values()) {
                 if (socketedRune.getId() == null) {
                     socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
                 }
                 if (socketed_rune.getId() == null) {
                     socketed_rune.setId(Rune.generateId(socketed_rune.getShapeName()));
                 }
-
+                identical_inventory.add(socketedRune);
+                identical_inventory.add(socketed_rune);
                 if (socketed_rune.getId().equals(socketedRune.getId())) {
-                    System.out.println("same rune found : "+socketedRune);
+                    identical_inventory.remove(socketed_rune);
                 }
             }
         }
 
+        int index = 1;
+        Map<Integer, Rune> identical_removed = new LinkedHashMap<>();
+        for (Rune rune : identical_inventory) {
+            identical_removed.put(index++, rune);
+        }
+
+        identical_removed.forEach((key, rune) -> {
+            System.out.println("key: "+key+" rune : "+rune+"\n");
+        });
 //        System.out.println("set's socketed runes : "+set);
 
         unit.setRune_inventory(reindexed);
