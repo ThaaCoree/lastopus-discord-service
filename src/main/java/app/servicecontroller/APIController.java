@@ -108,6 +108,7 @@ public class APIController {
         BulkOperations bulk = mongoTemplate.bulkOps(BulkOperations.BulkMode.UNORDERED, Rune.class);
 
         runes.forEach(rune -> {
+            if (rune == null) return;
             Query query = Query.query(Criteria.where("_id").is(rune.getId()));
             bulk.replaceOne(query, rune, FindAndReplaceOptions.options().upsert());
         });
