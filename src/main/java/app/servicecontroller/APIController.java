@@ -82,13 +82,9 @@ public class APIController {
         for (Rune rune : identical_inventory) {
             identical_removed.put(index++, rune);
         }
-
-        identical_removed.forEach((key, rune) -> {
-            System.out.println("key: "+key+" rune : "+rune+"\n");
-        });
 //        System.out.println("set's socketed runes : "+set);
 
-        unit.setRune_inventory(reindexed);
+        unit.setRune_inventory(identical_removed);
         unit.setSocketed_runes(request.socketed_runes);
 //        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);
 //        System.out.println("unit's socketed runes after set "+unit.getSocketed_runes());
