@@ -60,10 +60,12 @@ public class APIController {
         List<Rune> identical_inventory = new ArrayList<>();
         identical_inventory.addAll(request.rune_inventory.values());
         identical_inventory.addAll(unit.getRune_inventory().values());
-        
+
         for (Rune socketedRune : request.rune_inventory.values()) {
+            if (socketedRune == null) continue;
             identical_inventory.add(socketedRune);
             for (Rune socketed_rune : unit.getRune_inventory().values()) {
+                if (socketed_rune == null) continue;
                 if (socketedRune.getId() == null) {
                     socketedRune.setId(Rune.generateId(socketedRune.getShapeName()));
                 }
