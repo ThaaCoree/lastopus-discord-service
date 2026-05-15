@@ -637,8 +637,9 @@ public class Rune extends Item {
 
     @Override
     public String toString() {
-        return "Equipment{" +
+        return "Rune{" +
                 "isUnique=" + isUnique_rune() +
+                ", " + id +
                 ", modifiers=" + modifiers.getStatModifiers() +
                 ", " + modifiers.getStatusModifiers() +
                 ", " + modifiers.getTransferModifiers() +
