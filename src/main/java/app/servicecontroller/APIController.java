@@ -46,14 +46,23 @@ public class APIController {
         for (Rune rune : request.rune_inventory.values()) {
             reindexed.put(i++, rune);
         }
-        System.out.println("unit's socketed runes : "+unit.getSocketed_runes());
-        System.out.println("request's socketed runes : "+request.socketed_runes);
+//        System.out.println("unit's socketed runes : "+unit.getSocketed_runes());
+//        System.out.println("request's socketed runes : "+request.socketed_runes);
+
 
         Set<Rune> set = new LinkedHashSet<>();
         set.addAll(unit.getSocketed_runes());
         set.addAll(request.socketed_runes);
 
-        System.out.println("set's socketed runes : "+set);
+        for (Rune socketedRune : request.socketed_runes) {
+            for (Rune socketed_rune : unit.getSocketed_runes()) {
+                if (socketed_rune.equals(socketedRune)) {
+                    System.out.println("same rune found : "+socketedRune);
+                }
+            }
+        }
+
+//        System.out.println("set's socketed runes : "+set);
 
         unit.setRune_inventory(reindexed);
         unit.setSocketed_runes(request.socketed_runes);

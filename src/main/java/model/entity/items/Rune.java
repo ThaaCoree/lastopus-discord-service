@@ -641,4 +641,14 @@ public class Rune extends Item {
                 ", " + modifiers.getTransferModifiers() +
                 "}";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Rune)) return false;
+        Rune other = (Rune) o;
+        return isUnique_rune() == other.isUnique_rune() &&
+                Objects.equals(modifiers, other.modifiers);
+
+    }
 }
