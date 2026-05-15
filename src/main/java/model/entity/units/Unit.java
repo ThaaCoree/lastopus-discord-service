@@ -891,7 +891,9 @@ public class Unit {
         if (index == -1) {
             return 0;
         } else {
-            return index;
+            int amount = 0;
+            amount = inventoryItemAmount.get(index);
+            return amount;
         }
     }
 
