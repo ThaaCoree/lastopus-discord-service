@@ -354,6 +354,7 @@ public class DiscordController {
                     stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
                 }
             }
+            System.out.println(created_list);
             for (Rune rune : created_list) {
                 used_dust += rune.occupying_slots();
             }
@@ -364,6 +365,7 @@ public class DiscordController {
 
             for (Rune rune : created_list) {
                 unit.addRuneToInventory(rune);
+                System.out.println(rune);
             }
             unit.getInventoryManager().reduceItem("Rune Dust", used_dust);
             writeintoSheet(unit);
