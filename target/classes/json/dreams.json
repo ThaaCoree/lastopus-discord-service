@@ -20,9 +20,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Knowledge" : {
     "name" : "Dream of Knowledge",
@@ -58,16 +58,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : {
-      "MAGICALATTACK" : {
-        "flat" : 0.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.1,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "INTELLIGENCE" : {
         "flat" : 0.0,
@@ -78,7 +69,16 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : {
+      "MAGICALATTACK" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.1,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
   },
   "Dream of Force" : {
     "name" : "Dream of Force",
@@ -114,16 +114,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : {
-      "PHYSICALATTACK" : {
-        "flat" : 0.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.1,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -134,7 +125,16 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.1,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
   },
   "Dream of Fidelity" : {
     "name" : "Dream of Fidelity",
@@ -170,16 +170,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : {
-      "RANGEDATTACK" : {
-        "flat" : 0.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.1,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "DEXTERITY" : {
         "flat" : 0.0,
@@ -190,7 +181,16 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : {
+      "RANGEDATTACK" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.1,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
   },
   "Dream of Vigor" : {
     "name" : "Dream of Vigor",
@@ -213,9 +213,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Destruction" : {
     "name" : "Dream of Destruction",
@@ -238,9 +238,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Keiros´ Dream" : {
     "name" : "Keiros´ Dream",
@@ -258,9 +258,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Hope" : {
     "name" : "Dream of Hope",
@@ -283,9 +283,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Ego" : {
     "name" : "Dream of Ego",
@@ -328,7 +328,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -355,7 +355,7 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Starry Dream" : {
     "name" : "Starry Dream",
@@ -430,7 +430,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -489,7 +489,7 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Grenn´s War Drum" : {
     "name" : "Grenn´s War Drum",
@@ -507,9 +507,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Misery" : {
     "name" : "Dream of Misery",
@@ -536,6 +536,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 0.0,
@@ -545,9 +547,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Delusional Dream" : {
     "name" : "Delusional Dream",
@@ -584,8 +584,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
-    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALPENETRATE",
@@ -605,7 +603,9 @@
         "transferRatio" : 1.35,
         "transferType" : "CONVERSION"
       }
-    }
+    },
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Dream of Vengeance" : {
     "name" : "Dream of Vengeance",
@@ -632,6 +632,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "CRITDAMAGE" : {
         "flat" : 0.0,
@@ -641,9 +643,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Dream of Faith" : {
     "name" : "Dream of Faith",
@@ -666,9 +666,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Taryan´s Dream" : {
     "name" : "Taryan´s Dream",
@@ -695,6 +695,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "MANAREGEN" : {
         "flat" : 0.0,
@@ -704,9 +706,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Abominable Evolution" : {
     "name" : "Abominable Evolution",
@@ -752,8 +752,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
-    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : null,
@@ -782,7 +780,9 @@
         "transferRatio" : 1.5,
         "transferType" : "CONVERSION"
       }
-    }
+    },
+    "statusModifiers" : { },
+    "statModifiers" : { }
   },
   "Dream of Dread" : {
     "name" : "Dream of Dread",
@@ -805,9 +805,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Hate" : {
     "name" : "Dream of Hate",
@@ -834,9 +834,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Pain" : {
     "name" : "Dream of Pain",
@@ -871,6 +871,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "PHYSICALPENETRATE" : {
         "flat" : 0.0,
@@ -888,9 +890,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Dream of Benevolence" : {
     "name" : "Dream of Benevolence",
@@ -925,6 +925,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "HEALAMPLIFIER" : {
         "flat" : 0.0,
@@ -942,9 +944,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "No Regrets" : {
     "name" : "No Regrets",
@@ -987,6 +987,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 0.0,
@@ -1012,9 +1014,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "The Last Blessing" : {
     "name" : "The Last Blessing",
@@ -1032,9 +1032,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Tranquility" : {
     "name" : "Dream of Tranquility",
@@ -1061,7 +1061,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "WISDOM" : {
         "flat" : 0.0,
@@ -1072,7 +1072,7 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Strive" : {
     "name" : "Dream of Strive",
@@ -1095,9 +1095,9 @@
       }
     },
     "skills" : { },
-    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : { },
-    "transferModifiers" : { }
+    "statModifiers" : { }
   },
   "Dream of Night" : {
     "name" : "Dream of Night",
@@ -1124,6 +1124,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.015,
@@ -1133,9 +1135,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   },
   "Venus´ Enlightenment" : {
     "name" : "Venus´ Enlightenment",
@@ -1162,6 +1162,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "transferModifiers" : { },
+    "statusModifiers" : { },
     "statModifiers" : {
       "RESERVATION" : {
         "flat" : 0.0,
@@ -1171,8 +1173,6 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "statusModifiers" : { },
-    "transferModifiers" : { }
+    }
   }
 }

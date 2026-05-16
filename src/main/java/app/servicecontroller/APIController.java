@@ -56,25 +56,24 @@ public class APIController {
             }
         }
 
+        // 1. assign id ให้ทุกตัวที่ null ก่อน
+        request.rune_inventory.values().forEach(rune -> {
+            if (rune != null && rune.getId() == null)
+                rune.setId(Rune.generateId(rune.getShapeName()));
+        });
+        unit.getRune_inventory().values().forEach(rune -> {
+            if (rune != null && rune.getId() == null)
+                rune.setId(Rune.generateId(rune.getShapeName()));
+        });
+
+// 2. รวม list
         List<Rune> identical_inventory = new ArrayList<>();
         identical_inventory.addAll(request.rune_inventory.values());
         identical_inventory.addAll(unit.getRune_inventory().values());
 
-        for (Rune request_inventory_rune : request.rune_inventory.values()) {
-            if (request_inventory_rune == null) continue;
-            for (Rune unit_inventory_rune : unit.getRune_inventory().values()) {
-                if (unit_inventory_rune == null) continue;
-                if (request_inventory_rune.getId() == null) {
-                    request_inventory_rune.setId(Rune.generateId(request_inventory_rune.getShapeName()));
-                }
-                if (unit_inventory_rune.getId() == null) {
-                    unit_inventory_rune.setId(Rune.generateId(unit_inventory_rune.getShapeName()));
-                }
-                if (unit_inventory_rune.getId().equals(request_inventory_rune.getId())) {
-                    identical_inventory.remove(unit_inventory_rune);
-                }
-            }
-        }
+// 3. ลบซ้ำด้วย id
+        Set<String> seenIds = new HashSet<>();
+        identical_inventory.removeIf(rune -> rune == null || !seenIds.add(rune.getId()));
 
         Set<String> socketedIds = request.socketed_runes.stream()
                 .filter(r -> r != null)
