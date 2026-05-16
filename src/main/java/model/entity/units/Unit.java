@@ -926,7 +926,7 @@ public class Unit {
 
     public Rune findRune(int index) {
         Map<Integer, Rune> reindexed = new LinkedHashMap<>();
-        int i = 0;
+        int i = 1;
         for (Rune rune_reindex : rune_inventory.values()) {
             reindexed.put(i++, rune_reindex);
         }
