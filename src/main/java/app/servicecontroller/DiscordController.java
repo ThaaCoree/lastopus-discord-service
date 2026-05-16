@@ -303,8 +303,10 @@ public class DiscordController {
                     .toList();
             int dust_amount = 0;
             for (Integer number : numbers) {
+                if (unit.getRune_inventory().get(number) != null) {
+                    dust_amount++;
+                }
                 unit.getRune_inventory().remove(number);
-                dust_amount++;
             }
             Item dust = database.allNormalItemMap.get("Rune Dust");
             unit.getInventoryManager().addItem(dust, dust_amount);
