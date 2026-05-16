@@ -254,9 +254,8 @@ public class DiscordController {
     public String update(@RequestBody PlayerMessage playerMessage) {
         long start = System.currentTimeMillis();
         long t;
-        t = System.currentTimeMillis();
+
         String name = getPlayerName(playerMessage.roles);
-        System.out.println("[0] getPlayerName: " + (System.currentTimeMillis() - t) + "ms");
 
         t = System.currentTimeMillis();
         Unit updater = database.findPlayer(name);
@@ -398,9 +397,9 @@ public class DiscordController {
     }
 
     public String getPlayerName(List<String> roles, boolean load_mongo) {
-//        if (load_mongo) {
-//            database.load_player();
-//        }
+        if (load_mongo) {
+            database.load_player();
+        }
         for (String role : roles) {
             if (role.equals("Christ")) {
                 return "Christ";

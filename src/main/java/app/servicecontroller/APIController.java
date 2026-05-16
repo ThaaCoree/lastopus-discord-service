@@ -32,12 +32,14 @@ public class APIController {
 
     @GetMapping("/get_unit")
     public Map<String, Unit> getAllUnit() {
+        database.load_player();
+
         return database.allPlayerMap;
     }
 
     @PostMapping("/update_unit")
     public String updateUnit(@RequestBody RuneboardRequest request) {
-//        database.load_player();
+        database.load_player();
         Unit unit = database.findPlayer(request.player_name);
 //        System.out.println("socketed runes : "+request.socketed_runes);
 //        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());

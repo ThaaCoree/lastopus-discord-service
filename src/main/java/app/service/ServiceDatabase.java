@@ -48,7 +48,6 @@ public class ServiceDatabase {
     public Map<String, Shop> allShop;
     public Map<String, Unit> allUnit = new LinkedHashMap<>();
     public Map<String, Summon> allSummon = new LinkedHashMap<>();
-    private boolean loaded = false;
 
     public ServiceDatabase(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
@@ -319,13 +318,13 @@ public class ServiceDatabase {
             allShop = res.getAllShop();
 
             updateUnitObjects();
-            loaded = true;
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void load_player() {
+        long start = System.currentTimeMillis();
         long t;
         t = System.currentTimeMillis();
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
