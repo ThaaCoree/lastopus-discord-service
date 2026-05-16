@@ -341,7 +341,7 @@ public class DiscordController {
                 chance_one_break.add(true, 2);
                 chance_one_break.add(false, 8);
                 if (chance_one_break.roll() && rune.occupying_slots() == 1) {
-                    stringBuilder.append("## ").append(i + 1).append(". ").append("[Rune Break!]");
+                    stringBuilder.append("## ").append(i + 1).append(". ").append("[Rune Break!]").append("\n");
                 } else {
                     created_list.add(rune);
                     stringBuilder.append("## ").append(i + 1).append(". ").append("[").append(rune.getName()).append("]");
