@@ -90,6 +90,7 @@ public class APIController {
         unit.setSocketed_runes(request.socketed_runes);
 //        System.out.println("unit's rune_inventory after set : "+request.rune_inventory);
 //        System.out.println("unit's socketed runes after set "+unit.getSocketed_runes());
+        unit.calculateEverything();
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
