@@ -254,8 +254,9 @@ public class DiscordController {
     public String update(@RequestBody PlayerMessage playerMessage) {
         long start = System.currentTimeMillis();
         long t;
-
+        t = System.currentTimeMillis();
         String name = getPlayerName(playerMessage.roles);
+        System.out.println("[0] getPlayerName: " + (System.currentTimeMillis() - t) + "ms");
 
         t = System.currentTimeMillis();
         Unit updater = database.findPlayer(name);
