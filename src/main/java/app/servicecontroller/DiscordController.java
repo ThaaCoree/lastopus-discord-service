@@ -111,7 +111,7 @@ public class DiscordController {
             if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
                 return "กรุณาแท็กเป้าหมาย";
             }
-            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
             int amount = 0;
@@ -191,7 +191,7 @@ public class DiscordController {
             if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
                 return "กรุณาแท็กเป้าหมาย";
             }
-            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
             Unit target = database.findPlayer(target_name);
             if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
             int index = 0;
@@ -224,7 +224,7 @@ public class DiscordController {
         String name = getPlayerName(playerMessage.roles);
         Unit giver = database.findPlayer(name);
         if (giver != null) {
-            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles, false);
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
             Unit target = database.findPlayer(target_name);
 
             int amount;
@@ -396,62 +396,61 @@ public class DiscordController {
         return roles.contains("GM");
     }
 
-    public String getPlayerName(List<String> roles, boolean load_mongo) {
-        if (load_mongo) {
-            database.load_player();
-        }
+    public String getPlayerName(List<String> roles) {
+        String name = "";
+
         for (String role : roles) {
             if (role.equals("Christ")) {
-                return "Christ";
+                name = "Christ";
             }
             if (role.equals("Leda")) {
-                return "Leda";
+                name = "Leda";
             }
             if (role.equals("Akivili")) {
-                return "Akivili";
+                name = "Akivili";
             }
             if (role.equals("Pumpkin'Slayerman")) {
-                return "Pumpkin'Slayerman";
+                name = "Pumpkin'Slayerman";
             }
             if (role.equals("Acheros Aki")) {
-                return "Acheros Aki";
+                name = "Acheros Aki";
             }
             if (role.equals("Twelve")) {
-                return "Twelve";
+                name = "Twelve";
             }
             if (role.equals("Slafier")) {
-                return "Slafier";
+                name = "Slafier";
             }
             if (role.equals("Shiranui")) {
-                return "Shiranui";
+                name = "Shiranui";
             }
             if (role.equals("Four-Leaf Clover777")) {
-                return "Four-Leaf Clover777";
+                name = "Four-Leaf Clover777";
             }
             if (role.equals("Onebrek")) {
-                return "Onebrek";
+                name = "Onebrek";
             }
             if (role.equals("Aard Archer")) {
-                return "Aard Archer";
+                name = "Aard Archer";
             }
             if (role.equals("Esther")) {
-                return "Esther";
+                name = "Esther";
             }
             if (role.equals("Yasha")) {
-                return "Yasha";
+                name = "Yasha";
             }
             if (role.equals("Voahri")) {
-                return "Voahri";
+                name = "Voahri";
             }
             if (role.equals("Scarlet")) {
-                return "Scarlet";
+                name = "Scarlet";
             }
         }
-        return "";
-    }
-
-    public String getPlayerName(List<String> roles) {
-        return getPlayerName(roles, true);
+        if (!name.isEmpty()) {
+            Unit unit = database.findPlayer(name);
+            database.load_player(unit);
+        }
+        return name;
     }
 
     public void writeintoSheet(Unit unit) {

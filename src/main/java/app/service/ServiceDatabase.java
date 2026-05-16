@@ -324,20 +324,22 @@ public class ServiceDatabase {
         }
     }
 
-    public void load_player() {
-        long start = System.currentTimeMillis();
+    public void load_player(Unit unit) {
         long t;
         t = System.currentTimeMillis();
+
         ObjectId playersDocId = new ObjectId("6a07e7b043a4fd4021ff9262");
         Query query = new Query(Criteria.where("_id").is(playersDocId));
-        Map allPlayers = mongoTemplate.findOne(query, Map.class, "players");
-        allPlayers.remove("_id");
-        System.out.println("[0] load allPlayers from mongoTemplate : " + (System.currentTimeMillis() - t) + "ms");
+        query.fields().include(unit.getName()); // โหลดแค่ field ที่ต้องการ
 
-        allPlayerMap.clear();
-        allPlayerMap = allPlayers;  // ใช้ allPlayers ที่โหลดใหม่จาก DB
-        allUnit.putAll(allPlayerMap);
-        updateUnitObjects();
+        Map<String, Unit> result = mongoTemplate.findOne(query, Map.class, "players");
+        System.out.println("[0] load player from mongoTemplate : " + (System.currentTimeMillis() - t) + "ms");
+
+        if (result != null && result.containsKey(unit.getName())) {
+            allPlayerMap.put(unit.getName(), result.get(unit.getName()));
+            allUnit.put(unit.getName(), result.get(unit.getName()));
+            updateUnitObjects();
+        }
     }
 
     public SaveRequest load_all() {
