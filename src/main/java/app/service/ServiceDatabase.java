@@ -324,8 +324,11 @@ public class ServiceDatabase {
     }
 
     public void load_player() {
+        long t;
+        t = System.currentTimeMillis();
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
         allPlayers.remove("_id");
+        System.out.println("[0] load allPlayers from mongoTemplate : " + (System.currentTimeMillis() - t) + "ms");
 
         allPlayerMap.clear();
         allPlayerMap = allPlayers;  // ใช้ allPlayers ที่โหลดใหม่จาก DB
