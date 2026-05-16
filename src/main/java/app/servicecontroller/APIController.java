@@ -37,7 +37,7 @@ public class APIController {
             database.load_player(unit_to_load);
             return database.findPlayer(unit_to_load.getName());
         } else {
-            return null;
+            return new Unit();
         }
     }
 
