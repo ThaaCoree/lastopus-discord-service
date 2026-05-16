@@ -1387,10 +1387,8 @@ public class Unit {
     }
 
     public void increaseRuneInventory(Rune rune) {
-        int nextSlot = 0;
-        for (Item item : rune_inventory.values()) {
-            nextSlot++;
-        }
+        int nextSlot = rune_inventory.isEmpty() ? 1
+                : Collections.max(rune_inventory.keySet()) + 1;
         rune_inventory.put(nextSlot, rune);
     }
 
