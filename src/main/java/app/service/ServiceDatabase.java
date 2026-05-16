@@ -15,6 +15,7 @@ import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
 import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -437,15 +438,20 @@ public class ServiceDatabase {
             );
 
             t = System.currentTimeMillis();
-            Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
-            Document doc = mongoTemplate.findOne(query, Document.class, "players");
+            // hardcode _id ของ document players ไว้เลย ไม่ต้อง find ก่อน
+            ObjectId playersDocId = new ObjectId("6a07e7b043a4fd4021ff9262");
+            Query updateQuery = new Query(Criteria.where("_id").is(playersDocId));
+            Update update = new Update().set(unit.getName(), unit);
+            mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
             System.out.println("doc = mongoTemplate.findOne: " + (System.currentTimeMillis() - t) + "ms");
 
-            t = System.currentTimeMillis();
-            Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
-            Update update = new Update().set(unit.getName(), unit);
-            System.out.println("update = new Update().: " + (System.currentTimeMillis() - t) + "ms");
-            mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
+
+
+//            t = System.currentTimeMillis();
+//            Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
+//            Update update = new Update().set(unit.getName(), unit);
+//            System.out.println("update = new Update().: " + (System.currentTimeMillis() - t) + "ms");
+//            mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
         }catch (Exception e) {
             e.printStackTrace();
         }
