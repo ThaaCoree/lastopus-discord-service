@@ -252,10 +252,13 @@ public class DiscordController {
 
     @PostMapping("/update")
     public String update(@RequestBody PlayerMessage playerMessage) {
+        long start = System.currentTimeMillis();
         String name = getPlayerName(playerMessage.roles);
         Unit updater = database.findPlayer(name);
         if (updater != null) {
             updater.writeToSheet(database.load_credentials());
+
+            System.out.println("Response time: "+ (System.currentTimeMillis() - start)+ " ms");
             return "อัพเดทชีทของ "+updater.getName()+" เสร็จสิ้น";
         } else {
             return "No Role!";
