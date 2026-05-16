@@ -328,7 +328,9 @@ public class ServiceDatabase {
         long start = System.currentTimeMillis();
         long t;
         t = System.currentTimeMillis();
-        Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
+        ObjectId playersDocId = new ObjectId("6a07e7b043a4fd4021ff9262");
+        Query query = new Query(Criteria.where("_id").is(playersDocId));
+        Map allPlayers = mongoTemplate.findOne(query, Map.class, "players");
         allPlayers.remove("_id");
         System.out.println("[0] load allPlayers from mongoTemplate : " + (System.currentTimeMillis() - t) + "ms");
 
