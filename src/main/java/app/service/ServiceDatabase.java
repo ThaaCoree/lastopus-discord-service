@@ -425,6 +425,7 @@ public class ServiceDatabase {
     }
 
     public String save_player(String json) {
+        long t;
         ObjectMapper mapper = new ObjectMapper();
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -435,11 +436,15 @@ public class ServiceDatabase {
                     }
             );
 
+            t = System.currentTimeMillis();
             Query query = new Query(Criteria.where(unit.getName() + "._id").is(unit.getName()));
             Document doc = mongoTemplate.findOne(query, Document.class, "players");
+            System.out.println("doc = mongoTemplate.findOne: " + (System.currentTimeMillis() - t) + "ms");
 
+            t = System.currentTimeMillis();
             Query updateQuery = new Query(Criteria.where("_id").is(doc.getObjectId("_id")));
             Update update = new Update().set(unit.getName(), unit);
+            System.out.println("update = new Update().: " + (System.currentTimeMillis() - t) + "ms");
             mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
         }catch (Exception e) {
             e.printStackTrace();
