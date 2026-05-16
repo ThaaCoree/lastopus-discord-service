@@ -333,6 +333,8 @@ public class DiscordController {
 
             StringBuilder stringBuilder = new StringBuilder(unit.getName()+" สร้างรูน\n");
 
+            int used_dust = 0;
+
             List<Rune> created_list = new ArrayList<>();
             for (int i = 0; i < amount; i++) {
                 Rune rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
@@ -342,6 +344,7 @@ public class DiscordController {
                 chance_one_break.add(false, 8);
                 if (chance_one_break.roll() && rune.occupying_slots() == 1) {
                     stringBuilder.append("## ").append(i + 1).append(". ").append("[Rune Break!]").append("\n");
+                    used_dust += 1;
                 } else {
                     created_list.add(rune);
                     stringBuilder.append("## ").append(i + 1).append(". ").append("[").append(rune.getName()).append("]");
@@ -351,7 +354,6 @@ public class DiscordController {
                     stringBuilder.append("\n").append(rune.getStatusDescription()).append(rune.getDescription()).append("\n");
                 }
             }
-            int used_dust = 0;
             for (Rune rune : created_list) {
                 used_dust += rune.occupying_slots();
             }
