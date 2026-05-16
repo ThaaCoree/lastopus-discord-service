@@ -57,30 +57,27 @@ public class APIController {
         }
 
         // 1. assign id ให้ทุกตัวที่ null ก่อน
-        request.rune_inventory.values().forEach(rune -> {
-            if (rune != null && rune.getId() == null)
-                rune.setId(Rune.generateId(rune.getShapeName()));
-        });
         unit.getRune_inventory().values().forEach(rune -> {
             if (rune != null && rune.getId() == null)
                 rune.setId(Rune.generateId(rune.getShapeName()));
         });
 
-// 2. รวม list
-        List<Rune> identical_inventory = new ArrayList<>();
-        identical_inventory.addAll(request.rune_inventory.values());
-        identical_inventory.addAll(unit.getRune_inventory().values());
-
-// 3. ลบซ้ำด้วย id
-        Set<String> seenIds = new HashSet<>();
-        identical_inventory.removeIf(rune -> rune == null || !seenIds.add(rune.getId()));
-
-        Set<String> socketedIds = request.socketed_runes.stream()
+        Set<String> requestSocketedIds = request.socketed_runes.stream()
                 .filter(r -> r != null)
                 .map(Rune::getId)
                 .collect(Collectors.toSet());
 
-        identical_inventory.removeIf(r -> r != null && socketedIds.contains(r.getId()));
+        List<Rune> newlyUnequipped = unit.getSocketed_runes().stream()
+                .filter(r -> r != null)
+                .filter(r -> !requestSocketedIds.contains(r.getId()))
+                .toList();
+
+        List<Rune> identical_inventory = new ArrayList<>(unit.getRune_inventory().values());
+        identical_inventory.addAll(newlyUnequipped);
+
+        Set<String> seenIds = new HashSet<>();
+        identical_inventory.removeIf(rune -> rune == null || !seenIds.add(rune.getId()));
+        identical_inventory.removeIf(r -> r != null && requestSocketedIds.contains(r.getId()));
 
         int index = 1;
         Map<Integer, Rune> identical_removed = new LinkedHashMap<>();

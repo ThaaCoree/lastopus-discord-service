@@ -20,8 +20,8 @@
     "baseCol" : 2,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Z-Shape Rune" : {
@@ -45,8 +45,8 @@
     "baseCol" : 4,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "J-Shape Rune" : {
@@ -70,8 +70,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "L-Shape Rune" : {
@@ -95,8 +95,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "T-Shape Rune" : {
@@ -120,8 +120,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Cube-Shape Rune" : {
@@ -145,8 +145,8 @@
     "baseCol" : 4,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Three-Block Rune" : {
@@ -170,8 +170,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Two-Block Rune" : {
@@ -195,8 +195,8 @@
     "baseCol" : 3,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "One-Block Rune" : {
@@ -220,8 +220,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Talented" : {
@@ -245,8 +245,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Echoes" : {
@@ -270,8 +270,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Tinkerer" : {
@@ -295,8 +295,8 @@
     "baseCol" : 0,
     "unique_weight" : 10,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Hawk Eyes" : {
@@ -337,8 +337,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.0,
@@ -379,8 +379,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Mountain Grip" : {
@@ -404,8 +404,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Might of the Beast" : {
@@ -446,7 +446,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -465,6 +464,7 @@
         "passiveMult" : 0.0
       }
     },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Wisdom of the Mage" : {
@@ -505,7 +505,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : {
       "DEXTERITY" : {
         "flat" : 0.0,
@@ -524,6 +523,7 @@
         "passiveMult" : 0.0
       }
     },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Trick of the Hunter" : {
@@ -564,7 +564,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -583,6 +582,7 @@
         "passiveMult" : 0.0
       }
     },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Perfect Guard" : {
@@ -625,6 +625,7 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
+    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALDEFENSE",
@@ -645,7 +646,6 @@
         "transferType" : "CONVERSION"
       }
     },
-    "statusModifiers" : { },
     "statModifiers" : { }
   },
   "Considerate" : {
@@ -694,8 +694,8 @@
     "baseCol" : 0,
     "unique_weight" : 5,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : {
       "RESERVATION" : {
         "flat" : 1.0,
@@ -744,8 +744,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Enlightenment" : {
@@ -769,8 +769,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Might]" : {
@@ -794,8 +794,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Quick]" : {
@@ -819,8 +819,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Tough]" : {
@@ -844,8 +844,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Alert]" : {
@@ -869,8 +869,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Insight]" : {
@@ -894,8 +894,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Wise]" : {
@@ -919,8 +919,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Grand Spectrum [Bless]" : {
@@ -944,8 +944,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Corner-Shape Rune" : {
@@ -969,8 +969,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Flower-Shape Rune" : {
@@ -994,8 +994,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Italic Rune" : {
@@ -1019,8 +1019,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "C-Shape Rune" : {
@@ -1044,8 +1044,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Five-Block Rune" : {
@@ -1069,8 +1069,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "X-Shape Rune" : {
@@ -1094,8 +1094,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Planet Core" : {
@@ -1119,8 +1119,8 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Fragile" : {
@@ -1161,8 +1161,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : {
       "DAMAGEREDUCTION" : {
         "flat" : -0.07,
@@ -1260,7 +1260,6 @@
     "baseCol" : 0,
     "unique_weight" : 8,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -1319,6 +1318,7 @@
         "passiveMult" : 0.0
       }
     },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Swift as Wind" : {
@@ -1342,8 +1342,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Time Flow" : {
@@ -1367,8 +1367,8 @@
     "baseCol" : 0,
     "unique_weight" : 4,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
+    "transferModifiers" : { },
     "statModifiers" : { }
   },
   "Space Axis" : {
@@ -1392,117 +1392,8 @@
     "baseCol" : 0,
     "unique_weight" : 8,
     "id" : null,
-    "transferModifiers" : { },
     "statusModifiers" : { },
-    "statModifiers" : { }
-  },
-  "X-Shape Rune_" : {
-    "name" : "X-Shape Rune_",
-    "itemType" : "RUNE",
-    "description" : "",
-    "statusDescription" : "6 LUK\n6 AGI\n2.24% DebuffAMP\n34.75% CritDamage\n7 MBLOCK\n\n",
-    "lore" : "",
-    "price" : "",
-    "weight" : 0,
-    "modifiers" : {
-      "statModifiers" : {
-        "DEBUFFAMPLIFIER" : {
-          "flat" : 0.0224,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITDAMAGE" : {
-          "flat" : 0.3475,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALBLOCK" : {
-          "flat" : 7.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : {
-        "LUCK" : {
-          "flat" : 6.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 6.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "skills" : { },
-    "shape" : [ [ true, false, true ], [ false, true, false ], [ true, false, true ] ],
-    "unique_rune" : false,
-    "baseRow" : 0,
-    "baseCol" : 0,
-    "unique_weight" : 1,
-    "id" : null,
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "LUCK" : {
-        "flat" : 6.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "AGILITY" : {
-        "flat" : 6.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
-    "statModifiers" : {
-      "DEBUFFAMPLIFIER" : {
-        "flat" : 0.0224,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "CRITDAMAGE" : {
-        "flat" : 0.3475,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "MAGICALBLOCK" : {
-        "flat" : 7.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    }
+    "statModifiers" : { }
   }
 }
