@@ -71,6 +71,7 @@ public class RuneCalculator {
         return list;
     }
 
+
     public static void calculateGrandSpectrum(List<Rune> list) {
         // นับจำนวน Grand Spectrum ทั้งหมดก่อน
         long grandSpectrumCount = list.stream()
