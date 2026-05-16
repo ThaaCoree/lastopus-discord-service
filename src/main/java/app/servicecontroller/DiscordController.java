@@ -309,7 +309,7 @@ public class DiscordController {
             Item dust = database.allNormalItemMap.get("Rune Dust");
             unit.getInventoryManager().addItem(dust, dust_amount);
             writeintoSheet(unit);
-            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust";
+            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust อย่าลืมรีเซ็ตหน้าเว็บรูนบอร์ดนะ!";
         } else {
             return "No Role!";
         }
