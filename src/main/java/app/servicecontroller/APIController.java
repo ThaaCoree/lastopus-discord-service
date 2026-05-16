@@ -33,8 +33,12 @@ public class APIController {
     @GetMapping("/get_unit")
     public Unit getAllUnit(@RequestParam String name) {
         Unit unit_to_load = database.findPlayer(name);
-        database.load_player(unit_to_load);
-        return database.findPlayer(unit_to_load.getName());
+        if (unit_to_load != null) {
+            database.load_player(unit_to_load);
+            return database.findPlayer(unit_to_load.getName());
+        } else {
+            return null;
+        }
     }
 
     @PostMapping("/update_unit")

@@ -446,7 +446,9 @@ public class Rune extends Item {
                 rune.setName("Three-Block Rune");
             } else if (shape_name.equals("5")) {
                 rune.setName("Five-Block Rune");
-            } else {
+            } else if (shape_name.equals("Italic")) {
+                rune.setName("Italic Rune");
+            }else {
                 rune.setName(shape_name+"-Shape Rune");
             }
             rune.setId(generateId(rune.getShapeName()));

@@ -59,6 +59,39 @@ public class ModifierBundle {
         return copy;
     }
 
+    public void multiplyAllModifiers (double multiplier) {
+        multiplyAllStatModifiers(multiplier);
+        multiplyAllStatusModifiers(multiplier);
+        multiplyAllTransferModifiers(multiplier);
+    }
+
+    public void multiplyAllTransferModifiers(double multiplier) {
+        for (TransferModifier modifier : transferModifiers.values()) {
+            if (modifier == null) continue;
+            modifier.setTransferRatio(modifier.getTransferRatio() * multiplier);
+        }
+    }
+
+    public void multiplyAllStatusModifiers(double multiplier) {
+        for (BasicModifier modifier : statusModifiers.values()) {
+            if (modifier == null) continue;
+            modifier.setFlat(modifier.getFlat() * multiplier);
+            modifier.setGlobalMult(modifier.getGlobalMult() * multiplier);
+            modifier.setPassiveMult(modifier.getPassiveMult() * multiplier);
+            modifier.setEquipmentMult(modifier.getEquipmentMult() * multiplier);
+        }
+    }
+
+    public void multiplyAllStatModifiers(double multiplier) {
+        for (BasicModifier modifier : statModifiers.values()) {
+            if (modifier == null) continue;
+            modifier.setFlat(modifier.getFlat() * multiplier);
+            modifier.setGlobalMult(modifier.getGlobalMult() * multiplier);
+            modifier.setPassiveMult(modifier.getPassiveMult() * multiplier);
+            modifier.setEquipmentMult(modifier.getEquipmentMult() * multiplier);
+        }
+    }
+
     public Map<StatType, BasicModifier> getStatModifiers() {
         return statModifiers;
     }
