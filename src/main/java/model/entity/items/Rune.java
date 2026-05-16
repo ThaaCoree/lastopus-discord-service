@@ -369,24 +369,27 @@ public class Rune extends Item {
         WeightedRandom<Boolean> unique_weight = new WeightedRandom<>();
         unique_weight.add(true, 1);
         unique_weight.add(false, 299);
+
         if (unique_weight.roll()) {
-            Rune rune = allRuneMap.get(rune_name);
-            if (rune == null) return null;
-            String shape_name = rune.getShapeName();
+            Rune template = allRuneMap.get(rune_name);
+            if (template == null) return null;
+            String shape_name = template.getShapeName();
+
             WeightedRandom<Rune> random = new WeightedRandom<>();
             for (Rune value : allRuneMap.values()) {
                 if (value.isUnique_rune() && value.getShapeName().equals(shape_name)) {
                     random.add(value, value.getUnique_weight());
                 }
             }
-            if (!random.isEmpty()) {
-                rune = random.roll();
-            }
+
+            Rune rune = random.isEmpty() ? template.copy() : random.roll().copy(); // ✅ copy
             rune.setId(generateId(rune.getShapeName()));
             return rune;
         } else {
-            Rune rune = allRuneMap.get(rune_name);
-            if (rune == null) return null;
+            Rune template = allRuneMap.get(rune_name);
+            if (template == null) return null;
+
+            Rune rune = template.copy(); // ✅ copy
             rune.randomise_stats(unit);
             rune.setId(generateId(rune.getShapeName()));
             return rune;
@@ -710,5 +713,48 @@ public class Rune extends Item {
                 .toUpperCase();          // ได้ 8 หลักเต็มๆ
         return "RUNE-" + runeShape.toUpperCase() + "-" + suffix;
         // → "RUNE-FIRE-A3F9C21B"
+    }
+
+    public void setModifiers(ModifierBundle modifiers) {
+        this.modifiers = modifiers;
+    }
+
+    public void setSkills(Map<String, SkillInstance> skills) {
+        this.skills = skills;
+    }
+
+    public Rune copy() {
+        Rune copy = new Rune();
+
+        // จาก Item
+        copy.setName(this.getName());
+        copy.setItemType(this.getItemType());
+        copy.setDescription(this.getDescription());
+        copy.setStatusDescription(this.getStatusDescription());
+        copy.setLore(this.getLore());
+        copy.setPrice(this.getPrice());
+        copy.setWeight(this.getWeight());
+
+        // Shallow copy
+        copy.setUnique_rune(this.unique_rune);
+        copy.setBaseRow(this.baseRow);
+        copy.setBaseCol(this.baseCol);
+        copy.setUnique_weight(this.unique_weight);
+        copy.setId(this.id);
+
+        // Deep copy — boolean[][]
+        copy.setShape(Arrays.stream(this.shape)
+                .map(boolean[]::clone)
+                .toArray(boolean[][]::new));
+
+        // Deep copy — ModifierBundle
+        copy.setModifiers(this.modifiers.deepcopy());
+
+        // Deep copy — SkillInstance
+        Map<String, SkillInstance> skillsCopy = new HashMap<>();
+        this.skills.forEach((key, value) -> skillsCopy.put(key, value.deepcopy()));
+        copy.setSkills(skillsCopy);
+
+        return copy;
     }
 }
