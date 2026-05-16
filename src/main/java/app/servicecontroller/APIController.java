@@ -31,12 +31,10 @@ public class APIController {
     }
 
     @GetMapping("/get_unit")
-    public Map<String, Unit> getAllUnit() {
-        database.allPlayerMap.forEach((name, unit) -> {
-            database.load_player(unit);
-        });
-
-        return database.allPlayerMap;
+    public Unit getAllUnit(@RequestParam String name) {
+        Unit unit_to_load = database.findPlayer(name);
+        database.load_player(unit_to_load);
+        return database.findPlayer(unit_to_load.getName());
     }
 
     @PostMapping("/update_unit")
