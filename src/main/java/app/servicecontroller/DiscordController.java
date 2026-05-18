@@ -407,7 +407,15 @@ public class DiscordController {
             String shopName = parts[0].trim();
 
             String[] itemParts = parts[1].trim().split(" ");
-            int quantity = Integer.parseInt(itemParts[itemParts.length - 1]);
+            int quantity = 0;
+            try {
+                quantity = Integer.parseInt(itemParts[itemParts.length - 1]);
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            if (quantity == 0) {
+                return "ซื้อไอเทม 0 ชิ้นไม่ได้";
+            }
             String itemName = String.join(" ", Arrays.copyOfRange(itemParts, 0, itemParts.length - 1));
 
             // shopName = "Alexa Shop"
