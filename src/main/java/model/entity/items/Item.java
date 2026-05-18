@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import model.type.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Item {
     private String name;
     private ItemType itemType;
@@ -14,7 +15,6 @@ public class Item {
     private int weight;
     private int price_in_copper;
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
     public Item(String name) {
         this.name = name;
         this.itemType = ItemType.NONE;

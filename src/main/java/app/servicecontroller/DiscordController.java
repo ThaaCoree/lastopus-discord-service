@@ -464,7 +464,7 @@ public class DiscordController {
             shopItem.setStock(shopItem.getStock() - quantity);
             updateShops();
 
-            database.save_shop(database.allShop);
+            database.save_shop();
             writeintoSheet(unit);
             return unit.getName()+" ซื้อ "+item.getName()+" จากร้านของ "+shopName+" เป็นจำนวน "+quantity+" ชิ้นแล้ว";
         } else {
@@ -559,7 +559,7 @@ public class DiscordController {
 
     public void updateShops() {
         try {
-            GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
+            GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(database.load_credentials());
             int index = 1;
             for (Map.Entry<String, Shop> entry : database.allShop.entrySet()) {
                 if (!entry.getValue().isOpen()) continue;

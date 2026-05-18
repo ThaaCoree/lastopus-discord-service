@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import model.entity.*;
@@ -559,12 +560,19 @@ public class ServiceDatabase {
         return "saved";
     }
 
-    public String save_shop(Map<String, Shop> map) {
-        mongoTemplate.dropCollection("shops");
-        mongoTemplate.save(map, "shops");
+    public void save_shop() {
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        try {
+            String json = mapper.writeValueAsString(allShop);
+            mongoTemplate.dropCollection("shops");
+            mongoTemplate.save(json, "shops");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         System.out.println("saved shop");
-        return "saved";
     }
 
     public String save_summon(Map<String, Summon> map) {
