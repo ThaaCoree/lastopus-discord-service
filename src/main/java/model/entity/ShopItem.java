@@ -6,19 +6,27 @@ public class ShopItem {
     private Item item;
     private String price = "";
     private int stock;
+    private int price_in_copper;
 
     public ShopItem() {
+        this.stock = 0;
+        this.item = new Item("");
+        this.price = "";
+        this.price_in_copper = 0;
     }
 
-    public ShopItem(Item item, String price, int stock) {
+    public ShopItem(Item item, String price, int stock, int price_in_copper) {
         this.item = item;
         this.price = price;
         this.stock = stock;
+        this.price_in_copper = price_in_copper;
     }
 
     public ShopItem(Item item, int stock) {
         this.stock = stock;
         this.item = item;
+        this.price = "";
+        this.price_in_copper = 0;
     }
 
     public void reduceStock() {
@@ -51,5 +59,13 @@ public class ShopItem {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public int getPrice_in_copper() {
+        return price_in_copper;
+    }
+
+    public void setPrice_in_copper(int price_in_copper) {
+        this.price_in_copper = price_in_copper;
     }
 }

@@ -20,7 +20,9 @@ import model.entity.Shop;
 import model.entity.ShopItem;
 import model.entity.items.Item;
 import model.entity.units.Unit;
+import model.type.CityName;
 import model.type.CurrencyType;
+import model.type.ItemType;
 import util.SearchableListView;
 
 import java.util.ArrayList;
@@ -49,14 +51,15 @@ public class ShopEditPanel extends ScrollPane {
     private TreePane treePane;
     private Shop currentShop;
     private String addingItemName;
-    private String addingItemPrice;
+    private int addingItemPrice = 0;
     private String addingItemStock;
     private String removingItemName;
     private String buyer = "";
     private int price_in_number = 0;
+    private CityName city;
 
     public ShopEditPanel(Database database, ShopListPane listPane) {
-        toMake = new Shop("New Owner Name", "New City Name", false);
+        toMake = new Shop("New Owner Name", "New City Name", false, CityName.RIVEIL);
         changePageBtn.getChildren().addAll(toInvenBtn);
 
         allListPaneBtn.add(editModeBtn);
@@ -137,7 +140,7 @@ public class ShopEditPanel extends ScrollPane {
         isEditMode = false;
         confirmDeletion = false;
 
-        toMake = new Shop("New Owner Name", "New City Name", false);
+        toMake = new Shop("New Owner Name", "New City Name", false, CityName.RIVEIL);
         Button createButton = new Button("CREATE");
         VBox modeBox = new VBox();
 
@@ -190,13 +193,20 @@ public class ShopEditPanel extends ScrollPane {
 
     public Node editCityNameArea(Shop shop) {
         VBox contentBox = new VBox();
-        Label indicatorLabel = new Label("City Name");
-        TextArea textArea = new TextArea(shop.getCityName());
+        Label indicatorLabel = new Label("City");
+        TextArea textArea = new TextArea(shop.getCity().toString());
         textArea.setWrapText(true);
         textArea.setMaxHeight(100);
         textArea.setMaxWidth(350);
         textArea.setOnKeyReleased(event -> {
-            shop.setCityName(textArea.getText());
+            for (CityName cityName : CityName.values()) {
+            if (textArea.getText().equalsIgnoreCase(cityName.writeAsString())) {
+                shop.setCity(cityName);
+                break;
+            } else {
+                shop.setCity(CityName.RIVEIL);
+            }
+        }
             listPane.getListView().refresh();
         });
         contentBox.getChildren().addAll(indicatorLabel,textArea);
@@ -251,7 +261,7 @@ public class ShopEditPanel extends ScrollPane {
             }
         });
 
-        TextField price = new TextField(addingItemPrice);
+        TextField price = new TextField(Integer.toString(addingItemPrice));
         TextField stock = new TextField(addingItemStock);
 
         itemName.setPromptText("Name");
@@ -262,7 +272,7 @@ public class ShopEditPanel extends ScrollPane {
         stock.setPrefSize(200, 40);
 
         price.setOnKeyReleased(e -> {
-            addingItemPrice = price.getText();
+            addingItemPrice = Integer.parseInt(price.getText());
         });
         stock.setOnKeyReleased(e -> {
             addingItemStock = stock.getText();
@@ -280,14 +290,12 @@ public class ShopEditPanel extends ScrollPane {
                     stockNum = 1;
                 }
 
-                if (addingItemPrice == null || addingItemPrice.isEmpty()) {
-                    addingItemPrice = item.getPrice();
-                }
-                shop.addToShop(item, addingItemPrice, stockNum);
+                addingItemPrice = item.getPrice_in_copper();
+                shop.addToShop(item, "", stockNum, addingItemPrice);
 
                 addingItemStock = "0";
                 addingItemName = "";
-                addingItemPrice = "";
+                addingItemPrice = 0;
             }
             shopInventoryMode(shop);
         });
@@ -319,14 +327,14 @@ public class ShopEditPanel extends ScrollPane {
         ShopItem shopItem = shopInventoryPane.getListView().getSelectionModel().getSelectedItem();
         if (shopItem == null) return;
 
-        TextField price = new TextField(shopItem.getPrice());
+        TextField price = new TextField(Integer.toString(shopItem.getPrice_in_copper()));
         TextField stock = new TextField(Integer.toString(shopItem.getStock()));
         ComboBox<String> buyer_combo = new ComboBox<String>();
         Button buy_button = new Button("Buy");
         TextField actual_price = new TextField();
 
         price.setOnKeyReleased(e-> {
-            shopItem.setPrice(price.getText());
+            shopItem.setPrice_in_copper(Integer.parseInt(price.getText()));
             shopInventoryPane.getListView().refresh();
         });
 
@@ -357,35 +365,12 @@ public class ShopEditPanel extends ScrollPane {
         buy_button.setOnAction(e-> {
             Unit buying_unit = database.findUnit(buyer);
 
-            int currency = 0;
-            currency += buying_unit.getPurse().get(CurrencyType.PLATINUM)*10*100*98;
-            currency += buying_unit.getPurse().get(CurrencyType.GOLD)*10*100;
-            currency += buying_unit.getPurse().get(CurrencyType.SILVER)*10;
-            currency += buying_unit.getPurse().get(CurrencyType.COPPER);
+            int currency = buying_unit.getCopperCoin();
 
             if (currency >= price_in_number) {
 
             InventoryManager inv = buying_unit.getInventoryManager();
-
-                int remain = currency - price_in_number;
-                buying_unit.setCurrency(CurrencyType.PLATINUM, 0);
-                buying_unit.setCurrency(CurrencyType.GOLD, 0);
-                buying_unit.setCurrency(CurrencyType.SILVER, 0);
-                buying_unit.setCurrency(CurrencyType.COPPER, 0);
-
-                int platinum = remain / (10*100*98);
-                remain %= (10*100*98);
-
-                int gold = remain / (10*100);
-                remain %= (10*100);
-
-                int silver = remain / 10;
-                int copper = remain % 10;
-
-                buying_unit.addCurrency(CurrencyType.PLATINUM, platinum);
-                buying_unit.addCurrency(CurrencyType.GOLD, gold);
-                buying_unit.addCurrency(CurrencyType.SILVER, silver);
-                buying_unit.addCurrency(CurrencyType.COPPER, copper);
+            buying_unit.reduceCopperCoin(price_in_number);
 
                 shopItem.reduceStock();
                 inv.addItem(shopItem.getItem());

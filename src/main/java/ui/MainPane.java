@@ -31,7 +31,7 @@ public class MainPane extends BorderPane {
     private List<Button> allLeftNavigatorButtons = new ArrayList<>();
     private Map<String, Button> allUnitButtons = new HashMap<>();
     private TreePane treePane = new TreePane();
-    private Button combat1Button = new Button("app.Main Combat");
+    private Button combat1Button = new Button("Main Combat");
     private Button inventoryButton = new Button("Inventory");
     private Button treeButton = new Button("Passive Tree");
     private Button cardCollectButton = new Button("Card");
@@ -132,10 +132,10 @@ public class MainPane extends BorderPane {
         });
 
         updateShop.setOnAction(e-> {
-            database.saveJson();
             AsyncUtil.runAsync(() -> {
                 updateShops();
             });
+            database.saveJson();
         });
 
         switcher.getChildren().add(toPlayer);
@@ -509,7 +509,7 @@ public class MainPane extends BorderPane {
                     int itemIndex = 1;
                     List<List<Object>> indicatorAppend;
                     indicatorAppend = new ArrayList<>(List.of(
-                            List.of(entry.getValue().getOwnerName()+"'s "+entry.getValue().getDescription())
+                            List.of(entry.getValue().getOwnerName())
                     ));
                     requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, indicatorRange, indicatorAppend));
                     List<List<Object>> cityAppend;
@@ -528,7 +528,7 @@ public class MainPane extends BorderPane {
                                     List.of(equipment.getName()),
                                     List.of(equipment.getLore()),
                                     List.of(equipment.getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
-                                    List.of(shopItem.getPrice()),
+                                    List.of("Price : "+shopItem.getPrice_in_copper()),
                                     List.of("Stocks : " + shopItem.getStock()),
                                     List.of(equipment.getEquipmentType().writeAsString()),
                                     List.of(equipment.getWeaponType().writeAsString())
@@ -540,7 +540,7 @@ public class MainPane extends BorderPane {
                                     List.of(shopItem.getItem().getName()),
                                     List.of(shopItem.getItem().getLore()),
                                     List.of(shopItem.getItem().getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
-                                    List.of(shopItem.getPrice()),
+                                    List.of("Price : "+shopItem.getPrice_in_copper()),
                                     List.of("Stock : " + shopItem.getStock()),
                                     List.of(shopItem.getItem().getItemType().writeAsString())
                             ));

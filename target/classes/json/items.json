@@ -6,7 +6,8 @@
     "statusDescription" : "",
     "lore" : "",
     "price" : "",
-    "weight" : 0
+    "weight" : 0,
+    "price_in_copper" : 0
   },
   "Copper Coin" : {
     "name" : "Copper Coin",
@@ -15,7 +16,8 @@
     "statusDescription" : "",
     "lore" : "เหรียญทองแดงที่เป็นหนึ่งในค่าเงินการแลกเปลี่ยน",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Silver Coin" : {
     "name" : "Silver Coin",
@@ -24,7 +26,8 @@
     "statusDescription" : "",
     "lore" : "เหรียญเงินที่เป็นหนึ่งในค่าเงินการแลกเปลี่ยน",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Gold Coin" : {
     "name" : "Gold Coin",
@@ -33,7 +36,8 @@
     "statusDescription" : "",
     "lore" : "เหรียญทองที่เป็นหนึ่งในค่าเงินการแลกเปลี่ยน",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Platinum Coin" : {
     "name" : "Platinum Coin",
@@ -42,7 +46,8 @@
     "statusDescription" : "",
     "lore" : "เหรียญแพลตทินัมที่เป็นหนึ่งในค่าเงินการแลกเปลี่ยน",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Koteosia Piece" : {
     "name" : "Koteosia Piece",
@@ -51,7 +56,8 @@
     "statusDescription" : "",
     "lore" : "ชิ้นส่วนของต้นโคทีโอเซีย เปราะบาง ไม่สามารถใช้สร้างอุปกรณ์อื่นได้ ปรุงยาไม่ได้",
     "price" : "0",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Runt Wolf Blood" : {
     "name" : "Runt Wolf Blood",
@@ -60,7 +66,8 @@
     "statusDescription" : "",
     "lore" : "เลือดของหมาป่าแคระ ค่อนข้างเหลวเกินกว่าจะเรียกว่าเลือด เมื่อนำไปผสมกับน้ำเปล่าแล้วตากแดด จะตกตะกอนกลายเป็นเกลือ",
     "price" : "Sell 4 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Wolf Salt" : {
     "name" : "Wolf Salt",
@@ -69,7 +76,8 @@
     "statusDescription" : "",
     "lore" : "เกลือหมาป่า เกิดขึ้นจากการนำเลือดของหมาป่่าบางสายพันธุ์ไปผสมกับน้ำสะอาดแล้วตากแดด มีลักษณะเป็นผงค่อนข้างละเอียด ใช้ผสมผสานกับอาหารและยาได้หลายชนิด",
     "price" : "Buy 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Bottle" : {
     "name" : "Bottle",
@@ -78,7 +86,8 @@
     "statusDescription" : "",
     "lore" : "ขวดเปล่าๆ เอาไว้ใส่ของเหลวหรือวัสดุชิ้นเล็กๆได้เป็นอย่างดี",
     "price" : "Buy 1.3 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Bottled Water" : {
     "name" : "Bottled Water",
@@ -87,7 +96,8 @@
     "statusDescription" : "",
     "lore" : "น้ำที่ถูกบรรจุไว้ในภาชนะ สามารถใช้น้ำสะอาดด้านในได้อย่างอรรถประโยชน์",
     "price" : "Buy 1 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Runt Wolf Bone" : {
     "name" : "Runt Wolf Bone",
@@ -96,7 +106,8 @@
     "statusDescription" : "",
     "lore" : "กระดูกของหมาป่าแคระ มีขนาดค่อนข้างเล็ก แต่ตรงกันข้ามกับขนของมันที่นุ่มนวล ตัวกระดูกมีความแข็งและอาจใช้สร้างอุปกรณ์ที่ทนทานได้ดี ลักษณะพิเศษอย่างมากของกระดูกหมาป่าแคระคือน้ำหนักที่เบา",
     "price" : "Sell 9 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Runt Wolf Hide" : {
     "name" : "Runt Wolf Hide",
@@ -105,7 +116,8 @@
     "statusDescription" : "",
     "lore" : "หนังของหมาป่าแคระ เหนียว ประกอบอาหารไม่ได้ เมื่อโดนเปลวเพลิงจะลุกไหม้ได้ง่ายมาก คล้ายหนังยาง",
     "price" : "Sell 1 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Blue Ink Twig" : {
     "name" : "Blue Ink Twig",
@@ -114,7 +126,8 @@
     "statusDescription" : "",
     "lore" : "กิ่งบลูอิงค์ ไม่มีคุณลักษณะพิเศษ ทั้งเปราะบางและเมื่อถูกหักจากต้น ไม่กี่วันมันก็จะแห้งเหี่ยวไป",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Blue Ink Leaf" : {
     "name" : "Blue Ink Leaf",
@@ -123,7 +136,8 @@
     "statusDescription" : "",
     "lore" : "ใบบลูอิงค์ที่สีเข้มมักจะถูกนำไปสกัดเพื่อนำหมึกที่อยู่ในตัวใบมาเขียนกระดาษ หมึกบลูอิงค์นั้นคงทนและไม่ลบเลือนไปง่ายๆ",
     "price" : "Sell 2 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Red Fin Fish" : {
     "name" : "Red Fin Fish",
@@ -132,7 +146,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปแดงมีรสชาติเผ็ดร้อนมาก รสสัมผัสนุ่มชุ่มฉ่ำยอดเยี่ยม สามารถกระตุ้นการทำงานของร่างกายได้ดี เมื่อทานแล้วจะส่งผลทำให้สัมผัสของร่างกายดีขึ้น รับรู้ความเจ็บปวดมากขึ้น",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Blue Fin Fish" : {
     "name" : "Blue Fin Fish",
@@ -141,7 +156,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปน้ำเงินมีรสชาติกลมกล่อมหวานมัน รสสัมผัสนุ่มชุ่มฉ่ำยอดเยี่ยม สามารถเสริมพลังเวทมนตร์รักษาในร่างกายได้ดี",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Purple Fin Fish" : {
     "name" : "Purple Fin Fish",
@@ -150,7 +166,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปม่วงมีรสชาติเค็มนำ แต่ด้วยรสสัมผัสที่นุ่มชุ่มฉ่ำเป็นอย่างมาก มันก็น่าจะเรียกได้ว่าอร่อยเหาะสำหรับคนชอบกินเค็ม ไม่ว่าจะกินเท่าไหร่ก็ไม่อิ่ม ดูเหมือนจะส่งผลทำให้สภาพร่างกายหนาแน่นขึ้น",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Indigo Fin Fish" : {
     "name" : "Indigo Fin Fish",
@@ -159,7 +176,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปครามมีรสชาติหวานปรี๊ด รสสัมผัสที่นุ่มชุ่มฉ่ำพอจะช่วยบาลานซ์กับความหวานที่ออกจะมีมากเกินไปได้อยู่ สามารถช่วยเสริมมานาและพลังเวทในร่างกายได้ดี",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Green Fin Fish" : {
     "name" : "Green Fin Fish",
@@ -168,7 +186,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปเขียวมีพิษถึงตายหากกินเข้าไป โดยทั่วไปแล้วไม่นิยมใช้ทำอาหารเพราะมีพิษอยู่ทุกส่วนของร่างกายมัน จึงนิยมปรุงพิษกันเสียมากกว่า",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Yellow Fin Fish" : {
     "name" : "Yellow Fin Fish",
@@ -177,7 +196,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปเหลืองมีรสเปรี้ยวจี๊ด รสสัมผัสที่นุ่มชุ่มฉ่ำทำให้กินแล้วสดชื่นยิ่งขึ้นไปอีก ส่งเสริมให้ร่างกายกระปรี้กระเปร่า",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Orange Fin Fish" : {
     "name" : "Orange Fin Fish",
@@ -186,7 +206,8 @@
     "statusDescription" : "",
     "lore" : "ปลาครีปส้มมีกลิ่นเหม็นมาก รสชาติขมและฝาด เมื่อได้กินเข้าไปครั้งหนึ่งจะทำเอาไม่อยากกินต่อ แต่ว่ากันว่าเมื่อกินจนครบหมดจาน จะมีเรื่องดีๆเกิดขึ้น เพราะเรื่องเลวๆของวันนี้คือการกินปลารสชาติห่วยแตกนี่แล้ว",
     "price" : "Buy 1.4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Rainbow Fin Fish Bone" : {
     "name" : "Rainbow Fin Fish Bone",
@@ -195,7 +216,8 @@
     "statusDescription" : "",
     "lore" : "กระดูกของปลาครีปรุ้งเปราะบางมาก แต่ถ้าหากผ่านกรรมวิธีอย่างถูกต้อง ก็จะกลายเป็นสื่อเวทมนตร์ที่ยอดเยี่ยมได้",
     "price" : "Buy 24 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Rainbow Fish Fin" : {
     "name" : "Rainbow Fish Fin",
@@ -204,7 +226,8 @@
     "statusDescription" : "",
     "lore" : "ครีปของปลาครีปรุ้ง เพราะมีเพียงอวัยวะส่วนนี้ของปลาครีปสีเท่านั้นที่จะสามารถกักเก็บมานาเอาไว้ได้ มันจึงอุดมไปด้วยเวทมนตร์มหาศาล",
     "price" : "Buy 82 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Polayne Bamboo" : {
     "name" : "Polayne Bamboo",
@@ -213,7 +236,8 @@
     "statusDescription" : "",
     "lore" : "ไผ่โพเลย์นมีความยืดหยุ่นสูงมาก ไม่สามารถหักได้ง่ายแต่งอได้มาก นิยมในการใช้ทำกระดาษคุณภาพดี บางครั้งก็ใช้ทำอุปกรณ์ใช้งานหรืออาวุธด้วยเช่นกัน",
     "price" : "Buy 3 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Pickaxe" : {
     "name" : "Pickaxe",
@@ -222,7 +246,8 @@
     "statusDescription" : "",
     "lore" : "อีเต้อหินที่ถูกทำขึ้นเพื่อขุดเจาะโดยเฉพาะ มีความทนทานมาก แต่ก็สามารถหักได้ถ้าใช้เรี่ยวแรงมากเกินไป ควรมีเทคนิคในการใช้งาน",
     "price" : "Buy 7 Copper",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Handmade Axe" : {
     "name" : "Handmade Axe",
@@ -231,7 +256,8 @@
     "statusDescription" : "",
     "lore" : "ขวานที่ถูกสร้างขึ้นมาแบบลวกๆ อย่างน้อยที่สุดมันก็ใช้โจมตีและหลายสิ่งหลายอย่างให้ขาดได้",
     "price" : "Buy 7 Copper",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Twilight Wood" : {
     "name" : "Twilight Wood",
@@ -240,7 +266,8 @@
     "statusDescription" : "",
     "lore" : "ไม้สนธยา มักจะอยู่ท่ามกลางป่าใหญ่ นักเดินทางที่ไม่รู้เหนือรู้ใต้สามารถตายได้ที่นี่ง่ายๆในเวลากลางวัน เพราะถึงจะมีต้นและรากไม้อยู่เต็มไปหมด แต่ก็ไม่สามารถมองเห็นอะไรได้เลย ตัวไม้ซึงเป็นวัสดุไม่นิยมเอาไปสร้างอะไรเลย เพราะหากเป็นเวลากลางวันแล้วจะไม่สามารถมองเห็นได้ และทำให้เกิดการสูญหายและอุบัติเหตุได้ง่ายๆ แต่ตัวยางไม้เองค่อนข้างเหนียว",
     "price" : "Buy 3 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Twilight Ivy" : {
     "name" : "Twilight Ivy",
@@ -249,7 +276,8 @@
     "statusDescription" : "",
     "lore" : "ไอวี่สนธยา ด้วยลักษณะของไอวี่ที่เป็นไม้เลื้อย เมื่อในยามกลางวันไม่สามารถมองเห็นได้ มันก็คือกับดักฆ่าคนดีๆนี่เอง ถ้าหากว่าถูกไอวี่สนธยาพาดพันในยามกลางวันจะแกะออกได้ยากมากเพราะมองไม่เห็นปลายด้านไหนเลย แต่ถึงอย่างนั้นมันก็เป็นไม้เลื้อยที่แข็งแรงและเหนียวแน่นมาก",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Moonflower" : {
     "name" : "Moonflower",
@@ -258,7 +286,8 @@
     "statusDescription" : "",
     "lore" : "ดอกเชยจันทรา เล่าขานกันว่าในป่าสนธยาหนึ่งแห่ง เมื่อผ่านไปสิบสองปีจะมีเกิดขึ้นหนึ่งดอก\nดอกเชยจันทราเป็นสื่อเวทมนตร์ที่ยอดเยี่ยมเพราะตัวมันอยู่ท่ามกลางป่าแห่งเวทมนตร์ ซึมซับและปลดปล่อยละอองเวทมนตร์เหล่านั้นอย่างสม่ำเสมอมาโดยตลอด",
     "price" : "Sell 82 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Polayne Cylinder" : {
     "name" : "Polayne Cylinder",
@@ -267,7 +296,8 @@
     "statusDescription" : "",
     "lore" : "กระบอกไผ่โพเลย์น สามารถใช้ตวงของเหลวได้แทบทุกชนิด มีความคงทนสูง เบาพกพาง่าย",
     "price" : "Buy 9 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Rat Tail" : {
     "name" : "Rat Tail",
@@ -276,7 +306,8 @@
     "statusDescription" : "",
     "lore" : "หางหนู มีความยาวพอสมควร เหนียว ขาดได้ยากมาก เมื่อทำความสะอาดเป็นอย่างดีแล้ว ก็สามารถรวมกับอุปกรณ์อื่นๆแล้วใช้เป็นอาวุธได้",
     "price" : "Sell 3 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Animal Skin" : {
     "name" : "Animal Skin",
@@ -285,7 +316,8 @@
     "statusDescription" : "",
     "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
     "price" : "Sell 1 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Cauldron" : {
     "name" : "Cauldron",
@@ -294,7 +326,8 @@
     "statusDescription" : "",
     "lore" : "หม้อยาที่ทนและนำความร้อนได้เป็นอย่างดี สามารถใช้ในกระบวนการปรุงยาหรือทำอาหารบางชนิดได้\nแต่มีขนาดที่หนัก ไม่สามารถเคลื่อนย้ายไปไหนมาไหนอย่างรวดเร็วได้โดยง่าย",
     "price" : "Buy 2 Silver",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Glassware" : {
     "name" : "Glassware",
@@ -303,7 +336,8 @@
     "statusDescription" : "",
     "lore" : "เครื่องแก้วที่ใช้ในกระบวนการปรุงยาโดยเฉพาะ จำเป็นต้องมีภาชนะอื่นเพื่อใช้เป็นบรรจุผลิตภัณฑ์",
     "price" : "Buy 3 Silver",
-    "weight" : 7
+    "weight" : 7,
+    "price_in_copper" : 0
   },
   "Fire Starter" : {
     "name" : "Fire Starter",
@@ -312,7 +346,8 @@
     "statusDescription" : "",
     "lore" : "ไม้ขีดจุดไฟ วัสดุหลักคือเปลือกคาเทฟ สามารถใช้จุดไฟได้อย่างง่ายดายและรวดเร็ว",
     "price" : "0",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Mattress" : {
     "name" : "Mattress",
@@ -321,7 +356,8 @@
     "statusDescription" : "",
     "lore" : "เสื่อนอนที่ช่วยให้การพักผ่อนเป็นไปอย่างสะดวกสบาย",
     "price" : "0",
-    "weight" : 5
+    "weight" : 5,
+    "price_in_copper" : 0
   },
   "Torch" : {
     "name" : "Torch",
@@ -330,7 +366,8 @@
     "statusDescription" : "",
     "lore" : "คบเพลิงที่เมื่อจุดด้วยไฟจะให้แสงสว่าง ไม่ดับไปโดยง่าย แต่ก็ยังสามารถดับลงได้",
     "price" : "Buy 3 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Lantern" : {
     "name" : "Lantern",
@@ -339,7 +376,8 @@
     "statusDescription" : "",
     "lore" : "ตะเกียงที่ถูกสร้างขึ้นเพื่อแสงสว่างโดยเฉพาะ",
     "price" : "Buy 1.3 Silver",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Bamboo Wire" : {
     "name" : "Bamboo Wire",
@@ -348,7 +386,8 @@
     "statusDescription" : "",
     "lore" : "ลวดจากไผ่โพเลย์น สามารถใช้กับอุปกรณ์อื่นๆได้อย่างหลากหลาย",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Oar" : {
     "name" : "Oar",
@@ -357,7 +396,8 @@
     "statusDescription" : "",
     "lore" : "ไม้พายที่ใช้สำหรับพายโดยเฉพาะ มีความทนทานในระดับหนึ่ง",
     "price" : "Buy 2 Copper",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Hammer" : {
     "name" : "Hammer",
@@ -366,7 +406,8 @@
     "statusDescription" : "",
     "lore" : "ค้อน ถูกสร้างขึ้นเพื่อใช้งานในการช่าง",
     "price" : "Buy 4 Copper",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Lasso" : {
     "name" : "Lasso",
@@ -375,7 +416,8 @@
     "statusDescription" : "",
     "lore" : "บ่วงบาศ สามารถใช้เหวี่ยงเพื่อยึดจับกับบางสิ่งได้อย่างมั่นคง",
     "price" : "0",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Rope" : {
     "name" : "Rope",
@@ -384,7 +426,8 @@
     "statusDescription" : "",
     "lore" : "เชือกที่มีความยาวพอสมควร สามารถใช้มัด ยืดจับสิ่งต่างๆได้อย่างสะดวก",
     "price" : "Buy 2 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Salted Water" : {
     "name" : "Salted Water",
@@ -393,7 +436,8 @@
     "statusDescription" : "",
     "lore" : "น้ำผสมเกลือ มีรสเค็ม ใช้ปรุงอาหารได้ทั่วไป",
     "price" : "0",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Canteen" : {
     "name" : "Canteen",
@@ -402,7 +446,8 @@
     "statusDescription" : "",
     "lore" : "ภาชนะที่มีไว้ใส่ของเหลวโดยเฉพาะ",
     "price" : "Buy 8 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Knife" : {
     "name" : "Knife",
@@ -411,7 +456,8 @@
     "statusDescription" : "",
     "lore" : "มีดสั้น มีความคมมากพอที่จะใช้ตัดวัสดุทั่วๆไป สามารถใช้จัดการวัตถุดิบอาหารได้เป็นอย่างดี",
     "price" : "Buy 4 Copper",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Pan" : {
     "name" : "Pan",
@@ -420,7 +466,8 @@
     "statusDescription" : "",
     "lore" : "กระทะนำความร้อน ใช้ประกอบอาหารเท่านั้น ควรใช้อย่างระมัดระวัง ไม่อย่างนั้นจะพังเอาได้ง่ายๆ",
     "price" : "Buy 4 Copper",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Spatula" : {
     "name" : "Spatula",
@@ -429,7 +476,8 @@
     "statusDescription" : "",
     "lore" : "ตะหลิว ใช้สำหรับการประกอบอาหารบางชนิด",
     "price" : "Buy 4 Copper",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Pot" : {
     "name" : "Pot",
@@ -438,7 +486,8 @@
     "statusDescription" : "",
     "lore" : "หม้อ ใช้สำหรับการประกอบอาหารบางชนิด",
     "price" : "Buy 4 Copper",
-    "weight" : 5
+    "weight" : 5,
+    "price_in_copper" : 0
   },
   "Honeycomb" : {
     "name" : "Honeycomb",
@@ -447,7 +496,8 @@
     "statusDescription" : "",
     "lore" : "รังผึ้งที่ว่างเปล่า ด้านในไม่เหลือสิ่งมีชีวิตอีกแล้ว สามารถใช้แปรรูปเป็นวัสดุได้หลากหลาย",
     "price" : "Buy 9 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Beeswax" : {
     "name" : "Beeswax",
@@ -456,7 +506,8 @@
     "statusDescription" : "",
     "lore" : "ขี้ผึ้ง ",
     "price" : "Sell 9 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Polayne Bamboo Paper" : {
     "name" : "Polayne Bamboo Paper",
@@ -465,7 +516,8 @@
     "statusDescription" : "",
     "lore" : "กระดาษที่สร้างจากไผ่โพเลย์น มีลักษณะพิเศษคือไม่ถูกไฟเผาไปโดยง่าย",
     "price" : "Buy 4 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Basket" : {
     "name" : "Basket",
@@ -474,7 +526,8 @@
     "statusDescription" : "",
     "lore" : "ตระกร้าที่เป็นผลลัพธ์จากงานฝีมือขั้นสูง สามารถใช้ใส่สิ่งของได้หลายชนิด",
     "price" : "Buy 4 Copper",
-    "weight" : 10
+    "weight" : 10,
+    "price_in_copper" : 0
   },
   "String" : {
     "name" : "String",
@@ -483,7 +536,8 @@
     "statusDescription" : "",
     "lore" : "เส้นใยที่ดูท่าทางจะใช้ประโยชน์ได้หลากหลาย",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Poisoned Water" : {
     "name" : "Poisoned Water",
@@ -492,7 +546,8 @@
     "statusDescription" : "",
     "lore" : "น้ำเปล่าที่มีพิษเจอปน คงไม่ดีหากสัมผัสหรือรับมันเข้าไปสู่ร่างกายโดยตรง",
     "price" : "0",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Pillow" : {
     "name" : "Pillow",
@@ -501,7 +556,8 @@
     "statusDescription" : "",
     "lore" : "หมอนสำหรับการนอน ช่วยให้การพักผ่อนเป็นไปอย่างสะดวกสบาย",
     "price" : "0",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Twilight Glue" : {
     "name" : "Twilight Glue",
@@ -510,7 +566,8 @@
     "statusDescription" : "",
     "lore" : "กาวที่ถูกสกัดออกจากไม้ทไวไลท์ เมื่อกลายเป็นกาวแล้วคุณสมบัติในการล่องหนยามเช้าก็สูญหายไป ใช้ปะติดวัสดุต่างๆได้เป็นอย่างดี",
     "price" : "Buy 5 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Twilight Sap" : {
     "name" : "Twilight Sap",
@@ -519,7 +576,8 @@
     "statusDescription" : "",
     "lore" : "ยางไม้ทไวไลท์ มีความเหนียวสูง เมื่อผ่านกระบวนการสกัดอย่างเข้มข้นจะกลายเป็นกาว",
     "price" : "Buy 3 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Brush" : {
     "name" : "Brush",
@@ -528,7 +586,8 @@
     "statusDescription" : "",
     "lore" : "แปรง ใช้สำหรับทาสี หรือเขียนตัวอักษรเมื่อใช้รวมกับสี",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Bamboo Plank" : {
     "name" : "Bamboo Plank",
@@ -537,7 +596,8 @@
     "statusDescription" : "",
     "lore" : "กระดานไผ่โพเลย์น เกิดจากการแปรรูปอย่างดี มีความทนทานสูง มีความยืดหยุ่น และทนทานต่อไฟพอสมควร",
     "price" : "Buy 3 Copper",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Twig" : {
     "name" : "Twig",
@@ -546,7 +606,8 @@
     "statusDescription" : "",
     "lore" : "กิ่งไม้ธรรมดาๆ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Stone" : {
     "name" : "Stone",
@@ -555,7 +616,8 @@
     "statusDescription" : "",
     "lore" : "หินธรรมดาๆ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Large Stone" : {
     "name" : "Large Stone",
@@ -564,7 +626,8 @@
     "statusDescription" : "",
     "lore" : "หินขนาดใหญ่ แต่ก็ยังเป็นหินธรรมดา",
     "price" : "0",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Sand" : {
     "name" : "Sand",
@@ -573,7 +636,8 @@
     "statusDescription" : "",
     "lore" : "ทรายธรรมดาๆ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Gravel" : {
     "name" : "Gravel",
@@ -582,7 +646,8 @@
     "statusDescription" : "",
     "lore" : "กรวดธรรมดาๆ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Manure" : {
     "name" : "Manure",
@@ -591,7 +656,8 @@
     "statusDescription" : "",
     "lore" : "มูลสัตว์ทั่วๆไป",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Soil" : {
     "name" : "Soil",
@@ -600,7 +666,8 @@
     "statusDescription" : "",
     "lore" : "ดินธรรมดาๆ ใช้เพาะปลูกได้",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Mud" : {
     "name" : "Mud",
@@ -609,7 +676,8 @@
     "statusDescription" : "",
     "lore" : "โคลนธรรมดาๆ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Ashe" : {
     "name" : "Ashe",
@@ -618,7 +686,8 @@
     "statusDescription" : "",
     "lore" : "ขี้เถ้าที่เกิดจากการเผาไหม้ อาจใช้ประโยชน์บางอย่างได้หากใช้อย่างถูกต้อง จำเป็นต้องมีภาชนะเพื่อกักเก็บ",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Charcoal" : {
     "name" : "Charcoal",
@@ -627,7 +696,8 @@
     "statusDescription" : "",
     "lore" : "ถ่านไม้ธรรมดาๆ ใช้เป็นเชื้อเพลิงได้ดี",
     "price" : "Buy 3 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Coal" : {
     "name" : "Coal",
@@ -636,7 +706,8 @@
     "statusDescription" : "",
     "lore" : "ถ่านหินทั่วๆไป ใช้เป็นเชื้อเพลิงได้อย่างดีเยี่ยม",
     "price" : "Buy 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Iron" : {
     "name" : "Iron",
@@ -645,7 +716,8 @@
     "statusDescription" : "",
     "lore" : "เหล็กที่ผ่านการเจียระไนเป็นที่เรียบร้อยแล้ว แต่ยังจำเป็นต้องแปรรูปเพื่อใช้ประโยชน์สูงสุด",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Grains" : {
     "name" : "Grains",
@@ -654,7 +726,8 @@
     "statusDescription" : "",
     "lore" : "ธัญพืชทั่วไป ใช้ประกอบอาหารได้บางชนิด",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Fish" : {
     "name" : "Fish",
@@ -663,7 +736,8 @@
     "statusDescription" : "",
     "lore" : "ปลาไม่ทราบสายพันธุ์",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Sea Bass" : {
     "name" : "Sea Bass",
@@ -672,7 +746,8 @@
     "statusDescription" : "",
     "lore" : "ปลากะพง ใช้เพื่อประกอบอาหารได้หลากหลาย ระวังอย่าให้ก้างตำคอก็พอแล้ว",
     "price" : "Buy 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Runt Wolf Meat" : {
     "name" : "Runt Wolf Meat",
@@ -681,7 +756,8 @@
     "statusDescription" : "",
     "lore" : "เนื้อของหมาป่าแคระ เหนียวและคาวมาก ต้องผ่านกระบวนการเพื่อกลายเป็นอาหารจานหลักที่ดี เมื่อผ่านกระบวนการแล้วสามารถทานร่วมกับเลือดได้โดยไม่มีผลเสีย",
     "price" : "Sell 3 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Ink" : {
     "name" : "Ink",
@@ -690,7 +766,8 @@
     "statusDescription" : "",
     "lore" : "หมึกที่ถูกสร้างขึ้นมาเพื่อใช้เขียนกับปากกาขนนกโดยเฉพาะ",
     "price" : "Buy 3 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Sharp Eye Snake Scale" : {
     "name" : "Sharp Eye Snake Scale",
@@ -699,7 +776,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดงูชาร์ปอาย ค่อนข้างแข็ง ทนทาน",
     "price" : "Sell 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Sharp Eye Snake Egg" : {
     "name" : "Sharp Eye Snake Egg",
@@ -708,7 +786,8 @@
     "statusDescription" : "",
     "lore" : "ไข่ของงูชาร์ปอาย มันน่าจะฟักออกมาเป็นงูได้ หากได้รับการเลี้ยงดูที่ดีพอ",
     "price" : "Buy 3 Silver",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Sharp Eye Snake Fang" : {
     "name" : "Sharp Eye Snake Fang",
@@ -717,7 +796,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของงูชาร์ปอาย มีความแหลมคมและทนทานสูง",
     "price" : "Buy 2 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Fire Ant Poison Gland" : {
     "name" : "Fire Ant Poison Gland",
@@ -726,7 +806,8 @@
     "statusDescription" : "",
     "lore" : "ต่อมพิษของมดเพลิง มีผลทำให้คัน แสบร้อนเป็นอย่างมาก เมื่ออวัยวะถูกพิษอย่างรุนแรงเป็นเวลานาน อวัยวะจะค่อยๆถูกย่อยสลายเหมือนถูกกรด ไม่ใช่ไฟ",
     "price" : "Sell 5 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Fire Ant Shell" : {
     "name" : "Fire Ant Shell",
@@ -735,7 +816,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกของมดเพลิง มีความทนทานในแบบของมันเอง ไม่ได้แข็งแรงมากมายนักแต่ก็พอใช้สร้างอุปกรณ์ทั่วๆไปได้",
     "price" : "Sell 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Taily Alligator Fin" : {
     "name" : "Taily Alligator Fin",
@@ -744,7 +826,8 @@
     "statusDescription" : "",
     "lore" : "ครีบของจะเข้หางยาว ปลดปล่อยความเย็นออกมาตลอดเวลา เพื่อช่วยลดความร้อนที่เกินจำเป็นให้กับจะเข้หางยาว ถ้าสัมผัสโดยตรงหรือปล่อยไว้ใกล้ตัวนานเกินไปอาจทำให้ร่างกายหนาวสั่น",
     "price" : "Buy 3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Bunny Horn" : {
     "name" : "Bunny Horn",
@@ -753,7 +836,8 @@
     "statusDescription" : "",
     "lore" : "เขาของกระต่ายเขา มีความแหลมคมอยู่บ้าง แต่ด้วยความทนทานที่ต่ำอาจทำให้เสียหายได้ง่ายเมื่อใช้สร้างเป็นอุปกรณ์",
     "price" : "Buy 2 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Reaper Tiger Fang" : {
     "name" : "Reaper Tiger Fang",
@@ -762,7 +846,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของเสือยมทูต แม้จะเบาแต่ก็ทนทานมาก ถึงอย่างนั้นก็เล็กเกินกว่าจะใช้สร้างเป็นอาวุธ",
     "price" : "Buy 3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Reaper Tiger Skin" : {
     "name" : "Reaper Tiger Skin",
@@ -771,7 +856,8 @@
     "statusDescription" : "",
     "lore" : "หนังของเสือยมทูต เหนียวและพลิ้วไหวไปตามแรงลมได้อย่างดี",
     "price" : "Buy 4 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "White Elk Antler" : {
     "name" : "White Elk Antler",
@@ -780,7 +866,8 @@
     "statusDescription" : "",
     "lore" : "เขาของเอลก์ขาว มีความทนทานเป็นอย่างมาก นิยมใช้สร้างเป็นอาวุธและเกราะกันอย่างแพร่หลายเพราะเบาและแข็งแรง อีกทั้งเอลก์ขาวก็เป็นสิ่งมีชีวิตที่หาพบได้ยากมาก",
     "price" : "Buy 1.11 Gold",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Spiked Shell" : {
     "name" : "Spiked Shell",
@@ -789,7 +876,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกของกงล้อหนาม ทั้งแข็งและมีหนามแหลมปรากฏอยู่ทั่ว",
     "price" : "Buy 2.6 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Flower Shoebill´s Bill" : {
     "name" : "Flower Shoebill´s Bill",
@@ -798,7 +886,8 @@
     "statusDescription" : "",
     "lore" : "ปากของนกกระสาปากพลั่วดอกไม้ที่เคยถูกใช้สร้างเสียงก้องกังวาน ตอนนี้กลายเป็นเพียงเปลือกแข็งๆขนาดค่อนข้างใหญ่ โครงสร้างที่ซ้อนทับของมันน่าจะใช้ป้องกันได้ดีในหลายๆด้าน",
     "price" : "Buy 10.8 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Black Bear´s Fur" : {
     "name" : "Black Bear´s Fur",
@@ -807,7 +896,8 @@
     "statusDescription" : "",
     "lore" : "ขนของหมีดำ สามารถใช้ทำเสื้อผ้าเพื่อเพิ่มความอบอุ่นได้",
     "price" : "Buy 3.6 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Fang" : {
     "name" : "Fang",
@@ -816,7 +906,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของสัตว์ทั่วๆไป",
     "price" : "Buy 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Twilight Nightingale Feather" : {
     "name" : "Twilight Nightingale Feather",
@@ -825,7 +916,8 @@
     "statusDescription" : "",
     "lore" : "ขนของไนติงเกลสนธยา แค่สัมผัสก็จะรู้สึกได้ถึงเวทมนตร์ที่ไหลผ่านไป แม้ว่าจะไม่เป็นที่นิยมนักเพราะหามาครองได้ยาก แต่น่าจะใช้สร้างเป็นสื่อเวทมนตร์ได้ดี",
     "price" : "Buy 3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Unsent Letter" : {
     "name" : "Unsent Letter",
@@ -834,7 +926,8 @@
     "statusDescription" : "",
     "lore" : "จดหมายซึ่งมีเนื้อความเขียนเอาไว้ด้านใน\nดูเหมือนจะมีปลายทาง แต่ไม่เคยถูกส่งไปถึง",
     "price" : "0",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Kerelium" : {
     "name" : "Kerelium",
@@ -843,7 +936,8 @@
     "statusDescription" : "",
     "lore" : "เคเรลเลี่ยม กำเนิดใต้มหาสมุทรเขตร้อน มีความทนทานต่อการขึ้นสนิมเป็นอย่างมาก ไม่บุบสลายโดยง่าย แข็ง ทนทาน และทนต่อความร้อนได้สูง ฝังแนบเรียบอยู่ในหิน ไม่โปร่งแสง กักเก็บความร้อนได้ดี",
     "price" : "Buy 8.6 Silver",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Kerelium Pot" : {
     "name" : "Kerelium Pot",
@@ -852,7 +946,8 @@
     "statusDescription" : "",
     "lore" : "หม้อที่สร้างจากเคเรลเลี่ยม มีความทนทาน ทนต่อความร้อนได้สูง กักเก็บความร้อนได้ดี เหมาะกับการทำอาหารโดยใช้เปลวเพลิงจำนวนน้อย",
     "price" : "Buy 9 Silver",
-    "weight" : 6
+    "weight" : 6,
+    "price_in_copper" : 0
   },
   "Old Mantis Blade" : {
     "name" : "Old Mantis Blade",
@@ -861,7 +956,8 @@
     "statusDescription" : "",
     "lore" : "ขาหน้าตั๊กแตน มีความทนทานสูงจนน่าแปลกใจ ตรงปลายมีความแหลมคมหลงเหลืออยู่บ้าง ดูเหมือนผ่านกาลเวลามาอย่างยาวนาน",
     "price" : "Buy 48 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Polayne Mantis Shell" : {
     "name" : "Polayne Mantis Shell",
@@ -870,7 +966,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกของตั๊กแตนโพเลย์น แม้จะไม่ใหญ่นัก แต่ก็แข็งและทนทานพอสมควร ดูเหมือนจะต่อต้านแรงปะทะได้ดี",
     "price" : "Buy 1 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Polayne Mantis Wings" : {
     "name" : "Polayne Mantis Wings",
@@ -879,7 +976,8 @@
     "statusDescription" : "",
     "lore" : "ปีกของตั๊กแตนโพเลย์น มีขนาดเล็ก แต่ยืดหยุดได้ดี อีกทั้งยังบางเบา ลู่ลมได้ง่าย",
     "price" : "Buy 1.3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Berenite" : {
     "name" : "Berenite",
@@ -888,7 +986,8 @@
     "statusDescription" : "",
     "lore" : "แร่เบเรไนต์ มีความทนทานต่อความร้อนสูงมาก หากถ่ายเทมานาลงไปจะสามารถเปลี่ยนแปลงรูปร่างของแร่ได้ขึ้นอยู่กับจำนวนมานา",
     "price" : "Buy 30 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Berenite Hand Tool" : {
     "name" : "Berenite Hand Tool",
@@ -897,7 +996,8 @@
     "statusDescription" : "",
     "lore" : "อุปกรณ์ขนาดเหมาะมือที่ถูกสร้างจากแร่เบเรไนต์ มีความทนทานสูงมาก แต่ก็หนักและใช้งานได้ยาก มักจะใช้ในงานช่างเนื่องจากคุณสมบัติพิเศษในการเปลี่ยนรูปร่างของเบเรไนต์ ทำให้ไม่ต้องพกอุปกรณ์หลากหลายนัก",
     "price" : "Buy 30 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Orus Leaf" : {
     "name" : "Orus Leaf",
@@ -906,7 +1006,8 @@
     "statusDescription" : "",
     "lore" : "ใบโอรุส มีคุณสมบัติในการดูดซับน้ำมาก เมื่อใช้ต้มกับเนื้อจะดูดซับกลิ่นคาวได้ดี แต่ไม่นิยมกินเพราะเนื้อสัมผัสไม่ได้ดีนัก มีคุณสมบัติทางยาอยู่บ้าง",
     "price" : "Buy 8 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Paper Bee Stinger" : {
     "name" : "Paper Bee Stinger",
@@ -915,7 +1016,8 @@
     "statusDescription" : "",
     "lore" : "เหล็กในของผึ้งหัวเสือ มีความแหลมคมและพิษปะปนอยู่เล็กน้อย",
     "price" : "Buy 4 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Ironheart Ore" : {
     "name" : "Ironheart Ore",
@@ -924,7 +1026,8 @@
     "statusDescription" : "",
     "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
     "price" : "Buy 2 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Glass Jar" : {
     "name" : "Glass Jar",
@@ -933,7 +1036,8 @@
     "statusDescription" : "",
     "lore" : "ขวดโหลที่ถูกสร้างขึ้นจากแก้ว ใช้บรรจุได้หลายอย่าง",
     "price" : "Buy 1.5 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Hay" : {
     "name" : "Hay",
@@ -942,7 +1046,8 @@
     "statusDescription" : "",
     "lore" : "ฟางข้าวแห้งๆ สามารถใช้เป็นวัตถุดิบอาหารได้หลายอย่าง แต่ก็ต้องผ่านการแปรรูปเสียก่อน",
     "price" : "Buy 2 Copper",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Alpha Runt Wolf Skin" : {
     "name" : "Alpha Runt Wolf Skin",
@@ -951,7 +1056,8 @@
     "statusDescription" : "",
     "lore" : "หนังของหมาป่าแคระจ่าฝูง มีความทนทานสูงมาก แม้จะไม่ทนต่อเวทมนตร์นัก แต่ก็เบาสบายเมื่อใช้ทำเป็นชุดผ้าหรือเกราะ",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Bamboo Spider Leg" : {
     "name" : "Bamboo Spider Leg",
@@ -960,7 +1066,8 @@
     "statusDescription" : "",
     "lore" : "ขาของแมงมุมไผ่ มีลักษณะคล้ายไผ่โพลย์น แต่แข็งแรงกว่าเล็กน้อย ถึงอย่างนั้นก็ยังขาดความยืดหยุ่นที่ไผ่โพเลย์นมี",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Spider Fang" : {
     "name" : "Spider Fang",
@@ -969,7 +1076,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของแมงมุม มีขนาดเล็ก แต่ก็แหลมคมดี",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Illulia" : {
     "name" : "Illulia",
@@ -978,7 +1086,8 @@
     "statusDescription" : "",
     "lore" : "ดอกอิลลูเลีย จะฟุ้งออกเมื่ออุณหภูมิรอบข้างสูงเกินไป ละอองเกสรทั้งหมดจะลอยไปตามลมและดับอนุภาคไฟรอบๆทั้งหมด",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Katef´s Bark" : {
     "name" : "Katef´s Bark",
@@ -987,7 +1096,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกไม้ของต้นคาเทฟ ไม่แข็งแรงนักและมอดไหม้ได้ง่าย ไม่เหมาะใช้เป็นเชื้อเพลิง แต่เหมาะใช้เป็นต้นเพลิง",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Katef´s Leaf" : {
     "name" : "Katef´s Leaf",
@@ -996,7 +1106,8 @@
     "statusDescription" : "",
     "lore" : "ใบต้นคาเทฟ ติดไฟได้ง่ายมาก เมื่อใช้ถูกับยางไม้สนธยา",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Hob Goblin Bone" : {
     "name" : "Hob Goblin Bone",
@@ -1005,7 +1116,8 @@
     "statusDescription" : "",
     "lore" : "กระดูกของฮ็อบก็อบลิน มีความทนทานเป็นอย่างมาก เป็นพื้นฐานที่ยอดเยี่ยมสำหรับอุปกรณ์ทุกชนิด",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Rantium" : {
     "name" : "Rantium",
@@ -1014,7 +1126,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีแดงที่เกิดจากการผสมแร่ไอรอนฮาร์ตกับเคเรลเลี่ยม มีความแหลมคมสูงมาก เมื่อเสียดสีอย่างรุนแรง อาจทำให้เกิดไฟลุกได้",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Humanoid Meat" : {
     "name" : "Humanoid Meat",
@@ -1023,7 +1136,8 @@
     "statusDescription" : "",
     "lore" : "เนื้อของสิ่งมีชีวิตคล้ายมนุษย์... หรือไม่ก็มนุษย์\nใช้ทำอาหารได้... แต่ควรใช้จริงๆเหรอ?",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Lantern Piece" : {
     "name" : "Lantern Piece",
@@ -1032,7 +1146,8 @@
     "statusDescription" : "",
     "lore" : "เศษตะเกียงที่เกิดจากการทำลายล้างตะเกียงที่สมบูรณ์แบบจนย่อยยับ",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Vanguard Fire Ant Mandible" : {
     "name" : "Vanguard Fire Ant Mandible",
@@ -1041,7 +1156,8 @@
     "statusDescription" : "",
     "lore" : "กรามของมดเพลิงแวนการ์ด มีความแข็งแรงและทนทานเป็นอย่างมาก",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Guardian Fire Ant Shell" : {
     "name" : "Guardian Fire Ant Shell",
@@ -1050,7 +1166,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกของมดเพลิงการ์เดียน ไม่ได้คงทนนัก แต่ก็พอใช้งานได้เหมือนวัสดุอื่นๆ",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Venom Fire Ant Poison Gland" : {
     "name" : "Venom Fire Ant Poison Gland",
@@ -1059,7 +1176,8 @@
     "statusDescription" : "",
     "lore" : "ต่อมพิษของมดเพลิงเวนอม เคยมีพิษที่รุนแรงกว่าพิษของมดงานอื่นๆผลิตอยู่ในนั้น",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Leaf" : {
     "name" : "Leaf",
@@ -1068,7 +1186,8 @@
     "statusDescription" : "",
     "lore" : "ใบไม้ธรรมดาๆ",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Iron Dust" : {
     "name" : "Iron Dust",
@@ -1077,7 +1196,8 @@
     "statusDescription" : "",
     "lore" : "ผงเหล็กที่เกิดจากการบดเหล็กจนละเอียด อย่าเผลอสูดเข้าจมูกเชียว",
     "price" : "Buy 7 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Rifis" : {
     "name" : "Rifis",
@@ -1086,7 +1206,8 @@
     "statusDescription" : "",
     "lore" : "ดอกไม้สีฟ้าจากป่าสนธยา ส่องแสงสว่างอ่อนๆตลอดเวลา มีผลในการฟื้นฟูมานา",
     "price" : "Buy 3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Rifel" : {
     "name" : "Rifel",
@@ -1095,7 +1216,8 @@
     "statusDescription" : "",
     "lore" : "ดอกไม้สีม่วงจากป่าสนธยา ส่องแสงสว่างอ่อนๆตลอดเวลา มีผลในการผสมผสานความเข้ากันได้ของวัตถุดิบ",
     "price" : "Buy 3 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Pungle Shell" : {
     "name" : "Pungle Shell",
@@ -1104,7 +1226,8 @@
     "statusDescription" : "",
     "lore" : "เปลือกด้านนอกของพังเกิ้ล มีลักษณะเป็นชั้นบางๆหลายชั้นเหมือนกับทัมเบิลวีด ไม่หนานัก แต่เบาหวิว",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Pungle Claws" : {
     "name" : "Pungle Claws",
@@ -1113,7 +1236,8 @@
     "statusDescription" : "",
     "lore" : "กรงเล็บที่แหลมคมของพังเกิ้ล ไม่มีพิษแต่ทนทานกว่าเปลือกอย่างน่าแปลกใจ",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Desert Crawler Fang" : {
     "name" : "Desert Crawler Fang",
@@ -1122,7 +1246,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Kezulite" : {
     "name" : "Kezulite",
@@ -1131,7 +1256,8 @@
     "statusDescription" : "",
     "lore" : "ผลึกแร่โปร่งแสงที่จู่ๆก็จะส่องแสงออกมาด้วยตัวมันเอง ค่อนข้างเปราะบาง แต่ถึงแม้จะแตกออก หากไม่เป็นชิ้นเล็กจนเกินไปก็จะยังส่องสว่างได้",
     "price" : "Buy 6 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Sail" : {
     "name" : "Sail",
@@ -1140,7 +1266,8 @@
     "statusDescription" : "",
     "lore" : "ใบเรือที่ถูกสร้างขึ้นเพื่อใช้แล่นเรือ ตัวใบมีความทนทานต่อสภาพอากาศทั่วไป ไม่ฉีกขาดง่าย",
     "price" : "Buy 1.1 Silver",
-    "weight" : 6
+    "weight" : 6,
+    "price_in_copper" : 0
   },
   "Deepblue Forged Ore" : {
     "name" : "Deepblue Forged Ore",
@@ -1149,7 +1276,8 @@
     "statusDescription" : "",
     "lore" : "แร่น้ำเงินหลอมที่เกิดจากการหลอมของเคเรลเลี่ยมกับแร่โลหะอื่นๆ ลดความทนทานลงเล็กน้อย แต่น้ำหนักที่เคยเป็นจุดด้อยของแร่เคเรลเลี่ยมก็ถูกหลอมหายไป",
     "price" : "Buy 17 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Linite" : {
     "name" : "Linite",
@@ -1158,7 +1286,8 @@
     "statusDescription" : "",
     "lore" : "ลิไนท์ แร่สีฟ้าคราม ส่องประกายแสงออกมารอบทิศทางตลอดเวลา ไม่มีใครทราบว่าต้นกำเนิดของมันมาจากไหน แต่ว่ากันว่ามันเป็นแร่ที่ทรงพลังมาก และถูกใช้งานโดยชาวจันทราในอดีต\nเมื่อสัมผัสกับอากาศโดยตรงจะปลดปล่อยคลื่นที่เปลี่ยนแปลงความถี่ของวัตถุรอบๆอย่างไม่เป็นระเบียบ ส่งผลให้หมดสติได้ การได้รับคลื่นเปลี่ยนแปลงความถี่นี้มากเกินไปจะทำให้เสียชีวิตได้",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Melinite" : {
     "name" : "Melinite",
@@ -1167,7 +1296,8 @@
     "statusDescription" : "",
     "lore" : "เมอลิไนท์ เกิดจากการนำลิไนท์ไปผ่านกระบวนการทำให้การรบกวนความถี่ลดลงเป็นอย่างมากจนไม่อันตรายกับร่างกายของสิ่งมีชีวิตอีกต่อไป แต่ถึงอย่างนั้นการเปลี่ยนแปลงความถี่นั้นก็ยังส่งผลกับเวทมนตร์ ทำให้ลบล้างเวทมนตร์แทบทั้งหมดไปได้",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Deris" : {
     "name" : "Deris",
@@ -1176,7 +1306,8 @@
     "statusDescription" : "",
     "lore" : "เมื่อบีบจนแตก จะสร้างเสียงก้องกังวาน มีความคงทนน้อยมาก ไม่เหมาะกับการใช้สร้างอุปกรณ์",
     "price" : "Buy 9 Copper",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Book of Tissarn" : {
     "name" : "Book of Tissarn",
@@ -1185,7 +1316,8 @@
     "statusDescription" : "",
     "lore" : "หนังสือแห่งทิสซาร์น เคยเป็นแหล่งพลังงานเวทมนตร์หลักของเขตแดนของเมืองทั้งเมือง แต่ในปัจจุบันมันแทบจะไม่หลงเหลือพลังอีกแล้ว",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Karin´s Sorrow" : {
     "name" : "Karin´s Sorrow",
@@ -1194,7 +1326,8 @@
     "statusDescription" : "",
     "lore" : "ผ้าคาดหัวของคาริน หลังจากที่เขาเลือกที่จะจบชีวิตของตนด้วยตัวเองไม่นาน  มันก็ร่วงหล่นลงมา\nมีส่วนที่ขาดเป็นริ้วๆไปบ้าง แต่น่าแปลกใจที่เมื่อสัมผัสมันเมื่อไหร่ ก็ชวนให้รู้สึกหดหู่อย่างบอกไม่ถูก",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Sewing Kit" : {
     "name" : "Sewing Kit",
@@ -1203,7 +1336,8 @@
     "statusDescription" : "",
     "lore" : "",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Ebon Fox Fur" : {
     "name" : "Ebon Fox Fur",
@@ -1212,7 +1346,8 @@
     "statusDescription" : "",
     "lore" : "ขนของจิ้งจอกทมิฬ เป็นสีดำสนิท ถึงจะไม่ยาวนักแต่เมื่อถลกออกมาทั้งตัวก็ได้เป็นกอบเป็นกำอยู่",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Ebon Fox Claw" : {
     "name" : "Ebon Fox Claw",
@@ -1221,7 +1356,8 @@
     "statusDescription" : "",
     "lore" : "เล็บของจิ้งจอกทมิฬ ไม่ได้มีความแหลมคมอะไร แต่มันกลับดูทนทานอย่างน่าประหลาด",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Aderant" : {
     "name" : "Aderant",
@@ -1230,7 +1366,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีเทาหม่นที่ได้พบได้เฉพาะในเขตภูเขาไฟ ตัวมันเองมีน้ำหนักมาก แต่ถึงอย่างนั้นด้านในตัวแร่ก็มีรูพรุนค่อนข้างมาก การจะนำไปสร้างเป็นอาวุธที่ดีได้ก็ต้องหลอมให้แน่นเสียก่อน",
     "price" : "Buy 4 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Onade" : {
     "name" : "Onade",
@@ -1239,7 +1376,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีดำมันวาว มีลวดลายสีแดงพาด หาพบได้ทั่วไป แต่ส่วนที่ใช้งานได้จริงๆจะมีแค่เส้นสีแดงเท่านั้น ดังนั้นจึงต้องใช้ออนเนดจำนวนมากในการสร้างอุปกรณ์แต่ละชิ้น",
     "price" : "Buy 4.5 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Nitron" : {
     "name" : "Nitron",
@@ -1248,7 +1386,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
     "price" : "Buy 25 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Quatal" : {
     "name" : "Quatal",
@@ -1257,7 +1396,8 @@
     "statusDescription" : "",
     "lore" : "เกิดจากหินทั่วไปที่มีมานาอยู่ภายในผนวกควบกับโลหะบางชนิด จะหาพบตามธรรมชาติก็ได้แต่ยากลำบาก การสร้างขึ้นเองจะทำให้เข้าถึงควาทอลได้ง่ายกว่า",
     "price" : "Buy 2 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Hemvia" : {
     "name" : "Hemvia",
@@ -1266,7 +1406,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีแดงเข้ม มีน้ำหนักเบามาก เหมาะกับการใช้สร้างส่วนอรรถประโยชน์ของอุปกรณ์เป็นอย่างยิ่ง\nมีความเข้ากันได้กับเวทมนตร์สูง",
     "price" : "Buy 10 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Luminite" : {
     "name" : "Luminite",
@@ -1275,7 +1416,8 @@
     "statusDescription" : "",
     "lore" : "ผลึกสีฟ้าครามที่หาพบได้ยากมาก ในตอนอาทิตย์ตก แม้ไม่ได้ต้องแสงจันทร์ มันก็จะสว่างออกมา\nบางคนจะพกก้อนเล็กๆไว้ติดตัวในเวลาที่เดินทางใต้ดินเพื่อให้รับรู้การไหลของเวลา",
     "price" : "Buy 50 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Lumen" : {
     "name" : "Lumen",
@@ -1284,7 +1426,8 @@
     "statusDescription" : "",
     "lore" : "เกิดจากการนำลูมิไนท์ไปผสมกับโลหะอื่นเพื่อเสริมความทนทานมากขึ้น คุณสมบัตินำเวทมนตร์ของลูมิไนท์ยังคงอยู่ครบ เป็นแร่ที่ยอดเยี่ยมในการใช้สร้างสื่อเวทมนตร์ แต่กว่าจะสังเคราะห์ลูเมนได้แต่ละก้อนนั้นยากลำบากอย่างมาก",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Eterium" : {
     "name" : "Eterium",
@@ -1293,7 +1436,8 @@
     "statusDescription" : "",
     "lore" : "แร่สีเหลืองอ่อน หาได้ไม่ยากจนเกินไป ผู้คนก็เลยนิยมใช้ในการสร้างสื่อเวทมนตร์หลากหลายแบบ\n",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Cerelia" : {
     "name" : "Cerelia",
@@ -1302,7 +1446,8 @@
     "statusDescription" : "",
     "lore" : "ต้นเซเรลเลีย เป็นเหมือนดอกหญ้าเล็กๆที่เกิดขึ้นตามพื้นทะเลทราย หาพบได้ยาก แต่มักจะโตเป็นแปลงใหญ่ มีคุณสมบัติในการเสริมพลังกายหรือเวทมนตร์ ขึ้นอยู่กับวัตถุดิบอื่นที่ใช้ร่วมกัน",
     "price" : "Buy 2 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Diluted Nitron" : {
     "name" : "Diluted Nitron",
@@ -1311,7 +1456,8 @@
     "statusDescription" : "",
     "lore" : "ของเหลวที่เกิดจากการละลายไนตรอนให้เข้ากับน้ำ แต่ขั้นตอนในการสร้างนั้นอันตรายมาก การควบคุมอุณหภูมิเป็นสิ่งที่ขาดไปไม่ได้เด็ดขาด",
     "price" : "Buy 3.7 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Desert Crawler Scale" : {
     "name" : "Desert Crawler Scale",
@@ -1320,7 +1466,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของเดเซิร์ทครอวเลอร์ แข็งทนทาน เหมาะกับการใช้สร้างชุดเกราะเป็นอย่างมาก ดูเหมือนจะปกป้องการโจมตีทางกายภาพได้เป็นอย่างดี",
     "price" : "Buy 2.4 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Desert Crawler Blood" : {
     "name" : "Desert Crawler Blood",
@@ -1329,7 +1476,8 @@
     "statusDescription" : "",
     "lore" : "เลือดของเดเซิร์ทครอวเลอร์ สีเขียวเข้ม เหม็นคาวและมีกลิ่นขม ความเหนียวของมันเองก็ไม่ต่างไปจากน้ำผึ้งเหนียวๆนัก",
     "price" : "Buy 8 Copper",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Skull" : {
     "name" : "Skull",
@@ -1338,7 +1486,8 @@
     "statusDescription" : "",
     "lore" : "กะโหลกของสิ่งมีชีวิต ดูเหมือนจะเป็นอะไรไปไม่ได้มากกว่าแคลเซียมจำนวนหนึ่งนะ",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Old Skull" : {
     "name" : "Old Skull",
@@ -1347,7 +1496,8 @@
     "statusDescription" : "",
     "lore" : "กะโหลกเก่าๆ แค่บีบแรงๆมันก็แหลกคามือได้ในทันที ดูเหมือนจะมีอายุมามากเกินไปแล้ว",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Warming Stone" : {
     "name" : "Warming Stone",
@@ -1356,7 +1506,8 @@
     "statusDescription" : "",
     "lore" : "หินประจุเวทมนตร์ สร้างความอบอุ่นให้กับบรรยากาศในความหนาวเย็นได้ แต่อุณหภูมิจากมันก็ไม่ได้ถึงกับใช้ประกอบอาหารได้",
     "price" : "Buy 6 Silver",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Book of Necromancy" : {
     "name" : "Book of Necromancy",
@@ -1365,7 +1516,8 @@
     "statusDescription" : "",
     "lore" : "หนังสือที่มีภาษาโบราณเขียนอยู่ภายใน สำหรับคนทั่วไปแล้ว การจะอ่านให้ออกแม้แต่ตัวอักษรเดียวยังเป็นไปไม่ได้\nแต่มันมีพลังบางอย่าง...\nพลังบางอย่างที่ทำให้รู้ได้ทันทีว่าหนังสือเล่มนี้ คือหนังสือแห่งศาสตร์ภูติผีอย่างแน่นอน",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Mysterious Stone" : {
     "name" : "Mysterious Stone",
@@ -1374,7 +1526,8 @@
     "statusDescription" : "",
     "lore" : "หินก้อนหนึ่ง มีน้ำหนักมากกว่าปกติอย่างเห็นได้ชัด คงจะต้องทุบเอาแร่ภายในออกมาเสียก่อนถึงจะรู้ได้ว่ามันบรรจุอะไรไว้",
     "price" : "Buy 15 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Torn Book of Tissarn" : {
     "name" : "Torn Book of Tissarn",
@@ -1383,7 +1536,8 @@
     "statusDescription" : "",
     "lore" : "หนังสือแห่งทิสซาร์นที่ขาดครึ่ง เคยเป็นแหล่งพลังงานเวทมนตร์หลักของเขตแดนของเมืองทั้งเมือง แต่ในปัจจุบันมันแทบจะไม่หลงเหลือพลังอีกแล้ว",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Norf" : {
     "name" : "Norf",
@@ -1392,7 +1546,8 @@
     "statusDescription" : "",
     "lore" : "ดูผิวเผินอาจจะคล้ายดอกหญ้าสีฟ้าธรรมดาๆ ทำให้ค้นพบได้ไม่ง่ายนัก\nมีคุณสมบัติในการหยุดยั้งคุณสมบัติบางอย่างของวัตถุดิบอื่น ",
     "price" : "Buy 5.5 Silver",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Red Fin Fish Scale" : {
     "name" : "Red Fin Fish Scale",
@@ -1401,7 +1556,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปแดง มันมีลักษณะใสๆนิดๆ มีสีแดงเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Blue Fin Fish Scale" : {
     "name" : "Blue Fin Fish Scale",
@@ -1410,7 +1566,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปน้ำเงิน มันมีลักษณะใสๆนิดๆ มีสีน้ำเงินเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Purple Fin Fish Scale" : {
     "name" : "Purple Fin Fish Scale",
@@ -1419,7 +1576,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปม่วง มันมีลักษณะใสๆนิดๆ มีสีม่วงเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Indigo Fin Fish Scale" : {
     "name" : "Indigo Fin Fish Scale",
@@ -1428,7 +1586,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปคราม มันมีลักษณะใสๆนิดๆ มีสีครามเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Green Fin Fish Scale" : {
     "name" : "Green Fin Fish Scale",
@@ -1437,7 +1596,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปเขียว มันมีลักษณะใสๆนิดๆ มีสีเขียวเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Yellow Fin Fish Scale" : {
     "name" : "Yellow Fin Fish Scale",
@@ -1446,7 +1606,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปเหลือง มันมีลักษณะใสๆนิดๆ มีสีเหลืองเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Orange Fin Fish Scale" : {
     "name" : "Orange Fin Fish Scale",
@@ -1455,7 +1616,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของปลาครีปส้ม มันมีลักษณะใสๆนิดๆ มีสีส้มเจือจางอยู่หน่อยๆ ถ้าหากใสกว่านี้อีกหน่อย คงไม่สามารถแยกออกได้อีกว่าเกล็ดอันไหนเป็นของปลาสีอะไร",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Eleven Clover" : {
     "name" : "Eleven Clover",
@@ -1464,7 +1626,8 @@
     "statusDescription" : "",
     "lore" : "ใบโคลเวอร์ 11 แฉก หาพบได้ยากมาก ว่ากันว่าถ้าพกไว้จะช่วยให้โชคดี",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Zone Disruptor" : {
     "name" : "Zone Disruptor",
@@ -1473,7 +1636,8 @@
     "statusDescription" : "",
     "lore" : "เครื่องมือขนาดเล็กที่ใช้รบกวนเวทมนตร์อื่น\nเมื่อเปิดใช้งานจะสร้างโซนลบล้างเวทมนตร์ขึ้นมา ซึ่งลบล้างอนุภาคเวทมนตร์ในพื้นที่แทบทั้งหมด",
     "price" : "",
-    "weight" : 4
+    "weight" : 4,
+    "price_in_copper" : 0
   },
   "Magazine" : {
     "name" : "Magazine",
@@ -1482,7 +1646,8 @@
     "statusDescription" : "",
     "lore" : "หนังสือนิตยสาร... อาจจะมีสาระ หรือไร้สาระ หรือมีสิ่งอื่นที่ยิ่งกว่าสาระ ก็สุดรู้",
     "price" : "",
-    "weight" : 2
+    "weight" : 2,
+    "price_in_copper" : 0
   },
   "Fancy Clothes" : {
     "name" : "Fancy Clothes",
@@ -1491,7 +1656,8 @@
     "statusDescription" : "",
     "lore" : "ชุดเสื้อผ้าหน้าตาดูดีที่ใช้ในการแต่งเพื่อเปลี่ยนลุคเปลี่ยนสไตล์โดยเฉพาะ",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Sea Zephyr Feather" : {
     "name" : "Sea Zephyr Feather",
@@ -1500,7 +1666,8 @@
     "statusDescription" : "",
     "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Sea Zephyr Bone" : {
     "name" : "Sea Zephyr Bone",
@@ -1509,7 +1676,8 @@
     "statusDescription" : "",
     "lore" : "กระดูกของนกซีเซเฟียร์ เบาหวิว อีกทั้งยังเปราะบางมาก\nแต่ดูเหมือนจะมีคุณสมบัติความเข้ากันได้ดีกับเวทมนตร์บางชนิด",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Crimson Reindeer Antler" : {
     "name" : "Crimson Reindeer Antler",
@@ -1518,7 +1686,8 @@
     "statusDescription" : "",
     "lore" : "เขาของคริมสันเรนเดียร์ หนัก คงทนมาก มีเวทมนตร์บางอย่างประกายอยู่ภายใน มันไม่เหมือนกับเวทมนตร์ที่พบได้ทั่วไปเลย",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Fang of Light Dragon" : {
     "name" : "Fang of Light Dragon",
@@ -1527,7 +1696,8 @@
     "statusDescription" : "",
     "lore" : "เขี้ยวของมังกรประกายแสง แม้ภายในจะไม่ได้โปร่ง แต่มันกลับรองรับพลังเวทได้อย่างมหาศาล มันอาจไม่ได้แข็งแรงหรือทนทานจนเรียกได้ว่าไม่บุบสลาย แต่ก็มีความแข็งแรงสูง",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Wing of Light Dragon" : {
     "name" : "Wing of Light Dragon",
@@ -1536,7 +1706,8 @@
     "statusDescription" : "",
     "lore" : "ชิ้นส่วนปีกของมังกรประกายแสง ทั้งที่เบาหวิวจนแทบไม่มีน้ำหนักแต่ก็แข็งแรงทนทานจนแทบจะเป็นไปไม่ได้หากจะฉีกให้ขาดออกจากกันด้วยแรงทั่วๆไป\nความพิเศษของมันคือ ถึงแม้ว่าจะขาดออกจากกัน แต่ก็ยังสามารถสมานรวมกันได้ราวกับยังมีชีวิต",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Scale of Light Dragon" : {
     "name" : "Scale of Light Dragon",
@@ -1545,7 +1716,8 @@
     "statusDescription" : "",
     "lore" : "เกล็ดของมังกรประกายแสง สะท้อนกับแสงอาทิตย์จนเห็นได้ชัด นอกจากนี้ยังเกิดแรงสะท้อนอย่างรุนแรงเมื่อใช้อุปกรณ์เคาะไปที่มัน",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Horn of Light Dragon" : {
     "name" : "Horn of Light Dragon",
@@ -1554,7 +1726,8 @@
     "statusDescription" : "",
     "lore" : "เขาของมังกรประกายแสง เมื่อสัมผัสกับมันจะทำให้รู้สึกว่าเรี่ยวแรงถูกชิงไป ดูเหมือนว่าจะมีความสามารถในการช่วงชิงมานา... หรือมากกว่านั้น",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Blood of Light Dragon" : {
     "name" : "Blood of Light Dragon",
@@ -1563,7 +1736,8 @@
     "statusDescription" : "",
     "lore" : "เลือดสีสว่างใสของมังกรประกายแสง มีคุณสมบัติในการชะล้างอย่างมหาศาล การลบล้างเวทมนตร์ด้วยมันเป็นเรื่องง่าย แต่มันชำระล้างได้กระทั่งกับสิ่งที่ไม่ใช่เวทมนตร์",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Claw of Light Dragon" : {
     "name" : "Claw of Light Dragon",
@@ -1572,7 +1746,8 @@
     "statusDescription" : "",
     "lore" : "กรงเล็บของมังกรประกายแสง\nแม้แต่คำว่าแข็งแรงหรือทนทานก็ไม่อาจนิยามความทรงพลังในเชิงกายภาพของมันได้ จะทำให้เกิดแม้แต่รอยขีดข่วนยังทำไม่ได้ การจะทำให้เปลี่ยนรูปร่าง คงต้องใช้วิธีที่แสนพิเศษ",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Spine of Light Dragon" : {
     "name" : "Spine of Light Dragon",
@@ -1581,7 +1756,8 @@
     "statusDescription" : "",
     "lore" : "หนามของมังกรประกายแสง มันโปร่งแสงจนดูเหมือนแก้วที่มีส่วนแหลม มองไปอีกทีก็คล้ายปริซึม แต่ดูเหมือนจะมีคุณสมบัติมากกว่าแค่รวมหรือกระจายแสง\nเพราะดูเหมือนมันจะกักเก็บแสงเอาไว้ด้านใน",
     "price" : "",
-    "weight" : 3
+    "weight" : 3,
+    "price_in_copper" : 0
   },
   "Sachet of Awareness" : {
     "name" : "Sachet of Awareness",
@@ -1590,7 +1766,8 @@
     "statusDescription" : "",
     "lore" : "ถุงเครื่องหอมเล็กๆ ส่งกลื่นที่ชวนให้รู้สึกตื่นตัวอยู่ตลอดเวลา\nกลิ่นหอมนั้นเกิดจากวัตถุดิบหรือยาบางชนิดผสมรวมกัน",
     "price" : "",
-    "weight" : 7
+    "weight" : 7,
+    "price_in_copper" : 0
   },
   "Sachet of Lesser Awareness" : {
     "name" : "Sachet of Lesser Awareness",
@@ -1599,7 +1776,8 @@
     "statusDescription" : "",
     "lore" : "ถุงเครื่องหอมเล็กๆ ส่งกลื่นที่ชวนให้รู้สึกตื่นตัวอยู่ตลอดเวลา\nกลิ่นหอมนั้นเกิดจากวัตถุดิบหรือยาบางชนิดผสมรวมกัน",
     "price" : "",
-    "weight" : 7
+    "weight" : 7,
+    "price_in_copper" : 0
   },
   "Red Fin Balm" : {
     "name" : "Red Fin Balm",
@@ -1608,7 +1786,8 @@
     "statusDescription" : "",
     "lore" : "ยาแบบทาที่ใช้ภายนอก แน่นอนว่ารับประทานไม่ได้\nถูกสร้างขึ้นจากเกล็ดปลาครีปแดงเป็นหลัก เมื่อทาแล้วจะรู้สึกร่อนรุ่มชวนให้อยากเคลื่อนไหวร่างกาย",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   },
   "Sachet of Panic" : {
     "name" : "Sachet of Panic",
@@ -1617,7 +1796,8 @@
     "statusDescription" : "",
     "lore" : "ถุงเครื่องหอมเล็กๆ ส่งกลื่นที่ชวนให้รู้สึกตื่นตัวจนเกินความจำเป็น\nกลิ่นหอมนั้นชวนให้เสียสมาธิไม่ใช่น้อย เกิดจากวัตถุดิบหรือยาบางชนิดผสมรวมกัน",
     "price" : "",
-    "weight" : 7
+    "weight" : 7,
+    "price_in_copper" : 0
   },
   "Rune Dust" : {
     "name" : "Rune Dust",
@@ -1626,6 +1806,7 @@
     "statusDescription" : "",
     "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
     "price" : "",
-    "weight" : 1
+    "weight" : 1,
+    "price_in_copper" : 0
   }
 }

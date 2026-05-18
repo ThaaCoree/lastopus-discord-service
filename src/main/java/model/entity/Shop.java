@@ -1,6 +1,7 @@
 package model.entity;
 
 import model.entity.items.Item;
+import model.type.CityName;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,19 +12,21 @@ public class Shop {
     private String ownerName;
     private String cityName;
     private String description;
+    private CityName city;
 
     public Shop() {
         open = false;
     }
 
-    public Shop(String ownerName, String cityName, boolean open) {
+    public Shop(String ownerName, String cityName, boolean open, CityName city) {
         this.ownerName = ownerName;
         this.cityName = cityName;
         this.open = open;
+        this.city = city;
     }
 
-    public void addToShop(Item item, String price, int stock) {
-        ShopItem toAdd = new ShopItem(item, price, stock);
+    public void addToShop(Item item, String price, int stock, int price_in_copper) {
+        ShopItem toAdd = new ShopItem(item, price, stock, price_in_copper);
         int key = generateEmptyKey(list);
         list.put(key, toAdd);
     }
@@ -90,5 +93,13 @@ public class Shop {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public CityName getCity() {
+        return city;
+    }
+
+    public void setCity(CityName city) {
+        this.city = city;
     }
 }

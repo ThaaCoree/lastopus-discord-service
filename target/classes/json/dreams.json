@@ -7,6 +7,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -20,9 +21,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Knowledge" : {
     "name" : "Dream of Knowledge",
@@ -32,6 +33,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -58,8 +60,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : {
-      "INTELLIGENCE" : {
+    "statModifiers" : {
+      "MAGICALATTACK" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -69,8 +71,8 @@
       }
     },
     "transferModifiers" : { },
-    "statModifiers" : {
-      "MAGICALATTACK" : {
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -88,6 +90,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -114,8 +117,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : {
-      "STRENGTH" : {
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -125,8 +128,8 @@
       }
     },
     "transferModifiers" : { },
-    "statModifiers" : {
-      "PHYSICALATTACK" : {
+    "statusModifiers" : {
+      "STRENGTH" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -144,6 +147,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -170,8 +174,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : {
-      "DEXTERITY" : {
+    "statModifiers" : {
+      "RANGEDATTACK" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -181,8 +185,8 @@
       }
     },
     "transferModifiers" : { },
-    "statModifiers" : {
-      "RANGEDATTACK" : {
+    "statusModifiers" : {
+      "DEXTERITY" : {
         "flat" : 0.0,
         "mult" : 0.0,
         "override" : "NaN",
@@ -200,6 +204,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -213,9 +218,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Destruction" : {
     "name" : "Dream of Destruction",
@@ -225,6 +230,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -238,9 +244,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Keiros´ Dream" : {
     "name" : "Keiros´ Dream",
@@ -250,6 +256,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "KEYSTONE",
     "modifiers" : {
       "statModifiers" : { },
@@ -258,9 +265,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Hope" : {
     "name" : "Dream of Hope",
@@ -270,6 +277,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -283,9 +291,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Ego" : {
     "name" : "Dream of Ego",
@@ -295,6 +303,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -328,6 +337,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -353,9 +364,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "transferModifiers" : { },
-    "statModifiers" : { }
+    }
   },
   "Starry Dream" : {
     "name" : "Starry Dream",
@@ -365,6 +374,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -430,6 +440,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -487,9 +499,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "transferModifiers" : { },
-    "statModifiers" : { }
+    }
   },
   "Grenn´s War Drum" : {
     "name" : "Grenn´s War Drum",
@@ -499,6 +509,7 @@
     "lore" : "`ก้าวไปตามจังหวะ คว้าชัยชนะตามฉบับเรา´",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "KEYSTONE",
     "modifiers" : {
       "statModifiers" : { },
@@ -507,9 +518,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Misery" : {
     "name" : "Dream of Misery",
@@ -519,6 +530,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -536,8 +548,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 0.0,
@@ -547,7 +557,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "Delusional Dream" : {
     "name" : "Delusional Dream",
@@ -557,6 +569,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -584,7 +597,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALPENETRATE",
@@ -605,7 +618,7 @@
         "transferType" : "CONVERSION"
       }
     },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Vengeance" : {
     "name" : "Dream of Vengeance",
@@ -615,6 +628,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -632,8 +646,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITDAMAGE" : {
         "flat" : 0.0,
@@ -643,7 +655,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "Dream of Faith" : {
     "name" : "Dream of Faith",
@@ -653,6 +667,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -666,9 +681,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Taryan´s Dream" : {
     "name" : "Taryan´s Dream",
@@ -678,6 +693,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -695,8 +711,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MANAREGEN" : {
         "flat" : 0.0,
@@ -706,7 +720,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "Abominable Evolution" : {
     "name" : "Abominable Evolution",
@@ -716,6 +732,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "KEYSTONE",
     "modifiers" : {
       "statModifiers" : { },
@@ -752,7 +769,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : null,
@@ -782,7 +799,7 @@
         "transferType" : "CONVERSION"
       }
     },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Dread" : {
     "name" : "Dream of Dread",
@@ -792,6 +809,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -805,9 +823,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Hate" : {
     "name" : "Dream of Hate",
@@ -817,6 +835,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -834,9 +853,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Pain" : {
     "name" : "Dream of Pain",
@@ -846,6 +865,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -871,8 +891,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALPENETRATE" : {
         "flat" : 0.0,
@@ -890,7 +908,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "Dream of Benevolence" : {
     "name" : "Dream of Benevolence",
@@ -900,6 +920,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -925,8 +946,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALAMPLIFIER" : {
         "flat" : 0.0,
@@ -944,7 +963,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "No Regrets" : {
     "name" : "No Regrets",
@@ -954,6 +975,7 @@
     "lore" : "\n\n`อย่างน้อยที่สุด ก็เป็นจุดจบที่น่าพอใจ´",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "KEYSTONE",
     "modifiers" : {
       "statModifiers" : {
@@ -987,8 +1009,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 0.0,
@@ -1014,7 +1034,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "The Last Blessing" : {
     "name" : "The Last Blessing",
@@ -1024,6 +1046,7 @@
     "lore" : "\n\n`มนตร์บทนี้จึงเป็น... พรข้อสุดท้าย´",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "KEYSTONE",
     "modifiers" : {
       "statModifiers" : { },
@@ -1032,9 +1055,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Tranquility" : {
     "name" : "Dream of Tranquility",
@@ -1044,6 +1067,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -1061,6 +1085,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "transferModifiers" : { },
     "statusModifiers" : {
       "WISDOM" : {
         "flat" : 0.0,
@@ -1070,9 +1096,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    },
-    "transferModifiers" : { },
-    "statModifiers" : { }
+    }
   },
   "Dream of Strive" : {
     "name" : "Dream of Strive",
@@ -1082,6 +1106,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : { },
@@ -1095,9 +1120,9 @@
       }
     },
     "skills" : { },
-    "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { },
-    "statModifiers" : { }
+    "statusModifiers" : { }
   },
   "Dream of Night" : {
     "name" : "Dream of Night",
@@ -1107,6 +1132,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -1124,8 +1150,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.015,
@@ -1135,7 +1159,9 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   },
   "Venus´ Enlightenment" : {
     "name" : "Venus´ Enlightenment",
@@ -1145,6 +1171,7 @@
     "lore" : "",
     "price" : "",
     "weight" : 0,
+    "price_in_copper" : 0,
     "nodeType" : "NOTABLE",
     "modifiers" : {
       "statModifiers" : {
@@ -1162,8 +1189,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "RESERVATION" : {
         "flat" : 0.0,
@@ -1173,6 +1198,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : { }
   }
 }

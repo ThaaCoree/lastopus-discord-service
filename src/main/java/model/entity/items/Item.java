@@ -12,6 +12,7 @@ public class Item {
     private String lore;
     private String price;
     private int weight;
+    private int price_in_copper;
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public Item(String name) {
@@ -22,6 +23,7 @@ public class Item {
         this.lore = "";
         this.price = "";
         this.weight = 0;
+        this.price_in_copper = 0;
     }
     public Item() {
         this.name = "NONAME";
@@ -31,6 +33,7 @@ public class Item {
         this.lore = "";
         this.price = "";
         this.weight = 0;
+        this.price_in_copper = 0;
     }
 
     public String getName() {
@@ -93,6 +96,14 @@ public class Item {
         statusDescription = statusDescription + statusDescToAdd;
     }
 
+    public int getPrice_in_copper() {
+        return price_in_copper;
+    }
+
+    public void setPrice_in_copper(int price_in_copper) {
+        this.price_in_copper = price_in_copper;
+    }
+
     @Override
     public String toString() {
         return "Item{" +
@@ -102,6 +113,8 @@ public class Item {
                 ", statusDescription='" + statusDescription + '\'' +
                 ", lore='" + lore + '\'' +
                 ", price='" + price + '\'' +
+                ", weight=" + weight +
+                ", price_in_copper=" + price_in_copper +
                 '}';
     }
 }

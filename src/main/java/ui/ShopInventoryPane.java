@@ -116,7 +116,7 @@ public class ShopInventoryPane extends StackPane {
                     descLabel.setMinWidth(300);
                     descLabel.setMaxWidth(300);
 
-                    Label priceLabel = new Label(item.getPrice());
+                    Label priceLabel = new Label(item.getPrice_in_copper()+" C.");
                     priceLabel.setStyle("-fx-font-size: 16; -fx-border-color: #969696; -fx-border-width: 0 0 0 2; -fx-padding: 5px;");
                     priceLabel.minHeightProperty().bind(statusLabel.heightProperty());
                     priceLabel.setMinWidth(100);

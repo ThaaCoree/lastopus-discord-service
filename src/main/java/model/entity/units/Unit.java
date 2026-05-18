@@ -74,6 +74,8 @@ public class Unit {
     private List<Rune> socketed_runes = new ArrayList<>();
     private ModifierBundle rune_modifiers = new ModifierBundle();
 
+    private List<CityName> current_city = new ArrayList<>();
+
     @JsonIgnore
     @Transient
     private ObservableMap<CounterName, Double> counter;
@@ -1554,6 +1556,14 @@ public class Unit {
 
     public void setRune_modifiers(ModifierBundle rune_modifiers) {
         this.rune_modifiers = rune_modifiers;
+    }
+
+    public List<CityName> getCurrent_city() {
+        return current_city;
+    }
+
+    public void setCurrent_city(List<CityName> current_city) {
+        this.current_city = current_city;
     }
 
     @JsonIgnore

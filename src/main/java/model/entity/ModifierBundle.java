@@ -62,12 +62,22 @@ public class ModifierBundle {
     public void multiplyAllModifiers (double multiplier) {
         multiplyAllStatModifiers(multiplier);
         multiplyAllStatusModifiers(multiplier);
-        multiplyAllTransferModifiers(multiplier);
+        multiplyAllStatusTransferModifiers(multiplier);
+        multiplyAllStatTransferModifiers(multiplier);
     }
 
-    public void multiplyAllTransferModifiers(double multiplier) {
+    public void multiplyAllStatusTransferModifiers(double multiplier) {
         for (TransferModifier modifier : transferModifiers.values()) {
             if (modifier == null) continue;
+            if (modifier.getSourceStatus() == null) continue;
+            modifier.setTransferRatio(modifier.getTransferRatio() * multiplier);
+        }
+    }
+
+    public void multiplyAllStatTransferModifiers(double multiplier) {
+        for (TransferModifier modifier : transferModifiers.values()) {
+            if (modifier == null) continue;
+            if (modifier.getSourceStat() == null) continue;
             modifier.setTransferRatio(modifier.getTransferRatio() * multiplier);
         }
     }

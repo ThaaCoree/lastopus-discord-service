@@ -4,6 +4,8 @@ import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import model.entity.Shop;
+import model.entity.ShopItem;
 import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import util.WeightedRandom;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -387,6 +390,62 @@ public class DiscordController {
             unit.getInventoryManager().reduceItem("Rune Dust", used_dust);
             writeintoSheet(unit);
             return stringBuilder.toString();
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/itembuy")
+    public String itembuy(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            String[] parts = playerMessage.message.split("/");
+            // parts[0] = "Alexa Shop "
+            // parts[1] = " Blue Berry 7"
+
+            String shopName = parts[0].trim();
+
+            String[] itemParts = parts[1].trim().split(" ");
+            int quantity = Integer.parseInt(itemParts[itemParts.length - 1]);
+            String itemName = String.join(" ", Arrays.copyOfRange(itemParts, 0, itemParts.length - 1));
+
+            // shopName = "Alexa Shop"
+            // itemName = "Blue Berry"
+            // quantity = 7
+
+            Shop shop = database.allShop.get(shopName);
+            if (shop == null) return "ไม่พบชื่อร้านดังกล่าว";
+            if (!unit.getCurrent_city().contains(shop.getCity())) {
+                return "ตัวละคร "+unit.getName()+" ไม่ได้อยู่ในพื้นที่เดียวกับร้านดังกล่าว";
+            }
+            Item item = new Item("");
+            int stock = -1;
+            int price = -1;
+            for (ShopItem si : shop.getList().values()) {
+                if (si.getItem() == null) continue;
+                if (si.getItem().getName().equals(itemName)) {
+                    item = si.getItem();
+                    stock = si.getStock();
+                    price = si.getPrice_in_copper();
+                    break;
+                }
+            }
+            if (item == null || item.getName().isEmpty()) {
+                return "ไม่พบไอเทมดังกล่าว";
+            }
+            if (price == -1) {
+                return "ไม่พบราคาของไอเทมดังกล่าว";
+            }
+            if (stock < quantity) {
+                return "ในร้านมีจำนวนไอเทมไม่เพียงพอ";
+            }
+            if (unit.getCopperCoin() < price*quantity) {
+                return "มีเงินไม่เพียงพอ";
+            }
+            unit.reduceCopperCoin(price*quantity);
+            unit.getInventoryManager().addItem(item, quantity);
+            return unit.getName()+" ซื้อ "+item.getName()+" จากร้านของ "+shopName+" เป็นจำนวน "+quantity+" ชิ้นแล้ว";
         } else {
             return "No Role!";
         }

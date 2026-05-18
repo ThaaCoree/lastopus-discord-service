@@ -3,6 +3,7 @@ package calculator;
 import model.entity.ModifierBundle;
 import model.entity.items.Rune;
 import model.entity.units.Unit;
+import model.modifier.TransferModifier;
 import model.type.StatType;
 import model.type.StatusType;
 
@@ -53,6 +54,9 @@ public class RuneCalculator {
                 );
             }
 
+            for (TransferModifier transferModifier : socketedRune.getModifiers().getTransferModifiers().values()) {
+                modifierBundle.addTransferModifier(transferModifier);
+            }
         }
         return modifierBundle;
     }
@@ -71,8 +75,26 @@ public class RuneCalculator {
         calculateTalented(list);
         calculateEchoes(list, board);
         calculatePlanetCore(list, board);
+        calculateStardiver(list, board, unit);
 
         return list;
+    }
+
+    public static void calculateStardiver(List<Rune> list, int[][] board, Unit unit) {
+        int points = 0;
+        for (int i = 0; i < list.size(); i++) {
+            Rune rune = list.get(i);
+            if (!rune.getName().contains("Stardiver")) continue;
+            if (points > 0) continue;
+
+            for (int r = 0; r < board.length; r++) {
+                for (int c = 0; c < r; c++) {
+                    if (board[r][c] != -1) continue;
+                    points++;
+                }
+            }
+        }
+        unit.setRemainingPassiveTreePoint(unit.getRemainingPassiveTreePoint() + points);
     }
 
     public static void calculateTimeFlow(List<Rune> list, int[][] board) {
@@ -141,6 +163,7 @@ public class RuneCalculator {
             for (int k = 0; k < list.size(); k++) {
                 Rune affected = list.get(k);
                 affected.getModifiers().multiplyAllStatusModifiers(1.5);
+                affected.getModifiers().multiplyAllStatusTransferModifiers(1.5);
             }
         }
     }
