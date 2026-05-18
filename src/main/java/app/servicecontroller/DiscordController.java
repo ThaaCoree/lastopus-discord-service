@@ -457,6 +457,7 @@ public class DiscordController {
             }
             unit.reduceCopperCoin(price*quantity);
             unit.getInventoryManager().addItem(item, quantity);
+            writeintoSheet(unit);
             return unit.getName()+" ซื้อ "+item.getName()+" จากร้านของ "+shopName+" เป็นจำนวน "+quantity+" ชิ้นแล้ว";
         } else {
             return "No Role!";
@@ -525,6 +526,7 @@ public class DiscordController {
     }
 
     public void writeintoSheet(Unit unit) {
+        unit.calculateEverything();
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);

@@ -1078,9 +1078,9 @@ public class InventoryPane extends ScrollPane {
             cityBox.setAlignment(Pos.CENTER_LEFT); // จัดให้อยู่ชิดซ้ายและเรียงกลางแนวตั้ง
             cityBox.setStyle("-fx-border-color: #ccc; -fx-background-color: #292929;");
 
-            String unique_name = "";
-            unique_name = cityName.writeAsString();
-            Label name = new Label(unique_name);
+            String city_name = "";
+            city_name = cityName.writeAsString();
+            Label name = new Label(city_name);
             name.setMinWidth(100);
 
             Button delete = new Button("Delete");
@@ -1122,7 +1122,7 @@ public class InventoryPane extends ScrollPane {
         cityName.setPromptText("Select City Name");
 
         Button addCity = new Button("Add City");
-        add.setOnAction(e -> {
+        addCity.setOnAction(e -> {
             CityName city = cityName.getValue();
             if (city != null) {
                 unit.getCurrent_city().add(city);
