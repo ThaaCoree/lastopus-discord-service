@@ -405,8 +405,12 @@ public class DiscordController {
             // parts[1] = " Blue Berry 7"
 
             String shopName = parts[0].trim();
-
-            String[] itemParts = parts[1].trim().split(" ");
+            String[] itemParts;
+            try {
+                itemParts = parts[1].trim().split(" ");
+            } catch (ArrayIndexOutOfBoundsException e) {
+                return "ต้องแบ่งชื่อร้านและชื่อไอเทมด้วยอักษร / ";
+            }
             int quantity = 0;
             try {
                 quantity = Integer.parseInt(itemParts[itemParts.length - 1]);

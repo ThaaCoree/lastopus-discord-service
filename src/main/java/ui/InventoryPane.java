@@ -1072,6 +1072,29 @@ public class InventoryPane extends ScrollPane {
             contentBox.getChildren().add(uniqueBox);
         }
 
+        for (CityName cityName : unit.getCurrent_city()) {
+            HBox cityBox = new HBox(10); // เพิ่ม spacing ระหว่างองค์ประกอบในแถว
+            cityBox.setPadding(new Insets(5));
+            cityBox.setAlignment(Pos.CENTER_LEFT); // จัดให้อยู่ชิดซ้ายและเรียงกลางแนวตั้ง
+            cityBox.setStyle("-fx-border-color: #ccc; -fx-background-color: #292929;");
+
+            String unique_name = "";
+            unique_name = cityName.writeAsString();
+            Label name = new Label(unique_name);
+            name.setMinWidth(100);
+
+            Button delete = new Button("Delete");
+            delete.setStyle("-fx-text-fill: red;");
+
+            delete.setOnAction(e -> {
+                unit.getCurrent_city().removeIf(city -> city == cityName);
+                refreshContents();
+            });
+
+            cityBox.getChildren().addAll(name, delete);
+            contentBox.getChildren().add(cityBox);
+        }
+
         // แถวเพิ่ม Unique ใหม่
         HBox addBox = new HBox(10);
         addBox.setPadding(new Insets(10, 0, 0, 0));
@@ -1090,8 +1113,26 @@ public class InventoryPane extends ScrollPane {
             }
         });
 
+        HBox addCityBox = new HBox(10);
+        addBox.setPadding(new Insets(10, 0, 0, 0));
+        addBox.setAlignment(Pos.CENTER_LEFT);
+
+        ComboBox<CityName> cityName = new ComboBox<>();
+        cityName.getItems().addAll(CityName.values());
+        cityName.setPromptText("Select City Name");
+
+        Button addCity = new Button("Add City");
+        add.setOnAction(e -> {
+            CityName city = cityName.getValue();
+            if (city != null) {
+                unit.getCurrent_city().add(city);
+                refreshContents();
+            }
+        });
+
         addBox.getChildren().addAll(uniqueType, add);
-        contentBox.getChildren().add(addBox);
+        addCityBox.getChildren().addAll(cityName, addCity);
+        contentBox.getChildren().addAll(addBox, addCityBox);
 
         return contentBox;
     }
