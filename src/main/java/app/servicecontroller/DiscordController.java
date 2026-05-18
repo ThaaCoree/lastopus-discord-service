@@ -4,6 +4,7 @@ import app.service.ServiceDatabase;
 import app.servicemodel.PlayerMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.api.services.sheets.v4.model.Request;
 import model.entity.Shop;
 import model.entity.ShopItem;
 import model.entity.items.Equipment;
@@ -15,13 +16,14 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import ui.MainPane;
+import util.GoogleSheetsUtil;
 import util.WeightedRandom;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
+
+import static ui.MainPane.getExcelColumnName;
 
 @RestController
 public class DiscordController {
@@ -434,12 +436,14 @@ public class DiscordController {
             Item item = new Item("");
             int stock = -1;
             int price = -1;
+            ShopItem shopItem = new ShopItem();
             for (ShopItem si : shop.getList().values()) {
                 if (si.getItem() == null) continue;
                 if (si.getItem().getName().equals(itemName)) {
                     item = si.getItem();
                     stock = si.getStock();
                     price = si.getPrice_in_copper();
+                    shopItem = si;
                     break;
                 }
             }
@@ -457,6 +461,10 @@ public class DiscordController {
             }
             unit.reduceCopperCoin(price*quantity);
             unit.getInventoryManager().addItem(item, quantity);
+            shopItem.setStock(shopItem.getStock() - quantity);
+            updateShops();
+
+            database.save_shop(database.allShop);
             writeintoSheet(unit);
             return unit.getName()+" ซื้อ "+item.getName()+" จากร้านของ "+shopName+" เป็นจำนวน "+quantity+" ชิ้นแล้ว";
         } else {
@@ -546,6 +554,83 @@ public class DiscordController {
             database.save_player(json);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void updateShops() {
+        try {
+            GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
+            int index = 1;
+            for (Map.Entry<String, Shop> entry : database.allShop.entrySet()) {
+                if (!entry.getValue().isOpen()) continue;
+                List<Request> requests = new ArrayList<>();
+                int baseRow = 4;
+                int step = 10;
+                Integer sheetId = sheetsUtil.getSheetIdByName(GoogleSheetsUtil.viewerSheetId, "Shop");
+                String indicatorRange = "B" + (baseRow-1 + (index-1) * step);
+                String cityRange = "C" + (baseRow-1 + (index-1) * step);
+                int columnIndex = 2;
+                int itemIndex = 1;
+                List<List<Object>> indicatorAppend;
+                indicatorAppend = new ArrayList<>(List.of(
+                        List.of(entry.getValue().getOwnerName())
+                ));
+                requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, indicatorRange, indicatorAppend));
+                List<List<Object>> cityAppend;
+                cityAppend = new ArrayList<>(List.of(
+                        List.of(entry.getValue().getCityName())
+                ));
+                requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, cityRange, cityAppend));
+                for (ShopItem shopItem : entry.getValue().getList().values()) {
+                    String range = getExcelColumnName(columnIndex) + (baseRow + (index-1) * step);
+                    List<List<Object>> toAppend; // ประกาศไว้ก่อน
+                    if (shopItem.getItem() instanceof Equipment) {
+                        if (shopItem.getItem() == null) continue;
+                        Equipment equipment = (Equipment) shopItem.getItem();
+                        toAppend = new ArrayList<>(List.of(
+                                List.of(itemIndex),
+                                List.of(equipment.getName()),
+                                List.of(equipment.getLore()),
+                                List.of(equipment.getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
+                                List.of("Price : "+shopItem.getPrice_in_copper()),
+                                List.of("Stocks : " + shopItem.getStock()),
+                                List.of(equipment.getEquipmentType().writeAsString()),
+                                List.of(equipment.getWeaponType().writeAsString())
+                        ));
+                    } else {
+                        if (shopItem.getItem() == null) continue;
+                        toAppend = new ArrayList<>(List.of(
+                                List.of(itemIndex),
+                                List.of(shopItem.getItem().getName()),
+                                List.of(shopItem.getItem().getLore()),
+                                List.of(shopItem.getItem().getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
+                                List.of("Price : "+shopItem.getPrice_in_copper()),
+                                List.of("Stock : " + shopItem.getStock()),
+                                List.of(shopItem.getItem().getItemType().writeAsString())
+                        ));
+                    }
+                    itemIndex++;
+                    columnIndex++;
+                    requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, range, toAppend));
+                }
+                index++;
+                sheetsUtil.takeRequests(requests);
+            }
+            sheetsUtil.requestSet();
+            String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้
+            long startTime = System.currentTimeMillis();
+            System.out.println("Start processRequest: " + startTime + " Session: " + sessionId);
+
+            sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
+
+            sheetsUtil.requestClear();
+
+            long endTime = System.currentTimeMillis();
+            long duration = endTime - startTime;
+            System.out.println("End processRequest: took " + duration + " ms Session: " + sessionId);
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 }

@@ -560,9 +560,7 @@ public class ServiceDatabase {
     }
 
     public String save_shop(Map<String, Shop> map) {
-
-        Shop item = new Shop();
-        map.put("_id", item);
+        mongoTemplate.dropCollection("shops");
         mongoTemplate.save(map, "shops");
 
         System.out.println("saved shop");
