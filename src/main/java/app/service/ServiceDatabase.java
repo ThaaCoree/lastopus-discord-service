@@ -333,12 +333,16 @@ public class ServiceDatabase {
         Query query = new Query(Criteria.where("_id").is(playersDocId));
         query.fields().include(unit.getName()); // โหลดแค่ field ที่ต้องการ
 
-        Map<String, Unit> result = mongoTemplate.findOne(query, Map.class, "players");
-        System.out.println("[0] load player from mongoTemplate : " + (System.currentTimeMillis() - t) + "ms");
+        Map<String, Object> result = mongoTemplate.findOne(query, Map.class, "players");
 
         if (result != null && result.containsKey(unit.getName())) {
-            allPlayerMap.put(unit.getName(), result.get(unit.getName()));
-            allUnit.put(unit.getName(), result.get(unit.getName()));
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+            Unit loadedUnit = mapper.convertValue(result.get(unit.getName()), Unit.class);
+
+            allPlayerMap.put(unit.getName(), loadedUnit);
+            allUnit.put(unit.getName(), loadedUnit);
             updateUnitObjects();
         }
     }
