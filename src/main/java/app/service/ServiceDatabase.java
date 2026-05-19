@@ -349,17 +349,18 @@ public class ServiceDatabase {
 
     public SaveRequest load_all() {
         SaveRequest saveRequest = new SaveRequest();
-        Map<String, Item> allItem = mongoTemplate.findOne(new Query(), Map.class, "items");
-        Map<String, Card> allCards = mongoTemplate.findOne(new Query(), Map.class, "cards");
-        Map<String, Conditions> allConditions = mongoTemplate.findOne(new Query(), Map.class, "conditions");
-        Map<String, Consumable> allConsumables = mongoTemplate.findOne(new Query(), Map.class, "consumables");
-        Map<String, Dream> allDreams = mongoTemplate.findOne(new Query(), Map.class, "dreams");
-        Map<String, Equipment> allEquipments = mongoTemplate.findOne(new Query(), Map.class, "equipments");
-        Map<String, Monster> allMonsters = mongoTemplate.findOne(new Query(), Map.class, "monsters");
-        Map<String, Unit> allNPCs = mongoTemplate.findOne(new Query(), Map.class, "npcs");
-        Map<String, PassiveNode> allPassives = mongoTemplate.findOne(new Query(), Map.class, "passives");
-        Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
-        Map<String, Rune> allRunes = mongoTemplate.findOne(new Query(), Map.class, "runes");
+        Map<String, Item> allItem = loadCollection("items", Item.class);
+        Map<String, Card> allCards = loadCollection("cards", Card.class);
+        Map<String, Conditions> allConditions = loadCollection("conditions", Conditions.class);
+        Map<String, Consumable> allConsumables = loadCollection("consumables", Consumable.class);
+        Map<String, Dream> allDreams = loadCollection("dreams", Dream.class);
+        Map<String, Equipment> allEquipments = loadCollection("equipments", Equipment.class);
+        Map<String, Monster> allMonsters = loadCollection("monsters", Monster.class);
+        Map<String, Unit> allNPCs = loadCollection("npcs", Unit.class);
+        Map<String, PassiveNode> allPassives = loadCollection("passives", PassiveNode.class);
+        Map<String, Unit> allPlayers = loadCollection("players", Unit.class);
+        Map<String, Rune> allRunes = loadCollection("runes", Rune.class);
+        Map<String, Shop> allShops = loadCollection("shops", Shop.class);
 //        Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
 
         org.bson.Document doc = mongoTemplate.findOne(
@@ -367,17 +368,6 @@ public class ServiceDatabase {
                 org.bson.Document.class,
                 "shops"
         );
-
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        Map<String, Shop> shopMap = new LinkedHashMap<>();
-
-        for (String key : doc.keySet()) {
-            if (key.equals("_id")) continue;
-            Object value = doc.get(key);
-            Shop shop = mapper.convertValue(value, Shop.class);
-            shopMap.put(key, shop);
-        }
 
         List<Map<String, ?>> maps = new ArrayList<>(Arrays.asList(
                 allItem,
@@ -391,7 +381,7 @@ public class ServiceDatabase {
                 allMonsters,
                 allPassives,
                 allRunes,
-                shopMap
+                allShops
         ));
 
         for (Map<String, ?> map : maps) {
@@ -422,9 +412,25 @@ public class ServiceDatabase {
         saveRequest.setAllPassiveMap(allPassivesToPut);
         saveRequest.setAllPlayerMap(allPlayers);
         saveRequest.setAllRuneMap(allRunes);
-        saveRequest.setAllShop(shopMap);
+        saveRequest.setAllShop(allShops);
         return saveRequest;
     }
+
+    private <T> Map<String, T> loadCollection(String collectionName, Class<T> clazz) {
+        org.bson.Document doc = mongoTemplate.findOne(new Query(), org.bson.Document.class, collectionName);
+        if (doc == null) return new LinkedHashMap<>();
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+        Map<String, T> result = new LinkedHashMap<>();
+        for (String key : doc.keySet()) {
+            if (key.equals("_id") || key.equals("_class")) continue;
+            result.put(key, mapper.convertValue(doc.get(key), clazz));
+        }
+        return result;
+    }
+
 //
 //    public void save_credentials() {
 //        try {
@@ -434,6 +440,7 @@ public class ServiceDatabase {
 //            e.printStackTrace();
 //        }
 //    }
+
 
     public GoogleCredential load_credentials() {
         try {
