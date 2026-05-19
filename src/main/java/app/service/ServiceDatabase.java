@@ -356,8 +356,23 @@ public class ServiceDatabase {
         Map<String, PassiveNode> allPassives = mongoTemplate.findOne(new Query(), Map.class, "passives");
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
         Map<String, Rune> allRunes = mongoTemplate.findOne(new Query(), Map.class, "runes");
-        Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
+//        Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
 
+        org.bson.Document doc = mongoTemplate.findOne(
+                new Query(),
+                org.bson.Document.class,
+                "shops"
+        );
+
+        ObjectMapper mapper = new ObjectMapper();
+        Map<String, Shop> shopMap = new LinkedHashMap<>();
+
+        for (String key : doc.keySet()) {
+            if (key.equals("_id")) continue;
+            Object value = doc.get(key);
+            Shop shop = mapper.convertValue(value, Shop.class);
+            shopMap.put(key, shop);
+        }
 
         List<Map<String, ?>> maps = new ArrayList<>(Arrays.asList(
                 allItem,
@@ -371,7 +386,7 @@ public class ServiceDatabase {
                 allMonsters,
                 allPassives,
                 allRunes,
-                allShops
+                shopMap
         ));
 
         for (Map<String, ?> map : maps) {
@@ -402,7 +417,7 @@ public class ServiceDatabase {
         saveRequest.setAllPassiveMap(allPassivesToPut);
         saveRequest.setAllPlayerMap(allPlayers);
         saveRequest.setAllRuneMap(allRunes);
-        saveRequest.setAllShop(allShops);
+        saveRequest.setAllShop(shopMap);
         return saveRequest;
     }
 //

@@ -45,7 +45,7 @@ public class Database {
 
     public Database() {
         loadMongo();
-        loadItemFromJson();
+//        loadItemFromJson();
         mapEverything();
         updateEverything();
         initCounterAllUnit();
@@ -96,15 +96,15 @@ public class Database {
     }
 
     public void loadItemFromJson() {
-//        allPlayerMap = JsonUtils.loadFromFile("/json/players.json", new TypeReference<Map<String, Unit>>() {});
-//        allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
-//        allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
-//        allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
-//        allNormalItemMap = JsonUtils.loadFromFile("/json/items.json", new TypeReference<Map<String, Item>>() {});
-//        allConsumableMap = JsonUtils.loadFromFile("/json/consumables.json", new TypeReference<Map<String, Consumable>>() {});
-//        allDreamItem = JsonUtils.loadFromFile("/json/dreams.json", new TypeReference<Map<String, Dream>>() {});
-//        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
-//        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
+        allPlayerMap = JsonUtils.loadFromFile("/json/players.json", new TypeReference<Map<String, Unit>>() {});
+        allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
+        allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
+        allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
+        allNormalItemMap = JsonUtils.loadFromFile("/json/items.json", new TypeReference<Map<String, Item>>() {});
+        allConsumableMap = JsonUtils.loadFromFile("/json/consumables.json", new TypeReference<Map<String, Consumable>>() {});
+        allDreamItem = JsonUtils.loadFromFile("/json/dreams.json", new TypeReference<Map<String, Dream>>() {});
+        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
+        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
         System.out.println("before load all shop from json : "+allShop);
         allShop = JsonUtils.loadFromFile("/json/shops.json", new TypeReference<Map<String, Shop>>() {});
         System.out.println("after load all shop from json : "+allShop);
