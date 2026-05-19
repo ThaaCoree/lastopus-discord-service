@@ -365,6 +365,7 @@ public class ServiceDatabase {
         );
 
         ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         Map<String, Shop> shopMap = new LinkedHashMap<>();
 
         for (String key : doc.keySet()) {
