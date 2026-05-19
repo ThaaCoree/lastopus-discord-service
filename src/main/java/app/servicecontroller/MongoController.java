@@ -1,6 +1,7 @@
 package app.servicecontroller;
 
 import app.servicemodel.SaveRequest;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import model.entity.Card;
 import model.entity.Conditions;
 import model.entity.PassiveNode;
@@ -9,6 +10,7 @@ import model.entity.items.*;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -94,9 +96,30 @@ public class MongoController {
     @PostMapping("/save_player")
     public String save_player(@RequestBody Map<String, Unit> allPlayerMap) {
 
-        // ลบทั้ง collection ก่อน
-        mongoTemplate.dropCollection("players");
-        mongoTemplate.save(allPlayerMap, "players");
+        // ดึง document เดิมมาก่อน
+        org.bson.Document existing = mongoTemplate.findOne(
+                new Query(), org.bson.Document.class, "players"
+        );
+
+        ObjectId id = existing != null
+                ? existing.getObjectId("_id")
+                : new ObjectId();
+
+        // สร้าง document ใหม่จาก map
+        org.bson.Document doc = new org.bson.Document();
+        doc.put("_id", id);
+
+        ObjectMapper mapper = new ObjectMapper();
+        allPlayerMap.forEach((key, unit) ->
+                doc.put(key, mapper.convertValue(unit, org.bson.Document.class))
+        );
+
+        // upsert ทับ document เดิม
+        mongoTemplate.getCollection("players").replaceOne(
+                com.mongodb.client.model.Filters.eq("_id", id),
+                doc,
+                new com.mongodb.client.model.ReplaceOptions().upsert(true)
+        );
 
         System.out.println("saved player");
         return "saved";

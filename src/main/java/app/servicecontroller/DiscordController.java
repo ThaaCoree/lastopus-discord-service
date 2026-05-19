@@ -262,18 +262,12 @@ public class DiscordController {
 
         String name = getPlayerName(playerMessage.roles);
 
-        t = System.currentTimeMillis();
         Unit updater = database.findPlayer(name);
-        System.out.println("[1] findPlayer: " + (System.currentTimeMillis() - t) + "ms");
 
         if (updater != null) {
-            t = System.currentTimeMillis();
             var credentials = database.load_credentials();
-            System.out.println("[2] load_credentials: " + (System.currentTimeMillis() - t) + "ms");
 
-            t = System.currentTimeMillis();
             updater.writeToSheet(credentials);
-            System.out.println("[3] writeToSheet: " + (System.currentTimeMillis() - t) + "ms");
 
             System.out.println("Total: " + (System.currentTimeMillis() - start) + "ms");
             return "อัพเดทชีทของ " + updater.getName() + " เสร็จสิ้น";

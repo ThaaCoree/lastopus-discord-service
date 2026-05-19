@@ -329,7 +329,7 @@ public class ServiceDatabase {
         long t;
         t = System.currentTimeMillis();
 
-        ObjectId playersDocId = new ObjectId("6a07e7b043a4fd4021ff9262");
+        ObjectId playersDocId = new ObjectId("6a0bacabad25d430756d6be8");
         Query query = new Query(Criteria.where("_id").is(playersDocId));
         query.fields().include(unit.getName()); // โหลดแค่ field ที่ต้องการ
 
@@ -459,7 +459,7 @@ public class ServiceDatabase {
 
             t = System.currentTimeMillis();
             // hardcode _id ของ document players ไว้เลย ไม่ต้อง find ก่อน
-            ObjectId playersDocId = new ObjectId("6a07e7b043a4fd4021ff9262");
+            ObjectId playersDocId = new ObjectId("6a0bacabad25d430756d6be8");
             Query updateQuery = new Query(Criteria.where("_id").is(playersDocId));
             Update update = new Update().set(unit.getName(), unit);
             mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
