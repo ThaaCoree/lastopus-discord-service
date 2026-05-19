@@ -34,7 +34,7 @@ public class APIController {
     public Unit getAllUnit(@RequestParam String name) {
         Unit unit_to_load = database.findPlayer(name);
         if (unit_to_load != null) {
-            database.load_player(unit_to_load);
+            database.load_player(name);
             return database.findPlayer(unit_to_load.getName());
         } else {
             return new Unit();
@@ -44,7 +44,7 @@ public class APIController {
     @PostMapping("/update_unit")
     public String updateUnit(@RequestBody RuneboardRequest request) {
         Unit unit_to_load = database.findPlayer(request.player_name);
-        database.load_player(unit_to_load);
+        database.load_player(request.player_name);
         Unit unit = database.findPlayer(request.player_name);
 //        System.out.println("socketed runes : "+request.socketed_runes);
 //        System.out.println("unit's socketed runes before set "+unit.getSocketed_runes());

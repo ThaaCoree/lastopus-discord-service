@@ -325,24 +325,21 @@ public class ServiceDatabase {
         }
     }
 
-    public void load_player(Unit unit) {
-        long t;
-        t = System.currentTimeMillis();
-
+    public void load_player(String name) {
         ObjectId playersDocId = new ObjectId("6a0bacabad25d430756d6be8");
         Query query = new Query(Criteria.where("_id").is(playersDocId));
-        query.fields().include(unit.getName()); // โหลดแค่ field ที่ต้องการ
+        query.fields().include(name);
 
         Map<String, Object> result = mongoTemplate.findOne(query, Map.class, "players");
 
-        if (result != null && result.containsKey(unit.getName())) {
+        if (result != null && result.containsKey(name)) {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-            Unit loadedUnit = mapper.convertValue(result.get(unit.getName()), Unit.class);
+            Unit loadedUnit = mapper.convertValue(result.get(name), Unit.class);
 
-            allPlayerMap.put(unit.getName(), loadedUnit);
-            allUnit.put(unit.getName(), loadedUnit);
+            allPlayerMap.put(name, loadedUnit);
+            allUnit.put(name, loadedUnit);
             updateUnitObjects();
         }
     }

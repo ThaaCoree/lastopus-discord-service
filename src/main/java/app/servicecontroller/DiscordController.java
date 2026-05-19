@@ -521,8 +521,7 @@ public class DiscordController {
             }
         }
         if (!name.isEmpty()) {
-            Unit unit = database.findPlayer(name);
-            database.load_player(unit);
+            database.load_player(name);
         }
         return name;
     }
