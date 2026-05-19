@@ -337,7 +337,7 @@ public class ServiceDatabase {
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
             Unit loadedUnit = mapper.convertValue(result.get(name), Unit.class);
-
+            
             allPlayerMap.put(name, loadedUnit);
             allUnit.put(name, loadedUnit);
             updateUnitObjects();

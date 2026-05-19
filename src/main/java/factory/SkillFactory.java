@@ -587,6 +587,7 @@ public class SkillFactory {
         skillMap.put(Dawn_Bringer.NAME, Dawn_Bringer::new);
         skillMap.put(Divinarius.NAME, Divinarius::new);
         skillMap.put(Istenta.NAME, Istenta::new);
+        skillMap.put(Fairy_Lore.NAME, Fairy_Lore::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 
