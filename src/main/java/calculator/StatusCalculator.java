@@ -97,6 +97,8 @@ public class StatusCalculator {
             if (unit.getRune_modifiers().getStatusModifiers().get(type) == null) continue;
             double runeToAdd = unit.getRune_modifiers().getStatusModifiers().get(type).getFlat();
             skillFlatSum.merge(type, runeToAdd, Double::sum);
+            double rune_to_mult = unit.getRune_modifiers().getStatusModifiers().get(type).getGlobalMult();
+            globalMultProduct.merge(type, rune_to_mult+1, (oldVal, newVal) -> oldVal * newVal);
         }
 
         for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
