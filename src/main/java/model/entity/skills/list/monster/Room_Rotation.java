@@ -17,13 +17,12 @@ public class Room_Rotation extends Skill {
 
     public Room_Rotation() {
         super();
-        setDescription("พลิกหมุนห้อง ยูนิตศัตรูที่ได้รับแรงกระแทกจากการเปลี่ยนของตำแหน่งในระหว่างนี้ ได้รับความเสียหายจริง XA หน่วย");
+        setDescription("พลิกหมุนห้อง ยูนิตศัตรูที่ได้รับแรงกระแทกจากการเปลี่ยนของตำแหน่งในระหว่างนี้ ได้รับความเสียหายจริงอย่างน้อย XA หน่วย และมากขึ้นอีกตามความรุนแรงของการปะทะ");
         setActionType("Action");
         setManaCost(0);
         setCooldown(0);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.75*PATK+0.75*MATK+0.75*RATK"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.5*PATK+0.5*MATK+0.5*RATK"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.STRIKE);
     }
 
     @Override

@@ -36,13 +36,13 @@ public class InventoryManager {
         unit.getInventoryItemAmount().put(nextSlot,0);
     }
 
-    public void increaseSlot(Item toPut) {
+    public void increaseSlot(Item toPut, int quantity) {
         int nextSlot = 0;
         for (Item item : unit.getInventoryItems().values()) {
             nextSlot++;
         }
         replaceItem(nextSlot,toPut);
-        unit.getInventoryItemAmount().put(nextSlot,1);
+        unit.getInventoryItemAmount().put(nextSlot,quantity);
     }
 
     public void decreaseSlot() {
@@ -75,7 +75,7 @@ public class InventoryManager {
                 return;
             }
         }
-        increaseSlot(item);
+        increaseSlot(item, amount);
     }
 
     public void addItem(Item item) {
