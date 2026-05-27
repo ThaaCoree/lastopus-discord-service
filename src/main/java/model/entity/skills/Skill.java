@@ -460,6 +460,8 @@ public abstract class Skill {
         double ppen= 0;
         double mpen= 0;
         double dmgamp= 0;
+        double pblock = 0;
+        double mblock = 0;
         if (strikerUnit != null) {
             ppen = strikerUnit.getStats().get(StatType.PHYSICALPENETRATE).getFinal();
             mpen = strikerUnit.getStats().get(StatType.MAGICALPENETRATE).getFinal();
@@ -469,6 +471,8 @@ public abstract class Skill {
             pdef = defenderUnit.getStats().get(StatType.PHYSICALDEFENSE).getFinal();
             mdef = defenderUnit.getStats().get(StatType.MAGICALDEFENSE).getFinal();
             dmgred = defenderUnit.getStats().get(StatType.DAMAGEREDUCTION).getFinal();
+            pblock = defenderUnit.getStats().get(StatType.PHYSICALBLOCK).getFinal();
+            mblock = defenderUnit.getStats().get(StatType.MAGICALBLOCK).getFinal();
         }
         pdef -= ppen;
         mdef -= mpen;
@@ -498,8 +502,10 @@ public abstract class Skill {
         multiplier_magical = Math.min(multiplier_magical, 2.0);
         if (damageType.equals(DamageType.PHYSICAL)) {
             finaldmg = rawDamage*multiplier_physical;
+            finaldmg -= pblock;
         } else if (damageType.equals(DamageType.MAGICAL)) {
             finaldmg = rawDamage*multiplier_magical;
+            finaldmg -= mblock;
         } else if (Double.isNaN(rawDamage) || rawDamage == 0) {
             finaldmg = 0;
         } else {

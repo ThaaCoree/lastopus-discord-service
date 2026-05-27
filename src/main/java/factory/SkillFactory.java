@@ -588,6 +588,28 @@ public class SkillFactory {
         skillMap.put(Divinarius.NAME, Divinarius::new);
         skillMap.put(Istenta.NAME, Istenta::new);
         skillMap.put(Fairy_Lore.NAME, Fairy_Lore::new);
+        skillMap.put(Aramus.NAME, Aramus::new);
+        skillMap.put(ERNAS.NAME, ERNAS::new);
+        skillMap.put(Gaias_End.NAME, Gaias_End::new);
+        skillMap.put(Zone_Holder.NAME, Zone_Holder::new);
+        skillMap.put(Gradual_Enclose.NAME, Gradual_Enclose::new);
+        skillMap.put(Trap_Master.NAME, Trap_Master::new);
+        skillMap.put(Room_Surf.NAME, Room_Surf::new);
+        skillMap.put(Aqua_Beam.NAME, Aqua_Beam::new);
+        skillMap.put(Room_Rotation.NAME, Room_Rotation::new);
+        skillMap.put(Knife_Throw.NAME, Knife_Throw::new);
+        skillMap.put(Knife_Draw.NAME, Knife_Draw::new);
+        skillMap.put(Pinning_Bolt.NAME, Pinning_Bolt::new);
+        skillMap.put(Polarize.NAME, Polarize::new);
+        skillMap.put(Despair.NAME, Despair::new);
+        skillMap.put(Immunization.NAME, Immunization::new);
+        skillMap.put(Crush.NAME, Crush::new);
+        skillMap.put(Chain_Lightning.NAME, Chain_Lightning::new);
+        skillMap.put(Brick_Break.NAME, Brick_Break::new);
+        skillMap.put(Spark.NAME, Spark::new);
+        skillMap.put(Sand_Explosion.NAME, Sand_Explosion::new);
+        skillMap.put(Army_Commander.NAME, Army_Commander::new);
+        skillMap.put(Starbound_Anomalus.NAME, Starbound_Anomalus::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

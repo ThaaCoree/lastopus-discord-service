@@ -66,7 +66,7 @@ public class Glyph_of_Flame extends Skill implements SkillWithCondition {
         sendActionEvent(combatFlow.getEventBus(),
                 ActionEvent.builder(getName(), getUser(), getEnemies(combatFlow))
                         .effect(ActionEffectType.DAMAGE_MAGICAL, xa, 1)
-                        .addActType(ActType.CAST, ActType.STRIKE)
+                        .addActType(ActType.CAST, ActType.STRIKE, ActType.CONDITION_GIVEN)
                         .condition(condition, duration)
                         .build()
         );

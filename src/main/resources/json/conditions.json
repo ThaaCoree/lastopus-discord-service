@@ -21002,7 +21002,7 @@
   },
   "Good bye" : {
     "name" : "Good bye",
-    "description" : "ครั้งถัดไปที่โจมตีคริติคอลจะสร้างความเสียหายกายภาพเพิ่มเติม 17.64008021148549 หน่วย",
+    "description" : "ครั้งถัดไปที่โจมตีคริติคอลจะสร้างความเสียหายกายภาพเพิ่มเติม 24.082945119062334 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -21016,14 +21016,14 @@
   "Demonspeed" : {
     "name" : "Demonspeed",
     "description" : "",
-    "statusDescription" : "425.46% GlobalAttackSPD\n\n",
+    "statusDescription" : "420.61% GlobalAttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 4.2545851,
+          "globalMult" : 4.2060927,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21038,14 +21038,14 @@
   "Silentstriker" : {
     "name" : "Silentstriker",
     "description" : "",
-    "statusDescription" : "531.82% GlobalCritDamage\n\n",
+    "statusDescription" : "525.76% GlobalCritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 5.318231375,
+          "globalMult" : 5.257615875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21073,14 +21073,14 @@
   "Last Strike" : {
     "name" : "Last Strike",
     "description" : "",
-    "statusDescription" : "425.46% GlobalAttackSPD\n\n",
+    "statusDescription" : "420.61% GlobalAttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 4.2545851,
+          "globalMult" : 4.2060927,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21287,10 +21287,10 @@
   "Tyranovia" : {
     "name" : "Tyranovia",
     "description" : "",
-    "statusDescription" : "681.82 PDEF\n681.82 MDEF\n206.37% GlobalCritShield\n\n",
+    "statusDescription" : "681.82 MDEF\n681.82 PDEF\n206.37% GlobalCritShield\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALDEFENSE" : {
+        "MAGICALDEFENSE" : {
           "flat" : 681.821457589085,
           "mult" : 0.0,
           "override" : "NaN",
@@ -21298,7 +21298,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "MAGICALDEFENSE" : {
+        "PHYSICALDEFENSE" : {
           "flat" : 681.821457589085,
           "mult" : 0.0,
           "override" : "NaN",
@@ -21325,10 +21325,10 @@
   "Rex" : {
     "name" : "Rex",
     "description" : "",
-    "statusDescription" : "103.18% GlobalMSPD\n103.18% GlobalEvasion\n\n",
+    "statusDescription" : "103.18% GlobalEvasion\n103.18% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "MOVEMENTSPEED" : {
+        "EVASION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -21336,7 +21336,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "EVASION" : {
+        "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -21494,22 +21494,22 @@
   "Regalia Revenos" : {
     "name" : "Regalia Revenos",
     "description" : "",
-    "statusDescription" : "286.72% GlobalMSPD\n37.82% GlobalCritDamage\n\n",
+    "statusDescription" : "37.82% GlobalCritDamage\n286.72% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 2.8672083711532577,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.37816092308043797,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 2.8672083711532577,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -21618,11 +21618,349 @@
   },
   "Impending Stab" : {
     "name" : "Impending Stab",
-    "description" : "รับความเสียหายกายภาพ 1394.5631849040421 หน่วยเมื่อจบรอบเทิร์น",
+    "description" : "รับความเสียหายกายภาพ 1894.90375999477 หน่วยเมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MANAPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "BUFFAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEBUFFAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITCHANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MANAREGEN" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHREGEN" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "POISONAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNITEAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "BLEEDAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ACCURACY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEREDUCTION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ATTACKSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CASTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALPENETRATE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALPENETRATE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RESERVATION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITSHIELD" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SOULPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNOREPDEF" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNOREMDEF" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEBUFFRESISTANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "VITALITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "LUCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
       "transferModifiers" : { },
       "skillModifiers" : { }
     },
@@ -21657,7 +21995,7 @@
   },
   "Fall Unwritten" : {
     "name" : "Fall Unwritten",
-    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 33.38811หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
+    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 132.80352073840908หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -21735,7 +22073,7 @@
   },
   "Twilight Seafloor" : {
     "name" : "Twilight Seafloor",
-    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 63.644999999999996 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
+    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 65.895 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -23306,14 +23644,6 @@
     "statusDescription" : "Set Speed to 26.2\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "SPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : 26.202740125850003,
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
@@ -23550,6 +23880,14 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : 26.202740125850003,
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
@@ -24084,7 +24422,7 @@
   "Istenta" : {
     "name" : "Istenta",
     "description" : "",
-    "statusDescription" : "25.47% GlobalPATK\n25.47% GlobalMATK\n25.47% GlobalRATK\n25.47% GlobalPDEF\n25.47% GlobalMDEF\n\n",
+    "statusDescription" : "25.47% GlobalPATK\n25.47% GlobalMATK\n25.47% GlobalRATK\n25.47% GlobalMDEF\n25.47% GlobalPDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -24111,7 +24449,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "PHYSICALDEFENSE" : {
+        "MAGICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -24119,7 +24457,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "MAGICALDEFENSE" : {
+        "PHYSICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -24608,104 +24946,6 @@
     "conditionType" : "DEBUFF",
     "conditionTierType" : "GENERAL"
   },
-  "Blue Comet" : {
-    "name" : "Blue Comet",
-    "description" : "",
-    "statusDescription" : "22.52% GlobalPATK\n22.52% GlobalMATK\n22.52% GlobalRATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.225243535,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.225243535,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.225243535,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Forged" : {
-    "name" : "Forged",
-    "description" : "",
-    "statusDescription" : "35.83% GlobalPDEF\n35.83% GlobalMDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.35834198749999996,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.35834198749999996,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Ode of the Shooting Star" : {
-    "name" : "Ode of the Shooting Star",
-    "description" : "",
-    "statusDescription" : "1946.27 PDEF\n1946.27 MDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 1946.2741611346223,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 1946.2741611346223,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
   "Solar Bound" : {
     "name" : "Solar Bound",
     "description" : "",
@@ -25057,99 +25297,22 @@
     "conditionType" : "NEUTRAL",
     "conditionTierType" : "BOUND"
   },
-  "Rite of the Pale Moon Stiff" : {
-    "name" : "Rite of the Pale Moon Stiff",
-    "description" : "",
-    "statusDescription" : "34.5% GlobalMSPD\n34.5% GlobalEvasion\n\n",
+  "Forget" : {
+    "name" : "Forget",
+    "description" : "ยกเลิก Action ครั้งถัดไป",
+    "statusDescription" : "\n",
     "modifiers" : {
-      "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.34502299999999997,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.34502299999999997,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
+      "statModifiers" : { },
       "statusModifiers" : { },
       "transferModifiers" : { },
       "skillModifiers" : { }
     },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
   },
-  "Rite of the Pale Moon Swift" : {
-    "name" : "Rite of the Pale Moon Swift",
-    "description" : "",
-    "statusDescription" : "41.9% GlobalMSPD\n41.9% GlobalEvasion\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.41895649999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.41895649999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Rite of the Pale Moon Secure" : {
-    "name" : "Rite of the Pale Moon Secure",
-    "description" : "",
-    "statusDescription" : "41.9% GlobalMSPD\n41.9% GlobalEvasion\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.41895649999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.41895649999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Star's Anchor" : {
-    "name" : "Star's Anchor",
-    "description" : "จะได้รับ Debris 1079.64 หน่วยเมื่อเริ่มรอบเทิร์น",
+  "Golden Blessing" : {
+    "name" : "Golden Blessing",
+    "description" : "ได้รับ Action 1.0 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -25158,12 +25321,533 @@
       "skillModifiers" : { }
     },
     "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Divine Critical" : {
+    "name" : "Divine Critical",
+    "description" : "",
+    "statusDescription" : "36.26% GlobalCritChance\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITCHANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3626168426104687,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Fickle Fate" : {
+    "name" : "Fickle Fate",
+    "description" : "ไม่สามารถใช้งานแอคชันได้",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Fate Fracture" : {
+    "name" : "Fate Fracture",
+    "description" : "",
+    "statusDescription" : "71.96% GlobalPDEF\n71.96% GlobalMDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.7196067127675868,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.7196067127675868,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Twisted Fate" : {
+    "name" : "Twisted Fate",
+    "description" : "",
+    "statusDescription" : "31.56% GlobalPATK\n31.56% GlobalMATK\n31.56% GlobalRATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3156169792840293,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3156169792840293,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3156169792840293,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Vah'ris" : {
+    "name" : "Vah'ris",
+    "description" : "",
+    "statusDescription" : "46% GlobalCritDamage\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.45998,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Kyr'raneth" : {
+    "name" : "Kyr'raneth",
+    "description" : "",
+    "statusDescription" : "27.6% CritChance\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITCHANCE" : {
+          "flat" : 0.275988,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Tolerated Destruction" : {
+    "name" : "Tolerated Destruction",
+    "description" : "",
+    "statusDescription" : "31.65% GlobalPATK\n31.65% GlobalMATK\n31.65% GlobalRATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.31649999999999995,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.31649999999999995,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.31649999999999995,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Connect" : {
+    "name" : "Connect",
+    "description" : "เมื่อจู่โจม, Shiranui จะจู่โจมออกไปพร้อมกันด้วย สร้างความเสียหายเวท 222.9377506688866 หน่วย",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Power Pump" : {
+    "name" : "Power Pump",
+    "description" : "",
+    "statusDescription" : "29.8% GlobalPATK\n29.8% GlobalMATK\n29.8% GlobalRATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.29802500000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.29802500000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.29802500000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
   },
-  "Fleeting Guidance" : {
-    "name" : "Fleeting Guidance",
+  "FORCE" : {
+    "name" : "FORCE",
     "description" : "",
-    "statusDescription" : "Set MSPD to 577.9\n\n",
+    "statusDescription" : "44.7% GlobalAGI\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.4470375,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Omit" : {
+    "name" : "Omit",
+    "description" : "",
+    "statusDescription" : "-37.25% GlobalPATK\n-37.25% GlobalMATK\n-37.25% GlobalRATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.37253125000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.37253125000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.37253125000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Tired" : {
+    "name" : "Tired",
+    "description" : "",
+    "statusDescription" : "-59.61% GlobalPDEF\n-59.61% GlobalMDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5960500000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5960500000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Careless" : {
+    "name" : "Careless",
+    "description" : "",
+    "statusDescription" : "-47.68% GlobalAGI\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.47684000000000004,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "The One Who Last Wish" : {
+    "name" : "The One Who Last Wish",
+    "description" : "กำลังอยู่ในสภาพร่างจิต ไม่รับความเสียหายกายภาพ",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Guilt" : {
+    "name" : "Guilt",
+    "description" : "",
+    "statusDescription" : "51.58% GlobalSTR\n51.58% GlobalAGI\n51.58% GlobalVIT\n51.58% GlobalDEX\n51.58% GlobalWIS\n51.58% GlobalINT\n51.58% GlobalLUK\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "VITALITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "LUCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5158125,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Prophet's Exposure" : {
+    "name" : "Prophet's Exposure",
+    "description" : "",
+    "statusDescription" : "-75% DMGReduction\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "DAMAGEREDUCTION" : {
+          "flat" : -0.75,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Light Fatigued" : {
+    "name" : "Light Fatigued",
+    "description" : "",
+    "statusDescription" : "-45.82% GlobalPATK\n-45.82% GlobalMATK\n-45.82% GlobalRATK\n-45.82% GlobalMSPD\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.45824999999999994,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.45824999999999994,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.45824999999999994,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.45824999999999994,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Light Drained" : {
+    "name" : "Light Drained",
+    "description" : "",
+    "statusDescription" : "-45.82% GlobalHealAMP\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "HEALAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.45824999999999994,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Slip" : {
+    "name" : "Slip",
+    "description" : "ทุกๆการสั่งเดินหนึ่งครั้งในระหว่างเทิร์น มีโอกาส 40% ที่จะลื่นล้มและจบรอบเทิร์น",
+    "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -25225,7 +25909,7 @@
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
-          "override" : 577.9049427030379,
+          "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
@@ -25508,8 +26192,8 @@
       "transferModifiers" : { },
       "skillModifiers" : { }
     },
-    "conditionType" : "NEUTRAL",
-    "conditionTierType" : "UNDISPELLABLE"
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BASIC"
   },
   "Wings" : {
     "name" : "Wings",
@@ -25543,7 +26227,7 @@
   },
   "Crux Mortis" : {
     "name" : "Crux Mortis",
-    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 15.571665919457393 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 27.250415359050436 หน่วย",
+    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 36.19827869428375 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 63.34698771499656 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26310,7 +26994,7 @@
   },
   "Starving Beast" : {
     "name" : "Starving Beast",
-    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 28.439639999999997 หน่วย, หากครบเงื่อนไข ฟื้นฟู 56.879279999999994 หน่วยแทน",
+    "description" : "เมื่อสร้างความเสียหาย ฟื้นฟูพลังชีวิต 29.3391 หน่วย, หากครบเงื่อนไข ฟื้นฟู 58.6782 หน่วยแทน",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26324,11 +27008,11 @@
   "Sandevistan" : {
     "name" : "Sandevistan",
     "description" : "",
-    "statusDescription" : "891.58 Evasion\n\n",
+    "statusDescription" : "965.63 Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
-          "flat" : 891.5813892252468,
+          "flat" : 965.6329996260148,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -26717,7 +27401,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.2106228470741196,
+          "globalMult" : 0.21059156740376275,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -26732,14 +27416,14 @@
   "Elemental Drain" : {
     "name" : "Elemental Drain",
     "description" : "",
-    "statusDescription" : "-23.17% GlobalEvasion\n-15.8% GlobalAttackSPD\n-15.8% GlobalCastSPD\n\n",
+    "statusDescription" : "-23.17% GlobalEvasion\n-15.79% GlobalAttackSPD\n-15.79% GlobalCastSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.23168513178153158,
+          "globalMult" : -0.231650724144139,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -26747,7 +27431,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.1579671353055897,
+          "globalMult" : -0.15794367555282207,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -26755,7 +27439,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : -0.1579671353055897,
+          "globalMult" : -0.15794367555282207,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -26780,177 +27464,9 @@
     "conditionType" : "NEUTRAL",
     "conditionTierType" : "BOUND"
   },
-  "Nebula" : {
-    "name" : "Nebula",
-    "description" : "กำลังรับผลของ Nebula",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "NEUTRAL",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Nebula Maelstorm" : {
-    "name" : "Nebula Maelstorm",
-    "description" : "",
-    "statusDescription" : "109268.66% GlobalPATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 1092.6865596239998,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Nebula Icarus" : {
-    "name" : "Nebula Icarus",
-    "description" : "",
-    "statusDescription" : "81.03% GlobalCritDamage\n81.03% GlobalAccuracy\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.8103448351723671,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ACCURACY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.8103448351723671,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Nebula Icarus Wound" : {
-    "name" : "Nebula Icarus Wound",
-    "description" : "ไม่สามารถรับฮีลได้ในระหว่างผลของสกิลนี้",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Nebula Revenos" : {
-    "name" : "Nebula Revenos",
-    "description" : "",
-    "statusDescription" : "17.66 LUK\n102.15 MATK\n353.18% GlobalMSPD\n51.59% GlobalAttackSPD\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MAGICALATTACK" : {
-          "flat" : 102.15042899999997,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 3.531821762167107,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ATTACKSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.5159195450597404,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : {
-        "LUCK" : {
-          "flat" : 17.659108810835534,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Nebula Titan" : {
-    "name" : "Nebula Titan",
-    "description" : "",
-    "statusDescription" : "618.07 PDEF\n618.07 MDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 618.0688083792437,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 618.0688083792437,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Fatima" : {
-    "name" : "Fatima",
-    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 645.85 หน่วยทุกเทิร์น",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
   "Open The Pages HP" : {
     "name" : "Open The Pages HP",
-    "description" : "จะถูกฮีลเป็นจำนวน 2104.49 เมื่อจบรอบเทิร์น",
+    "description" : "จะถูกฮีลเป็นจำนวน 2126.04 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26963,7 +27479,7 @@
   },
   "Open The Pages MP" : {
     "name" : "Open The Pages MP",
-    "description" : "จะฟื้นฟู MP เป็นจำนวน 26.51 เมื่อจบรอบเทิร์น",
+    "description" : "จะฟื้นฟู MP เป็นจำนวน 26.44 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26977,11 +27493,11 @@
   "Forgotten Pages" : {
     "name" : "Forgotten Pages",
     "description" : "",
-    "statusDescription" : "\n",
+    "statusDescription" : "99.42 PATK\n99.42 MATK\n99.42 RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
-          "flat" : 0.0,
+          "flat" : 99.4154107384091,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -26989,7 +27505,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALATTACK" : {
-          "flat" : 0.0,
+          "flat" : 99.4154107384091,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -26997,7 +27513,7 @@
           "passiveMult" : 0.0
         },
         "RANGEDATTACK" : {
-          "flat" : 0.0,
+          "flat" : 99.4154107384091,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -27363,14 +27879,14 @@
   "Twisted Force" : {
     "name" : "Twisted Force",
     "description" : "",
-    "statusDescription" : "133.85% GlobalPATK\n133.85% GlobalMATK\n133.85% GlobalRATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
+    "statusDescription" : "135.11% GlobalPATK\n135.11% GlobalMATK\n135.11% GlobalRATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27378,7 +27894,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27386,7 +27902,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27433,7 +27949,7 @@
   "Twisted Wrath" : {
     "name" : "Twisted Wrath",
     "description" : "",
-    "statusDescription" : "Set CritChance to 0%\n401.54% GlobalCritDamage\n\n",
+    "statusDescription" : "Set CritChance to 0%\n405.33% GlobalCritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITCHANCE" : {
@@ -27448,7 +27964,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 4.015416814300356,
+          "globalMult" : 4.053273155700948,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27463,7 +27979,7 @@
   "Twisted Haste" : {
     "name" : "Twisted Haste",
     "description" : "",
-    "statusDescription" : "Set PDEF to 0\nSet MDEF to 0\n200.77% GlobalMSPD\n133.85% GlobalAttackSPD\n133.85% GlobalCastSPD\n\n",
+    "statusDescription" : "Set PDEF to 0\nSet MDEF to 0\n202.66% GlobalMSPD\n135.11% GlobalAttackSPD\n135.11% GlobalCastSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -27486,7 +28002,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.007708407150178,
+          "globalMult" : 2.026636577850474,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27494,7 +28010,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27502,7 +28018,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27517,7 +28033,7 @@
   "Twisted Dense" : {
     "name" : "Twisted Dense",
     "description" : "",
-    "statusDescription" : "Set PATK to 0\nSet MATK to 0\nSet RATK to 0\n200.77% GlobalPDEF\n200.77% GlobalMDEF\n200.77% GlobalPBLOCK\n200.77% GlobalMBLOCK\n\n",
+    "statusDescription" : "Set PATK to 0\nSet MATK to 0\nSet RATK to 0\n202.66% GlobalPDEF\n202.66% GlobalMDEF\n202.66% GlobalPBLOCK\n202.66% GlobalMBLOCK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -27548,7 +28064,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.007708407150178,
+          "globalMult" : 2.026636577850474,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27556,7 +28072,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.007708407150178,
+          "globalMult" : 2.026636577850474,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27564,7 +28080,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.007708407150178,
+          "globalMult" : 2.026636577850474,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27572,7 +28088,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.007708407150178,
+          "globalMult" : 2.026636577850474,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -27587,14 +28103,14 @@
   "Twisted Bless" : {
     "name" : "Twisted Bless",
     "description" : "",
-    "statusDescription" : "133.85% GlobalHealAMP\n66.92% GlobalBuffAMP\n66.92% GlobalDebuffAMP\n-200% GlobalManaRegen\n\n",
+    "statusDescription" : "135.11% GlobalHealAMP\n67.55% GlobalBuffAMP\n67.55% GlobalDebuffAMP\n-200% GlobalManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.338472271433452,
+          "globalMult" : 1.3510910519003159,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27602,7 +28118,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.669236135716726,
+          "globalMult" : 0.6755455259501579,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27610,7 +28126,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.669236135716726,
+          "globalMult" : 0.6755455259501579,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -27643,6 +28159,1057 @@
     "conditionType" : "NEUTRAL",
     "conditionTierType" : "ADVANCED"
   },
+  "Paper Marching" : {
+    "name" : "Paper Marching",
+    "description" : "",
+    "statusDescription" : "27.08% GlobalMSPD\n20.31% GlobalEvasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.27078935,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.20309201249999997,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Physical Immune" : {
+    "name" : "Physical Immune",
+    "description" : "รับความเสียหายกายภาพจากทุกแหล่ง 1 หน่วย",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "BOUND"
+  },
+  "Magical Immune" : {
+    "name" : "Magical Immune",
+    "description" : "รับความเสียหายเวทจากทุกแหล่ง 1 หน่วย",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "BOUND"
+  },
+  "Pure Immune" : {
+    "name" : "Pure Immune",
+    "description" : "รับความเสียหายโดยตรงจากทุกแหล่ง 1 หน่วย",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "BOUND"
+  },
+  "Brick Break : Head" : {
+    "name" : "Brick Break : Head",
+    "description" : "",
+    "statusDescription" : "-77.75% GlobalSTR\n-77.75% GlobalDEX\n-77.75% GlobalINT\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.7775000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.7775000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.7775000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Brick Break : Body" : {
+    "name" : "Brick Break : Body",
+    "description" : "",
+    "statusDescription" : "-77.75% GlobalVIT\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "VITALITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.7775000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Brick Break : Leg" : {
+    "name" : "Brick Break : Leg",
+    "description" : "",
+    "statusDescription" : "-77.75% GlobalAGI\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.7775000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Despair-Fragile" : {
+    "name" : "Despair-Fragile",
+    "description" : "",
+    "statusDescription" : "-20.66% DMGReduction\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "DAMAGEREDUCTION" : {
+          "flat" : -0.20662499999999998,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Despair-Gentle" : {
+    "name" : "Despair-Gentle",
+    "description" : "",
+    "statusDescription" : "-34.44% DMGAmplifier\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "DAMAGEAMPLIFIER" : {
+          "flat" : -0.344375,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Despair-Shock" : {
+    "name" : "Despair-Shock",
+    "description" : "",
+    "statusDescription" : "-41.32% GlobalAGI\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.41324999999999995,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Despair-Fate" : {
+    "name" : "Despair-Fate",
+    "description" : "",
+    "statusDescription" : "-0.41 LUK\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "LUCK" : {
+          "flat" : -0.41324999999999995,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Despair-Confusion" : {
+    "name" : "Despair-Confusion",
+    "description" : "",
+    "statusDescription" : "27.55% Reservation\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "RESERVATION" : {
+          "flat" : 0.2755,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Vital Cut" : {
+    "name" : "Vital Cut",
+    "description" : "",
+    "statusDescription" : "-11.03% GlobalSTR\n-11.03% GlobalAGI\n-11.03% GlobalVIT\n-11.03% GlobalDEX\n-11.03% GlobalWIS\n-11.03% GlobalINT\n-11.03% GlobalLUK\n\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "VITALITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "LUCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.11025000000000001,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Blue Comet" : {
+    "name" : "Blue Comet",
+    "description" : "",
+    "statusDescription" : "23.13% GlobalPATK\n23.13% GlobalRATK\n23.13% GlobalMATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2313484821367622,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2313484821367622,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2313484821367622,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Forged" : {
+    "name" : "Forged",
+    "description" : "",
+    "statusDescription" : "36.81% GlobalMDEF\n36.81% GlobalPDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3680544033993944,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3680544033993944,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Ode of the Shooting Star" : {
+    "name" : "Ode of the Shooting Star",
+    "description" : "",
+    "statusDescription" : "2115.33 MDEF\n2115.33 PDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 2115.33115897506,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 2115.33115897506,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Rite of the Pale Moon Stiff" : {
+    "name" : "Rite of the Pale Moon Stiff",
+    "description" : "",
+    "statusDescription" : "35.15% GlobalMSPD\n35.15% GlobalEvasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3515268268995384,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3515268268995384,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Rite of the Pale Moon Swift" : {
+    "name" : "Rite of the Pale Moon Swift",
+    "description" : "",
+    "statusDescription" : "42.69% GlobalMSPD\n42.69% GlobalEvasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.4268540040922966,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.4268540040922966,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Rite of the Pale Moon Secure" : {
+    "name" : "Rite of the Pale Moon Secure",
+    "description" : "",
+    "statusDescription" : "42.69% GlobalMSPD\n42.69% GlobalEvasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.4268540040922966,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.4268540040922966,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Star's Anchor" : {
+    "name" : "Star's Anchor",
+    "description" : "จะได้รับ Debris 1243.42 หน่วยเมื่อเริ่มรอบเทิร์น",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Fleeting Guidance" : {
+    "name" : "Fleeting Guidance",
+    "description" : "",
+    "statusDescription" : "Set MSPD to 114.36\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : 114.35554855202325,
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MANAPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "BUFFAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEBUFFAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITCHANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MANAREGEN" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHREGEN" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "POISONAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNITEAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "BLEEDAMP" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ACCURACY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEREDUCTION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEAMPLIFIER" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ATTACKSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CASTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALPENETRATE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALPENETRATE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RESERVATION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITSHIELD" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SOULPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNOREPDEF" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "IGNOREMDEF" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEBUFFRESISTANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "AGILITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "VITALITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "LUCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Nebula" : {
+    "name" : "Nebula",
+    "description" : "กำลังรับผลของ Nebula",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Nebula Maelstorm" : {
+    "name" : "Nebula Maelstorm",
+    "description" : "",
+    "statusDescription" : "109268.66% GlobalPATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 1092.6865596239998,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Nebula Icarus" : {
+    "name" : "Nebula Icarus",
+    "description" : "",
+    "statusDescription" : "81.03% GlobalAccuracy\n81.03% GlobalCritDamage\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "ACCURACY" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.8103448351723671,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.8103448351723671,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Nebula Icarus Wound" : {
+    "name" : "Nebula Icarus Wound",
+    "description" : "ไม่สามารถรับฮีลได้ในระหว่างผลของสกิลนี้",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Nebula Revenos" : {
+    "name" : "Nebula Revenos",
+    "description" : "",
+    "statusDescription" : "17.66 LUK\n353.18% GlobalMSPD\n51.59% GlobalAttackSPD\n102.15 MATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 3.531821762167107,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ATTACKSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.5159195450597404,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 102.15042899999997,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "LUCK" : {
+          "flat" : 17.659108810835534,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Nebula Titan" : {
+    "name" : "Nebula Titan",
+    "description" : "",
+    "statusDescription" : "618.07 PDEF\n618.07 MDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 618.0688083792437,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 618.0688083792437,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Fatima" : {
+    "name" : "Fatima",
+    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 645.85 หน่วยทุกเทิร์น",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
   "Moon Infused" : {
     "name" : "Moon Infused",
     "description" : "",
@@ -27664,492 +29231,5 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "GENERAL"
-  },
-  "Paper Marching" : {
-    "name" : "Paper Marching",
-    "description" : "",
-    "statusDescription" : "41.78% GlobalMSPD\n31.33% GlobalEvasion\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.41778084880000005,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3133356366,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Forget" : {
-    "name" : "Forget",
-    "description" : "ยกเลิก Action ครั้งถัดไป",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Vah'ris" : {
-    "name" : "Vah'ris",
-    "description" : "",
-    "statusDescription" : "46% GlobalCritDamage\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.45998,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Kyr'raneth" : {
-    "name" : "Kyr'raneth",
-    "description" : "",
-    "statusDescription" : "27.6% CritChance\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "CRITCHANCE" : {
-          "flat" : 0.275988,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Tolerated Destruction" : {
-    "name" : "Tolerated Destruction",
-    "description" : "",
-    "statusDescription" : "31.65% GlobalPATK\n31.65% GlobalRATK\n31.65% GlobalMATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.31649999999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.31649999999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.31649999999999995,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Connect" : {
-    "name" : "Connect",
-    "description" : "เมื่อจู่โจม, Shiranui จะจู่โจมออกไปพร้อมกันด้วย สร้างความเสียหายเวท 153.16524347001902 หน่วย",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Power Pump" : {
-    "name" : "Power Pump",
-    "description" : "",
-    "statusDescription" : "29.19% GlobalRATK\n29.19% GlobalMATK\n29.19% GlobalPATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.29185000000000005,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.29185000000000005,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.29185000000000005,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "FORCE" : {
-    "name" : "FORCE",
-    "description" : "",
-    "statusDescription" : "43.78% GlobalAGI\n\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : {
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.437775,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Omit" : {
-    "name" : "Omit",
-    "description" : "",
-    "statusDescription" : "-36.48% GlobalRATK\n-36.48% GlobalMATK\n-36.48% GlobalPATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.36481250000000004,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.36481250000000004,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.36481250000000004,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Tired" : {
-    "name" : "Tired",
-    "description" : "",
-    "statusDescription" : "-58.37% GlobalPDEF\n-58.37% GlobalMDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.5837000000000001,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.5837000000000001,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Careless" : {
-    "name" : "Careless",
-    "description" : "",
-    "statusDescription" : "-46.7% GlobalAGI\n\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : {
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : -0.46696000000000004,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "The One Who Last Wish" : {
-    "name" : "The One Who Last Wish",
-    "description" : "กำลังอยู่ในสภาพร่างจิต ไม่รับความเสียหายกายภาพ",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "NEUTRAL",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Guilt" : {
-    "name" : "Guilt",
-    "description" : "",
-    "statusDescription" : "50.51% GlobalSTR\n50.51% GlobalAGI\n50.51% GlobalVIT\n50.51% GlobalDEX\n50.51% GlobalWIS\n50.51% GlobalINT\n50.51% GlobalLUK\n\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : {
-        "STRENGTH" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "VITALITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEXTERITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WISDOM" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "INTELLIGENCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LUCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.505125,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "NEUTRAL",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Golden Blessing" : {
-    "name" : "Golden Blessing",
-    "description" : "ได้รับ Action 1.0 หน่วย",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Divine Critical" : {
-    "name" : "Divine Critical",
-    "description" : "",
-    "statusDescription" : "36.26% GlobalCritChance\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3626168426104687,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Fickle Fate" : {
-    "name" : "Fickle Fate",
-    "description" : "ไม่สามารถใช้งานแอคชันได้",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Fate Fracture" : {
-    "name" : "Fate Fracture",
-    "description" : "",
-    "statusDescription" : "71.96% GlobalPDEF\n71.96% GlobalMDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.7196067127675868,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.7196067127675868,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Twisted Fate" : {
-    "name" : "Twisted Fate",
-    "description" : "",
-    "statusDescription" : "31.56% GlobalRATK\n31.56% GlobalPATK\n31.56% GlobalMATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3156169792840293,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3156169792840293,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3156169792840293,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
   }
 }

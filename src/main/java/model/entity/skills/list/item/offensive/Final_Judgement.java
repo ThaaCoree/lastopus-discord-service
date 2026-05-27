@@ -55,7 +55,7 @@ public class Final_Judgement extends Skill {
     @Override
     public void initializeEvent(CombatFlow combatFlow) {
         EventBus eventBus = combatFlow.getEventBus();
-        eventBus.register(ActionEvent.class, EventPhase.POST, 0, (ActionEvent event) -> {
+        eventBus.register(ActionEvent.class, EventPhase.MODIFY, 0, (ActionEvent event) -> {
             if (event.unit_source != getUser() || !event.hasActType(ActType.ATTACK)) return;
             event.addAllDamageMultModifier(2);
             LogWriterUtil.log(">Final Judgement triggered");

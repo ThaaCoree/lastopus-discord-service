@@ -138,6 +138,7 @@ public class Database {
             allPlayerMap = res.getAllPlayerMap();
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

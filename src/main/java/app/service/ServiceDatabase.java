@@ -18,6 +18,7 @@ import model.type.CardType;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.convert.MappingMongoConverter;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
@@ -337,7 +338,7 @@ public class ServiceDatabase {
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
             Unit loadedUnit = mapper.convertValue(result.get(name), Unit.class);
-            
+
             allPlayerMap.put(name, loadedUnit);
             allUnit.put(name, loadedUnit);
             updateUnitObjects();
@@ -359,6 +360,9 @@ public class ServiceDatabase {
         Map<String, Rune> allRunes = loadCollection("runes", Rune.class);
         Map<String, Shop> allShops = loadCollection("shops", Shop.class);
 //        Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
+
+
+//        System.out.println("ServiceDatabase All Player : "+allPlayers);
 
         org.bson.Document doc = mongoTemplate.findOne(
                 new Query(),
@@ -413,17 +417,35 @@ public class ServiceDatabase {
         return saveRequest;
     }
 
+//    private <T> Map<String, T> loadCollection(String collectionName, Class<T> clazz) {
+//        org.bson.Document doc = mongoTemplate.findOne(new Query(), org.bson.Document.class, collectionName);
+//        if (doc == null) return new LinkedHashMap<>();
+//
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//
+//        Map<String, T> result = new LinkedHashMap<>();
+//        for (String key : doc.keySet()) {
+//            if (key.equals("_id") || key.equals("_class")) continue;
+//            result.put(key, mapper.convertValue(doc.get(key), clazz));
+//        }
+//        return result;
+//    }
+
     private <T> Map<String, T> loadCollection(String collectionName, Class<T> clazz) {
         org.bson.Document doc = mongoTemplate.findOne(new Query(), org.bson.Document.class, collectionName);
         if (doc == null) return new LinkedHashMap<>();
 
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        // ใช้ converter ของ Spring แทน ObjectMapper ธรรมดา
+        MappingMongoConverter converter = (MappingMongoConverter) mongoTemplate.getConverter();
 
         Map<String, T> result = new LinkedHashMap<>();
         for (String key : doc.keySet()) {
             if (key.equals("_id") || key.equals("_class")) continue;
-            result.put(key, mapper.convertValue(doc.get(key), clazz));
+            Object value = doc.get(key);
+            if (value instanceof org.bson.Document subDoc) {
+                result.put(key, converter.read(clazz, subDoc));
+            }
         }
         return result;
     }

@@ -11,6 +11,7 @@ import java.util.Map;
 public class ConditionManager {
 
     public static void applyCondition(Conditions condition, Unit source, Unit target, int duration) {
+        if (duration <= 0) return;
         ConditionInstance instance = new ConditionInstance(condition, source, duration);
         int nextFreeKey = 1;
         while (target.getConditionInstances().containsKey(nextFreeKey)) {
@@ -21,6 +22,7 @@ public class ConditionManager {
     }
 
     public static void applyCondition(Conditions condition, Unit target, int duration) {
+        if (duration <= 0) return;
         ConditionInstance instance = new ConditionInstance(condition, duration);
         int nextFreeKey = 1;
         while (target.getConditionInstances().containsKey(nextFreeKey)) {
@@ -60,6 +62,7 @@ public class ConditionManager {
     }
 
     public static void applyCondition(Conditions condition, Unit source, Unit target, int duration, Map<String, Double> numberRecord) {
+        if (duration <= 0) return;
         ConditionInstance instance = new ConditionInstance(condition, source, duration);
         numberRecord.forEach(instance::putNumberRecord);
         int nextFreeKey = 1;
