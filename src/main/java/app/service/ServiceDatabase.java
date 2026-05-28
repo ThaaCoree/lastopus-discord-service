@@ -264,6 +264,9 @@ public class ServiceDatabase {
             for (Summon summon : unit.getSummons().values()) {
                 allSummon.put(summon.getName(), summon);
             }
+            for (Map.Entry<Integer, PassiveNode> map : unit.getAllocatedPassives().entrySet()) {
+                map.getValue().setId(map.getKey());
+            }
         }
         if (allDreamItem != null) {
             for (Item item : allDreamItem.values()) {

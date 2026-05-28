@@ -476,18 +476,18 @@ public class StatCalculator {
         //convert unique
         for (UniqueModifier modifier : unit.getUniqueModifier()) {
             if (modifier.getModifiers().getTransferModifiers() != null) {
-                calculateConversion(modifier.getModifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added);
+                calculateConversion(modifier.getModifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added, null);
             }
         }
         //convert rune
         if (unit.getRune_modifiers().getTransferModifiers() != null) {
-            calculateConversion(unit.getRune_modifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added);
+            calculateConversion(unit.getRune_modifiers().getTransferModifiers(), stackedConvertPercent, actualConvert, added, null);
         }
 
         //convert skills
         for (SkillInstance instance : unit.getAllSkill().values()) {
             if (instance.getInstanceBundle().getTransferModifiers() == null) continue;
-            calculateConversion(instance.getInstanceBundle().getTransferModifiers(), stackedConvertPercent, actualConvert, added);
+            calculateConversion(instance.getInstanceBundle().getTransferModifiers(), stackedConvertPercent, actualConvert, added, null);
         }
 
         //convert passive
@@ -495,7 +495,7 @@ public class StatCalculator {
             PassiveNode node = entry.getValue();
 
             if (node.getTransferModifiers() != null) {
-                calculateConversion(node.getTransferModifiers(), stackedConvertPercent, actualConvert, added);
+                calculateConversion(node.getTransferModifiers(), stackedConvertPercent, actualConvert, added, null);
             }
         }
         //convert equipment
@@ -508,7 +508,7 @@ public class StatCalculator {
                 handMultiplier = unit.getMixTwoHandedMult();
             }
             if (equipment.getTransferModifiers() != null) {
-                calculateConversion(equipment.getTransferModifiers(), stackedConvertPercent, actualConvert, added, handMultiplier);
+                calculateConversion(equipment.getTransferModifiers(), stackedConvertPercent, actualConvert, added, handMultiplier, equipment.getEquipmentType());
             }
         }
         //convert card
@@ -516,7 +516,7 @@ public class StatCalculator {
             CardType type = entry.getKey();
             Card card = entry.getValue();
             if (card.getTransferModifiers(type) != null) {
-                calculateConversion(card.getTransferModifiers(type), stackedConvertPercent, actualConvert, added);
+                calculateConversion(card.getTransferModifiers(type), stackedConvertPercent, actualConvert, added, null);
             }
         }
 
@@ -537,26 +537,26 @@ public class StatCalculator {
         //gain unique
         for (UniqueModifier modifier : unit.getUniqueModifier()) {
             if (modifier.getModifiers().getTransferModifiers() != null) {
-                calculateGain(modifier.getModifiers().getTransferModifiers(), added);
+                calculateGain(modifier.getModifiers().getTransferModifiers(), added, null);
             }
         }
 
         //gain rune
         if (unit.getRune_modifiers().getTransferModifiers() != null) {
-            calculateGain(unit.getRune_modifiers().getTransferModifiers(), added);
+            calculateGain(unit.getRune_modifiers().getTransferModifiers(), added, null);
         }
 
         //gain skills
         for (SkillInstance instance : unit.getAllSkill().values()) {
             if (instance.getInstanceBundle().getTransferModifiers() == null) continue;
-            calculateGain(instance.getInstanceBundle().getTransferModifiers(), added);
+            calculateGain(instance.getInstanceBundle().getTransferModifiers(), added, null);
         }
 
         //gain passive
         for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
             PassiveNode node = entry.getValue();
             if (node.getTransferModifiers() != null) {
-                calculateGain(node.getTransferModifiers(), added);
+                calculateGain(node.getTransferModifiers(), added, null);
             }
         }
 
@@ -579,7 +579,7 @@ public class StatCalculator {
                             1);
                     toPut.setTransferType(TransferType.GAIN);
                     transferModifier.put(1, toPut);
-                    calculateGain(transferModifier, added);
+                    calculateGain(transferModifier, added, equipment.getEquipmentType());
                 }
                 appliedTypes.add(weaponType); // mark ว่าใช้แล้ว
             }
@@ -595,7 +595,7 @@ public class StatCalculator {
                 handMultiplier = unit.getMixTwoHandedMult();
             }
             if (equipment.getTransferModifiers() != null) {
-                calculateGain(equipment.getTransferModifiers(), added, handMultiplier);
+                calculateGain(equipment.getTransferModifiers(), added, handMultiplier, equipment.getEquipmentType());
             }
         }
         //gain card
@@ -603,7 +603,7 @@ public class StatCalculator {
             CardType type = entry.getKey();
             Card card = entry.getValue();
             if (card.getTransferModifiers(type) != null) {
-                calculateGain(card.getTransferModifiers(type), added);
+                calculateGain(card.getTransferModifiers(type), added, null);
             }
         }
 
@@ -859,15 +859,15 @@ public class StatCalculator {
     public void calculateConversion(Map<Integer, TransferModifier> transferModifier,
                                     Map<StatType, Double> stackedConvertPercent,
                                     Map<StatType, Double> actualConvert,
-                                    Map<StatType, Double> added) {
-        calculateConversion(transferModifier, stackedConvertPercent, actualConvert, added, 1);
+                                    Map<StatType, Double> added, EquipmentType equipmentType) {
+        calculateConversion(transferModifier, stackedConvertPercent, actualConvert, added, 1, equipmentType);
     }
 
     public void calculateConversion(Map<Integer, TransferModifier> transferModifier,
                                     Map<StatType, Double> stackedConvertPercent,
                                     Map<StatType, Double> actualConvert,
                                     Map<StatType, Double> added,
-                                    double handMultiplier) {
+                                    double handMultiplier, EquipmentType equipmentType) {
         for (TransferModifier tm : transferModifier.values()) {
             if (tm.getSourceStat() == null || tm.getTargetStat() == null) continue;
 
@@ -880,28 +880,31 @@ public class StatCalculator {
             double toTransfer;
             double toAdd;
 
-            double equipmentMod = 1;
-            for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
-                Equipment equipment = slot.getEquipment();
-                if (equipment == null) continue;
+            if (equipmentType != null) {
+                double equipmentMod = 1;
+                for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
+                    Equipment equipment = slot.getEquipment();
+                    if (equipment == null) continue;
+                    if (equipment.getEquipmentType() != equipmentType) continue;
 
-                double hand_multiplier = 1;
-                if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
-                    hand_multiplier = unit.getMixTwoHandedMult();
-                }
+                    double hand_multiplier = 1;
+                    if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
+                        hand_multiplier = unit.getMixTwoHandedMult();
+                    }
 
-                for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
-                    Double mult = null;
-                    Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
-                    if (multMap != null) {
-                        mult = multMap.get(equipment.getEquipmentType());
-                    }
-                    if (mult != null) {
-                        equipmentMod += mult * hand_multiplier;
+                    for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
+                        Double mult = null;
+                        Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
+                        if (multMap != null) {
+                            mult = multMap.get(equipment.getEquipmentType());
+                        }
+                        if (mult != null) {
+                            equipmentMod += mult * hand_multiplier;
+                        }
                     }
                 }
+                transferringRatio *= equipmentMod;
             }
-            transferringRatio *= equipmentMod;
 
             if (tm.getTransferType() == TransferType.CONVERSION) {
                 if (stackedConvertPercent.get(sourceStatType) < 1) {
@@ -923,13 +926,13 @@ public class StatCalculator {
     }
 
     public void calculateGain(Map<Integer, TransferModifier> transferModifier,
-                              Map<StatType, Double> added) {
-        calculateGain(transferModifier, added, 1);
+                              Map<StatType, Double> added, EquipmentType equipmentType) {
+        calculateGain(transferModifier, added, 1, equipmentType);
     }
 
     public void calculateGain(Map<Integer, TransferModifier> transferModifier,
                               Map<StatType, Double> added,
-                              double handMultiplier) {
+                              double handMultiplier, EquipmentType equipmentType) {
         for (TransferModifier tm : transferModifier.values()) {
             if (tm.getSourceStat() == null || tm.getTargetStat() == null) continue;
             StatType sourceStatType = tm.getSourceStat();
@@ -941,28 +944,31 @@ public class StatCalculator {
             double toTransfer;
             double toAdd;
 
-            double equipmentMod = 1;
-            for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
-                Equipment equipment = slot.getEquipment();
-                if (equipment == null) continue;
+            if (equipmentType != null) {
+                double equipmentMod = 1;
+                for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
+                    Equipment equipment = slot.getEquipment();
+                    if (equipment == null) continue;
+                    if (equipment.getEquipmentType() != equipmentType) continue;
 
-                double hand_multiplier = 1;
-                if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
-                    hand_multiplier = unit.getMixTwoHandedMult();
-                }
+                    double hand_multiplier = 1;
+                    if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
+                        hand_multiplier = unit.getMixTwoHandedMult();
+                    }
 
-                for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
-                    Double mult = null;
-                    Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
-                    if (multMap != null) {
-                        mult = multMap.get(equipment.getEquipmentType());
-                    }
-                    if (mult != null) {
-                        equipmentMod += mult * hand_multiplier;
+                    for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
+                        Double mult = null;
+                        Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
+                        if (multMap != null) {
+                            mult = multMap.get(equipment.getEquipmentType());
+                        }
+                        if (mult != null) {
+                            equipmentMod += mult * hand_multiplier;
+                        }
                     }
                 }
+                transferringRatio *= equipmentMod;
             }
-            transferringRatio *= equipmentMod;
 
             if (tm.getTransferType() == TransferType.GAIN) {
                 toTransfer = sourceValue * transferringPercent;
