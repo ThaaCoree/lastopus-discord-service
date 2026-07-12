@@ -159,9 +159,10 @@ public class Crafter {
             int sum_materials = base_materials + boost_materials;
             random.add(false, 1);
             random.add(true, sum_materials-2);
+            return random.roll();
+        } else {
+            return false;
         }
-
-        return random.roll();
     }
 
     public static void putModsIntoWeightedRandom(WeightedRandom<CraftedMod> weightedRandom, CraftModPool pool, EquipmentType equipmentType, WeaponType weaponType) {

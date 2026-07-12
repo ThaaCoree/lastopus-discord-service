@@ -532,12 +532,13 @@ public class DiscordController {
                 equipment.addMaterial(material, MaterialRole.BOOST);
             }
             Crafter.craft(equipment);
+//                unit.getInventoryManager().addItem(equipment, 1);
+
             StringBuilder sb = new StringBuilder();
             if (Crafter.shatterItem(equipment)) {
                 itemBrick(unit, equipment, 0, sb);
             } else {
                 sb.append("เสร็จสิ้นการคราฟ ").append(equipment.toString());
-//                unit.getInventoryManager().addItem(equipment, 1);
             }
 
             return sb.toString();
@@ -547,6 +548,7 @@ public class DiscordController {
     }
 
     public void itemBrick(Unit unit, CraftedEquipment equipment, int toughness_reduce, StringBuilder sb) {
+        unit.getInventoryManager().removeItem(equipment.getName());
         List<CraftingMaterial> returning_item = new ArrayList<>();
         sb.append("# อุปกรณ์พังทลาย!\n");
         for (CraftedEquipment.MaterialInstance materialInstance : equipment.getMaterialInstances()) {
