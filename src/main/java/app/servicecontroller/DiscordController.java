@@ -472,7 +472,7 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
         if (unit != null) {
             List<String> materialNames = unit.getInventoryItems().values().stream()
-                    .filter(item -> item instanceof CraftingMaterial)
+                    .filter(item -> item instanceof CraftingMaterial material)
                     .map(Item::getName)
                     .toList();
             System.out.println("List of materials : "+materialNames.toString());

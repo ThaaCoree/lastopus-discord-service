@@ -7,6 +7,8 @@ import model.entity.Conditions;
 import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.items.*;
+import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -228,6 +230,26 @@ public class MongoController {
         mongoTemplate.save(map, "shops");
 
         System.out.println("saved shop");
+        return "saved";
+    }
+
+    @PostMapping("/save_materials")
+    public String save_materials(@RequestBody Map<String, CraftingMaterial> map) {
+
+        mongoTemplate.dropCollection("materials");
+        mongoTemplate.save(map, "materials");
+
+        System.out.println("saved materials");
+        return "saved";
+    }
+
+    @PostMapping("/save_modPools")
+    public String save_modPools(@RequestBody Map<String, CraftModPool> map) {
+
+        mongoTemplate.dropCollection("modPools");
+        mongoTemplate.save(map, "modPools");
+
+        System.out.println("saved modPools");
         return "saved";
     }
 

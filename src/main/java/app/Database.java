@@ -180,6 +180,8 @@ public class Database {
             to_save.add("shop");
 //            to_save.add("summon");
             to_save.add("passive");
+            to_save.add("materials");
+            to_save.add("modPools");
 
             for (String filler : to_save) {
                 String json = "";
@@ -232,6 +234,14 @@ public class Database {
                     json = mapper.writeValueAsString(allShop);
                 }
                 if (filler.equals("passive")) {
+                    if (allPassiveMap == null) continue;
+                    json = mapper.writeValueAsString(allPassiveMap);
+                }
+                if (filler.equals("materials")) {
+                    if (allPassiveMap == null) continue;
+                    json = mapper.writeValueAsString(allPassiveMap);
+                }
+                if (filler.equals("modPools")) {
                     if (allPassiveMap == null) continue;
                     json = mapper.writeValueAsString(allPassiveMap);
                 }
