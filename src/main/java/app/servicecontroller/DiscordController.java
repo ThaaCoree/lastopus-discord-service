@@ -13,10 +13,7 @@ import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
 import model.entity.items.catalysts.CatalystFactory;
-import model.entity.items.crafted_equipments.CraftedEquipment;
-import model.entity.items.crafted_equipments.Crafter;
-import model.entity.items.crafted_equipments.CraftingMaterial;
-import model.entity.items.crafted_equipments.MaterialInstance;
+import model.entity.items.crafted_equipments.*;
 import model.entity.units.Unit;
 import model.type.EquipmentType;
 import model.type.ItemType;
@@ -548,7 +545,7 @@ public class DiscordController {
             if (Crafter.shatterItem(equipment)) {
                 itemBrick(unit, equipment, 0, sb);
             } else {
-                sb.append("เสร็จสิ้นการคราฟ ").append("\n")
+                sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append("\n")
                         .append(equipment.getName()).append("\n")
                         .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
                         .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
@@ -575,13 +572,56 @@ public class DiscordController {
         String catalyst_name = split[1].trim();
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
             if (Crafter.checkCatalyst(catalyst_name, equipment)) {
                 Crafter.useCatalyst(catalyst_name, equipment);
+                unit.getInventoryManager().removeItem(catalyst_name, 1);
                 writeintoSheet(unit);
-                return "ใช้งาน "+catalyst_name+" กับ "+item_name+" แล้ว";
+                StringBuilder sb = new StringBuilder();
+                sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append(catalyst_name).append("\n")
+                        .append(equipment.getName()).append("\n")
+                        .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
+                        .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
+                        .append("Stats & Statuses : ").append("\n")
+                        .append(equipment.getStatusDescription());
+
+                return sb.toString();
+
             } else {
                 return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้";
             }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/inspect")
+    public String inspect(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        String item_name = playerMessage.message;
+        if (unit != null) {
+            CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
+            StringBuilder sb = new StringBuilder();
+            sb.append(item_name).append(":\n");
+            for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+                sb.append("Material : ").append(materialInstance.getMaterial()).append(" [").append(materialInstance.getMaterial_role()).append("]");
+            }
+            for (ModInstance modInstance : equipment.getModInstances()) {
+                sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
+                        .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType()))
+                        .append(" - ").append(modInstance.getFinal_value()).append(" - ")
+                        .append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
+                        .append("[").append(modInstance.getPool_name()).append("]").append(" [")
+                        .append(equipment.getMaterialInstances().stream()
+                                .filter(m -> m.getMaterial_id() == modInstance.getMod_id())
+                                .map(m -> m.getMaterial().getName())
+                                .findFirst()
+                                .orElse("Unknown"))
+                        .append("]");
+            }
+            return sb.toString();
         } else {
             return "No Role!";
         }

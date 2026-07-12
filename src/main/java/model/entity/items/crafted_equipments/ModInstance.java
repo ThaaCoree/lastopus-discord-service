@@ -1,9 +1,12 @@
 package model.entity.items.crafted_equipments;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.type.EquipmentType;
 import model.type.StatTag;
+import model.type.WeaponType;
 import util.WeightedRandom;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,6 +69,18 @@ public class ModInstance {
         if (mod.isStatMod() && mod.statType.hasTag(statTag)) {
             final_value *= multiplier+1;
         }
+    }
+
+    @JsonIgnore
+    public String getMinRoll(EquipmentType equipmentType, WeaponType weaponType) {
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        return decimalFormat.format(mod.getMinModValueByTier(tier, equipmentType, weaponType.twoHanded()));
+    }
+
+    @JsonIgnore
+    public String getMaxRoll(EquipmentType equipmentType, WeaponType weaponType) {
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        return decimalFormat.format(mod.getMaxModValueByTier(tier, equipmentType, weaponType.twoHanded()));
     }
 
     public int getMod_id() {

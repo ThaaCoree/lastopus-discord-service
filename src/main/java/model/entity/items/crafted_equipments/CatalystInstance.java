@@ -9,6 +9,10 @@ public class CatalystInstance {
         this.catalyst_name = catalyst_name;
     }
 
+    public CatalystInstance() {
+
+    }
+
     public int getCatalyst_id() {
         return catalyst_id;
     }
