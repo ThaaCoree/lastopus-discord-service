@@ -605,9 +605,9 @@ public class DiscordController {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
             StringBuilder sb = new StringBuilder();
-            sb.append(item_name).append(":\n");
+            sb.append(item_name).append(":\n\n");
             for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
-                sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n");
+                sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
             }
             DecimalFormat df = new DecimalFormat("#.##");
             for (ModInstance modInstance : equipment.getModInstances()) {
@@ -621,7 +621,7 @@ public class DiscordController {
                                 .map(m -> m.getMaterial().getName())
                                 .findFirst()
                                 .orElse("Unknown"))
-                        .append("]");
+                        .append("]").append("\n\n");
             }
             return sb.toString();
         } else {
