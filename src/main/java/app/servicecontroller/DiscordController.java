@@ -610,10 +610,12 @@ public class DiscordController {
                 sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
             }
             DecimalFormat df = new DecimalFormat("#.##");
+            int mod_count = 1;
             for (ModInstance modInstance : equipment.getModInstances()) {
+                sb.append(mod_count).append(". ");
                 sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                         .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType()))
-                        .append(" - ").append(df.format(modInstance.getFinal_value())).append(" - ")
+                        .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
                         .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
                         .append("[").append(modInstance.getPool_name()).append("]").append(" [")
                         .append(equipment.getMaterialInstances().stream()
@@ -621,7 +623,12 @@ public class DiscordController {
                                 .map(m -> m.getMaterial().getName())
                                 .findFirst()
                                 .orElse("Unknown"))
-                        .append("]").append("\n\n");
+                        .append("]");
+                if (modInstance.getMod().isFixed()) {
+                    sb.append(" [FIXED]");
+                }
+            sb.append("\n\n");
+                mod_count++;
             }
             return sb.toString();
         } else {
