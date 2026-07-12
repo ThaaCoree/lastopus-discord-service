@@ -38872,18 +38872,18 @@
       "Fortified" : {
         "instanceBundle" : {
           "statModifiers" : {
-            "DAMAGEREDUCTION" : {
-              "flat" : 0.5,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            },
             "MOVEMENTSPEED" : {
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : 2.0,
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "DAMAGEREDUCTION" : {
+              "flat" : 0.5,
+              "mult" : 0.0,
+              "override" : "NaN",
               "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
@@ -60261,7 +60261,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60269,7 +60269,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60277,7 +60277,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60285,7 +60285,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60293,7 +60293,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60301,7 +60301,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -60309,7 +60309,7 @@
               "flat" : 0.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.25,
+              "globalMult" : 0.25,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }

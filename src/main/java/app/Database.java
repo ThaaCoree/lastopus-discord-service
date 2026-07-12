@@ -8,6 +8,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import app.servicemodel.SaveRequest;
 import model.entity.*;
 import model.entity.items.*;
+import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -38,6 +41,9 @@ public class Database {
     private Map<String, Conditions> allConditionMap ;
     private Map<String, Card> allCardMap;
     private Map<Integer, PassiveNode> allPassiveMap;
+    private Map<String, CraftingMaterial> allMaterials = new LinkedHashMap<>();
+    private Map<String, CraftModPool> allModPools = new LinkedHashMap<>();
+    private Map<String, CraftedEquipment> allCraftedEquipments = new LinkedHashMap<>();
     private Map<String, Shop> allShop;
     private Map<String, Unit> allUnit = new LinkedHashMap<>();
     private Map<String, Summon> allSummon = new LinkedHashMap<>();
@@ -45,14 +51,14 @@ public class Database {
 
     public Database() {
         loadMongo();
-//        loadItemFromJson();
+        loadItemFromJson();
         mapEverything();
         updateEverything();
         initCounterAllUnit();
-        if (combatFlow != null) {
-            combatFlow.registerDatabase(this);
-            combatFlow.initCombatFlow();
-        }
+//        if (combatFlow != null) {
+//            combatFlow.registerDatabase(this);
+//            combatFlow.initCombatFlow();
+//        }
     }
 
     public void createPlayer(String name) {
@@ -91,23 +97,25 @@ public class Database {
         JsonUtils.saveToFile(allDreamItem, "src/main/resources/json/dreams.json");
         JsonUtils.saveToFile(allConsumableMap, "src/main/resources/json/consumables.json");
         JsonUtils.saveToFile(allRuneMap, "src/main/resources/json/runes.json");
+        JsonUtils.saveToFile(allMaterials, "src/main/resources/json/materials.json");
+        JsonUtils.saveToFile(allModPools, "src/main/resources/json/modPools.json");
 
         saveMongo();
     }
 
     public void loadItemFromJson() {
-        allPlayerMap = JsonUtils.loadFromFile("/json/players.json", new TypeReference<Map<String, Unit>>() {});
-        allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
-        allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
-        allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
-        allNormalItemMap = JsonUtils.loadFromFile("/json/items.json", new TypeReference<Map<String, Item>>() {});
-        allConsumableMap = JsonUtils.loadFromFile("/json/consumables.json", new TypeReference<Map<String, Consumable>>() {});
-        allDreamItem = JsonUtils.loadFromFile("/json/dreams.json", new TypeReference<Map<String, Dream>>() {});
-        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
-        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
-        System.out.println("before load all shop from json : "+allShop);
-        allShop = JsonUtils.loadFromFile("/json/shops.json", new TypeReference<Map<String, Shop>>() {});
-        System.out.println("after load all shop from json : "+allShop);
+//        allPlayerMap = JsonUtils.loadFromFile("/json/players.json", new TypeReference<Map<String, Unit>>() {});
+//        allMonsterMap = JsonUtils.loadFromFile("/json/monsters.json", new TypeReference<Map<String, Monster>>() {});
+//        allCardMap = JsonUtils.loadFromFile("/json/cards.json", new TypeReference<Map<String, Card>>() {});
+//        allConditionMap = JsonUtils.loadFromFile("/json/conditions.json", new TypeReference<Map<String, Conditions>>() {});
+//        allNormalItemMap = JsonUtils.loadFromFile("/json/items.json", new TypeReference<Map<String, Item>>() {});
+//        allConsumableMap = JsonUtils.loadFromFile("/json/consumables.json", new TypeReference<Map<String, Consumable>>() {});
+//        allDreamItem = JsonUtils.loadFromFile("/json/dreams.json", new TypeReference<Map<String, Dream>>() {});
+//        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
+//        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
+//        allShop = JsonUtils.loadFromFile("/json/shops.json", new TypeReference<Map<String, Shop>>() {});
+        allMaterials = JsonUtils.loadFromFile("/json/materials.json", new TypeReference<Map<String, CraftingMaterial>>() {});
+        allModPools = JsonUtils.loadFromFile("/json/modPools.json", new TypeReference<Map<String, CraftModPool>>() {});
     }
 
     public void loadMongo() {
@@ -138,6 +146,9 @@ public class Database {
             allPlayerMap = res.getAllPlayerMap();
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
+            allMaterials = res.getAllMaterials();
+            allModPools = res.getAllModPools();
+//            allCraftedEquipments = res.getAllCraftedEquipments();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -242,6 +253,7 @@ public class Database {
     public void updateEverything() {
         updateUnitObjects();
         updateShopObjects();
+        updateMaterialObjects();
     }
 
     public void mapEverything() {
@@ -253,10 +265,12 @@ public class Database {
         allUnit.putAll(allMonsterMap);
 
         if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
+        if (allMaterials != null) allTypeItemMap.putAll(allMaterials);
         if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
         if (allEquipmentMap != null) allTypeItemMap.putAll(allEquipmentMap);
         if (allRuneMap != null) allTypeItemMap.putAll(allRuneMap);
         if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
+        if (allCraftedEquipments != null) allTypeItemMap.putAll(allCraftedEquipments);
 
 
         for (Unit unit : allUnit.values()) {
@@ -311,6 +325,7 @@ public class Database {
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = new Rune();
+                CraftingMaterial newMaterial = allMaterials.get(name);
                 if (allRuneMap != null) {
                     newRune = allRuneMap.get(name);
                 }
@@ -330,6 +345,9 @@ public class Database {
                 if (newRune != null) {
                     entry.setValue(newRune);
                 }
+                if (newMaterial != null) {
+                    entry.setValue(newMaterial);
+                }
             }
 
             for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
@@ -343,6 +361,7 @@ public class Database {
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = allRuneMap.get(name);
+                CraftingMaterial newMaterial = allMaterials.get(name);
 
                 if (newItem != null) {
                     entry.setValue(newItem);
@@ -358,6 +377,9 @@ public class Database {
                 }
                 if (newRune != null) {
                     entry.setValue(newRune);
+                }
+                if (newMaterial != null) {
+                    entry.setValue(newMaterial);
                 }
             }
 
@@ -447,6 +469,20 @@ public class Database {
                 if (newRune != null) {
                     shopItemEntry.getValue().setItem(newRune);
                 }
+            }
+        }
+    }
+
+    public void updateMaterialObjects() {
+        if (allMaterials == null) {
+            System.out.println("allMaterial is null");
+            return;
+        }
+        for (CraftingMaterial material : allMaterials.values()) {
+            for (Map.Entry<String, CraftingMaterial.CraftPoolEntry> entry : material.getPools().entrySet()) {
+                CraftModPool new_pool = allModPools.get(entry.getValue().getPool().getPool_name());
+                if (new_pool == null) continue;
+                entry.getValue().setPool(new_pool);
             }
         }
     }
@@ -692,5 +728,17 @@ public class Database {
 
     public Map<String, Dream> getAllDreamItem() {
         return allDreamItem;
+    }
+
+    public Map<String, CraftingMaterial> getAllMaterials() {
+        return allMaterials;
+    }
+
+    public Map<String, CraftModPool> getAllModPools() {
+        return allModPools;
+    }
+
+    public Map<String, CraftedEquipment> getAllCraftedEquipments() {
+        return allCraftedEquipments;
     }
 }

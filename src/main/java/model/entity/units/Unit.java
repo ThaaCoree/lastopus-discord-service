@@ -394,7 +394,7 @@ public class Unit {
         List<List<Object>> toAppend = new ArrayList<>(List.of(
                 List.of("Platinum Coin", purse.get(CurrencyType.PLATINUM), "มูลค่ารวม"),
                 List.of("Gold Coin", purse.get(CurrencyType.GOLD)),
-                List.of("Silver Coin", purse.get(CurrencyType.SILVER), copper_value),
+                List.of("Silver Coin", purse.get(CurrencyType.SILVER), copper_value+" C."),
                 List.of("Copper Coin", purse.get(CurrencyType.COPPER))
         ));
         requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, range, toAppend));

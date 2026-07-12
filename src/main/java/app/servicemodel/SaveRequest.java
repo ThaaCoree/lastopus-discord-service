@@ -5,6 +5,9 @@ import model.entity.Conditions;
 import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.items.*;
+import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Unit;
 
@@ -23,6 +26,9 @@ public class SaveRequest {
     private Map<String, Conditions> allConditionMap;
     private Map<String, Card> allCardMap;
     private Map<Integer, PassiveNode> allPassiveMap;
+    private Map<String, CraftingMaterial> allMaterials;
+    private Map<String, CraftModPool> allModPools;
+    private Map<String, CraftedEquipment> allCraftedEquipments;
     private Map<String, Shop> allShop;
     private Map<String, Unit> allUnit;
 
@@ -139,5 +145,29 @@ public class SaveRequest {
 
     public void setAllItemMap(Map<String, Item> allItemMap) {
         this.allItemMap = allItemMap;
+    }
+
+    public Map<String, CraftingMaterial> getAllMaterials() {
+        return allMaterials;
+    }
+
+    public void setAllMaterials(Map<String, CraftingMaterial> allMaterials) {
+        this.allMaterials = allMaterials;
+    }
+
+    public Map<String, CraftModPool> getAllModPools() {
+        return allModPools;
+    }
+
+    public void setAllModPools(Map<String, CraftModPool> allModPools) {
+        this.allModPools = allModPools;
+    }
+
+    public Map<String, CraftedEquipment> getAllCraftedEquipments() {
+        return allCraftedEquipments;
+    }
+
+    public void setAllCraftedEquipments(Map<String, CraftedEquipment> allCraftedEquipments) {
+        this.allCraftedEquipments = allCraftedEquipments;
     }
 }

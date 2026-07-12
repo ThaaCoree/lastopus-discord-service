@@ -1,0 +1,1740 @@
+{
+  "Lightweight" : {
+    "pool_name" : "Lightweight",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "ATTACKSPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITCHANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MOVEMENTSPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "CRITCHANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 200,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Solid" : {
+    "pool_name" : "Solid",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Small" : {
+    "pool_name" : "Small",
+    "weaponMods" : [ {
+      "statType" : "CRITDAMAGE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITCHANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Big" : {
+    "pool_name" : "Big",
+    "weaponMods" : [ {
+      "statType" : "CRITCHANCE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITDAMAGE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITSHIELD",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Tough" : {
+    "pool_name" : "Tough",
+    "weaponMods" : [ ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 200,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Flexible" : {
+    "pool_name" : "Flexible",
+    "weaponMods" : [ ],
+    "armorMods" : [ {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITSHIELD",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Flammable" : {
+    "pool_name" : "Flammable",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Fire Proof" : {
+    "pool_name" : "Fire Proof",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Durable" : {
+    "pool_name" : "Durable",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Sharp" : {
+    "pool_name" : "Sharp",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITDAMAGE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Blaze" : {
+    "pool_name" : "Blaze",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Breeze" : {
+    "pool_name" : "Breeze",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Terra" : {
+    "pool_name" : "Terra",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Hydro" : {
+    "pool_name" : "Hydro",
+    "weaponMods" : [ ],
+    "armorMods" : [ ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Brittle" : {
+    "pool_name" : "Brittle",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Swaying" : {
+    "pool_name" : "Swaying",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "ATTACKSPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    }, {
+      "statType" : "CASTSPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 400,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "DEFLECTION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 400,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "MOVEMENTSPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 600,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 400,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Soft" : {
+    "pool_name" : "Soft",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 400,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Magic Medium" : {
+    "pool_name" : "Magic Medium",
+    "weaponMods" : [ {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Recovery" : {
+    "pool_name" : "Recovery",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "HEALAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "BUFFAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "HEALTHREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "HEALAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "BUFFAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Heavy" : {
+    "pool_name" : "Heavy",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "ATTACKSPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "ATTACKSPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MOVEMENTSPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "EVASION",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "SPEED",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Impact Absorb" : {
+    "pool_name" : "Impact Absorb",
+    "weaponMods" : [ ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Mystic" : {
+    "pool_name" : "Mystic",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 400,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1300,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Mana Reactive" : {
+    "pool_name" : "Mana Reactive",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAPOINT",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Utility\t" : {
+    "pool_name" : "Utility\t",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Anti-Magic" : {
+    "pool_name" : "Anti-Magic",
+    "weaponMods" : [ {
+      "statType" : "MAGICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
+      "fixed" : false
+    }, {
+      "statType" : "RESERVATION",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 200,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "MAGICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 700,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Regeneration" : {
+    "pool_name" : "Regeneration",
+    "weaponMods" : [ {
+      "statType" : "HEALTHREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "HEALTHREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "HEALTHREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MANAREGEN",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Resonate" : {
+    "pool_name" : "Resonate",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "DAMAGEAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "GLOBAL",
+      "weight" : 800,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "GLOBAL",
+      "weight" : 800,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "GLOBAL",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Cursed" : {
+    "pool_name" : "Cursed",
+    "weaponMods" : [ {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    } ],
+    "armorMods" : [ {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    }, {
+      "statType" : "HEALTHPOINT",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 0,
+      "fixed" : true
+    } ],
+    "can_duplicate_mod" : false,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Flawless" : {
+    "pool_name" : "Flawless",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITDAMAGE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "CRITCHANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALPENETRATE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1500,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALBLOCK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 800,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  }
+}

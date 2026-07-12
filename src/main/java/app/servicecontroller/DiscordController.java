@@ -11,17 +11,16 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-import ui.MainPane;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import util.GoogleSheetsUtil;
 import util.WeightedRandom;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static ui.MainPane.getExcelColumnName;
 
@@ -466,6 +465,22 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/craft/start")
+    public ResponseEntity<?> getMaterials(@RequestParam PlayerMessage playerMessage) {
+
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            List<String> materialNames = unit.getInventoryItems().values().stream()
+                    .filter(item -> item instanceof CraftingMaterial)
+                    .map(Item::getName)
+                    .toList();
+            return ResponseEntity.ok(materialNames);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Player not found");
+        }
+    }
+
     public boolean isGM(List<String> roles) {
         return roles.contains("GM");
     }
@@ -597,7 +612,7 @@ public class DiscordController {
                                 List.of(shopItem.getItem().getName()),
                                 List.of(shopItem.getItem().getLore()),
                                 List.of(shopItem.getItem().getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
-                                List.of("Price : "+shopItem.getPrice_in_copper()),
+                                List.of("Price : "+shopItem.getPrice_in_copper()+" C."),
                                 List.of("Stock : " + shopItem.getStock()),
                                 List.of(shopItem.getItem().getItemType().writeAsString())
                         ));

@@ -13,7 +13,8 @@ public enum ItemType {
     FOOD_INGREDIENT,
     ORE,
     DREAM,
-    RUNE;
+    RUNE,
+    CATALYST;
 
     public String writeAsString() {
         switch (this) {
@@ -28,6 +29,7 @@ public enum ItemType {
             case ORE: return "Ore";
             case DREAM: return "Dream";
             case RUNE: return "Rune";
+            case CATALYST: return "Catalyst";
             default: return name();
         }
     }

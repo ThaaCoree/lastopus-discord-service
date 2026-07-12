@@ -8,9 +8,20 @@ public class WeightedRandom<T> {
 
     public void add(T item, double weight) {
         if (weight <= 0) {
-            throw new IllegalArgumentException("Weight must be > 0");
+            return;
         }
         weights.put(item, weight);
+    }
+
+    public double getWeight(T item) {
+        return weights.get(item);
+    }
+
+    public void multiplyWeight(T item, double multiplier) {
+        weights.computeIfPresent(item, (k, v) -> {
+            double newWeight = v * (multiplier+1);
+            return newWeight > 0 ? newWeight : null;
+        });
     }
 
     public T roll() {
@@ -18,6 +29,10 @@ public class WeightedRandom<T> {
             throw new IllegalStateException("No items to roll");
         }
         return weightedRandom(weights);
+    }
+
+    public Map<T, Double> getList() {
+        return weights;
     }
 
     public static <T> T weightedRandom(Map<T, Double> weights) {

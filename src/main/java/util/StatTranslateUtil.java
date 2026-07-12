@@ -61,6 +61,7 @@ public class StatTranslateUtil {
         statToWrite.put(StatType.IGNOREMDEF, "Ignore PDEF");
         statToWrite.put(StatType.IGNOREPDEF, "Ignore MDEF");
         statToWrite.put(StatType.DEBUFFRESISTANCE, "Debuff Resistance");
+        statToWrite.put(StatType.DEFLECTION, "Deflection");
         equipToWrite.put(EquipmentType.HELMET, "Helmet");
         equipToWrite.put(EquipmentType.ARMOR, "Armor");
         equipToWrite.put(EquipmentType.BOOTS, "Boots");

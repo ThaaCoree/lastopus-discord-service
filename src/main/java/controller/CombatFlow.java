@@ -159,6 +159,7 @@ public class CombatFlow {
         summonUnit.clear();
 
         for (Unit unit : allUnit.values()) {
+            if (unit == null) continue;
             if (unit.getUnitType() == UnitType.PLAYER || unit.getUnitType() == UnitType.NPC) {
                 playerUnit.put(unit.getName(), unit);
             }

@@ -41,6 +41,8 @@ public class MainPane extends BorderPane {
     private Button conditionButton = new Button("Condition List");
     private Button shopButton = new Button("Shop");
     private Button runeButton = new Button("Rune Board");
+    private Button modPoolButton = new Button("Mod Pools");
+    private Button craftingButton = new Button("Craft");
 
     public MainPane(Database database) {
         this.database = database;
@@ -246,6 +248,8 @@ public class MainPane extends BorderPane {
         allLeftNavigatorButtons.add(conditionButton);
         allLeftNavigatorButtons.add(shopButton);
         allLeftNavigatorButtons.add(runeButton);
+        allLeftNavigatorButtons.add(craftingButton);
+        allLeftNavigatorButtons.add(modPoolButton);
 
         combat1Button.setOnAction(e-> {
             combatButtonPressed();
@@ -277,6 +281,12 @@ public class MainPane extends BorderPane {
         runeButton.setOnAction(e-> {
             runeButtonPressed();
         });
+        modPoolButton.setOnAction(e-> {
+            modPoolButtonPressed();
+        });
+        craftingButton.setOnAction(e-> {
+            craftingButtonPressed();
+        });
 
         combat1Button.setPrefWidth(200);
         inventoryButton.setPrefWidth(99);
@@ -288,13 +298,16 @@ public class MainPane extends BorderPane {
         monsterButton.setPrefWidth(99);
         summonButton.setPrefWidth(124);
         shopButton.setPrefWidth(75);
+        modPoolButton.setPrefWidth(99);
+        craftingButton.setPrefWidth(99);
 
         leftNavigator.getChildren().addAll(combat1Button,
                 inventoryButton, treeButton,
                 runeButton,
                 itemButton, monsterButton,
                 conditionButton, cardCollectButton,
-                summonButton, shopButton);
+                summonButton, shopButton,
+                modPoolButton, craftingButton);
 
         return leftNavigator;
     }
@@ -493,6 +506,24 @@ public class MainPane extends BorderPane {
         setRight(shopPane.getEditPanel());
     }
 
+    public void craftingButtonPressed() {
+        treePane.getChildren().clear();
+        setButtonToSelected(craftingButton, allLeftNavigatorButtons);
+        setButtonToSelected(craftingButton, allUnitButtons);
+        CraftingListPane craftingPane = new CraftingListPane(database);
+        setCenter(craftingPane);
+        setRight(craftingPane.getEditPanel());
+    }
+
+    public void modPoolButtonPressed() {
+        treePane.getChildren().clear();
+        setButtonToSelected(modPoolButton, allLeftNavigatorButtons);
+        setButtonToSelected(modPoolButton, allUnitButtons);
+        ModPoolPane poolPane = new ModPoolPane(database);
+        setCenter(poolPane);
+        setRight(poolPane.getEditPanel());
+    }
+
     public void updateShops() {
             try {
                 GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
@@ -528,7 +559,7 @@ public class MainPane extends BorderPane {
                                     List.of(equipment.getName()),
                                     List.of(equipment.getLore()),
                                     List.of(equipment.getStatusDescription() + "\n" + shopItem.getItem().getDescription()),
-                                    List.of("Price : "+shopItem.getPrice_in_copper()),
+                                    List.of("Price : "+shopItem.getPrice_in_copper()+" C."),
                                     List.of("Stocks : " + shopItem.getStock()),
                                     List.of(equipment.getEquipmentType().writeAsString()),
                                     List.of(equipment.getWeaponType().writeAsString())

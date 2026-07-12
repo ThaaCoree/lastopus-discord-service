@@ -12,6 +12,8 @@ import app.Database;
 import factory.SkillFactory;
 import model.entity.*;
 import model.entity.items.*;
+import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.skills.SkillInstance;
 import model.modifier.BasicModifier;
 import model.modifier.SkillModifier;
@@ -87,6 +89,7 @@ public class ItemEditPanel extends ScrollPane {
                     editItemAbility(selectedItem),
                     editPriceArea(selectedItem),
                     editWeightArea(selectedItem),
+                    editMaterialArea(selectedItem),
                     editEquipment(selectedItem),
                     editDream(selectedItem),
                     editRune(selectedItem),
@@ -102,11 +105,14 @@ public class ItemEditPanel extends ScrollPane {
         isEditMode = false;
         confirmDeletion = false;
         HBox buttonBox = new HBox();
+        HBox buttonBox2 = new HBox();
         Button itemType = new Button("Item");
         Button equipType = new Button("Equipment");
         Button usableType = new Button("Usable");
         Button dreamType = new Button("Dream");
         Button runeType = new Button("Rune");
+        Button materialType = new Button("Crafting Material");
+        Button catalystType = new Button("Catalyst");
         Button createButton = new Button("CREATE");
         List<Button> allTypeButtons = new ArrayList<>();
 
@@ -115,8 +121,11 @@ public class ItemEditPanel extends ScrollPane {
         allTypeButtons.add(usableType);
         allTypeButtons.add(dreamType);
         allTypeButtons.add(runeType);
+        allTypeButtons.add(materialType);
+        allTypeButtons.add(catalystType);
 
-        buttonBox.getChildren().addAll(itemType,equipType,usableType, dreamType, runeType, createButton);
+        buttonBox.getChildren().addAll(itemType,equipType,usableType, dreamType, runeType);
+        buttonBox2.getChildren().addAll(materialType, catalystType, createButton);
 
         VBox modeBox = new VBox();
         VBox formBox = new VBox();
@@ -149,6 +158,18 @@ public class ItemEditPanel extends ScrollPane {
             setButtonToSelected(runeType,allTypeButtons);
             makeCreateForm(formBox);
         });
+        materialType.setOnAction(e -> {
+            toMake = new CraftingMaterial(new Item("New Crafting Material"));
+            toMake.setItemType(ItemType.MATERIAL);
+            setButtonToSelected(materialType,allTypeButtons);
+            makeCreateForm(formBox);
+        });
+        catalystType.setOnAction(e -> {
+            toMake = new Item("New Catalyst");
+            toMake.setItemType(ItemType.CATALYST);
+            setButtonToSelected(catalystType,allTypeButtons);
+            makeCreateForm(formBox);
+        });
 
         createButton.setOnAction(e -> {
             if (toMake instanceof Rune item) {
@@ -169,7 +190,7 @@ public class ItemEditPanel extends ScrollPane {
             editMode();
         });
 
-        modeBox.getChildren().addAll(buttonBox, formBox);
+        modeBox.getChildren().addAll(buttonBox, buttonBox2, formBox);
 
         mainBox.getChildren().addAll(mainButtonBox,modeBox);
     }
@@ -247,6 +268,7 @@ public class ItemEditPanel extends ScrollPane {
                 editItemAbility(toMake),
                 editPriceArea(toMake),
                 editWeightArea(toMake),
+                editMaterialArea(toMake),
                 editEquipment(toMake),
                 editDream(toMake),
                 editRune(toMake),
@@ -349,6 +371,89 @@ public class ItemEditPanel extends ScrollPane {
             listPane.getListView().refresh();
         });
         contentBox.getChildren().addAll(indicatorLabel,textArea);
+        return contentBox;
+    }
+
+    public Node editMaterialArea(Item item) {
+        VBox contentBox = new VBox();
+        Label indicatorLabel = new Label("Material Toughness");
+        if (item instanceof CraftingMaterial material) {
+            TextArea toughnessArea = new TextArea(Integer.toString(material.getMaterial_toughness()));
+            toughnessArea.setWrapText(true);
+            toughnessArea.setMaxHeight(30);
+            toughnessArea.setMaxWidth(150);
+            toughnessArea.setOnKeyReleased(event -> {
+                if (Double.isNaN(Double.parseDouble(toughnessArea.getText()))) return;
+                material.setMaterial_toughness(Integer.parseInt(toughnessArea.getText()));
+                listPane.getListView().refresh();
+            });
+
+            Label max_mat_mod_label = new Label("Max Material's Mod");
+            TextArea max_mod_area = new TextArea(Integer.toString(material.getMaterial_max_mod()));
+            max_mod_area.setWrapText(true);
+            max_mod_area.setMaxHeight(30);
+            max_mod_area.setMaxWidth(150);
+            max_mod_area.setOnKeyReleased(event -> {
+                if (Double.isNaN(Double.parseDouble(max_mod_area.getText()))) return;
+                material.setMaterial_max_mod(Integer.parseInt(max_mod_area.getText()));
+                listPane.getListView().refresh();
+            });
+
+            CheckBox reveal = new CheckBox("Revealed?");
+            reveal.setOnAction(e-> {
+                material.setReveal_usage(true);
+            });
+
+            VBox pool_box = new VBox();
+            ComboBox<String> pool_select = new ComboBox<>();
+            List<String> pool_name_list = new ArrayList<>();
+            for (CraftModPool pool : database.getAllModPools().values()) {
+                pool_name_list.add(pool.getPool_name());
+            }
+            pool_select.getItems().addAll(pool_name_list);
+
+            TextField min_tier = new TextField("Min tier");
+            TextField max_tier = new TextField("Max tier");
+            TextField mods_allowed = new TextField("Max mods for pool");
+            Button add_pool = new Button("Add Pool");
+
+            add_pool.setOnAction(e-> {
+                CraftModPool pool = database.getAllModPools().get(pool_select.getValue());
+                if (pool == null) return;
+                int min = Integer.parseInt(min_tier.getText());
+                int max = Integer.parseInt(max_tier.getText());
+                int allowed = Integer.parseInt(mods_allowed.getText());
+                material.insertModPool(pool, min, max, allowed);
+                createModPoolField(material, pool, min, max, allowed, pool_box);
+            });
+            pool_box.getChildren().addAll(pool_select, min_tier, max_tier, mods_allowed, add_pool);
+            material.getPools().forEach((name, pool_entry) -> {
+                createModPoolField(material, pool_entry.getPool(), pool_entry.getMinTier(), pool_entry.getMaxTier(), pool_entry.getMaxModsAllowed(), pool_box);
+            });
+
+            VBox tag_box = new VBox();
+            ComboBox<StatTag> tag_boost = new ComboBox<>();
+            tag_boost.getItems().addAll(StatTag.values());
+            TextField tag_boost_number = new TextField();
+            Button add_tag_boost = new Button("Add Boost");
+            add_tag_boost.setOnAction(e-> {
+                material.insertBoost(tag_boost.getValue(), Double.parseDouble(tag_boost_number.getText()));
+                createModBoostField(material, tag_boost.getValue(), Double.parseDouble(tag_boost_number.getText()), tag_box);
+            });
+
+            CheckBox unique_boost = new CheckBox("Unique Boost?");
+            unique_boost.setSelected(material.isUnique_boost());
+            unique_boost.setOnAction(e-> {
+                material.setUnique_boost(unique_boost.isSelected());
+            });
+
+            tag_box.getChildren().addAll(tag_boost, tag_boost_number, add_tag_boost);
+            material.getModBoost().forEach((tag, mult) -> {
+                createModBoostField(material, tag, mult, tag_box);
+            });
+
+            contentBox.getChildren().addAll(indicatorLabel, toughnessArea, max_mat_mod_label, max_mod_area, reveal, unique_boost, pool_box, tag_box);
+        }
         return contentBox;
     }
 
@@ -646,6 +751,32 @@ public class ItemEditPanel extends ScrollPane {
         } else {
             return new VBox();
         }
+    }
+
+    public void createModPoolField(CraftingMaterial material, CraftModPool pool, int min , int max, int max_mods, VBox box) {
+        HBox line = new HBox();
+        Label main_label = new Label();
+        main_label.setText("Pool : "+pool.getPool_name()+" | Tier "+min+" - "+max+" | Max "+max_mods+ " mods");
+        Button delete = new Button("Delete");
+        delete.setOnAction(e-> {
+            material.getPools().remove(pool.getPool_name());
+            box.getChildren().remove(line);
+        });
+        line.getChildren().addAll(main_label, delete);
+        box.getChildren().addAll(line);
+    }
+
+    public void createModBoostField(CraftingMaterial material, StatTag tag, double multiplier, VBox box) {
+        HBox line = new HBox();
+        Label main_label = new Label();
+        main_label.setText("Boost : "+tag.writeAsString()+" by "+multiplier*100+"%");
+        Button delete = new Button("Delete");
+        delete.setOnAction(e-> {
+            material.getModBoost().remove(tag);
+            box.getChildren().remove(line);
+        });
+        line.getChildren().addAll(main_label, delete);
+        box.getChildren().addAll(line);
     }
 
     public void createSkillModifierField(ModifierBundle bundle, VBox skillModBox) {

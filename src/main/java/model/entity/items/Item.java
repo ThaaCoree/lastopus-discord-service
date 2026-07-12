@@ -25,6 +25,7 @@ public class Item {
         this.weight = 0;
         this.price_in_copper = 0;
     }
+
     public Item() {
         this.name = "NONAME";
         this.itemType = ItemType.NONE;

@@ -11,6 +11,9 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import model.entity.*;
 import model.entity.items.*;
+import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -48,6 +51,9 @@ public class ServiceDatabase {
     public Map<String, Conditions> allConditionMap ;
     public Map<String, Card> allCardMap;
     public Map<Integer, PassiveNode> allPassiveMap;
+    private Map<String, CraftingMaterial> allMaterials = new LinkedHashMap<>();
+    private Map<String, CraftModPool> allModPools = new LinkedHashMap<>();
+    private Map<String, CraftedEquipment> allCraftedEquipments = new LinkedHashMap<>();
     public Map<String, Shop> allShop;
     public Map<String, Unit> allUnit = new LinkedHashMap<>();
     public Map<String, Summon> allSummon = new LinkedHashMap<>();
@@ -145,6 +151,7 @@ public class ServiceDatabase {
                 Equipment newEquipment = allEquipmentMap.get(name);
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
+                CraftingMaterial newMaterial = allMaterials.get(name);
                 Rune newRune = new Rune();
                 if (allRuneMap != null) {
                     newRune = allRuneMap.get(name);
@@ -165,6 +172,9 @@ public class ServiceDatabase {
                 if (newRune != null) {
                     entry.setValue(newRune);
                 }
+                if (newMaterial != null) {
+                    entry.setValue(newMaterial);
+                }
             }
 
             for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
@@ -178,6 +188,7 @@ public class ServiceDatabase {
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = allRuneMap.get(name);
+                CraftingMaterial newMaterial = allMaterials.get(name);
 
                 if (newItem != null) {
                     entry.setValue(newItem);
@@ -193,6 +204,9 @@ public class ServiceDatabase {
                 }
                 if (newRune != null) {
                     entry.setValue(newRune);
+                }
+                if (newMaterial != null) {
+                    entry.setValue(newMaterial);
                 }
             }
 
@@ -322,6 +336,9 @@ public class ServiceDatabase {
             allPlayerMap = res.getAllPlayerMap();
             allRuneMap = res.getAllRuneMap();
             allShop = res.getAllShop();
+            allMaterials = res.getAllMaterials();
+            allModPools = res.getAllModPools();
+            allCraftedEquipments = res.getAllCraftedEquipments();
 
             updateUnitObjects();
         } catch (Exception e) {
@@ -362,6 +379,9 @@ public class ServiceDatabase {
         Map<String, Unit> allPlayers = loadCollection("players", Unit.class);
         Map<String, Rune> allRunes = loadCollection("runes", Rune.class);
         Map<String, Shop> allShops = loadCollection("shops", Shop.class);
+        Map<String, CraftingMaterial> allMaterials = loadCollection("materials", CraftingMaterial.class);
+        Map<String, CraftModPool> allModPools = loadCollection("modPools", CraftModPool.class);
+        Map<String, CraftedEquipment> allCraftedEquipments = loadCollection("craftedEquipments", CraftedEquipment.class);
 //        Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
 
 
@@ -385,7 +405,10 @@ public class ServiceDatabase {
                 allMonsters,
                 allPassives,
                 allRunes,
-                allShops
+                allShops,
+                allMaterials,
+                allModPools,
+                allCraftedEquipments
         ));
 
         for (Map<String, ?> map : maps) {
@@ -417,6 +440,9 @@ public class ServiceDatabase {
         saveRequest.setAllPlayerMap(allPlayers);
         saveRequest.setAllRuneMap(allRunes);
         saveRequest.setAllShop(allShops);
+        saveRequest.setAllMaterials(allMaterials);
+        saveRequest.setAllModPools(allModPools);
+        saveRequest.setAllCraftedEquipments(allCraftedEquipments);
         return saveRequest;
     }
 
@@ -648,4 +674,6 @@ public class ServiceDatabase {
         System.out.println("saved passive");
         return "saved";
     }
+
+
 }
