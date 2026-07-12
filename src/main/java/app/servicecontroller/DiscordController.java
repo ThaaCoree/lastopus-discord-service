@@ -546,7 +546,7 @@ public class DiscordController {
             if (Crafter.shatterItem(equipment)) {
                 itemBrick(unit, equipment, 0, sb);
             } else {
-                sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append("\n")
+                sb.append("เสร็จสิ้นการคราฟท์ ").append("\n")
                         .append(equipment.getName()).append("\n")
                         .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
                         .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
@@ -614,10 +614,10 @@ public class DiscordController {
                 sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                         .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType()))
                         .append(" - ").append(df.format(modInstance.getFinal_value())).append(" - ")
-                        .append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
+                        .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
                         .append("[").append(modInstance.getPool_name()).append("]").append(" [")
                         .append(equipment.getMaterialInstances().stream()
-                                .filter(m -> m.getMaterial_id() == modInstance.getMod_id())
+                                .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())
                                 .map(m -> m.getMaterial().getName())
                                 .findFirst()
                                 .orElse("Unknown"))

@@ -61,6 +61,7 @@ public class StatTranslateUtil {
         statToWrite.put(StatType.IGNOREMDEF, "Ignore PDEF");
         statToWrite.put(StatType.IGNOREPDEF, "Ignore MDEF");
         statToWrite.put(StatType.DEBUFFRESISTANCE, "Debuff Resistance");
+        statToWrite.put(StatType.DEFLECTION, "Deflection");
 
         statToWrite.put(StatType.FIREPENETRATION, "Fire Penetrate");
         statToWrite.put(StatType.WATERPENETRATION, "Water Penetrate");
