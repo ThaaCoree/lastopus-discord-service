@@ -183,6 +183,7 @@ public class Database {
             to_save.add("passive");
             to_save.add("materials");
             to_save.add("modPools");
+            to_save.add("craftedEquipments");
 
             for (String filler : to_save) {
                 String json = "";
@@ -246,7 +247,10 @@ public class Database {
                     if (allModPools == null) continue;
                     json = mapper.writeValueAsString(allModPools);
                 }
-
+                if (filler.equals("craftedEquipments")) {
+                    if (allModPools == null) continue;
+                    json = mapper.writeValueAsString(allCraftedEquipments);
+                }
 
                 HttpRequest request_player = HttpRequest.newBuilder()
                         .uri(URI.create("http://localhost:8081/save_" + filler))

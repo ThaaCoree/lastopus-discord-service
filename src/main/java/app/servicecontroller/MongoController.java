@@ -287,4 +287,14 @@ public class MongoController {
         System.out.println("saved passive");
         return "saved";
     }
+
+    @PostMapping("/save_craftedEquipments")
+    public String save_craftedEquipments(@RequestBody Map<String, CraftingMaterial> map) {
+
+        mongoTemplate.dropCollection("craftedEquipments");
+        mongoTemplate.save(map, "craftedEquipments");
+
+        System.out.println("saved craftedEquipments");
+        return "saved";
+    }
 }

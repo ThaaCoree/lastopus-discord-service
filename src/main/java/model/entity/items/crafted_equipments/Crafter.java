@@ -9,7 +9,7 @@ import java.util.*;
 public class Crafter {
 
     public static void craft(CraftedEquipment craftedEquipment) {
-        craftedEquipment.materialInstances.clear();
+        craftedEquipment.modInstances.clear();
         craftedEquipment.mod_id = 0;
         EquipmentType equipmentType = craftedEquipment.getEquipmentType();
         WeaponType weaponType = craftedEquipment.getWeaponType();
