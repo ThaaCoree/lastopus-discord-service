@@ -278,7 +278,7 @@ public class DiscordController {
     @PostMapping("/load_database")
     public String load_database(@RequestBody PlayerMessage playerMessage) {
         if (isGM(playerMessage.roles)) {
-            database.loadMongo();
+            database.reloadDatabase();
             return "อัพเดท Database แล้ว";
         } else {
             return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";

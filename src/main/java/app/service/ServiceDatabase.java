@@ -67,6 +67,13 @@ public class ServiceDatabase {
         initCounterAllUnit();
     }
 
+    public void reloadDatabase() {
+        loadMongo();
+        mapAllUnit();
+        updateEverything();
+        initCounterAllUnit();
+    }
+
     public Equipment findEquipment(String name) {
         if (allEquipmentMap.containsKey(name)) {
             return allEquipmentMap.get(name);

@@ -26,216 +26,216 @@
       "conditionInstances" : { },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 121.0,
+          "base" : 121.0,
           "final" : 121.0,
-          "base" : 121.0
+          "current" : 121.0
         },
         "AGILITY" : {
-          "current" : 196.0,
+          "base" : 196.0,
           "final" : 196.0,
-          "base" : 196.0
+          "current" : 196.0
         },
         "VITALITY" : {
-          "current" : 84.0,
+          "base" : 84.0,
           "final" : 84.0,
-          "base" : 84.0
+          "current" : 84.0
         },
         "DEXTERITY" : {
-          "current" : 237.0,
+          "base" : 237.0,
           "final" : 237.0,
-          "base" : 237.0
+          "current" : 237.0
         },
         "WISDOM" : {
-          "current" : 151.0,
+          "base" : 151.0,
           "final" : 151.0,
-          "base" : 151.0
+          "current" : 151.0
         },
         "INTELLIGENCE" : {
-          "current" : 301.0,
+          "base" : 301.0,
           "final" : 301.0,
-          "base" : 301.0
+          "current" : 301.0
         },
         "LUCK" : {
-          "current" : 101.0,
+          "base" : 101.0,
           "final" : 101.0,
-          "base" : 101.0
+          "current" : 101.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 821.0,
+          "base" : 821.0,
           "final" : 821.0,
-          "base" : 821.0
+          "current" : 821.0
         },
         "MAGICALATTACK" : {
-          "current" : 1001.0,
+          "base" : 1001.0,
           "final" : 1001.0,
-          "base" : 1001.0
+          "current" : 1001.0
         },
         "RANGEDATTACK" : {
-          "current" : 937.0,
+          "base" : 937.0,
           "final" : 937.0,
-          "base" : 937.0
+          "current" : 937.0
         },
         "HEALTHPOINT" : {
-          "current" : 31119.0,
+          "base" : 31119.0,
           "final" : 31119.0,
-          "base" : 31119.0
+          "current" : 31119.0
         },
         "MANAPOINT" : {
-          "current" : 75.3,
+          "base" : 75.3,
           "final" : 75.3,
-          "base" : 75.3
+          "current" : 75.3
         },
         "PHYSICALDEFENSE" : {
-          "current" : 787.0,
+          "base" : 787.0,
           "final" : 787.0,
-          "base" : 787.0
+          "current" : 787.0
         },
         "MAGICALDEFENSE" : {
-          "current" : 1147.0,
+          "base" : 1147.0,
           "final" : 1147.0,
-          "base" : 1147.0
+          "current" : 1147.0
         },
         "MOVEMENTSPEED" : {
-          "current" : 32.629999999999995,
+          "base" : 32.629999999999995,
           "final" : 32.629999999999995,
-          "base" : 32.629999999999995
+          "current" : 32.629999999999995
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.755,
+          "base" : 0.755,
           "final" : 0.755,
-          "base" : 0.755
+          "current" : 0.755
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.3775,
+          "base" : 0.3775,
           "final" : 0.3775,
-          "base" : 0.3775
+          "current" : 0.3775
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.3775,
+          "base" : 0.3775,
           "final" : 0.3775,
-          "base" : 0.3775
+          "current" : 0.3775
         },
         "CRITCHANCE" : {
-          "current" : 0.10049999999999999,
+          "base" : 0.05,
           "final" : 0.10049999999999999,
-          "base" : 0.05
+          "current" : 0.10049999999999999
         },
         "CRITDAMAGE" : {
-          "current" : 3.0149999999999997,
+          "base" : 3.0149999999999997,
           "final" : 3.0149999999999997,
-          "base" : 3.0149999999999997
+          "current" : 3.0149999999999997
         },
         "MANAREGEN" : {
-          "current" : 19.10765,
+          "base" : 0.0,
           "final" : 19.10765,
-          "base" : 0.0
+          "current" : 19.10765
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 1689.0,
+          "base" : 1689.0,
           "final" : 1689.0,
-          "base" : 1689.0
+          "current" : 1689.0
         },
         "EVASION" : {
-          "current" : 1700.0,
+          "base" : 1700.0,
           "final" : 1700.0,
-          "base" : 1700.0
+          "current" : 1700.0
         },
         "PHYSICALBLOCK" : {
-          "current" : -18.0,
+          "base" : -18.0,
           "final" : -18.0,
-          "base" : -18.0
+          "current" : -18.0
         },
         "MAGICALBLOCK" : {
-          "current" : -18.0,
+          "base" : -18.0,
           "final" : -18.0,
-          "base" : -18.0
+          "current" : -18.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 2.176,
+          "base" : 2.176,
           "final" : 2.176,
-          "base" : 2.176
+          "current" : 2.176
         },
         "CASTSPEED" : {
-          "current" : 2.176,
+          "base" : 2.176,
           "final" : 2.176,
-          "base" : 2.176
+          "current" : 2.176
         },
         "PHYSICALPENETRATE" : {
-          "current" : 510.2,
+          "base" : 510.2,
           "final" : 510.2,
-          "base" : 510.2
+          "current" : 510.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 684.2,
+          "base" : 684.2,
           "final" : 684.2,
-          "base" : 684.2
+          "current" : 684.2
         },
         "RESERVATION" : {
-          "current" : 0.39840637450199207,
+          "base" : 0.39840637450199207,
           "final" : 0.39840637450199207,
-          "base" : 0.39840637450199207
+          "current" : 0.39840637450199207
         },
         "CRITSHIELD" : {
-          "current" : 0.050249999999999996,
+          "base" : 0.025,
           "final" : 0.050249999999999996,
-          "base" : 0.025
+          "current" : 0.050249999999999996
         },
         "SPEED" : {
-          "current" : 20.6,
+          "base" : 20.6,
           "final" : 20.6,
-          "base" : 20.6
+          "current" : 20.6
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },
@@ -1130,216 +1130,216 @@
       },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 51.0,
+          "base" : 51.0,
           "final" : 51.0,
-          "base" : 51.0
+          "current" : 51.0
         },
         "AGILITY" : {
-          "current" : 153.0,
+          "base" : 153.0,
           "final" : 153.0,
-          "base" : 153.0
+          "current" : 153.0
         },
         "VITALITY" : {
-          "current" : 201.0,
+          "base" : 201.0,
           "final" : 201.0,
-          "base" : 201.0
+          "current" : 201.0
         },
         "DEXTERITY" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "WISDOM" : {
-          "current" : 71.0,
+          "base" : 71.0,
           "final" : 71.0,
-          "base" : 71.0
+          "current" : 71.0
         },
         "INTELLIGENCE" : {
-          "current" : 51.0,
+          "base" : 51.0,
           "final" : 51.0,
-          "base" : 51.0
+          "current" : 51.0
         },
         "LUCK" : {
-          "current" : 51.0,
+          "base" : 51.0,
           "final" : 51.0,
-          "base" : 51.0
+          "current" : 51.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 551.0,
+          "base" : 551.0,
           "final" : 551.0,
-          "base" : 551.0
+          "current" : 551.0
         },
         "MAGICALATTACK" : {
-          "current" : 551.0,
+          "base" : 551.0,
           "final" : 551.0,
-          "base" : 551.0
+          "current" : 551.0
         },
         "RANGEDATTACK" : {
-          "current" : 591.0,
+          "base" : 591.0,
           "final" : 591.0,
-          "base" : 591.0
+          "current" : 591.0
         },
         "HEALTHPOINT" : {
-          "current" : 124471.0,
+          "base" : 124471.0,
           "final" : 124471.0,
-          "base" : 124471.0
+          "current" : 124471.0
         },
         "MANAPOINT" : {
-          "current" : 41.3,
+          "base" : 41.3,
           "final" : 41.3,
-          "base" : 41.3
+          "current" : 41.3
         },
         "PHYSICALDEFENSE" : {
-          "current" : 906.5,
+          "base" : 906.5,
           "final" : 906.5,
-          "base" : 906.5
+          "current" : 906.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 906.5,
+          "base" : 906.5,
           "final" : 906.5,
-          "base" : 906.5
+          "current" : 906.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 453.09,
+          "base" : 453.09,
           "final" : 453.09,
-          "base" : 453.09
+          "current" : 453.09
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.355,
+          "base" : 0.355,
           "final" : 0.355,
-          "base" : 0.355
+          "current" : 0.355
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.1775,
+          "base" : 0.1775,
           "final" : 0.1775,
-          "base" : 0.1775
+          "current" : 0.1775
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.1775,
+          "base" : 0.1775,
           "final" : 0.1775,
-          "base" : 0.1775
+          "current" : 0.1775
         },
         "CRITCHANCE" : {
-          "current" : 0.07550000000000001,
+          "base" : 0.05,
           "final" : 0.07550000000000001,
-          "base" : 0.05
+          "current" : 0.07550000000000001
         },
         "CRITDAMAGE" : {
-          "current" : 2.265,
+          "base" : 2.265,
           "final" : 2.265,
-          "base" : 2.265
+          "current" : 2.265
         },
         "MANAREGEN" : {
-          "current" : 4.62815,
+          "base" : 0.0,
           "final" : 4.62815,
-          "base" : 0.0
+          "current" : 4.62815
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 667.0,
+          "base" : 667.0,
           "final" : 667.0,
-          "base" : 667.0
+          "current" : 667.0
         },
         "EVASION" : {
-          "current" : 1150.0,
+          "base" : 1150.0,
           "final" : 1150.0,
-          "base" : 1150.0
+          "current" : 1150.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 259.0,
+          "base" : 259.0,
           "final" : 259.0,
-          "base" : 259.0
+          "current" : 259.0
         },
         "MAGICALBLOCK" : {
-          "current" : 259.0,
+          "base" : 259.0,
           "final" : 259.0,
-          "base" : 259.0
+          "current" : 259.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.6,
+          "base" : 0.6,
           "final" : 0.6,
-          "base" : 0.6
+          "current" : 0.6
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.9180000000000001,
+          "base" : 1.9180000000000001,
           "final" : 1.9180000000000001,
-          "base" : 1.9180000000000001
+          "current" : 1.9180000000000001
         },
         "CASTSPEED" : {
-          "current" : 1.9180000000000001,
+          "base" : 1.9180000000000001,
           "final" : 1.9180000000000001,
-          "base" : 1.9180000000000001
+          "current" : 1.9180000000000001
         },
         "PHYSICALPENETRATE" : {
-          "current" : 364.2,
+          "base" : 364.2,
           "final" : 364.2,
-          "base" : 364.2
+          "current" : 364.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 364.2,
+          "base" : 364.2,
           "final" : 364.2,
-          "base" : 364.2
+          "current" : 364.2
         },
         "RESERVATION" : {
-          "current" : 0.5847953216374269,
+          "base" : 0.5847953216374269,
           "final" : 0.5847953216374269,
-          "base" : 0.5847953216374269
+          "current" : 0.5847953216374269
         },
         "CRITSHIELD" : {
-          "current" : 0.33975,
+          "base" : 0.225,
           "final" : 0.33975,
-          "base" : 0.225
+          "current" : 0.33975
         },
         "SPEED" : {
-          "current" : 16.3,
+          "base" : 16.3,
           "final" : 50.7375,
-          "base" : 16.3
+          "current" : 16.3
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.5,
+          "base" : 0.5,
           "final" : 0.5,
-          "base" : 0.5
+          "current" : 0.5
         }
       },
       "flatSkillModifiers" : { },
@@ -2273,216 +2273,216 @@
       },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 93.0,
+          "base" : 93.0,
           "final" : 93.0,
-          "base" : 93.0
+          "current" : 93.0
         },
         "AGILITY" : {
-          "current" : 101.0,
+          "base" : 101.0,
           "final" : 101.0,
-          "base" : 101.0
+          "current" : 101.0
         },
         "VITALITY" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "DEXTERITY" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "WISDOM" : {
-          "current" : 151.0,
+          "base" : 151.0,
           "final" : 151.0,
-          "base" : 151.0
+          "current" : 151.0
         },
         "INTELLIGENCE" : {
-          "current" : 191.0,
+          "base" : 191.0,
           "final" : 191.0,
-          "base" : 191.0
+          "current" : 191.0
         },
         "LUCK" : {
-          "current" : 101.0,
+          "base" : 101.0,
           "final" : 101.0,
-          "base" : 101.0
+          "current" : 101.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 693.0,
+          "base" : 693.0,
           "final" : 693.0,
-          "base" : 693.0
+          "current" : 693.0
         },
         "MAGICALATTACK" : {
-          "current" : 791.0,
+          "base" : 791.0,
           "final" : 791.0,
-          "base" : 791.0
+          "current" : 791.0
         },
         "RANGEDATTACK" : {
-          "current" : 691.0,
+          "base" : 691.0,
           "final" : 691.0,
-          "base" : 691.0
+          "current" : 691.0
         },
         "HEALTHPOINT" : {
-          "current" : 84021.0,
+          "base" : 84021.0,
           "final" : 84021.0,
-          "base" : 84021.0
+          "current" : 84021.0
         },
         "MANAPOINT" : {
-          "current" : 65.3,
+          "base" : 65.3,
           "final" : 65.3,
-          "base" : 65.3
+          "current" : 65.3
         },
         "PHYSICALDEFENSE" : {
-          "current" : 505.5,
+          "base" : 505.5,
           "final" : 505.5,
-          "base" : 505.5
+          "current" : 505.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 701.5,
+          "base" : 701.5,
           "final" : 701.5,
-          "base" : 701.5
+          "current" : 701.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 446.85,
+          "base" : 446.85,
           "final" : 446.85,
-          "base" : 446.85
+          "current" : 446.85
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.755,
+          "base" : 0.755,
           "final" : 0.755,
-          "base" : 0.755
+          "current" : 0.755
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.3775,
+          "base" : 0.3775,
           "final" : 0.3775,
-          "base" : 0.3775
+          "current" : 0.3775
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.3775,
+          "base" : 0.3775,
           "final" : 0.3775,
-          "base" : 0.3775
+          "current" : 0.3775
         },
         "CRITCHANCE" : {
-          "current" : 0.10049999999999999,
+          "base" : 0.05,
           "final" : 0.10049999999999999,
-          "base" : 0.05
+          "current" : 0.10049999999999999
         },
         "CRITDAMAGE" : {
-          "current" : 3.0149999999999997,
+          "base" : 3.0149999999999997,
           "final" : 3.0149999999999997,
-          "base" : 3.0149999999999997
+          "current" : 3.0149999999999997
         },
         "MANAREGEN" : {
-          "current" : 12.411150000000003,
+          "base" : 0.0,
           "final" : 12.411150000000003,
-          "base" : 0.0
+          "current" : 12.411150000000003
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 667.0,
+          "base" : 667.0,
           "final" : 667.0,
-          "base" : 667.0
+          "current" : 667.0
         },
         "EVASION" : {
-          "current" : 838.0,
+          "base" : 838.0,
           "final" : 838.0,
-          "base" : 838.0
+          "current" : 838.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "MAGICALBLOCK" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.6059999999999999,
+          "base" : 1.6059999999999999,
           "final" : 1.6059999999999999,
-          "base" : 1.6059999999999999
+          "current" : 1.6059999999999999
         },
         "CASTSPEED" : {
-          "current" : 1.6059999999999999,
+          "base" : 1.6059999999999999,
           "final" : 1.6059999999999999,
-          "base" : 1.6059999999999999
+          "current" : 1.6059999999999999
         },
         "PHYSICALPENETRATE" : {
-          "current" : 509.79999999999995,
+          "base" : 509.79999999999995,
           "final" : 509.79999999999995,
-          "base" : 509.79999999999995
+          "current" : 509.79999999999995
         },
         "MAGICALPENETRATE" : {
-          "current" : 686.2,
+          "base" : 686.2,
           "final" : 686.2,
-          "base" : 686.2
+          "current" : 686.2
         },
         "RESERVATION" : {
-          "current" : 0.39840637450199207,
+          "base" : 0.39840637450199207,
           "final" : 0.39840637450199207,
-          "base" : 0.39840637450199207
+          "current" : 0.39840637450199207
         },
         "CRITSHIELD" : {
-          "current" : 0.050249999999999996,
+          "base" : 0.025,
           "final" : 0.050249999999999996,
-          "base" : 0.025
+          "current" : 0.050249999999999996
         },
         "SPEED" : {
-          "current" : 11.100000000000001,
+          "base" : 11.100000000000001,
           "final" : 52.425,
-          "base" : 11.100000000000001
+          "current" : 11.100000000000001
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },
@@ -3416,216 +3416,216 @@
       },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 111.0,
+          "base" : 111.0,
           "final" : 111.0,
-          "base" : 111.0
+          "current" : 111.0
         },
         "AGILITY" : {
-          "current" : 111.0,
+          "base" : 111.0,
           "final" : 111.0,
-          "base" : 111.0
+          "current" : 111.0
         },
         "VITALITY" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "DEXTERITY" : {
-          "current" : 67.0,
+          "base" : 67.0,
           "final" : 67.0,
-          "base" : 67.0
+          "current" : 67.0
         },
         "WISDOM" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "INTELLIGENCE" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "LUCK" : {
-          "current" : 51.0,
+          "base" : 51.0,
           "final" : 51.0,
-          "base" : 51.0
+          "current" : 51.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 611.0,
+          "base" : 611.0,
           "final" : 611.0,
-          "base" : 611.0
+          "current" : 611.0
         },
         "MAGICALATTACK" : {
-          "current" : 541.0,
+          "base" : 541.0,
           "final" : 541.0,
-          "base" : 541.0
+          "current" : 541.0
         },
         "RANGEDATTACK" : {
-          "current" : 567.0,
+          "base" : 567.0,
           "final" : 567.0,
-          "base" : 567.0
+          "current" : 567.0
         },
         "HEALTHPOINT" : {
-          "current" : 3611.0,
+          "base" : 3611.0,
           "final" : 3611.0,
-          "base" : 3611.0
+          "current" : 3611.0
         },
         "MANAPOINT" : {
-          "current" : 29.799999999999997,
+          "base" : 29.799999999999997,
           "final" : 29.799999999999997,
-          "base" : 29.799999999999997
+          "current" : 29.799999999999997
         },
         "PHYSICALDEFENSE" : {
-          "current" : 541.5,
+          "base" : 541.5,
           "final" : 541.5,
-          "base" : 541.5
+          "current" : 541.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 401.5,
+          "base" : 401.5,
           "final" : 401.5,
-          "base" : 401.5
+          "current" : 401.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 57.33,
+          "base" : 57.33,
           "final" : 57.33,
-          "base" : 57.33
+          "current" : 57.33
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.20500000000000002,
+          "base" : 0.20500000000000002,
           "final" : 0.20500000000000002,
-          "base" : 0.20500000000000002
+          "current" : 0.20500000000000002
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "CRITCHANCE" : {
-          "current" : 0.07550000000000001,
+          "base" : 0.05,
           "final" : 0.07550000000000001,
-          "base" : 0.05
+          "current" : 0.07550000000000001
         },
         "CRITDAMAGE" : {
-          "current" : 2.265,
+          "base" : 2.265,
           "final" : 2.265,
-          "base" : 2.265
+          "current" : 2.265
         },
         "MANAREGEN" : {
-          "current" : 3.5109,
+          "base" : 0.0,
           "final" : 3.5109,
-          "base" : 0.0
+          "current" : 3.5109
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 499.0,
+          "base" : 499.0,
           "final" : 499.0,
-          "base" : 499.0
+          "current" : 499.0
         },
         "EVASION" : {
-          "current" : 850.0,
+          "base" : 850.0,
           "final" : 850.0,
-          "base" : 850.0
+          "current" : 850.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 81.0,
+          "base" : 81.0,
           "final" : 81.0,
-          "base" : 81.0
+          "current" : 81.0
         },
         "MAGICALBLOCK" : {
-          "current" : 81.0,
+          "base" : 81.0,
           "final" : 81.0,
-          "base" : 81.0
+          "current" : 81.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.666,
+          "base" : 1.666,
           "final" : 1.666,
-          "base" : 1.666
+          "current" : 1.666
         },
         "CASTSPEED" : {
-          "current" : 1.666,
+          "base" : 1.666,
           "final" : 1.666,
-          "base" : 1.666
+          "current" : 1.666
         },
         "PHYSICALPENETRATE" : {
-          "current" : 272.2,
+          "base" : 272.2,
           "final" : 272.2,
-          "base" : 272.2
+          "current" : 272.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 146.2,
+          "base" : 146.2,
           "final" : 146.2,
-          "base" : 146.2
+          "current" : 146.2
         },
         "RESERVATION" : {
-          "current" : 0.7092198581560283,
+          "base" : 0.7092198581560283,
           "final" : 0.7092198581560283,
-          "base" : 0.7092198581560283
+          "current" : 0.7092198581560283
         },
         "CRITSHIELD" : {
-          "current" : 0.037750000000000006,
+          "base" : 0.025,
           "final" : 0.037750000000000006,
-          "base" : 0.025
+          "current" : 0.037750000000000006
         },
         "SPEED" : {
-          "current" : 12.100000000000001,
+          "base" : 12.100000000000001,
           "final" : 21.1,
-          "base" : 12.100000000000001
+          "current" : 12.100000000000001
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },
@@ -4558,216 +4558,216 @@
       },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 111.0,
+          "base" : 111.0,
           "final" : 111.0,
-          "base" : 111.0
+          "current" : 111.0
         },
         "AGILITY" : {
-          "current" : 111.0,
+          "base" : 111.0,
           "final" : 111.0,
-          "base" : 111.0
+          "current" : 111.0
         },
         "VITALITY" : {
-          "current" : 91.0,
+          "base" : 91.0,
           "final" : 91.0,
-          "base" : 91.0
+          "current" : 91.0
         },
         "DEXTERITY" : {
-          "current" : 67.0,
+          "base" : 67.0,
           "final" : 67.0,
-          "base" : 67.0
+          "current" : 67.0
         },
         "WISDOM" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "INTELLIGENCE" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "LUCK" : {
-          "current" : 51.0,
+          "base" : 51.0,
           "final" : 51.0,
-          "base" : 51.0
+          "current" : 51.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 611.0,
+          "base" : 611.0,
           "final" : 611.0,
-          "base" : 611.0
+          "current" : 611.0
         },
         "MAGICALATTACK" : {
-          "current" : 541.0,
+          "base" : 541.0,
           "final" : 541.0,
-          "base" : 541.0
+          "current" : 541.0
         },
         "RANGEDATTACK" : {
-          "current" : 567.0,
+          "base" : 567.0,
           "final" : 567.0,
-          "base" : 567.0
+          "current" : 567.0
         },
         "HEALTHPOINT" : {
-          "current" : 3611.0,
+          "base" : 3611.0,
           "final" : 3611.0,
-          "base" : 3611.0
+          "current" : 3611.0
         },
         "MANAPOINT" : {
-          "current" : 29.799999999999997,
+          "base" : 29.799999999999997,
           "final" : 29.799999999999997,
-          "base" : 29.799999999999997
+          "current" : 29.799999999999997
         },
         "PHYSICALDEFENSE" : {
-          "current" : 541.5,
+          "base" : 541.5,
           "final" : 541.5,
-          "base" : 541.5
+          "current" : 541.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 401.5,
+          "base" : 401.5,
           "final" : 401.5,
-          "base" : 401.5
+          "current" : 401.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 57.33,
+          "base" : 57.33,
           "final" : 57.33,
-          "base" : 57.33
+          "current" : 57.33
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.20500000000000002,
+          "base" : 0.20500000000000002,
           "final" : 0.20500000000000002,
-          "base" : 0.20500000000000002
+          "current" : 0.20500000000000002
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "CRITCHANCE" : {
-          "current" : 0.07550000000000001,
+          "base" : 0.05,
           "final" : 0.07550000000000001,
-          "base" : 0.05
+          "current" : 0.07550000000000001
         },
         "CRITDAMAGE" : {
-          "current" : 2.265,
+          "base" : 2.265,
           "final" : 2.265,
-          "base" : 2.265
+          "current" : 2.265
         },
         "MANAREGEN" : {
-          "current" : 3.5109,
+          "base" : 0.0,
           "final" : 3.5109,
-          "base" : 0.0
+          "current" : 3.5109
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 499.0,
+          "base" : 499.0,
           "final" : 499.0,
-          "base" : 499.0
+          "current" : 499.0
         },
         "EVASION" : {
-          "current" : 850.0,
+          "base" : 850.0,
           "final" : 850.0,
-          "base" : 850.0
+          "current" : 850.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 81.0,
+          "base" : 81.0,
           "final" : 81.0,
-          "base" : 81.0
+          "current" : 81.0
         },
         "MAGICALBLOCK" : {
-          "current" : 81.0,
+          "base" : 81.0,
           "final" : 81.0,
-          "base" : 81.0
+          "current" : 81.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.666,
+          "base" : 1.666,
           "final" : 1.666,
-          "base" : 1.666
+          "current" : 1.666
         },
         "CASTSPEED" : {
-          "current" : 1.666,
+          "base" : 1.666,
           "final" : 1.666,
-          "base" : 1.666
+          "current" : 1.666
         },
         "PHYSICALPENETRATE" : {
-          "current" : 272.2,
+          "base" : 272.2,
           "final" : 272.2,
-          "base" : 272.2
+          "current" : 272.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 146.2,
+          "base" : 146.2,
           "final" : 146.2,
-          "base" : 146.2
+          "current" : 146.2
         },
         "RESERVATION" : {
-          "current" : 0.7092198581560283,
+          "base" : 0.7092198581560283,
           "final" : 0.7092198581560283,
-          "base" : 0.7092198581560283
+          "current" : 0.7092198581560283
         },
         "CRITSHIELD" : {
-          "current" : 0.037750000000000006,
+          "base" : 0.025,
           "final" : 0.037750000000000006,
-          "base" : 0.025
+          "current" : 0.037750000000000006
         },
         "SPEED" : {
-          "current" : 12.100000000000001,
+          "base" : 12.100000000000001,
           "final" : 24.1,
-          "base" : 12.100000000000001
+          "current" : 12.100000000000001
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },
@@ -5700,216 +5700,216 @@
       },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "AGILITY" : {
-          "current" : 57.0,
+          "base" : 57.0,
           "final" : 57.0,
-          "base" : 57.0
+          "current" : 57.0
         },
         "VITALITY" : {
-          "current" : 61.0,
+          "base" : 61.0,
           "final" : 61.0,
-          "base" : 61.0
+          "current" : 61.0
         },
         "DEXTERITY" : {
-          "current" : 71.0,
+          "base" : 71.0,
           "final" : 71.0,
-          "base" : 71.0
+          "current" : 71.0
         },
         "WISDOM" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "INTELLIGENCE" : {
-          "current" : 151.0,
+          "base" : 151.0,
           "final" : 151.0,
-          "base" : 151.0
+          "current" : 151.0
         },
         "LUCK" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 541.0,
+          "base" : 541.0,
           "final" : 541.0,
-          "base" : 541.0
+          "current" : 541.0
         },
         "MAGICALATTACK" : {
-          "current" : 651.0,
+          "base" : 651.0,
           "final" : 651.0,
-          "base" : 651.0
+          "current" : 651.0
         },
         "RANGEDATTACK" : {
-          "current" : 571.0,
+          "base" : 571.0,
           "final" : 571.0,
-          "base" : 571.0
+          "current" : 571.0
         },
         "HEALTHPOINT" : {
-          "current" : 3081.0,
+          "base" : 3081.0,
           "final" : 3081.0,
-          "base" : 3081.0
+          "current" : 3081.0
         },
         "MANAPOINT" : {
-          "current" : 29.799999999999997,
+          "base" : 29.799999999999997,
           "final" : 29.799999999999997,
-          "base" : 29.799999999999997
+          "current" : 29.799999999999997
         },
         "PHYSICALDEFENSE" : {
-          "current" : 296.5,
+          "base" : 296.5,
           "final" : 296.5,
-          "base" : 296.5
+          "current" : 296.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 516.5,
+          "base" : 516.5,
           "final" : 516.5,
-          "base" : 516.5
+          "current" : 516.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 30.97,
+          "base" : 30.97,
           "final" : 30.97,
-          "base" : 30.97
+          "current" : 30.97
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.20500000000000002,
+          "base" : 0.20500000000000002,
           "final" : 0.20500000000000002,
-          "base" : 0.20500000000000002
+          "current" : 0.20500000000000002
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "CRITCHANCE" : {
-          "current" : 0.07050000000000001,
+          "base" : 0.05,
           "final" : 0.07050000000000001,
-          "base" : 0.05
+          "current" : 0.07050000000000001
         },
         "CRITDAMAGE" : {
-          "current" : 2.115,
+          "base" : 2.115,
           "final" : 2.115,
-          "base" : 2.115
+          "current" : 2.115
         },
         "MANAREGEN" : {
-          "current" : 6.2499,
+          "base" : 0.0,
           "final" : 6.2499,
-          "base" : 0.0
+          "current" : 6.2499
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 627.0,
+          "base" : 627.0,
           "final" : 627.0,
-          "base" : 627.0
+          "current" : 627.0
         },
         "EVASION" : {
-          "current" : 534.0,
+          "base" : 534.0,
           "final" : 534.0,
-          "base" : 534.0
+          "current" : 534.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 75.0,
+          "base" : 75.0,
           "final" : 75.0,
-          "base" : 75.0
+          "current" : 75.0
         },
         "MAGICALBLOCK" : {
-          "current" : 75.0,
+          "base" : 75.0,
           "final" : 75.0,
-          "base" : 75.0
+          "current" : 75.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.342,
+          "base" : 1.342,
           "final" : 1.342,
-          "base" : 1.342
+          "current" : 1.342
         },
         "CASTSPEED" : {
-          "current" : 1.342,
+          "base" : 1.342,
           "final" : 1.342,
-          "base" : 1.342
+          "current" : 1.342
         },
         "PHYSICALPENETRATE" : {
-          "current" : 132.2,
+          "base" : 132.2,
           "final" : 132.2,
-          "base" : 132.2
+          "current" : 132.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 330.2,
+          "base" : 330.2,
           "final" : 330.2,
-          "base" : 330.2
+          "current" : 330.2
         },
         "RESERVATION" : {
-          "current" : 0.7092198581560283,
+          "base" : 0.7092198581560283,
           "final" : 0.7092198581560283,
-          "base" : 0.7092198581560283
+          "current" : 0.7092198581560283
         },
         "CRITSHIELD" : {
-          "current" : 0.035250000000000004,
+          "base" : 0.025,
           "final" : 0.035250000000000004,
-          "base" : 0.025
+          "current" : 0.035250000000000004
         },
         "SPEED" : {
-          "current" : 6.7,
+          "base" : 6.7,
           "final" : 12.7,
-          "base" : 6.7
+          "current" : 6.7
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },
@@ -6486,216 +6486,216 @@
       "conditionInstances" : { },
       "statuses" : {
         "STRENGTH" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "AGILITY" : {
-          "current" : 57.0,
+          "base" : 57.0,
           "final" : 57.0,
-          "base" : 57.0
+          "current" : 57.0
         },
         "VITALITY" : {
-          "current" : 61.0,
+          "base" : 61.0,
           "final" : 61.0,
-          "base" : 61.0
+          "current" : 61.0
         },
         "DEXTERITY" : {
-          "current" : 71.0,
+          "base" : 71.0,
           "final" : 71.0,
-          "base" : 71.0
+          "current" : 71.0
         },
         "WISDOM" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         },
         "INTELLIGENCE" : {
-          "current" : 151.0,
+          "base" : 151.0,
           "final" : 151.0,
-          "base" : 151.0
+          "current" : 151.0
         },
         "LUCK" : {
-          "current" : 41.0,
+          "base" : 41.0,
           "final" : 41.0,
-          "base" : 41.0
+          "current" : 41.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "current" : 541.0,
+          "base" : 541.0,
           "final" : 541.0,
-          "base" : 541.0
+          "current" : 541.0
         },
         "MAGICALATTACK" : {
-          "current" : 651.0,
+          "base" : 651.0,
           "final" : 651.0,
-          "base" : 651.0
+          "current" : 651.0
         },
         "RANGEDATTACK" : {
-          "current" : 571.0,
+          "base" : 571.0,
           "final" : 571.0,
-          "base" : 571.0
+          "current" : 571.0
         },
         "HEALTHPOINT" : {
-          "current" : 3081.0,
+          "base" : 3081.0,
           "final" : 3081.0,
-          "base" : 3081.0
+          "current" : 3081.0
         },
         "MANAPOINT" : {
-          "current" : 29.799999999999997,
+          "base" : 29.799999999999997,
           "final" : 29.799999999999997,
-          "base" : 29.799999999999997
+          "current" : 29.799999999999997
         },
         "PHYSICALDEFENSE" : {
-          "current" : 296.5,
+          "base" : 296.5,
           "final" : 296.5,
-          "base" : 296.5
+          "current" : 296.5
         },
         "MAGICALDEFENSE" : {
-          "current" : 516.5,
+          "base" : 516.5,
           "final" : 516.5,
-          "base" : 516.5
+          "current" : 516.5
         },
         "MOVEMENTSPEED" : {
-          "current" : 30.97,
+          "base" : 30.97,
           "final" : 30.97,
-          "base" : 30.97
+          "current" : 30.97
         },
         "HEALAMPLIFIER" : {
-          "current" : 0.20500000000000002,
+          "base" : 0.20500000000000002,
           "final" : 0.20500000000000002,
-          "base" : 0.20500000000000002
+          "current" : 0.20500000000000002
         },
         "BUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "DEBUFFAMPLIFIER" : {
-          "current" : 0.10250000000000001,
+          "base" : 0.10250000000000001,
           "final" : 0.10250000000000001,
-          "base" : 0.10250000000000001
+          "current" : 0.10250000000000001
         },
         "CRITCHANCE" : {
-          "current" : 0.07050000000000001,
+          "base" : 0.05,
           "final" : 0.07050000000000001,
-          "base" : 0.05
+          "current" : 0.07050000000000001
         },
         "CRITDAMAGE" : {
-          "current" : 2.115,
+          "base" : 2.115,
           "final" : 2.115,
-          "base" : 2.115
+          "current" : 2.115
         },
         "MANAREGEN" : {
-          "current" : 6.2499,
+          "base" : 0.0,
           "final" : 6.2499,
-          "base" : 0.0
+          "current" : 6.2499
         },
         "HEALTHREGEN" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "POISONAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNITEAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "BLEEDAMP" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ACCURACY" : {
-          "current" : 627.0,
+          "base" : 627.0,
           "final" : 627.0,
-          "base" : 627.0
+          "current" : 627.0
         },
         "EVASION" : {
-          "current" : 534.0,
+          "base" : 534.0,
           "final" : 534.0,
-          "base" : 534.0
+          "current" : 534.0
         },
         "PHYSICALBLOCK" : {
-          "current" : 75.0,
+          "base" : 75.0,
           "final" : 75.0,
-          "base" : 75.0
+          "current" : 75.0
         },
         "MAGICALBLOCK" : {
-          "current" : 75.0,
+          "base" : 75.0,
           "final" : 75.0,
-          "base" : 75.0
+          "current" : 75.0
         },
         "DAMAGEREDUCTION" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DAMAGEAMPLIFIER" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "ATTACKSPEED" : {
-          "current" : 1.342,
+          "base" : 1.342,
           "final" : 1.342,
-          "base" : 1.342
+          "current" : 1.342
         },
         "CASTSPEED" : {
-          "current" : 1.342,
+          "base" : 1.342,
           "final" : 1.342,
-          "base" : 1.342
+          "current" : 1.342
         },
         "PHYSICALPENETRATE" : {
-          "current" : 132.2,
+          "base" : 132.2,
           "final" : 132.2,
-          "base" : 132.2
+          "current" : 132.2
         },
         "MAGICALPENETRATE" : {
-          "current" : 330.2,
+          "base" : 330.2,
           "final" : 330.2,
-          "base" : 330.2
+          "current" : 330.2
         },
         "RESERVATION" : {
-          "current" : 0.7092198581560283,
+          "base" : 0.7092198581560283,
           "final" : 0.7092198581560283,
-          "base" : 0.7092198581560283
+          "current" : 0.7092198581560283
         },
         "CRITSHIELD" : {
-          "current" : 0.035250000000000004,
+          "base" : 0.025,
           "final" : 0.035250000000000004,
-          "base" : 0.025
+          "current" : 0.035250000000000004
         },
         "SPEED" : {
-          "current" : 6.7,
+          "base" : 6.7,
           "final" : 6.7,
-          "base" : 6.7
+          "current" : 6.7
         },
         "SOULPOINT" : {
-          "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0,
-          "base" : 100.0
+          "current" : 100.0
         },
         "IGNOREPDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "IGNOREMDEF" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0,
-          "base" : 0.0
+          "current" : 0.0
         }
       },
       "flatSkillModifiers" : { },

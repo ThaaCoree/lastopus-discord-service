@@ -238,12 +238,12 @@ public class Database {
                     json = mapper.writeValueAsString(allPassiveMap);
                 }
                 if (filler.equals("materials")) {
-                    if (allPassiveMap == null) continue;
-                    json = mapper.writeValueAsString(allPassiveMap);
+                    if (allMaterials == null) continue;
+                    json = mapper.writeValueAsString(allMaterials);
                 }
                 if (filler.equals("modPools")) {
-                    if (allPassiveMap == null) continue;
-                    json = mapper.writeValueAsString(allPassiveMap);
+                    if (allModPools == null) continue;
+                    json = mapper.writeValueAsString(allModPools);
                 }
 
 
