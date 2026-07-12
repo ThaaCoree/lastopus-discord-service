@@ -65,6 +65,7 @@ public class StatCalculator {
         stats.get(StatType.SPEED).setBase(1 + 0.1 * agi);
         stats.get(StatType.SOULPOINT).setBase(100);
         stats.get(StatType.DEBUFFRESISTANCE).setBase(0);
+        stats.get(StatType.DEFLECTION).setBase(50 + 1.5 * agi + 4.5 * dex);
 
         if (unit.getName() != null) {
             if (unit.getName().equals("Four-Leaf Clover777")) {
@@ -90,6 +91,9 @@ public class StatCalculator {
                 stats.get(StatType.MAGICALPENETRATE).setBase(1 + 0.8 * luk);
                 stats.get(StatType.RESERVATION).setBase(1 / (1 + 0.002 * luk));
                 stats.get(StatType.SPEED).setBase(1 + 0.02 * luk);
+                stats.get(StatType.SOULPOINT).setBase(0);
+                stats.get(StatType.DEBUFFRESISTANCE).setBase(0);
+                stats.get(StatType.DEFLECTION).setBase(50 + 0.8*luk);
             }
         }
 

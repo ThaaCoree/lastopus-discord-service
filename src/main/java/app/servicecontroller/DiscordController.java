@@ -525,11 +525,13 @@ public class DiscordController {
                 CraftingMaterial material = database.allMaterials.get(material_name);
                 if (material == null) continue;
                 equipment.addMaterial(material, MaterialRole.BASE);
+                unit.getInventoryManager().removeItem(material_name, 1);
             }
             for (String material_name : craftRequest.boost) {
                 CraftingMaterial material = database.allMaterials.get(material_name);
                 if (material == null) continue;
                 equipment.addMaterial(material, MaterialRole.BOOST);
+                unit.getInventoryManager().removeItem(material_name, 1);
             }
             Crafter.craft(equipment);
             unit.getInventoryManager().addItem(equipment, 1);
@@ -538,13 +540,14 @@ public class DiscordController {
             if (Crafter.shatterItem(equipment)) {
                 itemBrick(unit, equipment, 0, sb);
             } else {
-                sb.append("เสร็จสิ้นการคราฟ ").append("\n").append(equipment.getName())
+                sb.append("เสร็จสิ้นการคราฟ ").append("\n")
+                        .append(equipment.getName()).append("\n")
                         .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
                         .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
                         .append("Stats & Statuses : ").append("\n")
                         .append(equipment.getStatusDescription());
             }
-            
+
             writeintoSheet(unit);
             return sb.toString();
         } else {

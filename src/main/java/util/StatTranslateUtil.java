@@ -61,7 +61,22 @@ public class StatTranslateUtil {
         statToWrite.put(StatType.IGNOREMDEF, "Ignore PDEF");
         statToWrite.put(StatType.IGNOREPDEF, "Ignore MDEF");
         statToWrite.put(StatType.DEBUFFRESISTANCE, "Debuff Resistance");
-        statToWrite.put(StatType.DEFLECTION, "Deflection");
+
+        statToWrite.put(StatType.FIREPENETRATION, "Fire Penetrate");
+        statToWrite.put(StatType.WATERPENETRATION, "Water Penetrate");
+        statToWrite.put(StatType.WINDPENETRATION, "Wind Penetrate");
+        statToWrite.put(StatType.EARTHPENETRATION, "Earth Penetrate");
+        statToWrite.put(StatType.LIGHTPENETRATION, "Light Penetrate");
+        statToWrite.put(StatType.DARKPENETRATION, "Dark Penetrate");
+
+        statToWrite.put(StatType.FIRERESISTANCE, "Fire Resist");
+        statToWrite.put(StatType.WATERRESISTANCE, "Water Resist");
+        statToWrite.put(StatType.WINDRESISTANCE, "Wind Resist");
+        statToWrite.put(StatType.EARTHRESISTANCE, "Earth Resist");
+        statToWrite.put(StatType.LIGHTRESISTANCE, "Light Resist");
+        statToWrite.put(StatType.DARKRESISTANCE, "Dark Resist");
+
+
         equipToWrite.put(EquipmentType.HELMET, "Helmet");
         equipToWrite.put(EquipmentType.ARMOR, "Armor");
         equipToWrite.put(EquipmentType.BOOTS, "Boots");

@@ -34,7 +34,8 @@ public enum WeaponType {
     RPG("RPG", HandType.TWO_HANDED),
     SNIPER_RIFLE("Sniper Rifle", HandType.TWO_HANDED),
     KATAR("Katar", HandType.ONE_HANDED),
-    TALISMAN("Talisman", HandType.ONE_HANDED);
+    TALISMAN("Talisman", HandType.ONE_HANDED),
+    TURRET("Turret", HandType.TWO_HANDED);
 
     private final String displayName;
     private HandType handType;

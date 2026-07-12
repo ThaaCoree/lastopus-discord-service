@@ -21,7 +21,7 @@ public class Fatima extends Skill implements SkillWithCondition {
         setActionType("Action");
         setManaCost(7);
         setCooldown(4);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.35*MATK*(1+HealAMP)"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.25*MATK*(1+HealAMP)"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
         getSkillMultiplier().get("XA").getTags().add(SkillType.RECOVERY);
 

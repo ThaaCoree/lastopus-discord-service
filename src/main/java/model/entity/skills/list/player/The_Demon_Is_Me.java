@@ -60,7 +60,7 @@ public class The_Demon_Is_Me extends Skill implements SkillWithCondition {
         getSkillMultiplier().get("XF").getTags().add(SkillType.CRITICAL);
         getSkillMultiplier().get("XF").setPercent(true);
 
-        getSkillMultiplier().put("XG",new SkillMultiplier("12"));
+        getSkillMultiplier().put("XG",new SkillMultiplier("6"));
         getSkillMultiplier().get("XG").getTags().add(SkillType.LIMIT);
 
         getSkillMultiplier().put("XH",new SkillMultiplier("4*(1+BuffAMP)"));

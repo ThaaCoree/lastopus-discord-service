@@ -29,7 +29,7 @@ public class Open_The_Pages extends Skill implements SkillWithCondition {
         setActionType("Action");
         setManaCost(9);
         setCooldown(6);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.51*MATK*(1+BuffAMP)*(1+HealAMP)"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.51*MATK*(1+BuffAMP*0.5)*(1+HealAMP)"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
         getSkillMultiplier().get("XA").getTags().add(SkillType.RECOVERY);
         getSkillMultiplier().get("XA").getTags().add(SkillType.HEALING);
@@ -40,7 +40,7 @@ public class Open_The_Pages extends Skill implements SkillWithCondition {
         getSkillMultiplier().get("XB").getTags().add(SkillType.RECOVERY);
         getSkillMultiplier().get("XB").getTags().add(SkillType.WATER);
 
-        getSkillMultiplier().put("XC",new SkillMultiplier("1.5*(0.51*MATK*(1+BuffAMP)*(1+HealAMP))"));
+        getSkillMultiplier().put("XC",new SkillMultiplier("1.5*(0.51*MATK*(1+BuffAMP*0.5)*(1+HealAMP))"));
         getSkillMultiplier().get("XC").getTags().add(SkillType.SPELL);
         getSkillMultiplier().get("XC").getTags().add(SkillType.RECOVERY);
         getSkillMultiplier().get("XC").getTags().add(SkillType.HEALING);

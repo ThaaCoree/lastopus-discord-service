@@ -16,7 +16,7 @@ public class Over_Flowing_Wisdom extends Skill {
         super();
         setDescription("เมื่อฮีลแล้วผลฮีลเกินจาก Max HP ของยูนิตนั้น จะเปลี่ยนผล XA ของฮีลนั้นไปเป็น Debris ของยูนิตที่ได้รับผลแทน\n" +
                 "หากมี The Forgotten Pages อย่างน้อย 6 ใบ จะเปลี่ยนผล XB\n" +
-                "จะไม่สร้าง Debris เมื่อเป้าหมายมี Debris เท่ากับหรือมากกว่าจำนวนพลังชีวิต");
+                "จะไม่สร้าง Debris เมื่อเป้าหมายมี Debris เท่ากับหรือมากกว่าจำนวนสองเท่าของพลังชีวิต");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
@@ -68,7 +68,7 @@ public class Over_Flowing_Wisdom extends Skill {
             }
             double finalMultiplier = multiplier;
             event.unit_target.forEach(target -> {
-                double usable = target.getHealth().getUsable();
+                double usable = target.getHealth().getUsable()*2;
                 double after_heal = target.getHealth().getRemaining()+event.getHeal(target.getName());
                 double overflow = 0;
                 double debris = target.getDebris().getRemaining();

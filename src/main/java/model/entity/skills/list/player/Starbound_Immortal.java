@@ -3,6 +3,7 @@ package model.entity.skills.list.player;
 import controller.CombatFlow;
 import controller.event.EventBus;
 import controller.event.events.ActionEvent;
+import controller.event.events.ResourceEvent;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
 import model.entity.skills.SkillTarget;
@@ -17,7 +18,8 @@ public class Starbound_Immortal extends Skill {
         super();
         setDescription("The Iron Tomb ได้รับสกิลนี้เช่นกัน\n" +
                 "เมื่อมียูนิตอื่นที่ครอบครองสกิลนี้โดยยังไม่หมดสภาพต่อสู้ในรัศมี 5 เมตร เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 1 หน่วย, ยกเลิกการได้รับความเสียหายนั้น\n" +
-                "หากสกิลนี้ยกเลิกความเสียหายจริง สูญเสีย 1 วิวรณ์ หากมีวิวรณ์ไม่มากพอให้สูญเสีย รับความเสียหายตามปกติ");
+                "หากสกิลนี้ยกเลิกความเสียหายจริง สูญเสีย 1 วิวรณ์ หากมีวิวรณ์ไม่มากพอให้สูญเสีย รับความเสียหายตามปกติ\n" +
+                "ระหว่างเปิดใช้งานสกิลนี้ รับการฟื้นฟูจากทุกแหล่งลดลง 90% และลด HealthRegen ลง 94%");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
@@ -46,6 +48,8 @@ public class Starbound_Immortal extends Skill {
     public void calculateExtra() {
         double reserve = getUser().getStats().get(StatType.RESERVATION).getFinal();
         setHealthReservePercent(0.99/reserve);
+
+        getSkillModifier().getStatModifierSafe(StatType.HEALTHREGEN).setGlobalMult(-0.94);
     }
 
     @Override
@@ -72,6 +76,14 @@ public class Starbound_Immortal extends Skill {
                 getUser().counterDecrement(CounterName.PROVIDENCE);
             }
         }
+        });
+
+        eventBus.register(ResourceEvent.class, EventPhase.MODIFY, 0, (ResourceEvent event) -> {
+            if (event.effectType != ActionEffectType.HEALTH_RECOVER) return;
+            if (event.target != getUser()) return;
+            if (!getIsActive()) return;
+
+            event.amount *= 0.1;
         });
     }
 

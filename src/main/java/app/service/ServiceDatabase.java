@@ -114,6 +114,7 @@ public class ServiceDatabase {
                 Dream newDream = allDreamItem.get(item_name);
                 Consumable newConsumable = allConsumableMap.get(item_name);
                 Rune newRune = allRuneMap.get(item_name);
+                CraftingMaterial newMaterial = allMaterials.get(item_name);
 
                 if (newItem != null) {
                     shopItemEntry.getValue().setItem(newItem);
@@ -129,6 +130,9 @@ public class ServiceDatabase {
                 }
                 if (newRune != null) {
                     shopItemEntry.getValue().setItem(newRune);
+                }
+                if (newMaterial != null) {
+                    shopItemEntry.getValue().setItem(newMaterial);
                 }
             }
         }

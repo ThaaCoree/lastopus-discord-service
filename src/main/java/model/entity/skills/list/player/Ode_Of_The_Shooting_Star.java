@@ -22,7 +22,7 @@ public class Ode_Of_The_Shooting_Star extends Skill implements SkillWithConditio
         setActionType("Action");
         setManaCost(11);
         setCooldown(5);
-        getSkillMultiplier().put("XA",new SkillMultiplier("(6*AGI+6*STR+6*VIT)*(1+BuffAMP)"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("(4*AGI+4*STR+4*VIT)*(1+BuffAMP)"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.DEFENSE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").getTags().add(SkillType.BUFF);
