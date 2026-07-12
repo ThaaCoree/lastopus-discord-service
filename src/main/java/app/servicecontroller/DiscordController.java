@@ -1,6 +1,7 @@
 package app.servicecontroller;
 
 import app.service.ServiceDatabase;
+import app.servicemodel.CraftRequest;
 import app.servicemodel.PlayerMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -18,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import util.GoogleSheetsUtil;
+import util.JsonUtils;
 import util.WeightedRandom;
 
 import java.util.*;
@@ -471,14 +473,35 @@ public class DiscordController {
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
         if (unit != null) {
-            List<String> materialNames = unit.getInventoryItems().values().stream()
-                    .filter(item -> item instanceof CraftingMaterial material)
-                    .map(Item::getName)
-                    .toList();
+            List<String> materialNames = new ArrayList<>();
+
+            for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
+                if (entry.getValue() instanceof CraftingMaterial) {
+                    for (int i = 0; i < unit.getInventoryItemAmount().get(entry.getKey()); i++) {
+                        materialNames.add(entry.getValue().getName());
+                    }
+                }
+            }
+
             System.out.println("List of materials : "+materialNames.toString());
             return ResponseEntity.ok(materialNames);
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Player not found");
+        }
+    }
+
+    @PostMapping("/craft")
+    public String craft(@RequestBody CraftRequest craftRequest) {
+        String name = getPlayerName(craftRequest.roles);
+        Unit unit = database.findPlayer(name);
+
+        if (unit != null) {
+            System.out.println("itemName : "+craftRequest.itemName);
+            System.out.println("base : "+craftRequest.base.toString());
+            System.out.println("boost : "+craftRequest.boost.toString());
+            return "เสร็จสิ้นการคราฟ";
+        } else {
+            return "No Role!";
         }
     }
 
