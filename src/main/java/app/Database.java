@@ -15,6 +15,7 @@ import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
 import model.type.CardType;
+import model.type.ItemType;
 import model.type.UnitType;
 import util.GoogleSheetsUtil;
 import util.JsonUtils;
@@ -327,6 +328,10 @@ public class Database {
             for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
                 if (entry.getValue() instanceof Rune rune) {
                     if (!rune.isUnique_rune()) continue;
+                }
+
+                if (entry.getValue() instanceof CraftedEquipment) {
+                    entry.getValue().setItemType(ItemType.EQUIPMENT);
                 }
 
                 String name = entry.getValue().getName();

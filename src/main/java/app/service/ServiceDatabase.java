@@ -26,6 +26,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 import util.StatTranslateUtil;
 
 import java.io.ByteArrayInputStream;
@@ -547,6 +548,15 @@ public class ServiceDatabase {
             e.printStackTrace();
         }
         System.out.println("saved player");
+        return "saved";
+    }
+
+    public String save_craftedEquipment() {
+
+        mongoTemplate.dropCollection("craftedEquipments");
+        mongoTemplate.save(allCraftedEquipments, "craftedEquipments");
+
+        System.out.println("saved craftedEquipments");
         return "saved";
     }
 

@@ -202,9 +202,11 @@ public class ShopEditPanel extends ScrollPane {
             for (CityName cityName : CityName.values()) {
             if (textArea.getText().equalsIgnoreCase(cityName.writeAsString())) {
                 shop.setCity(cityName);
+                shop.setCityName(cityName.writeAsString());
                 break;
             } else {
                 shop.setCity(CityName.RIVEIL);
+                shop.setCityName(cityName.writeAsString());
             }
         }
             listPane.getListView().refresh();

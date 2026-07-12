@@ -17,6 +17,7 @@ import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Unit;
 import model.type.EquipmentType;
+import model.type.ItemType;
 import model.type.MaterialRole;
 import model.type.WeaponType;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -504,6 +505,8 @@ public class DiscordController {
 //            System.out.println("base : "+craftRequest.base.toString());
 //            System.out.println("boost : "+craftRequest.boost.toString());
             CraftedEquipment equipment = new CraftedEquipment(craftRequest.itemName);
+            equipment.setItemType(ItemType.EQUIPMENT);
+
             boolean type_matched = false;
             for (WeaponType weaponType : WeaponType.values()) {
                 if (craftRequest.itemType.equalsIgnoreCase(weaponType.writeAsString())) {
@@ -549,10 +552,19 @@ public class DiscordController {
             }
 
             writeintoSheet(unit);
+            database.allCraftedEquipments.put(equipment.getName(), equipment);
+            database.save_craftedEquipment();
             return sb.toString();
         } else {
             return "No Role!";
         }
+    }
+
+
+    @PostMapping("/catalyst")
+    public String catalystUse(@RequestBody PlayerMessage playerMessage) {
+
+        return "";
     }
 
     public void itemBrick(Unit unit, CraftedEquipment equipment, int toughness_reduce, StringBuilder sb) {
