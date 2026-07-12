@@ -466,7 +466,7 @@ public class DiscordController {
     }
 
     @PostMapping("/craft/start")
-    public ResponseEntity<?> getMaterials(@RequestParam PlayerMessage playerMessage) {
+    public ResponseEntity<?> getMaterials(@RequestBody PlayerMessage playerMessage) {
 
         String name = getPlayerName(playerMessage.roles);
         Unit unit = database.findPlayer(name);
