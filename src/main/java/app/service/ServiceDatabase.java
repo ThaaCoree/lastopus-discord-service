@@ -51,9 +51,9 @@ public class ServiceDatabase {
     public Map<String, Conditions> allConditionMap ;
     public Map<String, Card> allCardMap;
     public Map<Integer, PassiveNode> allPassiveMap;
-    private Map<String, CraftingMaterial> allMaterials = new LinkedHashMap<>();
-    private Map<String, CraftModPool> allModPools = new LinkedHashMap<>();
-    private Map<String, CraftedEquipment> allCraftedEquipments = new LinkedHashMap<>();
+    public Map<String, CraftingMaterial> allMaterials = new LinkedHashMap<>();
+    public Map<String, CraftModPool> allModPools = new LinkedHashMap<>();
+    public Map<String, CraftedEquipment> allCraftedEquipments = new LinkedHashMap<>();
     public Map<String, Shop> allShop;
     public Map<String, Unit> allUnit = new LinkedHashMap<>();
     public Map<String, Summon> allSummon = new LinkedHashMap<>();

@@ -13,8 +13,12 @@ import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
 import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Unit;
+import model.type.EquipmentType;
+import model.type.MaterialRole;
+import model.type.WeaponType;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -483,8 +487,6 @@ public class DiscordController {
                     }
                 }
             }
-
-            System.out.println("List of materials : "+materialNames.toString());
             return ResponseEntity.ok(materialNames);
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Player not found");
@@ -497,11 +499,48 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
 
         if (unit != null) {
-            System.out.println("itemName : "+craftRequest.itemName);
-            System.out.println("itemType : "+craftRequest.itemType);
-            System.out.println("base : "+craftRequest.base.toString());
-            System.out.println("boost : "+craftRequest.boost.toString());
-            return "เสร็จสิ้นการคราฟ";
+//            System.out.println("itemName : "+craftRequest.itemName);
+//            System.out.println("itemType : "+craftRequest.itemType);
+//            System.out.println("base : "+craftRequest.base.toString());
+//            System.out.println("boost : "+craftRequest.boost.toString());
+            CraftedEquipment equipment = new CraftedEquipment(craftRequest.itemName);
+            boolean type_matched = false;
+            for (WeaponType weaponType : WeaponType.values()) {
+                if (craftRequest.itemType.equalsIgnoreCase(weaponType.writeAsString())) {
+                    equipment.setEquipmentType(EquipmentType.WEAPON);
+                    equipment.setWeaponType(weaponType);
+                    type_matched = true;
+                }
+            }
+            for (EquipmentType equipmentType : EquipmentType.values()) {
+                if (craftRequest.itemType.equalsIgnoreCase(equipmentType.writeAsString())) {
+                    equipment.setEquipmentType(equipmentType);
+                    equipment.setWeaponType(WeaponType.NOT_A_WEAPON);
+                    type_matched = true;
+                }
+            }
+            if (!type_matched) return "กรุณาเขียนชื่อประเภทอุปกรณ์อย่างถูกต้อง";
+
+            for (String material_name : craftRequest.base) {
+                CraftingMaterial material = database.allMaterials.get(material_name);
+                if (material == null) continue;
+                equipment.addMaterial(material, MaterialRole.BASE);
+            }
+            for (String material_name : craftRequest.boost) {
+                CraftingMaterial material = database.allMaterials.get(material_name);
+                if (material == null) continue;
+                equipment.addMaterial(material, MaterialRole.BOOST);
+            }
+            Crafter.craft(equipment);
+            StringBuilder sb = new StringBuilder();
+            if (Crafter.shatterItem(equipment)) {
+                itemBrick(unit, equipment, 0, sb);
+            } else {
+                sb.append("เสร็จสิ้นการคราฟ ").append(equipment.toString());
+//                unit.getInventoryManager().addItem(equipment, 1);
+            }
+
+            return sb.toString();
         } else {
             return "No Role!";
         }
