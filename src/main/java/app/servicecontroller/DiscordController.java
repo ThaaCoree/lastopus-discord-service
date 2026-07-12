@@ -475,6 +475,7 @@ public class DiscordController {
                     .filter(item -> item instanceof CraftingMaterial)
                     .map(Item::getName)
                     .toList();
+            System.out.println("List of materials : "+materialNames.toString());
             return ResponseEntity.ok(materialNames);
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Player not found");
