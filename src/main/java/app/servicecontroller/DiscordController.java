@@ -586,8 +586,9 @@ public class DiscordController {
                         .append("Stats & Statuses : ").append("\n")
                         .append(equipment.getStatusDescription());
 
+                database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.save_craftedEquipment();
                 return sb.toString();
-
             } else {
                 return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้";
             }
