@@ -554,11 +554,12 @@ public class DiscordController {
                         .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
                         .append("Stats & Statuses : ").append("\n")
                         .append(equipment.getStatusDescription());
-            }
 
+                database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.save_craftedEquipment();
+            }
             writeintoSheet(unit);
-            database.allCraftedEquipments.put(equipment.getName(), equipment);
-            database.save_craftedEquipment();
+
             return sb.toString();
         } else {
             return "No Role!";
