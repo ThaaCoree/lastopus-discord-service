@@ -226,7 +226,7 @@ public class CraftingEditPanel extends ScrollPane {
         }
         Button apply_catalyst = new Button("Apply Catalyst");
         apply_catalyst.setOnAction(e-> {
-            useCatalyst(catalyst_select.getValue(), equipment);
+            Crafter.useCatalyst(catalyst_select.getValue(), equipment);
             showMods(show_mods, equipment);
             listPane.getListView().refresh();
         });
@@ -274,18 +274,6 @@ public class CraftingEditPanel extends ScrollPane {
                 displayCurrentMaterial(display_box, equipment);
             });
             display_box.getChildren().addAll(label, delete);
-        }
-    }
-
-    public void useCatalyst(String catalyst_name, CraftedEquipment equipment) {
-        CatalystEffect effect = catalystFactory.get(catalyst_name);
-        if (effect == null) return;
-        if (effect.canApply(equipment)) {
-            effect.apply(equipment);
-            equipment.getCatalystInstances().add(new CatalystInstance(equipment.getNext_catalyst_idAndIncrement(), catalyst_name));
-            Crafter.updateModsInCraftedEquipment(equipment);
-        } else {
-            System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้");
         }
     }
 

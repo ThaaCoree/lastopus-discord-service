@@ -17,6 +17,7 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
+import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.skills.SkillInstance;
 import model.entity.skills.SkillWithCondition;
 import model.modifier.ModValue;
@@ -938,6 +939,13 @@ public class Unit {
     public Equipment findEquipment(String name) {
         for (Item item : inventoryItems.values()) {
             if (item.getName().equalsIgnoreCase(name) && item instanceof Equipment equipment) return equipment;
+        }
+        return null;
+    }
+
+    public CraftedEquipment findCraftedEquipment(String name ){
+        for (Item item : inventoryItems.values()) {
+            if (item.getName().equalsIgnoreCase(name) && item instanceof CraftedEquipment equipment) return equipment;
         }
         return null;
     }

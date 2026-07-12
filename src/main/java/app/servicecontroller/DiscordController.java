@@ -12,6 +12,7 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
+import model.entity.items.catalysts.CatalystFactory;
 import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.CraftingMaterial;
@@ -566,8 +567,23 @@ public class DiscordController {
 
     @PostMapping("/catalyst")
     public String catalystUse(@RequestBody PlayerMessage playerMessage) {
-
-        return "";
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        String[] split = playerMessage.message.split("/");
+        String item_name = split[0].trim();
+        String catalyst_name = split[1].trim();
+        if (unit != null) {
+            CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            if (Crafter.checkCatalyst(catalyst_name, equipment)) {
+                Crafter.useCatalyst(catalyst_name, equipment);
+                writeintoSheet(unit);
+                return "ใช้งาน "+catalyst_name+" กับ "+item_name+" แล้ว";
+            } else {
+                return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้";
+            }
+        } else {
+            return "No Role!";
+        }
     }
 
     public void itemBrick(Unit unit, CraftedEquipment equipment, int toughness_reduce, StringBuilder sb) {
