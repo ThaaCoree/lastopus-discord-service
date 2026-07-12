@@ -12,6 +12,7 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
+import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -497,11 +498,39 @@ public class DiscordController {
 
         if (unit != null) {
             System.out.println("itemName : "+craftRequest.itemName);
+            System.out.println("itemType : "+craftRequest.itemType);
             System.out.println("base : "+craftRequest.base.toString());
             System.out.println("boost : "+craftRequest.boost.toString());
             return "เสร็จสิ้นการคราฟ";
         } else {
             return "No Role!";
+        }
+    }
+
+    public void itemBrick(Unit unit, CraftedEquipment equipment, int toughness_reduce, StringBuilder sb) {
+        List<CraftingMaterial> returning_item = new ArrayList<>();
+        sb.append("# อุปกรณ์พังทลาย!\n");
+        for (CraftedEquipment.MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+            WeightedRandom<Boolean> random = new WeightedRandom<>();
+            int toughness = materialInstance.getMaterial().getMaterial_toughness() - toughness_reduce;
+            int remaining_chance = 100-(toughness-toughness_reduce);
+            if (remaining_chance > 0) {
+                random.add(true, toughness);
+                random.add(false, remaining_chance);
+                if (random.roll()) {
+                    returning_item.add(materialInstance.getMaterial());
+                    sb.append("ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
+                } else {
+                    sb.append("สูญเสีย ").append(materialInstance.getMaterial().getName()).append(" อย่างถาวร\n");
+                }
+            } else {
+                returning_item.add(materialInstance.getMaterial());
+                sb.append("ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
+            }
+        }
+
+        for (CraftingMaterial material : returning_item) {
+            unit.getInventoryManager().addItem(material, 1);
         }
     }
 
