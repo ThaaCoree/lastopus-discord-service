@@ -289,7 +289,7 @@ public class MongoController {
     }
 
     @PostMapping("/save_craftedEquipments")
-    public String save_craftedEquipments(@RequestBody Map<String, CraftingMaterial> map) {
+    public String save_craftedEquipments(@RequestBody Map<String, CraftedEquipment> map) {
 
         mongoTemplate.dropCollection("craftedEquipments");
         mongoTemplate.save(map, "craftedEquipments");

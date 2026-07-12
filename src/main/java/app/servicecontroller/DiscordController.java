@@ -27,6 +27,7 @@ import util.GoogleSheetsUtil;
 import util.JsonUtils;
 import util.WeightedRandom;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
 import static ui.MainPane.getExcelColumnName;
@@ -606,12 +607,13 @@ public class DiscordController {
             StringBuilder sb = new StringBuilder();
             sb.append(item_name).append(":\n");
             for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
-                sb.append("Material : ").append(materialInstance.getMaterial()).append(" [").append(materialInstance.getMaterial_role()).append("]");
+                sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n");
             }
+            DecimalFormat df = new DecimalFormat("#.##");
             for (ModInstance modInstance : equipment.getModInstances()) {
                 sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                         .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType()))
-                        .append(" - ").append(modInstance.getFinal_value()).append(" - ")
+                        .append(" - ").append(df.format(modInstance.getFinal_value())).append(" - ")
                         .append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
                         .append("[").append(modInstance.getPool_name()).append("]").append(" [")
                         .append(equipment.getMaterialInstances().stream()
