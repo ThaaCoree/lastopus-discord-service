@@ -532,15 +532,20 @@ public class DiscordController {
                 equipment.addMaterial(material, MaterialRole.BOOST);
             }
             Crafter.craft(equipment);
-//                unit.getInventoryManager().addItem(equipment, 1);
+            unit.getInventoryManager().addItem(equipment, 1);
 
             StringBuilder sb = new StringBuilder();
             if (Crafter.shatterItem(equipment)) {
                 itemBrick(unit, equipment, 0, sb);
             } else {
-                sb.append("เสร็จสิ้นการคราฟ ").append(equipment.toString());
+                sb.append("เสร็จสิ้นการคราฟ ").append("\n").append(equipment.getName())
+                        .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
+                        .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
+                        .append("Stats & Statuses : ").append("\n")
+                        .append(equipment.getStatusDescription());
             }
-
+            
+            writeintoSheet(unit);
             return sb.toString();
         } else {
             return "No Role!";
