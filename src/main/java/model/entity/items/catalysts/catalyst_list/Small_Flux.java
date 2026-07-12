@@ -2,6 +2,7 @@ package model.entity.items.catalysts.catalyst_list;
 
 import model.entity.items.catalysts.CatalystEffect;
 import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.ModInstance;
 import util.WeightedRandom;
 
 public class Small_Flux implements CatalystEffect {
@@ -14,9 +15,9 @@ public class Small_Flux implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        WeightedRandom<CraftedEquipment.ModInstance> weightedRandom = new WeightedRandom<>();
+        WeightedRandom<ModInstance> weightedRandom = new WeightedRandom<>();
 
-        for (CraftedEquipment.ModInstance modInstance : equipment.getModInstances()) {
+        for (ModInstance modInstance : equipment.getModInstances()) {
             weightedRandom.add(modInstance, 100);
         }
 

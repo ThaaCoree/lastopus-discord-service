@@ -522,7 +522,11 @@ public class InventoryPane extends ScrollPane {
                     unit.getEquipmentManager().unequip(slotEntry.getKey());
                 } else {
                     unit.getEquipmentManager().unequip(slotEntry.getKey());
-                    unit.getEquipmentManager().equip(slotEntry.getKey(), database.getAllEquipmentMap().get(selected));
+                    Equipment equipment = database.getAllEquipmentMap().get(selected);
+                    if (equipment == null) {
+                        equipment = database.getAllCraftedEquipments().get(selected);
+                    }
+                    unit.getEquipmentManager().equip(slotEntry.getKey(), equipment);
                 }
                 refreshContents();
             });

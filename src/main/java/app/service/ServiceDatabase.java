@@ -164,6 +164,7 @@ public class ServiceDatabase {
                 Dream newDream = allDreamItem.get(name);
                 Consumable newConsumable = allConsumableMap.get(name);
                 CraftingMaterial newMaterial = allMaterials.get(name);
+                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
                 Rune newRune = new Rune();
                 if (allRuneMap != null) {
                     newRune = allRuneMap.get(name);
@@ -187,6 +188,9 @@ public class ServiceDatabase {
                 if (newMaterial != null) {
                     entry.setValue(newMaterial);
                 }
+                if (newCraftedEquipment != null) {
+                    entry.setValue(newCraftedEquipment);
+                }
             }
 
             for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
@@ -201,6 +205,7 @@ public class ServiceDatabase {
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = allRuneMap.get(name);
                 CraftingMaterial newMaterial = allMaterials.get(name);
+                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
 
                 if (newItem != null) {
                     entry.setValue(newItem);
@@ -219,6 +224,9 @@ public class ServiceDatabase {
                 }
                 if (newMaterial != null) {
                     entry.setValue(newMaterial);
+                }
+                if (newCraftedEquipment != null) {
+                    entry.setValue(newCraftedEquipment);
                 }
             }
 
@@ -252,7 +260,9 @@ public class ServiceDatabase {
                 if (entry.getValue().getEquipment() == null) continue;
                 String name = entry.getValue().getEquipment().getName();
                 Equipment newObject = allEquipmentMap.get(name);
-
+                if (newObject == null) {
+                    newObject = allCraftedEquipments.get(name);
+                }
                 if (newObject != null) {
                     entry.getValue().setEquipment(newObject);
                 }

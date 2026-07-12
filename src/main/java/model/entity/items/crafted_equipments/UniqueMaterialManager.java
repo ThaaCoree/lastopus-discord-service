@@ -8,16 +8,16 @@ import java.util.List;
 
 public class UniqueMaterialManager {
     WeightedRandom<CraftedMod> weightedRandom;
-    List<CraftedEquipment.MaterialInstance> materialInstances;
-    CraftedEquipment.ModInstance modInstance;
+    List<MaterialInstance> materialInstances;
+    ModInstance modInstance;
 
-    public UniqueMaterialManager(WeightedRandom<CraftedMod> weightedRandom, List<CraftedEquipment.MaterialInstance> materialInstances) {
+    public UniqueMaterialManager(WeightedRandom<CraftedMod> weightedRandom, List<MaterialInstance> materialInstances) {
         this.weightedRandom = weightedRandom;
         this.materialInstances = materialInstances;
     }
 
     public void applyUniqueBoost() {
-        for (CraftedEquipment.MaterialInstance materialInstance : materialInstances) {
+        for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
             if (modInstance.boost_material_ids.contains( materialInstance.material_id)) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
@@ -27,7 +27,7 @@ public class UniqueMaterialManager {
         }
     }
 
-    public void applyClawOfLightDragon(CraftedEquipment.MaterialInstance materialInstance) {
+    public void applyClawOfLightDragon(MaterialInstance materialInstance) {
         //have to rework a bit
             if (materialInstance.material.getName().equals("Claw of Light Dragon")) return;
             Crafter.applyWeightBoostByTag(weightedRandom, StatTag.STRIKE, 5);
@@ -42,7 +42,7 @@ public class UniqueMaterialManager {
     }
 
     public void applyUniqueMultitude() {
-        for (CraftedEquipment.MaterialInstance materialInstance : materialInstances) {
+        for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
             if (modInstance.boost_material_ids.contains( materialInstance.material_id)) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
@@ -56,7 +56,7 @@ public class UniqueMaterialManager {
         modInstance.multiplyByTag(StatTag.DEFENSE, 1);
     }
 
-    public void setModInstance(CraftedEquipment.ModInstance modInstance) {
+    public void setModInstance(ModInstance modInstance) {
         this.modInstance = modInstance;
     }
 }

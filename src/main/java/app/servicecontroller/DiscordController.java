@@ -15,6 +15,7 @@ import model.entity.items.Rune;
 import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.CraftingMaterial;
+import model.entity.items.crafted_equipments.MaterialInstance;
 import model.entity.units.Unit;
 import model.type.EquipmentType;
 import model.type.ItemType;
@@ -506,6 +507,7 @@ public class DiscordController {
 //            System.out.println("boost : "+craftRequest.boost.toString());
             CraftedEquipment equipment = new CraftedEquipment(craftRequest.itemName);
             equipment.setItemType(ItemType.EQUIPMENT);
+            equipment.setWeight(5);
 
             boolean type_matched = false;
             for (WeaponType weaponType : WeaponType.values()) {
@@ -560,7 +562,6 @@ public class DiscordController {
         }
     }
 
-
     @PostMapping("/catalyst")
     public String catalystUse(@RequestBody PlayerMessage playerMessage) {
 
@@ -571,7 +572,7 @@ public class DiscordController {
         unit.getInventoryManager().removeItem(equipment.getName());
         List<CraftingMaterial> returning_item = new ArrayList<>();
         sb.append("# อุปกรณ์พังทลาย!\n");
-        for (CraftedEquipment.MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+        for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
             WeightedRandom<Boolean> random = new WeightedRandom<>();
             int toughness = materialInstance.getMaterial().getMaterial_toughness() - toughness_reduce;
             int remaining_chance = 100-(toughness-toughness_reduce);

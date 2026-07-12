@@ -149,7 +149,7 @@ public class Database {
             allShop = res.getAllShop();
             allMaterials = res.getAllMaterials();
             allModPools = res.getAllModPools();
-//            allCraftedEquipments = res.getAllCraftedEquipments();
+            allCraftedEquipments = res.getAllCraftedEquipments();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -341,6 +341,7 @@ public class Database {
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = new Rune();
                 CraftingMaterial newMaterial = allMaterials.get(name);
+                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
                 if (allRuneMap != null) {
                     newRune = allRuneMap.get(name);
                 }
@@ -363,6 +364,9 @@ public class Database {
                 if (newMaterial != null) {
                     entry.setValue(newMaterial);
                 }
+                if (newCraftedEquipment != null) {
+                    entry.setValue(newCraftedEquipment);
+                }
             }
 
             for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
@@ -377,6 +381,7 @@ public class Database {
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = allRuneMap.get(name);
                 CraftingMaterial newMaterial = allMaterials.get(name);
+                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
 
                 if (newItem != null) {
                     entry.setValue(newItem);
@@ -395,6 +400,9 @@ public class Database {
                 }
                 if (newMaterial != null) {
                     entry.setValue(newMaterial);
+                }
+                if (newCraftedEquipment != null) {
+                    entry.setValue(newCraftedEquipment);
                 }
             }
 
@@ -428,7 +436,9 @@ public class Database {
                 if (entry.getValue().getEquipment() == null) continue;
                 String name = entry.getValue().getEquipment().getName();
                 Equipment newObject = allEquipmentMap.get(name);
-
+                if (newObject == null) {
+                    newObject = allCraftedEquipments.get(name);
+                }
                 if (newObject != null) {
                     entry.getValue().setEquipment(newObject);
                 }

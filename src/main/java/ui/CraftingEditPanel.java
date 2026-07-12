@@ -8,9 +8,7 @@ import javafx.scene.layout.VBox;
 import model.entity.items.Item;
 import model.entity.items.catalysts.CatalystEffect;
 import model.entity.items.catalysts.CatalystFactory;
-import model.entity.items.crafted_equipments.CraftedEquipment;
-import model.entity.items.crafted_equipments.Crafter;
-import model.entity.items.crafted_equipments.CraftingMaterial;
+import model.entity.items.crafted_equipments.*;
 import model.type.EquipmentType;
 import model.type.ItemType;
 import model.type.MaterialRole;
@@ -240,9 +238,9 @@ public class CraftingEditPanel extends ScrollPane {
     public void showMods(VBox box, CraftedEquipment equipment) {
         box.getChildren().clear();
 
-        for (CraftedEquipment.ModInstance modInstance : equipment.getModInstances()) {
+        for (ModInstance modInstance : equipment.getModInstances()) {
             CraftingMaterial base_material = null;
-            for (CraftedEquipment.MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+            for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
                 if (materialInstance.getMaterial_id() == modInstance.getBase_material_id()) {
                     base_material = materialInstance.getMaterial();
                     break;
@@ -265,7 +263,7 @@ public class CraftingEditPanel extends ScrollPane {
 
     public void displayCurrentMaterial(VBox display_box, CraftedEquipment equipment) {
         display_box.getChildren().clear();
-        for (CraftedEquipment.MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+        for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
             StringBuilder sb = new StringBuilder();
             sb.append(materialInstance.getMaterial().getName()).append(" : ").append(materialInstance.getMaterial_role().writeAsString()).append("\n");
             Label label = new Label(sb.toString());
@@ -284,7 +282,7 @@ public class CraftingEditPanel extends ScrollPane {
         if (effect == null) return;
         if (effect.canApply(equipment)) {
             effect.apply(equipment);
-            equipment.getCatalystInstances().add(equipment.new CatalystInstance(equipment.getNext_catalyst_idAndIncrement(), catalyst_name));
+            equipment.getCatalystInstances().add(new CatalystInstance(equipment.getNext_catalyst_idAndIncrement(), catalyst_name));
             Crafter.updateModsInCraftedEquipment(equipment);
         } else {
             System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้");

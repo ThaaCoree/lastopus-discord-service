@@ -8,6 +8,7 @@ import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.items.*;
 import model.entity.items.crafted_equipments.CraftModPool;
+import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
@@ -46,6 +47,9 @@ public class MongoController {
         Map<String, Unit> allPlayers = mongoTemplate.findOne(new Query(), Map.class, "players");
         Map<String, Rune> allRunes = mongoTemplate.findOne(new Query(), Map.class, "runes");
         Map<String, Shop> allShops = mongoTemplate.findOne(new Query(), Map.class, "shops");
+        Map<String, CraftingMaterial> allMaterials = mongoTemplate.findOne(new Query(), Map.class, "materials");
+        Map<String, CraftModPool> allModPools = mongoTemplate.findOne(new Query(), Map.class, "modPools");
+        Map<String, CraftedEquipment> allCraftedEquipments = mongoTemplate.findOne(new Query(), Map.class, "craftedEquipments");
 
 
         List<Map<String, ?>> maps = new ArrayList<>(Arrays.asList(
@@ -60,7 +64,10 @@ public class MongoController {
                 allMonsters,
                 allPassives,
                 allRunes,
-                allShops
+                allShops,
+                allMaterials,
+                allModPools,
+                allCraftedEquipments
         ));
 
         for (Map<String, ?> map : maps) {
@@ -92,6 +99,9 @@ public class MongoController {
         saveRequest.setAllPlayerMap(allPlayers);
         saveRequest.setAllRuneMap(allRunes);
         saveRequest.setAllShop(allShops);
+        saveRequest.setAllMaterials(allMaterials);
+        saveRequest.setAllModPools(allModPools);
+        saveRequest.setAllCraftedEquipments(allCraftedEquipments);
         return saveRequest;
     }
 
