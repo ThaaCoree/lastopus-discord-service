@@ -28,8 +28,10 @@ import util.GoogleSheetsUtil;
 import util.JsonUtils;
 import util.WeightedRandom;
 
+import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static ui.MainPane.getExcelColumnName;
 
@@ -598,6 +600,73 @@ public class DiscordController {
                 return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้\n" +
                         check_message;
             }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/base")
+    public String addBaseMaterial(@RequestBody PlayerMessage playerMessage) {
+        return addMaterial(playerMessage, MaterialRole.BASE);
+    }
+
+    @PostMapping("/boost")
+    public String addBoostMaterial(@RequestBody PlayerMessage playerMessage) {
+        return addMaterial(playerMessage, MaterialRole.BOOST);
+    }
+
+    @PostMapping("/rename")
+    public String rename(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        String[] split = playerMessage.message.split("/");
+        String item_name = split[0].trim();
+        String new_name = split[1].trim();
+
+        if (new_name.contains(".")) {
+            return "ในชื่อไม่สามารถมีจุดได้";
+        }
+        if (unit != null) {
+            CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            equipment.setName(new_name);
+            database.allCraftedEquipments.remove(item_name);
+            database.allCraftedEquipments.put(equipment.getName(), equipment);
+            database.save_craftedEquipment();
+            writeintoSheet(unit);
+            return "เปลี่ยนชื่อเรียบร้อยแล้ว!";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    public String addMaterial(PlayerMessage playerMessage, MaterialRole materialRole) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        String[] split = playerMessage.message.split("/");
+        String item_name = split[0].trim();
+        List<String> materials = Arrays.stream(split)
+                .skip(1)
+                .map(String::trim)
+                .collect(Collectors.toCollection(ArrayList::new));
+        if (unit != null) {
+            CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            for (String material_name : materials) {
+                CraftingMaterial material = (CraftingMaterial) unit.findItem(material_name);
+                unit.getInventoryManager().removeItem(material_name);
+                equipment.addMaterial(material, materialRole);
+            }
+            StringBuilder sb = new StringBuilder();
+            if (Crafter.shatterItem(equipment)) {
+                itemBrick(unit, equipment, 0, sb);
+                unit.getInventoryManager().removeItem(item_name);
+            } else {
+                database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.save_craftedEquipment();
+                sb.append("เพิ่มวัสดุในอุปกรณ์สำเร็จ!");
+            }
+            writeintoSheet(unit);
+
+            return sb.toString();
         } else {
             return "No Role!";
         }
