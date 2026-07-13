@@ -13,6 +13,7 @@ import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
 import model.entity.items.catalysts.CatalystFactory;
+import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.*;
 import model.entity.units.Unit;
 import model.type.EquipmentType;
@@ -575,7 +576,10 @@ public class DiscordController {
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
-            if (Crafter.checkCatalyst(catalyst_name, equipment)) {
+            ValidationResult validationResult = Crafter.checkCatalyst(catalyst_name, equipment);
+            boolean success = validationResult.isSuccess();
+            String check_message = validationResult.getMessage();
+            if (success) {
                 Crafter.useCatalyst(catalyst_name, equipment);
                 unit.getInventoryManager().removeItem(catalyst_name, 1);
                 writeintoSheet(unit);
@@ -591,7 +595,8 @@ public class DiscordController {
                 database.save_craftedEquipment();
                 return sb.toString();
             } else {
-                return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้";
+                return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้\n" +
+                        check_message;
             }
         } else {
             return "No Role!";
@@ -608,8 +613,10 @@ public class DiscordController {
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
             StringBuilder sb = new StringBuilder();
             sb.append(item_name).append(":\n\n");
+            int max_mods = 0;
             for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
                 sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
+                max_mods += materialInstance.getMaterial().getMaterial_max_mod();
             }
             DecimalFormat df = new DecimalFormat("#.##");
             int mod_count = 1;
@@ -632,6 +639,7 @@ public class DiscordController {
             sb.append("\n\n");
                 mod_count++;
             }
+            sb.append("Total mods : [").append(mod_count).append("/").append(max_mods).append("]");
             return sb.toString();
         } else {
             return "No Role!";

@@ -2,6 +2,7 @@ package model.entity.items.crafted_equipments;
 
 import model.entity.items.catalysts.CatalystEffect;
 import model.entity.items.catalysts.CatalystFactory;
+import model.entity.items.catalysts.ValidationResult;
 import model.type.*;
 import util.StatTranslateUtil;
 import util.WeightedRandom;
@@ -157,10 +158,11 @@ public class Crafter {
         }
 
         WeightedRandom<Boolean> random = new WeightedRandom<>();
-        if (base_materials > 2 || boost_materials > 2) {
-            int sum_materials = base_materials + boost_materials;
-            random.add(false, 1);
-            random.add(true, sum_materials-2);
+        int base_material_weight = base_materials*100;
+        double boost_material_weight = Math.pow(boost_materials, 3)*5;
+        if (base_material_weight + boost_material_weight > 300) {
+            random.add(false, 100);
+            random.add(true, base_material_weight + boost_material_weight);
             return random.roll();
         } else {
             return false;
@@ -232,6 +234,7 @@ public class Crafter {
     public static ModInstance randomOneAvailableMod(CraftedEquipment equipment) {
         WeightedRandom<ModInstance> random = new WeightedRandom<>();
         for (MaterialInstance materialInstance : equipment.materialInstances) {
+            if (materialInstance.material_role == MaterialRole.BOOST) continue;
             if (randomAvailableModFromMaterial(equipment.modInstances, materialInstance,
                     equipment, equipment.mod_id++).isEmpty()) continue;
             random.add(randomAvailableModFromMaterial(equipment.modInstances, materialInstance,
@@ -251,8 +254,10 @@ public class Crafter {
         WeaponType weaponType = equipment.getWeaponType();
         WeightedRandom<ModInstance> random = new WeightedRandom<>();
         int current_mods = 0;
+        List<ModInstance> matched_mods = new ArrayList<>();
         for (ModInstance modInstance : modInstances) {
             if (modInstance.getBase_material_id() == material.getMaterial_id()) {
+                matched_mods.add(modInstance);
                 current_mods++;
             }
         }
@@ -265,7 +270,7 @@ public class Crafter {
             int max_mods_in_pool = entryMap.getValue().getMaxModsAllowed();
             int matching_mods = 0;
 
-            for (ModInstance modInstance : modInstances) {
+            for (ModInstance modInstance : matched_mods) {
                 if (modInstance.getPool_name().equals(entryMap.getValue().getPool().getPool_name())) {
                     matching_mods++;
                 }
@@ -278,7 +283,7 @@ public class Crafter {
 
                 if (!pool.can_duplicate_mod) {
                     // ดึงเฉพาะ modInstance ที่อยู่ใน pool นี้มาก่อน
-                    List<ModInstance> sameePoolInstances = modInstances.stream()
+                    List<ModInstance> sameePoolInstances = matched_mods.stream()
                             .filter(mi -> mi.getPool_name().equals(pool.getPool_name()))
                             .toList();
 
@@ -314,7 +319,7 @@ public class Crafter {
         return random;
     }
 
-    public static boolean checkCatalyst(String catalyst_name, CraftedEquipment equipment) {
+    public static ValidationResult checkCatalyst(String catalyst_name, CraftedEquipment equipment) {
         CatalystFactory catalystFactory = new CatalystFactory();
         CatalystEffect effect = catalystFactory.get(catalyst_name);
         return effect.canApply(equipment);
@@ -324,12 +329,13 @@ public class Crafter {
         CatalystFactory catalystFactory = new CatalystFactory();
         CatalystEffect effect = catalystFactory.get(catalyst_name);
         if (effect == null) return;
-        if (effect.canApply(equipment)) {
+        if (effect.canApply(equipment).isSuccess()) {
             effect.apply(equipment);
             equipment.getCatalystInstances().add(new CatalystInstance(equipment.getNext_catalyst_idAndIncrement(), catalyst_name));
             Crafter.updateModsInCraftedEquipment(equipment);
         } else {
-            System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้");
+            System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้\n" +
+                    effect.canApply(equipment).getMessage());
         }
     }
 }
