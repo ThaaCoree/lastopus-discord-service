@@ -1337,6 +1337,13 @@
       "modifierType" : "FLAT",
       "weight" : 1000,
       "fixed" : false
+    }, {
+      "statType" : "RESERVATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
     } ],
     "armorMods" : [ {
       "statType" : "MAGICALDEFENSE",
@@ -1373,6 +1380,13 @@
       "negative" : false,
       "modifierType" : "FLAT",
       "weight" : 700,
+      "fixed" : false
+    }, {
+      "statType" : "RESERVATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 300,
       "fixed" : false
     } ],
     "can_duplicate_mod" : true,

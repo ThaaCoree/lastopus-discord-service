@@ -582,6 +582,8 @@ public class DiscordController {
             boolean success = validationResult.isSuccess();
             String check_message = validationResult.getMessage();
             if (success) {
+                Item item = unit.findItem(catalyst_name);
+                if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
                 Crafter.useCatalyst(catalyst_name, equipment);
                 unit.getInventoryManager().removeItem(catalyst_name, 1);
                 writeintoSheet(unit);
@@ -657,6 +659,7 @@ public class DiscordController {
                 return "ไม่พบอุปกรณ์ดังกล่าว";
             }
             for (String material_name : materials) {
+                System.out.println(material_name);
                 CraftingMaterial material = (CraftingMaterial) unit.findItem(material_name);
                 unit.getInventoryManager().removeItem(material_name);
                 equipment.addMaterial(material, materialRole);
@@ -700,9 +703,9 @@ public class DiscordController {
             for (ModInstance modInstance : equipment.getModInstances()) {
                 sb.append(mod_count).append(". ");
                 sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
-                        .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType()))
+                        .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
                         .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
-                        .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType())).append("]").append("\n")
+                        .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType())).append("]").append("\n")
                         .append("[").append(modInstance.getPool_name()).append("]").append(" [")
                         .append(equipment.getMaterialInstances().stream()
                                 .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())

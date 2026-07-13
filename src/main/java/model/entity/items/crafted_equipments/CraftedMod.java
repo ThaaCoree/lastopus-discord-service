@@ -42,15 +42,15 @@ public class CraftedMod {
         this.fixed = fixed;
     }
 
-    public double getRandomizedModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed) {
-        double a = getMinModValueByTier(tier, equipmentType, two_handed);
-        double b = getMaxModValueByTier(tier, equipmentType, two_handed);
+    public double getRandomizedModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed, ModifierType modifierType) {
+        double a = getMinModValueByTier(tier, equipmentType, two_handed, modifierType);
+        double b = getMaxModValueByTier(tier, equipmentType, two_handed, modifierType);
         double min = Math.min(a, b);
         double max = Math.max(a, b);
         return ThreadLocalRandom.current().nextDouble(min, max);
     }
 
-    public double getMinModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed) {
+    public double getMinModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed, ModifierType modifierType) {
         double multiplier;
         if (isStatusMod()) {
             multiplier = statusType.getMin_multiplier();
@@ -59,10 +59,10 @@ public class CraftedMod {
         } else {
             return 0;
         }
-        return getModValueByTier(tier, equipmentType, two_handed)*multiplier;
+        return getModValueByTier(tier, equipmentType, two_handed, modifierType)*multiplier;
     }
 
-    public double getMaxModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed) {
+    public double getMaxModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed, ModifierType modifierType) {
         double multiplier;
         if (isStatusMod()) {
             multiplier = statusType.getMax_multiplier();
@@ -71,10 +71,10 @@ public class CraftedMod {
         } else {
             return 0;
         }
-        return getModValueByTier(tier, equipmentType, two_handed)*multiplier;
+        return getModValueByTier(tier, equipmentType, two_handed, modifierType)*multiplier;
     }
 
-    public double getModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed) {
+    public double getModValueByTier(int tier, EquipmentType equipmentType, boolean two_handed, ModifierType modifierType) {
         double base_value;
         double growth;
         double exponent;
@@ -93,7 +93,11 @@ public class CraftedMod {
             equipment_multiplier = 0.5;
         }
 
-        if (isStatusMod()) {
+        if (modifierType == ModifierType.GLOBAL) {
+            base_value = 0.01;
+            growth = 0.005;
+            exponent = 1.11;
+        } else if (isStatusMod()) {
             base_value = statusType.getBase_value();
             growth = statusType.getGrowth();
             exponent = statusType.getExponent();

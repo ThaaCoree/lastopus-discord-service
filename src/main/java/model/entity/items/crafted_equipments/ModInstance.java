@@ -2,6 +2,7 @@ package model.entity.items.crafted_equipments;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.type.EquipmentType;
+import model.type.ModifierType;
 import model.type.StatTag;
 import model.type.WeaponType;
 import util.WeightedRandom;
@@ -56,7 +57,7 @@ public class ModInstance {
     }
 
     public void rerollBase(EquipmentType equipmentType, boolean two_handed) {
-        base_rolled = mod.getRandomizedModValueByTier(tier, equipmentType, two_handed);
+        base_rolled = mod.getRandomizedModValueByTier(tier, equipmentType, two_handed, mod.getModifierType());
         final_value = base_rolled;
     }
 
@@ -78,15 +79,15 @@ public class ModInstance {
     }
 
     @JsonIgnore
-    public String getMinRoll(EquipmentType equipmentType, WeaponType weaponType) {
+    public String getMinRoll(EquipmentType equipmentType, WeaponType weaponType, ModifierType modifierType) {
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
-        return decimalFormat.format(mod.getMinModValueByTier(tier, equipmentType, weaponType.twoHanded()));
+        return decimalFormat.format(mod.getMinModValueByTier(tier, equipmentType, weaponType.twoHanded(), modifierType));
     }
 
     @JsonIgnore
-    public String getMaxRoll(EquipmentType equipmentType, WeaponType weaponType) {
+    public String getMaxRoll(EquipmentType equipmentType, WeaponType weaponType, ModifierType modifierType) {
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
-        return decimalFormat.format(mod.getMaxModValueByTier(tier, equipmentType, weaponType.twoHanded()));
+        return decimalFormat.format(mod.getMaxModValueByTier(tier, equipmentType, weaponType.twoHanded(), modifierType));
     }
 
     public int getMod_id() {
