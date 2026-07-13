@@ -616,7 +616,9 @@ public class DiscordController {
             int max_mods = 0;
             for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
                 sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
-                max_mods += materialInstance.getMaterial().getMaterial_max_mod();
+                if (materialInstance.getMaterial_role() == MaterialRole.BASE) {
+                    max_mods += materialInstance.getMaterial().getMaterial_max_mod();
+                }
             }
             DecimalFormat df = new DecimalFormat("#.##");
             int mod_count = 1;
@@ -639,7 +641,7 @@ public class DiscordController {
             sb.append("\n\n");
                 mod_count++;
             }
-            sb.append("Total mods : [").append(mod_count).append("/").append(max_mods).append("]");
+            sb.append("Total mods : [").append(mod_count-1).append("/").append(max_mods).append("]");
             return sb.toString();
         } else {
             return "No Role!";
