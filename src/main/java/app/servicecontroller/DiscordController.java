@@ -506,6 +506,7 @@ public class DiscordController {
 //            System.out.println("boost : "+craftRequest.boost.toString());
             CraftedEquipment equipment = new CraftedEquipment(craftRequest.itemName);
             if (database.allCraftedEquipments.get(craftRequest.itemName) != null) return "มีไอเทมชื่อนี้อยู่แล้ว";
+            if (craftRequest.itemName.contains(".")) return "ไม่สามารถมีจุดในชื่ออุปกรณ์ได้";
 
             equipment.setItemType(ItemType.EQUIPMENT);
             equipment.setWeight(5);
