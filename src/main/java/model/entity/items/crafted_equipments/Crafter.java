@@ -147,6 +147,7 @@ public class Crafter {
 
         modifier.randomizeTierAndBaseValue(minTier, maxTier, craftedEquipment.getEquipmentType(), craftedEquipment.getWeaponType().twoHanded());
         modifier.resetFinalValue();
+        UniqueMaterialManager.applyUniqueBaseMultitude(materialInstances, modifier);
         UniqueMaterialManager.applyUniqueBoostMultitude(materialInstances, modifier);
 
         return modifier;
@@ -338,6 +339,7 @@ public class Crafter {
                         ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
                         modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
                         modInstance.resetFinalValue();
+                        UniqueMaterialManager.applyUniqueBaseMultitude(equipment.getMaterialInstances(), modInstance);
                         UniqueMaterialManager.applyUniqueBoostMultitude(equipment.getMaterialInstances(), modInstance);
                         random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                     }

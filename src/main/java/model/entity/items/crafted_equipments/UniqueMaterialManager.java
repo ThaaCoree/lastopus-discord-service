@@ -13,13 +13,21 @@ public class UniqueMaterialManager {
     public UniqueMaterialManager() {
     }
 
+    public static void applyUniqueBaseMultitude(List<MaterialInstance> materialInstances, ModInstance modInstance) {
+        for (MaterialInstance materialInstance : materialInstances) {
+            if (modInstance == null) continue;
+            if (materialInstance.getMaterial_role() != MaterialRole.BASE) continue;
+            modInstance.addBoostedMaterial(materialInstance.material_id);
+            applyNitron(materialInstance, modInstance);
+        }
+    }
+
     public static void applyUniqueBoost(WeightedRandom<CraftedMod> weightedRandom, List<MaterialInstance> materialInstances, ModInstance modInstance) {
         for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
             if (!modInstance.boost_material_ids.contains(materialInstance.material_id)) continue;
             if (materialInstance.material_role == MaterialRole.BASE) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
-            CraftingMaterial material = materialInstance.material;
             applyClawOfLightDragon(weightedRandom, materialInstance, materialInstances);
         }
     }
@@ -41,7 +49,7 @@ public class UniqueMaterialManager {
     public static void applyUniqueBoostMultitude(List<MaterialInstance> materialInstances, ModInstance modInstance) {
         for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
-            if (modInstance.boost_material_ids.contains( materialInstance.material_id)) continue;
+            if (!modInstance.boost_material_ids.contains(materialInstance.material_id)) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
             CraftingMaterial material = materialInstance.material;
             applyWingOfLightDragon(materialInstance, modInstance);
