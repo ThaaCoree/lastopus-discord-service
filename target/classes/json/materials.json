@@ -2422,7 +2422,7 @@
     "price" : "Buy 1.11 Gold",
     "weight" : 3,
     "price_in_copper" : 0,
-    "material_toughness" : 70,
+    "material_toughness" : 85,
     "material_max_mod" : 5,
     "reveal_usage" : false,
     "pools" : {
@@ -3923,8 +3923,8 @@
     "price" : "Buy 48 Silver",
     "weight" : 1,
     "price_in_copper" : 0,
-    "material_toughness" : 70,
-    "material_max_mod" : 3,
+    "material_toughness" : 90,
+    "material_max_mod" : 4,
     "reveal_usage" : false,
     "pools" : {
       "Durable" : {
@@ -4007,8 +4007,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 7,
+        "minTier" : 8,
+        "maxTier" : 10,
         "maxModsAllowed" : 1
       },
       "Tough" : {
@@ -4070,8 +4070,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 7,
+        "minTier" : 8,
+        "maxTier" : 10,
         "maxModsAllowed" : 1
       },
       "Sharp" : {
@@ -4133,8 +4133,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 7,
+        "minTier" : 8,
+        "maxTier" : 10,
         "maxModsAllowed" : 3
       }
     },
@@ -4603,8 +4603,8 @@
     "price" : "Buy 30 Silver",
     "weight" : 2,
     "price_in_copper" : 0,
-    "material_toughness" : 60,
-    "material_max_mod" : 2,
+    "material_toughness" : 75,
+    "material_max_mod" : 3,
     "reveal_usage" : false,
     "pools" : {
       "Durable" : {
@@ -4688,8 +4688,8 @@
           "fixed_mods_description" : ""
         },
         "minTier" : 4,
-        "maxTier" : 4,
-        "maxModsAllowed" : 2
+        "maxTier" : 6,
+        "maxModsAllowed" : 1
       },
       "Magic Medium" : {
         "pool" : {
@@ -4730,8 +4730,8 @@
           "fixed_mods_description" : ""
         },
         "minTier" : 4,
-        "maxTier" : 4,
-        "maxModsAllowed" : 1
+        "maxTier" : 6,
+        "maxModsAllowed" : 2
       },
       "Mana Reactive" : {
         "pool" : {
@@ -4821,8 +4821,8 @@
           "fixed_mods_description" : ""
         },
         "minTier" : 4,
-        "maxTier" : 4,
-        "maxModsAllowed" : 1
+        "maxTier" : 6,
+        "maxModsAllowed" : 3
       }
     },
     "modBoost" : {
@@ -8242,7 +8242,7 @@
     "price" : "",
     "weight" : 1,
     "price_in_copper" : 0,
-    "material_toughness" : 75,
+    "material_toughness" : 90,
     "material_max_mod" : 4,
     "reveal_usage" : false,
     "pools" : {
@@ -8326,8 +8326,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 8,
+        "minTier" : 9,
+        "maxTier" : 12,
         "maxModsAllowed" : 2
       },
       "Mystic" : {
@@ -8389,8 +8389,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 8,
+        "minTier" : 9,
+        "maxTier" : 12,
         "maxModsAllowed" : 4
       }
     },
@@ -8492,8 +8492,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 8,
+        "minTier" : 9,
+        "maxTier" : 12,
         "maxModsAllowed" : 2
       },
       "Anti-Magic" : {
@@ -8544,13 +8544,13 @@
             "weight" : 700,
             "fixed" : false
           } ],
-          "can_duplicate_mod" : false,
+          "can_duplicate_mod" : true,
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 6,
-        "maxTier" : 8,
-        "maxModsAllowed" : 3
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 4
       }
     },
     "modBoost" : {
@@ -10120,7 +10120,7 @@
     "weight" : 2,
     "price_in_copper" : 0,
     "material_toughness" : 90,
-    "material_max_mod" : 4,
+    "material_max_mod" : 5,
     "reveal_usage" : false,
     "pools" : {
       "Durable" : {
@@ -10203,8 +10203,8 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 5,
-        "maxTier" : 6,
+        "minTier" : 7,
+        "maxTier" : 9,
         "maxModsAllowed" : 1
       },
       "Mana Reactive" : {
@@ -10294,9 +10294,9 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 7,
-        "maxTier" : 9,
-        "maxModsAllowed" : 3
+        "minTier" : 10,
+        "maxTier" : 12,
+        "maxModsAllowed" : 4
       },
       "Mystic" : {
         "pool" : {
@@ -10357,9 +10357,9 @@
           "description" : "",
           "fixed_mods_description" : ""
         },
-        "minTier" : 7,
-        "maxTier" : 9,
-        "maxModsAllowed" : 1
+        "minTier" : 10,
+        "maxTier" : 11,
+        "maxModsAllowed" : 2
       }
     },
     "modBoost" : {

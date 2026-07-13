@@ -628,6 +628,9 @@ public class DiscordController {
         }
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            if (equipment == null) {
+                return "ไม่พบอุปกรณ์ดังกล่าว";
+            }
             equipment.setName(new_name);
             database.allCraftedEquipments.remove(item_name);
             database.allCraftedEquipments.put(equipment.getName(), equipment);
@@ -650,6 +653,9 @@ public class DiscordController {
                 .collect(Collectors.toCollection(ArrayList::new));
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+            if (equipment == null) {
+                return "ไม่พบอุปกรณ์ดังกล่าว";
+            }
             for (String material_name : materials) {
                 CraftingMaterial material = (CraftingMaterial) unit.findItem(material_name);
                 unit.getInventoryManager().removeItem(material_name);
@@ -714,6 +720,79 @@ public class DiscordController {
             return sb.toString();
         } else {
             return "No Role!";
+        }
+    }
+
+    @PostMapping("/item_give")
+    public String item_give(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit target = database.findPlayer(target_name);
+            if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+
+            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            Item item = database.allNormalItemMap.get(itemName);
+            if (item == null) {
+                item = database.allCraftedEquipments.get(itemName);
+            }
+            if (item == null) {
+                item = database.allEquipmentMap.get(itemName);
+            }
+            if (item == null) {
+                item = database.allMaterials.get(itemName);
+            }
+            if (item == null) {
+                item = database.allConsumableMap.get(itemName);
+            }
+            if (item == null) {
+                item = database.allDreamItem.get(itemName);
+            }
+            if (item == null) {
+                item = database.allTypeItemMap.get(itemName);
+            }
+
+            if (item != null) {
+                target.getInventoryManager().addItem(item, amount);
+                writeintoSheet(target);
+                return "มอบ "+item.getName()+" จำนวน "+amount+" ให้กับ "+target_name+" แล้ว";
+            } else {
+                return "ไม่พบไอเทมใน Database";
+            }
+        } else {
+            return "ต้องเป็น GM เพื่อใช้คำสั่งนี้";
+        }
+    }
+
+    @PostMapping("/item_take")
+    public String item_take(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit target = database.findPlayer(target_name);
+            if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            target.getInventoryManager().removeItem(itemName, amount);
+            writeintoSheet(target);
+            return "ลบไอเทมดังกล่าวแล้ว";
+        } else {
+            return "ต้องเป็น GM เพื่อใช้คำสั่งนี้";
         }
     }
 
