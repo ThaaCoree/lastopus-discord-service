@@ -161,7 +161,7 @@ public class Crafter {
         int base_material_weight = base_materials*100;
         double boost_material_weight = Math.pow(boost_materials, 3)*5;
         if (base_material_weight + boost_material_weight > 300) {
-            random.add(false, 100);
+            random.add(false, 200);
             random.add(true, base_material_weight + boost_material_weight);
             return random.roll();
         } else {
