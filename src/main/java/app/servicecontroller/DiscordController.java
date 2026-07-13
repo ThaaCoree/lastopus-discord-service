@@ -508,7 +508,7 @@ public class DiscordController {
 //            System.out.println("base : "+craftRequest.base.toString());
 //            System.out.println("boost : "+craftRequest.boost.toString());
             CraftedEquipment equipment = new CraftedEquipment(craftRequest.itemName);
-            if (database.allCraftedEquipments.get(craftRequest.itemName) != null) return "มีไอเทมชื่อนี้อยู่แล้ว";
+            if (database.allTypeItemMap.get(craftRequest.itemName) != null) return "มีไอเทมชื่อนี้อยู่แล้ว";
             if (craftRequest.itemName.contains(".")) return "ไม่สามารถมีจุดในชื่ออุปกรณ์ได้";
 
             equipment.setItemType(ItemType.EQUIPMENT);
@@ -630,6 +630,8 @@ public class DiscordController {
         if (new_name.contains(".")) {
             return "ในชื่อไม่สามารถมีจุดได้";
         }
+        Item item = database.allTypeItemMap.get(item_name);
+        if (item != null) return "มีไอเทมชื่อนี้อยู่แล้ว";
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) {
@@ -808,6 +810,7 @@ public class DiscordController {
         List<CraftingMaterial> returning_item = new ArrayList<>();
         sb.append("# อุปกรณ์พังทลาย!\n");
         for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+            if (materialInstance.getMaterial() == null) continue;
             WeightedRandom<Boolean> random = new WeightedRandom<>();
             int toughness = materialInstance.getMaterial().getMaterial_toughness() - toughness_reduce;
             int remaining_chance = 100-(toughness-toughness_reduce);
