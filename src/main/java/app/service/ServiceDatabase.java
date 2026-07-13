@@ -64,6 +64,7 @@ public class ServiceDatabase {
 //        save_credentials();
         loadMongo();
         mapAllUnit();
+        mapEverything();
         updateEverything();
         initCounterAllUnit();
     }
@@ -71,6 +72,7 @@ public class ServiceDatabase {
     public void reloadDatabase() {
         loadMongo();
         mapAllUnit();
+        mapEverything();
         updateEverything();
         initCounterAllUnit();
     }
@@ -95,6 +97,50 @@ public class ServiceDatabase {
     public void updateEverything() {
         updateUnitObjects();
         updateShopObjects();
+    }
+
+    public void mapEverything() {
+        if (allPlayerMap != null)
+            allUnit.putAll(allPlayerMap);
+        if (allNPCMap != null)
+            allUnit.putAll(allNPCMap);
+        if (allMonsterMap != null)
+            allUnit.putAll(allMonsterMap);
+
+        if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
+        if (allMaterials != null) allTypeItemMap.putAll(allMaterials);
+        if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
+        if (allEquipmentMap != null) allTypeItemMap.putAll(allEquipmentMap);
+        if (allRuneMap != null) allTypeItemMap.putAll(allRuneMap);
+        if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
+        if (allCraftedEquipments != null) allTypeItemMap.putAll(allCraftedEquipments);
+
+
+        for (Unit unit : allUnit.values()) {
+            for (Summon summon : unit.getSummons().values()) {
+                allSummon.put(summon.getName(), summon);
+            }
+            for (Map.Entry<Integer, PassiveNode> map : unit.getAllocatedPassives().entrySet()) {
+                map.getValue().setId(map.getKey());
+            }
+        }
+        if (allDreamItem != null) {
+            for (Item item : allDreamItem.values()) {
+                if (item instanceof Dream) {
+                    Dream dream = (Dream) item;
+                    PassiveNode node = new PassiveNode();
+                    node.setName(dream.getName());
+                    node.setModifiers(dream.getModifiers());
+                    node.setStatusDescription(StatTranslateUtil.translateStatusDesc(dream.getModifiers(), null));
+                    node.setDescription(dream.getDescription());
+                    node.setLore(dream.getLore());
+                    node.setNodeType(dream.getNodeType());
+                    node.setDream(true);
+                    allDream.put(dream.getName(), node);
+                }
+            }
+        }
+        allUnit.putAll(allSummon);
     }
 
     public void updateShopObjects() {

@@ -558,6 +558,7 @@ public class DiscordController {
                         .append(equipment.getStatusDescription());
 
                 database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.mapEverything();
                 database.save_craftedEquipment();
             }
             writeintoSheet(unit);
@@ -596,6 +597,7 @@ public class DiscordController {
                         .append(equipment.getStatusDescription());
 
                 database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.mapEverything();
                 database.save_craftedEquipment();
                 return sb.toString();
             } else {
@@ -636,6 +638,7 @@ public class DiscordController {
             equipment.setName(new_name);
             database.allCraftedEquipments.remove(item_name);
             database.allCraftedEquipments.put(equipment.getName(), equipment);
+            database.mapEverything();
             database.save_craftedEquipment();
             writeintoSheet(unit);
             return "เปลี่ยนชื่อเรียบร้อยแล้ว!";
@@ -670,6 +673,7 @@ public class DiscordController {
                 unit.getInventoryManager().removeItem(item_name);
             } else {
                 database.allCraftedEquipments.put(equipment.getName(), equipment);
+                database.mapEverything();
                 database.save_craftedEquipment();
                 sb.append("เพิ่มวัสดุในอุปกรณ์สำเร็จ!");
             }
