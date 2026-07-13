@@ -5,29 +5,26 @@ import model.type.StatTag;
 import util.WeightedRandom;
 
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class UniqueMaterialManager {
-    WeightedRandom<CraftedMod> weightedRandom;
-    List<MaterialInstance> materialInstances;
     ModInstance modInstance;
 
-    public UniqueMaterialManager(WeightedRandom<CraftedMod> weightedRandom, List<MaterialInstance> materialInstances) {
-        this.weightedRandom = weightedRandom;
-        this.materialInstances = materialInstances;
+    public UniqueMaterialManager() {
     }
 
-    public void applyUniqueBoost() {
+    public static void applyUniqueBoost(WeightedRandom<CraftedMod> weightedRandom, List<MaterialInstance> materialInstances, ModInstance modInstance) {
         for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
-            if (modInstance.boost_material_ids.contains( materialInstance.material_id)) continue;
-            modInstance.addBoostedMaterial(materialInstance.material_id);
+            if (!modInstance.boost_material_ids.contains(materialInstance.material_id)) continue;
             if (materialInstance.material_role == MaterialRole.BASE) continue;
+            modInstance.addBoostedMaterial(materialInstance.material_id);
             CraftingMaterial material = materialInstance.material;
-            applyClawOfLightDragon(materialInstance);
+            applyClawOfLightDragon(weightedRandom, materialInstance, materialInstances);
         }
     }
 
-    public void applyClawOfLightDragon(MaterialInstance materialInstance) {
+    public static void applyClawOfLightDragon(WeightedRandom<CraftedMod> weightedRandom, MaterialInstance materialInstance, List<MaterialInstance> materialInstances) {
         //have to rework a bit
             if (materialInstance.material.getName().equals("Claw of Light Dragon")) return;
             Crafter.applyWeightBoostByTag(weightedRandom, StatTag.STRIKE, 5);
@@ -41,19 +38,29 @@ public class UniqueMaterialManager {
             }
     }
 
-    public void applyUniqueMultitude() {
+    public static void applyUniqueBoostMultitude(List<MaterialInstance> materialInstances, ModInstance modInstance) {
         for (MaterialInstance materialInstance : materialInstances) {
             if (modInstance == null) continue;
             if (modInstance.boost_material_ids.contains( materialInstance.material_id)) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
             CraftingMaterial material = materialInstance.material;
-            applyWingOfLightDragon(material);
+            applyWingOfLightDragon(materialInstance, modInstance);
+            applyNitron(materialInstance, modInstance);
         }
     }
 
-    public void applyWingOfLightDragon(CraftingMaterial material) {
-        if (!material.getName().equals("Wing of Light Dragon")) return;
+    public static void applyWingOfLightDragon(MaterialInstance materialInstance, ModInstance modInstance) {
+        if (!materialInstance.getMaterial().getName().equals("Wing of Light Dragon")) return;
         modInstance.multiplyByTag(StatTag.DEFENSE, 1);
+    }
+
+    public static void applyNitron(MaterialInstance materialInstance, ModInstance modInstance) {
+        if (!materialInstance.getMaterial().getName().equals("Nitron")) return;
+        if (materialInstance.getMaterial_role() != MaterialRole.BASE) return;
+        double random = ThreadLocalRandom.current().nextDouble(1.5, 2.5);
+
+        modInstance.multiplyFinal_value(random);
+        modInstance.multiplyFinal_value(ThreadLocalRandom.current().nextBoolean() ? 1 : -1);
     }
 
     public void setModInstance(ModInstance modInstance) {

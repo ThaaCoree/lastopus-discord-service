@@ -33,21 +33,29 @@ public class Crafter {
             for (Map.Entry<String, CraftingMaterial.CraftPoolEntry> mapEntry : materialInstance.material.pools.entrySet()) {
                 String pool = mapEntry.getKey();
                 CraftingMaterial.CraftPoolEntry entry = mapEntry.getValue();
+                List<MaterialInstance> materialInstances = craftedEquipment.getMaterialInstances();
                 //one pool can have many allowed mods
                 WeightedRandom<CraftedMod> mod_pool_for_a_material = new WeightedRandom<>();
-                UniqueMaterialManager uniqueMaterialManager = new UniqueMaterialManager(mod_pool_for_a_material, craftedEquipment.getMaterialInstances());
                 //loop in each mod type for a material to put in weightedRandom
                 putModsIntoWeightedRandom(mod_pool_for_a_material, entry.pool, equipmentType, weaponType);
 
                 applyWeightBoostByMaterial(mod_pool_for_a_material, craftedEquipment.getMaterialInstances());
-                uniqueMaterialManager.applyUniqueBoost();
+
+                ModInstance modInstance = new ModInstance(craftedEquipment.mod_id++,
+                        materialInstance.material_id,
+                        entry.getPool().getPool_name());
+
+                UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, craftedEquipment.getMaterialInstances(), modInstance);
 
                 for (int i = 0; i < entry.maxModsAllowed; i++) {
+
                     if (mod_pool_for_a_material.isEmpty()) break;
                     //create modifier object to add into craftedEquipment's list
+
                     CraftedMod random = mod_pool_for_a_material.roll();
+                    modInstance.setMod(random);
                     double weight = mod_pool_for_a_material.getWeight(random);
-                    randomised_mods.add(evaluateMod(craftedEquipment, horn_light_dragon, materialInstance, entry, entry.pool, random, uniqueMaterialManager), weight);
+                    randomised_mods.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance, entry, materialInstances), weight);
                     //remove if can't duplicate
                     if (!entry.pool.can_duplicate_mod) {
                         mod_pool_for_a_material.remove(random);
@@ -58,19 +66,22 @@ public class Crafter {
                 if (equipmentType == EquipmentType.WEAPON && weaponType != WeaponType.SHIELD && weaponType != WeaponType.CHAIN) {
                     for (CraftedMod fixedMod : entry.pool.weaponMods) {
                         if (!fixedMod.isFixed()) continue;
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, materialInstance, entry, entry.pool, fixedMod, uniqueMaterialManager));
+                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
+                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
                     }
                 } else if (equipmentType == EquipmentType.ACCESSORY) {
                     for (CraftedMod fixedMod : entry.pool.accessoryMods) {
                         if (!fixedMod.isFixed()) continue;
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, materialInstance, entry, entry.pool, fixedMod, uniqueMaterialManager));
+                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
+                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
                     }
                 } else if (equipmentType == EquipmentType.HELMET || equipmentType == EquipmentType.ARMOR ||
                         equipmentType == EquipmentType.BOOTS || equipmentType == EquipmentType.GLOVES ||
                         weaponType == WeaponType.SHIELD || weaponType == WeaponType.CHAIN) {
                     for (CraftedMod fixedMod : entry.pool.armorMods) {
                         if (!fixedMod.isFixed()) continue;
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, materialInstance, entry, entry.pool, fixedMod, uniqueMaterialManager));
+                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
+                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
                     }
                 }
             }
@@ -125,13 +136,8 @@ public class Crafter {
     }
 
     public static ModInstance evaluateMod(CraftedEquipment craftedEquipment, boolean horn_light_dragon,
-                                                           MaterialInstance materialInstance, CraftingMaterial.CraftPoolEntry entry,
-                                                           CraftModPool pool, CraftedMod mod,
-                                                           UniqueMaterialManager uniqueMaterialManager) {
-        ModInstance modifier = (new ModInstance(craftedEquipment.mod_id++,
-                materialInstance.material_id,
-                pool.pool_name,
-                mod));
+                                                           ModInstance modifier, CraftingMaterial.CraftPoolEntry entry, List<MaterialInstance> materialInstances) {
+
         int minTier = entry.minTier;
         int maxTier = entry.maxTier;
         if (horn_light_dragon) {
@@ -141,7 +147,7 @@ public class Crafter {
 
         modifier.randomizeTierAndBaseValue(minTier, maxTier, craftedEquipment.getEquipmentType(), craftedEquipment.getWeaponType().twoHanded());
         modifier.resetFinalValue();
-        uniqueMaterialManager.applyUniqueMultitude();
+        UniqueMaterialManager.applyUniqueBoostMultitude(materialInstances, modifier);
 
         return modifier;
     }
@@ -183,6 +189,14 @@ public class Crafter {
                 applyWeightBoostByTag(weightedRandom, tag, multiply);
             });
         }
+    }
+
+    public static void applyWeightBoostByMaterial(WeightedRandom<CraftedMod> weightedRandom, MaterialInstance materialInstance) {
+        if (materialInstance.material_role == MaterialRole.BASE) return;
+
+        materialInstance.material.modBoost.forEach((tag, multiply) -> {
+            applyWeightBoostByTag(weightedRandom, tag, multiply);
+        });
     }
 
     public static void applyWeightBoostByTag(WeightedRandom<CraftedMod> weightedRandom, StatTag tag, double multiply) {
@@ -281,8 +295,21 @@ public class Crafter {
                 List<CraftedMod> candidates = pool.getListByEquipType(equipmentType, weaponType);
                 if (candidates == null) candidates = Collections.emptyList();
 
+                // === เพิ่มตรงนี้: สร้าง weighted pool ระดับ CraftedMod ===
+                WeightedRandom<CraftedMod> mod_pool_for_a_material = new WeightedRandom<>();
+                for (CraftedMod mod : candidates) {
+                    mod_pool_for_a_material.add(mod, mod.weight);
+                }
+                applyWeightBoostByMaterial(mod_pool_for_a_material, equipment.getMaterialInstances());
+
+                // placeholder ModInstance ไว้ให้ applyUniqueBoost ใช้ context (pool_name, base_material_id)
+                ModInstance placeholder = new ModInstance(mod_id, material.material_id, pool.getPool_name());
+                UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, equipment.getMaterialInstances(), placeholder);
+                // ถ้ามี applyUniqueBoostMultitude ก็เรียกต่อจากนี้เลย
+                // UniqueMaterialManager.applyUniqueBoostMultitude(mod_pool_for_a_material, equipment.getMaterialInstances(), placeholder);
+                // === จบส่วนที่เพิ่ม ===
+
                 if (!pool.can_duplicate_mod) {
-                    // ดึงเฉพาะ modInstance ที่อยู่ใน pool นี้มาก่อน
                     List<ModInstance> sameePoolInstances = matched_mods.stream()
                             .filter(mi -> mi.getPool_name().equals(pool.getPool_name()))
                             .toList();
@@ -299,10 +326,11 @@ public class Crafter {
                         });
 
                         if (!conflicts) {
-                            ModInstance modInstance = new ModInstance(mod_id,material.material_id, pool.getPool_name(), mod);
+                            ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
                             modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
                             modInstance.resetFinalValue();
-                            random.add(modInstance, mod.weight); // add แค่ครั้งเดียวต่อ mod แน่นอน
+                            // ใช้ weight ที่ผ่านการ boost แล้วแทน mod.weight ตรงๆ
+                            random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                         }
                     }
                 } else {
@@ -310,7 +338,8 @@ public class Crafter {
                         ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
                         modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
                         modInstance.resetFinalValue();
-                        random.add(modInstance, mod.weight);
+                        UniqueMaterialManager.applyUniqueBoostMultitude(equipment.getMaterialInstances(), modInstance);
+                        random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                     }
                 }
             }

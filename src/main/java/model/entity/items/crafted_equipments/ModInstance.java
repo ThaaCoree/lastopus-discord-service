@@ -31,6 +31,12 @@ public class ModInstance {
         this.mod = mod;
     }
 
+    public ModInstance(int mod_id, int base_material_id, String pool_name) {
+        this.mod_id = mod_id;
+        this.base_material_id = base_material_id;
+        this.pool_name = pool_name;
+    }
+
     public void randomizeTierAndBaseValue(int min_tier, int max_tier, EquipmentType equipmentType, boolean two_handed) {
         randomTier(min_tier, max_tier);
         rerollBase(equipmentType, two_handed);
@@ -115,7 +121,15 @@ public class ModInstance {
         return final_value;
     }
 
+    public void multiplyFinal_value(double multiply) {
+        final_value *= multiply;
+    }
+
     public CraftedMod getMod() {
         return mod;
+    }
+
+    public void setMod(CraftedMod mod) {
+        this.mod = mod;
     }
 }
