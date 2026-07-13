@@ -21,8 +21,8 @@
     "baseCol" : 2,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Z-Shape Rune" : {
@@ -47,8 +47,8 @@
     "baseCol" : 4,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "J-Shape Rune" : {
@@ -73,8 +73,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "L-Shape Rune" : {
@@ -99,8 +99,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "T-Shape Rune" : {
@@ -125,8 +125,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Cube-Shape Rune" : {
@@ -151,8 +151,8 @@
     "baseCol" : 4,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Three-Block Rune" : {
@@ -177,8 +177,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Two-Block Rune" : {
@@ -203,8 +203,8 @@
     "baseCol" : 3,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "One-Block Rune" : {
@@ -229,8 +229,8 @@
     "baseCol" : 0,
     "unique_weight" : 0,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Talented" : {
@@ -255,8 +255,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Echoes" : {
@@ -281,8 +281,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Tinkerer" : {
@@ -307,8 +307,8 @@
     "baseCol" : 0,
     "unique_weight" : 10,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Hawk Eyes" : {
@@ -350,6 +350,7 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
+    "statusModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.0,
@@ -368,7 +369,6 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { },
     "transferModifiers" : { }
   },
   "Stardiver" : {
@@ -393,8 +393,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Mountain Grip" : {
@@ -419,8 +419,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Might of the Beast" : {
@@ -462,7 +462,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -481,6 +480,7 @@
         "passiveMult" : 0.0
       }
     },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Wisdom of the Mage" : {
@@ -522,7 +522,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : {
       "DEXTERITY" : {
         "flat" : 0.0,
@@ -541,6 +540,7 @@
         "passiveMult" : 0.0
       }
     },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Trick of the Hunter" : {
@@ -582,7 +582,6 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -601,6 +600,7 @@
         "passiveMult" : 0.0
       }
     },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Perfect Guard" : {
@@ -644,8 +644,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALDEFENSE",
@@ -714,6 +714,7 @@
     "baseCol" : 0,
     "unique_weight" : 5,
     "id" : null,
+    "statusModifiers" : { },
     "statModifiers" : {
       "RESERVATION" : {
         "flat" : 1.0,
@@ -740,7 +741,6 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { },
     "transferModifiers" : { }
   },
   "Chemist" : {
@@ -765,8 +765,8 @@
     "baseCol" : 0,
     "unique_weight" : 2,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Enlightenment" : {
@@ -791,8 +791,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Might]" : {
@@ -817,8 +817,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Quick]" : {
@@ -843,8 +843,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Tough]" : {
@@ -869,8 +869,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Alert]" : {
@@ -895,8 +895,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Insight]" : {
@@ -921,8 +921,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Wise]" : {
@@ -947,8 +947,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Grand Spectrum [Bless]" : {
@@ -973,8 +973,8 @@
     "baseCol" : 0,
     "unique_weight" : 3,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Corner-Shape Rune" : {
@@ -999,8 +999,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Flower-Shape Rune" : {
@@ -1025,8 +1025,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Italic Rune" : {
@@ -1051,8 +1051,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "C-Shape Rune" : {
@@ -1077,8 +1077,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Five-Block Rune" : {
@@ -1103,8 +1103,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "X-Shape Rune" : {
@@ -1129,8 +1129,8 @@
     "baseCol" : 0,
     "unique_weight" : 1,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Planet Core" : {
@@ -1155,8 +1155,8 @@
     "baseCol" : 0,
     "unique_weight" : 7,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Fragile" : {
@@ -1198,6 +1198,7 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
+    "statusModifiers" : { },
     "statModifiers" : {
       "DAMAGEREDUCTION" : {
         "flat" : -0.07,
@@ -1216,7 +1217,6 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { },
     "transferModifiers" : { }
   },
   "Versatile" : {
@@ -1298,7 +1298,6 @@
     "baseCol" : 0,
     "unique_weight" : 8,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 0.0,
@@ -1357,6 +1356,7 @@
         "passiveMult" : 0.0
       }
     },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Swift as Wind" : {
@@ -1381,8 +1381,8 @@
     "baseCol" : 0,
     "unique_weight" : 6,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Time Flow" : {
@@ -1407,8 +1407,8 @@
     "baseCol" : 0,
     "unique_weight" : 4,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   },
   "Space Axis" : {
@@ -1433,8 +1433,8 @@
     "baseCol" : 0,
     "unique_weight" : 8,
     "id" : null,
-    "statModifiers" : { },
     "statusModifiers" : { },
+    "statModifiers" : { },
     "transferModifiers" : { }
   }
 }

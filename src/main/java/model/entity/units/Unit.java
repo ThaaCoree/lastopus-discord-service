@@ -18,6 +18,7 @@ import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
 import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.skills.SkillInstance;
 import model.entity.skills.SkillWithCondition;
 import model.modifier.ModValue;
@@ -915,6 +916,19 @@ public class Unit {
         }
         for (Item item : rune_inventory.values()) {
             if (item.getName().equals(name)) return item;
+        }
+        return null;
+    }
+
+    public CraftingMaterial findCraftingMaterial(String name) {
+        for (Item item : inventoryItems.values()) {
+            if (item instanceof CraftingMaterial craftingMaterial && item.getName().equals(name)) return craftingMaterial;
+        }
+        for (Item item : backpackItems.values()) {
+            if (item instanceof CraftingMaterial craftingMaterial && item.getName().equals(name)) return craftingMaterial;
+        }
+        for (Item item : rune_inventory.values()) {
+            if (item instanceof CraftingMaterial craftingMaterial && item.getName().equals(name)) return craftingMaterial;
         }
         return null;
     }

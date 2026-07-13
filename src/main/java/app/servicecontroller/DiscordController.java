@@ -659,8 +659,8 @@ public class DiscordController {
                 return "ไม่พบอุปกรณ์ดังกล่าว";
             }
             for (String material_name : materials) {
-                System.out.println(material_name);
-                CraftingMaterial material = (CraftingMaterial) unit.findItem(material_name);
+                CraftingMaterial material = unit.findCraftingMaterial(material_name);
+                if (material == null) return "ไม่พบวัตถุดิบที่ต้องการจะเพิ่ม";
                 unit.getInventoryManager().removeItem(material_name);
                 equipment.addMaterial(material, materialRole);
             }
