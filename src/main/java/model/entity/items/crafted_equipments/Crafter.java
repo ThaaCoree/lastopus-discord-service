@@ -38,19 +38,18 @@ public class Crafter {
                 WeightedRandom<CraftedMod> mod_pool_for_a_material = new WeightedRandom<>();
                 //loop in each mod type for a material to put in weightedRandom
                 putModsIntoWeightedRandom(mod_pool_for_a_material, entry.pool, equipmentType, weaponType);
-
                 applyWeightBoostByMaterial(mod_pool_for_a_material, craftedEquipment.getMaterialInstances());
-
-                ModInstance modInstance = new ModInstance(craftedEquipment.mod_id++,
-                        materialInstance.material_id,
-                        entry.getPool().getPool_name());
-
-                UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, craftedEquipment.getMaterialInstances(), modInstance);
 
                 for (int i = 0; i < entry.maxModsAllowed; i++) {
 
                     if (mod_pool_for_a_material.isEmpty()) break;
                     //create modifier object to add into craftedEquipment's list
+
+                    ModInstance modInstance = new ModInstance(craftedEquipment.mod_id++,
+                            materialInstance.material_id,
+                            entry.getPool().getPool_name());
+
+                    UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, craftedEquipment.getMaterialInstances(), modInstance);
 
                     CraftedMod random = mod_pool_for_a_material.roll();
                     modInstance.setMod(random);
