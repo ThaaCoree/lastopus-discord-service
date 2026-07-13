@@ -53,7 +53,6 @@ public class UniqueMaterialManager {
             modInstance.addBoostedMaterial(materialInstance.material_id);
             CraftingMaterial material = materialInstance.material;
             applyWingOfLightDragon(materialInstance, modInstance);
-            applyNitron(materialInstance, modInstance);
         }
     }
 
