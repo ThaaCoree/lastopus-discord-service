@@ -14,6 +14,7 @@ import model.entity.items.*;
 import model.entity.items.crafted_equipments.CraftModPool;
 import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.CraftingMaterial;
+import model.entity.items.crafted_equipments.MaterialInstance;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -115,6 +116,11 @@ public class ServiceDatabase {
         if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
         if (allCraftedEquipments != null) allTypeItemMap.putAll(allCraftedEquipments);
 
+        if (allCraftedEquipments != null) {
+            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
+                craftedEquipment.getMaterialInstances().removeIf(materialInstance -> materialInstance.getMaterial() == null);
+            }
+        }
 
         for (Unit unit : allUnit.values()) {
             for (Summon summon : unit.getSummons().values()) {
