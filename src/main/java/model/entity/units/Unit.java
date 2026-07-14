@@ -957,7 +957,7 @@ public class Unit {
         return null;
     }
 
-    public CraftedEquipment findCraftedEquipment(String name ){
+    public CraftedEquipment findCraftedEquipment(String name){
         for (Item item : inventoryItems.values()) {
             if (item.getName().equalsIgnoreCase(name) && item instanceof CraftedEquipment equipment) return equipment;
         }

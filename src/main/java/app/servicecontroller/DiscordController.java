@@ -693,43 +693,61 @@ public class DiscordController {
         Unit unit = database.findPlayer(name);
         String item_name = playerMessage.message;
         if (unit != null) {
-            CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
-            if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
             StringBuilder sb = new StringBuilder();
-            sb.append(item_name).append(":\n\n");
-            int max_mods = 0;
-            for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
-                sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
-                if (materialInstance.getMaterial_role() == MaterialRole.BASE) {
-                    max_mods += materialInstance.getMaterial().getMaterial_max_mod();
+            getInspectedString(sb, unit, item_name);
+            return sb.toString();
+        } else if (isGM(playerMessage.roles)) {
+            StringBuilder sb = new StringBuilder();
+            for (Unit individual_player : database.allPlayerMap.values()) {
+                for (Item item : individual_player.getInventoryItems().values()) {
+                    if (item.getName().equalsIgnoreCase(item_name)) {
+                        getInspectedString(sb, individual_player, item_name);
+                    }
                 }
             }
-            DecimalFormat df = new DecimalFormat("#.##");
-            int mod_count = 1;
-            for (ModInstance modInstance : equipment.getModInstances()) {
-                sb.append(mod_count).append(". ");
-                sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
-                        .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
-                        .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
-                        .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType())).append("]").append("\n")
-                        .append("[").append(modInstance.getPool_name()).append("]").append(" [")
-                        .append(equipment.getMaterialInstances().stream()
-                                .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())
-                                .map(m -> m.getMaterial().getName())
-                                .findFirst()
-                                .orElse("Unknown"))
-                        .append("]");
-                if (modInstance.getMod().isFixed()) {
-                    sb.append(" [FIXED]");
-                }
-            sb.append("\n\n");
-                mod_count++;
-            }
-            sb.append("Total mods : [").append(mod_count-1).append("/").append(max_mods).append("]");
             return sb.toString();
         } else {
             return "No Role!";
         }
+    }
+
+    public StringBuilder getInspectedString(StringBuilder sb, Unit unit, String item_name) {
+        CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
+        if (equipment == null) {
+            sb.append("ไม่พบอุปกรณ์ดังกล่าว");
+            return sb;
+        }
+        sb.append(item_name).append(":\n\n");
+        int max_mods = 0;
+        for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+            sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
+            if (materialInstance.getMaterial_role() == MaterialRole.BASE) {
+                max_mods += materialInstance.getMaterial().getMaterial_max_mod();
+            }
+        }
+        DecimalFormat df = new DecimalFormat("#.##");
+        int mod_count = 1;
+        for (ModInstance modInstance : equipment.getModInstances()) {
+            sb.append(mod_count).append(". ");
+            sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
+                    .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
+                    .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
+                    .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType())).append("]").append("\n")
+                    .append("[").append(modInstance.getPool_name()).append("]").append(" [")
+                    .append(equipment.getMaterialInstances().stream()
+                            .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())
+                            .map(m -> m.getMaterial().getName())
+                            .findFirst()
+                            .orElse("Unknown"))
+                    .append("]");
+            if (modInstance.getMod().isFixed()) {
+                sb.append(" [FIXED]");
+            }
+            sb.append("\n\n");
+            mod_count++;
+        }
+        sb.append("Total mods : [").append(mod_count-1).append("/").append(max_mods).append("]");
+        return sb;
     }
 
     @PostMapping("/item_give")
