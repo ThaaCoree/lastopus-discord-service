@@ -110,7 +110,16 @@ public class CraftingMaterial extends Item {
     }
 
     public void createUsageDescription() {
-        //to-do
+        StringBuilder sb = new StringBuilder();
+        if (!modBoost.isEmpty()) {
+            sb.append("Boost : ");
+            for (Map.Entry<StatTag, Double> entry : modBoost.entrySet()) {
+                sb.append("\n").append(entry.getKey().writeAsString()).append(" (").append(entry.getValue() *100).append("%)");
+            }
+            sb.append("\n");
+        }
+        sb.append("\n").append("Material Toughness : ").append(material_toughness).append("%");
+        setStatusDescription(sb.toString());
     }
 
     public int getMaterial_toughness() {

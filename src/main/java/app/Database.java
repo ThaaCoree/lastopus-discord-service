@@ -548,6 +548,11 @@ public class Database {
                     card.getStatusDescription().put(type, StatTranslateUtil.translateStatusDesc(card.getModifiers().get(type),null));
                 }
             }
+        if (allMaterials != null) {
+            for (CraftingMaterial material : allMaterials.values()) {
+                material.createUsageDescription();
+            }
+        }
     }
 
     public void initCounterAllUnit() {
