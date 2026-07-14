@@ -108,6 +108,12 @@ public class ServiceDatabase {
         if (allMonsterMap != null)
             allUnit.putAll(allMonsterMap);
 
+        if (allMaterials != null) {
+            for (CraftingMaterial material : allMaterials.values()) {
+                material.createUsageDescription();
+            }
+        }
+
         if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
         if (allMaterials != null) allTypeItemMap.putAll(allMaterials);
         if (allConsumableMap != null) allTypeItemMap.putAll(allConsumableMap);
