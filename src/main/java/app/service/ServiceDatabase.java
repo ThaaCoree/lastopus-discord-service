@@ -116,11 +116,11 @@ public class ServiceDatabase {
         if (allDreamItem != null) allTypeItemMap.putAll(allDreamItem);
         if (allCraftedEquipments != null) allTypeItemMap.putAll(allCraftedEquipments);
 
-        if (allCraftedEquipments != null) {
-            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
-                craftedEquipment.getMaterialInstances().removeIf(materialInstance -> materialInstance.getMaterial() == null);
-            }
-        }
+//        if (allCraftedEquipments != null) {
+//            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
+//                craftedEquipment.getMaterialInstances().removeIf(materialInstance -> materialInstance.getMaterial() == null);
+//            }
+//        }
 
         for (Unit unit : allUnit.values()) {
             for (Summon summon : unit.getSummons().values()) {
