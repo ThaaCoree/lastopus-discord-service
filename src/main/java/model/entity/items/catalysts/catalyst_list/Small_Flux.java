@@ -22,7 +22,7 @@ public class Small_Flux implements CatalystEffect {
             weightedRandom.add(modInstance, 100);
         }
 
-        weightedRandom.roll().rerollBase(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
+        weightedRandom.roll().rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
 
         return "รีโรลค่าใน "+equipment.getName()+" แล้ว";
     }

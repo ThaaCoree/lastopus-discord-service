@@ -40,8 +40,7 @@ public class ModInstance {
 
     public void randomizeTierAndBaseValue(int min_tier, int max_tier, EquipmentType equipmentType, boolean two_handed) {
         randomTier(min_tier, max_tier);
-        rerollBase(equipmentType, two_handed);
-        resetFinalValue();
+        rerollBaseAndFinal(equipmentType, two_handed);
     }
 
     public void randomTier(int min_tier, int max_tier) {
@@ -52,11 +51,13 @@ public class ModInstance {
         tier = weightedRandom.roll();
     }
 
-    public void resetFinalValue() {
+    public void resetFinalValue(List<MaterialInstance> materialInstances, ModInstance modInstance) {
         final_value = base_rolled;
+        UniqueMaterialManager.applyUniqueBaseMultitude(materialInstances, modInstance);
+        UniqueMaterialManager.applyUniqueBoostMultitude(materialInstances, modInstance);
     }
 
-    public void rerollBase(EquipmentType equipmentType, boolean two_handed) {
+    public void rerollBaseAndFinal(EquipmentType equipmentType, boolean two_handed) {
         base_rolled = mod.getRandomizedModValueByTier(tier, equipmentType, two_handed, mod.getModifierType());
         final_value = base_rolled;
     }
@@ -132,5 +133,17 @@ public class ModInstance {
 
     public void setMod(CraftedMod mod) {
         this.mod = mod;
+    }
+
+    public void setFinal_value(double final_value) {
+        this.final_value = final_value;
+    }
+
+    public void setBase_rolled(double base_rolled) {
+        this.base_rolled = base_rolled;
+    }
+
+    public void multiplyTier(double multiply) {
+        tier *= multiply;
     }
 }

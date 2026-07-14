@@ -583,23 +583,31 @@ public class DiscordController {
             boolean success = validationResult.isSuccess();
             String check_message = validationResult.getMessage();
             if (success) {
+                StringBuilder sb = new StringBuilder();
                 Item item = unit.findItem(catalyst_name);
                 if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
-                Crafter.useCatalyst(catalyst_name, equipment);
-                unit.getInventoryManager().removeItem(catalyst_name, 1);
-                writeintoSheet(unit);
-                StringBuilder sb = new StringBuilder();
-                sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append(catalyst_name).append("\n")
-                        .append(equipment.getName()).append("\n")
-                        .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
-                        .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
-                        .append("Stats & Statuses : ").append("\n")
-                        .append(equipment.getStatusDescription());
 
-                database.allCraftedEquipments.put(equipment.getName(), equipment);
-                database.mapEverything();
-                database.save_craftedEquipment();
-                return sb.toString();
+                if (Crafter.brickCheckCatalyst(catalyst_name, equipment)) {
+                    Crafter.useCatalyst(catalyst_name, equipment);
+                    unit.getInventoryManager().removeItem(catalyst_name, 1);
+                    writeintoSheet(unit);
+                    sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append(catalyst_name).append("\n")
+                            .append(equipment.getName()).append("\n")
+                            .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
+                            .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
+                            .append("Stats & Statuses : ").append("\n")
+                            .append(equipment.getStatusDescription());
+
+                    database.allCraftedEquipments.put(equipment.getName(), equipment);
+                    database.mapEverything();
+                    database.save_craftedEquipment();
+                    return sb.toString();
+                } else {
+                    itemBrick(unit, equipment, 0, sb);
+                    unit.getInventoryManager().removeItem(catalyst_name, 1);
+                    writeintoSheet(unit);
+                    return sb.toString();
+                }
             } else {
                 return "ไม่สามารถใช้งาน "+catalyst_name+" กับ "+item_name+" ได้\n" +
                         check_message;

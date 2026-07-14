@@ -31,6 +31,15 @@ public class WeightedRandom<T> {
         return weightedRandom(weights);
     }
 
+    public T rollAndRemove() {
+        if (weights.isEmpty()) {
+            throw new IllegalStateException("No items to roll");
+        }
+        T to_ret = weightedRandom(weights);
+        weights.remove(to_ret);
+        return to_ret;
+    }
+
     public Map<T, Double> getList() {
         return weights;
     }

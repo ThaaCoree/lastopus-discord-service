@@ -3,7 +3,6 @@ package model.entity.items.catalysts.catalyst_list;
 import model.entity.items.catalysts.CatalystEffect;
 import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.CraftedEquipment;
-import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.ModInstance;
 
 public class White_Flux implements CatalystEffect {
@@ -17,7 +16,7 @@ public class White_Flux implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         for (ModInstance modInstance : equipment.getModInstances()) {
-            modInstance.rerollBase(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
+            modInstance.rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
         }
 
         return "รีโรลค่าใน "+equipment.getName()+" แล้ว";

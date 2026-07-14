@@ -1108,5 +1108,35 @@
     "price" : "",
     "weight" : 1,
     "price_in_copper" : 0
+  },
+  "Polarizer" : {
+    "name" : "Polarizer",
+    "itemType" : "CATALYST",
+    "description" : "สุ่มม็อดครึ่งหนึ่งจากทั้งหมด สลับค่าจากลบเป็นบวก จากบวกเป็นลบ\nจะมีอย่างน้อยสองม็อดที่ติดลบ",
+    "statusDescription" : "",
+    "lore" : "",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0
+  },
+  "Night Shard" : {
+    "name" : "Night Shard",
+    "itemType" : "CATALYST",
+    "description" : "เพิ่มเทียร์ของม็อดทั้งหมดขึ้น 1.5 เท่า จากมีโอกาสอย่างมากในการแชตเตอร์ไอเทม",
+    "statusDescription" : "",
+    "lore" : "",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0
+  },
+  "Two-Toned Infusion Shard" : {
+    "name" : "Two-Toned Infusion Shard",
+    "itemType" : "CATALYST",
+    "description" : "สุ่มลบหนึ่งม็อด จากนั้นเพิ่มหนึ่่งม็อดที่มีค่าตัวเลขเป็นสูงสุดหรือต่ำสุดในระยะการสุ่ม",
+    "statusDescription" : "",
+    "lore" : "",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0
   }
 }

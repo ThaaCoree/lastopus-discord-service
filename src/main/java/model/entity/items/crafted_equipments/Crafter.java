@@ -145,9 +145,7 @@ public class Crafter {
         }
 
         modifier.randomizeTierAndBaseValue(minTier, maxTier, craftedEquipment.getEquipmentType(), craftedEquipment.getWeaponType().twoHanded());
-        modifier.resetFinalValue();
-        UniqueMaterialManager.applyUniqueBaseMultitude(materialInstances, modifier);
-        UniqueMaterialManager.applyUniqueBoostMultitude(materialInstances, modifier);
+        modifier.resetFinalValue(materialInstances, modifier);
 
         return modifier;
     }
@@ -328,7 +326,7 @@ public class Crafter {
                         if (!conflicts) {
                             ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
                             modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
-                            modInstance.resetFinalValue();
+                            modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
                             // ใช้ weight ที่ผ่านการ boost แล้วแทน mod.weight ตรงๆ
                             random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                         }
@@ -337,9 +335,7 @@ public class Crafter {
                     for (CraftedMod mod : candidates) {
                         ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
                         modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
-                        modInstance.resetFinalValue();
-                        UniqueMaterialManager.applyUniqueBaseMultitude(equipment.getMaterialInstances(), modInstance);
-                        UniqueMaterialManager.applyUniqueBoostMultitude(equipment.getMaterialInstances(), modInstance);
+                        modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
                         random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                     }
                 }
@@ -367,5 +363,12 @@ public class Crafter {
             System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้\n" +
                     effect.canApply(equipment).getMessage());
         }
+    }
+
+    public static boolean brickCheckCatalyst(String catalyst_name, CraftedEquipment equipment) {
+        CatalystFactory catalystFactory = new CatalystFactory();
+        CatalystEffect effect = catalystFactory.get(catalyst_name);
+        if (effect == null) return false;
+        return effect.brick(equipment);
     }
 }

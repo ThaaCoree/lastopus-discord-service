@@ -15,6 +15,9 @@ public class CatalystFactory {
         register(new White_Flux());
         register(new Small_Flux());
         register(new Synthesizer());
+        register(new Polarizer());
+        register(new Night_Shard());
+        register(new Two_Toned_Infusion_Shard());
     }
 
     private void register(CatalystEffect effect) {
