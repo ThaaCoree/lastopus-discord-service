@@ -630,7 +630,7 @@ public class DiscordController {
         if (new_name.contains(".")) {
             return "ในชื่อไม่สามารถมีจุดได้";
         }
-        Item item = database.allTypeItemMap.get(item_name);
+        Item item = database.allTypeItemMap.get(new_name);
         if (item != null) return "มีไอเทมชื่อนี้อยู่แล้ว";
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
