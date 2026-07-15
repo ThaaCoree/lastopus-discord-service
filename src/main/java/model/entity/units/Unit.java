@@ -709,15 +709,25 @@ public class Unit {
         ));
         List<Item> items = new ArrayList<>();
         List<Integer> itemWeight = new ArrayList<>();
+        Map<String, Integer> amount_map = new LinkedHashMap<>();
         for (Map.Entry<Integer, Item> entry : backpackItems.entrySet()) {
-            items.add(entry.getValue());
-            itemWeight.add(entry.getValue().getWeight());
+            Item item = entry.getValue();
+            String name = item.getName();
+
+            if (amount_map.containsKey(name)) {
+                amount_map.put(name, amount_map.get(name) + 1);
+            } else {
+                amount_map.put(name, 1);
+                items.add(item);
+                itemWeight.add(item.getWeight());
+            }
         }
+
         for (int i = 0; i < items.toArray().length; i++) {
             List<Object> row = new ArrayList<>();
             List<Object> statusRow = new ArrayList<>();
             row.add(items.get(i).getName());
-            row.add("["+itemWeight.get(i)+"]");
+            row.add(amount_map+" ["+itemWeight.get(i)+"]");
             row.add(items.get(i).getLore());
 
             statusRow.add(items.get(i).getItemType().writeAsString());
@@ -935,7 +945,7 @@ public class Unit {
 
     public Item findItemInventory(String name) {
         for (Item item : inventoryItems.values()) {
-            if (item.getName().equals(name)) return item;
+            if (item.getName().equalsIgnoreCase(name)) return item;
         }
         return null;
     }
