@@ -56,10 +56,10 @@ public class Database {
         mapEverything();
         updateEverything();
         initCounterAllUnit();
-//        if (combatFlow != null) {
-//            combatFlow.registerDatabase(this);
-//            combatFlow.initCombatFlow();
-//        }
+        if (combatFlow != null) {
+            combatFlow.registerDatabase(this);
+            combatFlow.initCombatFlow();
+        }
     }
 
     public void createPlayer(String name) {
