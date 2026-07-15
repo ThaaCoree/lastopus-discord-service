@@ -160,6 +160,96 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/backpack")
+    public String backpack(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนต้องมากกว่า 0";
+            }
+            String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
+            Item item = unit.findItemInventory(itemName);
+            if (item == null) return "ไม่พบไอเทม";
+            int original_amount = unit.getInventoryManager().getQuantityFromInventory(item.getName());
+            if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
+
+            int sum_weight = item.getWeight() * amount;
+            if (sum_weight > unit.calculateMaxBackpackSlot()) {
+                for (int i = 0; i < amount; i++) {
+                    unit.getInventoryManager().addItemToBackpack(item);
+                }
+                unit.getInventoryManager().removeItem(item.getName());
+                unit.calculateBackpackSlot();
+
+                writeintoSheet(unit);
+                return "เก็บ "+item.getName()+" จำนวน "+amount+" หน่วยลงในกระเป๋าแล้ว\n" +
+                        "Backpack Slot : ["+(unit.calculateMaxBackpackSlot() - unit.getBackpackSlot())+" / "+unit.getBackpackSlot()+"]";
+            } else {
+                return "มีพื้นที่ในกระเป๋าไม่พอ";
+            }
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/inventory")
+    public String inventory(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนต้องมากกว่า 0";
+            }
+            String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
+            Item item = unit.findItemInventory(itemName);
+            if (item == null) return "ไม่พบไอเทม";
+            int original_amount = 0;
+
+            for (Map.Entry<Integer, Item> backpackEntry : unit.getBackpackItems().entrySet()) {
+                if (backpackEntry.getValue().getName().equalsIgnoreCase(item.getName())) {
+                    original_amount++;
+                }
+            }
+
+            if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
+
+            for (int i = 0; i < amount; i++) {
+                unit.getInventoryManager().addItem(item);
+                List<Integer> keysToRemove = new ArrayList<>();
+
+                for (Map.Entry<Integer, Item> backpackEntry : unit.getBackpackItems().entrySet()) {
+                    if (backpackEntry.getValue().getName().equalsIgnoreCase(item.getName())) {
+                        keysToRemove.add(backpackEntry.getKey());
+                    }
+                }
+
+                for (Integer key : keysToRemove) {
+                    unit.getInventoryManager().removeItemFromBackpack(key);
+                }
+            }
+            unit.calculateBackpackSlot();
+
+            writeintoSheet(unit);
+            return "หยิบ " + item.getName() + " จำนวน " + amount + " ออกจากกระเป๋าแล้ว\n" +
+                    "Backpack Slot : [" + (unit.calculateMaxBackpackSlot() - unit.getBackpackSlot()) + " / " + unit.getBackpackSlot() + "]";
+        } else {
+            return "No Role!";
+        }
+    }
+
     @PostMapping("/buyrune")
     public String buyrune(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);

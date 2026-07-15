@@ -50,7 +50,7 @@ public class ServiceDatabase {
     public Map<String, Unit> allPlayerMap;
     public Map<String, Unit> allNPCMap;
     public Map<String, Monster> allMonsterMap;
-    public Map<String, Conditions> allConditionMap ;
+    public Map<String, Conditions> allConditionMap;
     public Map<String, Card> allCardMap;
     public Map<Integer, PassiveNode> allPassiveMap;
     public Map<String, CraftingMaterial> allMaterials = new LinkedHashMap<>();
