@@ -727,7 +727,7 @@ public class Unit {
             List<Object> row = new ArrayList<>();
             List<Object> statusRow = new ArrayList<>();
             row.add(items.get(i).getName());
-            row.add(amount_map+" ["+itemWeight.get(i)+"]");
+            row.add(amount_map.get(items.get(i).getName())+" ["+itemWeight.get(i)+"]");
             row.add(items.get(i).getLore());
 
             statusRow.add(items.get(i).getItemType().writeAsString());
