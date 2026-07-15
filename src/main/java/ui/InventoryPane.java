@@ -742,9 +742,7 @@ public class InventoryPane extends ScrollPane {
         Button to_backpack = new Button("V");
         to_backpack.setOnAction(e -> {
             int amount = unit.getInventoryItemAmount().get(slotIndex);
-            for (int i = 0 ; i < amount ; i++) {
-                unit.getInventoryManager().addItemToBackpack(item);
-            }
+            unit.getInventoryManager().addItemToBackpack(item);
             unit.getInventoryManager().removeItem(item.getName());
             unit.calculateBackpackSlot();
             refreshContents();

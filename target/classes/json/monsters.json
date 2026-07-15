@@ -88631,7 +88631,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -88675,7 +88674,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "2" : {
@@ -88741,7 +88741,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -88785,7 +88784,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "3" : {
@@ -88851,7 +88851,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -88895,7 +88894,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "4" : {
@@ -88956,7 +88956,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -88991,7 +88990,8 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { }
+          "statModifiers" : { },
+          "transferModifiers" : { }
         }
       },
       "6" : {
@@ -89851,7 +89851,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -89895,7 +89894,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "2" : {
@@ -89961,7 +89961,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90005,7 +90004,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "3" : {
@@ -90071,7 +90071,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -90115,7 +90114,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "4" : {
@@ -90172,7 +90172,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90207,7 +90206,8 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { }
+          "statModifiers" : { },
+          "transferModifiers" : { }
         }
       },
       "5" : {
@@ -91091,7 +91091,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91135,7 +91134,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "2" : {
@@ -91201,7 +91201,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91245,7 +91244,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "3" : {
@@ -91311,7 +91311,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -91355,7 +91354,8 @@
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
-          }
+          },
+          "transferModifiers" : { }
         }
       },
       "4" : {
@@ -91416,7 +91416,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -91451,7 +91450,8 @@
               "passiveMult" : 0.0
             }
           },
-          "statModifiers" : { }
+          "statModifiers" : { },
+          "transferModifiers" : { }
         }
       },
       "6" : {
@@ -113401,8 +113401,8 @@
       },
       "MAGICALATTACK" : {
         "base" : 1040.0,
-        "current" : 1976.0,
-        "final" : 1976.0
+        "current" : 1040.0,
+        "final" : 1040.0
       },
       "RANGEDATTACK" : {
         "base" : 1027.0,

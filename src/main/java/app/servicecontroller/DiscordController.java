@@ -184,13 +184,13 @@ public class DiscordController {
             if (sum_weight < unit.calculateMaxBackpackSlot()) {
                 for (int i = 0; i < amount; i++) {
                     unit.getInventoryManager().addItemToBackpack(item);
+                    unit.getInventoryManager().removeItem(item.getName());
                 }
-                unit.getInventoryManager().removeItem(item.getName());
                 unit.calculateBackpackSlot();
 
                 writeintoSheet(unit);
                 return "เก็บ "+item.getName()+" จำนวน "+amount+" หน่วยลงในกระเป๋าแล้ว\n" +
-                        "Backpack Slot : ["+(unit.calculateMaxBackpackSlot() - unit.getBackpackSlot())+" / "+unit.getBackpackSlot()+"]";
+                        "Backpack Slot : ["+(unit.calculateMaxBackpackSlot() - unit.getBackpackSlot())+" / "+unit.calculateMaxBackpackSlot()+"]";
             } else {
                 return "มีพื้นที่ในกระเป๋าไม่พอ";
             }
@@ -233,6 +233,7 @@ public class DiscordController {
                 for (Map.Entry<Integer, Item> backpackEntry : unit.getBackpackItems().entrySet()) {
                     if (backpackEntry.getValue().getName().equalsIgnoreCase(item.getName())) {
                         keysToRemove.add(backpackEntry.getKey());
+                        break;
                     }
                 }
 

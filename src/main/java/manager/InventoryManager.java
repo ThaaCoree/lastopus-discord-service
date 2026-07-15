@@ -86,7 +86,7 @@ public class InventoryManager {
         for (Map.Entry<Integer, Item> entry : unit.getBackpackItems().entrySet()) {
             int slotNum = entry.getKey();
 
-            if (entry.getValue().getName().equals("")) {
+            if (entry.getValue().getName().isEmpty()) {
                 replaceBackpackItem(slotNum, item);
                 return;
             }
@@ -100,10 +100,12 @@ public class InventoryManager {
 
     public void increaseBackpackSlot(Item toPut) {
         int nextSlot = 0;
-        for (Item item : unit.getBackpackItems().values()) {
+
+        while (unit.getBackpackItems().containsKey(nextSlot)) {
             nextSlot++;
         }
-        replaceBackpackItem(nextSlot,toPut);
+
+        replaceBackpackItem(nextSlot, toPut);
     }
 
     public void replaceBackpackItem(int slot, Item item) {
