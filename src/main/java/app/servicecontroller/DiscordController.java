@@ -251,7 +251,7 @@ public class DiscordController {
 
             writeintoSheet(unit);
             return "หยิบ " + item.getName() + " จำนวน " + amount + " ออกจากกระเป๋าแล้ว\n" +
-                    "Backpack Slot : [" + (unit.calculateMaxBackpackSlot() - unit.getBackpackSlot()) + " / " + unit.getBackpackSlot() + "]";
+                    "Backpack Slot : [" + (unit.calculateMaxBackpackSlot() - unit.getBackpackSlot()) + " / " + unit.calculateMaxBackpackSlot() + "]";
         } else {
             return "No Role!";
         }
