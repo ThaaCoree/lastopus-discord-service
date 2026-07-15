@@ -181,7 +181,7 @@ public class DiscordController {
             if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
 
             int sum_weight = item.getWeight() * amount;
-            if (sum_weight < unit.calculateMaxBackpackSlot()) {
+            if (sum_weight+ (unit.calculateMaxBackpackSlot() - unit.getBackpackSlot()) < unit.calculateMaxBackpackSlot()) {
                 for (int i = 0; i < amount; i++) {
                     unit.getInventoryManager().addItemToBackpack(item);
                     unit.getInventoryManager().removeItem(item.getName());
