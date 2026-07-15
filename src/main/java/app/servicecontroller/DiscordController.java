@@ -175,7 +175,7 @@ public class DiscordController {
                 return "จำนวนต้องมากกว่า 0";
             }
             String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
-            Item item = unit.findItemInventory(itemName);
+            Item item = unit.findItem(itemName);
             if (item == null) return "ไม่พบไอเทม";
             int original_amount = unit.getInventoryManager().getQuantityFromInventory(item.getName());
             if (amount > original_amount) return "มีไอเทมไม่เพียงพอ";
@@ -214,13 +214,7 @@ public class DiscordController {
                 return "จำนวนต้องมากกว่า 0";
             }
             String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
-            Item item = null;
-
-            for (Item itemm : unit.getBackpackItems().values()) {
-                if (itemm.getName().equalsIgnoreCase(itemName)) {
-                    item = itemm;
-                }
-            }
+            Item item = unit.findItem(itemName);
             if (item == null) return "ไม่พบไอเทม";
             int original_amount = 0;
 
