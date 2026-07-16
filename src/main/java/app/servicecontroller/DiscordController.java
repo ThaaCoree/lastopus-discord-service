@@ -684,7 +684,7 @@ public class DiscordController {
                 Item item = unit.findItem(catalyst_name);
                 if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
 
-                if (Crafter.brickCheckCatalyst(catalyst_name, equipment)) {
+                if (!Crafter.brickCheckCatalyst(catalyst_name, equipment)) {
                     Crafter.useCatalyst(catalyst_name, equipment);
                     unit.getInventoryManager().removeItem(catalyst_name, 1);
                     writeintoSheet(unit);
