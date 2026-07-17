@@ -42,6 +42,8 @@ public class Ascended_Hands extends Skill {
     public void calculateExtra() {
         for (Map.Entry<String, SkillInstance> entry : getUser().getAllSkill().entrySet()) {
             if (entry.getValue().getSkillData() == null) continue;
+            if (!entry.getValue().getSkillData().cooldown_can_change()) continue;
+
             int cooldown = entry.getValue().getSkillData().getCooldown();
             double mp = entry.getValue().getSkillData().getManaCost();
             if (cooldown >= 1) {

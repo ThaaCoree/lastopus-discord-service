@@ -18,11 +18,17 @@ public class Starbound_Immortal extends Skill {
         super();
         setDescription("The Iron Tomb ได้รับสกิลนี้เช่นกัน\n" +
                 "เมื่อมียูนิตอื่นที่ครอบครองสกิลนี้โดยยังไม่หมดสภาพต่อสู้ในรัศมี 5 เมตร เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 1 หน่วย, ยกเลิกการได้รับความเสียหายนั้น\n" +
+                "Divine Intervention:\n" +
+                "Tezzeract ทำการโจมตี Akivili ด้วยรยางค์ของมัน สร้าง True Damage 0 หน่วย\n" +
+                "\n" +
+                "Divine Invocation:\n" +
+                "เลือก 1 ยูนิต มอบผลของ Starbound Immortal ให้กับมันจนกว่าจะจบรอบเทิร์นถัดไป\n\n" +
                 "หากสกิลนี้ยกเลิกความเสียหายจริง สูญเสีย 1 วิวรณ์ หากมีวิวรณ์ไม่มากพอให้สูญเสีย รับความเสียหายตามปกติ\n" +
                 "ระหว่างเปิดใช้งานสกิลนี้ รับการฟื้นฟูจากทุกแหล่งลดลง 90% และลด HealthRegen ลง 94%");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
+        setManaReservePercent(0.55);
         getSkillMultiplier().put("XA",new SkillMultiplier("5"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.DISTANCE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.LIMIT);

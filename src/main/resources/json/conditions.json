@@ -22770,7 +22770,7 @@
   },
   "Good bye" : {
     "name" : "Good bye",
-    "description" : "ครั้งถัดไปที่โจมตีคริติคอลจะสร้างความเสียหายกายภาพเพิ่มเติม 50.591151446319444 หน่วย",
+    "description" : "ครั้งถัดไปที่โจมตีคริติคอลจะสร้างความเสียหายกายภาพเพิ่มเติม 36.46151455226575 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -22863,14 +22863,14 @@
   "Made in Heaven" : {
     "name" : "Made in Heaven",
     "description" : "",
-    "statusDescription" : "482.74% GlobalSpeed\n\n",
+    "statusDescription" : "471.81% GlobalSpeed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "SPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 4.827411159168001,
+          "globalMult" : 4.718145763968,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -22911,11 +22911,11 @@
   "Icarus" : {
     "name" : "Icarus",
     "description" : "",
-    "statusDescription" : "1583.53 Accuracy\n\n",
+    "statusDescription" : "2238.45 Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ACCURACY" : {
-          "flat" : 1583.5300415849879,
+          "flat" : 2238.4476101021023,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -22933,11 +22933,11 @@
   "Revenos" : {
     "name" : "Revenos",
     "description" : "",
-    "statusDescription" : "113.11 LUK\n180.97% AttackSPD\n\n",
+    "statusDescription" : "159.89 LUK\n255.82% AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
-          "flat" : 1.809748618954272,
+          "flat" : 2.558225840116688,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -22947,7 +22947,7 @@
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 113.10928868464198,
+          "flat" : 159.88911500729301,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -22964,11 +22964,11 @@
   "Titan" : {
     "name" : "Titan",
     "description" : "",
-    "statusDescription" : "497.68 PDEF\n497.68 MDEF\n\n",
+    "statusDescription" : "703.51 PDEF\n703.51 MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
-          "flat" : 497.6808702124248,
+          "flat" : 703.5121060320893,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -22976,7 +22976,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALDEFENSE" : {
-          "flat" : 497.6808702124248,
+          "flat" : 703.5121060320893,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -22994,14 +22994,14 @@
   "Melovas" : {
     "name" : "Melovas",
     "description" : "",
-    "statusDescription" : "71.86% GlobalCritDamage\n61.6% GlobalAccuracy\n\n",
+    "statusDescription" : "68.57% GlobalCritDamage\n58.78% GlobalAccuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.7186369878452284,
+          "globalMult" : 0.6857176353125,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -23009,7 +23009,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.6159745610101959,
+          "globalMult" : 0.587757973125,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23024,21 +23024,21 @@
   "Muro" : {
     "name" : "Muro",
     "description" : "",
-    "statusDescription" : "158.35 LUK\n73.92% GlobalAttackSPD\n\n",
+    "statusDescription" : "223.84 LUK\n70.53% GlobalAttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.739169473212235,
+          "globalMult" : 0.7053095677499999,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 158.35300415849878,
+          "flat" : 223.8447610102102,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -23055,19 +23055,19 @@
   "Tyranovia" : {
     "name" : "Tyranovia",
     "description" : "",
-    "statusDescription" : "693.69 PDEF\n693.69 MDEF\n205.32% GlobalCritShield\n\n",
+    "statusDescription" : "1430.25 MDEF\n1430.25 PDEF\n195.92% GlobalCritShield\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 693.6949988293146,
+        "MAGICALDEFENSE" : {
+          "flat" : 1430.2491057273292,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "MAGICALDEFENSE" : {
-          "flat" : 693.6949988293146,
+        "PHYSICALDEFENSE" : {
+          "flat" : 1430.2491057273292,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -23078,7 +23078,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.0532485367006528,
+          "globalMult" : 1.95919324375,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23093,22 +23093,22 @@
   "Rex" : {
     "name" : "Rex",
     "description" : "",
-    "statusDescription" : "102.66% GlobalMSPD\n102.66% GlobalEvasion\n\n",
+    "statusDescription" : "97.96% GlobalEvasion\n97.96% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "MOVEMENTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 1.0266242683503264,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "EVASION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0266242683503264,
+          "globalMult" : 0.979596621875,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.979596621875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23123,14 +23123,14 @@
   "Fade" : {
     "name" : "Fade",
     "description" : "",
-    "statusDescription" : "41.06% GlobalMSPD\n\n",
+    "statusDescription" : "39.18% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.4106497073401306,
+          "globalMult" : 0.39183864874999996,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23145,14 +23145,14 @@
   "Regalia Maelstorm" : {
     "name" : "Regalia Maelstorm",
     "description" : "",
-    "statusDescription" : "37.62% GlobalSTR\n37.62% GlobalPATK\n107.5% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% GlobalSTR\n35.9% GlobalPATK\n102.58% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -23160,7 +23160,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0749992338746874,
+          "globalMult" : 1.025755625,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23170,7 +23170,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23184,62 +23184,14 @@
   "Regalia Icarus" : {
     "name" : "Regalia Icarus",
     "description" : "",
-    "statusDescription" : "37.62% GlobalDEX\n37.62% GlobalRATK\n107.5% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% GlobalDEX\n35.9% GlobalRATK\n102.58% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "RANGEDATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -23247,385 +23199,17 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0749992338746874,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEFLECTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNITEAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BLEEDAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ACCURACY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEREDUCTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ATTACKSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CASTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RESERVATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITSHIELD" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SOULPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREPDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREMDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "POISONAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIREPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIRERESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 1.025755625,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
-        "STRENGTH" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "VITALITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "DEXTERITY" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WISDOM" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "INTELLIGENCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LUCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -23639,62 +23223,14 @@
   "Regalia Geneva" : {
     "name" : "Regalia Geneva",
     "description" : "",
-    "statusDescription" : "37.62% GlobalINT\n37.62% GlobalMATK\n107.5% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% GlobalINT\n35.9% GlobalMATK\n102.58% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -23702,385 +23238,17 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0749992338746874,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEFLECTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNITEAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BLEEDAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ACCURACY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEREDUCTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ATTACKSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CASTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RESERVATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITSHIELD" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SOULPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREPDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREMDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "POISONAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIREPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIRERESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 1.025755625,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
-        "STRENGTH" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "VITALITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEXTERITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WISDOM" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "INTELLIGENCE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LUCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -24094,62 +23262,14 @@
   "Regalia Revenos" : {
     "name" : "Regalia Revenos",
     "description" : "",
-    "statusDescription" : "285.57% GlobalMSPD\n37.62% GlobalCritDamage\n\n",
+    "statusDescription" : "35.9% GlobalCritDamage\n275.3% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
+        "CRITDAMAGE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24157,389 +23277,12 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 2.855717139221736,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEFLECTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNITEAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BLEEDAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ACCURACY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEREDUCTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ATTACKSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CASTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RESERVATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITSHIELD" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SOULPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREPDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREMDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "POISONAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIREPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIRERESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 2.7530312045266987,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
-      "statusModifiers" : {
-        "STRENGTH" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "VITALITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEXTERITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WISDOM" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "INTELLIGENCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LUCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
+      "statusModifiers" : { },
       "transferModifiers" : { },
       "skillModifiers" : { }
     },
@@ -24549,54 +23292,14 @@
   "Regalia Titan" : {
     "name" : "Regalia Titan",
     "description" : "",
-    "statusDescription" : "37.62% GlobalVIT\n37.62% GlobalPDEF\n37.62% GlobalMDEF\n107.5% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% GlobalVIT\n35.9% GlobalPDEF\n35.9% GlobalMDEF\n102.58% GlobalMSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24604,7 +23307,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -24612,385 +23315,17 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.0749992338746874,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MANAREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHREGEN" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEFLECTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNITEAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "BLEEDAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ACCURACY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EVASION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALBLOCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEREDUCTION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DAMAGEAMPLIFIER" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "ATTACKSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CASTSPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALPENETRATE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RESERVATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "CRITSHIELD" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SPEED" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "SOULPOINT" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREPDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "IGNOREMDEF" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEBUFFRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "POISONAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIREPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKPENETRATION" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "FIRERESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WATERRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WINDRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "EARTHRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LIGHTRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DARKRESISTANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 1.025755625,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
-        "STRENGTH" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "AGILITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "VITALITY" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3762497318561406,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEXTERITY" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "WISDOM" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "INTELLIGENCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "LUCK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
+          "globalMult" : 0.35901446875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -28466,14 +26801,14 @@
   "Istenta" : {
     "name" : "Istenta",
     "description" : "",
-    "statusDescription" : "25.67% GlobalPATK\n25.67% GlobalMATK\n25.67% GlobalRATK\n25.67% GlobalPDEF\n25.67% GlobalMDEF\n\n",
+    "statusDescription" : "27.55% GlobalPATK\n27.55% GlobalMATK\n27.55% GlobalRATK\n27.55% GlobalMDEF\n27.55% GlobalPDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.25671795,
+          "globalMult" : 0.2755415676639566,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28481,7 +26816,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.25671795,
+          "globalMult" : 0.2755415676639566,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28489,15 +26824,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.25671795,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.25671795,
+          "globalMult" : 0.2755415676639566,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28505,7 +26832,15 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.25671795,
+          "globalMult" : 0.2755415676639566,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2755415676639566,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -34927,33 +33262,17 @@
     "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
   },
-  "Blue Comet" : {
-    "name" : "Blue Comet",
+  "Moon Infused" : {
+    "name" : "Moon Infused",
     "description" : "",
-    "statusDescription" : "24.31% GlobalPATK\n24.31% GlobalMATK\n24.31% GlobalRATK\n\n",
+    "statusDescription" : "148.82% GlobalMATK\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.24313776163789788,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24313776163789788,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.24313776163789788,
+          "globalMult" : 1.48822,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -34965,25 +33284,17 @@
     "conditionType" : "BUFF",
     "conditionTierType" : "GENERAL"
   },
-  "Forged" : {
-    "name" : "Forged",
+  "Vortex Elation" : {
+    "name" : "Vortex Elation",
     "description" : "",
-    "statusDescription" : "38.68% GlobalPDEF\n38.68% GlobalMDEF\n\n",
+    "statusDescription" : "5828.05% GlobalMATK\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALDEFENSE" : {
+        "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.38681007533301937,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.38681007533301937,
+          "globalMult" : 58.28052683008,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -34993,49 +33304,19 @@
       "skillModifiers" : { }
     },
     "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Ode of the Shooting Star" : {
-    "name" : "Ode of the Shooting Star",
-    "description" : "",
-    "statusDescription" : "2970.91 PDEF\n2970.91 MDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 2970.9148657776236,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 2970.9148657776236,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
+    "conditionTierType" : "GENERAL"
   },
   "Rite of the Pale Moon Stiff" : {
     "name" : "Rite of the Pale Moon Stiff",
     "description" : "",
-    "statusDescription" : "35.32% GlobalMSPD\n35.32% GlobalEvasion\n\n",
+    "statusDescription" : "35.7% GlobalMSPD\n35.7% GlobalEvasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3532004218995384,
+          "globalMult" : 0.3569903618995385,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -35043,7 +33324,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.3532004218995384,
+          "globalMult" : 0.3569903618995385,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35058,14 +33339,14 @@
   "Rite of the Pale Moon Swift" : {
     "name" : "Rite of the Pale Moon Swift",
     "description" : "",
-    "statusDescription" : "42.89% GlobalMSPD\n42.89% GlobalEvasion\n\n",
+    "statusDescription" : "43.35% GlobalMSPD\n43.35% GlobalEvasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.42888622659229664,
+          "globalMult" : 0.4334882965922967,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -35073,7 +33354,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.42888622659229664,
+          "globalMult" : 0.4334882965922967,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35088,14 +33369,14 @@
   "Rite of the Pale Moon Secure" : {
     "name" : "Rite of the Pale Moon Secure",
     "description" : "",
-    "statusDescription" : "42.89% GlobalMSPD\n42.89% GlobalEvasion\n\n",
+    "statusDescription" : "43.35% GlobalMSPD\n43.35% GlobalEvasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.42888622659229664,
+          "globalMult" : 0.4334882965922967,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -35103,7 +33384,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.42888622659229664,
+          "globalMult" : 0.4334882965922967,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35117,7 +33398,7 @@
   },
   "Star's Anchor" : {
     "name" : "Star's Anchor",
-    "description" : "จะได้รับ Debris 1312.99 หน่วยเมื่อเริ่มรอบเทิร์น",
+    "description" : "จะได้รับ Debris 1396.6 หน่วยเมื่อเริ่มรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -35144,14 +33425,14 @@
   "Nebula Maelstorm" : {
     "name" : "Nebula Maelstorm",
     "description" : "",
-    "statusDescription" : "112550.01% GlobalPATK\n\n",
+    "statusDescription" : "129161.99% GlobalPATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1125.50006072708,
+          "globalMult" : 1291.6199325768657,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35166,22 +33447,22 @@
   "Nebula Icarus" : {
     "name" : "Nebula Icarus",
     "description" : "",
-    "statusDescription" : "80.62% GlobalCritDamage\n80.62% GlobalAccuracy\n\n",
+    "statusDescription" : "76.93% GlobalAccuracy\n76.93% GlobalCritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "CRITDAMAGE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.8062494254060155,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "ACCURACY" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.8062494254060155,
+          "globalMult" : 0.76931671875,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.76931671875,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35209,22 +33490,14 @@
   "Nebula Revenos" : {
     "name" : "Nebula Revenos",
     "description" : "",
-    "statusDescription" : "18.1 LUK\n105.22 MATK\n361.95% GlobalMSPD\n51.33% GlobalAttackSPD\n\n",
+    "statusDescription" : "25.58 LUK\n511.65% GlobalMSPD\n48.98% GlobalAttackSPD\n155.87 MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALATTACK" : {
-          "flat" : 105.21801794867802,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 3.619497237908544,
+          "globalMult" : 5.116451680233376,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -35232,14 +33505,22 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.5133121341751632,
+          "globalMult" : 0.4897983109375,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 155.87447059556024,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
       },
       "statusModifiers" : {
         "LUCK" : {
-          "flat" : 18.097486189542717,
+          "flat" : 25.582258401166882,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35256,11 +33537,11 @@
   "Nebula Titan" : {
     "name" : "Nebula Titan",
     "description" : "",
-    "statusDescription" : "633.41 PDEF\n633.41 MDEF\n\n",
+    "statusDescription" : "895.38 PDEF\n895.38 MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
-          "flat" : 633.4120166339951,
+          "flat" : 895.3790440408408,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35268,7 +33549,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALDEFENSE" : {
-          "flat" : 633.4120166339951,
+          "flat" : 895.3790440408408,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35285,7 +33566,7 @@
   },
   "Fatima" : {
     "name" : "Fatima",
-    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 663.72 หน่วยทุกเทิร์น",
+    "description" : "บินได้ชั่วระยะเวลาหนึ่ง รับฮีล 938.55 หน่วยทุกเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -35296,17 +33577,33 @@
     "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
   },
-  "Moon Infused" : {
-    "name" : "Moon Infused",
+  "Blue Comet" : {
+    "name" : "Blue Comet",
     "description" : "",
-    "statusDescription" : "148.82% GlobalMATK\n\n",
+    "statusDescription" : "24.88% GlobalPATK\n24.88% GlobalRATK\n24.88% GlobalMATK\n\n",
     "modifiers" : {
       "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.24883241258600458,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.24883241258600458,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
         "MAGICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 1.48822,
+          "globalMult" : 0.24883241258600458,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35317,5 +33614,65 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "GENERAL"
+  },
+  "Forged" : {
+    "name" : "Forged",
+    "description" : "",
+    "statusDescription" : "39.59% GlobalMDEF\n39.59% GlobalPDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3958697472959164,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3958697472959164,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Ode of the Shooting Star" : {
+    "name" : "Ode of the Shooting Star",
+    "description" : "",
+    "statusDescription" : "2815.16 MDEF\n2815.16 PDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 2815.162061452393,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 2815.162061452393,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
   }
 }

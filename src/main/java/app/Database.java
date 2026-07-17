@@ -60,6 +60,9 @@ public class Database {
             combatFlow.registerDatabase(this);
             combatFlow.initCombatFlow();
         }
+//        for (Unit unit : allUnit.values()) {
+//            unit.calculateEverything();
+//        }
     }
 
     public void createPlayer(String name) {
@@ -79,10 +82,10 @@ public class Database {
             JsonUtils.saveToFile(allPlayerMap, "src/main/resources/json/players.json");
         if (allMonsterMap != null)
             JsonUtils.saveToFile(allMonsterMap, "src/main/resources/json/monsters.json");
-        if (allNPCMap != null)
-            JsonUtils.saveToFile(allNPCMap, "src/main/resources/json/npcs.json");
+        if (allNPCMap != null) JsonUtils.saveToFile(allNPCMap, "src/main/resources/json/npcs.json");
 
-            JsonUtils.saveToFile(allPassiveMap, "src/main/resources/json/passives.json");
+        JsonUtils.saveToFile(allPassiveMap, "src/main/resources/json/passives.json");
+        
         if (allNormalItemMap != null)
             JsonUtils.saveToFile(allNormalItemMap, "src/main/resources/json/items.json");
         if (allConditionMap != null)
@@ -94,12 +97,12 @@ public class Database {
         if (combatFlow != null)
             JsonUtils.saveToFile(combatFlow, "src/main/resources/json/combatFlow.json");
 
-        JsonUtils.saveToFile(allEquipmentMap, "src/main/resources/json/equipments.json");
-        JsonUtils.saveToFile(allDreamItem, "src/main/resources/json/dreams.json");
-        JsonUtils.saveToFile(allConsumableMap, "src/main/resources/json/consumables.json");
-        JsonUtils.saveToFile(allRuneMap, "src/main/resources/json/runes.json");
-        JsonUtils.saveToFile(allMaterials, "src/main/resources/json/materials.json");
-        JsonUtils.saveToFile(allModPools, "src/main/resources/json/modPools.json");
+        if (allEquipmentMap != null) JsonUtils.saveToFile(allEquipmentMap, "src/main/resources/json/equipments.json");
+        if (allDreamItem != null) JsonUtils.saveToFile(allDreamItem, "src/main/resources/json/dreams.json");
+        if (allConsumableMap != null) JsonUtils.saveToFile(allConsumableMap, "src/main/resources/json/consumables.json");
+        if (allRuneMap != null) JsonUtils.saveToFile(allRuneMap, "src/main/resources/json/runes.json");
+        if (allMaterials != null) JsonUtils.saveToFile(allMaterials, "src/main/resources/json/materials.json");
+        if (allModPools != null) JsonUtils.saveToFile(allModPools, "src/main/resources/json/modPools.json");
 
         saveMongo();
     }
@@ -279,6 +282,12 @@ public class Database {
         allUnit.putAll(allNPCMap);
         if (allMonsterMap != null)
         allUnit.putAll(allMonsterMap);
+
+        if (allMaterials != null) {
+            for (CraftingMaterial material : allMaterials.values()) {
+                material.createUsageDescription();
+            }
+        }
 
         if (allNormalItemMap != null) allTypeItemMap.putAll(allNormalItemMap);
         if (allMaterials != null) allTypeItemMap.putAll(allMaterials);

@@ -3,7 +3,9 @@ package model.entity.skills.list.player;
 import controller.CombatFlow;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillMultiplier;
 import model.entity.skills.SkillTarget;
+import model.type.CounterName;
 import model.type.SkillType;
 
 public class Starbound_Invoker extends Skill {
@@ -18,10 +20,8 @@ public class Starbound_Invoker extends Skill {
                 "ได้รับ 2 วิวรณ์ ทุกครั้งเมื่อเริ่มเทิร์นของตนเอง เก็บสะสมได้ไม่จำกัด,\n" +
                 "สามารถใช้งาน Action เพื่อภาวนา และรับอีก 2 วิวรณ์ได้\n" +
                 "สามารถใช้งาน 2 Combine Action เพื่อภาวนา และรับอีก 1 วิวรณ์ได้\n" +
-                "เมื่อจบรอบเทิร์น สิ่งมีชีวิตจาก The Fallen Paradise, \"Tezzeract\" จะแหวกมิติออกมาเพื่อใช้งานสกิลอื่นๆตามเงื่อนไข\n" +
-                "ลำดับการออกแอคชันของ Tezzeract\n" +
-                "Ω(x) Invocation\n" +
-                "XYZ Invocation\n" +
+                "เมื่อจบรอบเทิร์น สิ่งมีชีวิตจาก The Fallen Paradise, \"Tezzeract\" จะแหวกมิติออกมาเพื่อใช้งาน Divine Intervention ของสกิลอื่นทั้งหมด\n" +
+                "Divine Invocation : ได้รับ XA วิวรณ์" +
                 "หาก Akivili และ The Iron Tomb หมดสภาพต่อสู้, Tezzeract จะไม่สามารถใช้งานแอคชันใดๆได้\n\n" +
                 "Tezzeract\n" +
                 "สิ่งมีชีวิตจากสรวงสวรรค์โรยรายอีกตน มีลักษณะคล้ายกับ The Iron Tomb ขนาดมหึมา เมื่อจะแทรกแทรงมิติมันจะใช้กรงเล็บจากรยางค์ทั้งสองข้างของมันแหวกมิติออกมา ปรากฏอยู่เหนือน่านฟ้า และย้อมนภาให้เป็นสีม่วงเข้ม แต่สภาพนั้นคงอยู่ได้ไม่นาน มิติก็จะพยายามบีบรักษาตัวเองจนปิดเพื่อไล่มันกลับไปที่ที่มันควรอยู่อีกครั้ง");
@@ -29,7 +29,11 @@ public class Starbound_Invoker extends Skill {
         setManaCost(0);
         setCooldown(0);
         getPureTags().add(SkillType.RITUAL);
-        setManaReservePercent(0.6);
+        getPureTags().add(SkillType.FIGHTING_STYLE);
+        setManaReservePercent(0.1);
+
+        getSkillMultiplier().put("XA",new SkillMultiplier("8"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.LIMIT);
     }
 
     @Override
@@ -50,7 +54,11 @@ public class Starbound_Invoker extends Skill {
 
     @Override
     public void calculateExtra() {
-
+        if (getUser().getCounter() == null) return;
+        if (!getUser().getRawCounterMap().containsKey(CounterName.PROVIDENCE)) {
+            getUser().getRawCounterMap().put(CounterName.PROVIDENCE,0.0);
+            getUser().getCounter().put(CounterName.PROVIDENCE,0.0);
+        }
     }
 
     @Override

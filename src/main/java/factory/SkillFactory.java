@@ -176,7 +176,7 @@ public class SkillFactory {
         skillMap.put(Aruuk_Drop.NAME, Aruuk_Drop::new); //unfinished
         skillMap.put(Judgement_of_Texen.NAME, Judgement_of_Texen::new);
         skillMap.put(Starbound_Invoker.NAME, Starbound_Invoker::new);
-        skillMap.put(Over_The_Rainbow.NAME, Over_The_Rainbow::new);
+        skillMap.put(Invocation_Of_The_Fallen.NAME, Invocation_Of_The_Fallen::new);
         skillMap.put(Paper_March.NAME, Paper_March::new);
         skillMap.put(Infernal_Regeneration_Crimson_Reindeer.NAME, Infernal_Regeneration_Crimson_Reindeer::new);
         skillMap.put(Double_Kick.NAME, Double_Kick::new);
@@ -545,7 +545,7 @@ public class SkillFactory {
         skillMap.put(Phantom_Strike.NAME, Phantom_Strike::new);
         skillMap.put(Aleph_Infinity_Invocation.NAME, Aleph_Infinity_Invocation::new);
         skillMap.put(Omega_Function_Invocation.NAME, Omega_Function_Invocation::new);
-        skillMap.put(XYZ_Invocation.NAME, XYZ_Invocation::new);
+        skillMap.put(Gate_Of_The_Fallen.NAME, Gate_Of_The_Fallen::new);
         skillMap.put(Bandage_Fix.NAME, Bandage_Fix::new);
         skillMap.put(Inside_Cut.NAME, Inside_Cut::new);
         skillMap.put(Stance_Brace.NAME, Stance_Brace::new); //can improve
@@ -610,6 +610,7 @@ public class SkillFactory {
         skillMap.put(Sand_Explosion.NAME, Sand_Explosion::new);
         skillMap.put(Army_Commander.NAME, Army_Commander::new);
         skillMap.put(Starbound_Anomalus.NAME, Starbound_Anomalus::new);
+        skillMap.put(Barrier_Of_The_Fallen.NAME, Barrier_Of_The_Fallen::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

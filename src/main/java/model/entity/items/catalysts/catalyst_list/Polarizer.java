@@ -35,7 +35,7 @@ public class Polarizer implements CatalystEffect {
         mod_count /= 2;
         for (int i = 0; i < mod_count; i++) {
             ModInstance modInstance = random_mod.rollAndRemove();
-            if (i < 1) {
+            if (i < 2) {
                 if (modInstance.getFinal_value() > 0) {
                     modInstance.multiplyFinal_value(-1);
                 }

@@ -22,7 +22,12 @@ public class Starbound_Anomalus extends Skill {
         super();
         setDescription("Status Check ของ Akivili และ The Iron Tomb จะใช้ WIS แทนทั้งหมด\n" +
                 "เมื่อจะได้รับ Debuff ที่ระดับ Advanced หรือต่ำกว่า, เหตุการณ์ดังกล่าวหยุดการมอบ Debuff นั้น จากนั้นเสีย XA วิวรณ์\n" +
-                "สามารถใช้งาน Combined Action และวิวรณ์ในจำนวนเท่ากันเพื่อลบ Debuff ของตนเองได้");
+                "สามารถใช้งาน Combined Action และวิวรณ์ในจำนวนเท่ากันเพื่อลบ Debuff ของตนเองได้\n\n" +
+                "Divine Intervention:\n" +
+                "เลือก 1 ยูนิต วิเคราะห์มัน 1 ครั้ง\n" +
+                "\n" +
+                "Divine Invocation:\n" +
+                "เลือก 1 ยูนิต ลบ Debuff ที่ระดับ Advanced หรือต่ำกว่าบนตัวมัน 2 อย่าง");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
