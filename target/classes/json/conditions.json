@@ -33284,6 +33284,126 @@
     "conditionType" : "BUFF",
     "conditionTierType" : "GENERAL"
   },
+  "Vortex Elation" : {
+    "name" : "Vortex Elation",
+    "description" : "",
+    "statusDescription" : "5536.78% GlobalMATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 55.367780159999995,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Blue Comet" : {
+    "name" : "Blue Comet",
+    "description" : "",
+    "statusDescription" : "24.88% GlobalPATK\n24.88% GlobalRATK\n24.88% GlobalMATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.24883241258600458,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.24883241258600458,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.24883241258600458,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Forged" : {
+    "name" : "Forged",
+    "description" : "",
+    "statusDescription" : "39.59% GlobalMDEF\n39.59% GlobalPDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3958697472959164,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3958697472959164,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Ode of the Shooting Star" : {
+    "name" : "Ode of the Shooting Star",
+    "description" : "",
+    "statusDescription" : "2815.16 MDEF\n2815.16 PDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 2815.162061452393,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 2815.162061452393,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
   "Rite of the Pale Moon Stiff" : {
     "name" : "Rite of the Pale Moon Stiff",
     "description" : "",
@@ -33386,28 +33506,6 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
-  },
-  "Vortex Elation" : {
-    "name" : "Vortex Elation",
-    "description" : "",
-    "statusDescription" : "5828.05% GlobalMATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 58.28052683008,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
   },
   "Nebula" : {
     "name" : "Nebula",
@@ -33576,103 +33674,5 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
-  },
-  "Blue Comet" : {
-    "name" : "Blue Comet",
-    "description" : "",
-    "statusDescription" : "24.88% GlobalPATK\n24.88% GlobalRATK\n24.88% GlobalMATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.24883241258600458,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.24883241258600458,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.24883241258600458,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "GENERAL"
-  },
-  "Forged" : {
-    "name" : "Forged",
-    "description" : "",
-    "statusDescription" : "39.59% GlobalMDEF\n39.59% GlobalPDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3958697472959164,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3958697472959164,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "ADVANCED"
-  },
-  "Ode of the Shooting Star" : {
-    "name" : "Ode of the Shooting Star",
-    "description" : "",
-    "statusDescription" : "2815.16 MDEF\n2815.16 PDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 2815.162061452393,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 2815.162061452393,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
   }
 }

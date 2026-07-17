@@ -611,6 +611,10 @@ public class SkillFactory {
         skillMap.put(Army_Commander.NAME, Army_Commander::new);
         skillMap.put(Starbound_Anomalus.NAME, Starbound_Anomalus::new);
         skillMap.put(Barrier_Of_The_Fallen.NAME, Barrier_Of_The_Fallen::new);
+        skillMap.put(Orchestrate.NAME, Orchestrate::new);
+        skillMap.put(Thunder_Clap.NAME, Thunder_Clap::new);
+        skillMap.put(Finale.NAME, Finale::new);
+        skillMap.put(Grand_Execution.NAME, Grand_Execution::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 
