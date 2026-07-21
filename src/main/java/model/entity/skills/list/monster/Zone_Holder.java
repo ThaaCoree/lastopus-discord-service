@@ -55,51 +55,64 @@ public class Zone_Holder extends Skill {
     public void initializeEvent(CombatFlow combatFlow) {
         EventBus eventBus = combatFlow.getEventBus();
         eventBus.register(ResourceEvent.class, EventPhase.POST, 0, (ResourceEvent event) -> {
-            if (event.target != getUser()) return;
             if (event.effectType != ActionEffectType.DAMAGE_MAGICAL
                     && event.effectType != ActionEffectType.DAMAGE_PHYSICAL
                     && event.effectType != ActionEffectType.HEALTH_RECOVER) return;
 
-            Conditions condition = new Conditions("Sword Sap");
-            condition.setDescription("???");
+            if (event.target == getUser()) {
+                Conditions condition = new Conditions("Sword Sap");
+                condition.setDescription("???");
 
-            condition.setConditionType(ConditionType.DEBUFF);
-            condition.setConditionTierType(ConditionTierType.ADVANCED);
+                condition.setConditionType(ConditionType.DEBUFF);
+                condition.setConditionTierType(ConditionTierType.ADVANCED);
 
-            if (event.effectType == ActionEffectType.DAMAGE_MAGICAL) {
-                condition.setName("Wand Sap");
-            }
+                if (event.effectType == ActionEffectType.DAMAGE_MAGICAL) {
+                    condition.setName("Wand Sap");
+                }
+
+                sendActionEvent(combatFlow.getEventBus(),
+                        ActionEvent.builder(getName(), getUser(), event.source)
+                                .condition(condition, 1)
+                                .addActType(ActType.CONDITION_GIVEN, ActType.SKILL_TRIGGER)
+                                .build()
+                );
+            } else {
             if (event.effectType == ActionEffectType.HEALTH_RECOVER) {
-                condition.setName("Stolen Light");
+                Conditions condition = new Conditions("Stolen Light");
+                condition.setDescription("???");
+
+                condition.setConditionType(ConditionType.DEBUFF);
+                condition.setConditionTierType(ConditionTierType.ADVANCED);
+
+                sendActionEvent(combatFlow.getEventBus(),
+                        ActionEvent.builder(getName(), getUser(), event.source)
+                                .condition(condition, 1)
+                                .addActType(ActType.CONDITION_GIVEN, ActType.SKILL_TRIGGER)
+                                .build()
+                );
             }
-            sendActionEvent(combatFlow.getEventBus(),
-                    ActionEvent.builder(getName(), getUser(), event.source)
-                            .condition(condition, 1)
-                            .addActType(ActType.CONDITION_GIVEN, ActType.SKILL_TRIGGER)
-                            .build()
-            );
+            }
         });
 
-        eventBus.register(ActionEvent.class, EventPhase.MODIFY, -5, event -> {
-            int sword_count = event.unit_source.hasXCondition("Sword Sap");
-            int wand_count = event.unit_source.hasXCondition("Wand Sap");
-            int stolen_count = event.unit_source.hasXCondition("Stolen Light");
-            if (sword_count >= 5) {
-                event.addOverrideModifier(ActionEffectType.DAMAGE_PHYSICAL, 0);
+        eventBus.register(ResourceEvent.class, EventPhase.MODIFY, -5, event -> {
+            int sword_count = event.source.hasXCondition("Sword Sap");
+            int wand_count = event.source.hasXCondition("Wand Sap");
+            int stolen_count = event.source.hasXCondition("Stolen Light");
+            if (sword_count >= 5 && event.effectType == ActionEffectType.DAMAGE_PHYSICAL) {
+                event.amount = 0;
             }
-            if (wand_count >= 5) {
-                event.addOverrideModifier(ActionEffectType.DAMAGE_MAGICAL, 0);
+            if (wand_count >= 5 && event.effectType == ActionEffectType.DAMAGE_MAGICAL) {
+                event.amount = 0;
             }
-            if (stolen_count >= 5) {
-                event.addOverrideModifier(ActionEffectType.HEALTH_RECOVER, 0);
-                for (Unit unit : event.unit_target) {
-                    sendActionEvent(combatFlow.getEventBus(),
-                            ActionEvent.builder(getName(), getUser(), event.unit_source)
-                                    .effect(ActionEffectType.DAMAGE_TRUE, event.getHeal(unit.getName()), event.heal_times)
-                                    .addActType(ActType.STRIKE, ActType.SKILL_TRIGGER)
-                                    .build()
-                    );
-                }
+            if (stolen_count >= 5 && event.effectType == ActionEffectType.HEALTH_RECOVER) {
+                double heal = event.amount;
+                event.amount = 0;
+                sendActionEvent(combatFlow.getEventBus(),
+                        ActionEvent.builder(getName(), getUser(), event.source)
+                                .effect(ActionEffectType.DAMAGE_TRUE, heal, 1)
+                                .addActType(ActType.STRIKE, ActType.SKILL_TRIGGER)
+                                .build()
+                );
             }
         });
 

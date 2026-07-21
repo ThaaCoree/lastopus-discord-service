@@ -1,23 +1,32 @@
-package model.entity.skills.list.monster;
+package model.entity.skills.list.item.offensive;
 
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
-import manager.ConditionManager;
 import model.entity.Conditions;
-import model.entity.skills.*;
-import model.entity.units.Unit;
-import model.type.*;
+import model.entity.skills.Skill;
+import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillMultiplier;
+import model.entity.skills.SkillTarget;
+import model.type.ActType;
+import model.type.ActionEffectType;
+import model.type.SkillType;
 
-public class Finale extends Skill {
+public class Pain_Absorb extends Skill {
 
-    public static String NAME = "Finale";
+    public static String NAME = "Pain Absorb";
 
-    public Finale() {
+    public Pain_Absorb() {
         super();
-        setDescription("จนกว่าจะสิ้นสุดรอบเทิร์นนี้ เมื่อมีศัตรูสูญเสียพลังชีวิต, ศัตรูอื่นทั้งหมดถูกลดพลังชีวิตปัจจุบันจำนวนเท่ากันด้วย");
-        setActionType("Turn");
+        setDescription("เมื่อได้รับความเสียหาย ได้รับสถานะ Pain Absorption เป็นเวลา XB รอบเทิร์น ซึงมอบ ATK เป็น XA ตามความเสียหายที่ได้รับ");
+        setActionType("Passive");
         setManaCost(0);
-        setCooldown(3);
+        setCooldown(0);
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.1"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
+        getSkillMultiplier().get("XA").setPercent(true);
+
+        getSkillMultiplier().put("XB",new SkillMultiplier("2"));
+        getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
     }
 
     @Override
@@ -29,7 +38,7 @@ public class Finale extends Skill {
 //                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
 //                        .options(List.of("choice","choice"), 0)
 //                        .labelProvider(String::toString, 0)
-//        , 0, 0)
+//        , 0, 0);
 //                .addFields(
 //                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
 //                , 0, 1);
@@ -54,11 +63,11 @@ public class Finale extends Skill {
 //            double heal_amount = event.getHeal();
 //
 //            sendActionEvent(combatFlow.getEventBus(),
-//                    ActionEvent.builder(getName(), getUser(), targets)
-//                            .effect(ActionEffectType.HEALTH_RECOVER,heal_amount, 1)
-//                            .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER)
-//                            .build()
-//            );
+//                                ActionEvent.builder(getName(), getUser(), targets)
+//                                        .effect(ActionEffectType.HEALTH_RECOVER,heal_amount, 1)
+//                                        .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER)
+//                                        .build()
+//                        );
 //        });
     }
 

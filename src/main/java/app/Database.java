@@ -615,7 +615,7 @@ public class Database {
         String range = "B2";
         List<List<Object>> toAppend = new ArrayList<>();
 
-        for (Item item : allNormalItemMap.values()) {
+        for (Item item : allTypeItemMap.values()) {
             List<Object> row = new ArrayList<>();
 
             row.add(item.getName());

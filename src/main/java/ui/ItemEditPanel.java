@@ -72,13 +72,13 @@ public class ItemEditPanel extends ScrollPane {
         if (selectedItem != null) {
 
             Map<String, SkillInstance> skill_map = null;
-            if (toMake instanceof Equipment equipment) {
+            if (selectedItem instanceof Equipment equipment) {
                 skill_map = equipment.getSkills();
             }
-            if (toMake instanceof Dream  dream) {
+            if (selectedItem instanceof Dream  dream) {
                 skill_map = dream.getSkills();
             }
-            if (toMake instanceof Rune rune) {
+            if (selectedItem instanceof Rune rune) {
                 skill_map = rune.getSkills();
             }
             modeBox.getChildren().addAll(
@@ -180,6 +180,8 @@ public class ItemEditPanel extends ScrollPane {
                 database.getAllEquipmentMap().put(toMake.getName(), item);
             } else if (toMake instanceof Dream item) {
                 database.getAllDreamItem().put(toMake.getName(), item);
+            } else if (toMake instanceof CraftingMaterial item) {
+                database.getAllMaterials().put(toMake.getName(), item);
             } else {
                 database.getAllNormalItemMap().put(toMake.getName(),toMake);
             }
@@ -218,6 +220,8 @@ public class ItemEditPanel extends ScrollPane {
                     database.getAllEquipmentMap().remove(item.getName());
                 } else if (item instanceof Dream to_delete) {
                     database.getAllDreamItem().remove(item.getName());
+                } else if (item instanceof CraftingMaterial to_delete) {
+                    database.getAllCraftedEquipments().remove(item.getName());
                 } else {
                     database.getAllNormalItemMap().remove(item.getName());
                 }

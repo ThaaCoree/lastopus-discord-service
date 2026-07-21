@@ -615,6 +615,9 @@ public class SkillFactory {
         skillMap.put(Thunder_Clap.NAME, Thunder_Clap::new);
         skillMap.put(Finale.NAME, Finale::new);
         skillMap.put(Grand_Execution.NAME, Grand_Execution::new);
+        skillMap.put(Pain_Absorb.NAME, Pain_Absorb::new);
+        skillMap.put(Star_Prism.NAME, Star_Prism::new);
+        skillMap.put(The_Only_Plan.NAME, The_Only_Plan::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

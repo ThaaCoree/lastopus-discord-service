@@ -12769,5 +12769,611 @@
       "STRIKE" : -0.1
     },
     "unique_boost" : false
+  },
+  "Kelanphite" : {
+    "name" : "Kelanphite",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Boost : \nCrit (100.0%)\nAccurate (100.0%)\n\nMaterial Toughness : 95%",
+    "lore" : "เคลันไฟท์ มีความแข็งและทนทานมากจนยากที่จะทำให้เปลี่ยนแปลงรูปร่างได้ ส่วนแหลมคมของมันอันตรายมาก สามารถทะลุทะลวงเกราะหนาได้อย่างง่ายดาย",
+    "price" : "",
+    "weight" : 3,
+    "price_in_copper" : 0,
+    "material_toughness" : 95,
+    "material_max_mod" : 5,
+    "reveal_usage" : false,
+    "pools" : {
+      "Durable" : {
+        "pool" : {
+          "pool_name" : "Durable",
+          "weaponMods" : [ {
+            "statType" : null,
+            "statusType" : "STRENGTH",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "RANGEDATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "STRENGTH",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "STRENGTH",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : null,
+            "statusType" : "VITALITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : false,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      },
+      "Sharp" : {
+        "pool" : {
+          "pool_name" : "Sharp",
+          "weaponMods" : [ {
+            "statType" : null,
+            "statusType" : "DEXTERITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          }, {
+            "statType" : "RANGEDATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          } ],
+          "armorMods" : [ ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "DEXTERITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "CRITDAMAGE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : false,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      },
+      "Tough" : {
+        "pool" : {
+          "pool_name" : "Tough",
+          "weaponMods" : [ ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "VITALITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "HEALTHPOINT",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "VITALITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 200,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "RANGEDATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : false,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      }
+    },
+    "modBoost" : {
+      "CRIT" : 1.0,
+      "ACCURATE" : 1.0
+    },
+    "unique_boost" : false
+  },
+  "Sunlight Particle" : {
+    "name" : "Sunlight Particle",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Boost : \nSpeed (100.0%)\nControl (100.0%)\n\nMaterial Toughness : 90%",
+    "lore" : "อนุภาคแสงตะวันที่เก็บไว้ในภาชนะเป็นอย่างดี มีความสามารถในการเป็นสื่อเวทมนตร์ได้ดีเยี่ยม โดดเด่นในเรื่องของความรวดเร็วและทรงพลัง",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0,
+    "material_toughness" : 90,
+    "material_max_mod" : 5,
+    "reveal_usage" : false,
+    "pools" : {
+      "Mystic" : {
+        "pool" : {
+          "pool_name" : "Mystic",
+          "weaponMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 400,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1300,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 11,
+        "maxModsAllowed" : 3
+      },
+      "Swaying" : {
+        "pool" : {
+          "pool_name" : "Swaying",
+          "weaponMods" : [ {
+            "statType" : null,
+            "statusType" : "AGILITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "ATTACKSPEED",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "CASTSPEED",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "AGILITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 400,
+            "fixed" : false
+          }, {
+            "statType" : "EVASION",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "DEFLECTION",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "SPEED",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 400,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : "MOVEMENTSPEED",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 600,
+            "fixed" : false
+          }, {
+            "statType" : "SPEED",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 400,
+            "fixed" : false
+          }, {
+            "statType" : "EVASION",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : null,
+            "statusType" : "AGILITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : false,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 11,
+        "maxModsAllowed" : 3
+      },
+      "Magic Medium" : {
+        "pool" : {
+          "pool_name" : "Magic Medium",
+          "weaponMods" : [ {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 11,
+        "maxModsAllowed" : 3
+      }
+    },
+    "modBoost" : {
+      "SPEED" : 1.0,
+      "CONTROL" : 1.0
+    },
+    "unique_boost" : false
+  },
+  "Liquidated Stable Metralis" : {
+    "name" : "Liquidated Stable Metralis",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Boost : \nMagic (-40.0%)\nAmplifier (-25.0%)\n\nMaterial Toughness : 90%",
+    "lore" : "เมทราลิสที่เสถียรซึ่งถูกแปลงให้กลายเป็นของเหลวพร้อมต่อการใช้แปรรูปเป็นอุปกรณ์ ยังคงความพิเศษในการต่อต้านเวทมนตร์ได้บางส่วน อีกทั้งยังช่วยเพิ่มความทนทานให้กับอุปกรณ์มากขึ้นทีเดียว",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0,
+    "material_toughness" : 90,
+    "material_max_mod" : 1,
+    "reveal_usage" : false,
+    "pools" : {
+      "Anti-Magic" : {
+        "pool" : {
+          "pool_name" : "Anti-Magic",
+          "weaponMods" : [ {
+            "statType" : "MAGICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "RESERVATION",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "RESERVATION",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 200,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : "MAGICALPENETRATE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "RESERVATION",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      },
+      "Impact Absorb" : {
+        "pool" : {
+          "pool_name" : "Impact Absorb",
+          "weaponMods" : [ ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "VITALITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 800,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 800,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "VITALITY",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 800,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 800,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : false,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      }
+    },
+    "modBoost" : {
+      "MAGIC" : -0.4,
+      "AMPLIFIER" : -0.25
+    },
+    "unique_boost" : false
   }
 }
