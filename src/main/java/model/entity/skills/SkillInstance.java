@@ -2,9 +2,10 @@ package model.entity.skills;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.entity.ModifierBundle;
+import org.springframework.data.annotation.Transient;
 
 public class SkillInstance {
-    @JsonIgnore
+    @Transient
     private Skill skillData;
     private ModifierBundle instanceBundle = new ModifierBundle();
     private int onCooldown;
@@ -28,6 +29,7 @@ public class SkillInstance {
         }
     }
 
+    @JsonIgnore
     public Skill getSkillData() {
         return skillData;
     }

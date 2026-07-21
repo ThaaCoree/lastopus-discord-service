@@ -430,6 +430,14 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
+        "DEFLECTION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
         "IGNITEAMP" : {
           "flat" : 0.0,
           "mult" : 0.0,
@@ -583,14 +591,6 @@
           "passiveMult" : 0.0
         },
         "POISONAMP" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "DEFLECTION" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -25996,7 +25996,7 @@
   },
   "Impending Stab" : {
     "name" : "Impending Stab",
-    "description" : "รับความเสียหายกายภาพ 7960.779929498716 หน่วยเมื่อจบรอบเทิร์น",
+    "description" : "รับความเสียหายกายภาพ 7984.946435961518 หน่วยเมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26035,7 +26035,7 @@
   },
   "Fall Unwritten" : {
     "name" : "Fall Unwritten",
-    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 3914.073565557565หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
+    "description" : "เมื่อได้รับความเสียหายที่ทำให้พลังชีวิตเหลือต่ำกว่า 3927.566531665963หน่วย ยกเลิกความเสียหายนั้น ยกเว้นจากความเสียหายจริง",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -26113,7 +26113,7 @@
   },
   "Twilight Seafloor" : {
     "name" : "Twilight Seafloor",
-    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 171.21 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
+    "description" : "ถูก Imprison, มอบแอคชันเพิ่มเติมหนึ่งหน่วยให้กับยูนิตพันธมิตรเมื่อเริ่มต้นเทิร์น และฟื้นฟูมานา 173.02499999999998 หน่วยให้ยูนิตพันธมิตรทั้งหมดเมื่อเริ่มรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -30477,14 +30477,6 @@
     "statusDescription" : "-75% DMGReduction\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "DAMAGEREDUCTION" : {
-          "flat" : -0.75,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
@@ -30655,6 +30647,14 @@
         },
         "MAGICALBLOCK" : {
           "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEREDUCTION" : {
+          "flat" : -0.75,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35594,7 +35594,7 @@
   },
   "Crux Mortis" : {
     "name" : "Crux Mortis",
-    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 409.0941925448558 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 715.9148369534975 หน่วย",
+    "description" : "รับความเสียหายจาก Acheros Aki มากขึ้น 410.5472037459317 หน่วย และเมื่อรับความเสียหาย จะเกิดคลื่นดาบพุ่งตัดกันตรงตำแหน่งของยูนิตนี้ สร้างความเสียหายกายภาพอีก 718.4576065553804 หน่วย",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -37037,7 +37037,7 @@
   },
   "Open The Pages HP" : {
     "name" : "Open The Pages HP",
-    "description" : "จะถูกฮีลเป็นจำนวน 29172.96 เมื่อจบรอบเทิร์น",
+    "description" : "จะถูกฮีลเป็นจำนวน 31969.34 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -37050,7 +37050,7 @@
   },
   "Open The Pages MP" : {
     "name" : "Open The Pages MP",
-    "description" : "จะฟื้นฟู MP เป็นจำนวน 479.06 เมื่อจบรอบเทิร์น",
+    "description" : "จะฟื้นฟู MP เป็นจำนวน 481.74 เมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -37064,11 +37064,11 @@
   "Forgotten Pages" : {
     "name" : "Forgotten Pages",
     "description" : "",
-    "statusDescription" : "1800.98 PATK\n1800.98 MATK\n1800.98 RATK\n\n",
+    "statusDescription" : "1811.05 PATK\n1811.05 MATK\n1811.05 RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
-          "flat" : 1800.9805924804905,
+          "flat" : 1811.0499701733247,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -37076,7 +37076,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALATTACK" : {
-          "flat" : 1800.9805924804905,
+          "flat" : 1811.0499701733247,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -37084,7 +37084,7 @@
           "passiveMult" : 0.0
         },
         "RANGEDATTACK" : {
-          "flat" : 1800.9805924804905,
+          "flat" : 1811.0499701733247,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,

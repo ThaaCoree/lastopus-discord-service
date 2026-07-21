@@ -1,0 +1,334 @@
+{
+  "Black Cometto" : {
+    "name" : "Black Cometto",
+    "itemType" : "NONE",
+    "description" : "",
+    "statusDescription" : "35 DEX\n27.18% CritDamage\n1.43% CritChance\n262.16 PhysicalPen\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "SCYTHE",
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITCHANCE" : {
+          "flat" : 0.014285211546068396,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "CRITDAMAGE" : {
+          "flat" : 0.27176460022320476,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALPENETRATE" : {
+          "flat" : 262.16337985110283,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "DEXTERITY" : {
+          "flat" : 34.99692246606979,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : {
+      "Eclipse" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      }
+    },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Flawless",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 0.1460185108360219,
+      "final_value" : 0.1460185108360219,
+      "mod" : {
+        "statType" : "CRITDAMAGE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Flawless",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 0.014285211546068396,
+      "final_value" : 0.014285211546068396,
+      "mod" : {
+        "statType" : "CRITCHANCE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Flawless",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 13,
+      "base_rolled" : 262.16337985110283,
+      "final_value" : 262.16337985110283,
+      "mod" : {
+        "statType" : "PHYSICALPENETRATE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Flawless",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 0.12574608938718285,
+      "final_value" : 0.12574608938718285,
+      "mod" : {
+        "statType" : "CRITDAMAGE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Flawless",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 34.99692246606979,
+      "final_value" : 34.99692246606979,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "DEXTERITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Claw of Light Dragon",
+        "itemType" : "MATERIAL",
+        "description" : "เมื่อใช้บูสต์ในลำดับเลขคี่, บล็อกม็อด Physical ทั้งหมด\nเมื่อใช้บูสต์ในลำดับเลขคู่, บล็อกม็อด Accurate ทั้งหมด\n",
+        "statusDescription" : "",
+        "lore" : "กรงเล็บของมังกรประกายแสง\nแม้แต่คำว่าแข็งแรงหรือทนทานก็ไม่อาจนิยามความทรงพลังในเชิงกายภาพของมันได้ จะทำให้เกิดแม้แต่รอยขีดข่วนยังทำไม่ได้ การจะทำให้เปลี่ยนรูปร่าง คงต้องใช้วิธีที่แสนพิเศษ",
+        "price" : "",
+        "weight" : 3,
+        "price_in_copper" : 0,
+        "material_toughness" : 120,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flawless" : {
+            "pool" : {
+              "pool_name" : "Flawless",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 800,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 800,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 13,
+            "maxModsAllowed" : 5
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 4.0,
+          "STRIKE" : 4.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "statModifiers" : {
+      "CRITCHANCE" : {
+        "flat" : 0.014285211546068396,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "CRITDAMAGE" : {
+        "flat" : 0.27176460022320476,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALPENETRATE" : {
+        "flat" : 262.16337985110283,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "DEXTERITY" : {
+        "flat" : 34.99692246606979,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  }
+}

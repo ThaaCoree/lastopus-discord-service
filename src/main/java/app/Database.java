@@ -98,6 +98,7 @@ public class Database {
             JsonUtils.saveToFile(combatFlow, "src/main/resources/json/combatFlow.json");
 
         if (allEquipmentMap != null) JsonUtils.saveToFile(allEquipmentMap, "src/main/resources/json/equipments.json");
+        if (allCraftedEquipments != null) JsonUtils.saveToFile(allCraftedEquipments, "src/main/resources/json/craftedEquipments.json");
         if (allDreamItem != null) JsonUtils.saveToFile(allDreamItem, "src/main/resources/json/dreams.json");
         if (allConsumableMap != null) JsonUtils.saveToFile(allConsumableMap, "src/main/resources/json/consumables.json");
         if (allRuneMap != null) JsonUtils.saveToFile(allRuneMap, "src/main/resources/json/runes.json");
@@ -121,6 +122,8 @@ public class Database {
 //        allShop = JsonUtils.loadFromFile("/json/shops.json", new TypeReference<Map<String, Shop>>() {});
         allMaterials = JsonUtils.loadFromFile("/json/materials.json", new TypeReference<Map<String, CraftingMaterial>>() {});
         allModPools = JsonUtils.loadFromFile("/json/modPools.json", new TypeReference<Map<String, CraftModPool>>() {});
+//        allCraftedEquipments = JsonUtils.loadFromFile("/json/craftedEquipments.json", new TypeReference<Map<String, CraftedEquipment>>() {});
+//        allCraftedEquipments = new LinkedHashMap<>();
     }
 
     public void loadMongo() {
@@ -355,7 +358,10 @@ public class Database {
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = new Rune();
                 CraftingMaterial newMaterial = allMaterials.get(name);
-                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
+                CraftedEquipment newCraftedEquipment = null;
+                if (allCraftedEquipments != null) {
+                    newCraftedEquipment = allCraftedEquipments.get(name);
+                }
                 if (allRuneMap != null) {
                     newRune = allRuneMap.get(name);
                 }
@@ -395,7 +401,10 @@ public class Database {
                 Consumable newConsumable = allConsumableMap.get(name);
                 Rune newRune = allRuneMap.get(name);
                 CraftingMaterial newMaterial = allMaterials.get(name);
-                CraftedEquipment newCraftedEquipment = allCraftedEquipments.get(name);
+                CraftedEquipment newCraftedEquipment = null;
+                if (allCraftedEquipments != null) {
+                    newCraftedEquipment = allCraftedEquipments.get(name);
+                }
 
                 if (newItem != null) {
                     entry.setValue(newItem);
@@ -450,7 +459,7 @@ public class Database {
                 if (entry.getValue().getEquipment() == null) continue;
                 String name = entry.getValue().getEquipment().getName();
                 Equipment newObject = allEquipmentMap.get(name);
-                if (newObject == null) {
+                if (newObject == null && allCraftedEquipments != null) {
                     newObject = allCraftedEquipments.get(name);
                 }
                 if (newObject != null) {

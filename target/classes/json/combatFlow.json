@@ -5,9 +5,9 @@
     "1" : [ "Acheros Aki", "Aard Archer", "Twelve", "Voahri", "Pumpkin'Slayerman", "Synn", "Lisa", "Koto", "Crendia", "Arch Bishop", "Leda", "Christ", "Akivili", "The Iron Tomb", "Slafier", "Scarlet", "Onebrek", "Shiranui", "Four-Leaf Clover777", "Winel" ],
     "2" : [ "Sand Lurker", "Spellbound Urn", "Solar Cultist Acolyte", "Solar Owl", "Solar Cultist Lamia", "Solar Cultist Knight", "Solar Cultist Knight3", "Solar Cultist Knight2", "Terania", "Night Ender, Chimera", "Unda", "Ramoon", "Mezi", "Moran", "Meisef The Sun Prophet", "Darlazen The Lord of Sands", "Larezonik's Sand Knight2", "Larezonik's Sand Knight3", "Larezonik's Sand Knight", "Larezonik's Sand Arcanist", "Darlazen's Intervention", "Darlazen's Control", "Darlazen's Might", "Darlazen's Mastery" ]
   },
-  "extraDice" : 96,
-  "critDice" : 24,
-  "avoidDice" : 56,
+  "extraDice" : 14,
+  "critDice" : 58,
+  "avoidDice" : 25,
   "monsterUnit" : {
     "Meisef The Sun Prophet" : {
       "name" : "Meisef The Sun Prophet",
@@ -26,280 +26,280 @@
       "conditionInstances" : { },
       "statuses" : {
         "STRENGTH" : {
-          "base" : 69.0,
           "current" : 69.0,
+          "base" : 69.0,
           "final" : 69.0
         },
         "AGILITY" : {
-          "base" : 177.0,
           "current" : 177.0,
+          "base" : 177.0,
           "final" : 177.0
         },
         "VITALITY" : {
-          "base" : 166.0,
           "current" : 166.0,
+          "base" : 166.0,
           "final" : 166.0
         },
         "DEXTERITY" : {
-          "base" : 227.0,
           "current" : 227.0,
+          "base" : 227.0,
           "final" : 227.0
         },
         "WISDOM" : {
-          "base" : 211.0,
           "current" : 211.0,
+          "base" : 211.0,
           "final" : 211.0
         },
         "INTELLIGENCE" : {
-          "base" : 240.0,
           "current" : 240.0,
+          "base" : 240.0,
           "final" : 240.0
         },
         "LUCK" : {
-          "base" : 101.0,
           "current" : 101.0,
+          "base" : 101.0,
           "final" : 101.0
         }
       },
       "stats" : {
         "PHYSICALATTACK" : {
-          "base" : 869.0,
           "current" : 869.0,
+          "base" : 869.0,
           "final" : 869.0
         },
         "MAGICALATTACK" : {
-          "base" : 1040.0,
           "current" : 1040.0,
+          "base" : 1040.0,
           "final" : 1040.0
         },
         "RANGEDATTACK" : {
-          "base" : 1027.0,
           "current" : 1027.0,
+          "base" : 1027.0,
           "final" : 1027.0
         },
         "HEALTHPOINT" : {
-          "base" : 236351.0,
           "current" : 236351.0,
+          "base" : 236351.0,
           "final" : 236351.0
         },
         "MANAPOINT" : {
-          "base" : 93.3,
           "current" : 93.3,
+          "base" : 93.3,
           "final" : 93.3
         },
         "PHYSICALDEFENSE" : {
-          "base" : 970.0,
           "current" : 970.0,
+          "base" : 970.0,
           "final" : 970.0
         },
         "MAGICALDEFENSE" : {
-          "base" : 1312.0,
           "current" : 1312.0,
+          "base" : 1312.0,
           "final" : 1312.0
         },
         "MOVEMENTSPEED" : {
-          "base" : 30.049999999999997,
           "current" : 30.049999999999997,
+          "base" : 30.049999999999997,
           "final" : 30.049999999999997
         },
         "HEALAMPLIFIER" : {
-          "base" : 1.055,
           "current" : 1.055,
+          "base" : 1.055,
           "final" : 1.055
         },
         "BUFFAMPLIFIER" : {
-          "base" : 0.5275,
           "current" : 0.5275,
+          "base" : 0.5275,
           "final" : 0.5275
         },
         "DEBUFFAMPLIFIER" : {
-          "base" : 0.5275,
           "current" : 0.5275,
+          "base" : 0.5275,
           "final" : 0.5275
         },
         "CRITCHANCE" : {
-          "base" : 0.05,
           "current" : 0.10049999999999999,
+          "base" : 0.05,
           "final" : 0.10049999999999999
         },
         "CRITDAMAGE" : {
-          "base" : 3.0149999999999997,
           "current" : 3.0149999999999997,
+          "base" : 3.0149999999999997,
           "final" : 3.0149999999999997
         },
         "MANAREGEN" : {
-          "base" : 0.0,
           "current" : 19.261,
+          "base" : 0.0,
           "final" : 19.261
         },
         "HEALTHREGEN" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "DEFLECTION" : {
-          "base" : 1337.0,
           "current" : 1337.0,
+          "base" : 1337.0,
           "final" : 1337.0
         },
         "IGNITEAMP" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "BLEEDAMP" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "ACCURACY" : {
-          "base" : 1619.0,
           "current" : 1619.0,
+          "base" : 1619.0,
           "final" : 1619.0
         },
         "EVASION" : {
-          "base" : 1566.0,
           "current" : 1566.0,
+          "base" : 1566.0,
           "final" : 1566.0
         },
         "PHYSICALBLOCK" : {
-          "base" : 165.0,
           "current" : 165.0,
+          "base" : 165.0,
           "final" : 165.0
         },
         "MAGICALBLOCK" : {
-          "base" : 165.0,
           "current" : 165.0,
+          "base" : 165.0,
           "final" : 165.0
         },
         "DAMAGEREDUCTION" : {
-          "base" : 0.75,
           "current" : 0.75,
+          "base" : 0.75,
           "final" : 0.75
         },
         "DAMAGEAMPLIFIER" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "ATTACKSPEED" : {
-          "base" : 2.0620000000000003,
           "current" : 2.0620000000000003,
+          "base" : 2.0620000000000003,
           "final" : 2.0620000000000003
         },
         "CASTSPEED" : {
-          "base" : 2.0620000000000003,
           "current" : 2.0620000000000003,
+          "base" : 2.0620000000000003,
           "final" : 2.0620000000000003
         },
         "PHYSICALPENETRATE" : {
-          "base" : 566.5999999999999,
           "current" : 566.5999999999999,
+          "base" : 566.5999999999999,
           "final" : 566.5999999999999
         },
         "MAGICALPENETRATE" : {
-          "base" : 574.4,
           "current" : 574.4,
+          "base" : 574.4,
           "final" : 574.4
         },
         "RESERVATION" : {
-          "base" : 0.3215434083601286,
           "current" : 0.3215434083601286,
+          "base" : 0.3215434083601286,
           "final" : 0.3215434083601286
         },
         "CRITSHIELD" : {
-          "base" : 0.1,
           "current" : 0.20099999999999998,
+          "base" : 0.1,
           "final" : 0.20099999999999998
         },
         "SPEED" : {
-          "base" : 35.7,
           "current" : 35.7,
+          "base" : 35.7,
           "final" : 35.7
         },
         "SOULPOINT" : {
-          "base" : 100.0,
           "current" : 100.0,
+          "base" : 100.0,
           "final" : 100.0
         },
         "IGNOREPDEF" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "IGNOREMDEF" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "POISONAMP" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "FIREPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "WATERPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "WINDPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "EARTHPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "LIGHTPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "DARKPENETRATION" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "FIRERESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "WATERRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "WINDRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "EARTHRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "LIGHTRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         },
         "DARKRESISTANCE" : {
-          "base" : 0.0,
           "current" : 0.0,
+          "base" : 0.0,
           "final" : 0.0
         }
       },
