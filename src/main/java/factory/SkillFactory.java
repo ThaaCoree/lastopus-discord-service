@@ -641,5 +641,4 @@ public class SkillFactory {
         }
         return null;  // ถ้าไม่มี skill ตามชื่อ
     }
-
 }

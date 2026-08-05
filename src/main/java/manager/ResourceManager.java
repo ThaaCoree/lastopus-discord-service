@@ -80,6 +80,7 @@ public class ResourceManager {
 
         double reserveEffi = unit.getStats().get(StatType.RESERVATION).getFinal();
         for (SkillInstance instance : unit.getAllSkill().values()) {
+            if (instance.getSkillData() == null) continue;
             if (instance.isReserving()) {
                 manaReservePercent += (instance.getSkillData().getManaReservePercent());
                 manaReserveFlat += (instance.getSkillData().getManaReserveFlat());

@@ -251,12 +251,14 @@ public class Unit {
 
     public void calculateSkillDesc() {
         for (SkillInstance instance : skillList.values()) {
+            if (instance.getSkillData() == null) return;
             instance.getSkillData().translateDescription();
         }
     }
 
     public void initSkill(CombatFlow combatFlow) {
         for (SkillInstance skillInstance : getAllSkill().values()) {
+            if (skillInstance.getSkillData() == null) continue;
             skillInstance.getSkillData().initializeEvent(combatFlow);
             if (skillInstance.getSkillData() instanceof SkillWithCondition) {
                 SkillWithCondition skill = (SkillWithCondition) skillInstance.getSkillData();

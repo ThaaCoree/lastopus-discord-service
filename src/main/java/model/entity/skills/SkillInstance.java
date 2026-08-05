@@ -22,6 +22,8 @@ public class SkillInstance {
     }
 
     public void applyModifier() {
+        if (skillData == null) return;
+
         if (reserving) {
             setInstanceBundle(skillData.getSkillModifier());
         } else {

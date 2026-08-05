@@ -1,4 +1,95 @@
 {
+  "Talonia" : {
+    "name" : "Talonia",
+    "itemType" : "EQUIPMENT",
+    "description" : "เมื่อเริ่มต้นรอบเทิร์น สลับตำแหน่งของยูนิตพันธมิตรและสิ่งก่อสร้างของพันธมิตรทั้งหมดได้อย่างอิสระ\n\nสามารถใช้งาน Reaction เพื่อสลับตำแหน่งของพันธมิตรสองยูนิตได้หนึ่งครั้งต่อรอบเทิร์น ",
+    "statusDescription" : "8 INT\n11 LUK\n95 MATK\n135 HP\n\n",
+    "lore" : "\n\n`จงเป็นความหวังของผู้คน´",
+    "price" : "",
+    "weight" : 4,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "WAND",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALATTACK" : {
+          "flat" : 95.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHPOINT" : {
+          "flat" : 135.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "INTELLIGENCE" : {
+          "flat" : 8.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "LUCK" : {
+          "flat" : 11.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "MAGICALATTACK" : {
+        "flat" : 95.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "HEALTHPOINT" : {
+        "flat" : 135.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 8.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "LUCK" : {
+        "flat" : 11.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  },
   "Nelite Hood" : {
     "name" : "Nelite Hood",
     "itemType" : "EQUIPMENT",
@@ -1395,6 +1486,95 @@
         "passiveMult" : 0.0
       }
     },
+    "transferModifiers" : { }
+  },
+  "Balancer" : {
+    "name" : "Balancer",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "-40% GlobalPDEF\n-40% GlobalMDEF\n70% GlobalPBLOCK\n70% GlobalMBLOCK\n\n",
+    "lore" : "\n\n`ระวังอย่าให้เกินพอดี´",
+    "price" : "",
+    "weight" : 4,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "SHIELD",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.4,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.4,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.7,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALBLOCK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.7,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "PHYSICALDEFENSE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.4,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.4,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALBLOCK" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.7,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALBLOCK" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.7,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : { },
     "transferModifiers" : { }
   },
   "Nexus Shatter" : {
@@ -8122,6 +8302,79 @@
     "statusModifiers" : { },
     "transferModifiers" : { }
   },
+  "Death Defy" : {
+    "name" : "Death Defy",
+    "itemType" : "EQUIPMENT",
+    "description" : "เมื่อได้รับการฟื้นฟูที่ทำให้พลังชีวิตมากกว่าศูนย์ ได้สติกลับมาทันที\nและจะไม่สูญเสีย Action จากการหมดสติอีกต่อไป ",
+    "statusDescription" : "203 HP\n264 Deflection\n264 Evasion\n\n",
+    "lore" : "\n\n`ความตายเป็นสิ่งสุดท้ายที่ผู้คนจะได้พบเจอเสมอ\nแต่ก่อนหน้านั้นก็ใช่ว่าจะต้องยอมจำนนต่อมัน´",
+    "price" : "",
+    "weight" : 6,
+    "price_in_copper" : 0,
+    "equipmentType" : "ARMOR",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "HEALTHPOINT" : {
+          "flat" : 203.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEFLECTION" : {
+          "flat" : 264.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 264.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "HEALTHPOINT" : {
+        "flat" : 203.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DEFLECTION" : {
+        "flat" : 264.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "EVASION" : {
+        "flat" : 264.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : { },
+    "transferModifiers" : { }
+  },
   "Pounce Strike" : {
     "name" : "Pounce Strike",
     "itemType" : "EQUIPMENT",
@@ -10510,6 +10763,81 @@
       }
     },
     "statusModifiers" : { },
+    "transferModifiers" : { }
+  },
+  "Dancing Wind" : {
+    "name" : "Dancing Wind",
+    "itemType" : "EQUIPMENT",
+    "description" : "หนึ่งครั้งต่อรอบเทิร์น เมื่อได้รับ Action หรือ Combined Action ในระหว่างเทิร์นของตนเอง, รับซ้ำอีกครั้ง",
+    "statusDescription" : "11 AGI\n73 PDEF\n61 MDEF\n\n",
+    "lore" : "\n\n`จงเป็นดั่งสายลม\nมิใช่เพียงว่องไว แต่จงพลิ้วไหว แลสม่ำเสมอ´",
+    "price" : "",
+    "weight" : 3,
+    "price_in_copper" : 0,
+    "equipmentType" : "BOOTS",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 73.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 61.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 11.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "PHYSICALDEFENSE" : {
+        "flat" : 73.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 61.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 11.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "transferModifiers" : { }
   },
   "Volcanic Armor" : {
@@ -30305,6 +30633,47 @@
       }
     }
   },
+  "Meisef's Torment" : {
+    "name" : "Meisef's Torment",
+    "itemType" : "EQUIPMENT",
+    "description" : "หากหมดสติอยู่และในรอบเทิร์นนี้ไม่ได้ใช้งาน Action เลย เมื่อจบรอบเทิร์น ส่งมอบ Action ทั้งหมดที่ควรจะได้รับให้กับยูนิตพันธมิตรคนสุดท้ายของรอบเทิร์น\n\nยูนิตดังกล่าวใช้งาน Action เหล่านั้นทันที",
+    "statusDescription" : "14 LUK\n\n",
+    "lore" : "\n\n`ความฝันของข้า มันพังทลายไปนานแล้ว...\nแต่ถึงอย่างนั้น. . . ´",
+    "price" : "",
+    "weight" : 2,
+    "price_in_copper" : 0,
+    "equipmentType" : "ACCESSORY",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : {
+        "LUCK" : {
+          "flat" : 14.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : { },
+    "statusModifiers" : {
+      "LUCK" : {
+        "flat" : 14.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  },
   "Refraction Armor" : {
     "name" : "Refraction Armor",
     "itemType" : "EQUIPMENT",
@@ -42553,6 +42922,63 @@
     "statusModifiers" : { },
     "transferModifiers" : { }
   },
+  "Finality" : {
+    "name" : "Finality",
+    "itemType" : "EQUIPMENT",
+    "description" : "สามารถใช้งาน Turn ได้แม้ในเทิร์นนี้สั่งใช้งาน Combined Action หรือ Action แล้ว\nพลังชีวิตกลายเป็น 0 และหมดสติเมื่อใช้ความสามารถนี้",
+    "statusDescription" : "31 PDEF\n31 MDEF\n\n",
+    "lore" : "\n\n`ปิดฉากประหาร´",
+    "price" : "",
+    "weight" : 0,
+    "price_in_copper" : 0,
+    "equipmentType" : "GLOVES",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 31.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 31.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "PHYSICALDEFENSE" : {
+        "flat" : 31.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 31.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : { },
+    "transferModifiers" : { }
+  },
   "Shadewalker Boots" : {
     "name" : "Shadewalker Boots",
     "itemType" : "EQUIPMENT",
@@ -44305,6 +44731,81 @@
       }
     },
     "statusModifiers" : { },
+    "transferModifiers" : { }
+  },
+  "Annihilation" : {
+    "name" : "Annihilation",
+    "itemType" : "EQUIPMENT",
+    "description" : "เมื่อเริ่มต้นการต่อสู้ เลือกศัตรูหนึ่งชนิดที่อยู่ในสนามให้เป็นเป้าหมายของการล่า\nเมื่อฆ่าศัตรูที่กำลังล่าสำเร็จ เริ่มต้นเทิร์นของตนเองใหม่อีกครั้ง\n\nเมื่อไม่เหลือศัตรูที่กำลังล่าในสนาม เลือกเป้าหมายการล่าใหม่",
+    "statusDescription" : "35 STR\n106 PATK\nSet Speed to 1\n\n",
+    "lore" : "\n\n`ให้ข้าเป็นคนสุดท้ายที่ต้องสูญเสียเพราะพวกมัน´",
+    "price" : "",
+    "weight" : 9,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "GREATSWORD",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 106.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : 1.0,
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 35.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
+        "flat" : 106.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "SPEED" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : 1.0,
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 35.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "transferModifiers" : { }
   },
   "Swift Dagger" : {
@@ -64237,6 +64738,97 @@
     },
     "transferModifiers" : { }
   },
+  "Shifting Mirage" : {
+    "name" : "Shifting Mirage",
+    "itemType" : "EQUIPMENT",
+    "description" : "เมื่ิอประกาศจบเทิร์น เลือกพันธมิตรที่ไม่ได้ถูกอัญเชิญหนึ่งยูนิตในรัศมี 2 เมตร\nยูนิตพันธมิตรทั้งหมดในรัศมี 2 เมตรยกเว้นยูนิตที่เลือก ล่องหนจนกว่าจะถึงเทิร์นถัดไปของผู้ใช้ หรือเคลื่ิอนไหวออกจากรัศมี 2 เมตรของผู้ใช้",
+    "statusDescription" : "9 WIS\n46 MATK\n95 MDEF\n8 MSPD\n\n",
+    "lore" : "\n\n`ซ่อนเงามายา สร้างมนตราจากภาพลวง´",
+    "price" : "",
+    "weight" : 3,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "LANTERN",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALATTACK" : {
+          "flat" : 46.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 95.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 8.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "WISDOM" : {
+          "flat" : 9.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "MAGICALATTACK" : {
+        "flat" : 46.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 95.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MOVEMENTSPEED" : {
+        "flat" : 8.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "WISDOM" : {
+        "flat" : 9.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  },
   "Snowy Feet" : {
     "name" : "Snowy Feet",
     "itemType" : "EQUIPMENT",
@@ -65553,6 +66145,97 @@
     "statusModifiers" : { },
     "transferModifiers" : { }
   },
+  "Magic Polarizer" : {
+    "name" : "Magic Polarizer",
+    "itemType" : "EQUIPMENT",
+    "description" : "เมื่อสร้างความเสียหายเวท จะมี Magical Penetration เพิ่มขึ้นตาม MDEF ของเป้าหมาย",
+    "statusDescription" : "17 INT\n63 MATK\n-50% GlobalHP\n-35% DMGReduction\n\n",
+    "lore" : "\n\n`ความรู้ย่อมสูญเปล่าเมื่อไร้ซึ่งความเข้าใจ´",
+    "price" : "",
+    "weight" : 7,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "SNIPER_RIFLE",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALATTACK" : {
+          "flat" : 63.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHPOINT" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : -0.5,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DAMAGEREDUCTION" : {
+          "flat" : -0.35,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "INTELLIGENCE" : {
+          "flat" : 17.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "MAGICALATTACK" : {
+        "flat" : 63.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "HEALTHPOINT" : {
+        "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : -0.5,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DAMAGEREDUCTION" : {
+        "flat" : -0.35,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 17.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  },
   "Skyblue Diversion" : {
     "name" : "Skyblue Diversion",
     "itemType" : "EQUIPMENT",
@@ -66430,6 +67113,113 @@
       },
       "INTELLIGENCE" : {
         "flat" : 2.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { }
+  },
+  "Envazakh's Design" : {
+    "name" : "Envazakh's Design",
+    "itemType" : "EQUIPMENT",
+    "description" : "หนึ่งครั้งต่อการต่อสู้ เมื่อรอบต้นเทิร์น สามารถเลือกหนึ่งยูนิตเป้าหมายให้เทิร์นของยูนิตนั้นถูกข้ามในรอบเทิร์นนี้ได้",
+    "statusDescription" : "14 AGI\n8 WIS\n84 HP\n126 PDEF\n126 MDEF\n\n",
+    "lore" : "\n\n`มันยังไม่มาถึง... จะไม่ปล่อยให้มาถึง´",
+    "price" : "",
+    "weight" : 3,
+    "price_in_copper" : 0,
+    "equipmentType" : "HELMET",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "HEALTHPOINT" : {
+          "flat" : 84.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 126.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 126.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 14.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 8.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "statModifiers" : {
+      "HEALTHPOINT" : {
+        "flat" : 84.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALDEFENSE" : {
+        "flat" : 126.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 126.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 14.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "WISDOM" : {
+        "flat" : 8.0,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,

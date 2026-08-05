@@ -384,39 +384,41 @@ public class StatTranslateUtil {
                 unit.getSkillList().put(name, new SkillInstance(SkillFactory.getSkill(name, unit, false)));
                 unit.reloadSkill();
                 SkillInstance unit_bound = unit.getSkillList().get(name);
-                result.append(name).append(" : ");
-                String cooldown = unit_bound.getSkillData().getTranslatedCooldown();
-                String mana_cost = unit_bound.getSkillData().getTranslatedCost();
-                String act = unit_bound.getSkillData().getActionType();
-                String description = unit_bound.getSkillData().getDescription();
-                if (!cooldown.isEmpty() && !cooldown.equals("0")) {
-                    result.append("คูลดาวน์ ").append(cooldown).append(" เทิร์น, ");
-                }
-                if (!mana_cost.isEmpty() && !mana_cost.equals("0")) {
-                    result.append("ใช้ ").append(mana_cost).append(", ");
-                }
-                if (!act.isEmpty()) {
-                    result.append(act);
-                }
-                String replacedDescription = description;
-                for (char c = 'A'; c <= 'Z'; c++) {
-                    String key = "X" + c;
-                    String replace = "";
-                    if (unit_bound.getSkillData().getSkillMultiplier().get(key) != null) {
-                        if (unit_bound.getSkillData().getSkillMultiplier().get(key).isPercent()) {
-                            replace = unit_bound.getSkillData().getSkillMultiplier().get(key).getFormula()+"*100 (%)";
-                        } else {
-                            replace = unit_bound.getSkillData().getSkillMultiplier().get(key).getFormula();
-                        }
-                        replacedDescription = replacedDescription.replace(
-                                key,
-                                replace
-                        );
+                if (unit_bound.getSkillData() != null) {
+                    result.append(name).append(" : ");
+                    String cooldown = unit_bound.getSkillData().getTranslatedCooldown();
+                    String mana_cost = unit_bound.getSkillData().getTranslatedCost();
+                    String act = unit_bound.getSkillData().getActionType();
+                    String description = unit_bound.getSkillData().getDescription();
+                    if (!cooldown.isEmpty() && !cooldown.equals("0")) {
+                        result.append("คูลดาวน์ ").append(cooldown).append(" เทิร์น, ");
                     }
+                    if (!mana_cost.isEmpty() && !mana_cost.equals("0")) {
+                        result.append("ใช้ ").append(mana_cost).append(", ");
+                    }
+                    if (!act.isEmpty()) {
+                        result.append(act);
+                    }
+                    String replacedDescription = description;
+                    for (char c = 'A'; c <= 'Z'; c++) {
+                        String key = "X" + c;
+                        String replace = "";
+                        if (unit_bound.getSkillData().getSkillMultiplier().get(key) != null) {
+                            if (unit_bound.getSkillData().getSkillMultiplier().get(key).isPercent()) {
+                                replace = unit_bound.getSkillData().getSkillMultiplier().get(key).getFormula() + "*100 (%)";
+                            } else {
+                                replace = unit_bound.getSkillData().getSkillMultiplier().get(key).getFormula();
+                            }
+                            replacedDescription = replacedDescription.replace(
+                                    key,
+                                    replace
+                            );
+                        }
 
+                    }
+                    description = replacedDescription;
+                    result.append("\n").append(description);
                 }
-                description = replacedDescription;
-                result.append("\n").append(description);
             });
         }
 
