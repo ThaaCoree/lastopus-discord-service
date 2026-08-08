@@ -13226,7 +13226,7 @@
     "weight" : 1,
     "price_in_copper" : 0,
     "material_toughness" : 90,
-    "material_max_mod" : 1,
+    "material_max_mod" : 5,
     "reveal_usage" : false,
     "pools" : {
       "Anti-Magic" : {
@@ -13373,6 +13373,248 @@
     "modBoost" : {
       "MAGIC" : -0.4,
       "AMPLIFIER" : -0.25
+    },
+    "unique_boost" : false
+  },
+  "Wandrite" : {
+    "name" : "Wandrite",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Boost : \nMagic (80.0%)\nPhysical (-35.0%)\n\nMaterial Toughness : 90%",
+    "lore" : "วันไดรต์ แร่ที่สาปสูญไปกับกาลเวลานานมาแล้ว\nเปราะบางมาก แต่ถึงอย่างนั้นก็มีความสามารถในการเป็นสื่อเวทมนตร์ที่ยอดเยี่ยม หากถูกหลอมอย่างถูกต้องก็จะดึงเอาคุณสมบัติแท้จริงออกมาได้",
+    "price" : "",
+    "weight" : 3,
+    "price_in_copper" : 0,
+    "material_toughness" : 90,
+    "material_max_mod" : 6,
+    "reveal_usage" : false,
+    "pools" : {
+      "Mana Reactive" : {
+        "pool" : {
+          "pool_name" : "Mana Reactive",
+          "weaponMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : null,
+            "statusType" : "WISDOM",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          }, {
+            "statType" : "MANAREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : null,
+            "statusType" : "WISDOM",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MANAPOINT",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : null,
+            "statusType" : "INTELLIGENCE",
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 300,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALATTACK",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MANAREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1500,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 6
+      },
+      "Brittle" : {
+        "pool" : {
+          "pool_name" : "Brittle",
+          "weaponMods" : [ {
+            "statType" : "PHYSICALATTACK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "RANGEDATTACK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : "PHYSICALBLOCK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALDEFENSE",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      }
+    },
+    "modBoost" : {
+      "MAGIC" : 0.8,
+      "PHYSICAL" : -0.35
+    },
+    "unique_boost" : false
+  },
+  "Everlasting Tear" : {
+    "name" : "Everlasting Tear",
+    "itemType" : "MATERIAL",
+    "description" : "",
+    "statusDescription" : "Boost : \nRegen (200.0%)\n\nMaterial Toughness : 95%",
+    "lore" : "ของเหลวสีใสคล้ายหยาดน้ำตา มีความสามารถในการฟื้นฟูบาดแผลอย่างมหาศาล อีกทั้งยังมีจุดเด่นในเรื่องของการเรียบเรียงและฟื้นฟูมานาด้วย",
+    "price" : "",
+    "weight" : 1,
+    "price_in_copper" : 0,
+    "material_toughness" : 95,
+    "material_max_mod" : 4,
+    "reveal_usage" : false,
+    "pools" : {
+      "Regeneration" : {
+        "pool" : {
+          "pool_name" : "Regeneration",
+          "weaponMods" : [ {
+            "statType" : "HEALTHREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MANAREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : "HEALTHREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MANAREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ {
+            "statType" : "HEALTHREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MANAREGEN",
+            "statusType" : null,
+            "negative" : false,
+            "modifierType" : "FLAT",
+            "weight" : 500,
+            "fixed" : false
+          } ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 13,
+        "maxTier" : 15,
+        "maxModsAllowed" : 4
+      }
+    },
+    "modBoost" : {
+      "REGEN" : 2.0
     },
     "unique_boost" : false
   }

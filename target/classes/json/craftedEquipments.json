@@ -344,16 +344,16 @@
     "weaponType" : "KNIFE",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALATTACK" : {
-          "flat" : 43.11675094566526,
+        "PHYSICALATTACK" : {
+          "flat" : 44.863197545792914,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "PHYSICALATTACK" : {
-          "flat" : 44.863197545792914,
+        "MAGICALATTACK" : {
+          "flat" : 43.11675094566526,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -368,16 +368,16 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "SPEED" : {
-          "flat" : 0.6745411108993292,
+        "CRITCHANCE" : {
+          "flat" : 0.0033808856490748244,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "CRITCHANCE" : {
-          "flat" : 0.0033808856490748244,
+        "SPEED" : {
+          "flat" : 0.6745411108993292,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -386,16 +386,16 @@
         }
       },
       "statusModifiers" : {
-        "LUCK" : {
-          "flat" : 4.009988652710659,
+        "WISDOM" : {
+          "flat" : 6.2058748217575905,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "WISDOM" : {
-          "flat" : 6.2058748217575905,
+        "LUCK" : {
+          "flat" : 4.009988652710659,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -1992,16 +1992,16 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : {
-      "LUCK" : {
-        "flat" : 4.009988652710659,
+      "WISDOM" : {
+        "flat" : 6.2058748217575905,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "WISDOM" : {
-        "flat" : 6.2058748217575905,
+      "LUCK" : {
+        "flat" : 4.009988652710659,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -2011,16 +2011,16 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "MAGICALATTACK" : {
-        "flat" : 43.11675094566526,
+      "PHYSICALATTACK" : {
+        "flat" : 44.863197545792914,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "PHYSICALATTACK" : {
-        "flat" : 44.863197545792914,
+      "MAGICALATTACK" : {
+        "flat" : 43.11675094566526,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -2035,16 +2035,16 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "SPEED" : {
-        "flat" : 0.6745411108993292,
+      "CRITCHANCE" : {
+        "flat" : 0.0033808856490748244,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "CRITCHANCE" : {
-        "flat" : 0.0033808856490748244,
+      "SPEED" : {
+        "flat" : 0.6745411108993292,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -2131,7 +2131,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -2153,7 +2153,7 @@
         "name" : "Deris",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (-30.0%)\n\nMaterial Toughness : 5%",
+        "statusDescription" : "",
         "lore" : "เมื่อบีบจนแตก จะสร้างเสียงก้องกังวาน มีความคงทนน้อยมาก ไม่เหมาะกับการใช้สร้างอุปกรณ์",
         "price" : "Buy 9 Copper",
         "weight" : 1,
@@ -2231,7 +2231,7 @@
         "name" : "Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของสัตว์ทั่วๆไป",
         "price" : "Buy 4 Copper",
         "weight" : 1,
@@ -2356,7 +2356,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -2749,7 +2749,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -3078,16 +3078,16 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALPENETRATE" : {
-          "flat" : 40.788738320048786,
+        "CRITDAMAGE" : {
+          "flat" : 0.1468768825108237,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "CRITDAMAGE" : {
-          "flat" : 0.1468768825108237,
+        "PHYSICALPENETRATE" : {
+          "flat" : 40.788738320048786,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -3096,16 +3096,16 @@
         }
       },
       "statusModifiers" : {
-        "VITALITY" : {
-          "flat" : 13.784755437627876,
+        "STRENGTH" : {
+          "flat" : 19.500234507836485,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "STRENGTH" : {
-          "flat" : 19.500234507836485,
+        "VITALITY" : {
+          "flat" : 13.784755437627876,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -3303,7 +3303,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -3598,7 +3598,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -3893,7 +3893,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -4295,16 +4295,16 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 13.784755437627876,
+      "STRENGTH" : {
+        "flat" : 19.500234507836485,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "STRENGTH" : {
-        "flat" : 19.500234507836485,
+      "VITALITY" : {
+        "flat" : 13.784755437627876,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -4322,16 +4322,16 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "PHYSICALPENETRATE" : {
-        "flat" : 40.788738320048786,
+      "CRITDAMAGE" : {
+        "flat" : 0.1468768825108237,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "CRITDAMAGE" : {
-        "flat" : 0.1468768825108237,
+      "PHYSICALPENETRATE" : {
+        "flat" : 40.788738320048786,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -4353,6 +4353,30 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 815.9537775621258,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 781.8997682047934,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 5.0136204217329645,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
         "HEALTHREGEN" : {
           "flat" : 82.10486196151065,
           "mult" : 0.0,
@@ -4371,30 +4395,6 @@
         },
         "CRITSHIELD" : {
           "flat" : 0.008859096909105807,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MOVEMENTSPEED" : {
-          "flat" : 5.0136204217329645,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 781.8997682047934,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "PHYSICALDEFENSE" : {
-          "flat" : 815.9537775621258,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -4645,7 +4645,7 @@
         "name" : "Wing of Light Dragon",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (1600.0%)\n\nMaterial Toughness : 120%",
+        "statusDescription" : "",
         "lore" : "ชิ้นส่วนปีกของมังกรประกายแสง ทั้งที่เบาหวิวจนแทบไม่มีน้ำหนักแต่ก็แข็งแรงทนทานจนแทบจะเป็นไปไม่ได้หากจะฉีกให้ขาดออกจากกันด้วยแรงทั่วๆไป\nความพิเศษของมันคือ ถึงแม้ว่าจะขาดออกจากกัน แต่ก็ยังสามารถสมานรวมกันได้ราวกับยังมีชีวิต",
         "price" : "",
         "weight" : 3,
@@ -4870,7 +4870,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -5165,7 +5165,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -5477,6 +5477,30 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
+      "PHYSICALDEFENSE" : {
+        "flat" : 815.9537775621258,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 781.8997682047934,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MOVEMENTSPEED" : {
+        "flat" : 5.0136204217329645,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
       "HEALTHREGEN" : {
         "flat" : 82.10486196151065,
         "mult" : 0.0,
@@ -5500,30 +5524,6 @@
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
-      },
-      "MOVEMENTSPEED" : {
-        "flat" : 5.0136204217329645,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "MAGICALDEFENSE" : {
-        "flat" : 781.8997682047934,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "PHYSICALDEFENSE" : {
-        "flat" : 815.9537775621258,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
       }
     }
   },
@@ -5540,16 +5540,16 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 766.4686546899856,
+        "HEALTHPOINT" : {
+          "flat" : -386.84142056672016,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "HEALTHPOINT" : {
-          "flat" : -386.84142056672016,
+        "MAGICALDEFENSE" : {
+          "flat" : 766.4686546899856,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -5566,16 +5566,16 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "LUCK" : {
-          "flat" : 26.19511452622035,
+        "INTELLIGENCE" : {
+          "flat" : 24.526287548442294,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "INTELLIGENCE" : {
-          "flat" : 24.526287548442294,
+        "LUCK" : {
+          "flat" : 26.19511452622035,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -5697,7 +5697,7 @@
         "name" : "Deepblue Forged Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (50.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "แร่น้ำเงินหลอมที่เกิดจากการหลอมของเคเรลเลี่ยมกับแร่โลหะอื่นๆ ลดความทนทานลงเล็กน้อย แต่น้ำหนักที่เคยเป็นจุดด้อยของแร่เคเรลเลี่ยมก็ถูกหลอมหายไป",
         "price" : "Buy 17 Silver",
         "weight" : 2,
@@ -6062,7 +6062,7 @@
         "name" : "Deepblue Forged Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (50.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "แร่น้ำเงินหลอมที่เกิดจากการหลอมของเคเรลเลี่ยมกับแร่โลหะอื่นๆ ลดความทนทานลงเล็กน้อย แต่น้ำหนักที่เคยเป็นจุดด้อยของแร่เคเรลเลี่ยมก็ถูกหลอมหายไป",
         "price" : "Buy 17 Silver",
         "weight" : 2,
@@ -6427,7 +6427,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -6449,7 +6449,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -6471,7 +6471,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -6766,7 +6766,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -7069,16 +7069,16 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "LUCK" : {
-        "flat" : 26.19511452622035,
+      "INTELLIGENCE" : {
+        "flat" : 24.526287548442294,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "INTELLIGENCE" : {
-        "flat" : 24.526287548442294,
+      "LUCK" : {
+        "flat" : 26.19511452622035,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -7088,16 +7088,16 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "MAGICALDEFENSE" : {
-        "flat" : 766.4686546899856,
+      "HEALTHPOINT" : {
+        "flat" : -386.84142056672016,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "HEALTHPOINT" : {
-        "flat" : -386.84142056672016,
+      "MAGICALDEFENSE" : {
+        "flat" : 766.4686546899856,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -7145,16 +7145,16 @@
         }
       },
       "statusModifiers" : {
-        "VITALITY" : {
-          "flat" : 7.972565547361384,
+        "AGILITY" : {
+          "flat" : 7.625048421262374,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "AGILITY" : {
-          "flat" : 7.625048421262374,
+        "VITALITY" : {
+          "flat" : 7.972565547361384,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -7293,7 +7293,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -7686,7 +7686,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -8079,7 +8079,7 @@
         "name" : "Rantium",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nFire (100.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่สีแดงที่เกิดจากการผสมแร่ไอรอนฮาร์ตกับเคเรลเลี่ยม มีความแหลมคมสูงมาก เมื่อเสียดสีอย่างรุนแรง อาจทำให้เกิดไฟลุกได้",
         "price" : "",
         "weight" : 2,
@@ -8612,16 +8612,16 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 7.972565547361384,
+      "AGILITY" : {
+        "flat" : 7.625048421262374,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "AGILITY" : {
-        "flat" : 7.625048421262374,
+      "VITALITY" : {
+        "flat" : 7.972565547361384,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -8670,14 +8670,6 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALBLOCK" : {
-          "flat" : 5.780074157455104,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALDEFENSE" : {
           "flat" : 137.21177899230696,
           "mult" : 0.0,
@@ -8688,6 +8680,14 @@
         },
         "PHYSICALBLOCK" : {
           "flat" : 5.837860100575087,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALBLOCK" : {
+          "flat" : 5.780074157455104,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -8819,7 +8819,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -9212,7 +9212,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -9605,7 +9605,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -10009,14 +10009,6 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "MAGICALBLOCK" : {
-        "flat" : 5.780074157455104,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "PHYSICALDEFENSE" : {
         "flat" : 137.21177899230696,
         "mult" : 0.0,
@@ -10027,6 +10019,14 @@
       },
       "PHYSICALBLOCK" : {
         "flat" : 5.837860100575087,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALBLOCK" : {
+        "flat" : 5.780074157455104,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -10048,14 +10048,6 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 216.6847207637898,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "HEALTHPOINT" : {
           "flat" : -368.818530312796,
           "mult" : 0.0,
@@ -10066,6 +10058,14 @@
         },
         "PHYSICALDEFENSE" : {
           "flat" : 520.7575918721877,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 216.6847207637898,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -10197,7 +10197,7 @@
         "name" : "Deepblue Forged Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (50.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "แร่น้ำเงินหลอมที่เกิดจากการหลอมของเคเรลเลี่ยมกับแร่โลหะอื่นๆ ลดความทนทานลงเล็กน้อย แต่น้ำหนักที่เคยเป็นจุดด้อยของแร่เคเรลเลี่ยมก็ถูกหลอมหายไป",
         "price" : "Buy 17 Silver",
         "weight" : 2,
@@ -10562,7 +10562,7 @@
         "name" : "Deepblue Forged Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (50.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "แร่น้ำเงินหลอมที่เกิดจากการหลอมของเคเรลเลี่ยมกับแร่โลหะอื่นๆ ลดความทนทานลงเล็กน้อย แต่น้ำหนักที่เคยเป็นจุดด้อยของแร่เคเรลเลี่ยมก็ถูกหลอมหายไป",
         "price" : "Buy 17 Silver",
         "weight" : 2,
@@ -10927,7 +10927,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -10949,7 +10949,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -10971,7 +10971,7 @@
         "name" : "Runt Wolf Bone",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nSpeed (100.0%)\nMagic (-25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "กระดูกของหมาป่าแคระ มีขนาดค่อนข้างเล็ก แต่ตรงกันข้ามกับขนของมันที่นุ่มนวล ตัวกระดูกมีความแข็งและอาจใช้สร้างอุปกรณ์ที่ทนทานได้ดี ลักษณะพิเศษอย่างมากของกระดูกหมาป่าแคระคือน้ำหนักที่เบา",
         "price" : "Sell 9 Copper",
         "weight" : 2,
@@ -11246,7 +11246,7 @@
         "name" : "Runt Wolf Bone",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nSpeed (100.0%)\nMagic (-25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "กระดูกของหมาป่าแคระ มีขนาดค่อนข้างเล็ก แต่ตรงกันข้ามกับขนของมันที่นุ่มนวล ตัวกระดูกมีความแข็งและอาจใช้สร้างอุปกรณ์ที่ทนทานได้ดี ลักษณะพิเศษอย่างมากของกระดูกหมาป่าแคระคือน้ำหนักที่เบา",
         "price" : "Sell 9 Copper",
         "weight" : 2,
@@ -11529,14 +11529,6 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "MAGICALDEFENSE" : {
-        "flat" : 216.6847207637898,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "HEALTHPOINT" : {
         "flat" : -368.818530312796,
         "mult" : 0.0,
@@ -11547,6 +11539,14 @@
       },
       "PHYSICALDEFENSE" : {
         "flat" : 520.7575918721877,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 216.6847207637898,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -11568,14 +11568,6 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 91.82188612154806,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "HEALTHPOINT" : {
           "flat" : 65.87898060675798,
           "mult" : 0.0,
@@ -11584,8 +11576,8 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "PHYSICALBLOCK" : {
-          "flat" : 7.137378743313256,
+        "PHYSICALDEFENSE" : {
+          "flat" : 91.82188612154806,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -11594,6 +11586,14 @@
         },
         "MAGICALDEFENSE" : {
           "flat" : 117.43260478521435,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALBLOCK" : {
+          "flat" : 7.137378743313256,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -11742,7 +11742,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -12135,7 +12135,7 @@
         "name" : "Ironheart Ore",
         "itemType" : "ORE",
         "description" : "",
-        "statusDescription" : "Boost : \nStatus (25.0%)\n\nMaterial Toughness : 30%",
+        "statusDescription" : "",
         "lore" : "แร่ไอรอนฮาร์ท เป็นสีขาวสะท้อนแสงได้ดี แข็งแรง นิยมใช้สร้างอุปกรณ์ทั้งด้านการสู้รบและอรรถประโยชน์",
         "price" : "Buy 2 Silver",
         "weight" : 2,
@@ -12528,7 +12528,7 @@
         "name" : "Sharp Eye Snake Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (20.0%)\nCrit (15.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของงูชาร์ปอาย มีความแหลมคมและทนทานสูง",
         "price" : "Buy 2 Silver",
         "weight" : 1,
@@ -12730,14 +12730,6 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "PHYSICALDEFENSE" : {
-        "flat" : 91.82188612154806,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "HEALTHPOINT" : {
         "flat" : 65.87898060675798,
         "mult" : 0.0,
@@ -12746,8 +12738,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "PHYSICALBLOCK" : {
-        "flat" : 7.137378743313256,
+      "PHYSICALDEFENSE" : {
+        "flat" : 91.82188612154806,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -12756,6 +12748,14 @@
       },
       "MAGICALDEFENSE" : {
         "flat" : 117.43260478521435,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALBLOCK" : {
+        "flat" : 7.137378743313256,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -12777,16 +12777,16 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "EVASION" : {
-          "flat" : -167.84551658538487,
+        "MOVEMENTSPEED" : {
+          "flat" : 8.4339439873623,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "MOVEMENTSPEED" : {
-          "flat" : 8.4339439873623,
+        "EVASION" : {
+          "flat" : -167.84551658538487,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -12875,7 +12875,7 @@
         "name" : "Sea Zephyr Feather",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (-25.0%)\nWind (45.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
         "price" : "",
         "weight" : 1,
@@ -13059,7 +13059,7 @@
         "name" : "Sea Zephyr Feather",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (-25.0%)\nWind (45.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
         "price" : "",
         "weight" : 1,
@@ -13243,7 +13243,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -13265,7 +13265,7 @@
         "name" : "Nitron",
         "itemType" : "ORE",
         "description" : "เมื่อใช้งานเป็น Base, เพิ่มตัวเลขของม็อดที่ถูกคราฟท์หรือเพิ่มเข้ามาใหม่ 1.5-2.5 เท่าแบบสุ่ม จากนั้นสุ่มว่าจะทำให้ม็อดเป็นลบหรือบวก",
-        "statusDescription" : "Boost : \nStatus (50.0%)\nStat (-25.0%)\n\nMaterial Toughness : 15%",
+        "statusDescription" : "",
         "lore" : "แร่สีเทาสว่าง มักจะพบได้เป็นกลุ่มก้อนเล็กๆ มีมานาปะปนอยู่มาก แต่อย่าเผลอไปทุบมันแตกเชียว เพราะไนตรอนมีความไม่สเถียรสูงมาก หากแตกออกในสภาพดิบ จะทำให้เกิดระเบิดขนาดย่อมๆได้เลย",
         "price" : "Buy 25 Silver",
         "weight" : 2,
@@ -13292,16 +13292,16 @@
     "statusModifiers" : { },
     "transferModifiers" : { },
     "statModifiers" : {
-      "EVASION" : {
-        "flat" : -167.84551658538487,
+      "MOVEMENTSPEED" : {
+        "flat" : 8.4339439873623,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "MOVEMENTSPEED" : {
-        "flat" : 8.4339439873623,
+      "EVASION" : {
+        "flat" : -167.84551658538487,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -13472,7 +13472,7 @@
         "name" : "Sharp Eye Snake Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (20.0%)\nCrit (15.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของงูชาร์ปอาย มีความแหลมคมและทนทานสูง",
         "price" : "Buy 2 Silver",
         "weight" : 1,
@@ -13663,7 +13663,7 @@
         "name" : "Reaper Tiger Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (30.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเสือยมทูต แม้จะเบาแต่ก็ทนทานมาก ถึงอย่างนั้นก็เล็กเกินกว่าจะใช้สร้างเป็นอาวุธ",
         "price" : "Buy 3 Silver",
         "weight" : 1,
@@ -14026,16 +14026,16 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "EVASION" : {
-          "flat" : -45.64217856412468,
+        "PHYSICALATTACK" : {
+          "flat" : 16.576309582117936,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "PHYSICALATTACK" : {
-          "flat" : 16.576309582117936,
+        "EVASION" : {
+          "flat" : -45.64217856412468,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -14044,8 +14044,8 @@
         }
       },
       "statusModifiers" : {
-        "DEXTERITY" : {
-          "flat" : 8.043426612214247,
+        "STRENGTH" : {
+          "flat" : 7.9952853957723145,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -14060,8 +14060,8 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "STRENGTH" : {
-          "flat" : 7.9952853957723145,
+        "DEXTERITY" : {
+          "flat" : 8.043426612214247,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -14200,7 +14200,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -14495,7 +14495,7 @@
         "name" : "Pungle Claws",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nStrike (50.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "กรงเล็บที่แหลมคมของพังเกิ้ล ไม่มีพิษแต่ทนทานกว่าเปลือกอย่างน่าแปลกใจ",
         "price" : "",
         "weight" : 1,
@@ -14706,7 +14706,7 @@
         "name" : "Reaper Tiger Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (30.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเสือยมทูต แม้จะเบาแต่ก็ทนทานมาก ถึงอย่างนั้นก็เล็กเกินกว่าจะใช้สร้างเป็นอาวุธ",
         "price" : "Buy 3 Silver",
         "weight" : 1,
@@ -15028,8 +15028,8 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : {
-      "DEXTERITY" : {
-        "flat" : 8.043426612214247,
+      "STRENGTH" : {
+        "flat" : 7.9952853957723145,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -15044,8 +15044,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "STRENGTH" : {
-        "flat" : 7.9952853957723145,
+      "DEXTERITY" : {
+        "flat" : 8.043426612214247,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -15055,16 +15055,16 @@
     },
     "transferModifiers" : { },
     "statModifiers" : {
-      "EVASION" : {
-        "flat" : -45.64217856412468,
+      "PHYSICALATTACK" : {
+        "flat" : 16.576309582117936,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "PHYSICALATTACK" : {
-        "flat" : 16.576309582117936,
+      "EVASION" : {
+        "flat" : -45.64217856412468,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -15086,14 +15086,6 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 308.7437328523235,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALDEFENSE" : {
           "flat" : 186.58060343772303,
           "mult" : 0.0,
@@ -15102,8 +15094,8 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "ATTACKSPEED" : {
-          "flat" : -0.031219194874547784,
+        "MAGICALDEFENSE" : {
+          "flat" : 308.7437328523235,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -15120,6 +15112,14 @@
         },
         "PHYSICALBLOCK" : {
           "flat" : 9.511199620462355,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "ATTACKSPEED" : {
+          "flat" : -0.031219194874547784,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -15327,7 +15327,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -15622,7 +15622,7 @@
         "name" : "Desert Crawler Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nCrit (75.0%)\n\nMaterial Toughness : 50%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของเดเซิร์ทครอวเลอร์ มีมวลมาก หนักกว่าที่เห็น น่าจะเหมาะกับการใช้สร้างทั้งเกราะและอาวุธ",
         "price" : "",
         "weight" : 1,
@@ -15917,7 +15917,7 @@
         "name" : "Sharp Eye Snake Fang",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (20.0%)\nCrit (15.0%)\n\nMaterial Toughness : 40%",
+        "statusDescription" : "",
         "lore" : "เขี้ยวของงูชาร์ปอาย มีความแหลมคมและทนทานสูง",
         "price" : "Buy 2 Silver",
         "weight" : 1,
@@ -16110,14 +16110,6 @@
     "statusModifiers" : { },
     "transferModifiers" : { },
     "statModifiers" : {
-      "MAGICALDEFENSE" : {
-        "flat" : 308.7437328523235,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "PHYSICALDEFENSE" : {
         "flat" : 186.58060343772303,
         "mult" : 0.0,
@@ -16126,8 +16118,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "ATTACKSPEED" : {
-        "flat" : -0.031219194874547784,
+      "MAGICALDEFENSE" : {
+        "flat" : 308.7437328523235,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -16144,6 +16136,4017 @@
       },
       "PHYSICALBLOCK" : {
         "flat" : 9.511199620462355,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "ATTACKSPEED" : {
+        "flat" : -0.031219194874547784,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Arsanist" : {
+    "name" : "Arsanist",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "35.01 PATK\n40.24 RATK\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "TURRET",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 35.00794280530255,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 40.24070401115705,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Solid",
+      "boost_material_ids" : [ 0, 1, 0, 1 ],
+      "catalyst_ids" : [ ],
+      "tier" : 3,
+      "base_rolled" : 17.424521682585116,
+      "final_value" : 17.424521682585116,
+      "mod" : {
+        "statType" : "PHYSICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Solid",
+      "boost_material_ids" : [ 0, 1, 0, 1 ],
+      "catalyst_ids" : [ ],
+      "tier" : 3,
+      "base_rolled" : 20.54002066042818,
+      "final_value" : 20.54002066042818,
+      "mod" : {
+        "statType" : "RANGEDATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 1,
+      "pool_name" : "Solid",
+      "boost_material_ids" : [ 0, 1, 0, 1 ],
+      "catalyst_ids" : [ ],
+      "tier" : 3,
+      "base_rolled" : 17.583421122717436,
+      "final_value" : 17.583421122717436,
+      "mod" : {
+        "statType" : "PHYSICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 1,
+      "pool_name" : "Solid",
+      "boost_material_ids" : [ 0, 1, 0, 1 ],
+      "catalyst_ids" : [ ],
+      "tier" : 3,
+      "base_rolled" : 19.700683350728873,
+      "final_value" : 19.700683350728873,
+      "mod" : {
+        "statType" : "RANGEDATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Fire Ant Shell",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nFire (40.0%)\n\nMaterial Toughness : 35%",
+        "lore" : "เปลือกของมดเพลิง มีความทนทานในแบบของมันเอง ไม่ได้แข็งแรงมากมายนักแต่ก็พอใช้สร้างอุปกรณ์ทั่วๆไปได้",
+        "price" : "Sell 4 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 35,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Solid" : {
+            "pool" : {
+              "pool_name" : "Solid",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 2
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 1
+          },
+          "Fire Proof" : {
+            "pool" : {
+              "pool_name" : "Fire Proof",
+              "weaponMods" : [ ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "FIRE" : 0.4
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Fire Ant Shell",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nFire (40.0%)\n\nMaterial Toughness : 35%",
+        "lore" : "เปลือกของมดเพลิง มีความทนทานในแบบของมันเอง ไม่ได้แข็งแรงมากมายนักแต่ก็พอใช้สร้างอุปกรณ์ทั่วๆไปได้",
+        "price" : "Sell 4 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 35,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Solid" : {
+            "pool" : {
+              "pool_name" : "Solid",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 2
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 1
+          },
+          "Fire Proof" : {
+            "pool" : {
+              "pool_name" : "Fire Proof",
+              "weaponMods" : [ ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "FIRE" : 0.4
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ {
+      "catalyst_id" : 0,
+      "catalyst_name" : "White Flux"
+    } ],
+    "statusModifiers" : { },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
+        "flat" : 35.00794280530255,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "RANGEDATTACK" : {
+        "flat" : 40.24070401115705,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Kelanphite Weapon Frame" : {
+    "name" : "Kelanphite Weapon Frame",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "22.91 STR\n32.99 DEX\n120.75 PATK\n178.83 RATK\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "WEAPON",
+    "weaponType" : "BOW",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 120.75345746194034,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 178.82919851260277,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 22.909817920021172,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEXTERITY" : {
+          "flat" : 32.987968434061926,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Sharp",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 120.75345746194034,
+      "final_value" : 120.75345746194034,
+      "mod" : {
+        "statType" : "PHYSICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Sharp",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 90.06068292851386,
+      "final_value" : 90.06068292851386,
+      "mod" : {
+        "statType" : "RANGEDATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 22.909817920021172,
+      "final_value" : 22.909817920021172,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "STRENGTH",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 88.76851558408892,
+      "final_value" : 88.76851558408892,
+      "mod" : {
+        "statType" : "RANGEDATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Sharp",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 32.987968434061926,
+      "final_value" : 32.987968434061926,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "DEXTERITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Kelanphite",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nAccurate (100.0%)\nCrit (100.0%)\n\nMaterial Toughness : 95%",
+        "lore" : "เคลันไฟท์ มีความแข็งและทนทานมากจนยากที่จะทำให้เปลี่ยนแปลงรูปร่างได้ ส่วนแหลมคมของมันอันตรายมาก สามารถทะลุทะลวงเกราะหนาได้อย่างง่ายดาย",
+        "price" : "",
+        "weight" : 3,
+        "price_in_copper" : 0,
+        "material_toughness" : 95,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          },
+          "Sharp" : {
+            "pool" : {
+              "pool_name" : "Sharp",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "ACCURATE" : 1.0,
+          "CRIT" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 4,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 5,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 6,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 22.909817920021172,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DEXTERITY" : {
+        "flat" : 32.987968434061926,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
+        "flat" : 120.75345746194034,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "RANGEDATTACK" : {
+        "flat" : 178.82919851260277,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Kelanphite armor frame" : {
+    "name" : "Kelanphite armor frame",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "17.73 STR\n177.69 PDEF\n347.45 MDEF\n281.44 HP\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "GLOVES",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 177.68629912847152,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 347.4541163671295,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHPOINT" : {
+          "flat" : 281.435362304102,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "STRENGTH" : {
+          "flat" : 17.727608029604994,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 177.68629912847152,
+      "final_value" : 177.68629912847152,
+      "mod" : {
+        "statType" : "PHYSICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 176.0972288017109,
+      "final_value" : 176.0972288017109,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Tough",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 281.435362304102,
+      "final_value" : 281.435362304102,
+      "mod" : {
+        "statType" : "HEALTHPOINT",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Tough",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 171.35688756541853,
+      "final_value" : 171.35688756541853,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 17.727608029604994,
+      "final_value" : 17.727608029604994,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "STRENGTH",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Kelanphite",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nAccurate (100.0%)\nCrit (100.0%)\n\nMaterial Toughness : 95%",
+        "lore" : "เคลันไฟท์ มีความแข็งและทนทานมากจนยากที่จะทำให้เปลี่ยนแปลงรูปร่างได้ ส่วนแหลมคมของมันอันตรายมาก สามารถทะลุทะลวงเกราะหนาได้อย่างง่ายดาย",
+        "price" : "",
+        "weight" : 3,
+        "price_in_copper" : 0,
+        "material_toughness" : 95,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          },
+          "Sharp" : {
+            "pool" : {
+              "pool_name" : "Sharp",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "ACCURATE" : 1.0,
+          "CRIT" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 4,
+      "material" : {
+        "name" : "Animal Skin",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
+        "price" : "Sell 1 Copper",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Flexible" : {
+            "pool" : {
+              "pool_name" : "Flexible",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITSHIELD",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 1,
+            "maxTier" : 1,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 17.727608029604994,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "PHYSICALDEFENSE" : {
+        "flat" : 177.68629912847152,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 347.4541163671295,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "HEALTHPOINT" : {
+        "flat" : 281.435362304102,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "GuMaiRu" : {
+    "name" : "GuMaiRu",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "257.91 MDEF\n2.26 MSPD\n218.31 MagicalPen\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "ACCESSORY",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 257.91368923762604,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 2.2559928542100827,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALPENETRATE" : {
+          "flat" : 218.30710561225834,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 7,
+      "base_material_id" : 0,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 120.94592402338029,
+      "final_value" : 120.94592402338029,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Swaying",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 2.2559928542100827,
+      "final_value" : 2.2559928542100827,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 600,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 100.07613639117675,
+      "final_value" : 100.07613639117675,
+      "mod" : {
+        "statType" : "MAGICALPENETRATE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 6,
+      "base_material_id" : 0,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 136.96776521424573,
+      "final_value" : 136.96776521424573,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 118.23096922108161,
+      "final_value" : 118.23096922108161,
+      "mod" : {
+        "statType" : "MAGICALPENETRATE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Sunlight Particle",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (100.0%)\nControl (100.0%)\n\nMaterial Toughness : 90%",
+        "lore" : "อนุภาคแสงตะวันที่เก็บไว้ในภาชนะเป็นอย่างดี มีความสามารถในการเป็นสื่อเวทมนตร์ได้ดีเยี่ยม โดดเด่นในเรื่องของความรวดเร็วและทรงพลัง",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          },
+          "Swaying" : {
+            "pool" : {
+              "pool_name" : "Swaying",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "CASTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "DEFLECTION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 600,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 1.0,
+          "CONTROL" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ {
+      "catalyst_id" : 0,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 1,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 2,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 3,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 4,
+      "catalyst_name" : "Unstable Shard"
+    } ],
+    "statusModifiers" : { },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "MAGICALDEFENSE" : {
+        "flat" : 257.91368923762604,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MOVEMENTSPEED" : {
+        "flat" : 2.2559928542100827,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALPENETRATE" : {
+        "flat" : 218.30710561225834,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "sun Tear" : {
+    "name" : "sun Tear",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "0.58 ManaRegen\n217.52 HealthRegen\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "HELMET",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "MANAREGEN" : {
+          "flat" : 0.5848934958447505,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALTHREGEN" : {
+          "flat" : 217.52050392011787,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Regeneration",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 14,
+      "base_rolled" : 0.5848934958447505,
+      "final_value" : 0.5848934958447505,
+      "mod" : {
+        "statType" : "MANAREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Regeneration",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 13,
+      "base_rolled" : 68.89711062089789,
+      "final_value" : 68.89711062089789,
+      "mod" : {
+        "statType" : "HEALTHREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Regeneration",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 13,
+      "base_rolled" : 71.19360518522602,
+      "final_value" : 71.19360518522602,
+      "mod" : {
+        "statType" : "HEALTHREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Regeneration",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 15,
+      "base_rolled" : 77.42978811399396,
+      "final_value" : 77.42978811399396,
+      "mod" : {
+        "statType" : "HEALTHREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Everlasting Tear",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nRegen (200.0%)\n\nMaterial Toughness : 95%",
+        "lore" : "ของเหลวสีใสคล้ายหยาดน้ำตา มีความสามารถในการฟื้นฟูบาดแผลอย่างมหาศาล อีกทั้งยังมีจุดเด่นในเรื่องของการเรียบเรียงและฟื้นฟูมานาด้วย",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 95,
+        "material_max_mod" : 4,
+        "reveal_usage" : false,
+        "pools" : {
+          "Regeneration" : {
+            "pool" : {
+              "pool_name" : "Regeneration",
+              "weaponMods" : [ {
+                "statType" : "HEALTHREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "HEALTHREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "HEALTHREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 13,
+            "maxTier" : 15,
+            "maxModsAllowed" : 4
+          }
+        },
+        "modBoost" : {
+          "REGEN" : 2.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ {
+      "catalyst_id" : 0,
+      "catalyst_name" : "Unstable Shard"
+    } ],
+    "statusModifiers" : { },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "MANAREGEN" : {
+        "flat" : 0.5848934958447505,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "HEALTHREGEN" : {
+        "flat" : 217.52050392011787,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Skuld Wisdom" : {
+    "name" : "Skuld Wisdom",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "12.98 INT\n0.91 ManaRegen\n156.66 MATK\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "ACCESSORY",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "MANAREGEN" : {
+          "flat" : 0.9058908957990353,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 156.6601498282262,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "INTELLIGENCE" : {
+          "flat" : 12.984675132839385,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 0.47831059015871324,
+      "final_value" : 0.47831059015871324,
+      "mod" : {
+        "statType" : "MANAREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 0.427580305640322,
+      "final_value" : 0.427580305640322,
+      "mod" : {
+        "statType" : "MANAREGEN",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 12.984675132839385,
+      "final_value" : 12.984675132839385,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 55.099054094286146,
+      "final_value" : 55.099054094286146,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 67.1721971414353,
+      "final_value" : 67.1721971414353,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 34.38889859250474,
+      "final_value" : 34.38889859250474,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Wandrite",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nPhysical (-35.0%)\nMagic (80.0%)\n\nMaterial Toughness : 90%",
+        "lore" : "วันไดรต์ แร่ที่สาปสูญไปกับกาลเวลานานมาแล้ว\nเปราะบางมาก แต่ถึงอย่างนั้นก็มีความสามารถในการเป็นสื่อเวทมนตร์ที่ยอดเยี่ยม หากถูกหลอมอย่างถูกต้องก็จะดึงเอาคุณสมบัติแท้จริงออกมาได้",
+        "price" : "",
+        "weight" : 3,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 6,
+        "reveal_usage" : false,
+        "pools" : {
+          "Mana Reactive" : {
+            "pool" : {
+              "pool_name" : "Mana Reactive",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 6
+          },
+          "Brittle" : {
+            "pool" : {
+              "pool_name" : "Brittle",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "PHYSICAL" : -0.35,
+          "MAGIC" : 0.8
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 12.984675132839385,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "MANAREGEN" : {
+        "flat" : 0.9058908957990353,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALATTACK" : {
+        "flat" : 156.6601498282262,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Araiwa" : {
+    "name" : "Araiwa",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "189.74 Deflection\n99.48 MATK\n178.31 MDEF\n110.06 Evasion\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "HELMET",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "DEFLECTION" : {
+          "flat" : 189.73814313988913,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 99.48249171127219,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 178.31493174763128,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 110.06075776562076,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Swaying",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 189.73814313988913,
+      "final_value" : 189.73814313988913,
+      "mod" : {
+        "statType" : "DEFLECTION",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 52.534777331961564,
+      "final_value" : 52.534777331961564,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 46.94771437931062,
+      "final_value" : 46.94771437931062,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 6,
+      "base_material_id" : 0,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 178.31493174763128,
+      "final_value" : 178.31493174763128,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Swaying",
+      "boost_material_ids" : [ 0, 0 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 110.06075776562076,
+      "final_value" : 110.06075776562076,
+      "mod" : {
+        "statType" : "EVASION",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Sunlight Particle",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (100.0%)\nControl (100.0%)\n\nMaterial Toughness : 90%",
+        "lore" : "อนุภาคแสงตะวันที่เก็บไว้ในภาชนะเป็นอย่างดี มีความสามารถในการเป็นสื่อเวทมนตร์ได้ดีเยี่ยม โดดเด่นในเรื่องของความรวดเร็วและทรงพลัง",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          },
+          "Swaying" : {
+            "pool" : {
+              "pool_name" : "Swaying",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "CASTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "DEFLECTION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 600,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 11,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 1.0,
+          "CONTROL" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "statusModifiers" : { },
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "DEFLECTION" : {
+        "flat" : 189.73814313988913,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALATTACK" : {
+        "flat" : 99.48249171127219,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 178.31493174763128,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "EVASION" : {
+        "flat" : 110.06075776562076,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,

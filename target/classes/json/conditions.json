@@ -38617,10 +38617,10 @@
   "Power Pump" : {
     "name" : "Power Pump",
     "description" : "",
-    "statusDescription" : "30% GlobalPATK\n30% GlobalMATK\n30% GlobalRATK\n\n",
+    "statusDescription" : "30% GlobalRATK\n30% GlobalMATK\n30% GlobalPATK\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
+        "RANGEDATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -38636,7 +38636,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "RANGEDATTACK" : {
+        "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -38677,10 +38677,10 @@
   "Omit" : {
     "name" : "Omit",
     "description" : "",
-    "statusDescription" : "-37.5% GlobalPATK\n-37.5% GlobalMATK\n-37.5% GlobalRATK\n\n",
+    "statusDescription" : "-37.5% GlobalRATK\n-37.5% GlobalMATK\n-37.5% GlobalPATK\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "PHYSICALATTACK" : {
+        "RANGEDATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -38696,7 +38696,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "RANGEDATTACK" : {
+        "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
