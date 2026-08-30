@@ -303,7 +303,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.014285211546068396,
@@ -329,7 +328,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Drifting Blade" : {
     "name" : "Drifting Blade",
@@ -2009,7 +2009,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 44.863197545792914,
@@ -2051,7 +2050,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 02" : {
     "name" : "Egg 02",
@@ -3053,7 +3053,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "RANGEDATTACK" : {
         "flat" : -20.912736346066406,
@@ -3063,7 +3062,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 03" : {
     "name" : "Egg 03",
@@ -4320,7 +4320,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITDAMAGE" : {
         "flat" : 0.1468768825108237,
@@ -4338,7 +4337,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 04" : {
     "name" : "Egg 04",
@@ -5475,7 +5475,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 815.9537775621258,
@@ -5525,7 +5524,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Twice Critical" : {
     "name" : "Twice Critical",
@@ -7086,7 +7086,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : -386.84142056672016,
@@ -7104,7 +7103,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 06" : {
     "name" : "Egg 06",
@@ -8629,7 +8629,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 52.84602076465983,
@@ -8655,7 +8654,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 2" : {
     "name" : "Egg 2",
@@ -10007,7 +10007,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 137.21177899230696,
@@ -10033,7 +10032,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 5" : {
     "name" : "Egg 5",
@@ -11527,7 +11527,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : -368.818530312796,
@@ -11553,7 +11552,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Egg 0" : {
     "name" : "Egg 0",
@@ -12728,7 +12728,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 65.87898060675798,
@@ -12762,7 +12761,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Velocity MK I" : {
     "name" : "Velocity MK I",
@@ -13290,7 +13290,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 8.4339439873623,
@@ -13308,7 +13307,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Poor Gloves" : {
     "name" : "Poor Gloves",
@@ -13985,7 +13985,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 35.89293240960212,
@@ -14011,7 +14010,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Sad Ring" : {
     "name" : "Sad Ring",
@@ -15053,7 +15053,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 16.576309582117936,
@@ -15071,7 +15070,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Arai Kor Meng" : {
     "name" : "Arai Kor Meng",
@@ -16108,7 +16108,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 186.58060343772303,
@@ -16150,7 +16149,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Arsanist" : {
     "name" : "Arsanist",
@@ -16263,7 +16263,7 @@
         "name" : "Fire Ant Shell",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nFire (40.0%)\n\nMaterial Toughness : 35%",
+        "statusDescription" : "",
         "lore" : "เปลือกของมดเพลิง มีความทนทานในแบบของมันเอง ไม่ได้แข็งแรงมากมายนักแต่ก็พอใช้สร้างอุปกรณ์ทั่วๆไปได้",
         "price" : "Sell 4 Copper",
         "weight" : 1,
@@ -16404,7 +16404,7 @@
         "name" : "Fire Ant Shell",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nFire (40.0%)\n\nMaterial Toughness : 35%",
+        "statusDescription" : "",
         "lore" : "เปลือกของมดเพลิง มีความทนทานในแบบของมันเอง ไม่ได้แข็งแรงมากมายนักแต่ก็พอใช้สร้างอุปกรณ์ทั่วๆไปได้",
         "price" : "Sell 4 Copper",
         "weight" : 1,
@@ -16545,7 +16545,6 @@
       "catalyst_name" : "White Flux"
     } ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 35.00794280530255,
@@ -16563,7 +16562,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Kelanphite Weapon Frame" : {
     "name" : "Kelanphite Weapon Frame",
@@ -16710,7 +16710,7 @@
         "name" : "Kelanphite",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (100.0%)\nCrit (100.0%)\n\nMaterial Toughness : 95%",
+        "statusDescription" : "",
         "lore" : "เคลันไฟท์ มีความแข็งและทนทานมากจนยากที่จะทำให้เปลี่ยนแปลงรูปร่างได้ ส่วนแหลมคมของมันอันตรายมาก สามารถทะลุทะลวงเกราะหนาได้อย่างง่ายดาย",
         "price" : "",
         "weight" : 3,
@@ -16943,7 +16943,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17078,7 +17078,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17213,7 +17213,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17348,7 +17348,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17483,7 +17483,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17618,7 +17618,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -17767,7 +17767,6 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 120.75345746194034,
@@ -17785,7 +17784,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Kelanphite armor frame" : {
     "name" : "Kelanphite armor frame",
@@ -17800,6 +17800,14 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
+        "HEALTHPOINT" : {
+          "flat" : 281.435362304102,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
         "PHYSICALDEFENSE" : {
           "flat" : 177.68629912847152,
           "mult" : 0.0,
@@ -17810,14 +17818,6 @@
         },
         "MAGICALDEFENSE" : {
           "flat" : 347.4541163671295,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALTHPOINT" : {
-          "flat" : 281.435362304102,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -17932,7 +17932,7 @@
         "name" : "Kelanphite",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nAccurate (100.0%)\nCrit (100.0%)\n\nMaterial Toughness : 95%",
+        "statusDescription" : "",
         "lore" : "เคลันไฟท์ มีความแข็งและทนทานมากจนยากที่จะทำให้เปลี่ยนแปลงรูปร่างได้ ส่วนแหลมคมของมันอันตรายมาก สามารถทะลุทะลวงเกราะหนาได้อย่างง่ายดาย",
         "price" : "",
         "weight" : 3,
@@ -18165,7 +18165,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -18300,7 +18300,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -18435,7 +18435,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -18570,7 +18570,7 @@
         "name" : "Animal Skin",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nDefense (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 20%",
+        "statusDescription" : "",
         "lore" : "หนังทั่วๆไป หากทำความสะอาดและถอนขนออกแล้ว ก็สามารถประดิษฐ์ให้กลายเป็นชุดใส่สบายตัวได้",
         "price" : "Sell 1 Copper",
         "weight" : 1,
@@ -18711,8 +18711,15 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
+      "HEALTHPOINT" : {
+        "flat" : 281.435362304102,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
       "PHYSICALDEFENSE" : {
         "flat" : 177.68629912847152,
         "mult" : 0.0,
@@ -18728,16 +18735,9 @@
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
-      },
-      "HEALTHPOINT" : {
-        "flat" : 281.435362304102,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "GuMaiRu" : {
     "name" : "GuMaiRu",
@@ -18875,7 +18875,7 @@
         "name" : "Sunlight Particle",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nSpeed (100.0%)\nControl (100.0%)\n\nMaterial Toughness : 90%",
+        "statusDescription" : "",
         "lore" : "อนุภาคแสงตะวันที่เก็บไว้ในภาชนะเป็นอย่างดี มีความสามารถในการเป็นสื่อเวทมนตร์ได้ดีเยี่ยม โดดเด่นในเรื่องของความรวดเร็วและทรงพลัง",
         "price" : "",
         "weight" : 1,
@@ -19094,7 +19094,7 @@
         "name" : "Rune Dust",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "statusDescription" : "",
         "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
         "price" : "",
         "weight" : 1,
@@ -19116,7 +19116,7 @@
         "name" : "Rune Dust",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "statusDescription" : "",
         "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
         "price" : "",
         "weight" : 1,
@@ -19138,7 +19138,7 @@
         "name" : "Rune Dust",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nMagic (10.0%)\nStrike (-10.0%)\n\nMaterial Toughness : 0%",
+        "statusDescription" : "",
         "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
         "price" : "",
         "weight" : 1,
@@ -19172,7 +19172,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MAGICALDEFENSE" : {
         "flat" : 257.91368923762604,
@@ -19198,7 +19197,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "sun Tear" : {
     "name" : "sun Tear",
@@ -19311,7 +19311,7 @@
         "name" : "Everlasting Tear",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nRegen (200.0%)\n\nMaterial Toughness : 95%",
+        "statusDescription" : "",
         "lore" : "ของเหลวสีใสคล้ายหยาดน้ำตา มีความสามารถในการฟื้นฟูบาดแผลอย่างมหาศาล อีกทั้งยังมีจุดเด่นในเรื่องของการเรียบเรียงและฟื้นฟูมานาด้วย",
         "price" : "",
         "weight" : 1,
@@ -19389,7 +19389,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MANAREGEN" : {
         "flat" : 0.5848934958447505,
@@ -19407,7 +19406,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Skuld Wisdom" : {
     "name" : "Skuld Wisdom",
@@ -19422,16 +19422,16 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MANAREGEN" : {
-          "flat" : 0.9058908957990353,
+        "MAGICALATTACK" : {
+          "flat" : 156.6601498282262,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "MAGICALATTACK" : {
-          "flat" : 156.6601498282262,
+        "MANAREGEN" : {
+          "flat" : 0.9058908957990353,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -19563,7 +19563,7 @@
         "name" : "Wandrite",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nPhysical (-35.0%)\nMagic (80.0%)\n\nMaterial Toughness : 90%",
+        "statusDescription" : "",
         "lore" : "วันไดรต์ แร่ที่สาปสูญไปกับกาลเวลานานมาแล้ว\nเปราะบางมาก แต่ถึงอย่างนั้นก็มีความสามารถในการเป็นสื่อเวทมนตร์ที่ยอดเยี่ยม หากถูกหลอมอย่างถูกต้องก็จะดึงเอาคุณสมบัติแท้จริงออกมาได้",
         "price" : "",
         "weight" : 3,
@@ -19739,16 +19739,7 @@
         "passiveMult" : 0.0
       }
     },
-    "transferModifiers" : { },
     "statModifiers" : {
-      "MANAREGEN" : {
-        "flat" : 0.9058908957990353,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "MAGICALATTACK" : {
         "flat" : 156.6601498282262,
         "mult" : 0.0,
@@ -19756,8 +19747,17 @@
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
+      },
+      "MANAREGEN" : {
+        "flat" : 0.9058908957990353,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Araiwa" : {
     "name" : "Araiwa",
@@ -19772,14 +19772,6 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "DEFLECTION" : {
-          "flat" : 189.73814313988913,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "MAGICALATTACK" : {
           "flat" : 99.48249171127219,
           "mult" : 0.0,
@@ -19790,6 +19782,14 @@
         },
         "MAGICALDEFENSE" : {
           "flat" : 178.31493174763128,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "DEFLECTION" : {
+          "flat" : 189.73814313988913,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -19903,7 +19903,7 @@
         "name" : "Sunlight Particle",
         "itemType" : "MATERIAL",
         "description" : "",
-        "statusDescription" : "Boost : \nSpeed (100.0%)\nControl (100.0%)\n\nMaterial Toughness : 90%",
+        "statusDescription" : "",
         "lore" : "อนุภาคแสงตะวันที่เก็บไว้ในภาชนะเป็นอย่างดี มีความสามารถในการเป็นสื่อเวทมนตร์ได้ดีเยี่ยม โดดเด่นในเรื่องของความรวดเร็วและทรงพลัง",
         "price" : "",
         "weight" : 1,
@@ -20119,16 +20119,7 @@
     } ],
     "catalystInstances" : [ ],
     "statusModifiers" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
-      "DEFLECTION" : {
-        "flat" : 189.73814313988913,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "MAGICALATTACK" : {
         "flat" : 99.48249171127219,
         "mult" : 0.0,
@@ -20145,6 +20136,14 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
+      "DEFLECTION" : {
+        "flat" : 189.73814313988913,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
       "EVASION" : {
         "flat" : 110.06075776562076,
         "mult" : 0.0,
@@ -20153,6 +20152,7 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   }
 }
