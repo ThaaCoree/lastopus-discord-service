@@ -3,9 +3,9 @@ package model.entity.items.crafted_equipments;
 import model.type.MaterialRole;
 
 public class MaterialInstance {
-    int material_id;
-    CraftingMaterial material;
-    MaterialRole material_role;
+    public int material_id;
+    public CraftingMaterial material;
+    public MaterialRole material_role;
 
     public MaterialInstance() {
 

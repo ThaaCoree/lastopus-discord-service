@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CraftModPool {
-    String pool_name = "";
-    List<CraftedMod> weaponMods = new ArrayList<>();
-    List<CraftedMod> armorMods = new ArrayList<>();
-    List<CraftedMod> accessoryMods = new ArrayList<>();
-    boolean can_duplicate_mod = false;
-    String description = "";
-    String fixed_mods_description = "";
+    public String pool_name = "";
+    public List<CraftedMod> weaponMods = new ArrayList<>();
+    public List<CraftedMod> armorMods = new ArrayList<>();
+    public List<CraftedMod> accessoryMods = new ArrayList<>();
+    public boolean can_duplicate_mod = false;
+    public String description = "";
+    public String fixed_mods_description = "";
 
     public CraftModPool(String pool_name) {
         this.pool_name = pool_name;

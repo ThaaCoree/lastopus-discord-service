@@ -7,15 +7,15 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CraftingMaterial extends Item {
-    int material_toughness;
-    int material_max_mod = 1;
-    boolean reveal_usage;
-    Map<String, CraftPoolEntry> pools = new LinkedHashMap<>();
+    public int material_toughness;
+    public int material_max_mod = 1;
+    public boolean reveal_usage;
+    public Map<String, CraftPoolEntry> pools = new LinkedHashMap<>();
 
-    Map<StatTag, Double> modBoost = new LinkedHashMap<>();
+    public Map<StatTag, Double> modBoost = new LinkedHashMap<>();
 
     //crate max mods from each material
-    boolean unique_boost;
+    public boolean unique_boost;
 
     CraftingMaterial(int material_toughness, boolean unique_boost) {
         this.material_toughness = material_toughness;
@@ -58,12 +58,12 @@ public class CraftingMaterial extends Item {
 
     public static class CraftPoolEntry {
 
-        CraftModPool pool;
+        public CraftModPool pool;
 
-        int minTier;
-        int maxTier;
+        public int minTier;
+        public int maxTier;
 
-        int maxModsAllowed;
+        public int maxModsAllowed;
 
         public CraftPoolEntry() {
 

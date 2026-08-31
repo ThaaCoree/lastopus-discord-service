@@ -150,6 +150,8 @@ public class Crafter {
         return modifier;
     }
 
+
+
     public static boolean shatterItem(CraftedEquipment equipment) {
         int base_materials = 0;
         int boost_materials = 0;

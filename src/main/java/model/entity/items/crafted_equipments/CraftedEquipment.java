@@ -12,12 +12,12 @@ import java.util.List;
 
 public class CraftedEquipment extends Equipment {
     String id;
-    int mod_id = 0;
+    public int mod_id = 0;
     private int next_material_id = 0;
     private int next_catalyst_id = 0;
-    List<ModInstance> modInstances = new ArrayList<>();
-    List<MaterialInstance> materialInstances = new ArrayList<>();
-    List<CatalystInstance> catalystInstances = new ArrayList<>();
+    public List<ModInstance> modInstances = new ArrayList<>();
+    public List<MaterialInstance> materialInstances = new ArrayList<>();
+    public List<CatalystInstance> catalystInstances = new ArrayList<>();
 
     public CraftedEquipment() {
 
@@ -63,6 +63,16 @@ public class CraftedEquipment extends Equipment {
 
     public List<ModInstance> getModInstances() {
         return modInstances;
+    }
+
+    @JsonIgnore
+    public int getMod_id() {
+        return mod_id;
+    }
+
+    @JsonIgnore
+    public void setMod_id(int mod_id) {
+        this.mod_id = mod_id;
     }
 
     @JsonIgnore

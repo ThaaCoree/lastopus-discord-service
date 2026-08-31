@@ -18,6 +18,8 @@ public class CatalystFactory {
         register(new Polarizer());
         register(new Night_Shard());
         register(new Two_Toned_Infusion_Shard());
+        register(new Dawn_Shard());
+        register(new Dusk_Shard());
     }
 
     private void register(CatalystEffect effect) {

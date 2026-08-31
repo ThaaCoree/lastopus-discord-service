@@ -146,4 +146,8 @@ public class ModInstance {
     public void multiplyTier(double multiply) {
         tier *= multiply;
     }
+
+    public void setTier(int tier) {
+        this.tier = tier;
+    }
 }
