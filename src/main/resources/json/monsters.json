@@ -38283,11 +38283,11 @@
         "condition" : {
           "name" : "Forgotten Pages",
           "description" : "",
-          "statusDescription" : "392.44 PATK\n392.44 MATK\n392.44 RATK\n\n",
+          "statusDescription" : "\n",
           "modifiers" : {
             "statModifiers" : {
               "PHYSICALATTACK" : {
-                "flat" : 392.4410254708557,
+                "flat" : 0.0,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38295,7 +38295,7 @@
                 "passiveMult" : 0.0
               },
               "MAGICALATTACK" : {
-                "flat" : 392.4410254708557,
+                "flat" : 0.0,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38303,7 +38303,7 @@
                 "passiveMult" : 0.0
               },
               "RANGEDATTACK" : {
-                "flat" : 392.4410254708557,
+                "flat" : 0.0,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38738,7 +38738,7 @@
         "sourceName" : null,
         "appliedTime" : 3.0,
         "duration" : 99.0,
-        "durationRemain" : 96.0
+        "durationRemain" : 96
       }
     },
     "statuses" : {
@@ -38782,17 +38782,17 @@
       "PHYSICALATTACK" : {
         "base" : 102.0,
         "current" : 102.0,
-        "final" : 494.4410254708557
+        "final" : 102.0
       },
       "MAGICALATTACK" : {
         "base" : 36.0,
         "current" : 36.0,
-        "final" : 428.4410254708557
+        "final" : 36.0
       },
       "RANGEDATTACK" : {
         "base" : 91.0,
         "current" : 91.0,
-        "final" : 483.4410254708557
+        "final" : 91.0
       },
       "HEALTHPOINT" : {
         "base" : 4058.0,
@@ -77607,7 +77607,7 @@
         "sourceName" : null,
         "appliedTime" : 0.0,
         "duration" : 1.0,
-        "durationRemain" : 1.0
+        "durationRemain" : 1
       }
     },
     "statuses" : {
@@ -83764,7 +83764,7 @@
         "sourceName" : null,
         "appliedTime" : 4.0,
         "duration" : 99.0,
-        "durationRemain" : 95.0
+        "durationRemain" : 95
       },
       "2" : {
         "condition" : {
@@ -84225,7 +84225,7 @@
         "sourceName" : null,
         "appliedTime" : 4.0,
         "duration" : 99.0,
-        "durationRemain" : 95.0
+        "durationRemain" : 95
       },
       "3" : {
         "condition" : {
@@ -84686,7 +84686,7 @@
         "sourceName" : null,
         "appliedTime" : 4.0,
         "duration" : 99.0,
-        "durationRemain" : 95.0
+        "durationRemain" : 95
       },
       "4" : {
         "condition" : {
@@ -85152,7 +85152,7 @@
         "sourceName" : null,
         "appliedTime" : 1.0,
         "duration" : 100.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       }
     },
     "statuses" : {
@@ -88791,6 +88791,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -88801,7 +88802,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -88901,6 +88901,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -88911,7 +88912,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -89011,6 +89011,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -89021,7 +89022,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -89116,8 +89116,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "statModifiers" : { },
           "transferModifiers" : { },
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -90011,6 +90011,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -90021,7 +90022,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90121,6 +90121,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -90131,7 +90132,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90231,6 +90231,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -90241,7 +90242,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -90332,8 +90332,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "statModifiers" : { },
           "transferModifiers" : { },
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91251,6 +91251,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -91261,7 +91262,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91361,6 +91361,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -91371,7 +91372,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91471,6 +91471,7 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
+          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -91481,7 +91482,6 @@
               "passiveMult" : 0.0
             }
           },
-          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -91576,8 +91576,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "statModifiers" : { },
           "transferModifiers" : { },
+          "statModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -96491,7 +96491,7 @@
         "sourceName" : null,
         "appliedTime" : 4.0,
         "duration" : 99.0,
-        "durationRemain" : 95.0
+        "durationRemain" : 95
       }
     },
     "statuses" : {
@@ -98574,7 +98574,7 @@
         "sourceName" : null,
         "appliedTime" : 2.0,
         "duration" : 3.0,
-        "durationRemain" : 1.0
+        "durationRemain" : 1
       }
     },
     "statuses" : {
@@ -111348,7 +111348,7 @@
         "sourceName" : null,
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       }
     },
     "statuses" : {
@@ -113781,7 +113781,7 @@
         "sourceName" : "Koto",
         "appliedTime" : 3.0,
         "duration" : 4.0,
-        "durationRemain" : 1.0
+        "durationRemain" : 1
       },
       "2" : {
         "condition" : {
@@ -114242,7 +114242,7 @@
         "sourceName" : null,
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       }
     },
     "statuses" : {
@@ -114290,8 +114290,8 @@
       },
       "MAGICALATTACK" : {
         "base" : 1040.0,
-        "current" : 2236.0000000000005,
-        "final" : 2236.0000000000005
+        "current" : 1040.0,
+        "final" : 1040.0
       },
       "RANGEDATTACK" : {
         "base" : 1027.0,
@@ -115343,9 +115343,9 @@
     "name" : "Ernazik The Empress of Thousand Suns",
     "inSession" : false,
     "unitType" : "MONSTER",
-    "level" : 1,
-    "remainingStatusPoint" : 10,
-    "remainingPassiveTreePoint" : 3,
+    "level" : 60,
+    "remainingStatusPoint" : 0,
+    "remainingPassiveTreePoint" : 180,
     "opusName" : "",
     "opusDescription" : "",
     "mixTwoHanded" : false,
@@ -115356,111 +115356,111 @@
     "conditionInstances" : { },
     "statuses" : {
       "STRENGTH" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 140.0,
+        "current" : 140.0,
+        "final" : 140.0
       },
       "AGILITY" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 160.0,
+        "current" : 160.0,
+        "final" : 160.0
       },
       "VITALITY" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 141.0,
+        "current" : 141.0,
+        "final" : 141.0
       },
       "DEXTERITY" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 241.0,
+        "current" : 241.0,
+        "final" : 241.0
       },
       "WISDOM" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 241.0,
+        "current" : 241.0,
+        "final" : 241.0
       },
       "INTELLIGENCE" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 361.0,
+        "current" : 361.0,
+        "final" : 361.0
       },
       "LUCK" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 141.0,
+        "current" : 141.0,
+        "final" : 141.0
       }
     },
     "stats" : {
       "PHYSICALATTACK" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 640.0,
+        "current" : 1340.0,
+        "final" : 1340.0
       },
       "MAGICALATTACK" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 861.0,
+        "current" : 1561.0,
+        "final" : 1561.0
       },
       "RANGEDATTACK" : {
-        "base" : 1.0,
-        "current" : 1.0,
-        "final" : 1.0
+        "base" : 741.0,
+        "current" : 1441.0,
+        "final" : 1441.0
       },
       "HEALTHPOINT" : {
-        "base" : 121.0,
-        "current" : 121.0,
-        "final" : 121.0
+        "base" : 257556.0,
+        "current" : 257556.0,
+        "final" : 257556.0
       },
       "MANAPOINT" : {
-        "base" : 5.8,
-        "current" : 5.8,
-        "final" : 5.8
+        "base" : 107.3,
+        "current" : 107.3,
+        "final" : 107.3
       },
       "PHYSICALDEFENSE" : {
-        "base" : 6.5,
-        "current" : 6.5,
-        "final" : 6.5
+        "base" : 1774.5,
+        "current" : 3074.5,
+        "final" : 3074.5
       },
       "MAGICALDEFENSE" : {
-        "base" : 6.5,
-        "current" : 6.5,
-        "final" : 6.5
+        "base" : 2216.5,
+        "current" : 3516.5,
+        "final" : 3516.5
       },
       "MOVEMENTSPEED" : {
-        "base" : 2.15,
-        "current" : 2.15,
-        "final" : 2.15
+        "base" : 28.43,
+        "current" : 28.43,
+        "final" : 28.43
       },
       "HEALAMPLIFIER" : {
-        "base" : 0.005,
-        "current" : 0.005,
-        "final" : 0.005
+        "base" : 1.205,
+        "current" : 1.205,
+        "final" : 1.205
       },
       "BUFFAMPLIFIER" : {
-        "base" : 0.0025,
-        "current" : 0.0025,
-        "final" : 0.0025
+        "base" : 0.6025,
+        "current" : 0.6025,
+        "final" : 0.6025
       },
       "DEBUFFAMPLIFIER" : {
-        "base" : 0.0025,
-        "current" : 0.0025,
-        "final" : 0.0025
+        "base" : 0.6025,
+        "current" : 0.6025,
+        "final" : 0.6025
       },
       "CRITCHANCE" : {
-        "base" : 0.05,
-        "current" : 0.0505,
-        "final" : 0.0505
+        "base" : 0.1,
+        "current" : 0.24100000000000002,
+        "final" : 0.24100000000000002
       },
       "CRITDAMAGE" : {
-        "base" : 1.515,
-        "current" : 1.515,
-        "final" : 1.515
+        "base" : 3.6149999999999998,
+        "current" : 3.6149999999999998,
+        "final" : 3.6149999999999998
       },
       "MANAREGEN" : {
         "base" : 0.0,
-        "current" : 1.3029,
-        "final" : 1.3029
+        "current" : 29.34265,
+        "final" : 29.34265
       },
       "HEALTHREGEN" : {
         "base" : 0.0,
@@ -115468,9 +115468,9 @@
         "final" : 0.0
       },
       "DEFLECTION" : {
-        "base" : 56.0,
-        "current" : 56.0,
-        "final" : 56.0
+        "base" : 1374.5,
+        "current" : 1374.5,
+        "final" : 1374.5
       },
       "IGNITEAMP" : {
         "base" : 0.0,
@@ -115483,29 +115483,29 @@
         "final" : 0.0
       },
       "ACCURACY" : {
-        "base" : 37.0,
-        "current" : 37.0,
-        "final" : 37.0
+        "base" : 1717.0,
+        "current" : 1717.0,
+        "final" : 1717.0
       },
       "EVASION" : {
-        "base" : 58.0,
-        "current" : 58.0,
-        "final" : 58.0
+        "base" : 1492.0,
+        "current" : 1492.0,
+        "final" : 1492.0
       },
       "PHYSICALBLOCK" : {
-        "base" : 11.0,
-        "current" : 11.0,
-        "final" : 11.0
+        "base" : 232.0,
+        "current" : 232.0,
+        "final" : 232.0
       },
       "MAGICALBLOCK" : {
-        "base" : 11.0,
-        "current" : 11.0,
-        "final" : 11.0
+        "base" : 232.0,
+        "current" : 232.0,
+        "final" : 232.0
       },
       "DAMAGEREDUCTION" : {
-        "base" : 0.0,
-        "current" : 0.0,
-        "final" : 0.0
+        "base" : 0.25,
+        "current" : 0.25,
+        "final" : 0.25
       },
       "DAMAGEAMPLIFIER" : {
         "base" : 0.0,
@@ -115513,39 +115513,39 @@
         "final" : 0.0
       },
       "ATTACKSPEED" : {
-        "base" : 1.006,
-        "current" : 1.006,
-        "final" : 1.006
+        "base" : 3.71,
+        "current" : 3.71,
+        "final" : 3.71
       },
       "CASTSPEED" : {
-        "base" : 1.006,
-        "current" : 1.006,
-        "final" : 1.006
+        "base" : 3.71,
+        "current" : 3.71,
+        "final" : 3.71
       },
       "PHYSICALPENETRATE" : {
-        "base" : 4.199999999999999,
-        "current" : 4.199999999999999,
-        "final" : 4.199999999999999
+        "base" : 450.4,
+        "current" : 450.4,
+        "final" : 450.4
       },
       "MAGICALPENETRATE" : {
-        "base" : 4.199999999999999,
-        "current" : 4.199999999999999,
-        "final" : 4.199999999999999
+        "base" : 848.2,
+        "current" : 848.2,
+        "final" : 848.2
       },
       "RESERVATION" : {
-        "base" : 0.9900990099009901,
-        "current" : 0.9900990099009901,
-        "final" : 0.9900990099009901
+        "base" : 0.29325513196480935,
+        "current" : 0.29325513196480935,
+        "final" : 0.29325513196480935
       },
       "CRITSHIELD" : {
-        "base" : 0.025,
-        "current" : 0.02525,
-        "final" : 0.02525
+        "base" : 0.07500000000000001,
+        "current" : 0.18075000000000005,
+        "final" : 0.18075000000000005
       },
       "SPEED" : {
-        "base" : 1.1,
-        "current" : 1.1,
-        "final" : 1.1
+        "base" : 132.0,
+        "current" : 132.0,
+        "final" : 132.0
       },
       "SOULPOINT" : {
         "base" : 100.0,
@@ -115563,9 +115563,9 @@
         "final" : 0.0
       },
       "DEBUFFRESISTANCE" : {
-        "base" : 0.0,
-        "current" : 0.0,
-        "final" : 0.0
+        "base" : 0.35,
+        "current" : 0.35,
+        "final" : 0.35
       },
       "POISONAMP" : {
         "base" : 0.0,
@@ -115675,13 +115675,13 @@
     },
     "allocatedPassives" : { },
     "raisedStatuses" : {
-      "STRENGTH" : 0,
-      "AGILITY" : 0,
-      "VITALITY" : 0,
-      "DEXTERITY" : 0,
-      "WISDOM" : 0,
-      "INTELLIGENCE" : 0,
-      "LUCK" : 0
+      "STRENGTH" : 39,
+      "AGILITY" : 59,
+      "VITALITY" : 40,
+      "DEXTERITY" : 40,
+      "WISDOM" : 40,
+      "INTELLIGENCE" : 60,
+      "LUCK" : 40
     },
     "race" : {
       "name" : null,
@@ -115693,14 +115693,14 @@
       "HEALTH" : {
         "reservedFlat" : 0.0,
         "reservedPercent" : 0.0,
-        "usable" : 121.0,
-        "remaining" : 121.0
+        "usable" : 257556.0,
+        "remaining" : 257556.0
       },
       "MANA" : {
         "reservedFlat" : 0.0,
         "reservedPercent" : 0.0,
-        "usable" : 5.8,
-        "remaining" : 5.8
+        "usable" : 107.3,
+        "remaining" : 107.30000000000001
       },
       "DEBRIS" : {
         "reservedFlat" : 0.0,
@@ -115719,8 +115719,182 @@
       "GOLD" : 0,
       "PLATINUM" : 0
     },
-    "skillList" : { },
-    "rawCounterMap" : { },
+    "skillList" : {
+      "Burst Nova" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Intefaatus" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Solar Retaliation" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Temporal Prolong" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Heart Pierce" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Earthquake" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Following Light" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Thousand Suns" : {
+        "instanceBundle" : {
+          "statModifiers" : {
+            "PHYSICALATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "RANGEDATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "MAGICALATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "PHYSICALDEFENSE" : {
+              "flat" : 1300.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "MAGICALDEFENSE" : {
+              "flat" : 1300.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Bound Chain" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Strike" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Dawn Veil" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Beam" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Burn Up" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      }
+    },
+    "rawCounterMap" : {
+      "THE_SUNS" : 1000.0
+    },
     "summons" : { },
     "rune_board" : [ [ false, false, false, false, false, false ], [ false, false, false, false, false, false ], [ false, false, false, false, false, false ], [ false, false, false, false, false, false ], [ false, false, false, false, false, false ], [ false, false, false, false, false, false ] ],
     "rune_inventory" : { },
@@ -115735,7 +115909,7 @@
     "monsterModifier" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
-          "flat" : 0.0,
+          "flat" : 500.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115743,7 +115917,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALATTACK" : {
-          "flat" : 0.0,
+          "flat" : 500.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115751,7 +115925,7 @@
           "passiveMult" : 0.0
         },
         "RANGEDATTACK" : {
-          "flat" : 0.0,
+          "flat" : 500.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115759,7 +115933,7 @@
           "passiveMult" : 0.0
         },
         "HEALTHPOINT" : {
-          "flat" : 0.0,
+          "flat" : 250000.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115775,7 +115949,7 @@
           "passiveMult" : 0.0
         },
         "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
+          "flat" : 1000.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115783,7 +115957,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALDEFENSE" : {
-          "flat" : 0.0,
+          "flat" : 1000.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115823,7 +115997,7 @@
           "passiveMult" : 0.0
         },
         "CRITCHANCE" : {
-          "flat" : 0.0,
+          "flat" : 0.05,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115895,7 +116069,7 @@
           "passiveMult" : 0.0
         },
         "PHYSICALBLOCK" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115903,7 +116077,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALBLOCK" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115911,7 +116085,7 @@
           "passiveMult" : 0.0
         },
         "DAMAGEREDUCTION" : {
-          "flat" : 0.0,
+          "flat" : 0.25,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115927,7 +116101,7 @@
           "passiveMult" : 0.0
         },
         "ATTACKSPEED" : {
-          "flat" : 0.0,
+          "flat" : 1.75,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115935,7 +116109,7 @@
           "passiveMult" : 0.0
         },
         "CASTSPEED" : {
-          "flat" : 0.0,
+          "flat" : 1.75,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115967,7 +116141,7 @@
           "passiveMult" : 0.0
         },
         "CRITSHIELD" : {
-          "flat" : 0.0,
+          "flat" : 0.05,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -115975,7 +116149,7 @@
           "passiveMult" : 0.0
         },
         "SPEED" : {
-          "flat" : 0.0,
+          "flat" : 115.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116007,7 +116181,7 @@
           "passiveMult" : 0.0
         },
         "DEBUFFRESISTANCE" : {
-          "flat" : 0.0,
+          "flat" : 0.35,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116121,7 +116295,7 @@
       },
       "statusModifiers" : {
         "STRENGTH" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116129,7 +116303,7 @@
           "passiveMult" : 0.0
         },
         "AGILITY" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116137,7 +116311,7 @@
           "passiveMult" : 0.0
         },
         "VITALITY" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116145,7 +116319,7 @@
           "passiveMult" : 0.0
         },
         "DEXTERITY" : {
-          "flat" : 0.0,
+          "flat" : 200.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116153,7 +116327,7 @@
           "passiveMult" : 0.0
         },
         "WISDOM" : {
-          "flat" : 0.0,
+          "flat" : 200.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116161,7 +116335,7 @@
           "passiveMult" : 0.0
         },
         "INTELLIGENCE" : {
-          "flat" : 0.0,
+          "flat" : 300.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116169,7 +116343,7 @@
           "passiveMult" : 0.0
         },
         "LUCK" : {
-          "flat" : 0.0,
+          "flat" : 100.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -116181,18 +116355,193 @@
       "skillModifiers" : { }
     },
     "opusMove" : {
-      "1" : "",
-      "2" : "",
-      "3" : "",
-      "4" : "",
-      "5" : "",
-      "6" : ""
+      "1" : "เมื่อถูกวิเคราะห์ สามารถใช้งาน Reaction เพื่อเบี่ยงเบนความสนใจของผู้วิเคราะห์ให้วิเคราะห์ยูนิตอื่นที่ปรากฏอยู่ในระยะสายตาได้\n\nยูนิตดังกล่าวสามารถผนวก Combined Action เพื่อหลับตาวิเคราะห์จากความทรงจำเพื่อหลีกเลี่ยง Move นี้ได้",
+      "2" : "ครอบครองกุญแจแห่งพื้นที่ ทาโลเนีย\nสามารถใช้งาน Reaction เพื่อเชื่อมต่อมิติผ่านบานกระจกได้อย่างอิสระ\nอีกทั้งสิ่งก่อสร้างทั้งหมดในปราการแห่งลาเรโซนิกเองก็อยู่ในการควบคุมของเออร์นาซิก",
+      "3" : "ยูนิตที่มีสถานะ Solar Blessing ที่มองยูนิตนี้อยู่ ไม่สามารถใช้งาน Action หรือ Turn ได้",
+      "4" : "หากมีศัตรูกระทำการให้ตนเองสูญเสียการมองเห็นในสนาม สามารถใช้งาน Reaction เพื่อใช้สกิลหรือโจมตีได้",
+      "5" : "สามารถพูดผ่านเสียงของยูนิตอื่นในสนามได้ เสียงนี้สามารถเกิดขึ้นที่ไหนก็ได้ในสนาม",
+      "6" : "เมื่อยูนิตศัตรูในสนามใช้งาน Turn, สามารถใช้งาน Hold Action เพื่อเลียนแบบการกระทำนั้นได้",
+      "7" : "ยูนิตที่จบเทิร์นในรัศมี 5 เมตรรอบยูนิตนี้(ทะลุผ่านกำแพง)\nได้รับความเสียหายจริงตาม MATK ของยูนิตนี้",
+      "8" : "สามารถใช้งานทหาร \"ทราย\" ในการต่อสู้ได้โดยใช้งาน Reaction ร่วมกับ Combined Action\nหากละทิ้งการควบคุมทหารในเทิร์นนี้ ยูนิตนี้จะมีเทิร์นอีกครั้งในตอนก่อนจบรอบเทิร์น",
+      "9" : "สิ่งก่อสร้างที่ยูนิตนี้เป็นเจ้าของทั้งหมดไม่สามารถถูกทำลายได้โดยยูนิตอื่น"
     },
     "monsterType" : "BOSS",
     "monsterModify" : null,
     "behavior" : "",
     "soulCost" : 0.0,
-    "allSkill" : { }
+    "allSkill" : {
+      "Burst Nova" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Intefaatus" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Solar Retaliation" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Temporal Prolong" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Heart Pierce" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Earthquake" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Following Light" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Thousand Suns" : {
+        "instanceBundle" : {
+          "statModifiers" : {
+            "PHYSICALATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "RANGEDATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "MAGICALATTACK" : {
+              "flat" : 700.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "PHYSICALDEFENSE" : {
+              "flat" : 1300.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "MAGICALDEFENSE" : {
+              "flat" : 1300.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Bound Chain" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Strike" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Dawn Veil" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Beam" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Burn Up" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      }
+    }
   },
   "Night Ender, Chimera" : {
     "name" : "Night Ender, Chimera",
@@ -116668,7 +117017,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "3" : {
         "condition" : {
@@ -117129,7 +117478,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "4" : {
         "condition" : {
@@ -117590,7 +117939,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "5" : {
         "condition" : {
@@ -118051,7 +118400,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "6" : {
         "condition" : {
@@ -118512,7 +118861,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "7" : {
         "condition" : {
@@ -118973,7 +119322,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "8" : {
         "condition" : {
@@ -119434,7 +119783,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "9" : {
         "condition" : {
@@ -119895,7 +120244,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "10" : {
         "condition" : {
@@ -120356,7 +120705,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "11" : {
         "condition" : {
@@ -120817,7 +121166,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "12" : {
         "condition" : {
@@ -121278,7 +121627,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "13" : {
         "condition" : {
@@ -121739,7 +122088,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "14" : {
         "condition" : {
@@ -122200,7 +122549,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "15" : {
         "condition" : {
@@ -122661,7 +123010,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "16" : {
         "condition" : {
@@ -123122,7 +123471,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 2.0,
         "duration" : 99.0,
-        "durationRemain" : 97.0
+        "durationRemain" : 97
       },
       "17" : {
         "condition" : {
@@ -123583,7 +123932,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "18" : {
         "condition" : {
@@ -124044,7 +124393,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "19" : {
         "condition" : {
@@ -124505,7 +124854,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "20" : {
         "condition" : {
@@ -124966,7 +125315,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "21" : {
         "condition" : {
@@ -125427,7 +125776,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "22" : {
         "condition" : {
@@ -125888,7 +126237,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "23" : {
         "condition" : {
@@ -126349,7 +126698,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "24" : {
         "condition" : {
@@ -126810,7 +127159,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "25" : {
         "condition" : {
@@ -127271,7 +127620,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "26" : {
         "condition" : {
@@ -127732,7 +128081,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "27" : {
         "condition" : {
@@ -128193,7 +128542,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "28" : {
         "condition" : {
@@ -128654,7 +129003,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "29" : {
         "condition" : {
@@ -129115,7 +129464,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "30" : {
         "condition" : {
@@ -129576,7 +129925,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "31" : {
         "condition" : {
@@ -130037,7 +130386,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "32" : {
         "condition" : {
@@ -130498,7 +130847,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "33" : {
         "condition" : {
@@ -130959,7 +131308,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "34" : {
         "condition" : {
@@ -131420,7 +131769,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "35" : {
         "condition" : {
@@ -131881,7 +132230,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "36" : {
         "condition" : {
@@ -132342,7 +132691,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "37" : {
         "condition" : {
@@ -132803,7 +133152,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "38" : {
         "condition" : {
@@ -133264,7 +133613,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "39" : {
         "condition" : {
@@ -133725,7 +134074,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "40" : {
         "condition" : {
@@ -134186,7 +134535,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "41" : {
         "condition" : {
@@ -134647,7 +134996,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "42" : {
         "condition" : {
@@ -135108,7 +135457,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "43" : {
         "condition" : {
@@ -135569,7 +135918,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "44" : {
         "condition" : {
@@ -136030,7 +136379,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "45" : {
         "condition" : {
@@ -136491,7 +136840,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "46" : {
         "condition" : {
@@ -136952,7 +137301,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "47" : {
         "condition" : {
@@ -137413,7 +137762,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "48" : {
         "condition" : {
@@ -137874,7 +138223,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "49" : {
         "condition" : {
@@ -138335,7 +138684,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "50" : {
         "condition" : {
@@ -138796,7 +139145,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "51" : {
         "condition" : {
@@ -139257,7 +139606,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "52" : {
         "condition" : {
@@ -139718,7 +140067,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "53" : {
         "condition" : {
@@ -140179,7 +140528,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "54" : {
         "condition" : {
@@ -140640,7 +140989,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "55" : {
         "condition" : {
@@ -141101,7 +141450,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "56" : {
         "condition" : {
@@ -141562,7 +141911,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "57" : {
         "condition" : {
@@ -142023,7 +142372,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "58" : {
         "condition" : {
@@ -142484,7 +142833,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "59" : {
         "condition" : {
@@ -142945,7 +143294,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "60" : {
         "condition" : {
@@ -143406,7 +143755,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "61" : {
         "condition" : {
@@ -143867,7 +144216,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "62" : {
         "condition" : {
@@ -144328,7 +144677,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "63" : {
         "condition" : {
@@ -144789,7 +145138,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "64" : {
         "condition" : {
@@ -145250,7 +145599,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "65" : {
         "condition" : {
@@ -145711,7 +146060,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "66" : {
         "condition" : {
@@ -146172,7 +146521,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "67" : {
         "condition" : {
@@ -146633,7 +146982,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "68" : {
         "condition" : {
@@ -147094,7 +147443,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "69" : {
         "condition" : {
@@ -147555,7 +147904,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "70" : {
         "condition" : {
@@ -148016,7 +148365,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "71" : {
         "condition" : {
@@ -148477,7 +148826,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "72" : {
         "condition" : {
@@ -148938,7 +149287,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "73" : {
         "condition" : {
@@ -149399,7 +149748,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "74" : {
         "condition" : {
@@ -149860,7 +150209,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "75" : {
         "condition" : {
@@ -150321,7 +150670,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "76" : {
         "condition" : {
@@ -150782,7 +151131,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "77" : {
         "condition" : {
@@ -151243,7 +151592,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "78" : {
         "condition" : {
@@ -151704,7 +152053,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "79" : {
         "condition" : {
@@ -152165,7 +152514,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "80" : {
         "condition" : {
@@ -152626,7 +152975,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "81" : {
         "condition" : {
@@ -153087,7 +153436,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "82" : {
         "condition" : {
@@ -153548,7 +153897,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "83" : {
         "condition" : {
@@ -154009,7 +154358,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "84" : {
         "condition" : {
@@ -154470,7 +154819,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "85" : {
         "condition" : {
@@ -154931,7 +155280,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "86" : {
         "condition" : {
@@ -155392,7 +155741,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "87" : {
         "condition" : {
@@ -155853,7 +156202,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "88" : {
         "condition" : {
@@ -156314,7 +156663,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "89" : {
         "condition" : {
@@ -156775,7 +157124,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "90" : {
         "condition" : {
@@ -157236,7 +157585,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       },
       "91" : {
         "condition" : {
@@ -157697,7 +158046,7 @@
         "sourceName" : "Night Ender, Chimera",
         "appliedTime" : 1.0,
         "duration" : 99.0,
-        "durationRemain" : 98.0
+        "durationRemain" : 98
       }
     },
     "statuses" : {
@@ -163363,7 +163712,7 @@
         "sourceName" : "Darlazen The Lord of Sands",
         "appliedTime" : 0.0,
         "duration" : 99.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       }
     },
     "statuses" : {
@@ -164779,7 +165128,7 @@
         "sourceName" : "Darlazen The Lord of Sands",
         "appliedTime" : 0.0,
         "duration" : 99.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       }
     },
     "statuses" : {
@@ -166195,7 +166544,7 @@
         "sourceName" : "Christ",
         "appliedTime" : 4.0,
         "duration" : 99.0,
-        "durationRemain" : 95.0
+        "durationRemain" : 95
       },
       "1" : {
         "condition" : {
@@ -166656,7 +167005,7 @@
         "sourceName" : "Darlazen The Lord of Sands",
         "appliedTime" : 0.0,
         "duration" : 99.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       },
       "3" : {
         "condition" : {
@@ -167117,7 +167466,7 @@
         "sourceName" : "Darlazen's Mastery",
         "appliedTime" : 0.0,
         "duration" : 99.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       }
     },
     "statuses" : {
@@ -168534,7 +168883,7 @@
         "sourceName" : "Darlazen The Lord of Sands",
         "appliedTime" : 0.0,
         "duration" : 99.0,
-        "durationRemain" : 99.0
+        "durationRemain" : 99
       }
     },
     "statuses" : {

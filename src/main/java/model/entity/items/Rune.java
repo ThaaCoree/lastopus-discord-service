@@ -155,6 +155,22 @@ public class Rune extends Item {
                     {true,false, true}
             };
         }
+
+        if (name.equals("Scorpio")) {
+            this.shape = new boolean[][]{
+                    {true, false, false, false, false, false},
+                    {true, true,  true,  true,  true,  false},
+                    {true, false, true,  false ,true,  true}
+            };
+        }
+
+        if (name.equals("Cancer")) {
+            this.shape = new boolean[][]{
+                    {true, true, true, true, false},
+                    {true, true,  false, true, true},
+                    {false, true, true,  true ,true}
+            };
+        }
     }
 
     @JsonIgnore
@@ -256,6 +272,22 @@ public class Rune extends Item {
                     {true, false, true}
             })) {
                 return "X";
+            }
+
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
+                    {true, false, false, false, false, false},
+                    {true, true,  true,  true,  true,  false},
+                    {true, false, true,  false ,true,  true}
+            })) {
+                return "Scorpio";
+            }
+
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
+                    {true, true, true, true, false},
+                    {true, true,  false, true, true},
+                    {false, true, true,  true ,true}
+            })) {
+                return "Cancer";
             }
 
             copy_shape = rotate90(copy_shape);
@@ -424,6 +456,18 @@ public class Rune extends Item {
             WeightedRandom<Rune> random = new WeightedRandom<>();
             for (Rune value : allRuneMap.values()) {
                 if (value.isUnique_rune()) {
+                    if (value.getShapeName().equalsIgnoreCase("Scorpio")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Cancer")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Aries")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Taurus")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Gemini")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Leo")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Virgo")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Libra")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Sagittarius")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Capricorn")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Aquarius")) continue;
+                    if (value.getShapeName().equalsIgnoreCase("Pisces")) continue;
                     random.add(value, value.getUnique_weight());
                 }
             }

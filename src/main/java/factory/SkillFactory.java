@@ -618,6 +618,22 @@ public class SkillFactory {
         skillMap.put(Pain_Absorb.NAME, Pain_Absorb::new);
         skillMap.put(Star_Prism.NAME, Star_Prism::new);
         skillMap.put(The_Only_Plan.NAME, The_Only_Plan::new);
+        skillMap.put(Edelweiss_End.NAME, Edelweiss_End::new);
+        skillMap.put(Solar_Retaliation.NAME, Solar_Retaliation::new);
+        skillMap.put(Intefaatus.NAME, Intefaatus::new);
+        skillMap.put(Temporal_Prolong.NAME, Temporal_Prolong::new);
+        skillMap.put(Heart_Pierce.NAME, Heart_Pierce::new);
+        skillMap.put(Earthquake.NAME, Earthquake::new);
+        skillMap.put(Following_Light.NAME, Following_Light::new);
+        skillMap.put(Thousand_Suns.NAME, Thousand_Suns::new);
+        skillMap.put(Bound_Chain.NAME, Bound_Chain::new);
+        skillMap.put(Sun_Strike.NAME, Sun_Strike::new);
+        skillMap.put(Dawn_Veil.NAME, Dawn_Veil::new);
+        skillMap.put(Burn_Up.NAME, Burn_Up::new);
+        skillMap.put(Air_Crush.NAME, Air_Crush::new);
+        skillMap.put(Spectral_Shroud.NAME, Spectral_Shroud::new);
+        skillMap.put(Kingmaker.NAME, Kingmaker::new);
+        skillMap.put(Body_Hold.NAME, Body_Hold::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

@@ -89,7 +89,7 @@ public class ConditionInstance {
         this.duration = duration;
     }
 
-    public double getDurationRemain() {
+    public int getDurationRemain() {
         return durationRemain;
     }
 
