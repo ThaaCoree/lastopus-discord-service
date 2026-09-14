@@ -1660,24 +1660,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "WISDOM" : {
-        "flat" : 6.2058748217575905,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "LUCK" : {
-        "flat" : 4.009988652710659,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 44.863197545792914,
@@ -1713,6 +1695,24 @@
       },
       "SPEED" : {
         "flat" : 0.6745411108993292,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "WISDOM" : {
+        "flat" : 6.2058748217575905,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "LUCK" : {
+        "flat" : 4.009988652710659,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -2712,9 +2712,9 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 6.9634795240427385,
+    "statModifiers" : {
+      "RANGEDATTACK" : {
+        "flat" : -20.912736346066406,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -2722,9 +2722,9 @@
         "passiveMult" : 0.0
       }
     },
-    "statModifiers" : {
-      "RANGEDATTACK" : {
-        "flat" : -20.912736346066406,
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 6.9634795240427385,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -3963,6 +3963,24 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
+    "statModifiers" : {
+      "CRITDAMAGE" : {
+        "flat" : 0.1468768825108237,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALPENETRATE" : {
+        "flat" : 40.788738320048786,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 19.500234507836485,
@@ -3982,24 +4000,6 @@
       },
       "DEXTERITY" : {
         "flat" : 6.521421673665694,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
-    "statModifiers" : {
-      "CRITDAMAGE" : {
-        "flat" : 0.1468768825108237,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "PHYSICALPENETRATE" : {
-        "flat" : 40.788738320048786,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -5134,16 +5134,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 14.192192702361089,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 815.9537775621258,
@@ -5187,6 +5177,16 @@
       },
       "CRITSHIELD" : {
         "flat" : 0.008859096909105807,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 14.192192702361089,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -6729,6 +6729,24 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
+    "statModifiers" : {
+      "HEALTHPOINT" : {
+        "flat" : -386.84142056672016,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 766.4686546899856,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "statusModifiers" : {
       "VITALITY" : {
         "flat" : 28.94635825939726,
@@ -6748,24 +6766,6 @@
       },
       "LUCK" : {
         "flat" : 26.19511452622035,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
-    "statModifiers" : {
-      "HEALTHPOINT" : {
-        "flat" : -386.84142056672016,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "MAGICALDEFENSE" : {
-        "flat" : 766.4686546899856,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -8280,24 +8280,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 7.625048421262374,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "VITALITY" : {
-        "flat" : 7.972565547361384,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 52.84602076465983,
@@ -8317,6 +8299,24 @@
       },
       "SPEED" : {
         "flat" : -0.9495585779199258,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 7.625048421262374,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "VITALITY" : {
+        "flat" : 7.972565547361384,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -9666,16 +9666,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 5.131733962730621,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 137.21177899230696,
@@ -9695,6 +9685,16 @@
       },
       "MAGICALBLOCK" : {
         "flat" : 5.780074157455104,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 5.131733962730621,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -11186,16 +11186,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "DEXTERITY" : {
-        "flat" : 26.795627333760482,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : -368.818530312796,
@@ -11215,6 +11205,16 @@
       },
       "MAGICALDEFENSE" : {
         "flat" : 216.6847207637898,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "DEXTERITY" : {
+        "flat" : 26.795627333760482,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -12387,16 +12387,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "STRENGTH" : {
-        "flat" : 4.756053952245767,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 65.87898060675798,
@@ -12424,6 +12414,16 @@
       },
       "PHYSICALBLOCK" : {
         "flat" : 7.137378743313256,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 4.756053952245767,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -12958,7 +12958,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 8.4339439873623,
@@ -12976,7 +12975,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Poor Gloves" : {
     "name" : "Poor Gloves",
@@ -13644,16 +13644,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 4.744829420938798,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 35.89293240960212,
@@ -13673,6 +13663,16 @@
       },
       "MOVEMENTSPEED" : {
         "flat" : 1.3683881395742459,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 4.744829420938798,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -14696,6 +14696,24 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
+    "statModifiers" : {
+      "PHYSICALATTACK" : {
+        "flat" : 16.576309582117936,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "EVASION" : {
+        "flat" : -45.64217856412468,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 7.9952853957723145,
@@ -14715,24 +14733,6 @@
       },
       "DEXTERITY" : {
         "flat" : 8.043426612214247,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
-    "statModifiers" : {
-      "PHYSICALATTACK" : {
-        "flat" : 16.576309582117936,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "EVASION" : {
-        "flat" : -45.64217856412468,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -15776,7 +15776,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 186.58060343772303,
@@ -15818,7 +15817,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Arsanist" : {
     "name" : "Arsanist",
@@ -16213,7 +16213,6 @@
       "catalyst_name" : "White Flux"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 35.00794280530255,
@@ -16231,7 +16230,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Kelanphite Weapon Frame" : {
     "name" : "Kelanphite Weapon Frame",
@@ -17418,24 +17418,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "STRENGTH" : {
-        "flat" : 22.909817920021172,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "DEXTERITY" : {
-        "flat" : 32.987968434061926,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 120.75345746194034,
@@ -17447,6 +17429,24 @@
       },
       "RANGEDATTACK" : {
         "flat" : 178.82919851260277,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 22.909817920021172,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DEXTERITY" : {
+        "flat" : 32.987968434061926,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -18370,16 +18370,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "STRENGTH" : {
-        "flat" : 17.727608029604994,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 281.435362304102,
@@ -18399,6 +18389,16 @@
       },
       "MAGICALDEFENSE" : {
         "flat" : 347.4541163671295,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 17.727608029604994,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -18840,7 +18840,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "MAGICALDEFENSE" : {
         "flat" : 257.91368923762604,
@@ -18866,7 +18865,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "sun Tear" : {
     "name" : "sun Tear",
@@ -19057,7 +19057,6 @@
       "catalyst_name" : "Unstable Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "MANAREGEN" : {
         "flat" : 0.5848934958447505,
@@ -19075,7 +19074,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Skuld Wisdom" : {
     "name" : "Skuld Wisdom",
@@ -19398,16 +19398,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "INTELLIGENCE" : {
-        "flat" : 12.467045425749783,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 62.49434800355786,
@@ -19419,6 +19409,16 @@
       },
       "MANAREGEN" : {
         "flat" : 1.750602385040558,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 12.467045425749783,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -19787,7 +19787,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 99.48249171127219,
@@ -19821,7 +19820,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Light Speed Grip" : {
     "name" : "Light Speed Grip",
@@ -20352,16 +20352,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 43.53793390166702,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 10.434883585543627,
@@ -20373,6 +20363,16 @@
       },
       "EVASION" : {
         "flat" : 146.1170908041703,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 43.53793390166702,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -22423,6 +22423,24 @@
       "catalyst_name" : "Dawn Shard"
     } ],
     "transferModifiers" : { },
+    "statModifiers" : {
+      "CRITCHANCE" : {
+        "flat" : -0.019543251557544678,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "EVASION" : {
+        "flat" : 175.23882042114326,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
     "statusModifiers" : {
       "STRENGTH" : {
         "flat" : 36.04669518278379,
@@ -22445,24 +22463,6 @@
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.35024456323824726,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
-    "statModifiers" : {
-      "CRITCHANCE" : {
-        "flat" : -0.019543251557544678,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "EVASION" : {
-        "flat" : 175.23882042114326,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
@@ -22989,9 +22989,9 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 50.436524047319516,
+    "statModifiers" : {
+      "EVASION" : {
+        "flat" : 394.3462453705528,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -22999,9 +22999,9 @@
         "passiveMult" : 0.0
       }
     },
-    "statModifiers" : {
-      "EVASION" : {
-        "flat" : 394.3462453705528,
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 50.436524047319516,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -24102,7 +24102,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 82.0258522010621,
@@ -24120,7 +24119,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Orion" : {
     "name" : "Orion",
@@ -25721,16 +25721,6 @@
       "catalyst_name" : "Dusk Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 49.10017837251423,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 280.73863322949114,
@@ -25750,6 +25740,16 @@
       },
       "MAGICALPENETRATE" : {
         "flat" : 515.4850875255934,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 49.10017837251423,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -26684,16 +26684,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 7.338443194391071,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 16.01996187093972,
@@ -26721,6 +26711,16 @@
       },
       "ATTACKSPEED" : {
         "flat" : 0.02601171073267646,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 7.338443194391071,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -28785,24 +28785,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 28.674027013662098,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "VITALITY" : {
-        "flat" : 7.6494251968118,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 110.16862302978646,
@@ -28838,6 +28820,24 @@
       },
       "SPEED" : {
         "flat" : 1.4339068545230014,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 28.674027013662098,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "VITALITY" : {
+        "flat" : 7.6494251968118,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -29908,16 +29908,6 @@
       "catalyst_name" : "Dusk Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 62.88321594359901,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : -1555.416472378794,
@@ -29969,6 +29959,16 @@
       },
       "SPEED" : {
         "flat" : 3.5455581987052223,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 62.88321594359901,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -31417,16 +31417,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "INTELLIGENCE" : {
-        "flat" : 20.019610862624248,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 38.77626100632208,
@@ -31446,6 +31436,16 @@
       },
       "MAGICALDEFENSE" : {
         "flat" : 626.7472277744656,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "INTELLIGENCE" : {
+        "flat" : 20.019610862624248,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -32502,16 +32502,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "DEXTERITY" : {
-        "flat" : 21.852138602336595,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 76.11874785444962,
@@ -32555,6 +32545,16 @@
       },
       "SPEED" : {
         "flat" : -0.7090924872422455,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "DEXTERITY" : {
+        "flat" : 21.852138602336595,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -34249,40 +34249,6 @@
       "catalyst_name" : "Dawn Shard"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "STRENGTH" : {
-        "flat" : 63.85457619129957,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "VITALITY" : {
-        "flat" : -69.42877745412778,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "DEXTERITY" : {
-        "flat" : 34.85009958750568,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "INTELLIGENCE" : {
-        "flat" : -31.629785534392646,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : -65.73022022007633,
@@ -34326,6 +34292,40 @@
       },
       "MAGICALPENETRATE" : {
         "flat" : 342.5677816678381,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "STRENGTH" : {
+        "flat" : 63.85457619129957,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "VITALITY" : {
+        "flat" : -69.42877745412778,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "DEXTERITY" : {
+        "flat" : 34.85009958750568,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "INTELLIGENCE" : {
+        "flat" : -31.629785534392646,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -34849,32 +34849,6 @@
       "catalyst_name" : "Small Flux"
     } ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 17.24346332520167,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "WISDOM" : {
-        "flat" : 26.73358681500026,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "INTELLIGENCE" : {
-        "flat" : 18.41083774904717,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 75.3465693681637,
@@ -34894,6 +34868,32 @@
       },
       "MANAREGEN" : {
         "flat" : 0.8629559880226669,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 17.24346332520167,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "WISDOM" : {
+        "flat" : 26.73358681500026,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "INTELLIGENCE" : {
+        "flat" : 18.41083774904717,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -36188,16 +36188,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 9.96460008676283,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 115.30460844620194,
@@ -36217,6 +36207,16 @@
       },
       "MAGICALDEFENSE" : {
         "flat" : -33.89950591707898,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 9.96460008676283,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -37159,7 +37159,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : { },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 49.59090781613467,
@@ -37201,7 +37200,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "statusModifiers" : { }
   },
   "Lightweight Unmula" : {
     "name" : "Lightweight Unmula",
@@ -38246,16 +38246,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "AGILITY" : {
-        "flat" : 13.796109121167126,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "PHYSICALDEFENSE" : {
         "flat" : 52.94343690611235,
@@ -38291,6 +38281,16 @@
       },
       "SPEED" : {
         "flat" : 0.3676264923888566,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 13.796109121167126,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -39336,16 +39336,6 @@
     } ],
     "catalystInstances" : [ ],
     "transferModifiers" : { },
-    "statusModifiers" : {
-      "VITALITY" : {
-        "flat" : 5.1733565610493955,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      }
-    },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 293.1119466159017,
@@ -39365,6 +39355,16 @@
       },
       "MAGICALPENETRATE" : {
         "flat" : 481.59440724451645,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "VITALITY" : {
+        "flat" : 5.1733565610493955,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,

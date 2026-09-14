@@ -95,7 +95,7 @@ public class Solar_Retaliation extends Skill implements SkillWithCondition {
             Conditions condition = combatFlow.findCondition("Solar Dehydration");
 
             sendActionEvent(combatFlow.getEventBus(),
-                    ActionEvent.builder(getName(), getUser(), event.target)
+                    ActionEvent.builder(getName(), getUser(), event.source)
                             .condition(condition, 99)
                             .addActType(ActType.CONDITION_GIVEN)
                             .build()

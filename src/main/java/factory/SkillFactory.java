@@ -634,6 +634,9 @@ public class SkillFactory {
         skillMap.put(Spectral_Shroud.NAME, Spectral_Shroud::new);
         skillMap.put(Kingmaker.NAME, Kingmaker::new);
         skillMap.put(Body_Hold.NAME, Body_Hold::new);
+        skillMap.put(Purify.NAME, Purify::new);
+        skillMap.put(Devotion.NAME, Devotion::new); //unfinished
+        skillMap.put(Phantom_Step.NAME, Phantom_Step::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

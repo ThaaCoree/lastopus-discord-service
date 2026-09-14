@@ -58,8 +58,8 @@ public class StatTranslateUtil {
         statToWrite.put(StatType.POISONAMP, "PoisonAMP");
         statToWrite.put(StatType.IGNITEAMP, "IgniteAMP");
         statToWrite.put(StatType.BLEEDAMP, "BleedAMP");
-        statToWrite.put(StatType.IGNOREMDEF, "Ignore PDEF");
-        statToWrite.put(StatType.IGNOREPDEF, "Ignore MDEF");
+        statToWrite.put(StatType.IGNOREMDEF, "Ignore MDEF");
+        statToWrite.put(StatType.IGNOREPDEF, "Ignore PDEF");
         statToWrite.put(StatType.DEBUFFRESISTANCE, "Debuff Resistance");
         statToWrite.put(StatType.DEFLECTION, "Deflection");
 

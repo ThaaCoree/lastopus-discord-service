@@ -1,4 +1,4 @@
-package model.entity.skills.list.npc;
+package model.entity.skills.list.item.support;
 
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
@@ -8,30 +8,22 @@ import model.entity.skills.*;
 import model.entity.units.Unit;
 import model.type.*;
 
-public class Body_Hold extends Skill implements SkillWithCondition {
+public class Devotion extends Skill implements SkillWithCondition {
 
-    public static String NAME = "Body Hold";
+    public static String NAME = "Devotion";
 
-    public Body_Hold() {
+    public Devotion() {
         super();
-        setDescription("เลือกหนึ่งเป้าหมาย มอบสถานะ Body Hold ให้กับมันเป็นเวลา XB รอบเทิร์น ซึ่งลด AGI และ Speed ของเป้าหมายลง XB รอบเทิร์น\n" +
-                "ในระหว่างนี้ STRIKEN ไม่สามารถใช้งาน Combined Action ได้");
+        setDescription("เลือกยูนิตที่ไม่ใช่สิ่งอัญเชิญหนึ่งเป้าหมาย รับความเสียหายแทนยูนิตเป้าหมายทั้งหมดจนกว่าจะจบรอบเทิร์นนี้");
         setActionType("Action");
-        setManaCost(9);
+        setManaCost(0);
         setCooldown(1);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.3*(1+DebuffAMP)"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.DEBUFF);
-        getSkillMultiplier().get("XA").setPercent(true);
-
-        getSkillMultiplier().put("XB",new SkillMultiplier("3"));
-        getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
     }
 
     @Override
     public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
         SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
-                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
         );
 //        spec    .addFields(
 //                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
@@ -52,24 +44,24 @@ public class Body_Hold extends Skill implements SkillWithCondition {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
-        int duration = (int) getSkillMultiplier().get("XB").getResult();
-        Conditions condition = combatFlow.findCondition("Body Hold");
-        sendActionEvent(combatFlow.getEventBus(),
-                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                        .condition(condition, duration)
-                        .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
-                        .build());
+            int duration = (int) getSkillMultiplier().get("XB").getResult();
+            Conditions condition = combatFlow.findCondition("Fatima");
+            sendActionEvent(combatFlow.getEventBus(),
+                    ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                            .condition(condition, duration)
+                            .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
+                            .build());
         }
     }
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Body Hold");
-        condition.getStatModifiers(StatType.SPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
-        condition.getStatusModifiers(StatusType.AGILITY).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
+        Conditions condition = new Conditions("Fatima");
+        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
 
-        condition.setConditionType(ConditionType.DEBUFF);
-        condition.setConditionTierType(ConditionTierType.ADVANCED);
+        condition.setConditionType(ConditionType.BUFF);
+        condition.setConditionTierType(ConditionTierType.GENERAL);
 
         addConditionToDatabase(condition, combatFlow);
 

@@ -38283,11 +38283,11 @@
         "condition" : {
           "name" : "Forgotten Pages",
           "description" : "",
-          "statusDescription" : "\n",
+          "statusDescription" : "157.43 PATK\n157.43 MATK\n157.43 RATK\n\n",
           "modifiers" : {
             "statModifiers" : {
               "PHYSICALATTACK" : {
-                "flat" : 0.0,
+                "flat" : 157.43032354244818,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38295,7 +38295,7 @@
                 "passiveMult" : 0.0
               },
               "MAGICALATTACK" : {
-                "flat" : 0.0,
+                "flat" : 157.43032354244818,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38303,7 +38303,7 @@
                 "passiveMult" : 0.0
               },
               "RANGEDATTACK" : {
-                "flat" : 0.0,
+                "flat" : 157.43032354244818,
                 "mult" : 0.0,
                 "override" : "NaN",
                 "globalMult" : 0.0,
@@ -38782,17 +38782,17 @@
       "PHYSICALATTACK" : {
         "base" : 102.0,
         "current" : 102.0,
-        "final" : 102.0
+        "final" : 259.43032354244815
       },
       "MAGICALATTACK" : {
         "base" : 36.0,
         "current" : 36.0,
-        "final" : 36.0
+        "final" : 193.43032354244818
       },
       "RANGEDATTACK" : {
         "base" : 91.0,
         "current" : 91.0,
-        "final" : 91.0
+        "final" : 248.43032354244818
       },
       "HEALTHPOINT" : {
         "base" : 4058.0,
@@ -88791,7 +88791,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -88802,6 +88801,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -88901,7 +88901,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -88912,6 +88911,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -89011,7 +89011,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -89022,6 +89021,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -89116,8 +89116,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : { },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -90011,7 +90011,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -90022,6 +90021,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90121,7 +90121,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -90132,6 +90131,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -90231,7 +90231,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -90242,6 +90241,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -90332,8 +90332,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : { },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91251,7 +91251,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -91262,6 +91261,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91361,7 +91361,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 10.0,
@@ -91372,6 +91371,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 3.0,
@@ -91471,7 +91471,6 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : {
             "HEALTHPOINT" : {
               "flat" : 7.0,
@@ -91482,6 +91481,7 @@
               "passiveMult" : 0.0
             }
           },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 4.0,
@@ -91576,8 +91576,8 @@
           },
           "skills" : { },
           "backpackSlot" : 0,
-          "transferModifiers" : { },
           "statModifiers" : { },
+          "transferModifiers" : { },
           "statusModifiers" : {
             "STRENGTH" : {
               "flat" : 2.0,
@@ -114290,8 +114290,8 @@
       },
       "MAGICALATTACK" : {
         "base" : 1040.0,
-        "current" : 1040.0,
-        "final" : 1040.0
+        "current" : 2236.0000000000005,
+        "final" : 2236.0000000000005
       },
       "RANGEDATTACK" : {
         "base" : 1027.0,
@@ -115694,7 +115694,7 @@
         "reservedFlat" : 0.0,
         "reservedPercent" : 0.0,
         "usable" : 257556.0,
-        "remaining" : 257556.0
+        "remaining" : 144818.3190716097
       },
       "MANA" : {
         "reservedFlat" : 0.0,
@@ -115882,6 +115882,16 @@
         "reserving" : true
       },
       "Burn Up" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Reflect" : {
         "instanceBundle" : {
           "statModifiers" : { },
           "statusModifiers" : { },
@@ -116357,13 +116367,13 @@
     "opusMove" : {
       "1" : "เมื่อถูกวิเคราะห์ สามารถใช้งาน Reaction เพื่อเบี่ยงเบนความสนใจของผู้วิเคราะห์ให้วิเคราะห์ยูนิตอื่นที่ปรากฏอยู่ในระยะสายตาได้\n\nยูนิตดังกล่าวสามารถผนวก Combined Action เพื่อหลับตาวิเคราะห์จากความทรงจำเพื่อหลีกเลี่ยง Move นี้ได้",
       "2" : "ครอบครองกุญแจแห่งพื้นที่ ทาโลเนีย\nสามารถใช้งาน Reaction เพื่อเชื่อมต่อมิติผ่านบานกระจกได้อย่างอิสระ\nอีกทั้งสิ่งก่อสร้างทั้งหมดในปราการแห่งลาเรโซนิกเองก็อยู่ในการควบคุมของเออร์นาซิก",
-      "3" : "ยูนิตที่มีสถานะ Solar Blessing ที่มองยูนิตนี้อยู่ ไม่สามารถใช้งาน Action หรือ Turn ได้",
+      "3" : "ยูนิตที่มีสถานะ Solar Blessing ที่มองยูนิตนี้อยู่จะได้รับความเสียหายจริงตามพลังชีวิตสูงสุดตอนเมื่อสั่งจบเทิร์น",
       "4" : "หากมีศัตรูกระทำการให้ตนเองสูญเสียการมองเห็นในสนาม สามารถใช้งาน Reaction เพื่อใช้สกิลหรือโจมตีได้",
       "5" : "สามารถพูดผ่านเสียงของยูนิตอื่นในสนามได้ เสียงนี้สามารถเกิดขึ้นที่ไหนก็ได้ในสนาม",
       "6" : "เมื่อยูนิตศัตรูในสนามใช้งาน Turn, สามารถใช้งาน Hold Action เพื่อเลียนแบบการกระทำนั้นได้",
       "7" : "ยูนิตที่จบเทิร์นในรัศมี 5 เมตรรอบยูนิตนี้(ทะลุผ่านกำแพง)\nได้รับความเสียหายจริงตาม MATK ของยูนิตนี้",
       "8" : "สามารถใช้งานทหาร \"ทราย\" ในการต่อสู้ได้โดยใช้งาน Reaction ร่วมกับ Combined Action\nหากละทิ้งการควบคุมทหารในเทิร์นนี้ ยูนิตนี้จะมีเทิร์นอีกครั้งในตอนก่อนจบรอบเทิร์น",
-      "9" : "สิ่งก่อสร้างที่ยูนิตนี้เป็นเจ้าของทั้งหมดไม่สามารถถูกทำลายได้โดยยูนิตอื่น"
+      "9" : "เมื่อสนามกลายเป็นกระจก สามารถใช้แอคชันในตอนไหนก็ได้ของรอบเทิร์น\n"
     },
     "monsterType" : "BOSS",
     "monsterModify" : null,
@@ -116532,6 +116542,16 @@
         "reserving" : true
       },
       "Burn Up" : {
+        "instanceBundle" : {
+          "statModifiers" : { },
+          "statusModifiers" : { },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "onCooldown" : 0,
+        "reserving" : true
+      },
+      "Sun Reflect" : {
         "instanceBundle" : {
           "statModifiers" : { },
           "statusModifiers" : { },
