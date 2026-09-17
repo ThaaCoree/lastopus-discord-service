@@ -74,12 +74,13 @@ public class Unit {
     private Map<Integer, Rune> rune_inventory = new LinkedHashMap<>();
     private List<Rune> socketed_runes = new ArrayList<>();
     private ModifierBundle rune_modifiers = new ModifierBundle();
+    private int exp = 0;
 
     private List<CityName> current_city = new ArrayList<>();
 
     @JsonIgnore
     @Transient
-    private ObservableMap<CounterName, Double> counter;
+    private ObservableMap<CounterName, Double> counter = FXCollections.observableHashMap();
     @JsonIgnore
     @Transient
     private StatCalculator statCalculator;
@@ -115,41 +116,9 @@ public class Unit {
     private SkillModifierManager skillModifierManager;
 
     public Unit(String name, UnitType unitType) {
+        this();
         this.name = name;
         this.unitType = unitType;
-        level = 1;
-        recalculateRemainingStatusPoint();
-        for (ResourceType type : ResourceType.values()) {
-            ResourceData zeroData = new ResourceData();
-            zeroData.setRemaining(0);
-            zeroData.setReservedFlat(0);
-            zeroData.setReservedPercent(0);
-            zeroData.setUsable(0);
-            resources.put(type, zeroData);
-        }
-        for (StatusType type : StatusType.values()) {
-            statuses.put(type, new ModValue(1.0));
-            raisedStatuses.put(type, 0);
-        }
-        for (StatType type : StatType.values()) {
-            stats.put(type, new ModValue(0.0));
-        }
-        for (CurrencyType type : CurrencyType.values()) {
-            purse.put(type,0);
-        }
-
-        statCalculator = new StatCalculator(this);
-        statusCalculator = new StatusCalculator(this);
-        equipmentManager = new EquipmentManager(this);
-        passiveManager = new PassiveManager(this);
-        statusManager = new StatusManager(this);
-        uniqueManager = new UniqueManager(this);
-        raceManager = new RaceManager(this);
-        resourceManager = new ResourceManager(this);
-        cardManager = new CardManager(this);
-        inventoryManager = new InventoryManager(this);
-        skillModifierManager = new SkillModifierManager(this);
-        statCalculator.calculateBaseStatsFromCurrentStatus();
     }
 
     public Unit() {
@@ -172,6 +141,7 @@ public class Unit {
         for (CurrencyType type : CurrencyType.values()) {
             purse.put(type,0);
         }
+
         statCalculator = new StatCalculator(this);
         statusCalculator = new StatusCalculator(this);
         equipmentManager = new EquipmentManager(this);
@@ -187,6 +157,7 @@ public class Unit {
     }
 
     public void calculateEverything() {
+        level = findLevelFromTotalExp(exp);
         for (int i = 0; i < 2; i++) {
             recalculateRemainingPassiveTreePoint();
             recalculateRemainingStatusPoint();
@@ -455,7 +426,7 @@ public class Unit {
             toAppend.add(List.of("HP", df.format(getHealth().getRemaining())+"+"+df.format(debris), df.format(getHealth().getUsable())));
         }
         toAppend.add(List.of("MP", df.format(getMana().getRemaining()), df.format(getMana().getUsable())));
-        toAppend.add(List.of("Soul Point", df.format(stats.get(StatType.SOULPOINT).getFinal()), stats.get(StatType.SOULPOINT).getBase()));
+        toAppend.add(List.of("EXP", getLeftOverExp(), findExpRequired(level+1)));
         toAppend.add(List.of("Level", level));
         toAppend.add(List.of("Status Point", remainingStatusPoint));
         toAppend.add(List.of("Starmap Point", remainingPassiveTreePoint));
@@ -1665,14 +1636,59 @@ public class Unit {
         purse.put(CurrencyType.COPPER,   newCopper);
     }
 
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
+    }
+
+    @JsonIgnore
+    public int getLeftOverExp() {
+        int level = 1;
+        int totalxp = exp;
+
+        int xpRequired = findExpRequired(level + 1);
+        while (totalxp >= xpRequired) {
+            level++;
+            totalxp -= xpRequired;
+            xpRequired = findExpRequired(level + 1);
+        }
+
+        return totalxp;
+    }
+
+    public int findLevelFromTotalExp(int exp) {
+        int level = 1;
+        int totalxp = exp;
+
+        int xpRequired = findExpRequired(level + 1);
+        while (totalxp >= xpRequired) {
+            level++;
+            totalxp -= xpRequired;
+            xpRequired = findExpRequired(level + 1);
+        }
+
+        return level;
+    }
+
+    public int findExpRequired(int level) {
+        return (int) (level*25*(1+Math.pow(0.9, (level-1))));
+    }
+
+    public void sumExp(int amount) {
+        exp += amount;
+    }
+
     @JsonIgnore
     public double getSpeed() {
         return stats.get(StatType.SPEED).getFinal();
     }
 
     @JsonIgnore
-    public ObservableMap<CounterName, Double> getCounter() {
-        return counter;
+    public Map<CounterName, Double> getCounter() {
+        return rawCounterMap;
     }
 
     @Override

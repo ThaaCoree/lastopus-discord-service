@@ -24,8 +24,8 @@ public class Debuffer extends Skill {
         setDescription("เมื่อจู่โจมศัตรูที่อยู่ในหมอก สุ่มมอบดีบัพให้กับเป้าหมายเป็นเวลา XA เทิร์น");
         setActionType("Passive");
         setHealthReservePercent(0.4);
-        setManaReservePercent(0.55);
-        getSkillMultiplier().put("XA",new SkillMultiplier("2"));
+        setManaReservePercent(0.3);
+        getSkillMultiplier().put("XA",new SkillMultiplier("1"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.DURATION);
 
     }
@@ -66,10 +66,12 @@ public class Debuffer extends Skill {
             weightedRandom.add("Sleep", 20);
             weightedRandom.add("Paralyzed", 10);
             weightedRandom.add("Melting Acid", 60);
-            weightedRandom.add("Green Fin Poison", 200);
+            weightedRandom.add("Green Fin Poison", 130);
             weightedRandom.add("Lingering Noise", 130);
             weightedRandom.add("Rooted", 80);
             weightedRandom.add("Broken Leg", 30);
+            weightedRandom.add("Heart Pierced", 60);
+            weightedRandom.add("Dehydration", 30);
 
             Conditions condition = combatFlow.findCondition(weightedRandom.roll());
             if (condition == null) {
@@ -84,7 +86,8 @@ public class Debuffer extends Skill {
                     if (condition_name.equals("Green Fin Poison") ||
                         condition_name.equals("Lingering Noise") ||
                             condition_name.equals("Melting Acid") ||
-                            condition_name.equals("Tremble")
+                            condition_name.equals("Tremble") ||
+                            condition_name.equals("Heart Pierced")
                         )
                     {
                         //stackable (leave blank)

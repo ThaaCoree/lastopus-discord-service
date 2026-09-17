@@ -1,5 +1,6 @@
 package ui;
 
+import controller.event.events.ConditionInflictEvent;
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
@@ -300,7 +301,8 @@ public class CombatUtilityPanel extends ScrollPane {
             }
 
             combatFlow.getEventBus().post(effect_event, EventPhase.POST);
-            combatFlow.allUnitUpdate();
+            event.unit_source.calculateEverything();
+            target.calculateEverything();
             requestBox.getChildren().remove(pendingBox);
         });
 
@@ -326,24 +328,28 @@ public class CombatUtilityPanel extends ScrollPane {
         sb.append(" Condition ").append(conditions.getName());
         Label label = new Label(sb.toString());
         TextField field = new TextField();
-        field.setPrefWidth(150);
         field.setText(Integer.toString(duration));
         Button send = new Button("Send");
         Button cancel = new Button("Cancel");
+
+        ConditionInflictEvent conditionInflictEvent = new ConditionInflictEvent(conditions, duration, event.unit_source, target, event.event_source);
+
         send.setOnAction(e-> {
             if (!event.condition_number_record.isEmpty()) {
                 var record = event.condition_number_record.get(condition_number);
                 if (record != null) {
-                    ConditionManager.applyCondition(
-                            conditions,
-                            event.unit_source,
-                            target,
-                            turn_number,
-                            record
-                    );
+                    combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.PRE);
+                    combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.MODIFY);
+                    ConditionManager.applyCondition(conditions, event.unit_source, target, turn_number, record);
+                    combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.POST);
+                    target.calculateEverything();
                 }
             } else {
+                combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.PRE);
+                combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.MODIFY);
                 ConditionManager.applyCondition(conditions, event.unit_source, target, turn_number);
+                combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.POST);
+                target.calculateEverything();
             }
 
             LogWriterUtil.log(">" + target.getName() + " received condition " + conditions.getName() + " from "+event.unit_source.getName());
@@ -353,6 +359,7 @@ public class CombatUtilityPanel extends ScrollPane {
         cancel.setOnAction(e-> {
             requestBox.getChildren().remove(pendingBox);
         });
+
 
         row1.getChildren().add(label);
         row2.getChildren().add(field);

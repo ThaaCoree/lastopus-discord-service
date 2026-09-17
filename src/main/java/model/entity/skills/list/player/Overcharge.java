@@ -51,10 +51,7 @@ public class Overcharge extends Skill {
             modifier.setFlat(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.FLICKER));
             getSkillModifier().getStatModifiers().put(StatType.PHYSICALATTACK, modifier);
 
-            getUser().getCounter().addListener((InvalidationListener) change -> {
-                getSkillModifier().getStatModifierSafe(StatType.PHYSICALATTACK).setFlat(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.FLICKER));
-                getUser().calculateStatAndStatus();
-            });
+            getSkillModifier().getStatModifierSafe(StatType.PHYSICALATTACK).setFlat(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.FLICKER));
         }
     }
 

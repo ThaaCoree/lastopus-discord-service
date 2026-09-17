@@ -62,10 +62,7 @@ public class In_Depth_Destruction extends Skill {
             modifier.setFlat(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.IN_DEPTH));
             getSkillModifier().getStatModifiers().put(StatType.MAGICALATTACK, modifier);
 
-            getUser().getCounter().addListener((InvalidationListener) change -> {
-                getSkillModifier().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.IN_DEPTH));
-                getUser().calculateStatAndStatus();
-            });
+            getSkillModifier().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(getSkillMultiplier().get("XA").getResult() * getUser().getCounter().get(CounterName.IN_DEPTH));
         }
     }
 

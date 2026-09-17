@@ -22,7 +22,7 @@ public class Ark_Of_The_Lost_Souls extends Skill implements SkillWithCondition {
         setManaCost(8);
         setCooldown(5);
         setManaReservePercent(0.35);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.2*UsableHP"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.35*UsableHP"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.DEFENSE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.DEBRIS);
         getSkillMultiplier().get("XA").getTags().add(SkillType.BUFF);

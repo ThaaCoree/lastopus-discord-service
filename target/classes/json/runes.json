@@ -338,7 +338,7 @@
   "Talented" : {
     "name" : "Talented",
     "itemType" : "RUNE",
-    "description" : "เพิ่มผล Attribute ทั้งหมดในหน้ารูน 50%",
+    "description" : "เพิ่มผลสเตตัสทั้งหมดในหน้ารูน 50%",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -364,7 +364,7 @@
   "Echoes" : {
     "name" : "Echoes",
     "itemType" : "RUNE",
-    "description" : "ก็อปปี้ความสามารถสแตทหรือแอททริบิวท์ของรูนที่อยู่ติดกันด้านบน",
+    "description" : "ก็อปปี้ความสามารถสแตทหรือสเตตัสของรูนที่อยู่ติดกันด้านบน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -381,7 +381,7 @@
     "unique_rune" : true,
     "baseRow" : 0,
     "baseCol" : 0,
-    "unique_weight" : 2,
+    "unique_weight" : 1,
     "id" : null,
     "transferModifiers" : { },
     "statModifiers" : { },
@@ -403,7 +403,7 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "shape" : [ [ true, true, false ], [ true, false, false ], [ true, true, false ] ],
+    "shape" : [ [ true ] ],
     "unique_rune" : true,
     "baseRow" : 0,
     "baseCol" : 0,
@@ -900,7 +900,7 @@
   "Grand Spectrum [Might]" : {
     "name" : "Grand Spectrum [Might]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalSTR ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalSTR ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -926,7 +926,7 @@
   "Grand Spectrum [Quick]" : {
     "name" : "Grand Spectrum [Quick]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalAGI ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalAGI ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -952,7 +952,7 @@
   "Grand Spectrum [Tough]" : {
     "name" : "Grand Spectrum [Tough]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalVIT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalVIT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -978,7 +978,7 @@
   "Grand Spectrum [Alert]" : {
     "name" : "Grand Spectrum [Alert]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalDEX ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalDEX ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -1004,7 +1004,7 @@
   "Grand Spectrum [Insight]" : {
     "name" : "Grand Spectrum [Insight]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalWIS ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalWIS ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -1030,7 +1030,7 @@
   "Grand Spectrum [Wise]" : {
     "name" : "Grand Spectrum [Wise]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalINT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalINT ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -1056,7 +1056,7 @@
   "Grand Spectrum [Bless]" : {
     "name" : "Grand Spectrum [Bless]",
     "itemType" : "RUNE",
-    "description" : "7% GlobalLUK ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
+    "description" : "5% GlobalLUK ต่อ Grand Spectrum ที่สวมใส่ในหน้ารูน",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",
@@ -1238,7 +1238,7 @@
   "Planet Core" : {
     "name" : "Planet Core",
     "itemType" : "RUNE",
-    "description" : "การมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่ไม่ได้อยู่ในรัศมี 1 ช่องของรูนนี้จะไม่มีผล\nการมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่อยู่ในรัศมี 1 ช่องของรูนนี้จะเพิ่มเป็น 2 เท่า",
+    "description" : "การมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่ไม่ได้อยู่ในรัศมี 1 ช่องของรูนนี้จะไม่มีผล\nการมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่อยู่ในรัศมี 1 ช่องของรูนนี้จะเพิ่มเป็น 1.75 เท่า",
     "statusDescription" : "\n",
     "lore" : "",
     "price" : "",

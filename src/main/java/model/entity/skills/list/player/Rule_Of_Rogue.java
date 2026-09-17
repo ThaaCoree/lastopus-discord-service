@@ -68,10 +68,7 @@ public class Rule_Of_Rogue extends Skill {
             modifier.setFlat(getSkillMultiplier().get("XC").getResult() * getUser().getCounter().get(CounterName.IllusionAndDream));
             getSkillModifier().getStatModifiers().put(StatType.ATTACKSPEED, modifier);
 
-            getUser().getCounter().addListener((InvalidationListener) change -> {
-                getSkillModifier().getStatModifierSafe(StatType.ATTACKSPEED).setGlobalMult(getSkillMultiplier().get("XC").getResult() * getUser().getCounter().get(CounterName.IllusionAndDream));
-                getUser().calculateStatAndStatus();
-            });
+            getSkillModifier().getStatModifierSafe(StatType.ATTACKSPEED).setFlat(getSkillMultiplier().get("XC").getResult() * getUser().getCounter().get(CounterName.IllusionAndDream));
         }
     }
 

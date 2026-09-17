@@ -343,6 +343,7 @@ public abstract class Skill {
             //damage
             for (DamageType type : DamageType.values()) {
                 if (event.getDamage(type, name) > 0) {
+                    int avoid_dice = ThreadLocalRandom.current().nextInt(100) + 1; // 1 - 100
                     double damage = 0;
                     int loop = 1;
                     StringBuilder display = new StringBuilder();
@@ -355,6 +356,10 @@ public abstract class Skill {
                                 event.getDamage(type, name), type, event.extra_def, event.ignore_def);
                         damage_per_loop += calculateDamageAfterDEF(target, event.unit_source,
                                 event.getDamage(type, name), type, event.extra_def, event.ignore_def);
+
+                        if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
+                            damage_per_loop /= 4;
+                        }
 
                         if (event.isCriticalToUnit(target,loop)) {
                             damage_per_loop *= source_unit_crit_damage;
@@ -371,19 +376,22 @@ public abstract class Skill {
                             display.append(", ");
                         }
                     }
+
+                    if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
+                        damage /= 4;
+                    }
                     display.append(" ").append(type.writeAsString()).append(" damage (sum ").append(df.format(damage)).append(" ) from ").append(source_event);
 //                    target.sumRemainingHealth(damage * -1);
                     LogWriterUtil.log(display.toString());
 
-                    int num_eva = ThreadLocalRandom.current().nextInt(100) + 1; // 1 - 100
-                    if (num_eva <= calculateEvasion(target, event.unit_source, 0, 0)) {
+                    if (avoid_dice <= calculateEvasion(target, event.unit_source, 0, 0) && type.equals(DamageType.PHYSICAL)) {
                         LogWriterUtil.log(">Dodgable");
-                    } else if(num_eva <= calculateEvasion(target, event.unit_source, 0, 0)+15) {
-                        LogWriterUtil.log(">Glancing");
                     }
-                    int num_block = ThreadLocalRandom.current().nextInt(100) + 1; // 1 - 100
-                    if (num_block <= calculateBlock(target, event.unit_source, damage, 0, 0, type)) {
+                    if (avoid_dice <= calculateBlock(target, event.unit_source, damage, 0, 0, type)) {
                         LogWriterUtil.log(">Blockable");
+                    }
+                    if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
+                        LogWriterUtil.log(">Deflectable");
                     }
                 }
             }
@@ -443,6 +451,18 @@ public abstract class Skill {
         }
 
         return (  0.5 + (block - damage) / (2 * (block + damage))  )*100;
+    }
+
+    public static double calculateDeflection(Unit defenderUnit, Unit strikerUnit) {
+        double deflection = 0;
+        double accuracy = 0;
+        if (defenderUnit != null) {
+            deflection = defenderUnit.getStats().get(StatType.DEFLECTION).getFinal();
+        }
+        if (strikerUnit != null) {
+            accuracy = strikerUnit.getStats().get(StatType.ACCURACY).getFinal();
+        }
+        return ( (accuracy/deflection) )*100;
     }
 
     public static double calculateDamageAfterDEF(Unit defenderUnit, Unit strikerUnit, double damage, DamageType damageType, double extra_def, boolean ignore_def) {

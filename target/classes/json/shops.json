@@ -22539,7 +22539,7 @@
           "name" : "Lost Visions",
           "itemType" : "EQUIPMENT",
           "description" : "",
-          "statusDescription" : "Gain 18% of DEX as Extra STR\nGain 18% of DEX as Extra AGI\nGain 18% of DEX as Extra WIS\nGain 18% of DEX as Extra INT\nGain 40% of RATK as Extra Accuracy\n\nได้รับสกิล Vision Loss\nVision Loss : Passive\nรับสถานะ Blind ตลอดเวลา\nไม่สามารถต้านทานหรือยกเลิกผลของ Blind ได้อีกต่อไป",
+          "statusDescription" : "15% GlobalSpeed\nGain 18% of DEX as Extra STR\nGain 18% of DEX as Extra WIS\nGain 12% of RATK as Extra Accuracy\nGain 40% of RATK as Extra Accuracy\n\nได้รับสกิล Vision Loss\nVision Loss : Passive\nรับสถานะ Blind ตลอดเวลา\nไม่สามารถต้านทานหรือยกเลิกผลของ Blind ได้อีกต่อไป",
           "lore" : "\n\n`วิสัยทัศน์? ไม่จำเป็น´",
           "price" : "Buy 82 Silver",
           "weight" : 2,
@@ -22547,7 +22547,16 @@
           "equipmentType" : "HELMET",
           "weaponType" : "NOT_A_WEAPON",
           "modifiers" : {
-            "statModifiers" : { },
+            "statModifiers" : {
+              "SPEED" : {
+                "flat" : 0.0,
+                "mult" : 0.0,
+                "override" : "NaN",
+                "globalMult" : 0.15,
+                "equipmentMult" : 0.0,
+                "passiveMult" : 0.0
+              }
+            },
             "statusModifiers" : { },
             "transferModifiers" : {
               "0" : {
@@ -22555,15 +22564,6 @@
                 "targetStat" : null,
                 "sourceStatus" : "DEXTERITY",
                 "targetStatus" : "STRENGTH",
-                "transferPercent" : 0.18,
-                "transferRatio" : 1.0,
-                "transferType" : "GAIN"
-              },
-              "1" : {
-                "sourceStat" : null,
-                "targetStat" : null,
-                "sourceStatus" : "DEXTERITY",
-                "targetStatus" : "AGILITY",
                 "transferPercent" : 0.18,
                 "transferRatio" : 1.0,
                 "transferType" : "GAIN"
@@ -22578,11 +22578,11 @@
                 "transferType" : "GAIN"
               },
               "3" : {
-                "sourceStat" : null,
-                "targetStat" : null,
-                "sourceStatus" : "DEXTERITY",
-                "targetStatus" : "INTELLIGENCE",
-                "transferPercent" : 0.18,
+                "sourceStat" : "RANGEDATTACK",
+                "targetStat" : "ACCURACY",
+                "sourceStatus" : null,
+                "targetStatus" : null,
+                "transferPercent" : 0.12,
                 "transferRatio" : 1.0,
                 "transferType" : "GAIN"
               },
@@ -22621,15 +22621,6 @@
               "transferRatio" : 1.0,
               "transferType" : "GAIN"
             },
-            "1" : {
-              "sourceStat" : null,
-              "targetStat" : null,
-              "sourceStatus" : "DEXTERITY",
-              "targetStatus" : "AGILITY",
-              "transferPercent" : 0.18,
-              "transferRatio" : 1.0,
-              "transferType" : "GAIN"
-            },
             "2" : {
               "sourceStat" : null,
               "targetStat" : null,
@@ -22640,11 +22631,11 @@
               "transferType" : "GAIN"
             },
             "3" : {
-              "sourceStat" : null,
-              "targetStat" : null,
-              "sourceStatus" : "DEXTERITY",
-              "targetStatus" : "INTELLIGENCE",
-              "transferPercent" : 0.18,
+              "sourceStat" : "RANGEDATTACK",
+              "targetStat" : "ACCURACY",
+              "sourceStatus" : null,
+              "targetStatus" : null,
+              "transferPercent" : 0.12,
               "transferRatio" : 1.0,
               "transferType" : "GAIN"
             },
@@ -22658,7 +22649,16 @@
               "transferType" : "GAIN"
             }
           },
-          "statModifiers" : { },
+          "statModifiers" : {
+            "SPEED" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.15,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
           "statusModifiers" : { }
         },
         "price" : "Buy 82 Silver",
@@ -23492,7 +23492,7 @@
           "name" : "Ruinbringer",
           "itemType" : "EQUIPMENT",
           "description" : "",
-          "statusDescription" : "24 PATK\n-50% GlobalAttackSPD\n32 PhysicalPen\n\nได้รับสกิล The Ruin\nThe Ruin : Passive\nเมื่อโจมตี เป้าหมายไม่สามารถหลบหรือบล็อกได้\nหากไม่ได้มี STR มากกว่าสเตตัสอื่นๆทั้งหมดอย่างน้อยสเตตัสละ STR/2 หน่วย จะไม่สามารถโจมตีได้",
+          "statusDescription" : "24 PATK\n-75% AttackSPD\n32 PhysicalPen\n\nได้รับสกิล The Ruin\nThe Ruin : Passive\nเมื่อโจมตี เป้าหมายไม่สามารถหลบหรือบล็อกได้\nหากไม่ได้มี STR มากกว่าสเตตัสอื่นๆทั้งหมดอย่างน้อยสเตตัสละ STR/2 หน่วย จะไม่สามารถโจมตีได้",
           "lore" : "ดาบสีเทามีลวดลายสีดำพาดอยู่ตามคมดาบ มีขนาดใหญ่ หนัก มีพลังทำลายล้างสูงมาก และถึงแม้จะดูเหมือนเชื่องช้า แต่กลับไม่อาจหลีกหนีจากคมดาบไปได้ง่ายๆ\n\n`ข้านำพาความพินาศมาให้´",
           "price" : "Buy 64 Silver",
           "weight" : 8,
@@ -23510,10 +23510,10 @@
                 "passiveMult" : 0.0
               },
               "ATTACKSPEED" : {
-                "flat" : 0.0,
+                "flat" : -0.75,
                 "mult" : 0.0,
                 "override" : "NaN",
-                "globalMult" : -0.5,
+                "globalMult" : 0.0,
                 "equipmentMult" : 0.0,
                 "passiveMult" : 0.0
               },
@@ -23554,10 +23554,10 @@
               "passiveMult" : 0.0
             },
             "ATTACKSPEED" : {
-              "flat" : 0.0,
+              "flat" : -0.75,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : -0.5,
+              "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
@@ -31525,7 +31525,7 @@
           "name" : "Magic Dispenser",
           "itemType" : "EQUIPMENT",
           "description" : "",
-          "statusDescription" : "6 MATK\n100% GlobalCastSPD\n\nได้รับสกิล Bounded Spells\nBounded Spells : Passive\nการใช้งานสกิลทั้งหมดกลายเป็นแบบเทิร์น",
+          "statusDescription" : "6 MATK\n100% CastSPD\n\nได้รับสกิล Bounded Spells\nBounded Spells : Passive\nการใช้งานสกิลทั้งหมดกลายเป็นแบบเทิร์น",
           "lore" : "ลูกแก้วรูปลักษณ์แปดเหลี่ยม เมื่อสัมผัสดูจะรู้สึกได้ถึงความแปรปรวนภายใน ดูเหมือนจะไม่เหมาะกับเวทมนตร์ที่ทรงพลัง",
           "price" : "Buy 10.2 Silver",
           "weight" : 4,
@@ -31543,10 +31543,10 @@
                 "passiveMult" : 0.0
               },
               "CASTSPEED" : {
-                "flat" : 0.0,
+                "flat" : 1.0,
                 "mult" : 0.0,
                 "override" : "NaN",
-                "globalMult" : 1.0,
+                "globalMult" : 0.0,
                 "equipmentMult" : 0.0,
                 "passiveMult" : 0.0
               }
@@ -31579,10 +31579,10 @@
               "passiveMult" : 0.0
             },
             "CASTSPEED" : {
-              "flat" : 0.0,
+              "flat" : 1.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : 1.0,
+              "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             }
@@ -32766,7 +32766,7 @@
           "name" : "Swishing Light",
           "itemType" : "EQUIPMENT",
           "description" : "",
-          "statusDescription" : "3 MATK\nตัวคูณสกิลประเภท Spell เพิ่มขึ้น 22%\n\n",
+          "statusDescription" : "3 MATK\nตัวคูณสกิลประเภท Spell เพิ่มขึ้น 15%\n\n",
           "lore" : "ยันต์ที่มีความสามารถในการส่งเสริมเวทมนตร์โดยตรง ถึงจะแทบเป็นสื่อมานาไม่ได้ แต่มันก็ทำหน้าที่ในฐานะอาวุธเวทมนตร์ได้ดี",
           "price" : "Buy 9.8 Silver",
           "weight" : 2,
@@ -32789,7 +32789,7 @@
             "skillModifiers" : {
               "SPELL" : {
                 "flat" : 0.0,
-                "mult" : 0.22
+                "mult" : 0.15
               }
             }
           },
@@ -33912,7 +33912,7 @@
           "name" : "Fallen Halo",
           "itemType" : "EQUIPMENT",
           "description" : "",
-          "statusDescription" : "Set STR to 1\nSet AGI to 1\nSet VIT to 1\nSet DEX to 1\nSet WIS to 1\nSet INT to 1\nSet LUK to 1\n200% GlobalPATK\n200% GlobalMATK\n200% GlobalRATK\n200% GlobalHP\n200% GlobalMP\n200% GlobalPDEF\n200% GlobalMDEF\n200% GlobalMSPD\n200% GlobalHealAMP\n200% GlobalBuffAMP\n200% GlobalDebuffAMP\n200% GlobalCritChance\n200% GlobalCritDamage\n200% GlobalManaRegen\n200% GlobalAccuracy\n200% GlobalEvasion\n200% GlobalPBLOCK\n200% GlobalMBLOCK\n200% GlobalAttackSPD\n200% GlobalCastSPD\n200% GlobalPhysicalPen\n200% GlobalMagicalPen\n200% GlobalCritShield\n200% GlobalSpeed\n\n",
+          "statusDescription" : "Set STR to 1\nSet AGI to 1\nSet VIT to 1\nSet DEX to 1\nSet WIS to 1\nSet INT to 1\nSet LUK to 1\n200% GlobalPATK\n200% GlobalMATK\n200% GlobalRATK\n200% GlobalHP\n200% GlobalMP\n200% GlobalPDEF\n200% GlobalMDEF\n200% GlobalMSPD\n200% GlobalHealAMP\n200% GlobalBuffAMP\n200% GlobalDebuffAMP\n200% GlobalCritChance\n200% GlobalCritDamage\n200% GlobalManaRegen\n200% GlobalAccuracy\n200% GlobalEvasion\n200% GlobalPBLOCK\n200% GlobalMBLOCK\n100% AttackSPD\n100% CastSPD\n200% GlobalPhysicalPen\n200% GlobalMagicalPen\n200% GlobalCritShield\n200% GlobalSpeed\n\n",
           "lore" : "วงแหวนสีดำประกายที่ลอยอยู่เหนือหัว ถึงตัวมันเองจะไม่ได้ส่องแสง แต่ก็ทำให้รู้สึกได้ถึงพลังรอบๆอย่างชัดเจน\n\n`แม้ไร้ซึ่งพรสวรรค์ แต่ก็ท่วมท้นไปด้วยพรแสวง´",
           "price" : "Buy 73 Silver",
           "weight" : 3,
@@ -34066,18 +34066,18 @@
                 "passiveMult" : 0.0
               },
               "ATTACKSPEED" : {
-                "flat" : 0.0,
+                "flat" : 1.0,
                 "mult" : 0.0,
                 "override" : "NaN",
-                "globalMult" : 2.0,
+                "globalMult" : 0.0,
                 "equipmentMult" : 0.0,
                 "passiveMult" : 0.0
               },
               "CASTSPEED" : {
-                "flat" : 0.0,
+                "flat" : 1.0,
                 "mult" : 0.0,
                 "override" : "NaN",
-                "globalMult" : 2.0,
+                "globalMult" : 0.0,
                 "equipmentMult" : 0.0,
                 "passiveMult" : 0.0
               },
@@ -34324,18 +34324,18 @@
               "passiveMult" : 0.0
             },
             "ATTACKSPEED" : {
-              "flat" : 0.0,
+              "flat" : 1.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : 2.0,
+              "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
             "CASTSPEED" : {
-              "flat" : 0.0,
+              "flat" : 1.0,
               "mult" : 0.0,
               "override" : "NaN",
-              "globalMult" : 2.0,
+              "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },

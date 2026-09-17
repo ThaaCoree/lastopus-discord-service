@@ -2,6 +2,7 @@ package ui;
 
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.common.util.concurrent.AtomicDouble;
+import controller.event.events.*;
 import javafx.animation.PauseTransition;
 import javafx.collections.FXCollections;
 import javafx.geometry.Bounds;
@@ -21,9 +22,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
 import javafx.util.Duration;
 import controller.CombatFlow;
-import controller.event.events.ActionEvent;
-import controller.event.events.ResourceEvent;
-import controller.event.events.SkillUse;
 import manager.ConditionManager;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;
@@ -681,6 +679,42 @@ public class CombatPane extends ScrollPane {
             }
             AsyncUtil.runAsync(writeToSheet());
             combatFlow.oneTurnPassed();
+        });
+
+        Button endTurn = new Button("End Turn");
+
+        endTurn.setOnAction(e-> {
+            Unit selectedUnit = turnList.getSelectionModel().getSelectedItem();
+            if (selectedUnit == null) return;
+            TurnEndEvent turnEvent = new TurnEndEvent(selectedUnit, combatFlow.getTurnCount());
+
+            combatFlow.getEventBus().post(turnEvent, EventPhase.PRE);
+            combatFlow.getEventBus().post(turnEvent, EventPhase.MODIFY);
+            for (SkillInstance instance : selectedUnit.getAllSkill().values()) {
+                instance.cooldownDecrement();
+            }
+            List<Integer> conditionsToRemove = new ArrayList<>();
+            for (Map.Entry<Integer, ConditionInstance> entry : selectedUnit.getConditionInstances().entrySet()) {
+                ConditionInstance instance = entry.getValue();
+                instance.sumAppliedTime(1);
+                if (instance.isExpired()) {
+                    conditionsToRemove.add(entry.getKey());
+                }
+            }
+            for (Integer key : conditionsToRemove) {
+                ConditionInstance instance = selectedUnit.getConditionInstances().get(key);
+                ConditionExpireEvent conditionExpireEvent = new ConditionExpireEvent(
+                        instance.getCondition(), combatFlow.getTurnCount(), instance.getSource(), selectedUnit, instance.getSourceName());
+
+                combatFlow.getEventBus().post(conditionExpireEvent, EventPhase.PRE);
+                combatFlow.getEventBus().post(conditionExpireEvent, EventPhase.MODIFY);
+                selectedUnit.getConditionInstances().remove(key);
+                combatFlow.getEventBus().post(conditionExpireEvent, EventPhase.POST);
+                LogWriterUtil.log("Condition "+instance.getCondition().getName()+" on "+selectedUnit.getName()+" has expired", combatFlow.getTurnCount());
+                selectedUnit.calculateEverything();
+            }
+            combatFlow.getEventBus().post(turnEvent, EventPhase.POST);
+
         });
         Button focus = new Button("Focus");
         focus.setOnAction(e-> {

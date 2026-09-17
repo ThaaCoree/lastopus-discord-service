@@ -52,12 +52,10 @@ public class Shrunken_Knowledges extends Skill implements SkillWithCondition {
     @Override
     public void calculateExtra() {
         if (getUser().getCounter() != null) {
-            getUser().getCounter().addListener((InvalidationListener) event -> {
-                if (getUser().getCounter().get(CounterName.SHRUNKEN_KNOWLEDGES) >= 12) {
-                    getUser().counterSet(CounterName.SHRUNKEN_KNOWLEDGES, 0);
-                    getUser().counterIncrement(CounterName.THE_FORGOTTEN_PAGES);
-                }
-            });
+            if (getUser().getCounter().get(CounterName.SHRUNKEN_KNOWLEDGES) >= 12) {
+                getUser().counterSet(CounterName.SHRUNKEN_KNOWLEDGES, 0);
+                getUser().counterIncrement(CounterName.THE_FORGOTTEN_PAGES);
+            }
         }
     }
 

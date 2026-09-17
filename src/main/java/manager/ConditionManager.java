@@ -4,6 +4,7 @@ import controller.CombatFlow;
 import model.entity.ConditionInstance;
 import model.entity.Conditions;
 import model.entity.units.Unit;
+import model.type.ConditionType;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -63,7 +64,8 @@ public class ConditionManager {
 
     public static void applyCondition(Conditions condition, Unit source, Unit target, int duration, Map<String, Double> numberRecord) {
         if (duration <= 0) return;
-        ConditionInstance instance = new ConditionInstance(condition, source, duration);
+        Conditions to_inflict = condition.deepcopy();
+        ConditionInstance instance = new ConditionInstance(to_inflict, source, duration);
         numberRecord.forEach(instance::putNumberRecord);
         int nextFreeKey = 1;
         while (target.getConditionInstances().containsKey(nextFreeKey)) {

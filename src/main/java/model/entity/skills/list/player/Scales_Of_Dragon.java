@@ -76,7 +76,7 @@ public class Scales_Of_Dragon extends Skill {
         double xd = getSkillMultiplier().get("XD").getResult();
         double claws = getUser().getRawCounterMap().get(CounterName.CLAWS);
         double fangs = getUser().getRawCounterMap().get(CounterName.FANGS);
-        getSkillModifier().getStatModifierSafe(StatType.ATTACKSPEED).setGlobalMult(xb*claws);
+        getSkillModifier().getStatModifierSafe(StatType.ATTACKSPEED).setFlat(xb*claws);
         getSkillModifier().getStatModifierSafe(StatType.MOVEMENTSPEED).setGlobalMult(xd*fangs);
     }
 

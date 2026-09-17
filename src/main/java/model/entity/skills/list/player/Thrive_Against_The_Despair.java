@@ -19,7 +19,7 @@ public class Thrive_Against_The_Despair extends Skill {
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.25);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.42"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.37"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").setPercent(true);
     }

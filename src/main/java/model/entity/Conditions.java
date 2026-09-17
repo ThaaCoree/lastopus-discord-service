@@ -30,6 +30,18 @@ public class Conditions {
         conditionTierType = ConditionTierType.BASIC;
     }
 
+    public Conditions deepcopy() {
+        Conditions to_return = new Conditions();
+        to_return.setName(name);
+        to_return.setDescription(description);
+        to_return.setStatusDescription(statusDescription);
+        to_return.setConditionType(conditionType);
+        to_return.setConditionTierType(conditionTierType);
+        to_return.setModifiers(modifiers.deepcopy());
+
+        return to_return;
+    }
+
     public String getName() {
         return name;
     }
@@ -103,5 +115,9 @@ public class Conditions {
 
     public ModifierBundle getModifiers() {
         return modifiers;
+    }
+
+    public void setModifiers(ModifierBundle modifiers) {
+        this.modifiers = modifiers;
     }
 }

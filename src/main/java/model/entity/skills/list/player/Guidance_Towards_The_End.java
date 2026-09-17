@@ -18,7 +18,7 @@ public class Guidance_Towards_The_End extends Skill implements SkillWithConditio
         setActionType("Combine");
         setManaCost(4);
         setCooldown(4);
-        setManaReservePercent(0.6);
+        setManaReservePercent(0.4);
         getSkillMultiplier().put("XA",new SkillMultiplier("0.165"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
 

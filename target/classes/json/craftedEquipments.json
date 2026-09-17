@@ -19051,6 +19051,94 @@
         "unique_boost" : false
       },
       "material_role" : "BASE"
+    }, {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Rune Dust",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ผงที่มีเวทมนตร์ปะปนอยู่ภายใน นิยมใช้ในการสร้างอุปกรณ์หรือขีดเขียนอักขระเวทมนตร์",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 0,
+        "material_max_mod" : 0,
+        "reveal_usage" : false,
+        "pools" : { },
+        "modBoost" : {
+          "MAGIC" : 0.1,
+          "STRIKE" : -0.1
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
     } ],
     "catalystInstances" : [ {
       "catalyst_id" : 0,
@@ -39365,6 +39453,1546 @@
     "statusModifiers" : {
       "VITALITY" : {
         "flat" : 5.1733565610493955,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "Starlight Invent" : {
+    "name" : "Starlight Invent",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "18.67 WIS\n20.43 INT\n6.66 AGI\n336.91 MATK\n5.03 MP\n141.51 MDEF\n14.79 PBLOCK\n65.37 Evasion\n5.63 MSPD\n0.73 Speed\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "HELMET",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALATTACK" : {
+          "flat" : 336.9115710236654,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MANAPOINT" : {
+          "flat" : 5.033765863458358,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 141.51164441183468,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 5.633708576711603,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 65.37086005327052,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALBLOCK" : {
+          "flat" : 14.78997260269156,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "SPEED" : {
+          "flat" : 0.7311168268938883,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 6.664742298924569,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "WISDOM" : {
+          "flat" : 18.66911691449051,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 20.431913072745953,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 84.9646995315006,
+      "final_value" : 84.9646995315006,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 98.5139200406866,
+      "final_value" : 98.5139200406866,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 85.92749083323974,
+      "final_value" : 85.92749083323974,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 2.7511378577665564,
+      "final_value" : 2.7511378577665564,
+      "mod" : {
+        "statType" : "MANAPOINT",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 141.51164441183468,
+      "final_value" : 141.51164441183468,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 7,
+      "base_material_id" : 1,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 14.78997260269156,
+      "final_value" : 14.78997260269156,
+      "mod" : {
+        "statType" : "PHYSICALBLOCK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 8,
+      "base_material_id" : 1,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 2.2826280056918016,
+      "final_value" : 2.2826280056918016,
+      "mod" : {
+        "statType" : "MANAPOINT",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 10,
+      "base_material_id" : 1,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 18.66911691449051,
+      "final_value" : 18.66911691449051,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "WISDOM",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 13,
+      "base_material_id" : 1,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 20.431913072745953,
+      "final_value" : 20.431913072745953,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 12,
+      "base_material_id" : 1,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 11,
+      "base_rolled" : 67.50546061823846,
+      "final_value" : 67.50546061823846,
+      "mod" : {
+        "statType" : "MAGICALATTACK",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 14,
+      "base_material_id" : 2,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 65.37086005327052,
+      "final_value" : 65.37086005327052,
+      "mod" : {
+        "statType" : "EVASION",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 15,
+      "base_material_id" : 2,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 1.8723484208204222,
+      "final_value" : 1.8723484208204222,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 18,
+      "base_material_id" : 3,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 2.10436997143102,
+      "final_value" : 2.10436997143102,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 19,
+      "base_material_id" : 3,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 6.664742298924569,
+      "final_value" : 6.664742298924569,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 22,
+      "base_material_id" : 4,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 1.656990184460161,
+      "final_value" : 1.656990184460161,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 23,
+      "base_material_id" : 4,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 4, 0, 1, 2, 3, 4 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 0.7311168268938883,
+      "final_value" : 0.7311168268938883,
+      "mod" : {
+        "statType" : "SPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Lumen",
+        "itemType" : "ORE",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "เกิดจากการนำลูมิไนท์ไปผสมกับโลหะอื่นเพื่อเสริมความทนทานมากขึ้น คุณสมบัตินำเวทมนตร์ของลูมิไนท์ยังคงอยู่ครบ เป็นแร่ที่ยอดเยี่ยมในการใช้สร้างสื่อเวทมนตร์ แต่กว่าจะสังเคราะห์ลูเมนได้แต่ละก้อนนั้นยากลำบากอย่างมาก",
+        "price" : "",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 7,
+            "maxTier" : 9,
+            "maxModsAllowed" : 1
+          },
+          "Mana Reactive" : {
+            "pool" : {
+              "pool_name" : "Mana Reactive",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 12,
+            "maxModsAllowed" : 4
+          },
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 11,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "MAGIC" : 2.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Lumen",
+        "itemType" : "ORE",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "เกิดจากการนำลูมิไนท์ไปผสมกับโลหะอื่นเพื่อเสริมความทนทานมากขึ้น คุณสมบัตินำเวทมนตร์ของลูมิไนท์ยังคงอยู่ครบ เป็นแร่ที่ยอดเยี่ยมในการใช้สร้างสื่อเวทมนตร์ แต่กว่าจะสังเคราะห์ลูเมนได้แต่ละก้อนนั้นยากลำบากอย่างมาก",
+        "price" : "",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 7,
+            "maxTier" : 9,
+            "maxModsAllowed" : 1
+          },
+          "Mana Reactive" : {
+            "pool" : {
+              "pool_name" : "Mana Reactive",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 12,
+            "maxModsAllowed" : 4
+          },
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 11,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "MAGIC" : 2.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Sea Zephyr Feather",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 3
+          },
+          "Small" : {
+            "pool" : {
+              "pool_name" : "Small",
+              "weaponMods" : [ {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          },
+          "Breeze" : {
+            "pool" : {
+              "pool_name" : "Breeze",
+              "weaponMods" : [ ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : -0.25,
+          "WIND" : 0.45
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Sea Zephyr Feather",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 3
+          },
+          "Small" : {
+            "pool" : {
+              "pool_name" : "Small",
+              "weaponMods" : [ {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          },
+          "Breeze" : {
+            "pool" : {
+              "pool_name" : "Breeze",
+              "weaponMods" : [ ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : -0.25,
+          "WIND" : 0.45
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 4,
+      "material" : {
+        "name" : "Sea Zephyr Feather",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ขนของนกซีเซเฟียร์ เส้นขนแต่ละเส้นบานเป็นแพสวยงาม เมื่อใช้โบกไปตามลมก็ดูเหมือนจะต้านแรงลมได้ดีกว่าที่มองเห็น แข็งแรง แม้พยายามจะดึงก็ไม่หลุดรุ่ยออกง่ายๆ",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 20,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 3
+          },
+          "Small" : {
+            "pool" : {
+              "pool_name" : "Small",
+              "weaponMods" : [ {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          },
+          "Breeze" : {
+            "pool" : {
+              "pool_name" : "Breeze",
+              "weaponMods" : [ ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : -0.25,
+          "WIND" : 0.45
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ {
+      "catalyst_id" : 0,
+      "catalyst_name" : "Polarizer"
+    }, {
+      "catalyst_id" : 1,
+      "catalyst_name" : "Dawn Shard"
+    } ],
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "MAGICALATTACK" : {
+        "flat" : 336.9115710236654,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MANAPOINT" : {
+        "flat" : 5.033765863458358,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALDEFENSE" : {
+        "flat" : 141.51164441183468,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MOVEMENTSPEED" : {
+        "flat" : 5.633708576711603,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "EVASION" : {
+        "flat" : 65.37086005327052,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "PHYSICALBLOCK" : {
+        "flat" : 14.78997260269156,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "SPEED" : {
+        "flat" : 0.7311168268938883,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 6.664742298924569,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "WISDOM" : {
+        "flat" : 18.66911691449051,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "INTELLIGENCE" : {
+        "flat" : 20.431913072745953,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,

@@ -5,6 +5,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import app.Database;
+import model.entity.summon_scales.Brave_Emperor;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
 

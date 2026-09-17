@@ -3,6 +3,7 @@ package model.entity.skills.list.player;
 import controller.CombatFlow;
 import controller.event.EventBus;
 import controller.event.events.ActionEvent;
+import controller.event.events.ConditionInflictEvent;
 import model.entity.Conditions;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
@@ -32,7 +33,7 @@ public class Starbound_Anomalus extends Skill {
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.65);
-        getSkillMultiplier().put("XA",new SkillMultiplier("3"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("2"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.REQUIREMENT);
     }
 
@@ -64,21 +65,16 @@ public class Starbound_Anomalus extends Skill {
     @Override
     public void initializeEvent(CombatFlow combatFlow) {
         EventBus eventBus = combatFlow.getEventBus();
-        eventBus.register(ActionEvent.class, EventPhase.MODIFY, 0, (ActionEvent event) -> {
-            if (!event.hasActType(ActType.CONDITION_GIVEN)) return;
-            if (!event.unit_target.contains(getUser())) return;
-            for (Map.Entry<Integer, Map<Conditions, Integer>> entry : event.condition_to_inflict.entrySet()) {
-                for (Map.Entry<Conditions, Integer> conditionEntry : entry.getValue().entrySet()) {
-                    Conditions condition = conditionEntry.getKey();
-                    if (condition.getConditionType().equals(ConditionType.DEBUFF)) {
-                        if (condition.getConditionTierType() == ConditionTierType.BOUND) continue;
-                        if (condition.getConditionTierType() == ConditionTierType.UNDISPELLABLE) continue;
-                        if (getUser().getCounter().get(CounterName.PROVIDENCE) < getSkillMultiplier().get("XA").getResult()) continue;
-                        conditionEntry.setValue(0);
-                        getUser().counterSum(CounterName.PROVIDENCE, -1 * getSkillMultiplier().get("XA").getResult());
-                        sendSkillTriggerEvent(combatFlow, "Starbound Anomalus Triggered, removing condition "+condition.getName());
-                    }
-                }
+        eventBus.register(ConditionInflictEvent.class, EventPhase.MODIFY, 0, (ConditionInflictEvent event) -> {
+            if (event.target != getUser()) return;
+            Conditions condition = event.condition;
+            if (condition.getConditionType().equals(ConditionType.DEBUFF)) {
+                if (condition.getConditionTierType() == ConditionTierType.BOUND) return;
+                if (condition.getConditionTierType() == ConditionTierType.UNDISPELLABLE) return;
+                if (getUser().getCounter().get(CounterName.PROVIDENCE) < getSkillMultiplier().get("XA").getResult()) return;
+                event.duration = 0;
+                getUser().counterSum(CounterName.PROVIDENCE, -1 * getSkillMultiplier().get("XA").getResult());
+                sendSkillTriggerEvent(combatFlow, "Starbound Anomalus Triggered, removing condition " + condition.getName());
             }
         });
     }

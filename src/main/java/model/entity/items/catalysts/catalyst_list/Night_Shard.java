@@ -33,7 +33,7 @@ public class Night_Shard implements CatalystEffect {
         random.add(true, 2);
         random.add(false, 1);
         if (random.roll()) {
-            return Crafter.shatterItem(equipment);
+            return Crafter.forceShatterItem(equipment);
         } else {
             return false;
         }

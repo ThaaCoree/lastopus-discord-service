@@ -18,11 +18,11 @@ public class Ode_Of_The_Shooting_Star extends Skill implements SkillWithConditio
                 "ทุกการจู่โจมหนึ่งชุดที่ได้รับ จะเพิ่ม Fate Charge 2 แสต็คซึ่งทับซ้อนได้ไม่จำกัด\n" +
                 "สามารถปิดใช้งานได้ด้วย Combined Action\n" +
                 "หากหมดสภาพต่อสู้ในระหว่างใช้งาน, สเลเฟียร์จะพุ่งตัวเข้าหาศัตรูโดยใช้แสต็ค Fate Charge ทั้งหมดที่มีเป็นธาตุไฟ(1)หรือแสง(2)และระเบิดทันที สร้างความเสียหายกายภาพ XC หน่วยต่อ Fate Charge\n" +
-                "จากนั้นทอยเต๋า 1d20 หากลูกเต๋าเป็น 10 หรือมากกว่าจะฟื้นตัวด้วยพลังชีวิต XD หน่วยหากเป็น 20 ฟื้นด้วยพลังชีวิต XE หน่วยหากทอยได้น้อยกว่า 10 จะหมดสภาพการต่อสู้");
+                "จากนั้นทอยเต๋า 1d20 หากลูกเต๋าเป็น 7 หรือมากกว่าจะฟื้นตัวด้วยพลังชีวิต XD หน่วยหากเป็น 20 ฟื้นด้วยพลังชีวิต XE หน่วยหากทอยได้น้อยกว่า 7 จะหมดสภาพการต่อสู้");
         setActionType("Action");
         setManaCost(11);
         setCooldown(5);
-        getSkillMultiplier().put("XA",new SkillMultiplier("(4*AGI+4*STR+4*VIT)*(1+BuffAMP)"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("(2.5*AGI+2.5*STR+2.5*VIT)*(1+BuffAMP)"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.DEFENSE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").getTags().add(SkillType.BUFF);

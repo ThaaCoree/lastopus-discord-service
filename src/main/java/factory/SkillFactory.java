@@ -7,6 +7,9 @@ import model.entity.skills.list.item.utility.*;
 import model.entity.skills.list.monster.*;
 import model.entity.skills.list.npc.*;
 import model.entity.skills.list.player.*;
+import model.entity.skills.list.summon.Infinity_Starfall;
+import model.entity.skills.list.summon.Stars_Guidance;
+import model.entity.skills.list.summon.Stars_Howl;
 import model.entity.units.Unit;
 import model.entity.skills.Skill;
 
@@ -637,6 +640,9 @@ public class SkillFactory {
         skillMap.put(Purify.NAME, Purify::new);
         skillMap.put(Devotion.NAME, Devotion::new); //unfinished
         skillMap.put(Phantom_Step.NAME, Phantom_Step::new);
+        skillMap.put(Stars_Howl.NAME, Stars_Howl::new);
+        skillMap.put(Infinity_Starfall.NAME, Infinity_Starfall::new);
+        skillMap.put(Stars_Guidance.NAME, Stars_Guidance::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

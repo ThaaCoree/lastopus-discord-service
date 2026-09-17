@@ -107,8 +107,11 @@ public class InventoryPane extends ScrollPane {
         CheckBox inSession = new CheckBox("In Session");
         CheckBox mixTwoHanded = new CheckBox("Mix-TwoHanded");
         CheckBox mermaidean = new CheckBox("Mermaidean's Strength");
+        TextField exp = new TextField();
         Button levelIncrease = new Button("+");
         Button levelDecrease = new Button("-");
+        Label leftOverExp = new Label(Integer.toString(unit.getLeftOverExp()) + " / " + unit.findExpRequired(unit.getLevel()+1));
+        exp.setPrefWidth(100);
         levelIncrease.setMinHeight(30);
         levelIncrease.setMaxHeight(30);
         levelIncrease.setMinWidth(30);
@@ -144,12 +147,12 @@ public class InventoryPane extends ScrollPane {
         });
 
         levelIncrease.setOnAction(e-> {
-            unit.levelIncrement();
+            unit.sumExp(Integer.parseInt(exp.getText()));
             unit.calculateEverything();
             refreshContents();
         });
         levelDecrease.setOnAction(e-> {
-            unit.levelDecrement();
+            unit.sumExp(Integer.parseInt(exp.getText()) * -1);
             unit.calculateEverything();
             refreshContents();
         });
@@ -213,11 +216,13 @@ public class InventoryPane extends ScrollPane {
         opusDesc.setStyle("-fx-font-size: 14px;");
         level.setStyle("-fx-font-size: 20px;");
         remainingStatusPoint.setStyle("-fx-font-size: 20px;");
+        leftOverExp.setStyle("-fx-font-size: 20px;");
 
         row1.getChildren().addAll(name, spacer1, inSession);
-        row2.getChildren().addAll(level, levelIncrease, levelDecrease, spacer2, mixTwoHanded);
+        row2.getChildren().addAll(level, spacer2, mixTwoHanded);
+        row4.getChildren().addAll(exp, levelIncrease, levelDecrease, leftOverExp);
         row3.getChildren().addAll(remainingStatusPoint, spacer3);
-        contentBox.getChildren().addAll(write ,row1, row2, row3, primaryLabel, primaryCard, secondaryLabel, secondaryCard, race, opusName, opusDesc);
+        contentBox.getChildren().addAll(write ,row1, row2, row4, row3, primaryLabel, primaryCard, secondaryLabel, secondaryCard, race, opusName, opusDesc);
         return contentBox;
     }
 

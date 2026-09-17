@@ -17,7 +17,7 @@ public class Invocation_Of_The_Fallen extends Skill implements SkillWithConditio
     public Invocation_Of_The_Fallen() {
         super();
         setDescription(
-                "The Iron Tomb ได้รับสกิลนี้เช่นกัน, ใช้ 4 วิวรณ์เพื่อร่ายสกิลนี้\n" +
+                "The Iron Tomb ได้รับสกิลนี้เช่นกัน, ใช้ 6 วิวรณ์เพื่อร่ายสกิลนี้\n" +
                 "ร่ายคาถาปลุกพลังจาก The Fallen Paradise เลือกใช้งาน Divine Invocation ของ 1 สกิล,\n" +
                         "Divine Intervention:\n" +
                         "Akivili ได้รับปีก 1 ข้าง, สูงสุด 6 ข้าง, เมื่อมีปีกครบ 6 ข้างแล้ว Akivili ได้รับความสามารถในการ บิน จนกว่าจะจบการต่อสู้\n" +

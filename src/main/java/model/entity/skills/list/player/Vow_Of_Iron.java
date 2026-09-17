@@ -74,7 +74,7 @@ public class Vow_Of_Iron extends Skill implements SkillWithCondition {
         tm.setSourceStatus(source);
         tm.setTargetStatus(target);
         tm.setTransferPercent(1);
-        tm.setTransferRatio(1);
+        tm.setTransferRatio(0.75);
 
         getSkillModifier().addTransferModifier(tm);
     }

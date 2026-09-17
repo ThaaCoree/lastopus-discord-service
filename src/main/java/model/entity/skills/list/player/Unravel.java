@@ -28,7 +28,7 @@ public class Unravel extends Skill {
         getSkillMultiplier().get("XA").getTags().add(SkillType.FIGHTING_STYLE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.PHYSICAL);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("0.10"));
+        getSkillMultiplier().put("XB",new SkillMultiplier("0.14"));
         getSkillMultiplier().get("XB").getTags().add(SkillType.LIMIT);
         getSkillMultiplier().get("XB").getTags().add(SkillType.FIGHTING_STYLE);
         getSkillMultiplier().get("XB").setPercent(true);
@@ -53,7 +53,9 @@ public class Unravel extends Skill {
     @Override
     public void calculateExtra() {
         double patk = getUser().getStats().get(StatType.PHYSICALATTACK).getFinal();
-        if (patk == 0) {
+        double ratk = getUser().getStats().get(StatType.RANGEDATTACK).getFinal();
+        double matk = getUser().getStats().get(StatType.MAGICALATTACK).getFinal();
+        if (patk == 0 || ratk == 0 || matk == 0) {
             getSkillMultiplier().put("XA",new SkillMultiplier("1"));
         }
         calculateAllMultiplier();

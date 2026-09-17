@@ -148,7 +148,7 @@ public class RuneCalculator {
             for (int k = 0; k < list.size(); k++) {
                 Rune affected = list.get(k);
                 if (indexes.contains(k)) {
-                    affected.getModifiers().multiplyAllModifiers(2);
+                    affected.getModifiers().multiplyAllModifiers(1.75);
                 } else {
                     affected.getModifiers().multiplyAllModifiers(0);
                 }
@@ -179,7 +179,7 @@ public class RuneCalculator {
         for (Rune rune : list) {
             if (!rune.getName().contains("Grand Spectrum")) continue;
 
-            double mult = 0.07 * grandSpectrumCount;
+            double mult = 0.05 * grandSpectrumCount;
 
             if (rune.getName().contains("Might")) {
                 rune.getModifiers().getStatusModifierSafe(StatusType.STRENGTH).setGlobalMult(mult);

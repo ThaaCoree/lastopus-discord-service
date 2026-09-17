@@ -175,6 +175,31 @@ public class Crafter {
         }
     }
 
+    public static boolean forceShatterItem(CraftedEquipment equipment) {
+        int base_materials = 0;
+        int boost_materials = 0;
+        for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
+            if (materialInstance.material_role == MaterialRole.BASE) {
+                base_materials++;
+            } else if (materialInstance.material_role == MaterialRole.BOOST) {
+                boost_materials++;
+            }
+        }
+
+        WeightedRandom<Boolean> random = new WeightedRandom<>();
+        int base_material_weight = base_materials*100;
+        double boost_material_weight = Math.pow(boost_materials, 3)*5;
+        if (base_material_weight + boost_material_weight > 300) {
+            random.add(false, 200);
+            random.add(true, base_material_weight + boost_material_weight);
+            return random.roll();
+        } else {
+            random.add(false, 7);
+            random.add(true, 3);
+            return random.roll();
+        }
+    }
+
     public static void putModsIntoWeightedRandom(WeightedRandom<CraftedMod> weightedRandom, CraftModPool pool, EquipmentType equipmentType, WeaponType weaponType) {
         for (CraftedMod mod : pool.getListByEquipType(equipmentType, weaponType)) {
             weightedRandom.add(mod, mod.weight);

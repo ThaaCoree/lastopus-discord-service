@@ -59,23 +59,6 @@ public class CombatFlow {
         eventBus.post(new RoundEvent(turnCount,1), EventPhase.MODIFY);
         turnCount++;
         LogWriterUtil.log("One Round has passed! starting round "+turnCount, turnCount);
-        for (Unit unit : allUnit.values()) {
-            for (SkillInstance instance : unit.getAllSkill().values()) {
-                instance.cooldownDecrement();
-            }
-            List<Integer> conditionsToRemove = new ArrayList<>();
-            for (Map.Entry<Integer, ConditionInstance> entry : unit.getConditionInstances().entrySet()) {
-                ConditionInstance instance = entry.getValue();
-                instance.sumAppliedTime(1);
-                if (instance.isExpired()) {
-                    LogWriterUtil.log("Condition "+instance.getCondition().getName()+" on "+unit.getName()+" has expired", turnCount);
-                    conditionsToRemove.add(entry.getKey());
-                }
-            }
-            for (Integer key : conditionsToRemove) {
-                unit.getConditionInstances().remove(key);
-            }
-        }
         eventBus.post(new RoundEvent(turnCount,1), EventPhase.POST);
         allUnitUpdate();
     }

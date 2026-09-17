@@ -18,7 +18,7 @@ public class UniqueMaterialManager {
             if (modInstance == null) continue;
             if (materialInstance.getMaterial_role() != MaterialRole.BASE) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
-            applyNitron(materialInstance, modInstance);
+            applyNitron(materialInstance, modInstance, materialInstances);
         }
     }
 
@@ -61,13 +61,22 @@ public class UniqueMaterialManager {
         modInstance.multiplyByTag(StatTag.DEFENSE, 1);
     }
 
-    public static void applyNitron(MaterialInstance materialInstance, ModInstance modInstance) {
+    public static void applyNitron(MaterialInstance materialInstance, ModInstance modInstance, List<MaterialInstance> materialInstances) {
         if (!materialInstance.getMaterial().getName().equals("Nitron")) return;
         if (materialInstance.getMaterial_role() != MaterialRole.BASE) return;
+        int nitrons = 1;
+        for (MaterialInstance instance : materialInstances) {
+            if (instance.getMaterial().getName().equalsIgnoreCase("Nitron") && instance.getMaterial_role().equals(MaterialRole.BASE)) {
+                nitrons++;
+            }
+        }
         double random = ThreadLocalRandom.current().nextDouble(1.5, 2.5);
 
         modInstance.multiplyFinal_value(random);
-        modInstance.multiplyFinal_value(ThreadLocalRandom.current().nextBoolean() ? 1 : -1);
+        WeightedRandom<Boolean> positive = new WeightedRandom<>();
+        positive.add(true, 2);
+        positive.add(false, nitrons);
+        modInstance.multiplyFinal_value(positive.roll() ? 1 : -1);
     }
 
     public void setModInstance(ModInstance modInstance) {
