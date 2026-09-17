@@ -18,19 +18,19 @@ public class Fairy_Lore extends Skill {
 
     public Fairy_Lore() {
         super();
-        setDescription("ได้รับ MP และ MDEF เพิ่มขึ้นตาม INT ที่มี (ปัจจุบัน XA หน่วยและ XB หน่วยตามลำดับ)\n" +
+        setDescription("ได้รับ MP และ Crit Chance เพิ่มขึ้นตาม INT ที่มี (ปัจจุบัน XA หน่วยและ XB ตามลำดับ)\n" +
                 "และยังสามารถฟื้นฟู MP ได้แม้หมดสติอยู่");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
-        getPureTags().add(SkillType.PHYSICAL);
         setManaReservePercent(0.4);
         getSkillMultiplier().put("XA",new SkillMultiplier("0.2*INT"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.RESOURCE);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("1.2*INT"));
+        getSkillMultiplier().put("XB",new SkillMultiplier("0.0001*INT"));
         getSkillMultiplier().get("XB").getTags().add(SkillType.RESOURCE);
         getSkillMultiplier().get("XB").getTags().add(SkillType.DEFENSE);
+        getSkillMultiplier().get("XB").setPercent(true);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Fairy_Lore extends Skill {
         getSkillModifier().getStatModifierSafe(StatType.MANAPOINT).setFlat(xa);
 
         double xb = getSkillMultiplier().get("XB").getResult();
-        getSkillModifier().getStatModifierSafe(StatType.MAGICALDEFENSE).setFlat(xb);
+        getSkillModifier().getStatModifierSafe(StatType.CRITCHANCE).setFlat(xb);
     }
 
     @Override

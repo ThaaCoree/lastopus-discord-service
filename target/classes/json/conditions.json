@@ -25251,7 +25251,7 @@
   },
   "Impending Stab" : {
     "name" : "Impending Stab",
-    "description" : "รับความเสียหายกายภาพ 810.328522321826 หน่วยเมื่อจบรอบเทิร์น",
+    "description" : "รับความเสียหายกายภาพ 909.3151148967664 หน่วยเมื่อจบรอบเทิร์น",
     "statusDescription" : "\n",
     "modifiers" : {
       "statModifiers" : { },
@@ -28224,14 +28224,14 @@
   "Istenta" : {
     "name" : "Istenta",
     "description" : "",
-    "statusDescription" : "24.92% GlobalPATK\n24.92% GlobalMATK\n24.92% GlobalRATK\n24.92% GlobalMDEF\n24.92% GlobalPDEF\n\n",
+    "statusDescription" : "21.79% GlobalPATK\n21.79% GlobalMATK\n21.79% GlobalRATK\n21.79% GlobalMDEF\n21.79% GlobalPDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24922856472027005,
+          "globalMult" : 0.21791299106110443,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28239,7 +28239,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24922856472027005,
+          "globalMult" : 0.21791299106110443,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28247,7 +28247,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24922856472027005,
+          "globalMult" : 0.21791299106110443,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28255,7 +28255,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24922856472027005,
+          "globalMult" : 0.21791299106110443,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
@@ -28263,7 +28263,7 @@
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
-          "globalMult" : 0.24922856472027005,
+          "globalMult" : 0.21791299106110443,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         }
@@ -35796,11 +35796,11 @@
   "Shadow Field" : {
     "name" : "Shadow Field",
     "description" : "",
-    "statusDescription" : "972.62 PATK\n972.62 MATK\n972.62 RATK\n852.08 Evasion\n\n",
+    "statusDescription" : "1084.31 PATK\n1084.31 MATK\n1084.31 RATK\n1051.82 Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
-          "flat" : 972.6231340648189,
+          "flat" : 1084.3109110137325,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35808,7 +35808,7 @@
           "passiveMult" : 0.0
         },
         "MAGICALATTACK" : {
-          "flat" : 972.6231340648189,
+          "flat" : 1084.3109110137325,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35816,7 +35816,7 @@
           "passiveMult" : 0.0
         },
         "RANGEDATTACK" : {
-          "flat" : 972.6231340648189,
+          "flat" : 1084.3109110137325,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -35824,7 +35824,7 @@
           "passiveMult" : 0.0
         },
         "EVASION" : {
-          "flat" : 852.0765579850181,
+          "flat" : 1051.8238601102853,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,

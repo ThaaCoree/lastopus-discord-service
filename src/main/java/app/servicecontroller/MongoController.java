@@ -277,12 +277,7 @@ public class MongoController {
     public String save_passive(@RequestBody Map<Integer, PassiveNode> map) {
 
         mongoTemplate.dropCollection("passives");
-        Map<String, PassiveNode> re_map = new LinkedHashMap<>();
-
-        map.forEach((key, node) -> {
-            re_map.put(Integer.toString(key), node);
-        });
-        mongoTemplate.save(re_map, "passives");
+        mongoTemplate.save(map, "passives");
 
         System.out.println("saved passive");
         return "saved";

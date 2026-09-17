@@ -120,6 +120,7 @@ public class Database {
 //        allEquipmentMap = JsonUtils.loadFromFile("/json/equipments.json", new TypeReference<Map<String, Equipment>>() {});
 //        allRuneMap = JsonUtils.loadFromFile("/json/runes.json", new TypeReference<Map<String, Rune>>() {});
 //        allShop = JsonUtils.loadFromFile("/json/shops.json", new TypeReference<Map<String, Shop>>() {});
+//        allPassiveMap = JsonUtils.loadFromFile("/json/passives.json", new TypeReference<Map<Integer, PassiveNode>>() {});
         allMaterials = JsonUtils.loadFromFile("/json/materials.json", new TypeReference<Map<String, CraftingMaterial>>() {});
         allModPools = JsonUtils.loadFromFile("/json/modPools.json", new TypeReference<Map<String, CraftModPool>>() {});
 //        allCraftedEquipments = JsonUtils.loadFromFile("/json/craftedEquipments.json", new TypeReference<Map<String, CraftedEquipment>>() {});
