@@ -1,23 +1,29 @@
-package model.entity.skills.list.npc;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import model.entity.Conditions;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillMultiplier;
 import model.entity.skills.SkillTarget;
+import model.type.ActType;
+import model.type.ActionEffectType;
 import model.type.SkillType;
 
-public class Vulnerable_Moments extends Skill {
+public class Duplicator extends Skill {
 
-    public static String NAME = "Vulnerable Moments";
+    public static String NAME = "Duplicator";
 
-    public Vulnerable_Moments() {
+    public Duplicator() {
         super();
-        setDescription("เมื่อหลบสำเร็จ เลือกพันมิตรอื่นหนึ่งยูนิต ยูนิตนั้นจู่โจมเป้าหมายด้วยการโจมตีปกติหรือสกิลที่ไม่ใช่รูปแบบ Turn ได้");
-        setActionType("Passive");
-        setManaCost(0);
-        setCooldown(0);
-        getPureTags().add(SkillType.RESOURCE);
-        setManaReservePercent(0.4);
+        setDescription("เมื่อใช้งาน, เลียนแบบการกระทำของยูนิตใดก็ตามในสนาม; หากการกระทำนั้นไม่ได้ซับซ้อนจนเกินความสามารถของผู้ใช้, สร้างภาพจำลองขึ้นมาเลียนแบบการกระทำนั้น\n" +
+                "หรือสามารถใช้งาน Action เพื่อใช้สกิลนี้สร้างสิ่งเลียนแบบสิ่งของขึ้นมาแทนได้ หากไม่ได้ซับซ้อนจนเกินไปจะเลียนแบบออกมาได้อย่างสมบูรณ์");
+        setActionType("Hold Action");
+        setManaCost(6);
+        setCooldown(3);
+        setManaReservePercent(0.25);
+        getPureTags().add(SkillType.OPUS);
     }
 
     @Override

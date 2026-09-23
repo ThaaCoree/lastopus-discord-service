@@ -3784,5 +3784,88 @@
       "DEBRIS" : 0.0
     },
     "conditionsGiven" : [ ]
+  },
+  "Heavy Empower Potion" : {
+    "name" : "Heavy Empower Potion",
+    "itemType" : "CONSUMABLE",
+    "description" : "",
+    "statusDescription" : "สถานะ Heavy Empower Potion เป็นเวลา 3 รอบเทิร์น\n",
+    "lore" : "ยาสีแดงแก่ ถูกปรุงขึ้นด้วยพิษที่ผสมกับวัตถุดิบชูกำลังบางชนิด ถึงแม้จะมีข้อเสียอยู่บ้าง แต่ก็ยังเพิ่มพละกำลังได้มากอย่างที่ควรจะเป็น",
+    "price" : "",
+    "weight" : 2,
+    "price_in_copper" : 0,
+    "restoredFlat" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "restoredMissingPercent" : {
+      "HEALTH" : 0.0,
+      "MANA" : 0.0,
+      "DEBRIS" : 0.0
+    },
+    "conditionsGiven" : [ {
+      "condition" : {
+        "name" : "Heavy Empower Potion",
+        "description" : "",
+        "statusDescription" : "5% GlobalSTR\n10% GlobalPATK\n10% GlobalRATK\n-25% GlobalMSPD\n-32% GlobalPDEF\n\n",
+        "modifiers" : {
+          "statModifiers" : {
+            "PHYSICALATTACK" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.1,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "RANGEDATTACK" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.1,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "PHYSICALDEFENSE" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : -0.32,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "MOVEMENTSPEED" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : -0.25,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
+          "statusModifiers" : {
+            "STRENGTH" : {
+              "flat" : 0.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.05,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            }
+          },
+          "transferModifiers" : { },
+          "skillModifiers" : { }
+        },
+        "conditionType" : "NEUTRAL",
+        "conditionTierType" : "BOUND"
+      },
+      "duration" : 3.0
+    } ]
   }
 }

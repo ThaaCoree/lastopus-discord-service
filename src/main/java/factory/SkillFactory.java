@@ -638,11 +638,17 @@ public class SkillFactory {
         skillMap.put(Kingmaker.NAME, Kingmaker::new);
         skillMap.put(Body_Hold.NAME, Body_Hold::new);
         skillMap.put(Purify.NAME, Purify::new);
-        skillMap.put(Devotion.NAME, Devotion::new); //unfinished
+        skillMap.put(Devotion.NAME, Devotion::new);
         skillMap.put(Phantom_Step.NAME, Phantom_Step::new);
         skillMap.put(Stars_Howl.NAME, Stars_Howl::new);
         skillMap.put(Infinity_Starfall.NAME, Infinity_Starfall::new);
         skillMap.put(Stars_Guidance.NAME, Stars_Guidance::new);
+        skillMap.put(Nutcracker.NAME, Nutcracker::new);
+        skillMap.put(Their_Next_Move_Is.NAME, Their_Next_Move_Is::new);
+        skillMap.put(Duplicator.NAME, Duplicator::new);
+        skillMap.put(Tricked.NAME, Tricked::new);
+        skillMap.put(To_The_Stars_And_The_Abyss.NAME, To_The_Stars_And_The_Abyss::new); //unfinished
+        skillMap.put(Trailblazer_Navigator.NAME, Trailblazer_Navigator::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

@@ -49,7 +49,8 @@ public enum CounterName {
     INCANTATION("Incantation"),
     LOVE_TRAIN("Love Train"),
     TRAP_TRIGGERED("Trap Triggered"),
-    THE_SUNS("The Suns");
+    THE_SUNS("The Suns"),
+    FUEL_AND_COG("Fuel & Cog");
 
     private final String displayName;
 

@@ -1,22 +1,27 @@
-package model.entity.skills.list.npc;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import model.entity.Conditions;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillMultiplier;
 import model.entity.skills.SkillTarget;
+import model.type.ActType;
+import model.type.ActionEffectType;
 import model.type.SkillType;
 
-public class Vulnerable_Moments extends Skill {
+public class Their_Next_Move_Is extends Skill {
 
-    public static String NAME = "Vulnerable Moments";
+    public static String NAME = "Their next move is...!!!";
 
-    public Vulnerable_Moments() {
+    public Their_Next_Move_Is() {
         super();
-        setDescription("เมื่อหลบสำเร็จ เลือกพันมิตรอื่นหนึ่งยูนิต ยูนิตนั้นจู่โจมเป้าหมายด้วยการโจมตีปกติหรือสกิลที่ไม่ใช่รูปแบบ Turn ได้");
+        setDescription("เมื่อศัตรูจู่โจมด้วยวิธีที่เคยเห็นแล้วในช่วงสองรอบเทิร์นที่ผ่านมา สามารถใช้งาน Combined Action ร่วมกับ Reaction เพื่อหลบหลีกการจู่โจมนั้นได้ทันที สามารถหลบได้แม้เป็นเวทมนตร์ และใช้สกิลนี้กับพันธมิตรเพื่อให้พันธมิตรหลบหลีกได้");
         setActionType("Passive");
-        setManaCost(0);
-        setCooldown(0);
-        getPureTags().add(SkillType.RESOURCE);
+        setManaCost(3);
+        setCooldown(1);
+        getPureTags().add(SkillType.OPUS);
         setManaReservePercent(0.4);
     }
 

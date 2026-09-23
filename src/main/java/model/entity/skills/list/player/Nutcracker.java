@@ -1,4 +1,4 @@
-package model.entity.skills.list.monster;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
@@ -8,17 +8,20 @@ import model.entity.skills.*;
 import model.entity.units.Unit;
 import model.type.*;
 
-public class Spectral_Shroud extends Skill implements SkillWithCondition {
+public class Nutcracker extends Skill {
 
-    public static String NAME = "Spectral Shroud";
+    public static String NAME = "Nutcracker";
 
-    public Spectral_Shroud() {
+    public Nutcracker() {
         super();
-        setDescription("มอบสถานะ Spectral Shroud ให้กับพันธมิตรหนึ่งเป้าหมาย, มอบ Damage Reduction 75% หนึ่งเทิร์น");
-        setActionType("Reaction");
-        setManaCost(16);
-        setCooldown(5);
+        setDescription("เมื่อโจมตีศัตรู หากมี Accuracy มากกว่า Evasion ของเป้าหมาย จะสามารถใช้ Combined Action เพิ่มเติมเพื่อทำการเตะใส่จุดอ่อนของศัตรู สร้างความเสียหายกายภาพเพิ่มเติม XA หน่วย และสตันเป้าหมายหนึ่งเทิร์น");
+        setActionType("Passive");
+        setManaCost(0);
+        setCooldown(0);
         setManaReservePercent(0.25);
+        getSkillMultiplier().put("XA",new SkillMultiplier("1.4*PATK"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.STRIKE);
+        getSkillMultiplier().get("XA").getTags().add(SkillType.PHYSICAL);
     }
 
     @Override
@@ -45,28 +48,14 @@ public class Spectral_Shroud extends Skill implements SkillWithCondition {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
-            Conditions condition = combatFlow.findCondition("Spectral Shroud");
-
+            double xa = getSkillMultiplier().get("XA").getResult();
+            Conditions condition = combatFlow.findCondition("Stun");
             sendActionEvent(combatFlow.getEventBus(),
                     ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                            .effect(ActionEffectType.DAMAGE_PHYSICAL, xa, 1)
                             .condition(condition, 1)
                             .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
                             .build());
-        }
-    }
-
-    @Override
-    public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Spectral Shroud");
-        condition.getStatModifiers(StatType.DAMAGEREDUCTION).setFlat(0.75);
-
-        condition.setConditionType(ConditionType.BUFF);
-        condition.setConditionTierType(ConditionTierType.ADVANCED);
-
-        addConditionToDatabase(condition, combatFlow);
-
-        for (Unit unit : combatFlow.getAllUnit().values()) {
-            ConditionManager.reapplyCondition(condition, unit);
         }
     }
 

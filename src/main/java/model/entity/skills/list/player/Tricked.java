@@ -1,4 +1,4 @@
-package model.entity.skills.list.monster;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
@@ -8,17 +8,26 @@ import model.entity.skills.*;
 import model.entity.units.Unit;
 import model.type.*;
 
-public class Spectral_Shroud extends Skill implements SkillWithCondition {
+public class Tricked extends Skill implements SkillWithCondition {
 
-    public static String NAME = "Spectral Shroud";
+    public static String NAME = "Tricked";
 
-    public Spectral_Shroud() {
+    public Tricked() {
         super();
-        setDescription("มอบสถานะ Spectral Shroud ให้กับพันธมิตรหนึ่งเป้าหมาย, มอบ Damage Reduction 75% หนึ่งเทิร์น");
-        setActionType("Reaction");
-        setManaCost(16);
-        setCooldown(5);
-        setManaReservePercent(0.25);
+        setDescription("Passive : การจู่โจมจากภาพลวงตาที่อัญเชิญจะไม่สามารถถูกหลบได้\n" +
+                "Active : มอบสถานะ Confused ให้กับเป้าหมายเป็นเวลา XB รอบเทิร์น\n" +
+                "Confused : ลด Accuracy XA และ มีโอกาสโจมตีพลาดไปเป้าหมายที่ไม่ได้เลือก");
+        setActionType("Action");
+        setManaCost(5);
+        setCooldown(2);
+        setManaReservePercent(0.15);
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.3*(1+DebuffAMP)"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
+        getSkillMultiplier().get("XA").getTags().add(SkillType.DEBUFF);
+        getSkillMultiplier().get("XA").setPercent(true);
+
+        getSkillMultiplier().put("XB",new SkillMultiplier("3"));
+        getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
     }
 
     @Override
@@ -45,11 +54,11 @@ public class Spectral_Shroud extends Skill implements SkillWithCondition {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
-            Conditions condition = combatFlow.findCondition("Spectral Shroud");
-
+            int duration = (int) getSkillMultiplier().get("XB").getResult();
+            Conditions condition = combatFlow.findCondition("Confused");
             sendActionEvent(combatFlow.getEventBus(),
                     ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                            .condition(condition, 1)
+                            .condition(condition, duration)
                             .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
                             .build());
         }
@@ -57,10 +66,10 @@ public class Spectral_Shroud extends Skill implements SkillWithCondition {
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Spectral Shroud");
-        condition.getStatModifiers(StatType.DAMAGEREDUCTION).setFlat(0.75);
+        Conditions condition = new Conditions("Confused");
+        condition.getStatModifiers(StatType.ACCURACY).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
 
-        condition.setConditionType(ConditionType.BUFF);
+        condition.setConditionType(ConditionType.DEBUFF);
         condition.setConditionTierType(ConditionTierType.ADVANCED);
 
         addConditionToDatabase(condition, combatFlow);

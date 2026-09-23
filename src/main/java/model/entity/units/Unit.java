@@ -251,6 +251,9 @@ public class Unit {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
             List<Request> requests = buildWriteRequests(sheetsUtil);
+            if (requests == null || requests.isEmpty()) {
+                return;
+            }
             sheetsUtil.takeRequests(requests);
             sheetsUtil.requestSet();
             String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้
@@ -271,6 +274,9 @@ public class Unit {
         try {
             GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil(googleCredential);
             List<Request> requests = buildWriteRequests(sheetsUtil);
+            if (requests == null || requests.isEmpty()) {
+                return;
+            }
             sheetsUtil.takeRequests(requests);
             sheetsUtil.requestSet();
             sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);

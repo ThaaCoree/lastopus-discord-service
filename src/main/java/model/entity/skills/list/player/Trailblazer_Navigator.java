@@ -1,23 +1,31 @@
-package model.entity.skills.list.npc;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
+import controller.event.events.ActionEvent;
+import model.entity.Conditions;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
+import model.entity.skills.SkillMultiplier;
 import model.entity.skills.SkillTarget;
+import model.type.ActType;
+import model.type.ActionEffectType;
 import model.type.SkillType;
 
-public class Vulnerable_Moments extends Skill {
+public class Trailblazer_Navigator extends Skill {
 
-    public static String NAME = "Vulnerable Moments";
+    public static String NAME = "Trailblazer Navigator";
 
-    public Vulnerable_Moments() {
+    public Trailblazer_Navigator() {
         super();
-        setDescription("เมื่อหลบสำเร็จ เลือกพันมิตรอื่นหนึ่งยูนิต ยูนิตนั้นจู่โจมเป้าหมายด้วยการโจมตีปกติหรือสกิลที่ไม่ใช่รูปแบบ Turn ได้");
-        setActionType("Passive");
-        setManaCost(0);
-        setCooldown(0);
+        setDescription("ล็อคเป้าศัตรูที่มี HP มากที่สุด จากนั้นเลือกพันธมิตรหนึ่งยูนิต\n" +
+                "ยูนิตนั้นได้รับ Action ที่ใช้งานได้ทันที, การใช้งานสกิลด้วย Action ดังกล่าวจะไม่นับคูลดาวน์และไม่ใช้งานมานา/พลังชีวิต");
+        setActionType("Action");
+        setManaCost(8);
+        setCooldown(2);
+        getPureTags().add(SkillType.OPUS);
         getPureTags().add(SkillType.RESOURCE);
-        setManaReservePercent(0.4);
+        getPureTags().add(SkillType.FIGHTING_STYLE);
+        setManaReservePercent(0.1);
     }
 
     @Override
@@ -43,6 +51,18 @@ public class Vulnerable_Moments extends Skill {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
+        if (!skillTarget.getTarget(0).isEmpty()) {
+            double xa = getSkillMultiplier().get("XA").getResult();
+            int duration = (int) getSkillMultiplier().get("XB").getResult();
+            Conditions condition = combatFlow.findCondition("Glyph Shocked");
+            sendActionEvent(combatFlow.getEventBus(),
+                    ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                            .effect(ActionEffectType.DAMAGE_PHYSICAL, xa, 1)
+                            .condition(condition, duration)
+                            .addActType(ActType.ATTACK, ActType.STRIKE)
+                            .build()
+            );
+        }
     }
 
     @Override
