@@ -57,7 +57,7 @@ public class Bearers_Fate extends Skill {
         int givingRATK = 0;
 
         for (Map.Entry<Integer, EquipmentSlot> entry : getUser().getEquipmentSlots().entrySet()) {
-            if (entry.getValue().getEquipment() == null) break;
+            if (entry.getValue().getEquipment() == null) continue;
             if (entry.getValue().getEquipmentType().equals(EquipmentType.WEAPON)) {
                 Equipment equipment = entry.getValue().getEquipment();
                 if (equipment.getStatModifiers().get(StatType.PHYSICALATTACK) != null) {
