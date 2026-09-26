@@ -4,10 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.entity.ModifierBundle;
 import model.entity.UniqueModifier;
 import model.entity.units.Unit;
-import model.type.SkillType;
-import model.type.StatType;
-import model.type.StatusType;
-import model.type.UniqueType;
+import model.modifier.TransferModifier;
+import model.type.*;
 
 public class UniqueManager {
     @JsonIgnore
@@ -29,6 +27,8 @@ public class UniqueManager {
         calculateBlueWhale();
         calculateTwilightInfusion();
         calculateTwilightInfusionLuck();
+        calculateCanine();
+        calculateSilverObsidian();
         calculateLightWeight();
         calculateWolf();
         calculateStarsDamnation();
@@ -232,6 +232,58 @@ public class UniqueManager {
                 modifier.getModifiers().getSkillModifierSafe(SkillType.WATER).sumMult(waterBonus);
                 modifier.getModifiers().getStatModifierSafe(StatType.MOVEMENTSPEED).sumGlobalMult(mspdPenalty);
                 modifier.getModifiers().getStatModifierSafe(StatType.EVASION).sumGlobalMult(evasionPenalty);
+            }
+        }
+    }
+
+    public void calculateCanine() {
+        for (UniqueModifier modifier : unit.getUniqueModifier()) {
+            if (modifier.getName() == null) continue;
+            if (modifier.getName().equals(UniqueType.Q_CARNINE)) {
+                double ratio;
+                if (modifier.isActive()) {
+                    ratio = 0.3;
+                } else {
+                    ratio = 0;
+                }
+                TransferModifier agi = new TransferModifier();
+                agi.setTransferType(TransferType.GAIN);
+                agi.setSourceStatus(StatusType.AGILITY);
+                agi.setTargetStatus(StatusType.WISDOM);
+                agi.setTransferRatio(1);
+                agi.setTransferPercent(ratio);
+                modifier.getModifiers().addTransferModifier(agi);
+
+                TransferModifier dex = new TransferModifier();
+                dex.setTransferType(TransferType.GAIN);
+                dex.setSourceStatus(StatusType.DEXTERITY);
+                dex.setTargetStatus(StatusType.WISDOM);
+                dex.setTransferRatio(1);
+                dex.setTransferPercent(ratio);
+                modifier.getModifiers().addTransferModifier(dex);
+            }
+        }
+    }
+
+    public void calculateSilverObsidian() {
+        for (UniqueModifier modifier : unit.getUniqueModifier()) {
+            if (modifier.getName() == null) continue;
+            if (modifier.getName().equals(UniqueType.SILVER_OBSIDIAN)) {
+                double bonus_ratio;
+                double drawback_ratio;
+                if (modifier.isActive()) {
+                    bonus_ratio = 0.35;
+                    drawback_ratio = 0.15;
+                } else {
+                    bonus_ratio = 0;
+                    drawback_ratio = 0;
+                }
+
+                modifier.getModifiers().getStatModifierSafe(StatType.MOVEMENTSPEED).sumGlobalMult(bonus_ratio);
+                modifier.getModifiers().getStatModifierSafe(StatType.EVASION).sumGlobalMult(bonus_ratio);
+                modifier.getModifiers().getStatModifierSafe(StatType.HEALTHREGEN).setOverride(0);
+                modifier.getModifiers().getStatModifierSafe(StatType.MAGICALDEFENSE).sumGlobalMult(drawback_ratio * -1);
+                modifier.getModifiers().getStatModifierSafe(StatType.PHYSICALDEFENSE).sumGlobalMult(drawback_ratio * -1);
             }
         }
     }

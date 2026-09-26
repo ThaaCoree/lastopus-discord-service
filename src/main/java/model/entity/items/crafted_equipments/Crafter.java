@@ -194,8 +194,8 @@ public class Crafter {
             random.add(true, base_material_weight + boost_material_weight);
             return random.roll();
         } else {
-            random.add(false, 7);
-            random.add(true, 3);
+            random.add(false, 8);
+            random.add(true, 2);
             return random.roll();
         }
     }

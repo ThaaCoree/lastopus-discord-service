@@ -18,7 +18,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/icon.png")));
         MainPane root = new MainPane(database);
 
-//        database.createNPC("Darren");
+//        database.createNPC("Raki");
 //        database.createPlayer("Hunter Blackwood");
 
 //        Skill test = SkillFactory.getSkill(Catastrophic_Convergence.NAME, database.getAllPlayerMap().get("Acheros Aki"));

@@ -648,9 +648,11 @@ public class SkillFactory {
         skillMap.put(Duplicator.NAME, Duplicator::new);
         skillMap.put(Tricked.NAME, Tricked::new);
         skillMap.put(To_The_Stars_And_The_Abyss.NAME, To_The_Stars_And_The_Abyss::new); //unfinished
-        skillMap.put(Trailblazer_Navigator.NAME, Trailblazer_Navigator::new);
-        skillMap.put(Stone_Barrier.NAME, Stone_Barrier::new);
-        skillMap.put(Adaptive_Body.NAME, Adaptive_Body::new);
+        skillMap.put(Trailblazer_Navigator.NAME, Trailblazer_Navigator::new); //unfinished
+        skillMap.put(Stone_Barrier.NAME, Stone_Barrier::new); //unfinished
+        skillMap.put(Adaptive_Body.NAME, Adaptive_Body::new); //unfinished
+        skillMap.put(Upslash.NAME, Upslash::new);
+        skillMap.put(Airslash.NAME, Airslash::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

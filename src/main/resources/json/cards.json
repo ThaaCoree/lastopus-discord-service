@@ -4988,27 +4988,45 @@
   "Solar Owl Card" : {
     "name" : "Solar Owl Card",
     "abilityName" : {
-      "PRIMARY" : "",
-      "SECONDARY" : ""
+      "PRIMARY" : "Spell Instinct",
+      "SECONDARY" : "Spell Trick"
     },
     "description" : {
       "PRIMARY" : "",
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "\n",
-      "SECONDARY" : "\n"
+      "PRIMARY" : "10% GlobalINT\n\n",
+      "SECONDARY" : "7% GlobalWIS\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "INTELLIGENCE" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.1,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       },
       "SECONDARY" : {
         "statModifiers" : { },
-        "statusModifiers" : { },
+        "statusModifiers" : {
+          "WISDOM" : {
+            "flat" : 0.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.07,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          }
+        },
         "transferModifiers" : { },
         "skillModifiers" : { }
       }
@@ -5480,6 +5498,35 @@
   },
   "Larezonik's Sand Arcanist Card" : {
     "name" : "Larezonik's Sand Arcanist Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
+  },
+  "Red Meerkat Card" : {
+    "name" : "Red Meerkat Card",
     "abilityName" : {
       "PRIMARY" : "",
       "SECONDARY" : ""
