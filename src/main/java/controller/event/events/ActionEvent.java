@@ -26,6 +26,7 @@ public class ActionEvent {
     public Map<Integer, Map<String, Double>> condition_number_record = new LinkedHashMap<>();
     public boolean ignore_def = false;
     public double extra_def = 0;
+    public boolean deflected = false;
 
     public ActionEvent(String event_source,Unit unit_source, Unit unit_target) {
         this.event_source = event_source;

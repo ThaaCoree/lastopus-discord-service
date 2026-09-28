@@ -784,7 +784,7 @@ public class CombatPane extends ScrollPane {
             combatFlow.getParties().put(2, new ArrayList<>());
         });
         party_box.getChildren().add(add_party);
-        toolBox.getChildren().addAll(advancedBox,skillUseBox, createSkillInput(), skillUseArea, startTurn, focus, spacer1, oneRoundPass, oneRoundRewind, party_box);
+        toolBox.getChildren().addAll(advancedBox,skillUseBox, createSkillInput(), skillUseArea, startTurn, focus, endTurn, spacer1, oneRoundPass, oneRoundRewind, party_box);
         return toolBox;
     }
 
@@ -1192,8 +1192,7 @@ public class CombatPane extends ScrollPane {
                 Label overallToShow = new Label();
                 indicatorToShow.setText(allStats[i].writeAsString() + "\n\n");
                 double statValue = stat.get(allStats[i]).getFinal();
-                if (allStats[i] == StatType.CRITCHANCE || allStats[i] == StatType.CRITDAMAGE || allStats[i] == StatType.HEALAMPLIFIER || allStats[i] == StatType.BUFFAMPLIFIER ||
-                        allStats[i] == StatType.DEBUFFAMPLIFIER) {
+                if (allStats[i].isPercentage()) {
                     overallToShow.setText(String.format("%.2f", statValue*100) + "%\n\n");
                 } else {
                     overallToShow.setText(String.format("%.2f", statValue) + "\n\n");
@@ -1215,8 +1214,7 @@ public class CombatPane extends ScrollPane {
                 Label overallToShow = new Label();
                 indicatorToShow.setText(allStats[i].writeAsString() + "\n\n");
                 double statValue = stat.get(allStats[i]).getFinal();
-                if (allStats[i] == StatType.DAMAGEAMPLIFIER || allStats[i] == StatType.DAMAGEREDUCTION || allStats[i] == StatType.ATTACKSPEED || allStats[i] == StatType.CASTSPEED ||
-                        allStats[i] == StatType.RESERVATION || allStats[i] == StatType.CRITSHIELD) {
+                if (allStats[i].isPercentage()) {
                     overallToShow.setText(String.format("%.2f", statValue*100) + "%\n\n");
                 } else {
                     overallToShow.setText(String.format("%.2f", statValue) + "\n\n");

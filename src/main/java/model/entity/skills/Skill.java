@@ -249,7 +249,7 @@ public abstract class Skill {
 
                     num = ThreadLocalRandom.current().nextInt(100)+1;
                     double after_crit_shield = source_crit_chance - target_crit_shield;
-                    if (after_crit_shield * 100 >= num) {
+                    if (after_crit_shield * 100 >= num || num == 1 || num == 77) {
                         event.putCritical(unit, true, i);
                     } else {
                         event.putCritical(unit, false, i);
@@ -269,11 +269,18 @@ public abstract class Skill {
                     } else {
                         after_crit_shield = source_crit_chance;
                     }
-                    if (after_crit_shield * 100 >= num) {
+                    if (after_crit_shield * 100 >= num || num == 1 || num == 77) {
                         event.putCriticalHeal(unit, true, i);
                     } else {
                         event.putCriticalHeal(unit, false, i);
                     }
+                }
+            }
+
+            if (event.hasMagicalDamage(unit.getName())) {
+                int dice = ThreadLocalRandom.current().nextInt(100)+1;
+                if (dice <= calculateDeflection(unit, event.unit_source) || dice == 1 || dice == 77) {
+                    event.deflected = true;
                 }
             }
         }
@@ -357,7 +364,7 @@ public abstract class Skill {
                         damage_per_loop += calculateDamageAfterDEF(target, event.unit_source,
                                 event.getDamage(type, name), type, event.extra_def, event.ignore_def);
 
-                        if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
+                        if (event.deflected && type.equals(DamageType.MAGICAL)) {
                             damage_per_loop /= 4;
                         }
 
@@ -377,9 +384,6 @@ public abstract class Skill {
                         }
                     }
 
-                    if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
-                        damage /= 4;
-                    }
                     display.append(" ").append(type.writeAsString()).append(" damage (sum ").append(df.format(damage)).append(" ) from ").append(source_event);
 //                    target.sumRemainingHealth(damage * -1);
                     LogWriterUtil.log(display.toString());
@@ -390,8 +394,8 @@ public abstract class Skill {
                     if (avoid_dice <= calculateBlock(target, event.unit_source, damage, 0, 0, type)) {
                         LogWriterUtil.log(">Blockable");
                     }
-                    if (avoid_dice <= calculateDeflection(target, event.unit_source) && type.equals(DamageType.MAGICAL)) {
-                        LogWriterUtil.log(">Deflectable");
+                    if (event.deflected && type.equals(DamageType.MAGICAL)) {
+                        LogWriterUtil.log(">Deflected");
                     }
                 }
             }

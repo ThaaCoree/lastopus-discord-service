@@ -382,8 +382,7 @@ public class InventoryPane extends ScrollPane {
             Label overallToShow = new Label();
             indicatorToShow.setText(allStats[i].writeAsString() + "\n\n");
             double statValue = stat.get(allStats[i]).getFinal();
-            if (allStats[i] == StatType.CRITCHANCE || allStats[i] == StatType.CRITDAMAGE || allStats[i] == StatType.HEALAMPLIFIER || allStats[i] == StatType.BUFFAMPLIFIER ||
-                    allStats[i] == StatType.DEBUFFAMPLIFIER) {
+            if (allStats[i].isPercentage()) {
                 overallToShow.setText(String.format("%.2f", statValue*100) + "%\n\n");
             } else {
                 overallToShow.setText(String.format("%.2f", statValue) + "\n\n");
@@ -445,8 +444,7 @@ public class InventoryPane extends ScrollPane {
             Label overallToShow = new Label();
             indicatorToShow.setText(allStats[i].writeAsString() + "\n\n");
             double statValue = stat.get(allStats[i]).getFinal();
-            if (allStats[i] == StatType.DAMAGEAMPLIFIER || allStats[i] == StatType.DAMAGEREDUCTION || allStats[i] == StatType.ATTACKSPEED || allStats[i] == StatType.CASTSPEED ||
-                    allStats[i] == StatType.RESERVATION || allStats[i] == StatType.CRITSHIELD) {
+            if (allStats[i].isPercentage()) {
                 overallToShow.setText(String.format("%.2f", statValue*100) + "%\n\n");
             } else {
                 overallToShow.setText(String.format("%.2f", statValue) + "\n\n");

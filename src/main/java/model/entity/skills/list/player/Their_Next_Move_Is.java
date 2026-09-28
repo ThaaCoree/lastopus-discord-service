@@ -13,7 +13,7 @@ import model.type.SkillType;
 
 public class Their_Next_Move_Is extends Skill {
 
-    public static String NAME = "Their next move is...!!!";
+    public static String NAME = "Their next move is !!!";
 
     public Their_Next_Move_Is() {
         super();

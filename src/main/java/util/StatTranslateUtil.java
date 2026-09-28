@@ -138,10 +138,7 @@ public class StatTranslateUtil {
 
             String result = "";
             if (flat != 0) {
-                if (key == StatType.ATTACKSPEED || key == StatType.RESERVATION || key == StatType.CASTSPEED || key == StatType.CRITCHANCE || key == StatType.CRITDAMAGE
-                || key ==  StatType.CRITSHIELD || key == StatType.HEALAMPLIFIER || key == StatType.BUFFAMPLIFIER || key == StatType.DEBUFFAMPLIFIER || key == StatType.DAMAGEAMPLIFIER
-                || key == StatType.DAMAGEREDUCTION || key == StatType.POISONAMP || key == StatType.IGNITEAMP || key == StatType.BLEEDAMP
-                || key == StatType.IGNOREPDEF || key == StatType.IGNOREMDEF || key == StatType.DEBUFFRESISTANCE) {
+                if (key.isPercentage()) {
                     result = result + df.format(flat*100) + "% " + stat + "\n";
                 } else {
                     result = result + df.format(flat) + " " + stat + "\n";
@@ -282,12 +279,7 @@ public class StatTranslateUtil {
             double override = modifier.getOverride();
             String stat = statToWrite.get(key);
 
-            boolean percent = key == StatType.ATTACKSPEED || key == StatType.RESERVATION || key == StatType.CASTSPEED ||
-                    key == StatType.CRITCHANCE || key == StatType.CRITDAMAGE || key == StatType.CRITSHIELD ||
-                    key == StatType.HEALAMPLIFIER || key == StatType.BUFFAMPLIFIER || key == StatType.DEBUFFAMPLIFIER ||
-                    key == StatType.DAMAGEAMPLIFIER || key == StatType.DAMAGEREDUCTION || key == StatType.POISONAMP ||
-                    key == StatType.BLEEDAMP || key == StatType.IGNITEAMP ||
-                    key == StatType.IGNOREPDEF || key == StatType.IGNOREMDEF || key == StatType.DEBUFFRESISTANCE;
+            boolean percent = key.isPercentage();
             if (flat != 0) {
                 if (percent) {
                     result.append(df.format(flat * 100)).append("% ").append(stat).append("\n");

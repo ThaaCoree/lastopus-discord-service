@@ -45,7 +45,7 @@ public class CombatUtilityPanel extends ScrollPane {
     public CombatUtilityPanel(CombatFlow combatFlow) {
         this.combatFlow = combatFlow;
 
-        setPrefWidth(400);
+        setMinWidth(400);
         for (Unit unit : combatFlow.getAllUnit().values()) {
             allName.getItems().add(unit.getName());
         }
@@ -262,6 +262,9 @@ public class CombatUtilityPanel extends ScrollPane {
                 sb.append(" [Magical Damage]");
                 amount = calculateDamageAfterDEF(target, event.unit_source,
                         amount, DamageType.MAGICAL, event.extra_def, event.ignore_def);
+                if (event.deflected) {
+                    amount /= 4;
+                }
             }
             case HEALTH_RECOVER -> sb.append(" [Health Recover]");
             case MANA_RECOVER -> sb.append(" [Mana Recover]");
@@ -340,14 +343,14 @@ public class CombatUtilityPanel extends ScrollPane {
                 if (record != null) {
                     combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.PRE);
                     combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.MODIFY);
-                    ConditionManager.applyCondition(conditions, event.unit_source, target, turn_number, record);
+                    ConditionManager.applyCondition(conditions, conditionInflictEvent.unit_source, conditionInflictEvent.target, conditionInflictEvent.duration, record);
                     combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.POST);
                     target.calculateEverything();
                 }
             } else {
                 combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.PRE);
                 combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.MODIFY);
-                ConditionManager.applyCondition(conditions, event.unit_source, target, turn_number);
+                ConditionManager.applyCondition(conditions, conditionInflictEvent.unit_source, conditionInflictEvent.target, conditionInflictEvent.duration);
                 combatFlow.getEventBus().post(conditionInflictEvent, EventPhase.POST);
                 target.calculateEverything();
             }
