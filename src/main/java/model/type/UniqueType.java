@@ -18,7 +18,9 @@ public enum UniqueType {
     WINEL_WOLF("Wolf"),
     STARS_DAMNATION("Star's Damnation"),
     Q_CARNINE("Carnine"),
-    SILVER_OBSIDIAN("Silver Obsidian");
+    SILVER_OBSIDIAN("Silver Obsidian"),
+    RAKI("Raki"),
+    ORE_DEVOUR("Ore Devour");
 
     private final String displayName;
 

@@ -21,6 +21,7 @@ public class UniqueManager {
         calculateFairy();
         calculateOrc();
         calculateElf();
+        calculateOreDevour();
         calculateGrayWolf();
         calculateBull();
         calculateLinkHolder();
@@ -29,6 +30,7 @@ public class UniqueManager {
         calculateTwilightInfusionLuck();
         calculateCanine();
         calculateSilverObsidian();
+        calculateRaki();
         calculateLightWeight();
         calculateWolf();
         calculateStarsDamnation();
@@ -138,18 +140,28 @@ public class UniqueManager {
     public void calculateElf() {
         for (UniqueModifier modifier : unit.getUniqueModifier()) {
             if (modifier.getName() == null) continue;
-            if (modifier.getName().equals(UniqueType.YASHA_BULL)) {
-                double healthPenalty;
-                double manaBonus;
+            if (modifier.getName().equals(UniqueType.ELF)) {
                 if (modifier.isActive()) {
-                    healthPenalty = -0.2;
-                    manaBonus = 0.5;
-                } else {
-                    healthPenalty = 0;
-                    manaBonus = 0;
+                    modifier.getModifiers().getStatModifierSafe(StatType.HEALTHPOINT).sumGlobalMult(-0.2);
+                    modifier.getModifiers().getStatModifierSafe(StatType.MANAPOINT).sumGlobalMult(0.5);
+                    modifier.getModifiers().getStatModifierSafe(StatType.MANAREGEN).sumGlobalMult(1);
                 }
-                modifier.getModifiers().getStatModifierSafe(StatType.HEALTHPOINT).sumGlobalMult(healthPenalty);
-                modifier.getModifiers().getStatModifierSafe(StatType.MANAPOINT).sumGlobalMult(manaBonus);
+            }
+        }
+    }
+
+    public void calculateOreDevour() {
+        for (UniqueModifier modifier : unit.getUniqueModifier()) {
+            if (modifier.getName() == null) continue;
+            if (modifier.getName().equals(UniqueType.ORE_DEVOUR)) {
+                int used_point = 0;
+                for (Integer value : unit.getRaisedStatuses().values()) {
+                    used_point += value;
+                }
+                if (modifier.isActive()) {
+                    modifier.getModifiers().getStatModifierSafe(StatType.PHYSICALDEFENSE).sumFlat(2*used_point);
+                    modifier.getModifiers().getStatModifierSafe(StatType.MAGICALDEFENSE).sumFlat(2*used_point);
+                }
             }
         }
     }
@@ -284,6 +296,31 @@ public class UniqueManager {
                 modifier.getModifiers().getStatModifierSafe(StatType.HEALTHREGEN).setOverride(0);
                 modifier.getModifiers().getStatModifierSafe(StatType.MAGICALDEFENSE).sumGlobalMult(drawback_ratio * -1);
                 modifier.getModifiers().getStatModifierSafe(StatType.PHYSICALDEFENSE).sumGlobalMult(drawback_ratio * -1);
+            }
+        }
+    }
+
+    public void calculateRaki() {
+        for (UniqueModifier modifier : unit.getUniqueModifier()) {
+            if (modifier.getName() == null) continue;
+            if (modifier.getName().equals(UniqueType.RAKI)) {
+                double speed_ratio;
+                double drawback_ratio;
+                double str_ratio;
+                if (modifier.isActive()) {
+                    speed_ratio = 0.08;
+                    drawback_ratio = 0.15;
+                    str_ratio = 0.45;
+                    modifier.getModifiers().getStatModifierSafe(StatType.CRITCHANCE).setOverride(0);
+                } else {
+                    speed_ratio = 0;
+                    drawback_ratio = 0;
+                    str_ratio = 0;
+                }
+                double str = unit.getStatuses().get(StatusType.STRENGTH).getFinal();
+                modifier.getModifiers().getStatModifierSafe(StatType.SPEED).sumFlat(speed_ratio * str);
+                modifier.getModifiers().getStatusModifierSafe(StatusType.STRENGTH).sumGlobalMult(str_ratio);
+                modifier.getModifiers().getStatusModifierSafe(StatusType.DEXTERITY).sumGlobalMult(drawback_ratio * -1);
             }
         }
     }

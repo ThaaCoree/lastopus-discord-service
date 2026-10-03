@@ -19,7 +19,7 @@ public class Main extends Application {
         MainPane root = new MainPane(database);
 
 //        database.createNPC("Raki");
-//        database.createPlayer("Hunter Blackwood");
+//        database.createPlayer("MM");
 
 //        Skill test = SkillFactory.getSkill(Catastrophic_Convergence.NAME, database.getAllPlayerMap().get("Acheros Aki"));
 //        test.use(database.getCombatController());

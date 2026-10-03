@@ -653,6 +653,12 @@ public class SkillFactory {
         skillMap.put(Adaptive_Body.NAME, Adaptive_Body::new); //unfinished
         skillMap.put(Upslash.NAME, Upslash::new);
         skillMap.put(Airslash.NAME, Airslash::new);
+        skillMap.put(Pre_Battle_Setup.NAME, Pre_Battle_Setup::new); //unfinished
+        skillMap.put(Forced_Attack.NAME, Forced_Attack::new); //unfinished
+        skillMap.put(Malice_Eater.NAME, Malice_Eater::new); //unfinished
+        skillMap.put(Refinery.NAME, Refinery::new); //unfinished
+        skillMap.put(Emit.NAME, Emit::new); //unfinished
+        skillMap.put(Phase.NAME, Phase::new); //unfinished
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

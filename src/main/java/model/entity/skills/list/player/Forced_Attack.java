@@ -1,4 +1,4 @@
-package model.entity.skills.list.npc;
+package model.entity.skills.list.player;
 
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
@@ -11,25 +11,29 @@ import model.type.ActType;
 import model.type.ActionEffectType;
 import model.type.SkillType;
 
-public class Upslash extends Skill {
+public class Forced_Attack extends Skill {
 
-    public static String NAME = "Upslash";
+    public static String NAME = "Forced Attack";
 
-    public Upslash() {
+    public Forced_Attack() {
         super();
-        setDescription("ฟันเป้าหมายในมุมเสยขึ้น สร้างความเสียหายกายภาพ XA หน่วย จากนั้นทำให้มันลอยขึ้นเหนือพื้นหากทำได้");
+        setDescription("มอบหนึ่ง Combined Action ให้กับ XA เป้าหมาย\n" +
+                "หากเป้าหมายมี Combined Action อยู่แล้ว จะนำ Combined Action ที่ได้รับจากสกิลนี้รวมกับ 1 Combined Action ของเป้าหมาย กลายเป็น Action\n" +
+                "โดย Action ที่เกิดจากสกิลนี้จะต้องถูกใช้กับการกระทำที่สร้างความเสียหายเท่านั้น\n" +
+                "เป้าหมายของสกิลสามารถใช้งาน Action ดังกล่าวได้ทันที หรือจะเลือกใช้ในระหว่างเทิร์นของตนเองที่จะมาถึงในรอบปัจจุบันก็ได้");
         setActionType("Action");
-        setManaCost(5);
+        setManaCost(6);
         setCooldown(1);
-        getSkillMultiplier().put("XA",new SkillMultiplier("1.75*PATK"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.PHYSICAL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.STRIKE);
+        getPureTags().add(SkillType.RESOURCE);
+
+        getSkillMultiplier().put("XA",new SkillMultiplier("1"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.LIMIT);
     }
 
     @Override
     public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
         SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
-                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
         );
 //        spec    .addFields(
 //                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
@@ -51,9 +55,12 @@ public class Upslash extends Skill {
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
             double xa = getSkillMultiplier().get("XA").getResult();
+            int duration = (int) getSkillMultiplier().get("XB").getResult();
+            Conditions condition = combatFlow.findCondition("Glyph Shocked");
             sendActionEvent(combatFlow.getEventBus(),
                     ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
                             .effect(ActionEffectType.DAMAGE_PHYSICAL, xa, 1)
+                            .condition(condition, duration)
                             .addActType(ActType.ATTACK, ActType.STRIKE)
                             .build()
             );
