@@ -659,6 +659,8 @@ public class SkillFactory {
         skillMap.put(Refinery.NAME, Refinery::new); //unfinished
         skillMap.put(Emit.NAME, Emit::new); //unfinished
         skillMap.put(Phase.NAME, Phase::new); //unfinished
+        skillMap.put(Gift_And_Take.NAME, Gift_And_Take::new); //unfinished
+        skillMap.put(Hear_My_Pray.NAME, Hear_My_Pray::new); //unfinished
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

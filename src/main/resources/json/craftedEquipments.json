@@ -91688,5 +91688,823 @@
         "passiveMult" : 0.0
       }
     }
+  },
+  "Beta Rich Ring" : {
+    "name" : "Beta Rich Ring",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "128.52 INT\n16.43 WIS\n3.31% HealAMP\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 0,
+    "price_in_copper" : 0,
+    "equipmentType" : "ACCESSORY",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "HEALAMPLIFIER" : {
+          "flat" : 0.03313114574207181,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "WISDOM" : {
+          "flat" : 16.42604361277208,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "INTELLIGENCE" : {
+          "flat" : 128.52134443924015,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 14.738681781657196,
+      "final_value" : 14.738681781657196,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 12.469494483521443,
+      "final_value" : 12.469494483521443,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 12,
+      "base_rolled" : 15.855610472620254,
+      "final_value" : 15.855610472620254,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 0,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 14.271838084825788,
+      "final_value" : 14.271838084825788,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 6,
+      "base_material_id" : 1,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 7.109162952237021,
+      "final_value" : 7.109162952237021,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 8,
+      "base_material_id" : 1,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 7,
+      "base_rolled" : 10.441653091085591,
+      "final_value" : 10.441653091085591,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 7,
+      "base_material_id" : 1,
+      "pool_name" : "Mana Reactive",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 7,
+      "base_rolled" : 9.310722254127356,
+      "final_value" : 9.310722254127356,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 13,
+      "base_material_id" : 2,
+      "pool_name" : "Recovery",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 16.42604361277208,
+      "final_value" : 16.42604361277208,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "WISDOM",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 10,
+      "base_material_id" : 2,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 13.693751730104538,
+      "final_value" : 13.693751730104538,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 12,
+      "base_material_id" : 2,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 15.943747161083406,
+      "final_value" : 15.943747161083406,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 11,
+      "base_material_id" : 2,
+      "pool_name" : "Mystic",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 14.686682427977566,
+      "final_value" : 14.686682427977566,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "INTELLIGENCE",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 300,
+        "fixed" : false
+      }
+    }, {
+      "mod_id" : 14,
+      "base_material_id" : 2,
+      "pool_name" : "Recovery",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 10,
+      "base_rolled" : 0.03313114574207181,
+      "final_value" : 0.03313114574207181,
+      "mod" : {
+        "statType" : "HEALAMPLIFIER",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      }
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Linite",
+        "itemType" : "ORE",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ลิไนท์ แร่สีฟ้าคราม ส่องประกายแสงออกมารอบทิศทางตลอดเวลา ไม่มีใครทราบว่าต้นกำเนิดของมันมาจากไหน แต่ว่ากันว่ามันเป็นแร่ที่ทรงพลังมาก และถูกใช้งานโดยชาวจันทราในอดีต\nเมื่อสัมผัสกับอากาศโดยตรงจะปลดปล่อยคลื่นที่เปลี่ยนแปลงความถี่ของวัตถุรอบๆอย่างไม่เป็นระเบียบ ส่งผลให้หมดสติได้ การได้รับคลื่นเปลี่ยนแปลงความถี่นี้มากเกินไปจะทำให้เสียชีวิตได้",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 90,
+        "material_max_mod" : 4,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 2
+          },
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 9,
+            "maxTier" : 12,
+            "maxModsAllowed" : 4
+          }
+        },
+        "modBoost" : {
+          "MAGIC" : 1.5
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Luminite",
+        "itemType" : "ORE",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "ผลึกสีฟ้าครามที่หาพบได้ยากมาก ในตอนอาทิตย์ตก แม้ไม่ได้ต้องแสงจันทร์ มันก็จะสว่างออกมา\nบางคนจะพกก้อนเล็กๆไว้ติดตัวในเวลาที่เดินทางใต้ดินเพื่อให้รับรู้การไหลของเวลา",
+        "price" : "Buy 50 Silver",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 75,
+        "material_max_mod" : 3,
+        "reveal_usage" : false,
+        "pools" : {
+          "Mana Reactive" : {
+            "pool" : {
+              "pool_name" : "Mana Reactive",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 6,
+            "maxTier" : 8,
+            "maxModsAllowed" : 3
+          },
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "RECOVERY" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Spine of Light Dragon",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "",
+        "lore" : "หนามของมังกรประกายแสง มันโปร่งแสงจนดูเหมือนแก้วที่มีส่วนแหลม มองไปอีกทีก็คล้ายปริซึม แต่ดูเหมือนจะมีคุณสมบัติมากกว่าแค่รวมหรือกระจายแสง\nเพราะดูเหมือนมันจะกักเก็บแสงเอาไว้ด้านใน",
+        "price" : "",
+        "weight" : 3,
+        "price_in_copper" : 0,
+        "material_toughness" : 120,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Mystic" : {
+            "pool" : {
+              "pool_name" : "Mystic",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 10,
+            "maxModsAllowed" : 3
+          },
+          "Recovery" : {
+            "pool" : {
+              "pool_name" : "Recovery",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALAMPLIFIER",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "BUFFAMPLIFIER",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "HEALAMPLIFIER",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "BUFFAMPLIFIER",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MANAREGEN",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 800,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 10,
+            "maxTier" : 10,
+            "maxModsAllowed" : 3
+          }
+        },
+        "modBoost" : {
+          "RECOVERY" : 9.0,
+          "LIGHT" : 9.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    } ],
+    "catalystInstances" : [ ],
+    "transferModifiers" : { },
+    "statModifiers" : {
+      "HEALAMPLIFIER" : {
+        "flat" : 0.03313114574207181,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "statusModifiers" : {
+      "WISDOM" : {
+        "flat" : 16.42604361277208,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "INTELLIGENCE" : {
+        "flat" : 128.52134443924015,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
   }
 }
