@@ -426,6 +426,9 @@ public class DiscordController {
             for (Integer number : numbers) {
                 if (unit.getRune_inventory().get(number) != null) {
                     dust_amount++;
+                    if (unit.getRune_inventory().get(number).isUnique_rune()) {
+                        dust_amount += 64;
+                    }
                 }
                 unit.getRune_inventory().remove(number);
             }
@@ -460,7 +463,12 @@ public class DiscordController {
 
             List<Rune> created_list = new ArrayList<>();
             for (int i = 0; i < amount; i++) {
-                Rune rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
+                Rune rune = null;
+                if (itemName.equalsIgnoreCase("random")) {
+                    rune = Rune.randomRune(unit, database.allRuneMap);
+                } else {
+                    rune = Rune.createRandomRune(unit, database.allRuneMap, itemName);
+                }
                 if (rune == null) return "กรุณาใส่ชื่อรูนที่ถูกต้อง";
                 WeightedRandom<Boolean> chance_one_break = new WeightedRandom<>();
                 chance_one_break.add(true, 2);
@@ -479,8 +487,13 @@ public class DiscordController {
             }
             System.out.println(created_list);
             for (Rune rune : created_list) {
-                used_dust += rune.occupying_slots();
+                if (itemName.equalsIgnoreCase("random")) {
+                    used_dust += 2;
+                } else {
+                    used_dust += rune.occupying_slots();
+                }
             }
+
             int have_dust = unit.findItemAmount("Rune Dust");
             if (used_dust > have_dust) {
                 return "มีผงรูนไม่พอ";
