@@ -473,7 +473,7 @@ public class DiscordController {
                 WeightedRandom<Boolean> chance_one_break = new WeightedRandom<>();
                 chance_one_break.add(true, 2);
                 chance_one_break.add(false, 8);
-                if (chance_one_break.roll() && rune.occupying_slots() == 1) {
+                if (chance_one_break.roll() && rune.occupying_slots() == 1 && !itemName.equalsIgnoreCase("random")) {
                     stringBuilder.append("## ").append(i + 1).append(". ").append("[Rune Break!]").append("\n");
                     used_dust += 1;
                 } else {
