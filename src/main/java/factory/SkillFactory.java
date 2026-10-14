@@ -661,6 +661,8 @@ public class SkillFactory {
         skillMap.put(Phase.NAME, Phase::new); //unfinished
         skillMap.put(Gift_And_Take.NAME, Gift_And_Take::new); //unfinished
         skillMap.put(Hear_My_Pray.NAME, Hear_My_Pray::new); //unfinished
+        skillMap.put(Sword_Of_God_Farlai.NAME, Sword_Of_God_Farlai::new); //unfinished
+        skillMap.put(Wrath_Of_Blaze.NAME, Wrath_Of_Blaze::new); //unfinished
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 
