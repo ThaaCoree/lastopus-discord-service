@@ -426,8 +426,8 @@ public class DiscordController {
                     if (unit.getRune_inventory().get(number).isUnique_rune()) {
                         dust_amount += 64;
                     }
+                    unit.getRune_inventory().remove(number);
                 }
-                unit.getRune_inventory().remove(number);
             }
             unit.reindexRunes();
             Item dust = database.allMaterials.get("Rune Dust");
