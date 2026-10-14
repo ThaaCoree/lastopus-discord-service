@@ -269,8 +269,8 @@ public class DiscordController {
         } catch (NumberFormatException e) {
             return "จำนวนไม่ถูกต้อง";
         }
-        if (amount > 20) {
-            return "จำกัดการซื้อครั้งละไม่เกิน 20 ชิ้น!";
+        if (amount > 150) {
+            return "จำกัดการซื้อครั้งละไม่เกิน 150 ชิ้น!";
         }
             if (price*amount > unit.getCopperCoin()) {
                 return "มีเงินไม่เพียงพอ!";
@@ -452,8 +452,8 @@ public class DiscordController {
             } catch (NumberFormatException e) {
                 return "จำนวนไม่ถูกต้อง";
             }
-            if (amount > 20) {
-                return "สร้างรูนมากกว่า 20 ชิ้นต่อครั้งไม่ได้";
+            if (amount > 150) {
+                return "สร้างรูนมากกว่า 150 ชิ้นต่อครั้งไม่ได้";
             }
             String itemName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
 
