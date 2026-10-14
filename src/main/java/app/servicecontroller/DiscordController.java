@@ -313,6 +313,7 @@ public class DiscordController {
                 return "หมายเลขต้องมากกว่า -1";
             }
             Rune rune = giver.findRune(index);
+            giver.getFavoriteRunes().remove(index);
             if (rune == null) return "ไม่พบรูน";
             {
                 target.addRuneToInventory(rune);
@@ -499,7 +500,7 @@ public class DiscordController {
                     .toList();
             for (Integer number : numbers) {
                 if (unit.getRune_inventory().get(number) != null) {
-                    unit.getFavoriteRunes().add(number);
+                    unit.getFavoriteRunes().remove(number);
                 }
             }
             writeintoSheet(unit);
