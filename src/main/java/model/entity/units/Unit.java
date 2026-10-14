@@ -1,9 +1,7 @@
 package model.entity.units;
 import calculator.StatCalculator;
 import calculator.StatusCalculator;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.model.Request;
 import com.google.common.util.concurrent.AtomicDouble;
@@ -23,7 +21,6 @@ import model.entity.skills.SkillInstance;
 import model.entity.skills.SkillWithCondition;
 import model.modifier.ModValue;
 import model.type.*;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 import util.GoogleSheetsUtil;
@@ -72,6 +69,7 @@ public class Unit {
 
     private boolean[][] rune_board = new boolean[6][6];
     private Map<Integer, Rune> rune_inventory = new LinkedHashMap<>();
+    private Set<Integer> favoriteRunes = new HashSet<>();
     private List<Rune> socketed_runes = new ArrayList<>();
     private ModifierBundle rune_modifiers = new ModifierBundle();
     private int exp = 0;
@@ -930,13 +928,25 @@ public class Unit {
     }
 
     public Rune findRune(int index) {
-        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
-        int i = 1;
-        for (Rune rune_reindex : rune_inventory.values()) {
-            reindexed.put(i++, rune_reindex);
-        }
-        rune_inventory = reindexed;
         return rune_inventory.get(index);
+    }
+
+    public void reindexRunes() {
+        Map<Integer, Rune> newInventory = new LinkedHashMap<>();
+        Set<Integer> newFavorites = new HashSet<>();
+        int i = 1;
+        for (Map.Entry<Integer, Rune> e : rune_inventory.entrySet()) {
+            newInventory.put(i, e.getValue());
+            if (favoriteRunes.contains(e.getKey())) newFavorites.add(i);
+            i++;
+        }
+        rune_inventory = newInventory;
+        favoriteRunes = newFavorites;
+    }
+
+    public void removeRune(int index) {
+        rune_inventory.remove(index);
+        reindexRunes();
     }
 
     public Equipment findEquipment(String name) {
@@ -1001,6 +1011,14 @@ public class Unit {
             return false;
         }
         return object.getName().equals(name);
+    }
+
+    public Set<Integer> getFavoriteRunes() {
+        return favoriteRunes;
+    }
+
+    public void setFavoriteRunes(Set<Integer> favoriteRunes) {
+        this.favoriteRunes = favoriteRunes;
     }
 
     public void setName(String name) {
@@ -1419,12 +1437,7 @@ public class Unit {
             rune_inventory = new LinkedHashMap<>();
         }
 
-        Map<Integer, Rune> reindexed = new LinkedHashMap<>();
-        int i = 1;
-        for (Rune rune_reindex : rune_inventory.values()) {
-            reindexed.put(i++, rune_reindex);
-        }
-        rune_inventory = reindexed;
+        reindexRunes();
 
         for (Map.Entry<Integer, Rune> entry : rune_inventory.entrySet()) {
             int slotNum = entry.getKey();
@@ -1446,6 +1459,8 @@ public class Unit {
                 return;
             }
         }
+
+        reindexRunes();
     }
 
     public Rune findRune(int row, int col) {

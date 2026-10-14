@@ -12,7 +12,6 @@ import model.entity.items.Equipment;
 import model.entity.items.EquipmentSlot;
 import model.entity.items.Item;
 import model.entity.items.Rune;
-import model.entity.items.catalysts.CatalystFactory;
 import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.*;
 import model.entity.units.Unit;
@@ -25,10 +24,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import util.GoogleSheetsUtil;
-import util.JsonUtils;
 import util.WeightedRandom;
 
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -424,7 +421,7 @@ public class DiscordController {
                     .toList();
             int dust_amount = 0;
             for (Integer number : numbers) {
-                if (unit.getRune_inventory().get(number) != null) {
+                if (unit.getRune_inventory().get(number) != null && !unit.getFavoriteRunes().contains(number)) {
                     dust_amount++;
                     if (unit.getRune_inventory().get(number).isUnique_rune()) {
                         dust_amount += 64;
@@ -432,10 +429,81 @@ public class DiscordController {
                 }
                 unit.getRune_inventory().remove(number);
             }
+            unit.reindexRunes();
             Item dust = database.allMaterials.get("Rune Dust");
             unit.getInventoryManager().addItem(dust, dust_amount);
             writeintoSheet(unit);
             return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust อย่าลืมรีเซ็ตหน้าเว็บรูนบอร์ดนะ!";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/runecrushall")
+    public String runecrushall(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int dust_amount = 0;
+            Iterator<Map.Entry<Integer, Rune>> it = unit.getRune_inventory().entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry<Integer, Rune> runeEntry = it.next();
+                Rune rune = runeEntry.getValue();
+                if (rune != null && !unit.getFavoriteRunes().contains(runeEntry.getKey())) {
+                    dust_amount++;
+                    if (rune.isUnique_rune()) {
+                        dust_amount += 64;
+                    }
+                    it.remove(); // ลบผ่าน iterator ปลอดภัย
+                }
+            }
+            unit.reindexRunes();
+            Item dust = database.allMaterials.get("Rune Dust");
+            unit.getInventoryManager().addItem(dust, dust_amount);
+            writeintoSheet(unit);
+            return "ย่อยสลายรูนเรียบร้อย! ได้รับ "+dust_amount+" Rune Dust อย่าลืมรีเซ็ตหน้าเว็บรูนบอร์ดนะ!";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/runefav")
+    public String runefav(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            List<Integer> numbers = playerMessage.args.stream()
+                    .filter(arg -> arg.matches("\\d+"))
+                    .map(Integer::parseInt)
+                    .toList();
+            for (Integer number : numbers) {
+                if (unit.getRune_inventory().get(number) != null) {
+                    unit.getFavoriteRunes().add(number);
+                }
+            }
+            writeintoSheet(unit);
+            return "ช่องรูนถูก Favorite ไว้แล้ว อย่าลืมรีเซ็ตหน้าเว็บรูนบอร์ดนะ!";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/runeunfav")
+    public String runeunfav(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            List<Integer> numbers = playerMessage.args.stream()
+                    .filter(arg -> arg.matches("\\d+"))
+                    .map(Integer::parseInt)
+                    .toList();
+            for (Integer number : numbers) {
+                if (unit.getRune_inventory().get(number) != null) {
+                    unit.getFavoriteRunes().add(number);
+                }
+            }
+            writeintoSheet(unit);
+            return "ช่องรูนถูกนำ Favorite ออกแล้ว อย่าลืมรีเซ็ตหน้าเว็บรูนบอร์ดนะ!";
         } else {
             return "No Role!";
         }
