@@ -9,7 +9,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
-import com.mongodb.client.result.UpdateResult;
 import model.entity.*;
 import model.entity.items.*;
 import model.entity.items.crafted_equipments.CraftModPool;
@@ -428,7 +427,7 @@ public class ServiceDatabase {
     }
 
     public void load_player(String name) {
-        ObjectId playersDocId = new ObjectId("6a0bacabad25d430756d6be8");
+        ObjectId playersDocId = new ObjectId("6ad11a94122d0298c9a21b10");
         Query query = new Query(Criteria.where("_id").is(playersDocId));
         query.fields().include(name);
 
@@ -600,17 +599,11 @@ public class ServiceDatabase {
 
             t = System.currentTimeMillis();
             // hardcode _id ของ document players ไว้เลย ไม่ต้อง find ก่อน
-            ObjectId playersDocId = new ObjectId("6a0bacabad25d430756d6be8");
+            ObjectId playersDocId = new ObjectId("6ad11a94122d0298c9a21b10");
             Query updateQuery = new Query(Criteria.where("_id").is(playersDocId));
             Update update = new Update().set(unit.getName(), unit);
-
-            UpdateResult result = mongoTemplate.upsert(updateQuery, update, "players");
-
-            if (result.getUpsertedId() != null) {
-                System.out.println("สร้าง doc ใหม่: " + result.getUpsertedId());
-            } else {
-                System.out.println("อัปเดต doc เดิม, modified = " + result.getModifiedCount());
-            }
+            mongoTemplate.updateFirst(updateQuery, update, Document.class, "players");
+            System.out.println("doc = mongoTemplate.findOne: " + (System.currentTimeMillis() - t) + "ms");
 
 
 

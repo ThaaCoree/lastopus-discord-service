@@ -1104,6 +1104,21 @@ public class DiscordController {
             if (role.equals("Hunter Blackwood")) {
                 name = "Hunter Blackwood";
             }
+            if (role.equals("THUS")) {
+                name = "THUS";
+            }
+            if (role.equals("Veyron")) {
+                name = "Veyron";
+            }
+            if (role.equals("MM")) {
+                name = "MM";
+            }
+            if (role.equals("Ravel")) {
+                name = "Ravel";
+            }
+            if (role.equals("Blazer")) {
+                name = "Blazer";
+            }
         }
         if (!name.isEmpty()) {
             database.load_player(name);
