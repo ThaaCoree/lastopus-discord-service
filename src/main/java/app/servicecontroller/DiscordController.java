@@ -1136,7 +1136,7 @@ public class DiscordController {
 
             int old_amount = unit.getStatus_reset_point();
 
-            unit.setStatus_reset_point(old_amount - amount);
+            unit.setStatus_reset_point(old_amount + amount);
             writeintoSheet(unit);
             return "สเตตัส " + returningStatusName +" ถูกรีเซ็ตเป็นจำนวน " + amount*-1 + " แต้มแล้ว\n" +
                     "คงเหลือแต้มสเตตัส " + unit.getRemainingStatusPoint() + " แต้ม";
