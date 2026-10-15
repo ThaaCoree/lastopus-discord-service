@@ -6,6 +6,7 @@ import app.servicemodel.PlayerMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.google.api.services.sheets.v4.model.Request;
+import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.ShopItem;
 import model.entity.items.Equipment;
@@ -1053,7 +1054,7 @@ public class DiscordController {
             }
 
             writeintoSheet(unit);
-            return "สเตตัส " + returningStatusName + "ถูกเพิ่มเป็นจำนวน " + amount + " แต้มแล้ว\n" +
+            return "สเตตัส " + returningStatusName + " ถูกเพิ่มเป็นจำนวน " + amount + " แต้มแล้ว\n" +
                     "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
         } else {
             return "No Role!";
@@ -1082,32 +1083,60 @@ public class DiscordController {
             amount *= -1;
 
             String returningStatusName = "";
+            int remainingStatus = 0;
 
             if (statusName.equalsIgnoreCase("STR") || statusName.equalsIgnoreCase("STRENGTH")) {
                 unit.getRaisedStatuses().merge(StatusType.STRENGTH, amount, Integer::sum);
                 returningStatusName = StatusType.STRENGTH.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.STRENGTH);
             } else if (statusName.equalsIgnoreCase("AGI") || statusName.equalsIgnoreCase("AGILITY")) {
                 unit.getRaisedStatuses().merge(StatusType.AGILITY, amount, Integer::sum);
                 returningStatusName = StatusType.AGILITY.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.AGILITY);
             } else if (statusName.equalsIgnoreCase("VIT") || statusName.equalsIgnoreCase("VITALITY")) {
                 unit.getRaisedStatuses().merge(StatusType.VITALITY, amount, Integer::sum);
                 returningStatusName = StatusType.VITALITY.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.VITALITY);
             } else if (statusName.equalsIgnoreCase("DEX") || statusName.equalsIgnoreCase("DEXTERITY")) {
                 unit.getRaisedStatuses().merge(StatusType.DEXTERITY, amount, Integer::sum);
                 returningStatusName = StatusType.DEXTERITY.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.DEXTERITY);
             } else if (statusName.equalsIgnoreCase("WIS") || statusName.equalsIgnoreCase("WISDOM")) {
                 unit.getRaisedStatuses().merge(StatusType.WISDOM, amount, Integer::sum);
                 returningStatusName = StatusType.WISDOM.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.WISDOM);
             } else if (statusName.equalsIgnoreCase("INT") || statusName.equalsIgnoreCase("INTELLIGENCE")) {
                 unit.getRaisedStatuses().merge(StatusType.INTELLIGENCE, amount, Integer::sum);
                 returningStatusName = StatusType.INTELLIGENCE.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.INTELLIGENCE);
             } else if (statusName.equalsIgnoreCase("LUK") || statusName.equalsIgnoreCase("LUCK")) {
                 unit.getRaisedStatuses().merge(StatusType.LUCK, amount, Integer::sum);
                 returningStatusName = StatusType.LUCK.writeAsString();
+                remainingStatus = unit.getRaisedStatuses().get(StatusType.LUCK);
             } else {
                 return "ไม่พบสเตตัสดังกล่าว";
             }
 
+            if (remainingStatus <= 0) {
+                boolean starwatcher = false;
+                int level = unit.getLevel();
+                for (PassiveNode node : unit.getAllocatedPassives().values()) {
+                    if (node.getName().equalsIgnoreCase("Starwatcher")) {
+                        starwatcher = true;
+                        break;
+                    }
+                }
+                if (!starwatcher) {
+                    return "ไม่สามารถลดสเตตัสดังกล่าวจนติดลบได้โดยไม่มีโหนด Starwatcher";
+                }
+                if (remainingStatus < level * -1) {
+                    return "Starwatcher ไม่สามารถลดสเตตัสลงเหลือต่ำกว่าเลเวลได้";
+                }
+            }
+
+            int old_amount = unit.getStatus_reset_point();
+
+            unit.setStatus_reset_point(old_amount - amount);
             writeintoSheet(unit);
             return "สเตตัส " + returningStatusName +" ถูกรีเซ็ตเป็นจำนวน " + amount*-1 + " แต้มแล้ว\n" +
                     "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
