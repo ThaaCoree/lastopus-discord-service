@@ -15,10 +15,7 @@ import model.entity.items.Rune;
 import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.*;
 import model.entity.units.Unit;
-import model.type.EquipmentType;
-import model.type.ItemType;
-import model.type.MaterialRole;
-import model.type.WeaponType;
+import model.type.*;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -1010,6 +1007,221 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/statusraise")
+    public String statusraise(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนสเตตัสที่จะเพิ่มไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนสเตตัสที่จะเพิ่มต้องมากกว่า 0";
+            }
+            if (amount > unit.getRemainingStatusPoint()) {
+                return "มีสเตตัสพ้อยไม่พอ";
+            }
+            String statusName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
+            String returningStatusName = "";
+
+            if (statusName.equalsIgnoreCase("STR") || statusName.equalsIgnoreCase("STRENGTH")) {
+                unit.getRaisedStatuses().merge(StatusType.STRENGTH, amount, Integer::sum);
+                returningStatusName = StatusType.STRENGTH.writeAsString();
+            } else if (statusName.equalsIgnoreCase("AGI") || statusName.equalsIgnoreCase("AGILITY")) {
+                unit.getRaisedStatuses().merge(StatusType.AGILITY, amount, Integer::sum);
+                returningStatusName = StatusType.AGILITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("VIT") || statusName.equalsIgnoreCase("VITALITY")) {
+                unit.getRaisedStatuses().merge(StatusType.VITALITY, amount, Integer::sum);
+                returningStatusName = StatusType.VITALITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("DEX") || statusName.equalsIgnoreCase("DEXTERITY")) {
+                unit.getRaisedStatuses().merge(StatusType.DEXTERITY, amount, Integer::sum);
+                returningStatusName = StatusType.DEXTERITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("WIS") || statusName.equalsIgnoreCase("WISDOM")) {
+                unit.getRaisedStatuses().merge(StatusType.WISDOM, amount, Integer::sum);
+                returningStatusName = StatusType.WISDOM.writeAsString();
+            } else if (statusName.equalsIgnoreCase("INT") || statusName.equalsIgnoreCase("INTELLIGENCE")) {
+                unit.getRaisedStatuses().merge(StatusType.INTELLIGENCE, amount, Integer::sum);
+                returningStatusName = StatusType.INTELLIGENCE.writeAsString();
+            } else if (statusName.equalsIgnoreCase("LUK") || statusName.equalsIgnoreCase("LUCK")) {
+                unit.getRaisedStatuses().merge(StatusType.LUCK, amount, Integer::sum);
+                returningStatusName = StatusType.LUCK.writeAsString();
+            } else {
+                return "ไม่พบสเตตัสดังกล่าว";
+            }
+
+            writeintoSheet(unit);
+            return "สเตตัส " + returningStatusName + "ถูกเพิ่มเป็นจำนวน " + amount + " แต้มแล้ว\n" +
+                    "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/statusreset")
+    public String statusreset(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนสเตตัสที่จะรีเซ็ตไม่ถูกต้อง";
+            }
+            if (amount <= 0) {
+                return "จำนวนสเตตัสที่จะรีเซ็ตต้องมากกว่า 0";
+            }
+            if (amount > unit.getStatus_reset_point()) {
+                return "มีโควต้ารีเซ็ตสเตตัสไม่พอ";
+            }
+            String statusName = String.join(" ", playerMessage.args.subList(0, playerMessage.args.size() - 1));
+
+            amount *= -1;
+
+            String returningStatusName = "";
+
+            if (statusName.equalsIgnoreCase("STR") || statusName.equalsIgnoreCase("STRENGTH")) {
+                unit.getRaisedStatuses().merge(StatusType.STRENGTH, amount, Integer::sum);
+                returningStatusName = StatusType.STRENGTH.writeAsString();
+            } else if (statusName.equalsIgnoreCase("AGI") || statusName.equalsIgnoreCase("AGILITY")) {
+                unit.getRaisedStatuses().merge(StatusType.AGILITY, amount, Integer::sum);
+                returningStatusName = StatusType.AGILITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("VIT") || statusName.equalsIgnoreCase("VITALITY")) {
+                unit.getRaisedStatuses().merge(StatusType.VITALITY, amount, Integer::sum);
+                returningStatusName = StatusType.VITALITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("DEX") || statusName.equalsIgnoreCase("DEXTERITY")) {
+                unit.getRaisedStatuses().merge(StatusType.DEXTERITY, amount, Integer::sum);
+                returningStatusName = StatusType.DEXTERITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("WIS") || statusName.equalsIgnoreCase("WISDOM")) {
+                unit.getRaisedStatuses().merge(StatusType.WISDOM, amount, Integer::sum);
+                returningStatusName = StatusType.WISDOM.writeAsString();
+            } else if (statusName.equalsIgnoreCase("INT") || statusName.equalsIgnoreCase("INTELLIGENCE")) {
+                unit.getRaisedStatuses().merge(StatusType.INTELLIGENCE, amount, Integer::sum);
+                returningStatusName = StatusType.INTELLIGENCE.writeAsString();
+            } else if (statusName.equalsIgnoreCase("LUK") || statusName.equalsIgnoreCase("LUCK")) {
+                unit.getRaisedStatuses().merge(StatusType.LUCK, amount, Integer::sum);
+                returningStatusName = StatusType.LUCK.writeAsString();
+            } else {
+                return "ไม่พบสเตตัสดังกล่าว";
+            }
+
+            writeintoSheet(unit);
+            return "สเตตัส " + returningStatusName +" ถูกรีเซ็ตเป็นจำนวน " + amount*-1 + " แต้มแล้ว\n" +
+                    "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/statusreset_give")
+    public String statusreset_give(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            String name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit unit = database.findPlayer(name);
+            int amount;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            int old_amount = unit.getStatus_reset_point();
+
+            unit.setStatus_reset_point(old_amount + amount);
+            writeintoSheet(unit);
+            return "มอบโควต้ารีเซ็ตสเตตัส "+amount+" หน่วยให้กับ "+unit.getName()+" แล้ว";
+        } else {
+            return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
+        }
+    }
+
+    @PostMapping("/starmapreset_give")
+    public String starmapreset_give(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            String name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit unit = database.findPlayer(name);
+            int amount;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+            int old_amount = unit.getStarmap_reset_point();
+
+            unit.setStarmap_reset_point(old_amount + amount);
+            writeintoSheet(unit);
+            return "มอบโควต้ารีเซ็ตแผนที่ดวงดาว "+amount+" หน่วยให้กับ "+unit.getName()+" แล้ว";
+        } else {
+            return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
+        }
+    }
+
+    @PostMapping("/quota")
+    public String quota(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        if (unit != null) {
+            writeintoSheet(unit);
+            return "แต้มรีเซ็ตสเตตัสคงเหลือ : "+ unit.getStatus_reset_point() +" แต้ม\n" +
+                    "แต้มรีเซ็ตแผนที่ดวงดาวคงเหลือ " + unit.getStarmap_reset_point() + " แต้ม";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/force_status_set")
+    public String force_status_set(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit unit = database.findPlayer(target_name);
+            if (unit == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+
+            String statusName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            String returningStatusName = "";
+
+            if (statusName.equalsIgnoreCase("STR") || statusName.equalsIgnoreCase("STRENGTH")) {
+                unit.getRaisedStatuses().put(StatusType.STRENGTH, amount);
+                returningStatusName = StatusType.STRENGTH.writeAsString();
+            } else if (statusName.equalsIgnoreCase("AGI") || statusName.equalsIgnoreCase("AGILITY")) {
+                unit.getRaisedStatuses().put(StatusType.AGILITY, amount);
+                returningStatusName = StatusType.AGILITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("VIT") || statusName.equalsIgnoreCase("VITALITY")) {
+                unit.getRaisedStatuses().put(StatusType.VITALITY, amount);
+                returningStatusName = StatusType.VITALITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("DEX") || statusName.equalsIgnoreCase("DEXTERITY")) {
+                unit.getRaisedStatuses().put(StatusType.DEXTERITY, amount);
+                returningStatusName = StatusType.DEXTERITY.writeAsString();
+            } else if (statusName.equalsIgnoreCase("WIS") || statusName.equalsIgnoreCase("WISDOM")) {
+                unit.getRaisedStatuses().put(StatusType.WISDOM, amount);
+                returningStatusName = StatusType.WISDOM.writeAsString();
+            } else if (statusName.equalsIgnoreCase("INT") || statusName.equalsIgnoreCase("INTELLIGENCE")) {
+                unit.getRaisedStatuses().put(StatusType.INTELLIGENCE, amount);
+                returningStatusName = StatusType.INTELLIGENCE.writeAsString();
+            } else if (statusName.equalsIgnoreCase("LUK") || statusName.equalsIgnoreCase("LUCK")) {
+                unit.getRaisedStatuses().put(StatusType.LUCK, amount);
+                returningStatusName = StatusType.LUCK.writeAsString();
+            } else {
+                return "ไม่พบสเตตัสดังกล่าว";
+            }
+
+            writeintoSheet(unit);
+            return "ทำให้สเตตัส " + returningStatusName + " ของ " + target_name + " กลายเป็น " + amount + " หน่วยแล้ว";
+        } else {
+            return "ต้องเป็น GM เพื่อใช้คำสั่งนี้";
+        }
+    }
+
     public void itemBrick(Unit unit, CraftedEquipment equipment, int toughness_reduce, StringBuilder sb) {
         unit.getInventoryManager().removeItem(equipment.getName());
         List<CraftingMaterial> returning_item = new ArrayList<>();
@@ -1024,13 +1236,13 @@ public class DiscordController {
                 random.add(false, remaining_chance);
                 if (random.roll()) {
                     returning_item.add(materialInstance.getMaterial());
-                    sb.append("ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
+                    sb.append("+ ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
                 } else {
-                    sb.append("สูญเสีย ").append(materialInstance.getMaterial().getName()).append(" อย่างถาวร\n");
+                    sb.append("— สูญเสีย ").append(materialInstance.getMaterial().getName()).append(" อย่างถาวร\n");
                 }
             } else {
                 returning_item.add(materialInstance.getMaterial());
-                sb.append("ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
+                sb.append("+ ได้รับ ").append(materialInstance.getMaterial().getName()).append(" กลับคืน\n");
             }
         }
 

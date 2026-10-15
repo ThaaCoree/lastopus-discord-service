@@ -1537,6 +1537,22 @@ public class Unit {
         this.skillModifierManager = skillModifierManager;
     }
 
+    public int getStatus_reset_point() {
+        return status_reset_point;
+    }
+
+    public void setStatus_reset_point(int status_reset_point) {
+        this.status_reset_point = status_reset_point;
+    }
+
+    public int getStarmap_reset_point() {
+        return starmap_reset_point;
+    }
+
+    public void setStarmap_reset_point(int starmap_reset_point) {
+        this.starmap_reset_point = starmap_reset_point;
+    }
+
     public void setInventoryManager(InventoryManager inventoryManager) {
         this.inventoryManager = inventoryManager;
     }

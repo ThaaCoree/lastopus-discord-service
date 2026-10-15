@@ -6629,62 +6629,92 @@
           }
         },
         "stats" : {
-          "MANAREGEN" : {
+          "CRITCHANCE" : {
             "base" : 1.0,
-            "final" : 5.2543603355474895,
-            "current" : 5.2543603355474895
+            "final" : 0.0,
+            "current" : 0.0
           },
-          "LIGHTPENETRATION" : {
+          "MAGICALPENETRATE" : {
+            "base" : 1.0,
+            "final" : 140.53126080095996,
+            "current" : 140.53126080095996
+          },
+          "EARTHRESISTANCE" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "HEALTHPOINT" : {
+          "PHYSICALATTACK" : {
             "base" : 1.0,
-            "final" : 757.6225999257902,
-            "current" : 757.6225999257902
+            "final" : 0.0,
+            "current" : 0.0
           },
-          "HEALAMPLIFIER" : {
+          "MOVEMENTSPEED" : {
             "base" : 1.0,
-            "final" : 0.8732348591999999,
-            "current" : 0.8732348591999999
+            "final" : 27.516434703058014,
+            "current" : 27.516434703058014
           },
-          "MAGICALATTACK" : {
+          "IGNITEAMP" : {
             "base" : 1.0,
-            "final" : 1390.9583243528998,
-            "current" : 1390.9583243528998
+            "final" : 1.0,
+            "current" : 1.0
+          },
+          "RESERVATION" : {
+            "base" : 1.0,
+            "final" : 0.16535929266839058,
+            "current" : 0.16535929266839058
+          },
+          "PHYSICALBLOCK" : {
+            "base" : 1.0,
+            "final" : 98.48904621858557,
+            "current" : 98.48904621858557
+          },
+          "DAMAGEAMPLIFIER" : {
+            "base" : 1.0,
+            "final" : 0.0,
+            "current" : 0.0
+          },
+          "FIREPENETRATION" : {
+            "base" : 1.0,
+            "final" : 1.0,
+            "current" : 1.0
           },
           "DARKRESISTANCE" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "CRITDAMAGE" : {
+          "MAGICALBLOCK" : {
             "base" : 1.0,
-            "final" : 1.566543969376,
-            "current" : 1.566543969376
+            "final" : 105.48904621858557,
+            "current" : 105.48904621858557
           },
           "PHYSICALPENETRATE" : {
             "base" : 1.0,
             "final" : 276.6301697761836,
             "current" : 276.6301697761836
           },
-          "PHYSICALDEFENSE" : {
+          "WINDRESISTANCE" : {
             "base" : 1.0,
-            "final" : 518.5542672644706,
-            "current" : 518.5542672644706
+            "final" : 1.0,
+            "current" : 1.0
           },
-          "CASTSPEED" : {
+          "HEALTHREGEN" : {
             "base" : 1.0,
-            "final" : 1.5036256008329727,
-            "current" : 1.5036256008329727
+            "final" : 0.0,
+            "current" : 0.0
           },
-          "CRITSHIELD" : {
+          "DAMAGEREDUCTION" : {
             "base" : 1.0,
-            "final" : 0.12405623623747346,
-            "current" : 0.12405623623747346
+            "final" : 0.0,
+            "current" : 0.0
           },
-          "IGNOREPDEF" : {
+          "HEALAMPLIFIER" : {
+            "base" : 1.0,
+            "final" : 0.8732348591999999,
+            "current" : 0.8732348591999999
+          },
+          "DEFLECTION" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
@@ -6694,20 +6724,90 @@
             "final" : 166.12511978229907,
             "current" : 166.12511978229907
           },
+          "BUFFAMPLIFIER" : {
+            "base" : 1.0,
+            "final" : 0.34450708799999996,
+            "current" : 0.34450708799999996
+          },
+          "EVASION" : {
+            "base" : 1.0,
+            "final" : 608.7489632751576,
+            "current" : 608.7489632751576
+          },
+          "ATTACKSPEED" : {
+            "base" : 1.0,
+            "final" : 1.5352908184039986,
+            "current" : 1.5352908184039986
+          },
+          "SPEED" : {
+            "base" : 1.0,
+            "final" : 14.306333757980273,
+            "current" : 14.306333757980273
+          },
+          "LIGHTPENETRATION" : {
+            "base" : 1.0,
+            "final" : 1.0,
+            "current" : 1.0
+          },
+          "MAGICALATTACK" : {
+            "base" : 1.0,
+            "final" : 1390.9583243528998,
+            "current" : 1390.9583243528998
+          },
+          "DEBUFFRESISTANCE" : {
+            "base" : 1.0,
+            "final" : 0.8,
+            "current" : 0.8
+          },
+          "ACCURACY" : {
+            "base" : 1.0,
+            "final" : 504.1120814061644,
+            "current" : 504.1120814061644
+          },
+          "IGNOREPDEF" : {
+            "base" : 1.0,
+            "final" : 1.0,
+            "current" : 1.0
+          },
+          "MANAREGEN" : {
+            "base" : 1.0,
+            "final" : 5.2543603355474895,
+            "current" : 5.2543603355474895
+          },
+          "CASTSPEED" : {
+            "base" : 1.0,
+            "final" : 1.5036256008329727,
+            "current" : 1.5036256008329727
+          },
+          "PHYSICALDEFENSE" : {
+            "base" : 1.0,
+            "final" : 518.5542672644706,
+            "current" : 518.5542672644706
+          },
+          "CRITSHIELD" : {
+            "base" : 1.0,
+            "final" : 0.12405623623747346,
+            "current" : 0.12405623623747346
+          },
           "FIRERESISTANCE" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "EARTHRESISTANCE" : {
+          "SOULPOINT" : {
+            "base" : 1.0,
+            "final" : 0.0,
+            "current" : 0.0
+          },
+          "DARKPENETRATION" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "MOVEMENTSPEED" : {
+          "WINDPENETRATION" : {
             "base" : 1.0,
-            "final" : 27.516434703058014,
-            "current" : 27.516434703058014
+            "final" : 1.0,
+            "current" : 1.0
           },
           "MAGICALDEFENSE" : {
             "base" : 1.0,
@@ -6719,152 +6819,52 @@
             "final" : 0.3272131743551999,
             "current" : 0.3272131743551999
           },
-          "FIREPENETRATION" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "DEFLECTION" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "ACCURACY" : {
-            "base" : 1.0,
-            "final" : 504.1120814061644,
-            "current" : 504.1120814061644
-          },
-          "WATERRESISTANCE" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "DARKPENETRATION" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "MAGICALPENETRATE" : {
-            "base" : 1.0,
-            "final" : 140.53126080095996,
-            "current" : 140.53126080095996
-          },
-          "BUFFAMPLIFIER" : {
-            "base" : 1.0,
-            "final" : 0.34450708799999996,
-            "current" : 0.34450708799999996
-          },
-          "SOULPOINT" : {
-            "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
-          },
           "MANAPOINT" : {
             "base" : 1.0,
             "final" : 34.56713919999999,
             "current" : 34.56713919999999
-          },
-          "BLEEDAMP" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "POISONAMP" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "DEBUFFRESISTANCE" : {
-            "base" : 1.0,
-            "final" : 0.8,
-            "current" : 0.8
-          },
-          "DAMAGEAMPLIFIER" : {
-            "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
-          },
-          "IGNITEAMP" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
           },
           "IGNOREMDEF" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "WINDRESISTANCE" : {
+          "EARTHPENETRATION" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "MAGICALBLOCK" : {
+          "CRITDAMAGE" : {
             "base" : 1.0,
-            "final" : 105.48904621858557,
-            "current" : 105.48904621858557
+            "final" : 1.566543969376,
+            "current" : 1.566543969376
           },
-          "PHYSICALATTACK" : {
-            "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
-          },
-          "LIGHTRESISTANCE" : {
+          "BLEEDAMP" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "PHYSICALBLOCK" : {
+          "WATERRESISTANCE" : {
             "base" : 1.0,
-            "final" : 98.48904621858557,
-            "current" : 98.48904621858557
+            "final" : 1.0,
+            "current" : 1.0
           },
-          "RESERVATION" : {
+          "HEALTHPOINT" : {
             "base" : 1.0,
-            "final" : 0.16535929266839058,
-            "current" : 0.16535929266839058
+            "final" : 757.6225999257902,
+            "current" : 757.6225999257902
           },
-          "CRITCHANCE" : {
+          "POISONAMP" : {
             "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
+            "final" : 1.0,
+            "current" : 1.0
           },
           "WATERPENETRATION" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
           },
-          "ATTACKSPEED" : {
-            "base" : 1.0,
-            "final" : 1.5352908184039986,
-            "current" : 1.5352908184039986
-          },
-          "EVASION" : {
-            "base" : 1.0,
-            "final" : 608.7489632751576,
-            "current" : 608.7489632751576
-          },
-          "SPEED" : {
-            "base" : 1.0,
-            "final" : 14.306333757980273,
-            "current" : 14.306333757980273
-          },
-          "HEALTHREGEN" : {
-            "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
-          },
-          "WINDPENETRATION" : {
-            "base" : 1.0,
-            "final" : 1.0,
-            "current" : 1.0
-          },
-          "DAMAGEREDUCTION" : {
-            "base" : 1.0,
-            "final" : 0.0,
-            "current" : 0.0
-          },
-          "EARTHPENETRATION" : {
+          "LIGHTRESISTANCE" : {
             "base" : 1.0,
             "final" : 1.0,
             "current" : 1.0
@@ -154646,8 +154646,8 @@
       },
       "ATTACKSPEED" : {
         "base" : 3.317480187619463,
-        "final" : 4.4845403175443765,
-        "current" : 4.4845403175443765
+        "final" : 5.094740317544376,
+        "current" : 5.094740317544376
       },
       "CASTSPEED" : {
         "base" : 3.317480187619463,
@@ -163949,7 +163949,7 @@
         "instanceBundle" : {
           "statModifiers" : {
             "ATTACKSPEED" : {
-              "flat" : 0.0,
+              "flat" : 0.5,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -164016,7 +164016,7 @@
       }
     },
     "rawCounterMap" : {
-      "IllusionAndDream" : 0.0,
+      "IllusionAndDream" : 10.0,
       "DESPAIR" : 0.0,
       "RAPID_SLASH" : 0.0
     },
@@ -164024,10 +164024,10 @@
     "rune_board" : [ [ false, true, false, true, false, false ], [ true, true, true, true, true, true ], [ true, true, true, true, true, true ], [ false, true, false, true, false, true ], [ false, true, false, true, false, true ], [ true, true, true, true, true, true ] ],
     "rune_inventory" : {
       "1" : {
-        "name" : "",
+        "name" : "Planet Core",
         "itemType" : "RUNE",
-        "description" : "",
-        "statusDescription" : "",
+        "description" : "การมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่ไม่ได้อยู่ในรัศมี 1 ช่องของรูนนี้จะไม่มีผล\nการมอบสแตทและสเตตัสของรูนอื่นทั้งหมดที่อยู่ในรัศมี 1 ช่องของรูนนี้จะเพิ่มเป็น 1.75 เท่า",
+        "statusDescription" : "\n",
         "lore" : "",
         "price" : "",
         "weight" : 0,
@@ -164039,11 +164039,11 @@
           "skillModifiers" : { }
         },
         "skills" : { },
-        "shape" : [ [ false, true, true ], [ true, true, false ] ],
-        "unique_rune" : false,
+        "shape" : [ [ true ] ],
+        "unique_rune" : true,
         "baseRow" : 0,
         "baseCol" : 0,
-        "unique_weight" : 1,
+        "unique_weight" : 7,
         "id" : null,
         "statModifiers" : { },
         "statusModifiers" : { },
@@ -164634,7 +164634,7 @@
         "instanceBundle" : {
           "statModifiers" : {
             "ATTACKSPEED" : {
-              "flat" : 0.0,
+              "flat" : 0.5,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -174178,16 +174178,16 @@
         "price_in_copper" : 0,
         "modifiers" : {
           "statModifiers" : {
-            "DEBUFFAMPLIFIER" : {
-              "flat" : 0.013466207772766437,
+            "MAGICALDEFENSE" : {
+              "flat" : 11.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
               "equipmentMult" : 0.0,
               "passiveMult" : 0.0
             },
-            "MAGICALDEFENSE" : {
-              "flat" : 11.0,
+            "DEBUFFAMPLIFIER" : {
+              "flat" : 0.013466207772766437,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -174216,16 +174216,16 @@
         "unique_weight" : 0,
         "id" : "RUNE-3-FE3D97E5",
         "statModifiers" : {
-          "DEBUFFAMPLIFIER" : {
-            "flat" : 0.013466207772766437,
+          "MAGICALDEFENSE" : {
+            "flat" : 11.0,
             "mult" : 0.0,
             "override" : "NaN",
             "globalMult" : 0.0,
             "equipmentMult" : 0.0,
             "passiveMult" : 0.0
           },
-          "MAGICALDEFENSE" : {
-            "flat" : 11.0,
+          "DEBUFFAMPLIFIER" : {
+            "flat" : 0.013466207772766437,
             "mult" : 0.0,
             "override" : "NaN",
             "globalMult" : 0.0,
@@ -174266,14 +174266,6 @@
             }
           },
           "statusModifiers" : {
-            "WISDOM" : {
-              "flat" : 3.0,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            },
             "STRENGTH" : {
               "flat" : 3.0,
               "mult" : 0.0,
@@ -174284,6 +174276,14 @@
             },
             "AGILITY" : {
               "flat" : 7.0,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
+            "WISDOM" : {
+              "flat" : 3.0,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -174312,14 +174312,6 @@
           }
         },
         "statusModifiers" : {
-          "WISDOM" : {
-            "flat" : 3.0,
-            "mult" : 0.0,
-            "override" : "NaN",
-            "globalMult" : 0.0,
-            "equipmentMult" : 0.0,
-            "passiveMult" : 0.0
-          },
           "STRENGTH" : {
             "flat" : 3.0,
             "mult" : 0.0,
@@ -174330,6 +174322,14 @@
           },
           "AGILITY" : {
             "flat" : 7.0,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
+          "WISDOM" : {
+            "flat" : 3.0,
             "mult" : 0.0,
             "override" : "NaN",
             "globalMult" : 0.0,
@@ -174350,6 +174350,14 @@
         "price_in_copper" : 0,
         "modifiers" : {
           "statModifiers" : {
+            "BUFFAMPLIFIER" : {
+              "flat" : 0.05412434856630232,
+              "mult" : 0.0,
+              "override" : "NaN",
+              "globalMult" : 0.0,
+              "equipmentMult" : 0.0,
+              "passiveMult" : 0.0
+            },
             "IGNITEAMP" : {
               "flat" : 0.010498234859820835,
               "mult" : 0.0,
@@ -174360,14 +174368,6 @@
             },
             "SPEED" : {
               "flat" : 1.4099036670978378,
-              "mult" : 0.0,
-              "override" : "NaN",
-              "globalMult" : 0.0,
-              "equipmentMult" : 0.0,
-              "passiveMult" : 0.0
-            },
-            "BUFFAMPLIFIER" : {
-              "flat" : 0.05412434856630232,
               "mult" : 0.0,
               "override" : "NaN",
               "globalMult" : 0.0,
@@ -174387,6 +174387,14 @@
         "unique_weight" : 0,
         "id" : "RUNE-T-7D31D278",
         "statModifiers" : {
+          "BUFFAMPLIFIER" : {
+            "flat" : 0.05412434856630232,
+            "mult" : 0.0,
+            "override" : "NaN",
+            "globalMult" : 0.0,
+            "equipmentMult" : 0.0,
+            "passiveMult" : 0.0
+          },
           "IGNITEAMP" : {
             "flat" : 0.010498234859820835,
             "mult" : 0.0,
@@ -174397,14 +174405,6 @@
           },
           "SPEED" : {
             "flat" : 1.4099036670978378,
-            "mult" : 0.0,
-            "override" : "NaN",
-            "globalMult" : 0.0,
-            "equipmentMult" : 0.0,
-            "passiveMult" : 0.0
-          },
-          "BUFFAMPLIFIER" : {
-            "flat" : 0.05412434856630232,
             "mult" : 0.0,
             "override" : "NaN",
             "globalMult" : 0.0,
