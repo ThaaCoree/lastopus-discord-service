@@ -73,6 +73,8 @@ public class Unit {
     private List<Rune> socketed_runes = new ArrayList<>();
     private ModifierBundle rune_modifiers = new ModifierBundle();
     private int exp = 0;
+    private int status_reset_point = 0;
+    private int starmap_reset_point = 0;
 
     private List<CityName> current_city = new ArrayList<>();
 

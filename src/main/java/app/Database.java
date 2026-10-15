@@ -124,7 +124,6 @@ public class Database {
         allMaterials = JsonUtils.loadFromFile("/json/materials.json", new TypeReference<Map<String, CraftingMaterial>>() {});
         allModPools = JsonUtils.loadFromFile("/json/modPools.json", new TypeReference<Map<String, CraftModPool>>() {});
 //        allCraftedEquipments = JsonUtils.loadFromFile("/json/craftedEquipments.json", new TypeReference<Map<String, CraftedEquipment>>() {});
-//        allCraftedEquipments = new LinkedHashMap<>();
     }
 
     public void loadMongo() {

@@ -12,7 +12,7 @@ public class MongoConfig {
     @Bean
     public MongoClient mongoClient() {
         return MongoClients.create(
-                "mongodb+srv://jaruwith2710_db_user:7hltQM4fyXaHwsJc@lastopusservice.t4ivpfi.mongodb.net/?appName=LastOpusService"
+                "mongodb+srv://jaruwith2710_db_user:Oe0rw4OC5yGT10XZ@tlodatabase.r2of57d.mongodb.net/"
         );
     }
 
