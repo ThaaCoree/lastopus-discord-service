@@ -1055,7 +1055,7 @@ public class DiscordController {
 
             writeintoSheet(unit);
             return "สเตตัส " + returningStatusName + " ถูกเพิ่มเป็นจำนวน " + amount + " แต้มแล้ว\n" +
-                    "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
+                    "คงเหลือแต้มสเตตัส " + unit.getRemainingStatusPoint() + " แต้ม";
         } else {
             return "No Role!";
         }
@@ -1117,7 +1117,7 @@ public class DiscordController {
                 return "ไม่พบสเตตัสดังกล่าว";
             }
 
-            if (remainingStatus <= 0) {
+            if (remainingStatus < 0) {
                 boolean starwatcher = false;
                 int level = unit.getLevel();
                 for (PassiveNode node : unit.getAllocatedPassives().values()) {
@@ -1127,7 +1127,7 @@ public class DiscordController {
                     }
                 }
                 if (!starwatcher) {
-                    return "ไม่สามารถลดสเตตัสดังกล่าวจนติดลบได้โดยไม่มีโหนด Starwatcher";
+                    return "ไม่สามารถลดสเตตัสจนติดลบได้โดยไม่มีโหนด Starwatcher";
                 }
                 if (remainingStatus < level * -1) {
                     return "Starwatcher ไม่สามารถลดสเตตัสลงเหลือต่ำกว่าเลเวลได้";
@@ -1139,7 +1139,7 @@ public class DiscordController {
             unit.setStatus_reset_point(old_amount - amount);
             writeintoSheet(unit);
             return "สเตตัส " + returningStatusName +" ถูกรีเซ็ตเป็นจำนวน " + amount*-1 + " แต้มแล้ว\n" +
-                    "คงเหลือ " + unit.getRemainingStatusPoint() + " แต้ม";
+                    "คงเหลือแต้มสเตตัส " + unit.getRemainingStatusPoint() + " แต้ม";
         } else {
             return "No Role!";
         }
