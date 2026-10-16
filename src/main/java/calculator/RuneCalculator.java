@@ -13,51 +13,47 @@ public class RuneCalculator {
     public static ModifierBundle calculateRuneForUnit(Unit unit) {
         ModifierBundle modifierBundle = new ModifierBundle();
         List<Rune> runeModifiers = calculateRuneModifiers(unit);
+        Map<StatusType, Double> statusGlobalMult = new EnumMap<>(StatusType.class);
+        Map<StatType, Double> statGlobalMult = new EnumMap<>(StatType.class);
+
         for (Rune socketedRune : runeModifiers) {
-            //status
+            var statusMods = socketedRune.getModifiers().getStatusModifiers();
             for (StatusType statusType : StatusType.values()) {
-                if (socketedRune.getModifiers().getStatusModifiers().get(statusType) == null) continue;
-                modifierBundle.getStatusModifierSafe(statusType).sumFlat(
-                        socketedRune.getModifiers().getStatusModifiers().get(statusType).getFlat()
-                );
-                modifierBundle.getStatusModifierSafe(statusType).sumMult(
-                        socketedRune.getModifiers().getStatusModifiers().get(statusType).getMult()
-                );
-                modifierBundle.getStatusModifierSafe(statusType).sumGlobalMult(
-                        socketedRune.getModifiers().getStatusModifiers().get(statusType).getGlobalMult()
-                );
-                modifierBundle.getStatusModifierSafe(statusType).sumPassiveMult(
-                        socketedRune.getModifiers().getStatusModifiers().get(statusType).getPassiveMult()
-                );
-                modifierBundle.getStatusModifierSafe(statusType).setOverride(
-                        socketedRune.getModifiers().getStatusModifiers().get(statusType).getOverride()
-                );
+                var mod = statusMods.get(statusType);
+                if (mod == null) continue;
+                var target = modifierBundle.getStatusModifierSafe(statusType);
+                target.sumFlat(mod.getFlat());
+                target.sumMult(mod.getMult());
+                target.sumPassiveMult(mod.getPassiveMult());
+                if (!Double.isNaN(mod.getOverride())) target.setOverride(mod.getOverride());
+
+                statusGlobalMult.merge(statusType, Math.max(0.0, 1 + mod.getGlobalMult()), (a, b) -> a * b);
             }
 
-            //stats
+            var statMods = socketedRune.getModifiers().getStatModifiers();
             for (StatType statType : StatType.values()) {
-                if (socketedRune.getModifiers().getStatModifiers().get(statType) == null) continue;
-                modifierBundle.getStatModifierSafe(statType).sumFlat(
-                        socketedRune.getModifiers().getStatModifiers().get(statType).getFlat()
-                );
-                modifierBundle.getStatModifierSafe(statType).sumMult(
-                        socketedRune.getModifiers().getStatModifiers().get(statType).getMult()
-                );
-                modifierBundle.getStatModifierSafe(statType).sumGlobalMult(
-                        socketedRune.getModifiers().getStatModifiers().get(statType).getGlobalMult()
-                );
-                modifierBundle.getStatModifierSafe(statType).sumPassiveMult(
-                        socketedRune.getModifiers().getStatModifiers().get(statType).getPassiveMult()
-                );
-                modifierBundle.getStatModifierSafe(statType).setOverride(
-                        socketedRune.getModifiers().getStatModifiers().get(statType).getOverride()
-                );
+                var mod = statMods.get(statType);
+                if (mod == null) continue;
+                var target = modifierBundle.getStatModifierSafe(statType);
+                target.sumFlat(mod.getFlat());
+                target.sumMult(mod.getMult());
+                target.sumPassiveMult(mod.getPassiveMult());
+                if (!Double.isNaN(mod.getOverride())) target.setOverride(mod.getOverride());
+
+                statGlobalMult.merge(statType, Math.max(0.0, 1 + mod.getGlobalMult()), (a, b) -> a * b);
             }
 
-            for (TransferModifier transferModifier : socketedRune.getModifiers().getTransferModifiers().values()) {
-                modifierBundle.addTransferModifier(transferModifier);
+            for (TransferModifier t : socketedRune.getModifiers().getTransferModifiers().values()) {
+                modifierBundle.addTransferModifier(t);
             }
         }
+
+// เขียนค่าเฉพาะ type ที่มีรูนจริง โดยแปลง product กลับเป็นส่วนเพิ่ม
+        statusGlobalMult.forEach((type, product) ->
+                modifierBundle.getStatusModifierSafe(type).sumGlobalMult(product - 1));
+        statGlobalMult.forEach((type, product) ->
+                modifierBundle.getStatModifierSafe(type).sumGlobalMult(product - 1));
+
         return modifierBundle;
     }
 
