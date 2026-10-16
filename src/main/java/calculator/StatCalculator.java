@@ -60,7 +60,7 @@ public class StatCalculator {
         stats.get(StatType.CASTSPEED).setBase(1 + 0.006 * agi);
         stats.get(StatType.PHYSICALPENETRATE).setBase(1 + 1.8 * str + 1.4 * luk);
         stats.get(StatType.MAGICALPENETRATE).setBase(1 + 1.8 * intel + 1.4 * luk);
-        stats.get(StatType.RESERVATION).setBase(1 / (1 + 0.006 * wis));
+        stats.get(StatType.RESERVATION).setBase(1);
         stats.get(StatType.CRITSHIELD).setBase(0.025);
         stats.get(StatType.SPEED).setBase(1 + 0.1 * agi);
         stats.get(StatType.SOULPOINT).setBase(100);
@@ -89,7 +89,7 @@ public class StatCalculator {
                 stats.get(StatType.CASTSPEED).setBase(1 + 0.002 * luk);
                 stats.get(StatType.PHYSICALPENETRATE).setBase(1 + 0.8 * luk);
                 stats.get(StatType.MAGICALPENETRATE).setBase(1 + 0.8 * luk);
-                stats.get(StatType.RESERVATION).setBase(1 / (1 + 0.0013 * luk));
+                stats.get(StatType.RESERVATION).setBase(1);
                 stats.get(StatType.SPEED).setBase(1 + 0.02 * luk);
                 stats.get(StatType.SOULPOINT).setBase(0);
                 stats.get(StatType.DEBUFFRESISTANCE).setBase(0);
@@ -147,6 +147,21 @@ public class StatCalculator {
 
         unit.getStats().get(StatType.CRITCHANCE).setCurrent(crit_chance);
         unit.getStats().get(StatType.CRITSHIELD).setCurrent(crit_shield);
+    }
+
+    public void calculateReservation() {
+        double luk = unit.getStatuses().get(StatusType.LUCK).getFinal();
+        double wis = unit.getStatuses().get(StatusType.WISDOM).getFinal();
+        double reserve = unit.getStats().get(StatType.RESERVATION).getCurrent();
+        reserve /= (1 + 0.006 * wis);
+
+        if (unit.getName() != null) {
+            if (unit.getName().equals("Four-Leaf Clover777")) {
+                reserve = unit.getStats().get(StatType.RESERVATION).getCurrent();
+                reserve /= (1 + 0.0013 * luk);
+            }
+        }
+        unit.getStats().get(StatType.RESERVATION).setCurrent(reserve);
     }
 
     public void applyBasicStatModifiers() {
@@ -389,6 +404,7 @@ public class StatCalculator {
 
         //คำนวณ CritChance และ Shield ก่อนที่จะ apply Global Mult
         calculateCritChance();
+        calculateReservation();
 
         // Apply Global Mult
         for (StatType type : StatType.values()) {

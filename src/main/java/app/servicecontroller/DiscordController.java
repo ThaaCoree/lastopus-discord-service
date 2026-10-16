@@ -1194,7 +1194,7 @@ public class DiscordController {
         if (unit != null) {
             writeintoSheet(unit);
             return "แต้มรีเซ็ตสเตตัสคงเหลือ : "+ unit.getStatus_reset_point() +" แต้ม\n" +
-                    "แต้มรีเซ็ตแผนที่ดวงดาวคงเหลือ " + unit.getStarmap_reset_point() + " แต้ม";
+                    "แต้มรีเซ็ตแผนที่ดวงดาวคงเหลือ : " + unit.getStarmap_reset_point() + " แต้ม";
         } else {
             return "No Role!";
         }
