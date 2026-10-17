@@ -126,7 +126,7 @@ public class StatCalculator {
         double manaregen = 1;
         manaregen += (mp*0.05);
         manaregen *= 1+(intel/100);
-            unit.getStats().get(StatType.MANAREGEN).setCurrent(manaregen);
+            unit.getStats().get(StatType.MANAREGEN).sumToCurrent(manaregen);
 
         if (unit.getName() != null) {
             manaregen = 1;

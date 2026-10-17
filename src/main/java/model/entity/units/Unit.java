@@ -187,7 +187,6 @@ public class Unit {
         statusCalculator.applyOverrideStatusModifier();
         statusCalculator.limitHumanWeakStatus();
         statCalculator.calculateBaseStatsFromCurrentStatus();
-        statCalculator.calculateManaRegen();
         statCalculator.applyBasicStatModifiers();
         statCalculator.applyBasicStatWeaponPassive();
         statCalculator.applyTransferStatModifier();
