@@ -165,15 +165,12 @@ public class StatCalculator {
     }
 
     public void applyBasicStatModifiers() {
-
         Map<StatType, Double> equipFlatSum = new HashMap<>();
         Map<StatType, Double> equipMultSum = new HashMap<>();
         Map<StatType, Double> passiveFlatSum = new HashMap<>();
         Map<StatType, Double> passiveMultSum = new HashMap<>();
-        Map<StatType, Double> cardFlatSum = new HashMap<>();
-        Map<StatType, Double> raceFlatSum = new HashMap<>();
-        Map<StatType, Double> skillFlatSum = new HashMap<>();
-        Map<StatType, Double> runeFlatSum = new HashMap<>();
+        Map<StatType, Double> otherFlatSum = new HashMap<>(); // race + card + skill + rune
+        Map<StatType, Double> increasedSum = new HashMap<>();
         Map<StatType, Double> globalMultProduct = new HashMap<>();
 
         // เริ่มต้นค่า
@@ -182,80 +179,61 @@ public class StatCalculator {
             equipMultSum.put(type, 0.0);
             passiveFlatSum.put(type, 0.0);
             passiveMultSum.put(type, 0.0);
+            otherFlatSum.put(type, 0.0);
+            increasedSum.put(type, 0.0);
             globalMultProduct.put(type, 1.0);
-            raceFlatSum.put(type, 0.0);
-            skillFlatSum.put(type, 0.0);
-            cardFlatSum.put(type, 0.0);
-            runeFlatSum.put(type, 0.0);
         }
 
-        for (StatType statType : StatType.values()) {
-            for (UniqueModifier modifier : unit.getUniqueModifier()) {
-                if (modifier.getModifiers().getStatModifiers().get(statType) != null) {
-                    double toAdd = modifier.getModifiers().getStatModifiers().get(statType).getFlat();
-                    double toMult = modifier.getModifiers().getStatModifiers().get(statType).getGlobalMult();
-                    raceFlatSum.merge(statType, toAdd, Double::sum);
-                }
+        // race / card / rune / skill: flat (+ global ของ race, card, rune) ในลูปเดียว
+        for (StatType type : StatType.values()) {
+            for (UniqueModifier unique : unit.getUniqueModifier()) {
+                addFlatIncreaseGlobal(type, unique.getModifiers().getStatModifiers().get(type), otherFlatSum, increasedSum, globalMultProduct);
             }
 
             for (CardType cardType : CardType.values()) {
-                if (unit.getCard().get(cardType) == null) continue;
-                if (unit.getCard().get(cardType).getStatModifiers(cardType).get(statType) != null) {
-                    double cardToAdd = unit.getCard().get(cardType).getStatModifiers(cardType).get(statType).getFlat();
-                    double cardToMult = unit.getCard().get(cardType).getStatModifiers(cardType).get(statType).getGlobalMult();
-                    cardFlatSum.merge(statType, cardToAdd, Double::sum);
+                var card = unit.getCard().get(cardType);
+                if (card == null) continue;
+                addFlatIncreaseGlobal(type, card.getStatModifiers(cardType).get(type), otherFlatSum, increasedSum, globalMultProduct);
+            }
+
+            addFlatIncreaseGlobal(type, unit.getRune_modifiers().getStatModifiers().get(type), otherFlatSum, increasedSum, globalMultProduct);
+
+            for (SkillInstance instance : unit.getAllSkill().values()) {
+                BasicModifier flatMod = instance.getInstanceBundle().getStatModifiers().get(type);
+                if (flatMod != null) {
+                    otherFlatSum.merge(type, flatMod.getFlat(), Double::sum);
+                    increasedSum.merge(type, flatMod.getMult(), Double::sum);
                 }
+
+                if (instance.getSkillData() == null) continue;
+                BasicModifier dataMod = instance.getSkillData().getSkillModifier().getStatModifiers().get(type);
+                if (dataMod == null) continue;
+                double g = dataMod.getGlobalMult();
+                if (Double.isNaN(g) || g == 0.0) continue;
+                double skillToMult = instance.getInstanceBundle().getStatModifierSafe(type).getGlobalMult();
+                globalMultProduct.merge(type, skillToMult + 1, (oldVal, newVal) -> oldVal * newVal);
             }
         }
 
-        //skills
-        for (SkillInstance instance : unit.getAllSkill().values()) {
-            for (StatType type : StatType.values()) {
-                if (instance.getInstanceBundle().getStatModifiers().get(type) == null) continue;
-                double skillToAdd = instance.getInstanceBundle().getStatModifiers().get(type).getFlat();
-                double skillToMult = instance.getInstanceBundle().getStatModifiers().get(type).getGlobalMult();
-                skillFlatSum.merge(type, skillToAdd, Double::sum);
-            }
-        }
-
-        for (StatType type : StatType.values()) {
-            if (unit.getRune_modifiers().getStatModifiers().get(type) == null) continue;
-            double runeToAdd = unit.getRune_modifiers().getStatModifiers().get(type).getFlat();
-            skillFlatSum.merge(type, runeToAdd, Double::sum);
-            double rune_to_mult = unit.getRune_modifiers().getStatModifiers().get(type).getGlobalMult();
-            globalMultProduct.merge(type, rune_to_mult+1, (oldVal, newVal) -> oldVal * newVal);
-        }
-
+        // equipment
         for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
             Equipment equipment = slot.getEquipment();
             if (equipment == null) continue;
 
-            double handMultiplier = 1;
-            if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
-                handMultiplier = unit.getMixTwoHandedMult();
-            }
+            double slotMult = getSlotMultiplier(unit, slot);
 
             for (StatType type : StatType.values()) {
                 BasicModifier modifier = equipment.getStatModifiers().get(type);
-                double equipmentMod = 1;
-                for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
-                    Double mult = null;
-                    Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
-                    if (multMap != null) {
-                        mult = multMap.get(equipment.getEquipmentType());
-                    }
-                    if (mult != null) {
-                        equipmentMod += mult;
-                    }
-                }
                 if (modifier == null) continue;
 
-                equipFlatSum.merge(type, modifier.getFlat() * handMultiplier * equipmentMod, Double::sum);
-                equipMultSum.merge(type, modifier.getEquipmentMult() * handMultiplier * equipmentMod, Double::sum);
-                passiveMultSum.merge(type, modifier.getPassiveMult() * handMultiplier * equipmentMod, Double::sum);
+                increasedSum.merge(type, modifier.getMult() * slotMult, Double::sum);
+                equipFlatSum.merge(type, modifier.getFlat() * slotMult, Double::sum);
+                equipMultSum.merge(type, modifier.getEquipmentMult() * slotMult, Double::sum);
+                passiveMultSum.merge(type, modifier.getPassiveMult() * slotMult, Double::sum);
             }
         }
 
+        // passives
         for (PassiveNode node : unit.getAllocatedPassives().values()) {
             if (node == null) continue;
 
@@ -263,153 +241,126 @@ public class StatCalculator {
                 BasicModifier modifier = node.getStatModifiers().get(type);
                 if (modifier == null) continue;
 
+                increasedSum.merge(type, modifier.getMult(), Double::sum);
                 passiveFlatSum.merge(type, modifier.getFlat(), Double::sum);
                 equipMultSum.merge(type, modifier.getEquipmentMult(), Double::sum);
                 passiveMultSum.merge(type, modifier.getPassiveMult(), Double::sum);
             }
         }
 
+        // conditions
+        double affection = hasPassive(unit, "Unaffected Affection") ? 0
+                : hasPassive(unit, "Intense Affection") ? 2 : 1;
+
         for (ConditionInstance instance : unit.getConditionInstances().values()) {
             Conditions condition = instance.getCondition();
             if (condition == null) continue;
+
+            ConditionType conditionType = condition.getConditionType();
             Unit source = instance.getSource();
+
             double amp = 1;
             if (source != null) {
-                if (condition.getConditionType() == ConditionType.BUFF) {
+                if (conditionType == ConditionType.BUFF) {
                     amp += source.getStats().get(StatType.BUFFAMPLIFIER).getFinal();
-                }
-                if (condition.getConditionType() == ConditionType.DEBUFF) {
+                } else if (conditionType == ConditionType.DEBUFF) {
                     amp += source.getStats().get(StatType.DEBUFFAMPLIFIER).getFinal();
                 }
             }
+
             double resist = 1;
-            if (condition.getConditionType() == ConditionType.DEBUFF) {
-                resist = Math.max(0.2, (1-unit.getStats().get(StatType.DEBUFFRESISTANCE).getFinal()));
+            if (conditionType == ConditionType.DEBUFF) {
+                resist = Math.max(0.2, 1 - unit.getStats().get(StatType.DEBUFFRESISTANCE).getFinal());
             }
-            double ia = 1;
-            double ua = 1;
-            for (PassiveNode node : unit.getAllocatedPassives().values()){
-                if (node.getName().equals("Intense Affection")) {
-                    ia = 2;
-                }
-                if (node.getName().equals("Unaffected Affection")) {
-                    ua = 0;
-                }
-                if (condition.getConditionType().equals(ConditionType.NEUTRAL)) {
-                    ia = 1;
-                    ua = 1;
-                }
-            }
+
+            double factor = amp * resist * (conditionType == ConditionType.NEUTRAL ? 1 : affection);
+
             for (StatType type : StatType.values()) {
                 BasicModifier modifier = condition.getModifiers().getStatModifiers().get(type);
                 if (modifier == null) continue;
-                equipMultSum.merge(type, modifier.getEquipmentMult() * amp * ia * ua * resist, Double::sum);
-                passiveMultSum.merge(type, modifier.getPassiveMult() * amp * ia * ua * resist, Double::sum);
+                equipMultSum.merge(type, modifier.getEquipmentMult() * factor, Double::sum);
+                passiveMultSum.merge(type, modifier.getPassiveMult() * factor, Double::sum);
             }
         }
 
+        // global mult ของ passive / equipment (ต้องรอ passiveMultSum, equipMultSum ครบก่อน)
+        for (PassiveNode node : unit.getAllocatedPassives().values()) {
+            if (node == null) continue;
+            for (StatType type : StatType.values()) {
+                BasicModifier modifier = node.getStatModifiers().get(type);
+                if (modifier == null) continue;
+                double g = modifier.getGlobalMult();
+                if (Double.isNaN(g) || g == 0.0) continue;
+                globalMultProduct.merge(type, g * (1 + passiveMultSum.get(type)) + 1, (oldVal, newVal) -> oldVal * newVal);
+            }
+        }
+
+        for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
+            Equipment equipment = slot.getEquipment();
+            if (equipment == null) continue;
+
+            double slotMult = getSlotMultiplier(unit, slot);
+
+            for (StatType type : StatType.values()) {
+                BasicModifier modifier = equipment.getStatModifiers().get(type);
+                if (modifier == null) continue;
+                double g = modifier.getGlobalMult();
+                if (Double.isNaN(g) || g == 0.0) continue;
+                globalMultProduct.merge(type, g * slotMult * (1 + equipMultSum.get(type)) + 1, (oldVal, newVal) -> oldVal * newVal);
+            }
+        }
+
+        // Apply Flat + EquipMult + PassiveMult + Global Mult
         for (StatType type : StatType.values()) {
-            globalMultProduct.put(type, 1.0);
-            double modifier = 0;
+            double total = equipFlatSum.get(type) * (1 + equipMultSum.get(type))
+                    + passiveFlatSum.get(type) * (1 + passiveMultSum.get(type))
+                    + otherFlatSum.get(type);
 
-            for (PassiveNode node : unit.getAllocatedPassives().values()) {
-                BasicModifier basicModifier = node.getStatModifiers().get(type);
-                if (basicModifier == null) continue;
-                equipMultSum.merge(type, basicModifier.getEquipmentMult(), Double::sum);
-                passiveMultSum.merge(type, basicModifier.getPassiveMult(), Double::sum);
-            }
-            for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
-                if (slot.getEquipment() == null) continue;
-                BasicModifier basicModifier = slot.getEquipment().getStatModifiers().get(type);
-                if (basicModifier == null) continue;
-                equipMultSum.merge(type, basicModifier.getEquipmentMult(), Double::sum);
-                passiveMultSum.merge(type, basicModifier.getPassiveMult(), Double::sum);
-            }
-
-            for (PassiveNode node : unit.getAllocatedPassives().values()) {
-                if (node.getStatModifiers().get(type) == null) continue;
-                modifier = node.getStatModifiers().get(type).getGlobalMult();
-                if (Double.isNaN(modifier) || modifier == 0.0) continue;
-                globalMultProduct.merge(type,(modifier*(1+passiveMultSum.get(type))+1), (oldVal, newVal) -> oldVal * newVal);
-            }
-            for (EquipmentSlot slot : unit.getEquipmentSlots().values()) {
-                Equipment equipment = slot.getEquipment();
-                if (equipment == null) continue;
-
-                double handMultiplier = 1;
-                if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
-                    handMultiplier = unit.getMixTwoHandedMult();
-                }
-                double equipmentMod = 1;
-                for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
-                    Double mult = null;
-                    Map<EquipmentType, Double> multMap = entry.getValue().getEquipmentSlotMult();
-                    if (multMap != null) {
-                        mult = multMap.get(equipment.getEquipmentType());
-                    }
-                    if (mult != null) {
-                        equipmentMod += mult;
-                    }
-                }
-                if (slot.getEquipment().getStatModifiers().get(type) == null) continue;
-                modifier = slot.getEquipment().getStatModifiers().get(type).getGlobalMult();
-                if (Double.isNaN(modifier) || modifier == 0.0) continue;
-                globalMultProduct.merge(type, ((modifier * handMultiplier * equipmentMod*(1+equipMultSum.get(type)))+1), (oldVal, newVal) -> oldVal * newVal);
-            }
-            for (SkillInstance instance : unit.getAllSkill().values()) {
-                if (instance.getSkillData() == null) continue;
-                if (instance.getSkillData().getSkillModifier().getStatModifiers().get(type) == null) continue;
-                modifier = instance.getSkillData().getSkillModifier().getStatModifiers().get(type).getGlobalMult();
-                if (Double.isNaN(modifier) || modifier == 0.0) continue;
-                if (instance.getInstanceBundle().getStatModifiers().get(type) == null) continue;
-                double skillToMult = instance.getInstanceBundle().getStatModifiers().get(type).getGlobalMult();
-                globalMultProduct.merge(type, skillToMult+1, (oldVal, newVal) -> oldVal * newVal);
-            }
-            for (CardType cardType : unit.getCard().keySet()) {
-                if (unit.getCard().get(cardType).getStatModifiers(cardType).get(type) == null) continue;
-                modifier = unit.getCard().get(cardType).getStatModifiers(cardType).get(type).getGlobalMult();
-                if (Double.isNaN(modifier) || modifier == 0.0) continue;
-                globalMultProduct.merge(type,modifier+1, (oldVal,newVal) -> oldVal * newVal);
-            }
-            for (UniqueModifier uniqueModifier : unit.getUniqueModifier()) {
-                if (uniqueModifier.getModifiers().getStatModifiers().get(type) == null) continue;
-                modifier = uniqueModifier.getModifiers().getStatModifiers().get(type).getGlobalMult();
-                if (Double.isNaN(modifier) || modifier == 0.0) continue;
-                globalMultProduct.merge(type,modifier+1, (oldVal,newVal) -> oldVal * newVal);
-            }
-            if (unit.getRune_modifiers().getStatModifiers().get(type) != null) {
-                modifier = unit.getRune_modifiers().getStatModifiers().get(type).getGlobalMult();
-                globalMultProduct.merge(type, modifier + 1, (oldVal, newVal) -> oldVal * newVal);
-            }
+            unit.getStats().get(type).sumToCurrent(total);
         }
-
-        // Apply Flat + EquipMult + PassiveMult
-        for (StatType type : StatType.values()) {
-            double equipFlat = equipFlatSum.getOrDefault(type, 0.0);
-            double equipMult = equipMultSum.getOrDefault(type, 0.0);
-            double passiveFlat = passiveFlatSum.getOrDefault(type, 0.0);
-            double passiveMult = passiveMultSum.getOrDefault(type, 0.0);
-            double raceFlat = raceFlatSum.getOrDefault(type, 0.0);
-            double cardFlat = cardFlatSum.getOrDefault(type, 0.0);
-            double skillFlat = skillFlatSum.get(type);
-            double runeFlat = runeFlatSum.get(type);
-            unit.getStats().get(type).sumToCurrent(equipFlat + passiveFlat);
-            unit.getStats().get(type).sumToCurrent(equipFlat * equipMult);
-            unit.getStats().get(type).sumToCurrent(passiveFlat * passiveMult);
-            unit.getStats().get(type).sumToCurrent(raceFlat);
-            unit.getStats().get(type).sumToCurrent(cardFlat);
-            unit.getStats().get(type).sumToCurrent(skillFlat);
-            unit.getStats().get(type).sumToCurrent(runeFlat);
-        }
-
-        //คำนวณ CritChance และ Shield ก่อนที่จะ apply Global Mult
         calculateCritChance();
         calculateReservation();
+        calculateManaRegen();
 
-        // Apply Global Mult
         for (StatType type : StatType.values()) {
-            unit.getStats().get(type).multToCurrent(globalMultProduct.getOrDefault(type, 1.0));
+            unit.getStats().get(type).multToCurrent(1.0 + increasedSum.get(type));
+            unit.getStats().get(type).multToCurrent(globalMultProduct.get(type));
         }
+    }
+
+// ---------- helper ----------
+
+    private static void addFlatIncreaseGlobal(StatType type, BasicModifier modifier,
+                                              Map<StatType, Double> flatSum,
+                                              Map<StatType, Double> increasedSum,
+                                              Map<StatType, Double> globalProduct) {
+        if (modifier == null) return;
+        flatSum.merge(type, modifier.getFlat(), Double::sum);
+        increasedSum.merge(type, modifier.getMult(), Double::sum);
+        double g = modifier.getGlobalMult();
+        if (Double.isNaN(g) || g == 0.0) return;
+        globalProduct.merge(type, g + 1, (oldVal, newVal) -> oldVal * newVal);
+    }
+
+    // handMultiplier * (1 + passive equipment-slot mult)
+    private double getSlotMultiplier(Unit unit, EquipmentSlot slot) {
+        double hand = 1;
+        if (unit.isMixTwoHanded() && slot.getEquipmentType().equals(EquipmentType.WEAPON)) {
+            hand = unit.getMixTwoHandedMult();
+        }
+        double equipmentMod = 1;
+        for (PassiveNode node : unit.getAllocatedPassives().values()) {
+            Map<EquipmentType, Double> multMap = node.getEquipmentSlotMult();
+            if (multMap == null) continue;
+            Double mult = multMap.get(slot.getEquipment().getEquipmentType());
+            if (mult != null) equipmentMod += mult;
+        }
+        return hand * equipmentMod;
+    }
+
+    private boolean hasPassive(Unit unit, String name) {
+        return unit.getAllocatedPassives().values().stream()
+                .anyMatch(n -> n != null && name.equals(n.getName()));
     }
 
     public void applyTransferStatModifier() {

@@ -107,16 +107,16 @@ public class RuneCalculator {
 
             Set<String> directions = entry.getValue();
             if (directions.contains("UP")) {
-                spaceAxis.getModifiers().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(0.06);
+                spaceAxis.getModifiers().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(0.04);
             }
             if (directions.contains("DOWN")) {
-                spaceAxis.getModifiers().getStatModifierSafe(StatType.HEALTHPOINT).setGlobalMult(0.06);
+                spaceAxis.getModifiers().getStatModifierSafe(StatType.HEALTHPOINT).setGlobalMult(0.04);
             }
             if (directions.contains("LEFT")) {
-                spaceAxis.getModifiers().getStatModifierSafe(StatType.PHYSICALATTACK).setGlobalMult(0.06);
+                spaceAxis.getModifiers().getStatModifierSafe(StatType.PHYSICALATTACK).setGlobalMult(0.04);
             }
             if (directions.contains("RIGHT")) {
-                spaceAxis.getModifiers().getStatModifierSafe(StatType.RANGEDATTACK).setGlobalMult(0.06);
+                spaceAxis.getModifiers().getStatModifierSafe(StatType.RANGEDATTACK).setGlobalMult(0.04);
             }
         }
     }
@@ -178,19 +178,19 @@ public class RuneCalculator {
             double mult = 0.05 * grandSpectrumCount;
 
             if (rune.getName().contains("Might")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.STRENGTH).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.STRENGTH).setMult(mult);
             } else if (rune.getName().contains("Quick")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.AGILITY).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.AGILITY).setMult(mult);
             } else if (rune.getName().contains("Tough")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.VITALITY).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.VITALITY).setMult(mult);
             } else if (rune.getName().contains("Alert")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.DEXTERITY).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.DEXTERITY).setMult(mult);
             } else if (rune.getName().contains("Insight")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.WISDOM).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.WISDOM).setMult(mult);
             } else if (rune.getName().contains("Wise")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.INTELLIGENCE).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.INTELLIGENCE).setMult(mult);
             } else if (rune.getName().contains("Bless")) {
-                rune.getModifiers().getStatusModifierSafe(StatusType.LUCK).setGlobalMult(mult);
+                rune.getModifiers().getStatusModifierSafe(StatusType.LUCK).setMult(mult);
             }
         }
     }

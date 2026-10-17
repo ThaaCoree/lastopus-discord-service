@@ -93,7 +93,7 @@ public class CraftedMod {
             equipment_multiplier = 0.5;
         }
 
-        if (modifierType == ModifierType.GLOBAL) {
+        if (modifierType == ModifierType.INCREASED) {
             base_value = 0.01;
             growth = 0.005;
             exponent = 1.11;

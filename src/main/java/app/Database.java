@@ -14,9 +14,8 @@ import model.entity.items.crafted_equipments.CraftingMaterial;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
-import model.type.CardType;
-import model.type.ItemType;
-import model.type.UnitType;
+import model.modifier.BasicModifier;
+import model.type.*;
 import util.GoogleSheetsUtil;
 import util.JsonUtils;
 import util.StatTranslateUtil;
@@ -60,9 +59,27 @@ public class Database {
             combatFlow.registerDatabase(this);
             combatFlow.initCombatFlow();
         }
+
+//        dataMigrate();
 //        for (Unit unit : allUnit.values()) {
 //            unit.calculateEverything();
 //        }
+    }
+
+    public void dataMigrate() {
+        for (Equipment equipment : allEquipmentMap.values()) {
+            for (StatType type : StatType.values()) {
+                BasicModifier mods = equipment.getModifiers() == null ? null
+                        : equipment.getModifiers().getStatModifiers().get(type);
+                if (mods == null) continue;
+
+                double g = mods.getGlobalMult();
+                if (Double.isNaN(g) || g == 0.0) continue;
+
+                mods.setMult(g);
+                mods.setGlobalMult(0.0);
+            }
+        }
     }
 
     public void createPlayer(String name) {
@@ -477,6 +494,26 @@ public class Database {
                 Unit source = allUnit.get(entry.getValue().getSourceName());
                 if (source != null) {
                     entry.getValue().setSource(source);
+                }
+            }
+            for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
+                Rune rune = entry.getValue();
+                if (!rune.isUnique_rune()) continue;
+                Rune newObject = allRuneMap.get(rune.getName());
+                if (newObject != null) entry.setValue(newObject);
+            }
+            for (Rune rune : unit.getSocketed_runes()) {
+                if (!rune.isUnique_rune()) continue;
+                Rune newObject = allRuneMap.get(rune.getName());
+                if (newObject != null) {
+                    rune.setDescription(newObject.getDescription());
+                    rune.setStatusDescription(newObject.getStatusDescription());
+                    rune.setModifiers(newObject.getModifiers());
+                    rune.setUnique_weight(newObject.getUnique_weight());
+                    rune.setSkills(newObject.getSkills());
+                    if (!rune.getShapeName().equalsIgnoreCase(newObject.getShapeName())) {
+                        rune.setShape(newObject.getShape());
+                    }
                 }
             }
             unit.calculateEverything();

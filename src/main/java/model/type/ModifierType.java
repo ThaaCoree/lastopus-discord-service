@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public enum ModifierType {
     FLAT("Flat"),
     GLOBAL("Global"),
+    INCREASED("Increased"),
     EQUIPMENT("Equipment"),
     PASSIVE("Passive"),
     OVERRIDE("Override");

@@ -145,16 +145,22 @@ public class StatTranslateUtil {
                 }
             }
             if (equipMult != 0) {
-                    result = result + df.format(equipMult*100) + "% Equipment" + stat + "\n";
+                result = result + df.format(equipMult * 100) + "% Equipment " + stat + "\n";
+            }
+            if (mult > 0) {
+                result = result + df.format(mult * 100) + "% Increased " + stat + "\n";
+            }
+            if (mult < 0) {
+                result = result + df.format(mult * -1 * 100) + "% Decreased " + stat + "\n";
             }
             if (globalMult != 0) {
-                    result = result + df.format(globalMult*100) + "% Global" + stat + "\n";
+                result = result + df.format(globalMult * 100) + "% Global " + stat + "\n";
             }
             if (passiveMult != 0) {
-                    result = result + df.format(passiveMult*100) + "% Passive" + stat + "\n";
+                result = result + df.format(passiveMult * 100) + "% Passive " + stat + "\n";
             }
             if (!Double.isNaN(override)) {
-                    result = result + "Set " + stat + " to " + df.format(override) + "\n";
+                result = result + "Set " + stat + " to " + df.format(override) + "\n";
             }
             node.addStatusDescription(result);
         });
@@ -257,13 +263,19 @@ public class StatTranslateUtil {
                 result.append(df.format(flat)).append(" ").append(status).append("\n");
             }
             if (equipMult != 0) {
-                result.append(df.format(equipMult * 100)).append("% Equipment").append(status).append("\n");
+                result.append(df.format(equipMult * 100)).append("% Equipment ").append(status).append("\n");
+            }
+            if (mult > 0) {
+                result.append(df.format(mult * 100)).append("% Increased ").append(status).append("\n");
+            }
+            if (mult < 0) {
+                result.append(df.format(mult * -1 * 100)).append("% Decreased ").append(status).append("\n");
             }
             if (globalMult != 0) {
-                result.append(df.format(globalMult * 100)).append("% Global").append(status).append("\n");
+                result.append(df.format(globalMult * 100)).append("% Global ").append(status).append("\n");
             }
             if (passiveMult != 0) {
-                result.append(df.format(passiveMult * 100)).append("% Passive").append(status).append("\n");
+                result.append(df.format(passiveMult * 100)).append("% Passive ").append(status).append("\n");
             }
             if (!Double.isNaN(override)) {
                 result.append("Set ").append(status).append(" to ").append(df.format(override)).append("\n");
@@ -288,13 +300,19 @@ public class StatTranslateUtil {
                 }
             }
             if (equipMult != 0) {
-                result.append(df.format(equipMult * 100)).append("% Equipment").append(stat).append("\n");
+                result.append(df.format(equipMult * 100)).append("% Equipment ").append(stat).append("\n");
+            }
+            if (mult > 0) {
+                result.append(df.format(mult * 100)).append("% Increased ").append(stat).append("\n");
+            }
+            if (mult < 0) {
+                result.append(df.format(mult * -1 * 100)).append("% Decreased ").append(stat).append("\n");
             }
             if (globalMult != 0) {
-                result.append(df.format(globalMult * 100)).append("% Global").append(stat).append("\n");
+                result.append(df.format(globalMult * 100)).append("% Global ").append(stat).append("\n");
             }
             if (passiveMult != 0) {
-                result.append(df.format(passiveMult * 100)).append("% Passive").append(stat).append("\n");
+                result.append(df.format(passiveMult * 100)).append("% Passive ").append(stat).append("\n");
             }
             if (!Double.isNaN(override)) {
                 if (percent) {

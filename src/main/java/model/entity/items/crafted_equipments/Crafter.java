@@ -105,7 +105,7 @@ public class Crafter {
                 if (mod.modifierType == ModifierType.FLAT) {
                     craftedEquipment.getModifiers().getStatModifierSafe(modInstance.mod.statType).sumFlat(modInstance.final_value);
                 }
-                if (mod.modifierType == ModifierType.GLOBAL) {
+                if (mod.modifierType == ModifierType.INCREASED) {
                     craftedEquipment.getModifiers().getStatModifierSafe(modInstance.mod.statType).sumGlobalMult(modInstance.final_value);
                 }
                 if (mod.modifierType == ModifierType.EQUIPMENT) {
@@ -119,7 +119,7 @@ public class Crafter {
                 if (mod.modifierType == ModifierType.FLAT) {
                     craftedEquipment.getModifiers().getStatusModifierSafe(modInstance.mod.statusType).sumFlat(modInstance.final_value);
                 }
-                if (mod.modifierType == ModifierType.GLOBAL) {
+                if (mod.modifierType == ModifierType.INCREASED) {
                     craftedEquipment.getModifiers().getStatusModifierSafe(modInstance.mod.statusType).sumGlobalMult(modInstance.final_value);
                 }
                 if (mod.modifierType == ModifierType.EQUIPMENT) {

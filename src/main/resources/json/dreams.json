@@ -21,15 +21,15 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Knowledge" : {
     "name" : "Dream of Knowledge",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "10% GlobalINT\n10% GlobalMATK\n\n\nNode : Notable",
+    "statusDescription" : "10% Global INT\n10% Global MATK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -60,7 +60,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 0.0,
@@ -80,13 +79,14 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Dream of Force" : {
     "name" : "Dream of Force",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "10% GlobalSTR\n10% GlobalPATK\n\n\nNode : Notable",
+    "statusDescription" : "10% Global STR\n10% Global PATK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -117,7 +117,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 0.0,
@@ -137,13 +136,14 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Dream of Fidelity" : {
     "name" : "Dream of Fidelity",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "10% GlobalDEX\n10% GlobalRATK\n\n\nNode : Notable",
+    "statusDescription" : "10% Global DEX\n10% Global RATK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -174,7 +174,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "RANGEDATTACK" : {
         "flat" : 0.0,
@@ -194,7 +193,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Dream of Vigor" : {
     "name" : "Dream of Vigor",
@@ -218,9 +218,9 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Destruction" : {
     "name" : "Dream of Destruction",
@@ -244,9 +244,9 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Keiros´ Dream" : {
     "name" : "Keiros´ Dream",
@@ -265,9 +265,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Hope" : {
     "name" : "Dream of Hope",
@@ -291,15 +291,15 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Ego" : {
     "name" : "Dream of Ego",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "13% GlobalSTR\n13% GlobalDEX\n13% GlobalINT\n\n\nNode : Notable",
+    "statusDescription" : "13% Global STR\n13% Global DEX\n13% Global INT\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -337,7 +337,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
@@ -364,13 +363,14 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Starry Dream" : {
     "name" : "Starry Dream",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "7% GlobalSTR\n7% GlobalAGI\n7% GlobalVIT\n7% GlobalDEX\n7% GlobalWIS\n7% GlobalINT\n7% GlobalLUK\n\n\nNode : Notable",
+    "statusDescription" : "7% Global STR\n7% Global AGI\n7% Global VIT\n7% Global DEX\n7% Global WIS\n7% Global INT\n7% Global LUK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -440,7 +440,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
@@ -499,7 +498,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Grenn´s War Drum" : {
     "name" : "Grenn´s War Drum",
@@ -518,15 +518,15 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Misery" : {
     "name" : "Dream of Misery",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "21% GlobalMSPD\n\n\nNode : Notable",
+    "statusDescription" : "21% Global MSPD\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -548,7 +548,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MOVEMENTSPEED" : {
         "flat" : 0.0,
@@ -559,7 +558,8 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Delusional Dream" : {
     "name" : "Delusional Dream",
@@ -597,6 +597,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALPENETRATE",
@@ -616,15 +618,13 @@
         "transferRatio" : 1.35,
         "transferType" : "CONVERSION"
       }
-    },
-    "statModifiers" : { },
-    "statusModifiers" : { }
+    }
   },
   "Dream of Vengeance" : {
     "name" : "Dream of Vengeance",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "22% GlobalCritDamage\n\n\nNode : Notable",
+    "statusDescription" : "22% Global CritDamage\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -646,7 +646,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITDAMAGE" : {
         "flat" : 0.0,
@@ -657,7 +656,8 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Faith" : {
     "name" : "Dream of Faith",
@@ -681,15 +681,15 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Taryan´s Dream" : {
     "name" : "Taryan´s Dream",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "45% GlobalManaRegen\n\n\nNode : Notable",
+    "statusDescription" : "45% Global ManaRegen\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -711,7 +711,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MANAREGEN" : {
         "flat" : 0.0,
@@ -722,7 +721,8 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Abominable Evolution" : {
     "name" : "Abominable Evolution",
@@ -769,6 +769,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : null,
@@ -797,9 +799,7 @@
         "transferRatio" : 1.5,
         "transferType" : "CONVERSION"
       }
-    },
-    "statModifiers" : { },
-    "statusModifiers" : { }
+    }
   },
   "Dream of Dread" : {
     "name" : "Dream of Dread",
@@ -823,9 +823,9 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Hate" : {
     "name" : "Dream of Hate",
@@ -853,15 +853,15 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Pain" : {
     "name" : "Dream of Pain",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "15% GlobalPhysicalPen\n15% GlobalMagicalPen\n\n\nNode : Notable",
+    "statusDescription" : "15% Global PhysicalPen\n15% Global MagicalPen\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -891,7 +891,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALPENETRATE" : {
         "flat" : 0.0,
@@ -910,13 +909,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Benevolence" : {
     "name" : "Dream of Benevolence",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "10% GlobalHealAMP\n10% GlobalBuffAMP\n\n\nNode : Notable",
+    "statusDescription" : "10% Global HealAMP\n10% Global BuffAMP\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -946,7 +946,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALAMPLIFIER" : {
         "flat" : 0.0,
@@ -965,13 +964,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "No Regrets" : {
     "name" : "No Regrets",
     "itemType" : "DREAM",
     "description" : "การจู่โจมที่ทำให้เป้าหมายหมดสภาพต่อสู้ จะทำให้ตัวเองหมดสติด้วย\n\nไม่สามารถฮีลหรือมอบบัพให้กับยูนิตอื่นได้อีก",
-    "statusDescription" : "100% GlobalPATK\n100% GlobalMATK\n100% GlobalRATK\n\n\nNode : Keystone",
+    "statusDescription" : "100% Global PATK\n100% Global MATK\n100% Global RATK\n\n\nNode : Keystone",
     "lore" : "\n\n`อย่างน้อยที่สุด ก็เป็นจุดจบที่น่าพอใจ´",
     "price" : "",
     "weight" : 0,
@@ -1009,7 +1009,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 0.0,
@@ -1036,7 +1035,8 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "The Last Blessing" : {
     "name" : "The Last Blessing",
@@ -1055,15 +1055,15 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Tranquility" : {
     "name" : "Dream of Tranquility",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "15% GlobalWIS\n\n\nNode : Notable",
+    "statusDescription" : "15% Global WIS\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1085,7 +1085,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
     "statusModifiers" : {
       "WISDOM" : {
@@ -1096,7 +1095,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Dream of Strive" : {
     "name" : "Dream of Strive",
@@ -1120,9 +1120,9 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Night" : {
     "name" : "Dream of Night",
@@ -1150,7 +1150,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "CRITCHANCE" : {
         "flat" : 0.015,
@@ -1161,13 +1160,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Venus´ Enlightenment" : {
     "name" : "Venus´ Enlightenment",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "-9% GlobalReservation\n\n\nNode : Notable",
+    "statusDescription" : "-9% Global Reservation\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1189,7 +1189,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "RESERVATION" : {
         "flat" : 0.0,
@@ -1200,13 +1199,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Pure Skill" : {
     "name" : "Pure Skill",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "100% GlobalSTR\nSet AGI to 0\nSet VIT to 0\n100% GlobalDEX\nSet WIS to 0\n100% GlobalINT\nSet LUK to 0\n\n\nNode : Keystone",
+    "statusDescription" : "100% Global STR\nSet AGI to 0\nSet VIT to 0\n100% Global DEX\nSet WIS to 0\n100% Global INT\nSet LUK to 0\n\n\nNode : Keystone",
     "lore" : "\n\n`ความไร้ความสามารถของเจ้าน่ะ จะแสดงให้เห็นเอง´",
     "price" : "",
     "weight" : 0,
@@ -1276,7 +1276,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
     "statusModifiers" : {
       "STRENGTH" : {
@@ -1335,13 +1334,14 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Dream of Power" : {
     "name" : "Dream of Power",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "10% GlobalPATK\n10% GlobalRATK\n\n\nNode : Notable",
+    "statusDescription" : "10% Global PATK\n10% Global RATK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1371,7 +1371,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALATTACK" : {
         "flat" : 0.0,
@@ -1390,13 +1389,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Protection" : {
     "name" : "Dream of Protection",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "15% GlobalPBLOCK\n15% GlobalMBLOCK\n\n\nNode : Notable",
+    "statusDescription" : "15% Global PBLOCK\n15% Global MBLOCK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1426,7 +1426,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "PHYSICALBLOCK" : {
         "flat" : 0.0,
@@ -1445,7 +1444,8 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Heresy" : {
     "name" : "Dream of Heresy",
@@ -1469,9 +1469,9 @@
       }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Dusk" : {
     "name" : "Dream of Dusk",
@@ -1500,6 +1500,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "PHYSICALATTACK",
@@ -1510,15 +1512,13 @@
         "transferRatio" : 1.15,
         "transferType" : "CONVERSION"
       }
-    },
-    "statModifiers" : { },
-    "statusModifiers" : { }
+    }
   },
   "Dream of Ability" : {
     "name" : "Dream of Ability",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "15% GlobalMATK\n\n\nNode : Notable",
+    "statusDescription" : "15% Global MATK\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1540,7 +1540,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "MAGICALATTACK" : {
         "flat" : 0.0,
@@ -1551,13 +1550,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Torment" : {
     "name" : "Dream of Torment",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "20% GlobalHP\n\n\nNode : Notable",
+    "statusDescription" : "20% Global HP\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1579,7 +1579,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : {
       "HEALTHPOINT" : {
         "flat" : 0.0,
@@ -1590,13 +1589,14 @@
         "passiveMult" : 0.0
       }
     },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Loop" : {
     "name" : "Dream of Loop",
     "itemType" : "DREAM",
     "description" : "",
-    "statusDescription" : "13.5% GlobalAGI\n5% GlobalDEX\n\n\nNode : Notable",
+    "statusDescription" : "13.5% Global AGI\n5% Global DEX\n\n\nNode : Notable",
     "lore" : "",
     "price" : "",
     "weight" : 0,
@@ -1626,7 +1626,6 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
     "statusModifiers" : {
       "AGILITY" : {
@@ -1645,7 +1644,8 @@
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       }
-    }
+    },
+    "transferModifiers" : { }
   },
   "Perfect Calculation" : {
     "name" : "Perfect Calculation",
@@ -1664,9 +1664,9 @@
       "skillModifiers" : { }
     },
     "skills" : { },
-    "transferModifiers" : { },
     "statModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : { },
+    "transferModifiers" : { }
   },
   "Dream of Dawn" : {
     "name" : "Dream of Dawn",
@@ -1704,6 +1704,8 @@
       "skillModifiers" : { }
     },
     "skills" : { },
+    "statModifiers" : { },
+    "statusModifiers" : { },
     "transferModifiers" : {
       "0" : {
         "sourceStat" : "MAGICALATTACK",
@@ -1723,8 +1725,6 @@
         "transferRatio" : 1.15,
         "transferType" : "CONVERSION"
       }
-    },
-    "statModifiers" : { },
-    "statusModifiers" : { }
+    }
   }
 }

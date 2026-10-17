@@ -307,7 +307,7 @@
   "Tremble" : {
     "name" : "Tremble",
     "description" : "รับความเสียหายมากขึ้น 25%\nไม่สามารถบล็อกได้",
-    "statusDescription" : "-25% GlobalPDEF\n\n",
+    "statusDescription" : "-25% Global PDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -1217,7 +1217,7 @@
   "Fire Ant Poison" : {
     "name" : "Fire Ant Poison",
     "description" : "",
-    "statusDescription" : "-15% GlobalMSPD\n\n",
+    "statusDescription" : "-15% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -1239,7 +1239,7 @@
   "Mishia Root" : {
     "name" : "Mishia Root",
     "description" : "",
-    "statusDescription" : "4% GlobalPATK\n2% GlobalRATK\n2% GlobalMSPD\n\n",
+    "statusDescription" : "4% Global PATK\n2% Global RATK\n2% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -1277,7 +1277,7 @@
   "Mishia Root Potion" : {
     "name" : "Mishia Root Potion",
     "description" : "",
-    "statusDescription" : "8% GlobalPATK\n8% GlobalRATK\n4% GlobalMSPD\n\n",
+    "statusDescription" : "8% Global PATK\n8% Global RATK\n4% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -2697,7 +2697,7 @@
   "Ikidamon Resilience" : {
     "name" : "Ikidamon Resilience",
     "description" : "",
-    "statusDescription" : "21% GlobalPDEF\n21% GlobalMDEF\n\n",
+    "statusDescription" : "21% Global PDEF\n21% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -2727,7 +2727,7 @@
   "Tecery Adrenaline" : {
     "name" : "Tecery Adrenaline",
     "description" : "",
-    "statusDescription" : "11% GlobalPATK\n11% GlobalRATK\n3% GlobalMSPD\n7% GlobalCritDamage\n\n",
+    "statusDescription" : "11% Global PATK\n11% Global RATK\n3% Global MSPD\n7% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -3091,7 +3091,7 @@
   "MoonIveen Amplifier" : {
     "name" : "MoonIveen Amplifier",
     "description" : "",
-    "statusDescription" : "13% GlobalMATK\n\n",
+    "statusDescription" : "13% Global MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -3442,7 +3442,7 @@
   "Green Fin Poison" : {
     "name" : "Green Fin Poison",
     "description" : "",
-    "statusDescription" : "-60% GlobalMSPD\n\n",
+    "statusDescription" : "-60% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -3897,7 +3897,7 @@
   "Rainbow Fin Blessing" : {
     "name" : "Rainbow Fin Blessing",
     "description" : "",
-    "statusDescription" : "7% GlobalPATK\n7% GlobalMATK\n7% GlobalRATK\n7% GlobalHP\n7% GlobalPDEF\n7% GlobalMDEF\n7% GlobalMSPD\n7% GlobalHealAMP\n7% GlobalCritChance\n7% GlobalCritDamage\n7 ManaRegen\n\n",
+    "statusDescription" : "7% Global PATK\n7% Global MATK\n7% Global RATK\n7% Global HP\n7% Global PDEF\n7% Global MDEF\n7% Global MSPD\n7% Global HealAMP\n7% Global CritChance\n7% Global CritDamage\n7 ManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -3999,7 +3999,7 @@
   "Furious Paper Hornet" : {
     "name" : "Furious Paper Hornet",
     "description" : "",
-    "statusDescription" : "100% GlobalPATK\n\n",
+    "statusDescription" : "100% Global PATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -4821,7 +4821,7 @@
   "Black Carrot Flower" : {
     "name" : "Black Carrot Flower",
     "description" : "",
-    "statusDescription" : "8% GlobalMSPD\n\n",
+    "statusDescription" : "8% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -4856,7 +4856,7 @@
   "Runt Howl" : {
     "name" : "Runt Howl",
     "description" : "",
-    "statusDescription" : "19.5% GlobalPATK\n\n",
+    "statusDescription" : "19.5% Global PATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -5242,7 +5242,7 @@
   "Flexible Potion" : {
     "name" : "Flexible Potion",
     "description" : "",
-    "statusDescription" : "12% GlobalPDEF\n20% GlobalManaRegen\n\n",
+    "statusDescription" : "12% Global PDEF\n20% Global ManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -5593,7 +5593,7 @@
   "Distilled Tecery Adrenaline" : {
     "name" : "Distilled Tecery Adrenaline",
     "description" : "",
-    "statusDescription" : "18% GlobalPATK\n18% GlobalRATK\n8% GlobalMSPD\n14% GlobalCritDamage\n\n",
+    "statusDescription" : "18% Global PATK\n18% Global RATK\n8% Global MSPD\n14% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -6048,7 +6048,7 @@
   "Ikres Potion" : {
     "name" : "Ikres Potion",
     "description" : "",
-    "statusDescription" : "-6% GlobalPATK\n7% GlobalMATK\n-6% GlobalRATK\n13% GlobalMSPD\n\n",
+    "statusDescription" : "-6% Global PATK\n7% Global MATK\n-6% Global RATK\n13% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -6503,7 +6503,7 @@
   "Focus Fire" : {
     "name" : "Focus Fire",
     "description" : "",
-    "statusDescription" : "4% GlobalRATK\n\n",
+    "statusDescription" : "4% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -6798,7 +6798,7 @@
   "Tri-Howl" : {
     "name" : "Tri-Howl",
     "description" : "",
-    "statusDescription" : "30% GlobalPhysicalPen\n\n",
+    "statusDescription" : "30% Global PhysicalPen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALPENETRATE" : {
@@ -6850,7 +6850,7 @@
   "Melting Acid" : {
     "name" : "Melting Acid",
     "description" : "",
-    "statusDescription" : "-70% GlobalPDEF\n\n",
+    "statusDescription" : "-70% Global PDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -7327,7 +7327,7 @@
   "Magic Magnified" : {
     "name" : "Magic Magnified",
     "description" : "เพิ่มผลของเวทมนตร์ที่เข้าหา",
-    "statusDescription" : "-80% GlobalMDEF\n\n",
+    "statusDescription" : "-80% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALDEFENSE" : {
@@ -7372,7 +7372,7 @@
   "Sharp Liquid" : {
     "name" : "Sharp Liquid",
     "description" : "",
-    "statusDescription" : "18% GlobalPATK\n18% GlobalRATK\n\n",
+    "statusDescription" : "18% Global PATK\n18% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -7680,7 +7680,7 @@
   "Deep-Fried Red Fin Fish With Fisn Sauce" : {
     "name" : "Deep-Fried Red Fin Fish With Fish Sauce",
     "description" : "",
-    "statusDescription" : "4 STR\n5% GlobalSTR\n3 VIT\n2 DEX\n7% GlobalPATK\n\n",
+    "statusDescription" : "4 STR\n5% Global STR\n3 VIT\n2 DEX\n7% Global PATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -7727,7 +7727,7 @@
   "Deep-Fried Purple Fin Fish With Fish Sauce" : {
     "name" : "Deep-Fried Purple Fin Fish With Fish Sauce",
     "description" : "",
-    "statusDescription" : "8 VIT\n7% GlobalVIT\n7% GlobalPDEF\n7% GlobalMDEF\n\n",
+    "statusDescription" : "8 VIT\n7% Global VIT\n7% Global PDEF\n7% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -7813,7 +7813,7 @@
   "Lumen Distortion" : {
     "name" : "Lumen Distortion",
     "description" : "",
-    "statusDescription" : "25% GlobalMDEF\n\n",
+    "statusDescription" : "25% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALDEFENSE" : {
@@ -8212,7 +8212,7 @@
   "Red Cerelia Potion" : {
     "name" : "Red Cerelia Potion",
     "description" : "",
-    "statusDescription" : "90% GlobalPATK\n90% GlobalRATK\n12% GlobalEvasion\n\n",
+    "statusDescription" : "90% Global PATK\n90% Global RATK\n12% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -8272,7 +8272,7 @@
   "Blue Cerelia Potion" : {
     "name" : "Blue Cerelia Potion",
     "description" : "",
-    "statusDescription" : "10% GlobalMATK\n10% GlobalHealAMP\n7% GlobalBuffAMP\n1.2 ManaRegen\n\n",
+    "statusDescription" : "10% Global MATK\n10% Global HealAMP\n7% Global BuffAMP\n1.2 ManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
@@ -8318,7 +8318,7 @@
   "Steady" : {
     "name" : "Steady",
     "description" : "จะไม่ถูกกระแทกให้กระเด็นง่ายๆ",
-    "statusDescription" : "19% GlobalPDEF\n19% GlobalMDEF\n\n",
+    "statusDescription" : "19% Global PDEF\n19% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -8669,7 +8669,7 @@
   "Neural Overload" : {
     "name" : "Neural Overload",
     "description" : "",
-    "statusDescription" : "80% GlobalPATK\n80% GlobalMATK\n100% GlobalAttackSPD\n\n",
+    "statusDescription" : "80% Global PATK\n80% Global MATK\n100% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -8707,7 +8707,7 @@
   "Stalker Pounce" : {
     "name" : "Stalker Pounce",
     "description" : "",
-    "statusDescription" : "82% GlobalEvasion\n\n",
+    "statusDescription" : "82% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
@@ -8729,7 +8729,7 @@
   "Diverted Luck Potion" : {
     "name" : "Diverted Luck Potion",
     "description" : "",
-    "statusDescription" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\nSet LUK to 0\n\n",
+    "statusDescription" : "10% Global STR\n10% Global AGI\n10% Global VIT\n10% Global DEX\n10% Global WIS\n10% Global INT\nSet LUK to 0\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -9048,7 +9048,7 @@
   "ต้มหน่อไม้ปลาแดง" : {
     "name" : "ต้มหน่อไม้ปลาแดง",
     "description" : "",
-    "statusDescription" : "5 VIT\n4% GlobalVIT\n7% GlobalDEX\n5% GlobalWIS\n12 PATK\n10% GlobalHP\n\n",
+    "statusDescription" : "5 VIT\n4% Global VIT\n7% Global DEX\n5% Global WIS\n12 PATK\n10% Global HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -9503,7 +9503,7 @@
   "ทอดปลาแดงราดซอส" : {
     "name" : "ทอดปลาแดงราดซอส",
     "description" : "",
-    "statusDescription" : "4 STR\n7% GlobalSTR\n12% GlobalHP\n10% GlobalMSPD\nตัวคูณสกิลประเภท Physical เพิ่มขึ้น 10%\n\n",
+    "statusDescription" : "4 STR\n7% Global STR\n12% Global HP\n10% Global MSPD\nตัวคูณสกิลประเภท Physical เพิ่มขึ้น 10%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -9859,7 +9859,7 @@
   "Hands Cripple" : {
     "name" : "Hands Cripple",
     "description" : "",
-    "statusDescription" : "-30% GlobalPATK\n-30% GlobalMATK\n-30% GlobalRATK\n\n",
+    "statusDescription" : "-30% Global PATK\n-30% Global MATK\n-30% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -9897,7 +9897,7 @@
   "Ascended Arcana" : {
     "name" : "Ascended Arcana",
     "description" : "",
-    "statusDescription" : "50% GlobalMATK\n\n",
+    "statusDescription" : "50% Global MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -10352,7 +10352,7 @@
   "Ascended Flesh" : {
     "name" : "Ascended Flesh",
     "description" : "",
-    "statusDescription" : "75% GlobalPDEF\n75% GlobalMDEF\n100% CritShield\n\n",
+    "statusDescription" : "75% Global PDEF\n75% Global MDEF\n100% CritShield\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -10807,7 +10807,7 @@
   "Ascended Precision" : {
     "name" : "Ascended Precision",
     "description" : "",
-    "statusDescription" : "40% CritChance\n250% GlobalAccuracy\n\n",
+    "statusDescription" : "40% CritChance\n250% Global Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -11748,7 +11748,7 @@
   "Glyph Slip" : {
     "name" : "Glyph Slip",
     "description" : "",
-    "statusDescription" : "-16.35% GlobalCritChance\n\n",
+    "statusDescription" : "-16.35% Global CritChance\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITCHANCE" : {
@@ -11770,7 +11770,7 @@
   "Single Focused" : {
     "name" : "Single Focused",
     "description" : "",
-    "statusDescription" : "-20% GlobalPDEF\n-20% GlobalMDEF\n\n",
+    "statusDescription" : "-20% Global PDEF\n-20% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -11813,7 +11813,7 @@
   "Red Teceris Potion" : {
     "name" : "Red Teceris Potion",
     "description" : "",
-    "statusDescription" : "21% GlobalRATK\n12% GlobalMSPD\n10% GlobalEvasion\n10% GlobalPhysicalPen\n\n",
+    "statusDescription" : "21% Global RATK\n12% Global MSPD\n10% Global Evasion\n10% Global PhysicalPen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -12268,7 +12268,7 @@
   "Red Teceria Potion" : {
     "name" : "Red Teceria Potion",
     "description" : "",
-    "statusDescription" : "21% GlobalPATK\n12% GlobalMSPD\n10% GlobalEvasion\n10% GlobalPhysicalPen\n\n",
+    "statusDescription" : "21% Global PATK\n12% Global MSPD\n10% Global Evasion\n10% Global PhysicalPen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -12314,7 +12314,7 @@
   "Moonlight Potion" : {
     "name" : "Moonlight Potion",
     "description" : "",
-    "statusDescription" : "5% GlobalINT\n7% GlobalMATK\n1.6 ManaRegen\n205 HealthRegen\n\n",
+    "statusDescription" : "5% Global INT\n7% Global MATK\n1.6 ManaRegen\n205 HealthRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -12782,7 +12782,7 @@
   "สเต็กย่างราดซอสสูตรราชวงศ์วีนัส" : {
     "name" : "สเต็กย่างราดซอสสูตรราชวงศ์วีนัส",
     "description" : "",
-    "statusDescription" : "25% GlobalVIT\n4 DEX\n11 HP\n\n",
+    "statusDescription" : "25% Global VIT\n4 DEX\n11 HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -13142,7 +13142,7 @@
   "Blue Seal" : {
     "name" : "Blue Seal",
     "description" : "",
-    "statusDescription" : "-57.02% GlobalWIS\n-57.02% GlobalINT\n\n",
+    "statusDescription" : "-57.02% Global WIS\n-57.02% Global INT\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -13204,7 +13204,7 @@
   "Hands Chains" : {
     "name" : "Hands Chains",
     "description" : "",
-    "statusDescription" : "-65.17% GlobalPATK\n-65.17% GlobalMATK\n-65.17% GlobalRATK\n\n",
+    "statusDescription" : "-65.17% Global PATK\n-65.17% Global MATK\n-65.17% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -13242,7 +13242,7 @@
   "Astral Valkyrie" : {
     "name" : "Astral Valkyrie",
     "description" : "",
-    "statusDescription" : "100% GlobalMSPD\n\n",
+    "statusDescription" : "100% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -13307,7 +13307,7 @@
   "Daughter of the Moon" : {
     "name" : "Daughter of the Moon",
     "description" : "",
-    "statusDescription" : "50% GlobalDEX\n100% GlobalLUK\n40% GlobalPATK\n40% GlobalMATK\n40% GlobalRATK\n\n",
+    "statusDescription" : "50% Global DEX\n100% Global LUK\n40% Global PATK\n40% Global MATK\n40% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -13762,7 +13762,7 @@
   "Moon Drain" : {
     "name" : "Moon Drain",
     "description" : "",
-    "statusDescription" : "-5% GlobalHP\n\n",
+    "statusDescription" : "-5% Global HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALTHPOINT" : {
@@ -13871,7 +13871,7 @@
   "Moon Bless" : {
     "name" : "Moon Bless",
     "description" : "",
-    "statusDescription" : "52% GlobalSTR\n52% GlobalAGI\n52% GlobalVIT\n52% GlobalDEX\n52% GlobalWIS\n52% GlobalINT\n52% GlobalLUK\n\n",
+    "statusDescription" : "52% Global STR\n52% Global AGI\n52% Global VIT\n52% Global DEX\n52% Global WIS\n52% Global INT\n52% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -13941,7 +13941,7 @@
   "Lingering Noise" : {
     "name" : "Lingering Noise",
     "description" : "",
-    "statusDescription" : "-31.2% GlobalDMGReduction\n-41.6% GlobalAttackSPD\n-41.6% GlobalCastSPD\n\n",
+    "statusDescription" : "-31.2% Global DMGReduction\n-41.6% Global AttackSPD\n-41.6% Global CastSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -14414,7 +14414,7 @@
   "Quicken" : {
     "name" : "Quicken",
     "description" : "",
-    "statusDescription" : "200% GlobalSpeed\n\n",
+    "statusDescription" : "200% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "SPEED" : {
@@ -14436,7 +14436,7 @@
   "Spark Force" : {
     "name" : "Spark Force",
     "description" : "",
-    "statusDescription" : "41.1% GlobalMSPD\n51.38% GlobalEvasion\n25.69% GlobalPBLOCK\n25.69% GlobalMBLOCK\n61.65% GlobalSpeed\n\n",
+    "statusDescription" : "41.1% Global MSPD\n51.38% Global Evasion\n25.69% Global PBLOCK\n25.69% Global MBLOCK\n61.65% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -14926,7 +14926,7 @@
   "Inner Light" : {
     "name" : "Inner Light",
     "description" : "",
-    "statusDescription" : "112% GlobalSTR\n112% GlobalAGI\n112% GlobalVIT\n112% GlobalDEX\n112% GlobalWIS\n112% GlobalINT\n112% GlobalLUK\n\n",
+    "statusDescription" : "112% Global STR\n112% Global AGI\n112% Global VIT\n112% Global DEX\n112% Global WIS\n112% Global INT\n112% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -15026,7 +15026,7 @@
   "Fallen Light" : {
     "name" : "Fallen Light",
     "description" : "",
-    "statusDescription" : "95.38% GlobalMATK\nSet HealAMP to 0%\n\n",
+    "statusDescription" : "95.38% Global MATK\nSet HealAMP to 0%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -15345,7 +15345,7 @@
   "Veil of Light" : {
     "name" : "Veil of Light",
     "description" : "",
-    "statusDescription" : "162.14% GlobalPBLOCK\n162.14% GlobalMBLOCK\n\n",
+    "statusDescription" : "162.14% Global PBLOCK\n162.14% Global MBLOCK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -15664,7 +15664,7 @@
   "Bone Chill" : {
     "name" : "Bone Chill",
     "description" : "",
-    "statusDescription" : "-42.6% GlobalAGI\n-42.6% GlobalWIS\n\n",
+    "statusDescription" : "-42.6% Global AGI\n-42.6% Global WIS\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -15694,7 +15694,7 @@
   "Light Restrain" : {
     "name" : "Light Restrain",
     "description" : "",
-    "statusDescription" : "42.6% GlobalMSPD\n\n",
+    "statusDescription" : "42.6% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -15716,7 +15716,7 @@
   "Melting Heat" : {
     "name" : "Melting Heat",
     "description" : "",
-    "statusDescription" : "-31.57% GlobalVIT\n\n",
+    "statusDescription" : "-31.57% Global VIT\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -15738,7 +15738,7 @@
   "Drowning Blue" : {
     "name" : "Drowning Blue",
     "description" : "",
-    "statusDescription" : "-31.57% GlobalAGI\n\n",
+    "statusDescription" : "-31.57% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -15760,7 +15760,7 @@
   "Stars Infused" : {
     "name" : "Stars Infused",
     "description" : "",
-    "statusDescription" : "25% GlobalPATK\n25% GlobalMATK\n25% GlobalRATK\n\n",
+    "statusDescription" : "25% Global PATK\n25% Global MATK\n25% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -15798,7 +15798,7 @@
   "BlueIveen Potion" : {
     "name" : "BlueIveen Potion",
     "description" : "",
-    "statusDescription" : "7% GlobalINT\n16 ManaRegen\n122 HealthRegen\n\n",
+    "statusDescription" : "7% Global INT\n16 ManaRegen\n122 HealthRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -16162,7 +16162,7 @@
   "Scent of Awareness" : {
     "name" : "Scent of Awareness",
     "description" : "ต้านทานผลของ Sleep ในระดับหนึ่ง",
-    "statusDescription" : "4% GlobalDEX\n7% GlobalWIS\n\n",
+    "statusDescription" : "4% Global DEX\n7% Global WIS\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -16617,7 +16617,7 @@
   "ลาบเลือดปลาลืมคืน" : {
     "name" : "ลาบเลือดปลาลืมคืน",
     "description" : "",
-    "statusDescription" : "18% GlobalMATK\n44% CritDamage\n49 HealthRegen\n\n",
+    "statusDescription" : "18% Global MATK\n44% CritDamage\n49 HealthRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -17072,7 +17072,7 @@
   "ลูกอมทดลอง รุ่นที่ 1" : {
     "name" : "ลูกอมทดลอง รุ่นที่ 1",
     "description" : "",
-    "statusDescription" : "7% GlobalPATK\n7% GlobalRATK\n\n",
+    "statusDescription" : "7% Global PATK\n7% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -17557,7 +17557,7 @@
   "กระตุ้นจิตวิญญาณ" : {
     "name" : "กระตุ้นจิตวิญญาณ",
     "description" : "",
-    "statusDescription" : "32.13% GlobalAGI\n30.84% GlobalPATK\n30.84% GlobalMATK\n30.84% GlobalRATK\n\n",
+    "statusDescription" : "32.13% Global AGI\n30.84% Global PATK\n30.84% Global MATK\n30.84% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -17626,7 +17626,7 @@
   "Revenos-Parabellum-Empower" : {
     "name" : "Revenos-Parabellum-Empower",
     "description" : "",
-    "statusDescription" : "22.09% GlobalLUK\n\n",
+    "statusDescription" : "22.09% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -17678,7 +17678,7 @@
   "Geneva-Parabellum" : {
     "name" : "Geneva-Parabellum",
     "description" : "",
-    "statusDescription" : "16.43% GlobalMSPD\n\n",
+    "statusDescription" : "16.43% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -18155,7 +18155,7 @@
   "Lesser Scent of Awareness" : {
     "name" : "Lesser Scent of Awareness",
     "description" : "ต้านทานผลของ Sleep ในระดับหนึ่ง",
-    "statusDescription" : "4% GlobalDEX\n\n",
+    "statusDescription" : "4% Global DEX\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -18177,7 +18177,7 @@
   "ผัดกะเพราปลารวมญาติ" : {
     "name" : "ผัดกะเพราปลารวมญาติ",
     "description" : "",
-    "statusDescription" : "7% GlobalAGI\n14% GlobalPATK\n7% GlobalHP\n-38% GlobalMSPD\n\n",
+    "statusDescription" : "7% Global AGI\n14% Global PATK\n7% Global HP\n-38% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -19018,7 +19018,7 @@
   "Quick Shot" : {
     "name" : "Quick Shot",
     "description" : "",
-    "statusDescription" : "100% GlobalAttackSPD\n\n",
+    "statusDescription" : "100% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -19391,7 +19391,7 @@
   "Ground Slide" : {
     "name" : "Ground Slide",
     "description" : "",
-    "statusDescription" : "41.5% GlobalMSPD\n\n",
+    "statusDescription" : "41.5% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -19413,7 +19413,7 @@
   "Brace" : {
     "name" : "Brace",
     "description" : "",
-    "statusDescription" : "40.23% GlobalPATK\n40.23% GlobalMATK\n40.23% GlobalRATK\n30.17% GlobalPDEF\n30.17% GlobalMDEF\n25.14% GlobalPBLOCK\n25.14% GlobalMBLOCK\n\n",
+    "statusDescription" : "40.23% Global PATK\n40.23% Global MATK\n40.23% Global RATK\n30.17% Global PDEF\n30.17% Global MDEF\n25.14% Global PBLOCK\n25.14% Global MBLOCK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -19513,7 +19513,7 @@
   "Red Fin Balm" : {
     "name" : "Red Fin Balm",
     "description" : "",
-    "statusDescription" : "16% GlobalPATK\n16% GlobalRATK\n\n",
+    "statusDescription" : "16% Global PATK\n16% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -19968,7 +19968,7 @@
   "แซนวิชมีทแอนด์ฟิชแซ่บ" : {
     "name" : "แซนวิชมีทแอนด์ฟิชแซ่บ",
     "description" : "",
-    "statusDescription" : "6% GlobalMSPD\n\n",
+    "statusDescription" : "6% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -20423,7 +20423,7 @@
   "Scent of Panic" : {
     "name" : "Scent of Panic",
     "description" : "",
-    "statusDescription" : "-15% GlobalDEX\n-11% GlobalWIS\n10% GlobalPATK\n10% GlobalRATK\n7% GlobalMSPD\n\n",
+    "statusDescription" : "-15% Global DEX\n-11% Global WIS\n10% Global PATK\n10% Global RATK\n7% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -20878,7 +20878,7 @@
   "ขนมจีนน้ำยาปลาบด" : {
     "name" : "ขนมจีนน้ำยาปลาบด",
     "description" : "",
-    "statusDescription" : "18% GlobalPATK\n18% GlobalMATK\n15% GlobalSpeed\n\n",
+    "statusDescription" : "18% Global PATK\n18% Global MATK\n15% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -21333,7 +21333,7 @@
   "เกี๊ยวซ่าปลาร่ำไห้" : {
     "name" : "เกี๊ยวซ่าปลาร่ำไห้",
     "description" : "",
-    "statusDescription" : "8% GlobalVIT\n17% GlobalMATK\n\n",
+    "statusDescription" : "8% Global VIT\n17% Global MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -22233,7 +22233,7 @@
   "Death Mark" : {
     "name" : "Death Mark",
     "description" : "",
-    "statusDescription" : "-95.38% GlobalPDEF\n-95.38% GlobalMDEF\n\n",
+    "statusDescription" : "-95.38% Global PDEF\n-95.38% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -22850,7 +22850,7 @@
   "Dehydration" : {
     "name" : "Dehydration",
     "description" : "",
-    "statusDescription" : "-25% GlobalPATK\n-25% GlobalMATK\n-25% GlobalRATK\n-25% GlobalPDEF\n-25% GlobalMDEF\n-25% GlobalMSPD\n-25% GlobalHealAMP\n-25% GlobalBuffAMP\n-25% GlobalDebuffAMP\nSet ManaRegen to 0\n\n",
+    "statusDescription" : "-25% Global PATK\n-25% Global MATK\n-25% Global RATK\n-25% Global PDEF\n-25% Global MDEF\n-25% Global MSPD\n-25% Global HealAMP\n-25% Global BuffAMP\n-25% Global DebuffAMP\nSet ManaRegen to 0\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -23201,7 +23201,7 @@
   "Magical Adaptation" : {
     "name" : "Magical Adaptation",
     "description" : "",
-    "statusDescription" : "20% GlobalMATK\n20% GlobalMDEF\n\n",
+    "statusDescription" : "20% Global MATK\n20% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
@@ -23582,7 +23582,7 @@
   "ลูกชิ้นปลาสามสีราดซอส" : {
     "name" : "ลูกชิ้นปลาสามสีราดซอส",
     "description" : "",
-    "statusDescription" : "15% GlobalPATK\n13% GlobalPDEF\n13% GlobalMDEF\n22% GlobalHealAMP\n\n",
+    "statusDescription" : "15% Global PATK\n13% Global PDEF\n13% Global MDEF\n22% Global HealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -24037,7 +24037,7 @@
   "ยำปลาทอดกรอบสองสี" : {
     "name" : "ยำปลาทอดกรอบสองสี",
     "description" : "",
-    "statusDescription" : "9% GlobalSTR\n9% GlobalAGI\n12% GlobalSpeed\n\n",
+    "statusDescription" : "9% Global STR\n9% Global AGI\n12% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -24492,7 +24492,7 @@
   "Exhausted1" : {
     "name" : "Exhausted1",
     "description" : "",
-    "statusDescription" : "-50% GlobalHP\n\n",
+    "statusDescription" : "-50% Global HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -24869,7 +24869,7 @@
   "Demonspeed" : {
     "name" : "Demonspeed",
     "description" : "",
-    "statusDescription" : "423.25% GlobalAttackSPD\n\n",
+    "statusDescription" : "423.25% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
@@ -24891,7 +24891,7 @@
   "Silentstriker" : {
     "name" : "Silentstriker",
     "description" : "",
-    "statusDescription" : "529.06% GlobalCritDamage\n\n",
+    "statusDescription" : "529.06% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
@@ -24926,7 +24926,7 @@
   "Last Strike" : {
     "name" : "Last Strike",
     "description" : "",
-    "statusDescription" : "423.25% GlobalAttackSPD\n\n",
+    "statusDescription" : "423.25% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
@@ -24948,7 +24948,7 @@
   "Made in Heaven" : {
     "name" : "Made in Heaven",
     "description" : "",
-    "statusDescription" : "471.81% GlobalSpeed\n\n",
+    "statusDescription" : "471.81% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "SPEED" : {
@@ -25079,7 +25079,7 @@
   "Melovas" : {
     "name" : "Melovas",
     "description" : "",
-    "statusDescription" : "68.57% GlobalCritDamage\n58.78% GlobalAccuracy\n\n",
+    "statusDescription" : "68.57% Global CritDamage\n58.78% Global Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
@@ -25109,7 +25109,7 @@
   "Muro" : {
     "name" : "Muro",
     "description" : "",
-    "statusDescription" : "157 LUK\n70.53% GlobalAttackSPD\n\n",
+    "statusDescription" : "157 LUK\n70.53% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ATTACKSPEED" : {
@@ -25140,7 +25140,7 @@
   "Tyranovia" : {
     "name" : "Tyranovia",
     "description" : "",
-    "statusDescription" : "1051.11 PDEF\n1051.11 MDEF\n195.92% GlobalCritShield\n\n",
+    "statusDescription" : "1051.11 PDEF\n1051.11 MDEF\n195.92% Global CritShield\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -25178,7 +25178,7 @@
   "Rex" : {
     "name" : "Rex",
     "description" : "",
-    "statusDescription" : "97.96% GlobalMSPD\n97.96% GlobalEvasion\n\n",
+    "statusDescription" : "97.96% Global MSPD\n97.96% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -25208,7 +25208,7 @@
   "Fade" : {
     "name" : "Fade",
     "description" : "",
-    "statusDescription" : "39.18% GlobalMSPD\n\n",
+    "statusDescription" : "39.18% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -25230,7 +25230,7 @@
   "Regalia Maelstorm" : {
     "name" : "Regalia Maelstorm",
     "description" : "",
-    "statusDescription" : "35.9% GlobalSTR\n35.9% GlobalPATK\n102.58% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% Global STR\n35.9% Global PATK\n102.58% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -25269,7 +25269,7 @@
   "Regalia Icarus" : {
     "name" : "Regalia Icarus",
     "description" : "",
-    "statusDescription" : "35.9% GlobalDEX\n35.9% GlobalRATK\n102.58% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% Global DEX\n35.9% Global RATK\n102.58% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "RANGEDATTACK" : {
@@ -25308,7 +25308,7 @@
   "Regalia Geneva" : {
     "name" : "Regalia Geneva",
     "description" : "",
-    "statusDescription" : "35.9% GlobalINT\n35.9% GlobalMATK\n102.58% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% Global INT\n35.9% Global MATK\n102.58% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
@@ -25347,7 +25347,7 @@
   "Regalia Revenos" : {
     "name" : "Regalia Revenos",
     "description" : "",
-    "statusDescription" : "275.3% GlobalMSPD\n35.9% GlobalCritDamage\n\n",
+    "statusDescription" : "275.3% Global MSPD\n35.9% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -25802,7 +25802,7 @@
   "Regalia Titan" : {
     "name" : "Regalia Titan",
     "description" : "",
-    "statusDescription" : "35.9% GlobalVIT\n35.9% GlobalPDEF\n35.9% GlobalMDEF\n102.58% GlobalMSPD\n\n",
+    "statusDescription" : "35.9% Global VIT\n35.9% Global PDEF\n35.9% Global MDEF\n102.58% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -25992,7 +25992,7 @@
   "Gift of Storyteller" : {
     "name" : "Gift of Storyteller",
     "description" : "",
-    "statusDescription" : "35.4% GlobalHealAMP\n\n",
+    "statusDescription" : "35.4% Global HealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
@@ -26521,7 +26521,7 @@
   "Solar Blessing" : {
     "name" : "Solar Blessing",
     "description" : "",
-    "statusDescription" : "15% GlobalSTR\n15% GlobalDEX\n15% GlobalINT\n\n",
+    "statusDescription" : "15% Global STR\n15% Global DEX\n15% Global INT\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -27782,7 +27782,7 @@
   "Blood Drip" : {
     "name" : "Blood Drip",
     "description" : "",
-    "statusDescription" : "-43.84% GlobalSTR\n-43.84% GlobalVIT\n\n",
+    "statusDescription" : "-43.84% Global STR\n-43.84% Global VIT\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -27812,7 +27812,7 @@
   "Rage" : {
     "name" : "Rage",
     "description" : "",
-    "statusDescription" : "156.56% GlobalPhysicalPen\n156.56% GlobalMagicalPen\n\n",
+    "statusDescription" : "156.56% Global PhysicalPen\n156.56% Global MagicalPen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALPENETRATE" : {
@@ -27842,7 +27842,7 @@
   "Infernal Imbue" : {
     "name" : "Infernal Imbue",
     "description" : "",
-    "statusDescription" : "43.84% GlobalPATK\n43.84% GlobalMATK\n43.84% GlobalRATK\n\n",
+    "statusDescription" : "43.84% Global PATK\n43.84% Global MATK\n43.84% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -28392,7 +28392,7 @@
   "Inferno Melt" : {
     "name" : "Inferno Melt",
     "description" : "",
-    "statusDescription" : "-20.05% GlobalVIT\n\n",
+    "statusDescription" : "-20.05% Global VIT\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -28414,7 +28414,7 @@
   "Immortalis' Exhausted" : {
     "name" : "Immortalis' Exhausted",
     "description" : "",
-    "statusDescription" : "-10% GlobalHP\n\n",
+    "statusDescription" : "-10% Global HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -28869,7 +28869,7 @@
   "Istenta" : {
     "name" : "Istenta",
     "description" : "",
-    "statusDescription" : "21.79% GlobalPATK\n21.79% GlobalMATK\n21.79% GlobalRATK\n21.79% GlobalPDEF\n21.79% GlobalMDEF\n\n",
+    "statusDescription" : "21.79% Global PATK\n21.79% Global MATK\n21.79% Global RATK\n21.79% Global PDEF\n21.79% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -28923,7 +28923,7 @@
   "Daughter of the Sun" : {
     "name" : "Daughter of the Sun",
     "description" : "",
-    "statusDescription" : "30% GlobalDEX\n100% GlobalINT\n20% GlobalPATK\n20% GlobalMATK\n20% GlobalRATK\n100% GlobalSpeed\n\n",
+    "statusDescription" : "30% Global DEX\n100% Global INT\n20% Global PATK\n20% Global MATK\n20% Global RATK\n100% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -29440,7 +29440,7 @@
   "Trip Shot" : {
     "name" : "Trip Shot",
     "description" : "",
-    "statusDescription" : "-40.1% GlobalMSPD\n\n",
+    "statusDescription" : "-40.1% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -29462,7 +29462,7 @@
   "Solar Bound" : {
     "name" : "Solar Bound",
     "description" : "",
-    "statusDescription" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\n10% GlobalLUK\n\n",
+    "statusDescription" : "10% Global STR\n10% Global AGI\n10% Global VIT\n10% Global DEX\n10% Global WIS\n10% Global INT\n10% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -29930,7 +29930,7 @@
   "Vah'ris" : {
     "name" : "Vah'ris",
     "description" : "",
-    "statusDescription" : "46% GlobalCritDamage\n\n",
+    "statusDescription" : "46% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
@@ -29974,7 +29974,7 @@
   "Tolerated Destruction" : {
     "name" : "Tolerated Destruction",
     "description" : "",
-    "statusDescription" : "31.65% GlobalPATK\n31.65% GlobalMATK\n31.65% GlobalRATK\n\n",
+    "statusDescription" : "31.65% Global PATK\n31.65% Global MATK\n31.65% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -30467,7 +30467,7 @@
   "Light Fatigued" : {
     "name" : "Light Fatigued",
     "description" : "",
-    "statusDescription" : "-45.82% GlobalPATK\n-45.82% GlobalMATK\n-45.82% GlobalRATK\n-45.82% GlobalMSPD\n\n",
+    "statusDescription" : "-45.82% Global PATK\n-45.82% Global MATK\n-45.82% Global RATK\n-45.82% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -30922,7 +30922,7 @@
   "Light Drained" : {
     "name" : "Light Drained",
     "description" : "",
-    "statusDescription" : "-45.82% GlobalHealAMP\n\n",
+    "statusDescription" : "-45.82% Global HealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
@@ -30996,7 +30996,7 @@
   "Brick Break : Head" : {
     "name" : "Brick Break : Head",
     "description" : "",
-    "statusDescription" : "-77.75% GlobalSTR\n-77.75% GlobalDEX\n-77.75% GlobalINT\n\n",
+    "statusDescription" : "-77.75% Global STR\n-77.75% Global DEX\n-77.75% Global INT\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -31034,7 +31034,7 @@
   "Brick Break : Body" : {
     "name" : "Brick Break : Body",
     "description" : "",
-    "statusDescription" : "-77.75% GlobalVIT\n\n",
+    "statusDescription" : "-77.75% Global VIT\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -31489,7 +31489,7 @@
   "Brick Break : Leg" : {
     "name" : "Brick Break : Leg",
     "description" : "",
-    "statusDescription" : "-77.75% GlobalAGI\n\n",
+    "statusDescription" : "-77.75% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -31555,7 +31555,7 @@
   "Despair-Shock" : {
     "name" : "Despair-Shock",
     "description" : "",
-    "statusDescription" : "-41.32% GlobalAGI\n\n",
+    "statusDescription" : "-41.32% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -31621,7 +31621,7 @@
   "Vital Cut" : {
     "name" : "Vital Cut",
     "description" : "",
-    "statusDescription" : "-11.03% GlobalSTR\n-11.03% GlobalAGI\n-11.03% GlobalVIT\n-11.03% GlobalDEX\n-11.03% GlobalWIS\n-11.03% GlobalINT\n-11.03% GlobalLUK\n\n",
+    "statusDescription" : "-11.03% Global STR\n-11.03% Global AGI\n-11.03% Global VIT\n-11.03% Global DEX\n-11.03% Global WIS\n-11.03% Global INT\n-11.03% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -32042,7 +32042,7 @@
   "Vortex Elation" : {
     "name" : "Vortex Elation",
     "description" : "",
-    "statusDescription" : "5329.6% GlobalMATK\n\n",
+    "statusDescription" : "5329.6% Global MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
@@ -33429,7 +33429,7 @@
   "Power Pump" : {
     "name" : "Power Pump",
     "description" : "",
-    "statusDescription" : "30% GlobalPATK\n30% GlobalMATK\n30% GlobalRATK\n\n",
+    "statusDescription" : "30% Global PATK\n30% Global MATK\n30% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -33467,7 +33467,7 @@
   "FORCE" : {
     "name" : "FORCE",
     "description" : "",
-    "statusDescription" : "45% GlobalAGI\n\n",
+    "statusDescription" : "45% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -33489,7 +33489,7 @@
   "Omit" : {
     "name" : "Omit",
     "description" : "",
-    "statusDescription" : "-37.5% GlobalPATK\n-37.5% GlobalMATK\n-37.5% GlobalRATK\n\n",
+    "statusDescription" : "-37.5% Global PATK\n-37.5% Global MATK\n-37.5% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -33527,7 +33527,7 @@
   "Tired" : {
     "name" : "Tired",
     "description" : "",
-    "statusDescription" : "-59.99% GlobalPDEF\n-59.99% GlobalMDEF\n\n",
+    "statusDescription" : "-59.99% Global PDEF\n-59.99% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -33557,7 +33557,7 @@
   "Careless" : {
     "name" : "Careless",
     "description" : "",
-    "statusDescription" : "-47.99% GlobalAGI\n\n",
+    "statusDescription" : "-47.99% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -33592,7 +33592,7 @@
   "Guilt" : {
     "name" : "Guilt",
     "description" : "",
-    "statusDescription" : "51.92% GlobalSTR\n51.92% GlobalAGI\n51.92% GlobalVIT\n51.92% GlobalDEX\n51.92% GlobalWIS\n51.92% GlobalINT\n51.92% GlobalLUK\n\n",
+    "statusDescription" : "51.92% Global STR\n51.92% Global AGI\n51.92% Global VIT\n51.92% Global DEX\n51.92% Global WIS\n51.92% Global INT\n51.92% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -33710,7 +33710,7 @@
   "Sun Incinerate" : {
     "name" : "Sun Incinerate",
     "description" : "",
-    "statusDescription" : "-13.61% GlobalHP\n\n",
+    "statusDescription" : "-13.61% Global HP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALTHPOINT" : {
@@ -33732,7 +33732,7 @@
   "Solar Dehydration" : {
     "name" : "Solar Dehydration",
     "description" : "",
-    "statusDescription" : "-27.23% GlobalPATK\n-27.23% GlobalMATK\n-27.23% GlobalRATK\n-27.23% GlobalPDEF\n-27.23% GlobalMDEF\n-27.23% GlobalMSPD\n-27.23% GlobalHealAMP\n-27.23% GlobalBuffAMP\n-27.23% GlobalDebuffAMP\nSet ManaRegen to 0\n-27.23% GlobalDeflection\n-27.23% GlobalAccuracy\n-27.23% GlobalSpeed\n\n",
+    "statusDescription" : "-27.23% Global PATK\n-27.23% Global MATK\n-27.23% Global RATK\n-27.23% Global PDEF\n-27.23% Global MDEF\n-27.23% Global MSPD\n-27.23% Global HealAMP\n-27.23% Global BuffAMP\n-27.23% Global DebuffAMP\nSet ManaRegen to 0\n-27.23% Global Deflection\n-27.23% Global Accuracy\n-27.23% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -33850,7 +33850,7 @@
   "Heart Pierced" : {
     "name" : "Heart Pierced",
     "description" : "",
-    "statusDescription" : "-15% GlobalAGI\n-15% GlobalVIT\n-15% GlobalWIS\n-15% GlobalLUK\n\n",
+    "statusDescription" : "-15% Global AGI\n-15% Global VIT\n-15% Global WIS\n-15% Global LUK\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -33944,7 +33944,7 @@
   "Body Hold" : {
     "name" : "Body Hold",
     "description" : "",
-    "statusDescription" : "-35.53% GlobalAGI\n-35.53% GlobalSpeed\n\n",
+    "statusDescription" : "-35.53% Global AGI\n-35.53% Global Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
         "SPEED" : {
@@ -33997,7 +33997,7 @@
   "Mythic Gleaming" : {
     "name" : "Mythic Gleaming",
     "description" : "",
-    "statusDescription" : "26.43% GlobalHealAMP\n\n",
+    "statusDescription" : "26.43% Global HealAMP\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
@@ -34019,7 +34019,7 @@
   "Elemental Drain" : {
     "name" : "Elemental Drain",
     "description" : "",
-    "statusDescription" : "-29.07% GlobalEvasion\n-19.82% GlobalAttackSPD\n-19.82% GlobalCastSPD\n\n",
+    "statusDescription" : "-29.07% Global Evasion\n-19.82% Global AttackSPD\n-19.82% Global CastSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "EVASION" : {
@@ -34070,7 +34070,7 @@
   "Twisted Force" : {
     "name" : "Twisted Force",
     "description" : "",
-    "statusDescription" : "154.78% GlobalPATK\n154.78% GlobalMATK\n154.78% GlobalRATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
+    "statusDescription" : "154.78% Global PATK\n154.78% Global MATK\n154.78% Global RATK\nSet MSPD to 0\nSet Evasion to 0\nSet AttackSPD to 100%\nSet CastSPD to 100%\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -34140,7 +34140,7 @@
   "Twisted Wrath" : {
     "name" : "Twisted Wrath",
     "description" : "",
-    "statusDescription" : "Set CritChance to 0%\n464.35% GlobalCritDamage\n\n",
+    "statusDescription" : "Set CritChance to 0%\n464.35% Global CritDamage\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITCHANCE" : {
@@ -34170,7 +34170,7 @@
   "Twisted Haste" : {
     "name" : "Twisted Haste",
     "description" : "",
-    "statusDescription" : "Set PDEF to 0\nSet MDEF to 0\n232.18% GlobalMSPD\n154.78% GlobalAttackSPD\n154.78% GlobalCastSPD\n\n",
+    "statusDescription" : "Set PDEF to 0\nSet MDEF to 0\n232.18% Global MSPD\n154.78% Global AttackSPD\n154.78% Global CastSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -34224,7 +34224,7 @@
   "Twisted Dense" : {
     "name" : "Twisted Dense",
     "description" : "",
-    "statusDescription" : "Set PATK to 0\nSet MATK to 0\nSet RATK to 0\n232.18% GlobalPDEF\n232.18% GlobalMDEF\n232.18% GlobalPBLOCK\n232.18% GlobalMBLOCK\n\n",
+    "statusDescription" : "Set PATK to 0\nSet MATK to 0\nSet RATK to 0\n232.18% Global PDEF\n232.18% Global MDEF\n232.18% Global PBLOCK\n232.18% Global MBLOCK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -34294,7 +34294,7 @@
   "Twisted Bless" : {
     "name" : "Twisted Bless",
     "description" : "",
-    "statusDescription" : "154.78% GlobalHealAMP\n77.39% GlobalBuffAMP\n77.39% GlobalDebuffAMP\n-200% GlobalManaRegen\n\n",
+    "statusDescription" : "154.78% Global HealAMP\n77.39% Global BuffAMP\n77.39% Global DebuffAMP\n-200% Global ManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "HEALAMPLIFIER" : {
@@ -34795,7 +34795,7 @@
   "Blue Comet" : {
     "name" : "Blue Comet",
     "description" : "",
-    "statusDescription" : "24.68% GlobalPATK\n24.68% GlobalMATK\n24.68% GlobalRATK\n\n",
+    "statusDescription" : "24.68% Global PATK\n24.68% Global MATK\n24.68% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -34833,7 +34833,7 @@
   "Forged" : {
     "name" : "Forged",
     "description" : "",
-    "statusDescription" : "39.26% GlobalPDEF\n39.26% GlobalMDEF\n\n",
+    "statusDescription" : "39.26% Global PDEF\n39.26% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -34893,7 +34893,7 @@
   "Gravitational" : {
     "name" : "Gravitational",
     "description" : "ไม่สามารถใช้งาน Combined Action ได้",
-    "statusDescription" : "-59.21% GlobalMSPD\n\n",
+    "statusDescription" : "-59.21% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -34928,7 +34928,7 @@
   "Nebula Maelstorm" : {
     "name" : "Nebula Maelstorm",
     "description" : "",
-    "statusDescription" : "90594.34% GlobalPATK\n\n",
+    "statusDescription" : "90594.34% Global PATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -34950,7 +34950,7 @@
   "Nebula Icarus" : {
     "name" : "Nebula Icarus",
     "description" : "",
-    "statusDescription" : "76.93% GlobalCritDamage\n76.93% GlobalAccuracy\n\n",
+    "statusDescription" : "76.93% Global CritDamage\n76.93% Global Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITDAMAGE" : {
@@ -34993,7 +34993,7 @@
   "Nebula Revenos" : {
     "name" : "Nebula Revenos",
     "description" : "",
-    "statusDescription" : "17.94 LUK\n109.33 MATK\n358.87% GlobalMSPD\n48.98% GlobalAttackSPD\n\n",
+    "statusDescription" : "17.94 LUK\n109.33 MATK\n358.87% Global MSPD\n48.98% Global AttackSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MAGICALATTACK" : {
@@ -35070,7 +35070,7 @@
   "Paper Marching" : {
     "name" : "Paper Marching",
     "description" : "",
-    "statusDescription" : "26.98% GlobalMSPD\n20.24% GlobalEvasion\n\n",
+    "statusDescription" : "26.98% Global MSPD\n20.24% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -35100,7 +35100,7 @@
   "แซนด์วิชเจลลี่เบียร์เนื้อปลา" : {
     "name" : "แซนด์วิชเจลลี่เบียร์เนื้อปลา",
     "description" : "",
-    "statusDescription" : "7% GlobalWIS\n4 INT\n13% GlobalINT\n0.6 ManaRegen\n\n",
+    "statusDescription" : "7% Global WIS\n4 INT\n13% Global INT\n0.6 ManaRegen\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MANAREGEN" : {
@@ -35161,7 +35161,7 @@
   "Oversoul" : {
     "name" : "Oversoul",
     "description" : "",
-    "statusDescription" : "25.44% GlobalSTR\n25.44% GlobalAGI\n\n",
+    "statusDescription" : "25.44% Global STR\n25.44% Global AGI\n\n",
     "modifiers" : {
       "statModifiers" : { },
       "statusModifiers" : {
@@ -35221,7 +35221,7 @@
   "Armor Melting" : {
     "name" : "Armor Melting",
     "description" : "",
-    "statusDescription" : "-25% GlobalPDEF\n\n",
+    "statusDescription" : "-25% Global PDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -35251,7 +35251,7 @@
   "Heavy Empower Potion" : {
     "name" : "Heavy Empower Potion",
     "description" : "",
-    "statusDescription" : "5% GlobalSTR\n10% GlobalPATK\n10% GlobalRATK\n-32% GlobalPDEF\n-25% GlobalMSPD\n\n",
+    "statusDescription" : "5% Global STR\n10% Global PATK\n10% Global RATK\n-32% Global PDEF\n-25% Global MSPD\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -35761,7 +35761,7 @@
   "Rite of the Pale Moon Stiff" : {
     "name" : "Rite of the Pale Moon Stiff",
     "description" : "",
-    "statusDescription" : "35.98% GlobalMSPD\n35.98% GlobalEvasion\n\n",
+    "statusDescription" : "35.98% Global MSPD\n35.98% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -35791,7 +35791,7 @@
   "Rite of the Pale Moon Swift" : {
     "name" : "Rite of the Pale Moon Swift",
     "description" : "",
-    "statusDescription" : "43.69% GlobalMSPD\n43.69% GlobalEvasion\n\n",
+    "statusDescription" : "43.69% Global MSPD\n43.69% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -35821,7 +35821,7 @@
   "Rite of the Pale Moon Secure" : {
     "name" : "Rite of the Pale Moon Secure",
     "description" : "",
-    "statusDescription" : "43.69% GlobalMSPD\n43.69% GlobalEvasion\n\n",
+    "statusDescription" : "43.69% Global MSPD\n43.69% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {
@@ -35877,7 +35877,7 @@
   "Divine Critical" : {
     "name" : "Divine Critical",
     "description" : "",
-    "statusDescription" : "31.77% GlobalCritChance\n\n",
+    "statusDescription" : "31.77% Global CritChance\n\n",
     "modifiers" : {
       "statModifiers" : {
         "CRITCHANCE" : {
@@ -35912,7 +35912,7 @@
   "Fate Fracture" : {
     "name" : "Fate Fracture",
     "description" : "",
-    "statusDescription" : "62.71% GlobalPDEF\n62.71% GlobalMDEF\n\n",
+    "statusDescription" : "62.71% Global PDEF\n62.71% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALDEFENSE" : {
@@ -35942,7 +35942,7 @@
   "Twisted Fate" : {
     "name" : "Twisted Fate",
     "description" : "",
-    "statusDescription" : "27.51% GlobalPATK\n27.51% GlobalMATK\n27.51% GlobalRATK\n\n",
+    "statusDescription" : "27.51% Global PATK\n27.51% Global MATK\n27.51% Global RATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -36929,7 +36929,7 @@
   "Moon Infused" : {
     "name" : "Moon Infused",
     "description" : "",
-    "statusDescription" : "218.4% GlobalMATK\n\n",
+    "statusDescription" : "218.4% Global MATK\n\n",
     "modifiers" : {
       "statModifiers" : {
         "PHYSICALATTACK" : {
@@ -37384,7 +37384,7 @@
   "Confused" : {
     "name" : "Confused",
     "description" : "",
-    "statusDescription" : "-30.33% GlobalAccuracy\n\n",
+    "statusDescription" : "-30.33% Global Accuracy\n\n",
     "modifiers" : {
       "statModifiers" : {
         "ACCURACY" : {
@@ -37406,7 +37406,7 @@
   "Wings" : {
     "name" : "Wings",
     "description" : "",
-    "statusDescription" : "3.16% GlobalMSPD\n3.16% GlobalEvasion\n\n",
+    "statusDescription" : "3.16% Global MSPD\n3.16% Global Evasion\n\n",
     "modifiers" : {
       "statModifiers" : {
         "MOVEMENTSPEED" : {

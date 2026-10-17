@@ -10,7 +10,7 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "5% GlobalHP\n\n",
+      "PRIMARY" : "5% Global HP\n\n",
       "SECONDARY" : "6 HP\n6 PDEF\n\n"
     },
     "modifiers" : {
@@ -113,7 +113,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "7% PoisonAMP\n\n",
-      "SECONDARY" : "2% GlobalPDEF\n6% GlobalMDEF\n\n"
+      "SECONDARY" : "2% Global PDEF\n6% Global MDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -167,8 +167,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "0.5 MSPD\n6% GlobalMSPD\n\n",
-      "SECONDARY" : "11% GlobalPDEF\n-7% GlobalMDEF\n\n"
+      "PRIMARY" : "0.5 MSPD\n6% Global MSPD\n\n",
+      "SECONDARY" : "11% Global PDEF\n-7% Global MDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -222,8 +222,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "4% GlobalPATK\n4% GlobalMATK\n4% GlobalRATK\n\n",
-      "SECONDARY" : "-5% GlobalPDEF\n3% GlobalMSPD\n\n"
+      "PRIMARY" : "4% Global PATK\n4% Global MATK\n4% Global RATK\n\n",
+      "SECONDARY" : "-5% Global PDEF\n3% Global MSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -293,8 +293,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "15% GlobalHealAMP\n\n",
-      "SECONDARY" : "9% GlobalMSPD\n\n"
+      "PRIMARY" : "15% Global HealAMP\n\n",
+      "SECONDARY" : "9% Global MSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -370,7 +370,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "8% GlobalMSPD\n12% GlobalBuffAMP\n\n"
+      "SECONDARY" : "8% Global MSPD\n12% Global BuffAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -415,8 +415,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "7% GlobalPATK\n7% GlobalMATK\n7% GlobalRATK\n\n",
-      "SECONDARY" : "3% GlobalAGI\n4% GlobalMSPD\n\n"
+      "PRIMARY" : "7% Global PATK\n7% Global MATK\n7% Global RATK\n\n",
+      "SECONDARY" : "3% Global AGI\n4% Global MSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -487,8 +487,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "21% GlobalPATK\n-20% GlobalMSPD\n\n",
-      "SECONDARY" : "14% GlobalHP\n\n"
+      "PRIMARY" : "21% Global PATK\n-20% Global MSPD\n\n",
+      "SECONDARY" : "14% Global HP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -611,7 +611,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "3% GlobalPATK\n\n"
+      "SECONDARY" : "3% Global PATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -649,7 +649,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "10% GlobalCritChance\n\n"
+      "SECONDARY" : "10% Global CritChance\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -687,7 +687,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "4% GlobalMATK\n\n"
+      "SECONDARY" : "4% Global MATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -725,7 +725,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "15% GlobalPDEF\n\n"
+      "SECONDARY" : "15% Global PDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -791,7 +791,7 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "7% GlobalPATK\n\n",
+      "PRIMARY" : "7% Global PATK\n\n",
       "SECONDARY" : "0.4 MSPD\n\n"
     },
     "modifiers" : {
@@ -839,7 +839,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "7% GlobalSpeed\n\n"
+      "SECONDARY" : "7% Global Speed\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -877,7 +877,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "7% GlobalPDEF\n\n"
+      "SECONDARY" : "7% Global PDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -914,7 +914,7 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "8% GlobalPATK\n3% GlobalHP\n3% GlobalMSPD\n\n",
+      "PRIMARY" : "8% Global PATK\n3% Global HP\n3% Global MSPD\n\n",
       "SECONDARY" : "11% AttackSPD\n\n"
     },
     "modifiers" : {
@@ -1006,8 +1006,8 @@
       "SECONDARY" : "ไม่สามารถโจมตีจากระยะไกลกว่า 10 เมตรได้"
     },
     "statusDescription" : {
-      "PRIMARY" : "8% GlobalSTR\n22 HP\n\n",
-      "SECONDARY" : "28% GlobalCritDamage\n\n"
+      "PRIMARY" : "8% Global STR\n22 HP\n\n",
+      "SECONDARY" : "28% Global CritDamage\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1062,7 +1062,7 @@
       "SECONDARY" : "การโจมตีระยะไกลที่ถูกบล็อก จะทำให้เป้าหมายยังรับความเสียหายครึ่งหนึ่ง"
     },
     "statusDescription" : {
-      "PRIMARY" : "2% GlobalHP\n\n",
+      "PRIMARY" : "2% Global HP\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
@@ -1138,8 +1138,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "9% GlobalHP\n\n",
-      "SECONDARY" : "15% GlobalHealAMP\n\n"
+      "PRIMARY" : "9% Global HP\n\n",
+      "SECONDARY" : "15% Global HealAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1215,7 +1215,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "12% GlobalMSPD\n-50% GlobalCritChance\n\n"
+      "SECONDARY" : "12% Global MSPD\n-50% Global CritChance\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1319,7 +1319,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "12% CastSPD\n\n",
-      "SECONDARY" : "6% GlobalINT\n\n"
+      "SECONDARY" : "6% Global INT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1656,7 +1656,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "3% GlobalAGI\n\n"
+      "SECONDARY" : "3% Global AGI\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1810,7 +1810,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "11% GlobalRATK\n\n"
+      "SECONDARY" : "11% Global RATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -1876,7 +1876,7 @@
       "SECONDARY" : "เพิ่ม Combined Action หนึ่งหน่วย\nไม่สามารถใช้งานสกิลที่เป็น Combined Action ได้อีกต่อไป"
     },
     "statusDescription" : {
-      "PRIMARY" : "10% GlobalSTR\n10% GlobalAGI\n10% GlobalVIT\n10% GlobalDEX\n10% GlobalWIS\n10% GlobalINT\n10% GlobalLUK\n\n",
+      "PRIMARY" : "10% Global STR\n10% Global AGI\n10% Global VIT\n10% Global DEX\n10% Global WIS\n10% Global INT\n10% Global LUK\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
@@ -2195,7 +2195,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "ตัวคูณสกิลประเภท Movement เพิ่มขึ้น 25%\n\n",
-      "SECONDARY" : "8% GlobalDEX\n\n"
+      "SECONDARY" : "8% Global DEX\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2325,7 +2325,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "7% GlobalRATK\n5% PoisonAMP\n\n"
+      "SECONDARY" : "7% Global RATK\n5% PoisonAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2370,8 +2370,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "14% GlobalPATK\n\n",
-      "SECONDARY" : "3% GlobalPATK\n7% GlobalMSPD\n\n"
+      "PRIMARY" : "14% Global PATK\n\n",
+      "SECONDARY" : "3% Global PATK\n7% Global MSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2425,8 +2425,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "14% GlobalHealAMP\n\n",
-      "SECONDARY" : "3% GlobalHealAMP\n7% GlobalBuffAMP\n\n"
+      "PRIMARY" : "14% Global HealAMP\n\n",
+      "SECONDARY" : "3% Global HealAMP\n7% Global BuffAMP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2480,8 +2480,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "14% GlobalPDEF\n14% GlobalMDEF\n\n",
-      "SECONDARY" : "3% GlobalVIT\n7% GlobalPDEF\n7% GlobalMDEF\n\n"
+      "PRIMARY" : "14% Global PDEF\n14% Global MDEF\n\n",
+      "SECONDARY" : "3% Global VIT\n7% Global PDEF\n7% Global MDEF\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2552,8 +2552,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "14% GlobalMATK\n\n",
-      "SECONDARY" : "3% GlobalMATK\n14% GlobalMP\n\n"
+      "PRIMARY" : "14% Global MATK\n\n",
+      "SECONDARY" : "3% Global MATK\n14% Global MP\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2608,7 +2608,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "3% GlobalSTR\n3% GlobalAGI\n3% GlobalVIT\n3% GlobalDEX\n3% GlobalWIS\n3% GlobalINT\n3% GlobalLUK\n\n"
+      "SECONDARY" : "3% Global STR\n3% Global AGI\n3% Global VIT\n3% Global DEX\n3% Global WIS\n3% Global INT\n3% Global LUK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2693,8 +2693,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "14% GlobalSpeed\n\n",
-      "SECONDARY" : "3% GlobalMSPD\n7% GlobalSpeed\n\n"
+      "PRIMARY" : "14% Global Speed\n\n",
+      "SECONDARY" : "3% Global MSPD\n7% Global Speed\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2748,8 +2748,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "37% GlobalCritChance\n\n",
-      "SECONDARY" : "37% GlobalCritDamage\n\n"
+      "PRIMARY" : "37% Global CritChance\n\n",
+      "SECONDARY" : "37% Global CritDamage\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -2796,7 +2796,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "21% GlobalAccuracy\n\n"
+      "SECONDARY" : "21% Global Accuracy\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3094,8 +3094,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "11% GlobalPBLOCK\n8% GlobalMBLOCK\n\n",
-      "SECONDARY" : "-11% GlobalPBLOCK\n-8% GlobalMBLOCK\n6% GlobalPhysicalPen\n6% GlobalMagicalPen\n\n"
+      "PRIMARY" : "11% Global PBLOCK\n8% Global MBLOCK\n\n",
+      "SECONDARY" : "-11% Global PBLOCK\n-8% Global MBLOCK\n6% Global PhysicalPen\n6% Global MagicalPen\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3203,7 +3203,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "13% GlobalPATK\n\n"
+      "SECONDARY" : "13% Global PATK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3327,7 +3327,7 @@
       "SECONDARY" : "ความเสียหายจะถูกแบ่งให้เท่ากันระหว่างผู้มีความสามารถนี้"
     },
     "statusDescription" : {
-      "PRIMARY" : "12% GlobalHP\n\n",
+      "PRIMARY" : "12% Global HP\n\n",
       "SECONDARY" : "\n"
     },
     "modifiers" : {
@@ -3365,8 +3365,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "21% GlobalPhysicalPen\n\n",
-      "SECONDARY" : "15% GlobalRATK\n-15% AttackSPD\n\n"
+      "PRIMARY" : "21% Global PhysicalPen\n\n",
+      "SECONDARY" : "15% Global RATK\n-15% AttackSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3893,8 +3893,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "-10% GlobalDEX\n\n",
-      "SECONDARY" : "10% GlobalSTR\n10% GlobalAGI\n-10% GlobalDEX\n-10% GlobalWIS\n-10% GlobalINT\n\n"
+      "PRIMARY" : "-10% Global DEX\n\n",
+      "SECONDARY" : "10% Global STR\n10% Global AGI\n-10% Global DEX\n-10% Global WIS\n-10% Global INT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -3973,7 +3973,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "8% GlobalINT\n\n"
+      "SECONDARY" : "8% Global INT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4040,7 +4040,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "15% GlobalPBLOCK\n15% GlobalMBLOCK\n\n"
+      "SECONDARY" : "15% Global PBLOCK\n15% Global MBLOCK\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4086,7 +4086,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "5% GlobalRATK\n15% GlobalAccuracy\n\n"
+      "SECONDARY" : "5% Global RATK\n15% Global Accuracy\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4132,7 +4132,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "\n",
-      "SECONDARY" : "10% GlobalCastSPD\n\n"
+      "SECONDARY" : "10% Global CastSPD\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4489,7 +4489,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "Set HealAMP to 0%\nSet BuffAMP to 0%\nSet DebuffAMP to 0%\nSet CritChance to 0%\nSet Reservation to 100%\n\n",
-      "SECONDARY" : "34% GlobalSTR\n34% GlobalDEX\n34% GlobalINT\n\n"
+      "SECONDARY" : "34% Global STR\n34% Global DEX\n34% Global INT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4728,7 +4728,7 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "-75% GlobalPATK\n-75% GlobalMATK\n-75% GlobalRATK\n-75% GlobalHealAMP\n-75% GlobalBuffAMP\n-75% GlobalDebuffAMP\nตัวคูณสกิลประเภท Limit เพิ่มขึ้น 1\n\n",
+      "PRIMARY" : "-75% Global PATK\n-75% Global MATK\n-75% Global RATK\n-75% Global HealAMP\n-75% Global BuffAMP\n-75% Global DebuffAMP\nตัวคูณสกิลประเภท Limit เพิ่มขึ้น 1\n\n",
       "SECONDARY" : "50% of MDEF Converted to PDEF at 150%\n\n"
     },
     "modifiers" : {
@@ -4851,7 +4851,7 @@
     },
     "statusDescription" : {
       "PRIMARY" : "ตัวคูณสกิลประเภท Spell เพิ่มขึ้น 9%\n\n",
-      "SECONDARY" : "7% GlobalSTR\n7% GlobalDEX\n7% GlobalINT\n\n"
+      "SECONDARY" : "7% Global STR\n7% Global DEX\n7% Global INT\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
@@ -4996,8 +4996,8 @@
       "SECONDARY" : ""
     },
     "statusDescription" : {
-      "PRIMARY" : "10% GlobalINT\n\n",
-      "SECONDARY" : "7% GlobalWIS\n\n"
+      "PRIMARY" : "10% Global INT\n\n",
+      "SECONDARY" : "7% Global WIS\n\n"
     },
     "modifiers" : {
       "PRIMARY" : {
