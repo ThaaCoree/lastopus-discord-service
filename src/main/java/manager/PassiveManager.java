@@ -106,7 +106,9 @@ public class PassiveManager {
         Set<Integer> addSet = new HashSet<>(added == null ? List.of() : added);
         Set<Integer> remSet = new HashSet<>(removed == null ? List.of() : removed);
 
-        if (remSet.size() > unit.getStarmap_reset_point()) return "reset point ไม่พอ";
+        int reset_point = unit.getStarmap_reset_point();
+
+        if (remSet.size() > reset_point) return "reset point ไม่พอ";
 
         if (!Collections.disjoint(addSet, remSet)) return "ข้อมูลซ้ำซ้อน";
         for (int id : remSet) {
@@ -130,6 +132,8 @@ public class PassiveManager {
         // ผ่านทั้งหมดแล้วค่อย commit
         current.clear();
         current.putAll(next);
+        reset_point -= remSet.size();
+        unit.setStarmap_reset_point(reset_point);
         unit.setRemainingPassiveTreePoint(unit.getRemainingPassiveTreePoint() - cost);
         unit.calculateEverything();
         return null;   // null = สำเร็จ
