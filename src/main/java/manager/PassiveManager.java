@@ -106,6 +106,8 @@ public class PassiveManager {
         Set<Integer> addSet = new HashSet<>(added == null ? List.of() : added);
         Set<Integer> remSet = new HashSet<>(removed == null ? List.of() : removed);
 
+        if (remSet.size() > unit.getStarmap_reset_point()) return "reset point ไม่พอ";
+
         if (!Collections.disjoint(addSet, remSet)) return "ข้อมูลซ้ำซ้อน";
         for (int id : remSet) {
             if (!current.containsKey(id)) return "ถอนโหนดที่ยังไม่ได้ลง: " + id;
