@@ -129,11 +129,16 @@ public class PassiveManager {
 
         if (!isConnectedToRoot(next)) return "ผังไม่ต่อเนื่อง";
 
+        int before = countRootNeighbors(current);
+        int after = countRootNeighbors(next);
+        if (after > 1 && after > before) return "ออกจากจุดเริ่มต้นได้ทางเดียวเท่านั้น";
+
         // ผ่านทั้งหมดแล้วค่อย commit
         current.clear();
         current.putAll(next);
         reset_point -= remSet.size();
         unit.setStarmap_reset_point(reset_point);
+        System.out.println("ตัวละคร "+unit.getName()+" ใช้งานแต้มรีเซ็ตแผนที่ดวงดาวไปแล้ว "+remSet.size()+" หน่วย");
         unit.setRemainingPassiveTreePoint(unit.getRemainingPassiveTreePoint() - cost);
         unit.calculateEverything();
         return null;   // null = สำเร็จ
@@ -166,6 +171,21 @@ public class PassiveManager {
             }
         }
         return visited.size() == state.size() - 1;   // ทุกโหนดยกเว้น root ถูกเดินถึง
+    }
+
+    private int countRootNeighbors(Map<Integer, PassiveNode> state) {
+        Integer rootId = null;
+        for (PassiveNode n : state.values()) {
+            if (isRoot(n)) { rootId = n.getId(); break; }
+        }
+        if (rootId == null) return 0;
+
+        int count = 0;
+        for (PassiveNode n : state.values()) {
+            List<Integer> conn = n.getConnectedNodes();
+            if (conn != null && conn.contains(rootId)) count++;
+        }
+        return count;
     }
 
     private boolean isRoot(PassiveNode n) {
