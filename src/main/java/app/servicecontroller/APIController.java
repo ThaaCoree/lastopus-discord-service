@@ -1,11 +1,14 @@
 package app.servicecontroller;
 
 import app.service.ServiceDatabase;
+import app.servicemodel.PassiveSaveRequest;
 import app.servicemodel.RuneboardRequest;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import manager.PassiveManager;
+import model.entity.PassiveNode;
 import model.entity.items.Rune;
 import model.entity.units.Unit;
 import org.springframework.data.mongodb.core.BulkOperations;
@@ -13,9 +16,11 @@ import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*")
@@ -39,6 +44,31 @@ public class APIController {
         } else {
             return new Unit();
         }
+    }
+
+    @PostMapping("/save_passives")
+    public String savePassives(@RequestBody PassiveSaveRequest req) {
+        Unit unit = database.findPlayer(req.name());
+        if (unit == null) return "ไม่พบ player";
+
+        PassiveManager pm = unit.getPassiveManager();   // หรือที่ unit เก็บไว้อยู่แล้ว
+        String error = pm.applyChanges(req.added(), req.removed(), database.allPassiveMap);
+        if (error != null) return error;
+
+        unit.calculateEverything();
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            String json = mapper.writeValueAsString(unit);
+
+            database.save_player(json);
+            unit.writeToSheet(database.load_credentials());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // บันทึกลง MongoDB ด้วยเมธอดที่คุณใช้ save player อยู่แล้ว
+        return "บันทึกหน้าแผนที่ดวงดาวแล้ว";
     }
 
     @PostMapping("/update_unit")

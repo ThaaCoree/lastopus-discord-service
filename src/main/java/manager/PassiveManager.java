@@ -3,21 +3,31 @@ package manager;
 import model.entity.PassiveNode;
 import model.entity.units.Unit;
 
+import java.util.*;
+
 public class PassiveManager {
     private final Unit unit;
+    private final Map<Integer, Set<Integer>> adjacency = new HashMap<>();
+    private int rootId;
 
     public PassiveManager(Unit unit) {
         this.unit = unit;
+        buildAdjacency(unit.getAllocatedPassives());
     }
 
     public void allocateNode(PassiveNode node) {
-        if (canAllocate(node))
-        unit.getAllocatedPassives().putIfAbsent(node.getId(), node);
+        if (canAllocate(node)) {
+            unit.getAllocatedPassives().putIfAbsent(node.getId(), node);
+            buildAdjacency(unit.getAllocatedPassives());
+        }
         unit.calculateEverything();
     }
 
     public void unallocateNode(PassiveNode node) {
-        unit.getAllocatedPassives().remove(node.getId());
+        if (canDeallocate(node)) {
+            unit.getAllocatedPassives().remove(node.getId());
+            buildAdjacency(unit.getAllocatedPassives());
+        }
         unit.calculateEverything();
     }
 
@@ -31,5 +41,128 @@ public class PassiveManager {
             }
         System.out.println("Cannot allocated "+node.getId()+" because connected node is not allocated.");
         return false;
+    }
+
+    public boolean canDeallocate(PassiveNode node) {
+        Map<Integer, PassiveNode> allocated = unit.getAllocatedPassives();
+        int id = node.getId();
+
+        if (!allocated.containsKey(id)) return false;
+        if (id == rootId) return false;
+
+        Set<Integer> visited = new HashSet<>();
+        Deque<Integer> queue = new ArrayDeque<>();
+
+        // จุดเริ่ม = โหนดที่ลงอยู่และติดกับ root (ในลิสต์ของมันมี rootId)
+        for (PassiveNode n : allocated.values()) {
+            if (n.getId() == id || n.getId() == rootId) continue;
+            List<Integer> conn = n.getConnectedNodes();
+            if (conn != null && conn.contains(rootId) && visited.add(n.getId())) {
+                queue.add(n.getId());
+            }
+        }
+
+        // เดินต่อผ่านโหนดที่ลงอยู่ โดยข้ามโหนดที่จะถอน
+        while (!queue.isEmpty()) {
+            PassiveNode cur = allocated.get(queue.poll());
+            List<Integer> conn = cur.getConnectedNodes();
+            if (conn == null) continue;
+            for (int next : conn) {
+                if (next == id || next == rootId) continue;
+                if (allocated.containsKey(next) && visited.add(next)) queue.add(next);
+            }
+        }
+
+        // โหนดที่ลงอยู่ทั้งหมด (ยกเว้นตัวที่จะถอน และ root) ต้องถูกเดินถึงครบ
+        for (int allocId : allocated.keySet()) {
+            if (allocId == id || allocId == rootId) continue;
+            if (!visited.contains(allocId)) return false;
+        }
+        return true;
+    }
+
+    private void buildAdjacency(Map<Integer, PassiveNode> allNodes) {
+        adjacency.clear();
+
+        for (PassiveNode n : allNodes.values()) {
+            List<Integer> connected = n.getConnectedNodes();
+
+            // โหนดที่ไม่มี connectedNodes คือ root
+            if (connected == null || connected.isEmpty()) {
+                rootId = n.getId();
+                continue;
+            }
+
+            for (Integer other : connected) {
+                adjacency.computeIfAbsent(n.getId(), k -> new HashSet<>()).add(other);
+                adjacency.computeIfAbsent(other, k -> new HashSet<>()).add(n.getId());
+            }
+        }
+    }
+
+    public String applyChanges(List<Integer> added, List<Integer> removed,
+                               Map<Integer, PassiveNode> database_passive) {
+        Map<Integer, PassiveNode> current = unit.getAllocatedPassives();
+        Set<Integer> addSet = new HashSet<>(added == null ? List.of() : added);
+        Set<Integer> remSet = new HashSet<>(removed == null ? List.of() : removed);
+
+        if (!Collections.disjoint(addSet, remSet)) return "ข้อมูลซ้ำซ้อน";
+        for (int id : remSet) {
+            if (!current.containsKey(id)) return "ถอนโหนดที่ยังไม่ได้ลง: " + id;
+        }
+        for (int id : addSet) {
+            if (current.containsKey(id)) return "โหนดนี้ลงไปแล้ว: " + id;
+            if (database_passive.get(id) == null) return "ไม่พบโหนด: " + id;
+        }
+
+        int cost = addSet.size() - remSet.size();
+        if (cost > unit.getRemainingPassiveTreePoint()) return "passive point ไม่พอ";
+
+        // สร้างผังสุดท้ายในสำเนาก่อน ยังไม่แตะของจริง
+        Map<Integer, PassiveNode> next = new LinkedHashMap<>(current);
+        remSet.forEach(next::remove);
+        for (int id : addSet) next.put(id, database_passive.get(id));
+
+        if (!isConnectedToRoot(next)) return "ผังไม่ต่อเนื่อง";
+
+        // ผ่านทั้งหมดแล้วค่อย commit
+        current.clear();
+        current.putAll(next);
+        unit.setRemainingPassiveTreePoint(unit.getRemainingPassiveTreePoint() - cost);
+        unit.calculateEverything();
+        return null;   // null = สำเร็จ
+    }
+
+    private boolean isConnectedToRoot(Map<Integer, PassiveNode> state) {
+        Integer rootId = null;
+        for (PassiveNode n : state.values()) {
+            if (isRoot(n)) { rootId = n.getId(); break; }
+        }
+        if (rootId == null) return false;          // root ถูกถอน หรือไม่มี
+
+        Set<Integer> visited = new HashSet<>();
+        Deque<Integer> queue = new ArrayDeque<>();
+        for (PassiveNode n : state.values()) {
+            if (n.getId() == rootId) continue;
+            List<Integer> conn = n.getConnectedNodes();
+            if (conn != null && conn.contains(rootId) && visited.add(n.getId())) {
+                queue.add(n.getId());
+            }
+        }
+        while (!queue.isEmpty()) {
+            PassiveNode cur = state.get(queue.poll());
+            List<Integer> conn = cur.getConnectedNodes();
+            if (conn == null) continue;
+            for (int next : conn) {
+                if (next != rootId && state.containsKey(next) && visited.add(next)) {
+                    queue.add(next);
+                }
+            }
+        }
+        return visited.size() == state.size() - 1;   // ทุกโหนดยกเว้น root ถูกเดินถึง
+    }
+
+    private boolean isRoot(PassiveNode n) {
+        return n.getId() == 1;
     }
 }
