@@ -1006,6 +1006,39 @@ public class DiscordController {
         }
     }
 
+    @PostMapping("/rune_give")
+    public String rune_give(@RequestBody PlayerMessage playerMessage) {
+        if (isGM(playerMessage.roles)) {
+            if (playerMessage.mentionedUsers == null || playerMessage.mentionedUsers.isEmpty()) {
+                return "กรุณาแท็กเป้าหมาย";
+            }
+            String target_name = getPlayerName(playerMessage.mentionedUsers.get(0).roles);
+            Unit target = database.findPlayer(target_name);
+            if (target == null) return "กรุณาแท็กเป้าหมายที่ถูกต้อง";
+            int amount = 0;
+            try {
+                amount = Integer.parseInt(playerMessage.args.get(playerMessage.args.size() - 1));
+            } catch (NumberFormatException e) {
+                return "จำนวนไม่ถูกต้อง";
+            }
+
+            String itemName = String.join(" ", playerMessage.args.subList(1, playerMessage.args.size() - 1));
+            Rune item = database.allRuneMap.get(itemName);
+
+            if (item != null) {
+                for (int i = 0; i < amount; i++) {
+                    target.addRuneToInventory(item);
+                }
+                writeintoSheet(target);
+                return "มอบ "+item.getName()+" จำนวน "+amount+" ให้กับ "+target_name+" แล้ว";
+            } else {
+                return "ไม่พบไอเทมใน Database";
+            }
+        } else {
+            return "ต้องเป็น GM เพื่อใช้คำสั่งนี้";
+        }
+    }
+
     @PostMapping("/statusraise")
     public String statusraise(@RequestBody PlayerMessage playerMessage) {
         String name = getPlayerName(playerMessage.roles);
