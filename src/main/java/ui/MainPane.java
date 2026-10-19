@@ -76,6 +76,7 @@ public class MainPane extends BorderPane {
         saver.getStyleClass().add("sub-pane");
 
         Button saveButton = new Button("SaveJSON");
+        Button databaseSaveButton = new Button("SaveDB");
         Button toInSession = new Button("InSession");
         Button toPlayer = new Button("Player");
         Button toNPC = new Button("NPC");
@@ -132,6 +133,34 @@ public class MainPane extends BorderPane {
                 }
             });
         });
+        databaseSaveButton.setOnAction(e -> {
+            database.saveJson();
+            AsyncUtil.runAsync(() -> {
+                try {
+                    GoogleSheetsUtil sheetsUtil = new GoogleSheetsUtil();
+                    AtomicInteger skillStartRow = new AtomicInteger(1);
+                    String sessionId = UUID.randomUUID().toString();  // สร้าง id ใหม่สำหรับ session นี้
+                    long startTime = System.currentTimeMillis();
+                    System.out.println("Start processRequest: " + startTime + " Session: " + sessionId);
+
+                    sheetsUtil.processRequest(GoogleSheetsUtil.viewerSheetId);
+
+                    sheetsUtil.requestClear();
+                    sheetsUtil.takeRequests(database.writeItemToSheet());
+                    sheetsUtil.takeRequests(database.writeCardToSheet());
+                    sheetsUtil.takeRequests(database.writeBuffToSheet());
+                    sheetsUtil.requestSet();
+                    sheetsUtil.processRequest(GoogleSheetsUtil.databaseSheetId);
+
+                    long endTime = System.currentTimeMillis();
+                    long duration = endTime - startTime;
+                    System.out.println("End processRequest: took " + duration + " ms Session: " + sessionId);
+
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            });
+        });
 
         updateShop.setOnAction(e-> {
             AsyncUtil.runAsync(() -> {
@@ -143,7 +172,7 @@ public class MainPane extends BorderPane {
         switcher.getChildren().add(toPlayer);
         switcher.getChildren().add(toNPC);
 
-        HBox updateBox = new HBox(updateShop, saveButton);
+        HBox updateBox = new HBox(updateShop, saveButton, databaseSaveButton);
 
         saver.getChildren().add(updateBox);
         saver.getChildren().add(toInSession);

@@ -9,10 +9,7 @@ import com.google.api.services.sheets.v4.model.Request;
 import model.entity.PassiveNode;
 import model.entity.Shop;
 import model.entity.ShopItem;
-import model.entity.items.Equipment;
-import model.entity.items.EquipmentSlot;
-import model.entity.items.Item;
-import model.entity.items.Rune;
+import model.entity.items.*;
 import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.*;
 import model.entity.units.Unit;
@@ -22,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import util.GoogleSheetsUtil;
+import util.StatTranslateUtil;
 import util.WeightedRandom;
 
 import java.text.DecimalFormat;
@@ -1184,6 +1182,72 @@ public class DiscordController {
             return "มอบโควต้ารีเซ็ตแผนที่ดวงดาว "+amount+" หน่วยให้กับ "+unit.getName()+" แล้ว";
         } else {
             return "นี่เป็นคำสั่งสำหรับ GM เท่านั้น";
+        }
+    }
+
+    @PostMapping("/dream")
+    public String dream(@RequestBody PlayerMessage playerMessage) {
+        String name = getPlayerName(playerMessage.roles);
+        Unit unit = database.findPlayer(name);
+        String[] split = playerMessage.message.split("/");
+        String dream_name = split[0].trim();
+        String node_name = split[1].trim();
+        Integer nodeId = 0;
+        if (unit != null) {
+            Dream dream = (Dream) unit.findItemInventory(dream_name);
+            if (dream == null) {
+                return "ไม่พบ Dream";
+            }
+            for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
+                if (entry.getValue().getNodeType() != dream.getNodeType()) continue;
+                if (entry.getValue().getName().equalsIgnoreCase(node_name)) {
+                    nodeId = entry.getKey();
+                }
+            }
+            if (nodeId == 0) {
+                return "ไม่พบโหนด";
+            }
+            dreamConvert(unit, dream_name, 0);
+            writeintoSheet(unit);
+            return "โหนด "+node_name+" ถูกเปลี่ยนเป็น "+dream_name+" แล้ว";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    public void dreamConvert(Unit unit,String name_of_dream, Integer nodeId) {
+        PassiveNode node = new PassiveNode();
+        String dreamName = null;
+        for (Map.Entry<Integer, Item> entry : unit.getInventoryItems().entrySet()) {
+            if (entry.getValue().getName().equals(name_of_dream)) {
+                Dream itemCast = (Dream) entry.getValue();
+
+                node.setName(itemCast.getName());
+                node.setModifiers(itemCast.getModifiers());
+                node.setStatusDescription(StatTranslateUtil.translateStatusDesc(itemCast.getModifiers(),null));
+                node.setDescription(itemCast.getDescription());
+                node.setLore(itemCast.getLore());
+                node.setNodeType(itemCast.getNodeType());
+                node.setDream(true);
+                dreamName = entry.getValue().getName();
+            }
+        }
+
+        if (nodeId != null) {
+            if (node.getNodeType() != unit.getAllocatedPassives().get(nodeId).getNodeType()) return;
+            unit.getAllocatedPassives().get(nodeId).setName(node.getName());
+            unit.getAllocatedPassives().get(nodeId).setModifiers(node.getModifiers());
+            unit.getAllocatedPassives().get(nodeId).setStatusDescription(node.getStatusDescription());
+            unit.getAllocatedPassives().get(nodeId).setDescription(node.getDescription());
+            unit.getAllocatedPassives().get(nodeId).setLore(node.getLore());
+            unit.getAllocatedPassives().get(nodeId).setNodeType(node.getNodeType());
+            unit.getAllocatedPassives().get(nodeId).setDream(true);
+
+            if (dreamName != null) {
+                unit.getInventoryManager().removeItem(dreamName);
+            }
+        } else {
+            System.out.println("ไม่พบโหนด");
         }
     }
 
