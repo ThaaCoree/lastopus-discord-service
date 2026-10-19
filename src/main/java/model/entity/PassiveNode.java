@@ -38,6 +38,29 @@ public class PassiveNode {
         nodeType = NodeType.SMALL;
     }
 
+    public PassiveNode copy() {
+        PassiveNode c = new PassiveNode();
+        c.id = this.id;
+        c.name = this.name;
+        c.description = this.description;
+        c.statusDescription = this.statusDescription;
+        c.lore = this.lore;
+        c.x = this.x;
+        c.y = this.y;
+        c.nodeType = this.nodeType;          // enum เป็น immutable แชร์ได้
+        c.statusPoints = this.statusPoints;
+        c.isDream = this.isDream;
+
+        // collection ต้องสร้างใหม่ ไม่งั้นยังแชร์กับต้นฉบับ
+        c.connectedNodes = this.connectedNodes == null
+                ? null : new ArrayList<>(this.connectedNodes);
+        c.equipmentSlotMult = this.equipmentSlotMult == null
+                ? null : new HashMap<>(this.equipmentSlotMult);   // Double เป็น immutable จึง copy ระดับ map พอ
+
+        c.modifiers = this.modifiers.deepcopy();
+        return c;
+    }
+
     public boolean isDream() {
         return isDream;
     }

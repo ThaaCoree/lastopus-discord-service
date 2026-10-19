@@ -447,21 +447,18 @@ public class Database {
             }
 
             for (Map.Entry<Integer, PassiveNode> entry : unit.getAllocatedPassives().entrySet()) {
-                int id = entry.getValue().getId();
-                PassiveNode newObject = allPassiveMap.get(id);
+                PassiveNode current = entry.getValue();
+                PassiveNode master = allPassiveMap.get(current.getId());
+                if (master == null) continue;
 
-                if (newObject != null) {
-                    if (entry.getValue().isDream()) {
-                        double x = newObject.getX();
-                        double y = newObject.getY();
-                        List<Integer> connectedNodes = newObject.getConnectedNodes();
-                        PassiveNode dream = allDream.get(entry.getValue().getName());
-                        dream.setX(x);
-                        dream.setY(y);
-                        dream.setConnectedNodes(connectedNodes);
-                    } else {
-                        entry.setValue(newObject);
-                    }
+                if (current.isDream()) {
+                    // คงเนื้อหา Dream ของ unit ไว้ รีเฟรชเฉพาะตำแหน่งและเส้นเชื่อม
+                    current.setX(master.getX());
+                    current.setY(master.getY());
+                    List<Integer> conn = master.getConnectedNodes();
+                    current.setConnectedNodes(conn == null ? null : new ArrayList<>(conn));
+                } else {
+                    entry.setValue(master.copy());   // สำเนา ไม่ใช่ตัวจริง
                 }
             }
             for (Map.Entry<CardType, Card> entry : unit.getCard().entrySet()) {
