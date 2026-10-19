@@ -1207,7 +1207,7 @@ public class DiscordController {
             if (nodeId == 0) {
                 return "ไม่พบโหนด";
             }
-            dreamConvert(unit, dream_name, 0);
+            dreamConvert(unit, dream_name, nodeId);
             writeintoSheet(unit);
             return "โหนด "+node_name+" ถูกเปลี่ยนเป็น "+dream_name+" แล้ว";
         } else {
