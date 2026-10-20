@@ -912,6 +912,9 @@ public class DiscordController {
         int mod_count = 1;
         for (ModInstance modInstance : equipment.getModInstances()) {
             sb.append(mod_count).append(". ");
+            if (modInstance.locked) {
+                sb.append( " [LOCKED] :lock:");
+            }
             sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                     .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
                     .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
@@ -927,7 +930,7 @@ public class DiscordController {
                 sb.append(" [FIXED]");
             }
             if (modInstance.locked) {
-                sb.append( "[LOCKED]");
+                sb.append( " [LOCKED]");
             }
             sb.append("\n\n");
             mod_count++;
