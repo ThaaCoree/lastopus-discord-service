@@ -17,7 +17,6 @@ public class Stasis_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        Crafter.unlockAllLockedMods(equipment.modInstances);
         WeightedRandom<ModInstance> random = new WeightedRandom<>();
         for (ModInstance modInstance : equipment.modInstances) {
             random.add(modInstance, 10);
