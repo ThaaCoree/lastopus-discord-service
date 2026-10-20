@@ -926,6 +926,9 @@ public class DiscordController {
             if (modInstance.getMod().isFixed()) {
                 sb.append(" [FIXED]");
             }
+            if (modInstance.locked) {
+                sb.append( "[LOCKED]");
+            }
             sb.append("\n\n");
             mod_count++;
         }
