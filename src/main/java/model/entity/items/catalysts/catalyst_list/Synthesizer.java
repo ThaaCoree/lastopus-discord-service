@@ -11,11 +11,9 @@ public class Synthesizer implements CatalystEffect {
 
     @Override
     public ValidationResult canApply(CraftedEquipment equipment) {
-        ModInstance mod1 = Crafter.randomOneAvailableMod(equipment);
-        ModInstance mod2 = Crafter.randomOneAvailableMod(equipment);
-
-        if (mod1 == null) return new ValidationResult(false, "ไม่พบม็อดที่เพิ่มได้แล้ว");
-        if (mod2 == null) return new ValidationResult(false, "ไม่พบม็อดที่เพิ่มได้แล้ว");
+        if (!Crafter.hasAvailableMod(equipment)) {
+            return new ValidationResult(false, "ไม่พบม็อดที่เพิ่มได้แล้ว");
+        }
         return new ValidationResult(true, "");
     }
 

@@ -20,6 +20,10 @@ public class CatalystFactory {
         register(new Two_Toned_Infusion_Shard());
         register(new Dawn_Shard());
         register(new Dusk_Shard());
+        register(new Splintering_Shard());
+        register(new Sharp_Shard());
+        register(new Stasis_Shard());
+        register(new Flashing_Shard());
     }
 
     private void register(CatalystEffect effect) {

@@ -11,87 +11,75 @@ import java.util.*;
 
 public class Crafter {
 
-    public static void craft(CraftedEquipment craftedEquipment) {
-        craftedEquipment.modInstances.clear();
-        craftedEquipment.mod_id = 0;
-        EquipmentType equipmentType = craftedEquipment.getEquipmentType();
-        WeaponType weaponType = craftedEquipment.getWeaponType();
+    public static void craft(CraftedEquipment equipment) {
+        // 1. craft กระทำกับทุกม็อด
+        //    ตัวไม่ล็อก -> ถูกลบ, ตัวล็อก -> รอด แต่ถูกปลดล็อก
+        equipment.modInstances.removeIf(Crafter::tryAffect);
 
-        //loop in each material
-        for (MaterialInstance materialInstance : craftedEquipment.materialInstances) {
-            if (materialInstance.material_role == MaterialRole.BOOST) continue;
-            //this unique part will be moved later
-            boolean horn_light_dragon = false;
-            for (MaterialInstance instance : craftedEquipment.materialInstances) {
-                if (instance.material.getName().equals("Horn of Light Dragon")) {
-                    horn_light_dragon = true;
+        // 2. id ถัดไปต้องไม่ชนกับตัวที่รอด
+        equipment.mod_id = equipment.modInstances.stream()
+                .mapToInt(m -> m.mod_id)
+                .max().orElse(-1) + 1;
+
+        // 3. เติมม็อดสุ่มทีละวัสดุ
+        for (MaterialInstance material : equipment.materialInstances) {
+            if (material.material_role == MaterialRole.BOOST) continue;
+            fillMaterial(equipment, material);
+        }
+
+        // 4. fixed mods
+        addFixedMods(equipment);
+
+        updateModsInCraftedEquipment(equipment);
+    }
+
+    private static void fillMaterial(CraftedEquipment equipment, MaterialInstance material) {
+        while (true) {
+            WeightedRandom<ModInstance> candidates = randomAvailableModFromMaterial(
+                    equipment.modInstances, material, equipment, equipment.mod_id);
+            if (candidates.isEmpty()) break;   // เต็มโควต้า / pool เต็ม / ไม่เหลือตัวเลือก
+            equipment.modInstances.add(candidates.roll());
+            equipment.mod_id++;
+        }
+    }
+
+    private static void addFixedMods(CraftedEquipment equipment) {
+        boolean horn = hasHornOfLightDragon(equipment);
+        for (MaterialInstance mi : equipment.materialInstances) {
+            if (mi.material_role == MaterialRole.BOOST) continue;
+            for (CraftingMaterial.CraftPoolEntry entry : mi.material.pools.values()) {
+                List<CraftedMod> list = entry.pool.getListByEquipType(
+                        equipment.getEquipmentType(), equipment.getWeaponType());
+                if (list == null) continue;
+                for (CraftedMod fixedMod : list) {
+                    if (!fixedMod.isFixed()) continue;
+                    boolean alreadyHas = equipment.modInstances.stream().anyMatch(m ->
+                            m.mod == fixedMod
+                                    && m.getBase_material_id() == mi.getMaterial_id()
+                                    && m.getPool_name().equals(entry.getPool().getPool_name()));
+                    if (alreadyHas) continue;   // กรณี fixed ตัวที่ล็อกไว้
+                    ModInstance inst = new ModInstance(equipment.mod_id++, mi.material_id,
+                            entry.getPool().getPool_name(), fixedMod);
+                    equipment.modInstances.add(
+                            evaluateMod(equipment, horn, inst, entry, equipment.materialInstances));
                 }
-            }
-            WeightedRandom<ModInstance> randomised_mods = new WeightedRandom<>();
-
-            //loop in each pool for a material
-            for (Map.Entry<String, CraftingMaterial.CraftPoolEntry> mapEntry : materialInstance.material.pools.entrySet()) {
-                String pool = mapEntry.getKey();
-                CraftingMaterial.CraftPoolEntry entry = mapEntry.getValue();
-                List<MaterialInstance> materialInstances = craftedEquipment.getMaterialInstances();
-                //one pool can have many allowed mods
-                WeightedRandom<CraftedMod> mod_pool_for_a_material = new WeightedRandom<>();
-                //loop in each mod type for a material to put in weightedRandom
-                putModsIntoWeightedRandom(mod_pool_for_a_material, entry.pool, equipmentType, weaponType);
-                applyWeightBoostByMaterial(mod_pool_for_a_material, craftedEquipment.getMaterialInstances());
-
-                for (int i = 0; i < entry.maxModsAllowed; i++) {
-
-                    if (mod_pool_for_a_material.isEmpty()) break;
-                    //create modifier object to add into craftedEquipment's list
-
-                    ModInstance modInstance = new ModInstance(craftedEquipment.mod_id++,
-                            materialInstance.material_id,
-                            entry.getPool().getPool_name());
-
-                    UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, craftedEquipment.getMaterialInstances(), modInstance);
-
-                    CraftedMod random = mod_pool_for_a_material.roll();
-                    modInstance.setMod(random);
-                    double weight = mod_pool_for_a_material.getWeight(random);
-                    randomised_mods.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance, entry, materialInstances), weight);
-                    //remove if can't duplicate
-                    if (!entry.pool.can_duplicate_mod) {
-                        mod_pool_for_a_material.remove(random);
-                    }
-                }
-
-                //create fixed mods
-                if (equipmentType == EquipmentType.WEAPON && weaponType != WeaponType.SHIELD && weaponType != WeaponType.CHAIN) {
-                    for (CraftedMod fixedMod : entry.pool.weaponMods) {
-                        if (!fixedMod.isFixed()) continue;
-                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
-                    }
-                } else if (equipmentType == EquipmentType.ACCESSORY) {
-                    for (CraftedMod fixedMod : entry.pool.accessoryMods) {
-                        if (!fixedMod.isFixed()) continue;
-                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
-                    }
-                } else if (equipmentType == EquipmentType.HELMET || equipmentType == EquipmentType.ARMOR ||
-                        equipmentType == EquipmentType.BOOTS || equipmentType == EquipmentType.GLOVES ||
-                        weaponType == WeaponType.SHIELD || weaponType == WeaponType.CHAIN) {
-                    for (CraftedMod fixedMod : entry.pool.armorMods) {
-                        if (!fixedMod.isFixed()) continue;
-                        ModInstance modInstance_fixed = new ModInstance(craftedEquipment.mod_id, materialInstance.material_id, entry.getPool().getPool_name(), fixedMod);
-                        craftedEquipment.modInstances.add(evaluateMod(craftedEquipment, horn_light_dragon, modInstance_fixed, entry, materialInstances));
-                    }
-                }
-            }
-            for (int i = 0; i < materialInstance.material.getMaterial_max_mod(); i++) {
-                if (randomised_mods.isEmpty()) break;
-                ModInstance modInstance = randomised_mods.roll();
-                craftedEquipment.modInstances.add(modInstance);
-                randomised_mods.remove(modInstance);
             }
         }
-        updateModsInCraftedEquipment(craftedEquipment);
+    }
+
+    public static boolean hasHornOfLightDragon(CraftedEquipment equipment) {
+        return equipment.materialInstances.stream()
+                .anyMatch(i -> i.material.getName().equals("Horn of Light Dragon"));
+    }
+
+    public static void unlockAllLockedMods(List<ModInstance> modInstances) {
+        for (ModInstance modInstance : modInstances) {
+            unlockMod(modInstance);
+        }
+    }
+
+    public static void unlockMod(ModInstance modInstance) {
+        modInstance.locked = false;
     }
 
     public static void updateModsInCraftedEquipment(CraftedEquipment craftedEquipment) {
@@ -236,33 +224,43 @@ public class Crafter {
         }
     }
 
-    public static void addOneRandomMod(CraftedEquipment equipment) {
-        if (randomOneAvailableMod(equipment) == null) return;
-        equipment.getModInstances().add(randomOneAvailableMod(equipment));
+    public static ModInstance addOneRandomMod(CraftedEquipment equipment) {
+        ModInstance mod = randomOneAvailableMod(equipment);
+        if (mod == null) return null;
+        equipment.getModInstances().add(mod);
         updateModsInCraftedEquipment(equipment);
+        return mod;
     }
 
-    public static void removeOneRandomMod(CraftedEquipment equipment) {
+    public static boolean removeOneRandomMod(CraftedEquipment equipment) {
         List<ModInstance> modInstances = equipment.getModInstances();
 
-        // หา index ของ mod ที่ไม่ใช่ fixed เท่านั้น
         List<Integer> removableIndices = new ArrayList<>();
         for (int i = 0; i < modInstances.size(); i++) {
-            if (!modInstances.get(i).mod.fixed) {
+            if (!modInstances.get(i).mod.fixed) {      // ม็อดล็อกยังอยู่ในตัวเลือก
                 removableIndices.add(i);
             }
         }
+        if (removableIndices.isEmpty()) return false;
 
-        if (removableIndices.isEmpty()) {
-            // ทุกตัวเป็น fixed mod ทั้งหมด -> ไม่มีอะไรให้ลบ หยุดเลย
-            return;
+        int pickedIndex = removableIndices.get(new Random().nextInt(removableIndices.size()));
+        boolean removed = false;
+        if (tryAffect(modInstances.get(pickedIndex))) {
+            modInstances.remove(pickedIndex);
+            removed = true;
         }
 
-        Random random = new Random();
-        int pickedIndex = removableIndices.get(random.nextInt(removableIndices.size()));
-        modInstances.remove(pickedIndex);
-
         updateModsInCraftedEquipment(equipment);
+        return removed;
+    }
+
+    public static boolean removeOneSpecificMod(CraftedEquipment equipment, ModInstance modInstance) {
+        if (Crafter.tryAffect(modInstance)) {
+            equipment.modInstances.remove(modInstance);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static void putInOneMod(CraftedEquipment equipment, ModInstance modInstance) {
@@ -287,14 +285,28 @@ public class Crafter {
         }
     }
 
+    /** เช็กเฉยๆ ว่ายังเพิ่มม็อดได้อีกไหม ไม่แตะ mod_id และไม่แก้ equipment */
+    public static boolean hasAvailableMod(CraftedEquipment equipment) {
+        for (MaterialInstance mi : equipment.materialInstances) {
+            if (mi.material_role == MaterialRole.BOOST) continue;
+            if (!randomAvailableModFromMaterial(
+                    equipment.modInstances, mi, equipment, equipment.mod_id).isEmpty()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static WeightedRandom<ModInstance> randomAvailableModFromMaterial(List<ModInstance> modInstances, MaterialInstance material,
                                                                               CraftedEquipment equipment, int mod_id) {
+        boolean horn = hasHornOfLightDragon(equipment);
         EquipmentType equipmentType = equipment.getEquipmentType();
         WeaponType weaponType = equipment.getWeaponType();
         WeightedRandom<ModInstance> random = new WeightedRandom<>();
         int current_mods = 0;
         List<ModInstance> matched_mods = new ArrayList<>();
         for (ModInstance modInstance : modInstances) {
+            if (modInstance.fixed) continue;
             if (modInstance.getBase_material_id() == material.getMaterial_id()) {
                 matched_mods.add(modInstance);
                 current_mods++;
@@ -310,6 +322,7 @@ public class Crafter {
             int matching_mods = 0;
 
             for (ModInstance modInstance : matched_mods) {
+                if (modInstance.fixed) continue;
                 if (modInstance.getPool_name().equals(entryMap.getValue().getPool().getPool_name())) {
                     matching_mods++;
                 }
@@ -352,17 +365,14 @@ public class Crafter {
 
                         if (!conflicts) {
                             ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
-                            modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
-                            modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
-                            // ใช้ weight ที่ผ่านการ boost แล้วแทน mod.weight ตรงๆ
+                            evaluateMod(equipment, horn, modInstance, entryMap.getValue(), equipment.getMaterialInstances());
                             random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                         }
                     }
                 } else {
                     for (CraftedMod mod : candidates) {
                         ModInstance modInstance = new ModInstance(mod_id, material.material_id, pool.getPool_name(), mod);
-                        modInstance.randomizeTierAndBaseValue(entryMap.getValue().minTier, entryMap.getValue().maxTier, equipmentType, weaponType.twoHanded());
-                        modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
+                        evaluateMod(equipment, horn, modInstance, entryMap.getValue(), equipment.getMaterialInstances());
                         random.add(modInstance, mod_pool_for_a_material.getWeight(mod));
                     }
                 }
@@ -370,6 +380,22 @@ public class Crafter {
         }
 
         return random;
+    }
+
+    public static Set<ModInstance> snapshotLockedMods(List<ModInstance> modInstances) {
+        Set<ModInstance> locked = Collections.newSetFromMap(new IdentityHashMap<>());
+        for (ModInstance m : modInstances) {
+            if (m.locked) locked.add(m);
+        }
+        return locked;
+    }
+
+    public static boolean tryAffect(ModInstance modInstance) {
+        if (modInstance.locked) {
+            unlockMod(modInstance);
+            return false;
+        }
+        return true;
     }
 
     public static ValidationResult checkCatalyst(String catalyst_name, CraftedEquipment equipment) {

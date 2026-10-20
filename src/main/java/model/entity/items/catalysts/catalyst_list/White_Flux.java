@@ -3,6 +3,7 @@ package model.entity.items.catalysts.catalyst_list;
 import model.entity.items.catalysts.CatalystEffect;
 import model.entity.items.catalysts.ValidationResult;
 import model.entity.items.crafted_equipments.CraftedEquipment;
+import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.ModInstance;
 
 public class White_Flux implements CatalystEffect {
@@ -16,6 +17,7 @@ public class White_Flux implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         for (ModInstance modInstance : equipment.getModInstances()) {
+            if (!Crafter.tryAffect(modInstance)) continue;
             modInstance.rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
         }
 

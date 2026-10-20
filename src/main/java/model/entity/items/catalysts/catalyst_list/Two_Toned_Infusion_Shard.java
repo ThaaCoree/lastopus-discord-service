@@ -20,21 +20,27 @@ public class Two_Toned_Infusion_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        Crafter.removeOneRandomMod(equipment);
-        Crafter.addOneRandomMod(equipment);
-        List<ModInstance> mods = equipment.getModInstances();
-        ModInstance last = mods.get(mods.size() - 1);
-        int tier = last.getTier();
-        ModifierType modifierType = last.getMod().getModifierType();
+        boolean removed = Crafter.removeOneRandomMod(equipment);
+        if (!removed) {
+            return "ไม่มีม็อดถูกลบ (ม็อดที่ถูกเลือกล็อกอยู่และถูกปลดล็อกแล้ว หรือไม่มีม็อดที่ลบได้)";
+        }
+
+        ModInstance added = Crafter.addOneRandomMod(equipment);
+        if (added == null) {
+            return "ลบม็อดแล้ว แต่ไม่มีม็อดให้เพิ่มใหม่";
+        }
+
+        int tier = added.getTier();
+        ModifierType modifierType = added.getMod().getModifierType();
         boolean two_handed = equipment.getWeaponType().twoHanded();
         if (ThreadLocalRandom.current().nextBoolean()) {
-            last.setBase_rolled(last.getMod().getMaxModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
+            added.setBase_rolled(added.getMod().getMaxModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
         } else {
-            last.setBase_rolled(last.getMod().getMinModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
+            added.setBase_rolled(added.getMod().getMinModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
         }
-        last.resetFinalValue(equipment.getMaterialInstances(), last);
+        added.resetFinalValue(equipment.getMaterialInstances(), added);
 
-        return "ลบม็อดและเพิ่มใหม่ให้กับ "+equipment.getName()+" แล้ว";
+        return "ลบม็อดและเพิ่มใหม่ให้กับ " + equipment.getName() + " แล้ว";
     }
 
     @Override

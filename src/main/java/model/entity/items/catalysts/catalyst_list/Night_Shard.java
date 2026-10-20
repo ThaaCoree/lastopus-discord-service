@@ -7,6 +7,8 @@ import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.ModInstance;
 import util.WeightedRandom;
 
+import java.util.Set;
+
 public class Night_Shard implements CatalystEffect {
     String catalyst_name = "Night Shard";
 
@@ -17,14 +19,17 @@ public class Night_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
+        Set<ModInstance> lockeds = Crafter.snapshotLockedMods(equipment.getModInstances());
+
         Crafter.craft(equipment);
         for (ModInstance modInstance : equipment.getModInstances()) {
+            if (lockeds.contains(modInstance)) continue;
             modInstance.multiplyTier(1.5);
             modInstance.rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
             modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
         }
 
-        return "เพิ่มเทียร์ของ "+equipment.getName()+" และรีโรลแล้ว";
+        return "คราฟท์ "+equipment.getName()+" ใหม่โดยมี Tier เพิ่มขึ้นเป็น 1.5 เท่าแล้ว";
     }
 
     @Override

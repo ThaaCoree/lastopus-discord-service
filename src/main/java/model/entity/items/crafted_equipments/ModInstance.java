@@ -12,15 +12,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModInstance {
-    int mod_id;
-    int base_material_id;
-    String pool_name;
-    List<Integer> boost_material_ids = new ArrayList<>();
-    List<Integer> catalyst_ids = new ArrayList<>();
-    int tier;
-    double base_rolled;
-    double final_value;
-    CraftedMod mod;
+    public int mod_id;
+    public int base_material_id;
+    public String pool_name;
+    public List<Integer> boost_material_ids = new ArrayList<>();
+    public List<Integer> catalyst_ids = new ArrayList<>();
+    public int tier;
+    public double base_rolled;
+    public double final_value;
+    public CraftedMod mod;
+    public boolean locked;
+    public boolean fixed;
 
     public ModInstance() {
 

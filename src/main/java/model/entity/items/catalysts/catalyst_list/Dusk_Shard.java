@@ -6,6 +6,8 @@ import model.entity.items.crafted_equipments.CraftedEquipment;
 import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.ModInstance;
 
+import java.util.Set;
+
 public class Dusk_Shard implements CatalystEffect {
     String catalyst_name = "Dusk Shard";
 
@@ -16,12 +18,17 @@ public class Dusk_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
+        // ต้อง snapshot ก่อน craft เพราะ craft จะปลดล็อกม็อดล็อก
+        Set<ModInstance> lockeds = Crafter.snapshotLockedMods(equipment.getModInstances());
+
         Crafter.craft(equipment);
+
         for (ModInstance modInstance : equipment.getModInstances()) {
+            if (lockeds.contains(modInstance)) continue;
             modInstance.multiplyFinal_value(1.2);
         }
 
-        return "คราฟท์ "+equipment.getName()+" ใหม่โดยเพิ่มค่าตัวเลขให้กับทุกม็อด 20% แล้ว";
+        return "คราฟท์ " + equipment.getName() + " ใหม่โดยเพิ่มค่าตัวเลขให้กับทุกม็อด 20% แล้ว";
     }
 
     @Override

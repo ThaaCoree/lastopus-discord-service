@@ -17,8 +17,6 @@ public class Unstable_Shard implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         Crafter.craft(equipment);
-
-
         return "คราฟท์ "+equipment.getName()+" ใหม่แล้ว";
     }
 

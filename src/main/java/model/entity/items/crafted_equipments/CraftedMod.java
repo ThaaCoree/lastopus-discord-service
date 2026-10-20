@@ -1,11 +1,10 @@
 package model.entity.items.crafted_equipments;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import model.type.EquipmentType;
-import model.type.ModifierType;
-import model.type.StatType;
-import model.type.StatusType;
+import model.type.*;
 
+import java.util.EnumSet;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CraftedMod {
@@ -113,6 +112,15 @@ public class CraftedMod {
             to_return *= -1;
         }
         return to_return * equipment_multiplier;
+    }
+
+    @JsonIgnore
+    public EnumSet<StatTag> getTags(){
+        if (isStatMod()) {
+            return statType.getTags();
+        } else {
+            return statusType.getTags();
+        }
     }
 
     @JsonIgnore
