@@ -343,9 +343,6 @@ public class Crafter {
                 // placeholder ModInstance ไว้ให้ applyUniqueBoost ใช้ context (pool_name, base_material_id)
                 ModInstance placeholder = new ModInstance(mod_id, material.material_id, pool.getPool_name());
                 UniqueMaterialManager.applyUniqueBoost(mod_pool_for_a_material, equipment.getMaterialInstances(), placeholder);
-                // ถ้ามี applyUniqueBoostMultitude ก็เรียกต่อจากนี้เลย
-                // UniqueMaterialManager.applyUniqueBoostMultitude(mod_pool_for_a_material, equipment.getMaterialInstances(), placeholder);
-                // === จบส่วนที่เพิ่ม ===
 
                 if (!pool.can_duplicate_mod) {
                     List<ModInstance> sameePoolInstances = matched_mods.stream()

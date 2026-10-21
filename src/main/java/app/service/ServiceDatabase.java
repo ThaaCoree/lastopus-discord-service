@@ -352,19 +352,19 @@ public class ServiceDatabase {
                     }
                 }
             }
-            //update materials in crafted equipments
-            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
-                for (MaterialInstance materialInstance : craftedEquipment.getMaterialInstances()) {
-                    String name = materialInstance.getMaterial().getName();
-                    CraftingMaterial updated = allMaterials.get(name);
-                    if (updated == null) {
-                        System.out.println("Material '{}' not found for crafted equipment {}"+name+ " " + craftedEquipment.getName());
-                        continue; // คงตัวเก่าไว้ หรือจะ handle แบบอื่นก็ได้
-                    }
-                    materialInstance.setMaterial(updated);
-                }
-                Crafter.updateModsInCraftedEquipment(craftedEquipment);
-            }
+            //update materials in crafted equipments (unusable, bugged)
+//            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
+//                for (MaterialInstance materialInstance : craftedEquipment.getMaterialInstances()) {
+//                    String name = materialInstance.getMaterial().getName();
+//                    CraftingMaterial updated = allMaterials.get(name);
+//                    if (updated == null) {
+//                        System.out.println("Material '{}' not found for crafted equipment {}"+name+ " " + craftedEquipment.getName());
+//                        continue; // คงตัวเก่าไว้ หรือจะ handle แบบอื่นก็ได้
+//                    }
+//                    materialInstance.setMaterial(updated);
+//                }
+//                Crafter.updateModsInCraftedEquipment(craftedEquipment);
+//            }
             unit.calculateEverything();
         }
     }
