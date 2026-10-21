@@ -922,6 +922,18 @@ public class DiscordController {
 
             boolean isPercent = modInstance.getMod().isStatMod()
                     && modInstance.getMod().getStatType().isPercentage();
+            if (!isPercent) {
+                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL);
+            }
+            if (!isPercent) {
+                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.INCREASED);
+            }
+            if (!isPercent) {
+                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.EQUIPMENT);
+            }
+            if (!isPercent) {
+                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE);
+            }
 
             String minroll = isPercent ? df.format(minValue * 100) + "%" : df.format(minValue);
             String maxroll = isPercent ? df.format(maxValue * 100) + "%" : df.format(maxValue);
