@@ -11,10 +11,7 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import model.entity.*;
 import model.entity.items.*;
-import model.entity.items.crafted_equipments.CraftModPool;
-import model.entity.items.crafted_equipments.CraftedEquipment;
-import model.entity.items.crafted_equipments.CraftingMaterial;
-import model.entity.items.crafted_equipments.MaterialInstance;
+import model.entity.items.crafted_equipments.*;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -334,6 +331,39 @@ public class ServiceDatabase {
                 if (source != null) {
                     entry.getValue().setSource(source);
                 }
+            }
+            for (Map.Entry<Integer, Rune> entry : unit.getRune_inventory().entrySet()) {
+                Rune rune = entry.getValue();
+                if (!rune.isUnique_rune()) continue;
+                Rune newObject = allRuneMap.get(rune.getName());
+                if (newObject != null) entry.setValue(newObject);
+            }
+            for (Rune rune : unit.getSocketed_runes()) {
+                if (!rune.isUnique_rune()) continue;
+                Rune newObject = allRuneMap.get(rune.getName());
+                if (newObject != null) {
+                    rune.setDescription(newObject.getDescription());
+                    rune.setStatusDescription(newObject.getStatusDescription());
+                    rune.setModifiers(newObject.getModifiers());
+                    rune.setUnique_weight(newObject.getUnique_weight());
+                    rune.setSkills(newObject.getSkills());
+                    if (!rune.getShapeName().equalsIgnoreCase(newObject.getShapeName())) {
+                        rune.setShape(newObject.getShape());
+                    }
+                }
+            }
+            //update materials in crafted equipments
+            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
+                for (MaterialInstance materialInstance : craftedEquipment.getMaterialInstances()) {
+                    String name = materialInstance.getMaterial().getName();
+                    CraftingMaterial updated = allMaterials.get(name);
+                    if (updated == null) {
+                        System.out.println("Material '{}' not found for crafted equipment {}"+name+ " " + craftedEquipment.getName());
+                        continue; // คงตัวเก่าไว้ หรือจะ handle แบบอื่นก็ได้
+                    }
+                    materialInstance.setMaterial(updated);
+                }
+                Crafter.updateModsInCraftedEquipment(craftedEquipment);
             }
             unit.calculateEverything();
         }

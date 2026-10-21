@@ -8,9 +8,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import app.servicemodel.SaveRequest;
 import model.entity.*;
 import model.entity.items.*;
-import model.entity.items.crafted_equipments.CraftModPool;
-import model.entity.items.crafted_equipments.CraftedEquipment;
-import model.entity.items.crafted_equipments.CraftingMaterial;
+import model.entity.items.crafted_equipments.*;
 import model.entity.units.Monster;
 import model.entity.units.Summon;
 import model.entity.units.Unit;
@@ -512,6 +510,19 @@ public class Database {
                         rune.setShape(newObject.getShape());
                     }
                 }
+            }
+            //update materials in crafted equipments
+            for (CraftedEquipment craftedEquipment : allCraftedEquipments.values()) {
+                for (MaterialInstance materialInstance : craftedEquipment.getMaterialInstances()) {
+                    String name = materialInstance.getMaterial().getName();
+                    CraftingMaterial updated = allMaterials.get(name);
+                    if (updated == null) {
+                        System.out.println("Material '{}' not found for crafted equipment {}"+name+ " " + craftedEquipment.getName());
+                        continue; // คงตัวเก่าไว้ หรือจะ handle แบบอื่นก็ได้
+                    }
+                    materialInstance.setMaterial(updated);
+                }
+                Crafter.updateModsInCraftedEquipment(craftedEquipment);
             }
             unit.calculateEverything();
         }

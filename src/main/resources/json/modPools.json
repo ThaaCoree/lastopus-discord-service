@@ -1447,103 +1447,103 @@
   "Resonate" : {
     "pool_name" : "Resonate",
     "weaponMods" : [ {
-      "statType" : "PHYSICALATTACK",
-      "statusType" : null,
-      "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 1000,
-      "fixed" : false
-    }, {
-      "statType" : "RANGEDATTACK",
-      "statusType" : null,
-      "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 1000,
-      "fixed" : false
-    }, {
       "statType" : "DAMAGEAMPLIFIER",
       "statusType" : null,
       "negative" : false,
       "modifierType" : "FLAT",
       "weight" : 500,
       "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "INCREASED",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "INCREASED",
+      "weight" : 1000,
+      "fixed" : false
     } ],
     "armorMods" : [ {
       "statType" : "PHYSICALBLOCK",
       "statusType" : null,
       "negative" : false,
-      "modifierType" : "GLOBAL",
+      "modifierType" : "INCREASED",
       "weight" : 1500,
       "fixed" : false
     }, {
       "statType" : "MAGICALBLOCK",
       "statusType" : null,
       "negative" : false,
-      "modifierType" : "GLOBAL",
+      "modifierType" : "INCREASED",
       "weight" : 1500,
       "fixed" : false
     }, {
       "statType" : "PHYSICALDEFENSE",
       "statusType" : null,
-      "negative" : true,
-      "modifierType" : "GLOBAL",
+      "negative" : false,
+      "modifierType" : "INCREASED",
       "weight" : 800,
       "fixed" : false
     }, {
       "statType" : "MAGICALDEFENSE",
       "statusType" : null,
-      "negative" : true,
-      "modifierType" : "GLOBAL",
+      "negative" : false,
+      "modifierType" : "INCREASED",
       "weight" : 800,
       "fixed" : false
     } ],
     "accessoryMods" : [ {
       "statType" : null,
-      "statusType" : "STRENGTH",
+      "statusType" : "LUCK",
       "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 500,
-      "fixed" : false
-    }, {
-      "statType" : null,
-      "statusType" : "AGILITY",
-      "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 500,
-      "fixed" : false
-    }, {
-      "statType" : null,
-      "statusType" : "VITALITY",
-      "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 500,
-      "fixed" : false
-    }, {
-      "statType" : null,
-      "statusType" : "DEXTERITY",
-      "negative" : false,
-      "modifierType" : "GLOBAL",
-      "weight" : 500,
-      "fixed" : false
-    }, {
-      "statType" : null,
-      "statusType" : "WISDOM",
-      "negative" : false,
-      "modifierType" : "GLOBAL",
+      "modifierType" : "INCREASED",
       "weight" : 500,
       "fixed" : false
     }, {
       "statType" : null,
       "statusType" : "INTELLIGENCE",
       "negative" : false,
-      "modifierType" : "GLOBAL",
+      "modifierType" : "INCREASED",
       "weight" : 500,
       "fixed" : false
     }, {
       "statType" : null,
-      "statusType" : "LUCK",
+      "statusType" : "WISDOM",
       "negative" : false,
-      "modifierType" : "GLOBAL",
+      "modifierType" : "INCREASED",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "INCREASED",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "INCREASED",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "INCREASED",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "INCREASED",
       "weight" : 500,
       "fixed" : false
     } ],
