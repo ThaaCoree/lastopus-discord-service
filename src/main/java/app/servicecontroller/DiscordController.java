@@ -916,10 +916,25 @@ public class DiscordController {
             if (modInstance.locked) {
                 sb.append( " :lock: ");
             }
+            boolean isPercent = modInstance.getMod().isStatMod()
+                    && modInstance.getMod().getStatType().isPercentage();
+
+            String minroll = modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
+            String maxroll = modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
+            String theroll;
+
+            if (isPercent) {
+                theroll = df.format(modInstance.getFinal_value() * 100) + "%";
+                minroll = df.format(Double.parseDouble(minroll) * 100) + "%";
+                maxroll = df.format(Double.parseDouble(maxroll) * 100) + "%";
+            } else {
+                theroll = df.format(modInstance.getFinal_value());
+            }
+
             sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
-                    .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
-                    .append(" - (").append(df.format(modInstance.getFinal_value())).append(") - ")
-                    .append(modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType())).append("]").append("\n")
+                    .append(" [").append(minroll)
+                    .append(" - (").append(theroll).append(") - ")
+                    .append(maxroll).append("]").append("\n")
                     .append("[").append(modInstance.getPool_name()).append("]").append(" [")
                     .append(equipment.getMaterialInstances().stream()
                             .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())
