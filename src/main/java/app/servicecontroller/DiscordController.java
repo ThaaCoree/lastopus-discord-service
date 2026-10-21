@@ -939,7 +939,20 @@ public class DiscordController {
             String maxroll = isPercent ? df.format(maxValue * 100) + "%" : df.format(maxValue);
             String theroll = isPercent ? df.format(finalValue * 100) + "%" : df.format(finalValue);
 
-            sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
+            sb.append("Mod : ");
+            if (modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL)) {
+                sb.append("Global ");
+            }
+            if (modInstance.getMod().getModifierType().equals(ModifierType.INCREASED)) {
+                sb.append("Increased ");
+            }
+            if (modInstance.getMod().getModifierType().equals(ModifierType.EQUIPMENT)) {
+                sb.append("Equipment ");
+            }
+            if (modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE)) {
+                sb.append("Passive ");
+            }
+                    sb.append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                     .append(" [").append(minroll)
                     .append(" - (").append(theroll).append(") - ")
                     .append(maxroll).append("]").append("\n")
