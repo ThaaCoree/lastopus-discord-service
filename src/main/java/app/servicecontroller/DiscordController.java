@@ -916,20 +916,16 @@ public class DiscordController {
             if (modInstance.locked) {
                 sb.append( " :lock: ");
             }
+            double minValue = modInstance.getMinRollValue(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
+            double maxValue = modInstance.getMaxRollValue(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
+            double finalValue = modInstance.getFinal_value();
+
             boolean isPercent = modInstance.getMod().isStatMod()
                     && modInstance.getMod().getStatType().isPercentage();
 
-            String minroll = modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
-            String maxroll = modInstance.getMaxRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
-            String theroll;
-
-            if (isPercent) {
-                theroll = df.format(modInstance.getFinal_value() * 100) + "%";
-                minroll = df.format(Double.parseDouble(minroll) * 100) + "%";
-                maxroll = df.format(Double.parseDouble(maxroll) * 100) + "%";
-            } else {
-                theroll = df.format(modInstance.getFinal_value());
-            }
+            String minroll = isPercent ? df.format(minValue * 100) + "%" : df.format(minValue);
+            String maxroll = isPercent ? df.format(maxValue * 100) + "%" : df.format(maxValue);
+            String theroll = isPercent ? df.format(finalValue * 100) + "%" : df.format(finalValue);
 
             sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                     .append(" [").append(minroll)

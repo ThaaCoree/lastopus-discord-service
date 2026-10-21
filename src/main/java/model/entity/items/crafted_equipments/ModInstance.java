@@ -93,6 +93,16 @@ public class ModInstance {
         return decimalFormat.format(mod.getMaxModValueByTier(tier, equipmentType, weaponType.twoHanded(), modifierType));
     }
 
+    @JsonIgnore
+    public double getMinRollValue(EquipmentType equipmentType, WeaponType weaponType, ModifierType modifierType) {
+        return mod.getMinModValueByTier(tier, equipmentType, weaponType.twoHanded(), modifierType);
+    }
+
+    @JsonIgnore
+    public double getMaxRollValue(EquipmentType equipmentType, WeaponType weaponType, ModifierType modifierType) {
+        return mod.getMaxModValueByTier(tier, equipmentType, weaponType.twoHanded(), modifierType);
+    }
+
     public int getMod_id() {
         return mod_id;
     }
