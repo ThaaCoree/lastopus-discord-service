@@ -40,6 +40,9 @@ public class Splintering_Shard implements CatalystEffect {
                 removingMods.add(modInstance, 10);
             }
         }
+        if (removingMods.isEmpty()) {
+            return "การลบไม่เกิดขึ้น ไม่มีม็อด Tier ต่ำกว่าให้ลบ";
+        }
 
         if (Crafter.removeOneSpecificMod(equipment, removingMods.roll())) {
             return "ลบม็อดออกจาก "+equipment.getName()+" แล้ว";
