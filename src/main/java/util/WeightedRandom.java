@@ -14,7 +14,7 @@ public class WeightedRandom<T> {
     }
 
     public double getWeight(T item) {
-        return weights.get(item);
+        return weights.getOrDefault(item, 0.0);
     }
 
     public void multiplyWeight(T item, double multiplier) {

@@ -913,7 +913,7 @@ public class DiscordController {
         for (ModInstance modInstance : equipment.getModInstances()) {
             sb.append(mod_count).append(". ");
             if (modInstance.locked) {
-                sb.append( " [LOCKED] :lock:");
+                sb.append( " :lock: ");
             }
             sb.append("Mod : ").append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
                     .append(" [").append(modInstance.getMinRoll(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType()))
