@@ -754,13 +754,14 @@ public class DiscordController {
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
+            Item item = unit.findItem(catalyst_name);
+            if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
+            
             ValidationResult validationResult = Crafter.checkCatalyst(catalyst_name, equipment);
             boolean success = validationResult.isSuccess();
             String check_message = validationResult.getMessage();
             if (success) {
                 StringBuilder sb = new StringBuilder();
-                Item item = unit.findItem(catalyst_name);
-                if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
 
                 if (!Crafter.brickCheckCatalyst(catalyst_name, equipment)) {
                     Crafter.useCatalyst(catalyst_name, equipment);
