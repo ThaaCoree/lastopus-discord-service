@@ -754,9 +754,9 @@ public class DiscordController {
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
-            Item item = unit.findItem(catalyst_name);
+            Item item = unit.findItemInventory(catalyst_name);
             if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
-            
+
             ValidationResult validationResult = Crafter.checkCatalyst(catalyst_name, equipment);
             boolean success = validationResult.isSuccess();
             String check_message = validationResult.getMessage();
@@ -767,7 +767,7 @@ public class DiscordController {
                     Crafter.useCatalyst(catalyst_name, equipment);
                     unit.getInventoryManager().removeItem(catalyst_name, 1);
                     writeintoSheet(unit);
-                    sb.append("เสร็จสิ้นการใช้งาน Catalyst ").append(catalyst_name).append("\n")
+                    sb.append(check_message).append("\n")
                             .append(equipment.getName()).append("\n")
                             .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
                             .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
