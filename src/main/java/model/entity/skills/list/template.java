@@ -20,17 +20,18 @@ public class template extends Skill {
         setActionType("Action");
         setManaCost(0);
         setCooldown(0);
-        getPureTags().add(SkillType.PHYSICAL);
         setManaReservePercent(0.2);
         setHealthReserveFlat(5);
-        getSkillMultiplier().put("XA",new SkillMultiplier("??????"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.RECOVERY);
-        getSkillMultiplier().get("XA").setPercent(true);
+        addTag(SkillType.PHYSICAL);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("??????"));
-        getSkillMultiplier().get("XB").getTags().add(SkillType.RECOVERY);
-        getSkillMultiplier().get("XB").getTags().add(SkillType.LIMIT);
+        addMultiplier("XA", "?????");
+        addTag("XA", SkillType.STRIKE);
+        addTag("XA", SkillType.PHYSICAL);
+        setPercent("XA");
+
+        addMultiplier("XB", "?????");
+        addTag("XB", SkillType.DURATION);
+        addTag("XB", SkillType.LIMIT);
     }
 
     @Override

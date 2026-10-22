@@ -77,7 +77,7 @@ public class Refinery extends Skill implements SkillWithCondition {
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Fatima");
+        Conditions condition = new Conditions("Dentel Shell");
         condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
         condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
 

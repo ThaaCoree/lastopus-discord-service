@@ -1,7 +1,6 @@
 package model.entity.skills.list.player;
 
 import controller.CombatFlow;
-import controller.event.events.ActionEvent;
 import manager.ConditionManager;
 import model.entity.Conditions;
 import model.entity.skills.*;
@@ -9,6 +8,7 @@ import model.entity.units.Unit;
 import model.type.*;
 
 import java.util.List;
+import java.util.Map;
 
 public class Mythic_Gleaming extends Skill implements SkillWithCondition {
 
@@ -68,40 +68,24 @@ public class Mythic_Gleaming extends Skill implements SkillWithCondition {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
-        if (!skillTarget.getTarget(0).isEmpty()) {
-            double xa = getSkillMultiplier().get("XA").getResult();
-            double xb = getSkillMultiplier().get("XB").getResult();
-            int duration = (int) getSkillMultiplier().get("XD").getResult();
-            Conditions condition = combatFlow.getDatabase().getAllConditionMap().get("Mythic Gleaming");
+        if (skillTarget.getTarget(0).isEmpty()) return;
 
-            for (Unit unit : combatFlow.findUnit(skillTarget.getTarget(0))) {
-                if (skillTarget.getDecision(unit.getName(),0,0).equals("Damage")) {
-                    sendActionEvent(combatFlow.getEventBus(),
-                            ActionEvent.builder(getName(), getUser(), unit)
-                                    .effect(ActionEffectType.DAMAGE_MAGICAL, xa, 1)
-                                    .addActType(ActType.CAST, ActType.STRIKE)
-                                    .build()
-                    );
+        double xa = getSkillMultiplier().get("XA").getResult();
+        double xb = getSkillMultiplier().get("XB").getResult();
+        int duration = (int) getSkillMultiplier().get("XD").getResult();
+        Conditions gleaming = combatFlow.getDatabase().getAllConditionMap().get("Mythic Gleaming");
+
+        dispatchByUnitDecision(combatFlow, skillTarget, 0, 0, Map.of(
+                "damage", unit -> {
+                    sendEffect(combatFlow, unit, ActionEffectType.DAMAGE_MAGICAL, xa,
+                            ActType.CAST, ActType.STRIKE);
                     if (getUser().hasCondition("Stories' End")) {
-                        sendActionEvent(combatFlow.getEventBus(),
-                                ActionEvent.builder(getName(), getUser(), unit)
-                                        .condition(condition, duration)
-                                        .addActType(ActType.CONDITION_GIVEN)
-                                        .build()
-                        );
+                        sendCondition(combatFlow, unit, gleaming, duration, ActType.CAST);
                     }
-                }
-
-                if (skillTarget.getDecision(unit.getName(),0,0).equals("Heal")) {
-                    sendActionEvent(combatFlow.getEventBus(),
-                            ActionEvent.builder(getName(), getUser(), unit)
-                                    .effect(ActionEffectType.HEALTH_RECOVER, xb, 1)
-                                    .addActType(ActType.HEAL, ActType.HEALTH_RECOVER)
-                                    .build()
-                    );
-                }
-            }
-        }
+                },
+                "heal", unit -> sendEffect(combatFlow, unit, ActionEffectType.HEALTH_RECOVER, xb,
+                        ActType.HEAL, ActType.HEALTH_RECOVER)
+        ));
     }
 
     @Override

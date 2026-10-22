@@ -38420,5 +38420,103 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "GENERAL"
+  },
+  "Dentel Shell" : {
+    "name" : "Dentel Shell",
+    "description" : "",
+    "statusDescription" : "600% Global MSPD\n600% Global Evasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MOVEMENTSPEED" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 6.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 6.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Venom Sip" : {
+    "name" : "Venom Sip",
+    "description" : "",
+    "statusDescription" : "600% Global MDEF\n600% Global PDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 6.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 6.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "GENERAL"
+  },
+  "Hear My Pray" : {
+    "name" : "Hear My Pray",
+    "description" : "",
+    "statusDescription" : "2.4 PATK\n2.4 MATK\n2.4 RATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALATTACK" : {
+          "flat" : 2.4000000000000004,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 2.4000000000000004,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "RANGEDATTACK" : {
+          "flat" : 2.4000000000000004,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "BOUND"
   }
 }

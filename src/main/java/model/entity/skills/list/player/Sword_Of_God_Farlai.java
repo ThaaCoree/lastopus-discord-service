@@ -3,14 +3,15 @@ package model.entity.skills.list.player;
 import controller.CombatFlow;
 import controller.event.events.ActionEvent;
 import model.entity.Conditions;
+import model.entity.items.EquipmentSlot;
 import model.entity.skills.Skill;
 import model.entity.skills.SkillInputSpec;
 import model.entity.skills.SkillMultiplier;
 import model.entity.skills.SkillTarget;
-import model.type.ActType;
-import model.type.ActionEffectType;
-import model.type.SkillType;
-import model.type.StatType;
+import model.modifier.BasicModifier;
+import model.type.*;
+
+import java.util.Map;
 
 public class Sword_Of_God_Farlai extends Skill {
 
@@ -57,26 +58,46 @@ public class Sword_Of_God_Farlai extends Skill {
     @Override
     public void calculateExtra() {
         double xb = getSkillMultiplier().get("XB").getResult();
+        boolean empty_hand = true;
+        double multiplier = getMultiplierResult("XA")-1;
 
-        getSkillModifier().getStatModifierSafe(StatType.PHYSICALATTACK).setGlobalMult(xb);
-        getSkillModifier().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(xb);
-        getSkillModifier().getStatModifierSafe(StatType.RANGEDATTACK).setGlobalMult(xb);
+        for (Map.Entry<Integer, EquipmentSlot> equipmentSlot : getUser().getEquipmentSlots().entrySet()) {
+            if (equipmentSlot.getValue().getEquipmentType().equals(EquipmentType.WEAPON)) {
+                if (equipmentSlot.getValue().getEquipment() != null) {
+                    empty_hand = false;
+                    for (StatusType statusType : StatusType.values()) {
+                        BasicModifier modifier = equipmentSlot.getValue().getEquipment().getModifiers().getStatusModifierSafe(statusType);
+                        BasicModifier skillModifier = getSkillModifier().getStatusModifierSafe(statusType);
+
+                        skillModifier.sumFlat(modifier.getFlat() * multiplier);
+                        skillModifier.sumGlobalMult(modifier.getGlobalMult() * multiplier);
+                        skillModifier.sumMult(modifier.getMult() * multiplier);
+                        skillModifier.sumEquipmentMult(modifier.getEquipmentMult() * multiplier);
+                        skillModifier.sumPassiveMult(modifier.getPassiveMult() * multiplier);
+                    }
+                    for (StatType statType : StatType.values()) {
+                        BasicModifier modifier = equipmentSlot.getValue().getEquipment().getModifiers().getStatModifierSafe(statType);
+                        BasicModifier skillModifier = getSkillModifier().getStatModifierSafe(statType);
+
+                        skillModifier.sumFlat(modifier.getFlat() * multiplier);
+                        skillModifier.sumGlobalMult(modifier.getGlobalMult() * multiplier);
+                        skillModifier.sumMult(modifier.getMult() * multiplier);
+                        skillModifier.sumEquipmentMult(modifier.getEquipmentMult() * multiplier);
+                        skillModifier.sumPassiveMult(modifier.getPassiveMult() * multiplier);
+                    }
+                }
+            }
+        }
+
+        if (empty_hand) {
+            getSkillModifier().getStatModifierSafe(StatType.PHYSICALATTACK).setGlobalMult(xb);
+            getSkillModifier().getStatModifierSafe(StatType.MAGICALATTACK).setGlobalMult(xb);
+            getSkillModifier().getStatModifierSafe(StatType.RANGEDATTACK).setGlobalMult(xb);
+        }
     }
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
-        if (!skillTarget.getTarget(0).isEmpty()) {
-            double xa = getSkillMultiplier().get("XA").getResult();
-            int duration = (int) getSkillMultiplier().get("XB").getResult();
-            Conditions condition = combatFlow.findCondition("Glyph Shocked");
-            sendActionEvent(combatFlow.getEventBus(),
-                    ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                            .effect(ActionEffectType.DAMAGE_PHYSICAL, xa, 1)
-                            .condition(condition, duration)
-                            .addActType(ActType.ATTACK, ActType.STRIKE)
-                            .build()
-            );
-        }
     }
 
     @Override

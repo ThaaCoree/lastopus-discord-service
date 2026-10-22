@@ -19,16 +19,19 @@ public class template_condition extends Skill implements SkillWithCondition {
         setActionType("Action");
         setManaCost(0);
         setCooldown(0);
-        getPureTags().add(SkillType.PHYSICAL);
         setManaReservePercent(0.2);
         setHealthReserveFlat(5);
-        getSkillMultiplier().put("XA",new SkillMultiplier("??????"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.RECOVERY);
-        getSkillMultiplier().get("XA").setPercent(true);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("??????"));
-        getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
+        addTag(SkillType.PHYSICAL);
+
+        addMultiplier("XA", "?????");
+        addTag("XA", SkillType.SPELL);
+        addTag("XA", SkillType.RECOVERY);
+        setPercent("XA");
+
+        addMultiplier("XB", "?????");
+        addTag("XB", SkillType.DURATION);
+        addTag("XB", SkillType.LIMIT);
     }
 
     @Override

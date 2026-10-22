@@ -53,28 +53,23 @@ public class Pre_Battle_Setup extends Skill implements SkillWithCondition {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
-        if (!skillTarget.getTarget(0).isEmpty()) {
-
-        } else {
-            skillTarget.getTarget(0).add(getUser().getName());
-        }
-        int duration = (int) getSkillMultiplier().get("XB").getResult();
-        Conditions condition = combatFlow.findCondition("Fatima");
+        int duration = 99;
+        Conditions condition = combatFlow.findCondition("Pre-Setup");
         sendActionEvent(combatFlow.getEventBus(),
-                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                ActionEvent.builder(getName(),getUser(), getAllies(combatFlow))
                         .condition(condition, duration)
-                        .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
+                        .addActType(ActType.SKILL_TRIGGER, ActType.CONDITION_GIVEN)
                         .build());
     }
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Fatima");
-        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
-        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        Conditions condition = new Conditions("Pre-Setup");
+        condition.getStatModifiers(StatType.SPEED).setFlat(getSkillMultiplier().get("XA").getResult());
+        condition.getStatModifiers(StatType.EVASION).setFlat(getSkillMultiplier().get("XB").getResult());
 
         condition.setConditionType(ConditionType.BUFF);
-        condition.setConditionTierType(ConditionTierType.GENERAL);
+        condition.setConditionTierType(ConditionTierType.ADVANCED);
 
         addConditionToDatabase(condition, combatFlow);
 

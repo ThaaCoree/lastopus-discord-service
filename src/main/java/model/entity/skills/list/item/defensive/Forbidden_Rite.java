@@ -101,7 +101,6 @@ public class Forbidden_Rite extends Skill implements SkillWithCondition {
                     condition.putNumberRecord("DamageTakenRemain", remain);
                     condition.getCondition().setDescription("สูญเสียพลังชีวิตได้อีกไม่เกิน "+remain+" หน่วย การรับความเสียหายระหว่างผลพิเศษนี้จะไม่ทำให้พลังชีวิตต่ำกว่า 1 หน่วย");
                 }
-
                 if (event.amount >= current_health) {
                     event.amount = current_health - 1;
                     sendSkillTriggerEvent(combatFlow, "Forbidden Rite triggered [Undying]");

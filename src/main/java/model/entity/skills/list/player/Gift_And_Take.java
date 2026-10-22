@@ -1,12 +1,14 @@
 package model.entity.skills.list.player;
 
 import controller.CombatFlow;
-import controller.event.events.ActionEvent;
 import manager.ConditionManager;
 import model.entity.Conditions;
 import model.entity.skills.*;
 import model.entity.units.Unit;
 import model.type.*;
+
+import java.util.List;
+import java.util.Map;
 
 public class Gift_And_Take extends Skill implements SkillWithCondition {
 
@@ -15,36 +17,36 @@ public class Gift_And_Take extends Skill implements SkillWithCondition {
     public Gift_And_Take() {
         super();
         setDescription("เลือดของราเวลจะมีผลต่อไปนี้ :\n" +
-                "เมื่อถูกใช้ดื่ม ผู้ดื่มจะได้รับบัพ Venom Sip ซึ่งเพิ่ม DEF XA หน่วยเป็นเวลา XC รอบเทิร์น\n" +
-                "เมื่อถูกสัมผัส ผู้สัมผัสจะได้รับดีบัพ Soft Touch ซึ่งลด DEF XB หน่วยเป็นเวลา XC รอบเทิร์น\n" +
+                "เมื่อใช้ดื่ม ผู้ดื่มจะได้รับบัพ Venom Sip ซึ่งเพิ่ม DEF XA หน่วยเป็นเวลา XC รอบเทิร์น\n" +
+                "เมื่อใช้สัมผัส ผู้สัมผัสจะได้รับดีบัพ Soft Touch ซึ่งลด DEF XB หน่วยเป็นเวลา XC รอบเทิร์น\n" +
                 "สามารถทับซ้อนได้");
         setActionType("Passive");
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.3);
-        getSkillMultiplier().put("XA",new SkillMultiplier("2*VIT"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.DEFENSE);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.BUFF);
+        addMultiplier("XA", "2*VIT");
+        addTag("XA", SkillType.SCALING);
+        addTag("XA", SkillType.DEFENSE);
+        addTag("XA", SkillType.BUFF);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("4*WIS"));
-        getSkillMultiplier().get("XB").getTags().add(SkillType.DEBUFF);
-        getSkillMultiplier().get("XB").getTags().add(SkillType.SCALING);
+        addMultiplier("XB", "4*WIS");
+        addTag("XB", SkillType.DEBUFF);
+        addTag("XB", SkillType.SCALING);
 
-        getSkillMultiplier().put("XC",new SkillMultiplier("2"));
-        getSkillMultiplier().get("XC").getTags().add(SkillType.DURATION);
+        addMultiplier("XC", "2");
+        addTag("XC", SkillType.DURATION);
     }
 
     @Override
     public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
         SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
-//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
         );
-//        spec    .addFields(
-//                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
-//                        .options(List.of("choice","choice"), 0)
-//                        .labelProvider(String::toString, 0)
-//        , 0, 0)
+        spec    .addFields(
+                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
+                        .options(List.of("Venom Sip","Soft Touch"), 0)
+                        .labelProvider(String::toString, 0)
+        , 0, 0);
 //                .addFields(
 //                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
 //                , 0, 1);
@@ -59,27 +61,30 @@ public class Gift_And_Take extends Skill implements SkillWithCondition {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
+            int duration = (int) getMultiplierResult("XA");
 
-        } else {
-            skillTarget.getTarget(0).add(getUser().getName());
+            dispatchByUnitDecision(combatFlow, skillTarget, 0, 0, Map.of(
+                    "venom sip",  u -> sendCondition(combatFlow, u, combatFlow.findCondition("Venom Sip"), duration),
+                    "soft touch", u -> sendCondition(combatFlow, u, combatFlow.findCondition("Soft Touch"), duration)
+            ));
         }
-        int duration = (int) getSkillMultiplier().get("XB").getResult();
-        Conditions condition = combatFlow.findCondition("Fatima");
-        sendActionEvent(combatFlow.getEventBus(),
-                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                        .condition(condition, duration)
-                        .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
-                        .build());
     }
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Fatima");
-        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
-        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        Conditions condition = new Conditions("Venom Sip");
+        condition.getStatModifiers(StatType.MAGICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        condition.getStatModifiers(StatType.PHYSICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+
+
+        Conditions condition2 = new Conditions("Soft Touch");
+        condition2.getStatModifiers(StatType.MAGICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XB").getResult() * -1);
+        condition2.getStatModifiers(StatType.PHYSICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XB").getResult() * -1);
 
         condition.setConditionType(ConditionType.BUFF);
         condition.setConditionTierType(ConditionTierType.GENERAL);
+        condition2.setConditionType(ConditionType.DEBUFF);
+        condition2.setConditionTierType(ConditionTierType.GENERAL);
 
         addConditionToDatabase(condition, combatFlow);
 

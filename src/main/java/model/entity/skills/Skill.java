@@ -1,5 +1,6 @@
 package model.entity.skills;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import controller.CombatFlow;
 import controller.event.EventBus;
 import controller.event.events.ActionEvent;
@@ -14,6 +15,7 @@ import util.LogWriterUtil;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public abstract class Skill {
@@ -211,8 +213,12 @@ public abstract class Skill {
         }
     }
 
-    public void addMultiplierTag(SkillType tag) {
+    private void addMultiplierTag(SkillType tag) {
         multiplierTags.add(tag);
+    }
+
+    public void setSkillModifier(ModifierBundle skillModifier) {
+        this.skillModifier = skillModifier;
     }
 
     public Map<String, SkillMultiplier> getSkillMultiplier() {
@@ -537,6 +543,64 @@ public abstract class Skill {
         }
 
         return finaldmg;
+    }
+
+    protected void dispatchByUnitDecision(CombatFlow combatFlow, SkillTarget skillTarget,
+                                          int target_index, int input_index,
+                                          Map<String, Consumer<Unit>> handlers) {
+        for (Unit unit : combatFlow.findUnit(skillTarget.getTarget(target_index))) {
+            String decision = skillTarget.getDecision(unit.getName(), target_index, input_index);
+            if (decision == null || decision.isEmpty()) continue;
+            Consumer<Unit> handler = handlers.get(decision.toLowerCase());
+            if (handler != null) handler.accept(unit);
+        }
+    }
+
+    protected void sendEffect(CombatFlow combatFlow, Unit target,
+                              ActionEffectType type, double multiplier, ActType... actTypes) {
+        sendActionEvent(combatFlow.getEventBus(),
+                ActionEvent.builder(getName(), getUser(), target)
+                        .effect(type, multiplier, 1)
+                        .addActType(actTypes)
+                        .build());
+    }
+
+    protected void sendCondition(CombatFlow combatFlow, Unit target,
+                                 Conditions condition, int duration, ActType... actTypes) {
+        if (condition == null) {
+            System.out.println("Condition not found!");
+            return;
+        }
+        sendActionEvent(combatFlow.getEventBus(),
+                ActionEvent.builder(getName(), getUser(), target)
+                        .condition(condition, duration)
+                        .addActType(ActType.CONDITION_GIVEN)
+                        .addActType(actTypes)
+                        .build());
+    }
+
+    public void addMultiplier(String multiplier, String formula) {
+        getSkillMultiplier().put(multiplier, new SkillMultiplier(formula));
+    }
+
+    public void addMultiplier(String multiplier, double amount) {
+        getSkillMultiplier().put(multiplier, new SkillMultiplier(amount));
+    }
+
+    public void addTag(String multiplier, SkillType tag) {
+        getSkillMultiplier().get(multiplier).getTags().add(tag);
+    }
+
+    public void addTag(SkillType tag) {
+        getPureTags().add(tag);
+    }
+
+    public void setPercent(String multiplier) {
+        getSkillMultiplier().get(multiplier).setPercent(true);
+    }
+
+    public double getMultiplierResult(String multiplier) {
+        return getSkillMultiplier().get(multiplier).getResult();
     }
 
     public List<Unit> getAllies(CombatFlow combatFlow) {

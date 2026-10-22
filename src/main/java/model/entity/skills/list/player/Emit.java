@@ -33,7 +33,7 @@ public class Emit extends Skill {
     @Override
     public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
         SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
-//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
         );
 //        spec    .addFields(
 //                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
@@ -54,14 +54,12 @@ public class Emit extends Skill {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
-            double xa = getSkillMultiplier().get("XA").getResult();
             int duration = (int) getSkillMultiplier().get("XB").getResult();
-            Conditions condition = combatFlow.findCondition("Glyph Shocked");
+            Conditions condition = combatFlow.findCondition("Freeze");
             sendActionEvent(combatFlow.getEventBus(),
                     ActionEvent.builder(getName(), getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                            .effect(ActionEffectType.DAMAGE_PHYSICAL, xa, 1)
                             .condition(condition, duration)
-                            .addActType(ActType.ATTACK, ActType.STRIKE)
+                            .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
                             .build()
             );
         }

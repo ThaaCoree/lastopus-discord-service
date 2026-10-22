@@ -56,28 +56,18 @@ public class Hear_My_Pray extends Skill implements SkillWithCondition {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
-        if (!skillTarget.getTarget(0).isEmpty()) {
 
-        } else {
-            skillTarget.getTarget(0).add(getUser().getName());
-        }
-        int duration = (int) getSkillMultiplier().get("XB").getResult();
-        Conditions condition = combatFlow.findCondition("Fatima");
-        sendActionEvent(combatFlow.getEventBus(),
-                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                        .condition(condition, duration)
-                        .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
-                        .build());
     }
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Fatima");
-        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
-        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        Conditions condition = new Conditions("Hear My Pray");
+        condition.getStatModifiers(StatType.PHYSICALATTACK).setFlat(getMultiplierResult("XA")*2);
+        condition.getStatModifiers(StatType.MAGICALATTACK).setFlat(getMultiplierResult("XA")*2);
+        condition.getStatModifiers(StatType.RANGEDATTACK).setFlat(getMultiplierResult("XA")*2);
 
         condition.setConditionType(ConditionType.BUFF);
-        condition.setConditionTierType(ConditionTierType.GENERAL);
+        condition.setConditionTierType(ConditionTierType.BOUND);
 
         addConditionToDatabase(condition, combatFlow);
 

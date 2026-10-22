@@ -56,26 +56,25 @@ public class Phase extends Skill implements SkillWithCondition {
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
         if (!skillTarget.getTarget(0).isEmpty()) {
-
-        } else {
-            skillTarget.getTarget(0).add(getUser().getName());
+            int duration = (int) getSkillMultiplier().get("XB").getResult();
+            Conditions condition = combatFlow.findCondition("Shiver");
+            sendActionEvent(combatFlow.getEventBus(),
+                    ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
+                            .condition(condition, duration)
+                            .addActType(ActType.CONDITION_GIVEN)
+                            .build());
         }
-        int duration = (int) getSkillMultiplier().get("XB").getResult();
-        Conditions condition = combatFlow.findCondition("Fatima");
-        sendActionEvent(combatFlow.getEventBus(),
-                ActionEvent.builder(getName(),getUser(), combatFlow.findUnit(skillTarget.getTarget(0)))
-                        .condition(condition, duration)
-                        .addActType(ActType.CAST, ActType.CONDITION_GIVEN)
-                        .build());
     }
 
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
-        Conditions condition = new Conditions("Fatima");
-        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
-        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        Conditions condition = new Conditions("Shiver");
+        condition.getStatModifiers(StatType.SPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
+        condition.getStatModifiers(StatType.ATTACKSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
+        condition.getStatModifiers(StatType.CASTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
+        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult() * -1);
 
-        condition.setConditionType(ConditionType.BUFF);
+        condition.setConditionType(ConditionType.DEBUFF);
         condition.setConditionTierType(ConditionTierType.GENERAL);
 
         addConditionToDatabase(condition, combatFlow);

@@ -653,16 +653,18 @@ public class SkillFactory {
         skillMap.put(Adaptive_Body.NAME, Adaptive_Body::new); //unfinished
         skillMap.put(Upslash.NAME, Upslash::new);
         skillMap.put(Airslash.NAME, Airslash::new);
-        skillMap.put(Pre_Battle_Setup.NAME, Pre_Battle_Setup::new); //unfinished
-        skillMap.put(Forced_Attack.NAME, Forced_Attack::new); //unfinished
+        skillMap.put(Pre_Battle_Setup.NAME, Pre_Battle_Setup::new);
+        skillMap.put(Forced_Attack.NAME, Forced_Attack::new);
         skillMap.put(Malice_Eater.NAME, Malice_Eater::new); //unfinished
         skillMap.put(Refinery.NAME, Refinery::new); //unfinished
-        skillMap.put(Emit.NAME, Emit::new); //unfinished
+        skillMap.put(Emit.NAME, Emit::new);
         skillMap.put(Phase.NAME, Phase::new); //unfinished
-        skillMap.put(Gift_And_Take.NAME, Gift_And_Take::new); //unfinished
+        skillMap.put(Gift_And_Take.NAME, Gift_And_Take::new);
         skillMap.put(Hear_My_Pray.NAME, Hear_My_Pray::new); //unfinished
-        skillMap.put(Sword_Of_God_Farlai.NAME, Sword_Of_God_Farlai::new); //unfinished
-        skillMap.put(Wrath_Of_Blaze.NAME, Wrath_Of_Blaze::new); //unfinished
+        skillMap.put(Sword_Of_God_Farlai.NAME, Sword_Of_God_Farlai::new);
+        skillMap.put(Wrath_Of_Blaze.NAME, Wrath_Of_Blaze::new);
+        skillMap.put(Curve_Of_Certainty.NAME, Curve_Of_Certainty::new);
+        skillMap.put(Perfect_Recurve.NAME, Perfect_Recurve::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 
