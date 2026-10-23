@@ -5640,5 +5640,34 @@
         "skillModifiers" : { }
       }
     }
+  },
+  "Gari Card" : {
+    "name" : "Gari Card",
+    "abilityName" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "description" : {
+      "PRIMARY" : "",
+      "SECONDARY" : ""
+    },
+    "statusDescription" : {
+      "PRIMARY" : "\n",
+      "SECONDARY" : "\n"
+    },
+    "modifiers" : {
+      "PRIMARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      },
+      "SECONDARY" : {
+        "statModifiers" : { },
+        "statusModifiers" : { },
+        "transferModifiers" : { },
+        "skillModifiers" : { }
+      }
+    }
   }
 }

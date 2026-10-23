@@ -139,6 +139,12 @@ public class ModInstance {
         final_value *= multiply;
     }
 
+    public void negativeFinal_value() {
+        if (final_value > 0) {
+            final_value *= -1;
+        }
+    }
+
     public CraftedMod getMod() {
         return mod;
     }

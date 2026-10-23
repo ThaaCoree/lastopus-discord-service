@@ -38518,5 +38518,48 @@
     },
     "conditionType" : "BUFF",
     "conditionTierType" : "BOUND"
+  },
+  "Pre-Setup" : {
+    "name" : "Pre-Setup",
+    "description" : "",
+    "statusDescription" : "0.7 Speed\n1 Evasion\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "SPEED" : {
+          "flat" : 0.7000000000000001,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "EVASION" : {
+          "flat" : 1.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "ADVANCED"
+  },
+  "Heavenly Wrath" : {
+    "name" : "Heavenly Wrath",
+    "description" : "สร้างความเสียหายได้มากขึ้น 120.0 หน่วยในการโจมตีครั้งถัดไป",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "NEUTRAL",
+    "conditionTierType" : "UNDISPELLABLE"
   }
 }

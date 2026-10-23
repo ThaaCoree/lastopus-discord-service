@@ -34,7 +34,7 @@ public class UniqueMaterialManager {
 
     public static void applyClawOfLightDragon(WeightedRandom<CraftedMod> weightedRandom, MaterialInstance materialInstance, List<MaterialInstance> materialInstances) {
         //have to rework a bit
-            if (materialInstance.material.getName().equals("Claw of Light Dragon")) return;
+            if (isBoostMaterial(materialInstance, "Claw of Light Dragon")) return;
             Crafter.applyWeightBoostByTag(weightedRandom, StatTag.STRIKE, 5);
             Crafter.applyWeightBoostByTag(weightedRandom, StatTag.DEFENSE, 5);
             if (materialInstances.contains(materialInstance) && materialInstances.indexOf(materialInstance) %2 == 1) {
@@ -52,31 +52,43 @@ public class UniqueMaterialManager {
             if (!modInstance.boost_material_ids.contains(materialInstance.material_id)) continue;
             modInstance.addBoostedMaterial(materialInstance.material_id);
             CraftingMaterial material = materialInstance.material;
-            applyWingOfLightDragon(materialInstance, modInstance);
+
         }
     }
 
-    public static void applyWingOfLightDragon(MaterialInstance materialInstance, ModInstance modInstance) {
-        if (!materialInstance.getMaterial().getName().equals("Wing of Light Dragon")) return;
-        modInstance.multiplyByTag(StatTag.DEFENSE, 1);
-    }
+    public static void applyNitron(MaterialInstance materialInstance, ModInstance modInstance,
+                                   List<MaterialInstance> materialInstances) {
+        if (!isBaseMaterial(materialInstance, "Nitron")) return;
 
-    public static void applyNitron(MaterialInstance materialInstance, ModInstance modInstance, List<MaterialInstance> materialInstances) {
-        if (!materialInstance.getMaterial().getName().equals("Nitron")) return;
-        if (materialInstance.getMaterial_role() != MaterialRole.BASE) return;
         int nitrons = 1;
+        MaterialInstance last = null;
         for (MaterialInstance instance : materialInstances) {
-            if (instance.getMaterial().getName().equalsIgnoreCase("Nitron") && instance.getMaterial_role().equals(MaterialRole.BASE)) {
+            if (isBaseMaterial(instance, "Nitron")) {
                 nitrons++;
+                last = instance;
             }
         }
-        double random = ThreadLocalRandom.current().nextDouble(1.5, 2.5);
 
-        modInstance.multiplyFinal_value(random);
-        WeightedRandom<Boolean> positive = new WeightedRandom<>();
-        positive.add(true, 2);
-        positive.add(false, nitrons);
-        modInstance.multiplyFinal_value(positive.roll() ? 1 : -1);
+        modInstance.multiplyFinal_value(ThreadLocalRandom.current().nextDouble(1.5, 2.5));
+
+        if (materialInstance != last) return;
+
+        WeightedRandom<Boolean> negative = new WeightedRandom<>();
+        negative.add(true, 2);
+        negative.add(false, nitrons);
+        if (negative.roll()) {
+            modInstance.negativeFinal_value();
+        }
+    }
+
+    private static boolean isBaseMaterial(MaterialInstance mi, String name) {
+        return mi.getMaterial().getName().equalsIgnoreCase(name)
+                && mi.getMaterial_role() == MaterialRole.BASE;
+    }
+
+    private static boolean isBoostMaterial(MaterialInstance mi, String name) {
+        return mi.getMaterial().getName().equalsIgnoreCase(name)
+                && mi.getMaterial_role() == MaterialRole.BOOST;
     }
 
     public void setModInstance(ModInstance modInstance) {
