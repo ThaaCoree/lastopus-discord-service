@@ -18,12 +18,14 @@ public class Stasis_Shard implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         WeightedRandom<ModInstance> random = new WeightedRandom<>();
+        ModInstance instance = null;
         for (ModInstance modInstance : equipment.modInstances) {
             random.add(modInstance, 10);
         }
-        random.roll().locked = true;
+        instance = random.roll();
+        instance.locked = true;
 
-        return "สุ่มล็อกหนึ่งม็อดใน "+equipment.getName()+" แล้ว";
+        return "ล็อก "+Crafter.getModText(instance, equipment)+" แล้ว";
     }
 
     @Override

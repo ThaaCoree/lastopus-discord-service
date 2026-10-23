@@ -39,14 +39,13 @@ public class Flashing_Shard implements CatalystEffect {
             ModInstance candidate = null;
             for (int i = 0; i < 100; i++) {
                 candidate = Crafter.randomOneAvailableMod(equipment);
-                if (candidate == null) return "ลบม็อดแล้วและไม่สามารถเพิ่มม็อดได้อีก";
+                if (candidate == null) return "ลบ\n"+Crafter.getModText(rolledMod, equipment)+"แล้วแต่ไม่สามารถเพิ่มม็อดได้อีก";
                 if (candidate.getMod().getTags().contains(StatTag.STRIKE)) break;
             }
             Crafter.putInOneMod(equipment, candidate);
 
-            return "ลบม็อดที่ไม่มี Strike และเพิ่มม็อดให้กับ "+equipment.getName()+" ใหม่แล้ว";
+            return "ลบ\n"+Crafter.getModText(rolledMod, equipment)+"และเพิ่ม\n"+Crafter.getModText(candidate, equipment)+" แล้ว";
         } else {
-
             ModInstance candidate = null;
             for (int i = 0; i < 100; i++) {
                 candidate = Crafter.randomOneAvailableMod(equipment);
@@ -55,7 +54,7 @@ public class Flashing_Shard implements CatalystEffect {
             }
             Crafter.putInOneMod(equipment, candidate);
 
-            return "ม็อดที่จะลบถูกล็อกและเพิ่มม็อดให้กับ "+equipment.getName()+" ใหม่แล้ว";
+            return "ม็อดที่จะลบถูกล็อกและเพิ่มม็อด\n"+Crafter.getModText(candidate, equipment)+"แล้ว";
         }
     }
 

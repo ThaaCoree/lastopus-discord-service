@@ -902,77 +902,17 @@ public class DiscordController {
             return sb;
         }
         sb.append(item_name).append(":\n\n");
-        int max_mods = 0;
+        int max_mods = Crafter.getMaxMod(equipment);
+
         for (MaterialInstance materialInstance : equipment.getMaterialInstances()) {
             sb.append("Material : ").append(materialInstance.getMaterial().getName()).append(" [").append(materialInstance.getMaterial_role()).append("]").append("\n\n");
-            if (materialInstance.getMaterial_role() == MaterialRole.BASE) {
-                max_mods += materialInstance.getMaterial().getMaterial_max_mod();
-            }
         }
-        DecimalFormat df = new DecimalFormat("#.##");
-        int mod_count = 1;
+
         for (ModInstance modInstance : equipment.getModInstances()) {
-            sb.append(mod_count).append(". ");
-            if (modInstance.locked) {
-                sb.append( " :lock: ");
-            }
-            double minValue = modInstance.getMinRollValue(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
-            double maxValue = modInstance.getMaxRollValue(equipment.getEquipmentType(), equipment.getWeaponType(), modInstance.getMod().getModifierType());
-            double finalValue = modInstance.getFinal_value();
-
-            boolean isPercent = modInstance.getMod().isStatMod()
-                    && modInstance.getMod().getStatType().isPercentage();
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.INCREASED);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.EQUIPMENT);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE);
-            }
-
-            String minroll = isPercent ? df.format(minValue * 100) + "%" : df.format(minValue);
-            String maxroll = isPercent ? df.format(maxValue * 100) + "%" : df.format(maxValue);
-            String theroll = isPercent ? df.format(finalValue * 100) + "%" : df.format(finalValue);
-
-            sb.append("Mod : ");
-            if (modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL)) {
-                sb.append("Global ");
-            }
-            if (modInstance.getMod().getModifierType().equals(ModifierType.INCREASED)) {
-                sb.append("Increased ");
-            }
-            if (modInstance.getMod().getModifierType().equals(ModifierType.EQUIPMENT)) {
-                sb.append("Equipment ");
-            }
-            if (modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE)) {
-                sb.append("Passive ");
-            }
-                    sb.append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
-                    .append(" [").append(minroll)
-                    .append(" - (").append(theroll).append(") - ")
-                    .append(maxroll).append("]").append("\n")
-                    .append("[").append(modInstance.getPool_name()).append("]").append(" [")
-                    .append(equipment.getMaterialInstances().stream()
-                            .filter(m -> m.getMaterial_id() == modInstance.getBase_material_id())
-                            .map(m -> m.getMaterial().getName())
-                            .findFirst()
-                            .orElse("Unknown"))
-                    .append("]");
-            if (modInstance.getMod().isFixed()) {
-                sb.append(" [FIXED]");
-            }
-            if (modInstance.locked) {
-                sb.append( " [LOCKED]");
-            }
-            sb.append("\n\n");
-            mod_count++;
+            sb.append(Crafter.getModText(modInstance, equipment));
         }
-        sb.append("Total mods : [").append(mod_count-1).append("/").append(max_mods).append("]");
+
+        sb.append("Total mods : [").append(equipment.modInstances.size()).append("/").append(max_mods).append("]");
         return sb;
     }
 
