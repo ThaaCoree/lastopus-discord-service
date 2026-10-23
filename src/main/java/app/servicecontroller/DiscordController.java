@@ -754,25 +754,25 @@ public class DiscordController {
         if (unit != null) {
             CraftedEquipment equipment = unit.findCraftedEquipment(item_name);
             if (equipment == null) return "ไม่พบอุปกรณ์ดังกล่าว";
-            Item item = unit.findItemInventory(catalyst_name);
-            if (item == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
+            Item catalyst = unit.findItemInventory(catalyst_name);
+            if (catalyst == null) return "ไม่มี Catalyst นี้ในช่องเก็บของ";
 
-            ValidationResult validationResult = Crafter.checkCatalyst(catalyst_name, equipment);
+            ValidationResult validationResult = Crafter.checkCatalyst(catalyst.getName(), equipment);
             boolean success = validationResult.isSuccess();
             String check_message = validationResult.getMessage();
             if (success) {
                 StringBuilder sb = new StringBuilder();
 
-                if (!Crafter.brickCheckCatalyst(catalyst_name, equipment)) {
-                    Crafter.useCatalyst(catalyst_name, equipment);
-                    unit.getInventoryManager().removeItem(catalyst_name, 1);
+                if (!Crafter.brickCheckCatalyst(catalyst.getName(), equipment)) {
+                    String afterUse = Crafter.useCatalyst(catalyst.getName(), equipment);
+                    unit.getInventoryManager().removeItem(catalyst.getName(), 1);
                     writeintoSheet(unit);
-                    sb.append(check_message).append("\n")
-                            .append(equipment.getName()).append("\n")
+                            sb.append(equipment.getName()).append("\n")
                             .append("Equipment Type : ").append(equipment.getEquipmentType().writeAsString()).append("\n")
                             .append("Weapon Type : ").append(equipment.getWeaponType().writeAsString()).append("\n")
                             .append("Stats & Statuses : ").append("\n")
-                            .append(equipment.getStatusDescription());
+                            .append(equipment.getStatusDescription()).append("\n")
+                            .append(afterUse).append("\n");
 
                     database.allCraftedEquipments.put(equipment.getName(), equipment);
                     database.mapEverything();
@@ -780,7 +780,7 @@ public class DiscordController {
                     return sb.toString();
                 } else {
                     itemBrick(unit, equipment, 0, sb);
-                    unit.getInventoryManager().removeItem(catalyst_name, 1);
+                    unit.getInventoryManager().removeItem(catalyst.getName(), 1);
                     writeintoSheet(unit);
                     return sb.toString();
                 }

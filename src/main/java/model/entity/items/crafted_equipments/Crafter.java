@@ -401,14 +401,16 @@ public class Crafter {
         return effect.canApply(equipment);
     }
 
-    public static void useCatalyst(String catalyst_name, CraftedEquipment equipment) {
+    public static String useCatalyst(String catalyst_name, CraftedEquipment equipment) {
         CatalystFactory catalystFactory = new CatalystFactory();
         CatalystEffect effect = catalystFactory.get(catalyst_name);
-        if (effect == null) return;
+        if (effect == null) return "ไม่พบ Catalyst ในระบบ";
         if (effect.canApply(equipment).isSuccess()) {
-            effect.apply(equipment);
+            String afteruse = effect.apply(equipment);
             equipment.getCatalystInstances().add(new CatalystInstance(equipment.getNext_catalyst_idAndIncrement(), catalyst_name));
             Crafter.updateModsInCraftedEquipment(equipment);
+
+            return afteruse;
         } else {
             System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้\n" +
                     effect.canApply(equipment).getMessage());
