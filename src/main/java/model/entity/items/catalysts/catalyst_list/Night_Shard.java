@@ -20,8 +20,9 @@ public class Night_Shard implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         Set<ModInstance> lockeds = Crafter.snapshotLockedMods(equipment.getModInstances());
+        StringBuilder sb = new StringBuilder();
 
-        Crafter.craft(equipment);
+        Crafter.craft(equipment, sb);
         for (ModInstance modInstance : equipment.getModInstances()) {
             if (lockeds.contains(modInstance)) continue;
             modInstance.multiplyTier(1.5);
@@ -29,7 +30,7 @@ public class Night_Shard implements CatalystEffect {
             modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
         }
 
-        return "คราฟท์ "+equipment.getName()+" โดยม็อดที่เพิ่มมาใหม่มี Tier เพิ่มขึ้นเป็น 1.5 เท่าแล้ว";
+        return sb.toString()+"คราฟท์ "+equipment.getName()+" โดยม็อดที่เพิ่มมาใหม่มี Tier เพิ่มขึ้นเป็น 1.5 เท่าแล้ว";
     }
 
     @Override

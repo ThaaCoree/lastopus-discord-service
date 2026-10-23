@@ -213,7 +213,7 @@ public class CraftingEditPanel extends ScrollPane {
 
         Button craft = new Button("Craft");
         craft.setOnAction(e-> {
-            Crafter.craft(equipment);
+            Crafter.craft(equipment, new StringBuilder());
             showMods(show_mods, equipment);
             listPane.getListView().refresh();
         });

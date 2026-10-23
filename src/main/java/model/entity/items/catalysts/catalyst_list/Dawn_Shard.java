@@ -21,8 +21,9 @@ public class Dawn_Shard implements CatalystEffect {
         // จำม็อดล็อกไว้ก่อน เพราะ craft จะปลดล็อกพวกมัน
         // พวกนี้รอดจากการกระทำ จึงไม่ถูกดันเทียร์
         Set<ModInstance> lockeds = Crafter.snapshotLockedMods(equipment.getModInstances());
+        StringBuilder sb = new StringBuilder();
 
-        Crafter.craft(equipment);
+        Crafter.craft(equipment,sb);
 
         boolean horn = Crafter.hasHornOfLightDragon(equipment);
         for (ModInstance m : equipment.getModInstances()) {
@@ -30,7 +31,7 @@ public class Dawn_Shard implements CatalystEffect {
             setToMaxTier(equipment, m, horn);
         }
 
-        return "คราฟท์ " + equipment.getName() + " ใหม่โดยม็อดทั้งหมดเป็นเทียร์สูงสุดแล้ว";
+        return sb.toString()+"คราฟท์ " + equipment.getName() + " ใหม่โดยม็อดทั้งหมดเป็นเทียร์สูงสุดแล้ว";
     }
 
     private void setToMaxTier(CraftedEquipment equipment, ModInstance mod, boolean horn) {

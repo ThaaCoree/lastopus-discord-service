@@ -12,11 +12,11 @@ import java.util.*;
 
 public class Crafter {
 
-    public static void craft(CraftedEquipment equipment) {
+    public static void craft(CraftedEquipment equipment, StringBuilder sb) {
         // 1. craft กระทำกับทุกม็อด
         //    ตัวไม่ล็อก -> ถูกลบ, ตัวล็อก -> รอด แต่ถูกปลดล็อก
         equipment.modInstances.removeIf(
-                modInstance -> Crafter.tryAffect(modInstance, equipment, new StringBuilder())
+                modInstance -> Crafter.tryAffect(modInstance, equipment, sb)
         );
 
         // 2. id ถัดไปต้องไม่ชนกับตัวที่รอด
@@ -231,7 +231,7 @@ public class Crafter {
         ModInstance mod = randomOneAvailableMod(equipment);
         if (mod == null) return null;
         equipment.getModInstances().add(mod);
-        sb.append("เพิ่มม็อด").append(mod.toString(equipment));
+        sb.append("เพิ่มม็อด\n").append(mod.toString(equipment));
         updateModsInCraftedEquipment(equipment);
         return mod;
     }
@@ -253,7 +253,7 @@ public class Crafter {
 
         if (tryAffect(modInstances.get(pickedIndex), equipment, sb)) {
             instance = modInstances.get(pickedIndex);
-            sb.append("ลบ\n").append(instance.toString(equipment)).append("แล้ว");
+            sb.append("ลบ\n").append(instance.toString(equipment));
             modInstances.remove(pickedIndex);
         }
 
@@ -263,7 +263,7 @@ public class Crafter {
 
     public static boolean removeOneSpecificMod(CraftedEquipment equipment, ModInstance modInstance, StringBuilder sb) {
         if (Crafter.tryAffect(modInstance, equipment, sb)) {
-            sb.append("ลบ\n").append(modInstance.toString(equipment)).append("แล้ว");
+            sb.append("ลบ\n").append(modInstance.toString(equipment));
             equipment.modInstances.remove(modInstance);
             return true;
         } else {
@@ -399,7 +399,7 @@ public class Crafter {
     public static boolean tryAffect(ModInstance modInstance, CraftedEquipment equipment, StringBuilder sb) {
         if (modInstance.locked) {
             unlockMod(modInstance);
-            sb.append("ม็อด\n").append(modInstance.toString(equipment)).append(" ถูกปลดล็อก\n");
+            sb.append("ม็อด\n").append(modInstance.toString(equipment)).append("ถูกปลดล็อก\n");
             return false;
         }
         return true;

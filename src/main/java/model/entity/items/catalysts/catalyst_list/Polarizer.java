@@ -34,17 +34,17 @@ public class Polarizer implements CatalystEffect {
         }
 
         mod_count /= 2;
+        sb.append("ม็อดที่ถูกสลับแล้ว : \n");
         for (int i = 0; i < mod_count; i++) {
             ModInstance modInstance = random_mod.rollAndRemove();
             if (!Crafter.tryAffect(modInstance, equipment, sb)) continue;
             if (i < 2) {
-                if (modInstance.getFinal_value() > 0) {
-                    modInstance.multiplyFinal_value(-1);
-                }
+                modInstance.negativeFinal_value();
+                sb.append(modInstance.toString(equipment)).append(" (กลายเป็นติดลบจากผลของ Polarizer)");
             } else {
                 modInstance.multiplyFinal_value(-1);
+                sb.append(modInstance.toString(equipment));
             }
-            sb.append("ม็อดที่ถูกสลับแล้ว :\n").append(modInstance.toString(equipment));
         }
 
         return sb.toString();

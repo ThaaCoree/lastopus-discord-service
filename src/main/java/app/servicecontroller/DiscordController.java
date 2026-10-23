@@ -718,7 +718,7 @@ public class DiscordController {
                 equipment.addMaterial(material, MaterialRole.BOOST);
                 unit.getInventoryManager().removeItem(material_name, 1);
             }
-            Crafter.craft(equipment);
+            Crafter.craft(equipment, new StringBuilder());
             unit.getInventoryManager().addItem(equipment, 1);
 
             StringBuilder sb = new StringBuilder();

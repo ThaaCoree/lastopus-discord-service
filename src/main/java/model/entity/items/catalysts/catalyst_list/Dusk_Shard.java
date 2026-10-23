@@ -20,15 +20,15 @@ public class Dusk_Shard implements CatalystEffect {
     public String apply(CraftedEquipment equipment) {
         // ต้อง snapshot ก่อน craft เพราะ craft จะปลดล็อกม็อดล็อก
         Set<ModInstance> lockeds = Crafter.snapshotLockedMods(equipment.getModInstances());
-
-        Crafter.craft(equipment);
+        StringBuilder sb = new StringBuilder();
+        Crafter.craft(equipment, sb);
 
         for (ModInstance modInstance : equipment.getModInstances()) {
             if (lockeds.contains(modInstance)) continue;
             modInstance.multiplyFinal_value(1.2);
         }
 
-        return "คราฟท์ " + equipment.getName() + " ใหม่โดยเพิ่มค่าตัวเลขให้กับทุกม็อด 20% แล้ว";
+        return sb.toString()+"คราฟท์ " + equipment.getName() + " ใหม่โดยเพิ่มค่าตัวเลขให้กับทุกม็อด 20% แล้ว";
     }
 
     @Override

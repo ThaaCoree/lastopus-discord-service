@@ -15,9 +15,10 @@ public class catalyst_template implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        Crafter.craft(equipment);
+        StringBuilder sb = new StringBuilder();
+        Crafter.craft(equipment, sb);
 
-        return "คราฟท์ "+equipment.getName()+" ใหม่แล้ว";
+        return sb.toString();
     }
 
     @Override

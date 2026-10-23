@@ -41,7 +41,7 @@ public class Small_Flux implements CatalystEffect {
                 modInstance.getMod().modifierTypePercentage()) {
             new_roll*=100;
         }
-        sb.append("[").append(old_roll).append(" -> ").append(new_roll).append("]");
+        sb.append("[").append(df.format(old_roll)).append(" -> ").append(df.format(new_roll)).append("]\n");
 
         return sb.toString();
     }
