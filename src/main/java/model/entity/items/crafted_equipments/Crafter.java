@@ -414,6 +414,8 @@ public class Crafter {
         } else {
             System.out.println("Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้\n" +
                     effect.canApply(equipment).getMessage());
+            
+            return "Catalyst ดังกล่าวใช้งานกับไอเทมนี้ไม่ได้";
         }
     }
 

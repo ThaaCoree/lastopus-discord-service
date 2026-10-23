@@ -23002,24 +23002,16 @@
     "weaponType" : "WAND",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALATTACK" : {
-          "flat" : 6.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "HEALAMPLIFIER" : {
-          "flat" : 0.04,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.0,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
         "PHYSICALATTACK" : {
           "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 6.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -23068,6 +23060,14 @@
         },
         "MOVEMENTSPEED" : {
           "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "HEALAMPLIFIER" : {
+          "flat" : 0.04,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -23510,24 +23510,16 @@
       }
     },
     "statModifiers" : {
-      "MAGICALATTACK" : {
-        "flat" : 6.0,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
-      "HEALAMPLIFIER" : {
-        "flat" : 0.04,
-        "mult" : 0.0,
-        "override" : "NaN",
-        "globalMult" : 0.0,
-        "equipmentMult" : 0.0,
-        "passiveMult" : 0.0
-      },
       "PHYSICALATTACK" : {
         "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALATTACK" : {
+        "flat" : 6.0,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -23576,6 +23568,14 @@
       },
       "MOVEMENTSPEED" : {
         "flat" : 0.0,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "HEALAMPLIFIER" : {
+        "flat" : 0.04,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
