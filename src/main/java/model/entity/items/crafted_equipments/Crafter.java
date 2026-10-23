@@ -459,7 +459,7 @@ public class Crafter {
             String maxroll = isPercent ? df.format(maxValue * 100) + "%" : df.format(maxValue);
             String theroll = isPercent ? df.format(finalValue * 100) + "%" : df.format(finalValue);
 
-            sb.append("Mod : ");
+            sb.append("**Mod : ");
             if (modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL)) {
                 sb.append("Global ");
             }
@@ -472,7 +472,7 @@ public class Crafter {
             if (modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE)) {
                 sb.append("Passive ");
             }
-            sb.append(modInstance.getMod().getAffectingModString()).append(" [Tier ").append(modInstance.getTier()).append("]")
+            sb.append(modInstance.getMod().getAffectingModString()).append("** [Tier ").append(modInstance.getTier()).append("]")
                     .append(" [").append(minroll)
                     .append(" - (").append(theroll).append(") - ")
                     .append(maxroll).append("]").append("\n")
@@ -489,7 +489,7 @@ public class Crafter {
             if (modInstance.locked) {
                 sb.append( " [LOCKED]");
             }
-            sb.append("\n");
+            sb.append("\n\n");
         }
 
         return sb.toString();
