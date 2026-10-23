@@ -15,7 +15,9 @@ public class Crafter {
     public static void craft(CraftedEquipment equipment) {
         // 1. craft กระทำกับทุกม็อด
         //    ตัวไม่ล็อก -> ถูกลบ, ตัวล็อก -> รอด แต่ถูกปลดล็อก
-        equipment.modInstances.removeIf(Crafter::tryAffect);
+        equipment.modInstances.removeIf(
+                modInstance -> Crafter.tryAffect(modInstance, equipment, new StringBuilder())
+        );
 
         // 2. id ถัดไปต้องไม่ชนกับตัวที่รอด
         equipment.mod_id = equipment.modInstances.stream()
@@ -225,15 +227,16 @@ public class Crafter {
         }
     }
 
-    public static ModInstance addOneRandomMod(CraftedEquipment equipment) {
+    public static ModInstance addOneRandomMod(CraftedEquipment equipment, StringBuilder sb) {
         ModInstance mod = randomOneAvailableMod(equipment);
         if (mod == null) return null;
         equipment.getModInstances().add(mod);
+        sb.append("เพิ่มม็อด").append(mod.toString(equipment));
         updateModsInCraftedEquipment(equipment);
         return mod;
     }
 
-    public static boolean removeOneRandomMod(CraftedEquipment equipment) {
+    public static ModInstance removeOneRandomMod(CraftedEquipment equipment, StringBuilder sb) {
         List<ModInstance> modInstances = equipment.getModInstances();
 
         List<Integer> removableIndices = new ArrayList<>();
@@ -242,21 +245,25 @@ public class Crafter {
                 removableIndices.add(i);
             }
         }
-        if (removableIndices.isEmpty()) return false;
+        if (removableIndices.isEmpty()) return null;
 
         int pickedIndex = removableIndices.get(new Random().nextInt(removableIndices.size()));
         boolean removed = false;
-        if (tryAffect(modInstances.get(pickedIndex))) {
+        ModInstance instance = null;
+
+        if (tryAffect(modInstances.get(pickedIndex), equipment, sb)) {
+            instance = modInstances.get(pickedIndex);
+            sb.append("ลบ\n").append(instance.toString(equipment)).append("แล้ว");
             modInstances.remove(pickedIndex);
-            removed = true;
         }
 
         updateModsInCraftedEquipment(equipment);
-        return removed;
+        return instance;
     }
 
-    public static boolean removeOneSpecificMod(CraftedEquipment equipment, ModInstance modInstance) {
-        if (Crafter.tryAffect(modInstance)) {
+    public static boolean removeOneSpecificMod(CraftedEquipment equipment, ModInstance modInstance, StringBuilder sb) {
+        if (Crafter.tryAffect(modInstance, equipment, sb)) {
+            sb.append("ลบ\n").append(modInstance.toString(equipment)).append("แล้ว");
             equipment.modInstances.remove(modInstance);
             return true;
         } else {
@@ -264,8 +271,9 @@ public class Crafter {
         }
     }
 
-    public static void putInOneMod(CraftedEquipment equipment, ModInstance modInstance) {
+    public static void putInOneMod(CraftedEquipment equipment, ModInstance modInstance, StringBuilder sb) {
         equipment.getModInstances().add(modInstance);
+        sb.append("เพิ่มม็อด\n").append(modInstance.toString(equipment));
         updateModsInCraftedEquipment(equipment);
     }
 
@@ -388,9 +396,10 @@ public class Crafter {
         return locked;
     }
 
-    public static boolean tryAffect(ModInstance modInstance) {
+    public static boolean tryAffect(ModInstance modInstance, CraftedEquipment equipment, StringBuilder sb) {
         if (modInstance.locked) {
             unlockMod(modInstance);
+            sb.append("ม็อด\n").append(modInstance.toString(equipment)).append(" ถูกปลดล็อก\n");
             return false;
         }
         return true;
@@ -431,7 +440,7 @@ public class Crafter {
         DecimalFormat df = new DecimalFormat("#.##");
         StringBuilder sb = new StringBuilder();
         {
-            int mod_count = equipment.getModInstances().indexOf(modInstance);
+            int mod_count = equipment.getModInstances().indexOf(modInstance)+1 ;
             sb.append(mod_count).append(". ");
             if (modInstance.locked) {
                 sb.append( " :lock: ");
@@ -443,16 +452,7 @@ public class Crafter {
             boolean isPercent = modInstance.getMod().isStatMod()
                     && modInstance.getMod().getStatType().isPercentage();
             if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.GLOBAL);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.INCREASED);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.EQUIPMENT);
-            }
-            if (!isPercent) {
-                isPercent = modInstance.getMod().getModifierType().equals(ModifierType.PASSIVE);
+                isPercent = modInstance.getMod().modifierTypePercentage();
             }
 
             String minroll = isPercent ? df.format(minValue * 100) + "%" : df.format(minValue);

@@ -23,6 +23,7 @@ public class Splintering_Shard implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         WeightedRandom<ModInstance> lockedMods = new WeightedRandom<>();
+        StringBuilder sb = new StringBuilder();
         for (ModInstance modInstance : equipment.modInstances) {
             if (modInstance.locked) {
                 lockedMods.add(modInstance, 10);
@@ -31,7 +32,7 @@ public class Splintering_Shard implements CatalystEffect {
 
         ModInstance rolledMod = lockedMods.roll();
         int tier = rolledMod.getTier();
-        Crafter.unlockMod(rolledMod);
+        Crafter.tryAffect(rolledMod, equipment, sb);
 
         WeightedRandom<ModInstance> removingMods = new WeightedRandom<>();
         for (ModInstance modInstance : equipment.modInstances) {
@@ -41,14 +42,11 @@ public class Splintering_Shard implements CatalystEffect {
             }
         }
         if (removingMods.isEmpty()) {
-            return "การลบไม่เกิดขึ้น ไม่มีม็อด Tier ต่ำกว่าให้ลบ";
+            return sb.append("การลบไม่เกิดขึ้น ไม่มีม็อด Tier ต่ำกว่าให้ลบ").toString();
         }
 
-        if (Crafter.removeOneSpecificMod(equipment, removingMods.roll())) {
-            return "ลบม็อดออกจาก "+equipment.getName()+" แล้ว";
-        } else {
-            return "ไม่มีม็อดที่ถูกลบได้ใน "+equipment.getName();
-        }
+        Crafter.removeOneSpecificMod(equipment, removingMods.roll(), sb);
+        return sb.toString();
     }
 
     @Override

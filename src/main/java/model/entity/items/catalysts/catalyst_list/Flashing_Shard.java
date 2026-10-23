@@ -26,6 +26,7 @@ public class Flashing_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
+        StringBuilder sb = new StringBuilder();
         WeightedRandom<ModInstance> strikeMods = new WeightedRandom<>();
         for (ModInstance modInstance : equipment.modInstances) {
             if (!modInstance.getMod().getTags().contains(StatTag.STRIKE) && !modInstance.fixed) {
@@ -34,27 +35,31 @@ public class Flashing_Shard implements CatalystEffect {
         }
 
         ModInstance rolledMod = strikeMods.rollAndRemove();
-        if (Crafter.tryAffect(rolledMod)) {
+        if (Crafter.tryAffect(rolledMod, equipment, sb)) {
+            sb.append("ลบ\n").append(rolledMod.toString(equipment)).append("แล้ว");
             equipment.modInstances.remove(rolledMod);
             ModInstance candidate = null;
             for (int i = 0; i < 100; i++) {
                 candidate = Crafter.randomOneAvailableMod(equipment);
-                if (candidate == null) return "ลบ\n"+Crafter.getModText(rolledMod, equipment)+"แล้วแต่ไม่สามารถเพิ่มม็อดได้อีก";
+                if (candidate == null) {
+                    sb.append("แต่ไม่สามารถเพิ่มม็อดได้อีก");
+                    return sb.toString();
+                }
                 if (candidate.getMod().getTags().contains(StatTag.STRIKE)) break;
             }
-            Crafter.putInOneMod(equipment, candidate);
+            Crafter.putInOneMod(equipment, candidate, sb);
 
-            return "ลบ\n"+Crafter.getModText(rolledMod, equipment)+"และเพิ่ม\n"+Crafter.getModText(candidate, equipment)+" แล้ว";
+            return sb.toString();
         } else {
             ModInstance candidate = null;
             for (int i = 0; i < 100; i++) {
                 candidate = Crafter.randomOneAvailableMod(equipment);
-                if (candidate == null) return "ม็อดที่จะลบถูกล็อกและไม่สามารถเพิ่มม็อดได้อีก";
+                if (candidate == null) return sb.append("ไม่สามารถเพิ่มม็อดได้อีก").toString();
                 if (candidate.getMod().getTags().contains(StatTag.STRIKE)) break;
             }
-            Crafter.putInOneMod(equipment, candidate);
+            Crafter.putInOneMod(equipment, candidate, sb);
 
-            return "ม็อดที่จะลบถูกล็อกและเพิ่มม็อด\n"+Crafter.getModText(candidate, equipment)+"แล้ว";
+            return sb.toString();
         }
     }
 

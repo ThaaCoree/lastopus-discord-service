@@ -23,8 +23,8 @@ public class Sharp_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-
         WeightedRandom<ModInstance> strikeMods = new WeightedRandom<>();
+        StringBuilder sb = new StringBuilder();
         for (ModInstance modInstance : equipment.modInstances) {
             if (!modInstance.getMod().getTags().contains(StatTag.STRIKE) && !modInstance.fixed) {
                 strikeMods.add(modInstance, 10);
@@ -32,14 +32,11 @@ public class Sharp_Shard implements CatalystEffect {
         }
 
         ModInstance rolledMod = strikeMods.rollAndRemove();
-        if (Crafter.tryAffect(rolledMod)) {
-            equipment.modInstances.remove(rolledMod);
-
-            return "ลบม็อดออกจาก "+equipment.getName()+" แล้ว";
-        } else {
-
-            return "ม็อดที่จะลบถูกล็อก";
+        if (Crafter.tryAffect(rolledMod, equipment, sb)) {
+            Crafter.removeOneSpecificMod(equipment,rolledMod, sb);
         }
+
+        return sb.toString();
     }
 
     @Override

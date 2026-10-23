@@ -25,7 +25,7 @@ public class Stasis_Shard implements CatalystEffect {
         instance = random.roll();
         instance.locked = true;
 
-        return "ล็อก "+Crafter.getModText(instance, equipment)+" แล้ว";
+        return "ล็อก\n"+Crafter.getModText(instance, equipment)+" แล้ว";
     }
 
     @Override

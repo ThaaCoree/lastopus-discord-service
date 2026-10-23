@@ -19,9 +19,10 @@ public class Infusion_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        Crafter.addOneRandomMod(equipment);
+        StringBuilder sb = new StringBuilder();
+        Crafter.addOneRandomMod(equipment, sb);
 
-        return "เพิ่มม็อดให้กับ "+equipment.getName()+" แล้ว";
+        return sb.toString();
     }
 
     @Override

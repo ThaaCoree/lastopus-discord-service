@@ -168,4 +168,8 @@ public class ModInstance {
     public void setTier(int tier) {
         this.tier = tier;
     }
+
+    public String toString(CraftedEquipment equipment) {
+        return Crafter.getModText(this, equipment);
+    }
 }

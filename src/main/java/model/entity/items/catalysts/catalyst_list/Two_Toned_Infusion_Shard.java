@@ -20,14 +20,15 @@ public class Two_Toned_Infusion_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        boolean removed = Crafter.removeOneRandomMod(equipment);
-        if (!removed) {
-            return "ไม่มีม็อดถูกลบ (ม็อดที่ถูกเลือกล็อกอยู่และถูกปลดล็อกแล้ว หรือไม่มีม็อดที่ลบได้)";
+        StringBuilder sb = new StringBuilder();
+        ModInstance removed = Crafter.removeOneRandomMod(equipment, sb);
+        if (removed == null) {
+            return sb.toString();
         }
 
-        ModInstance added = Crafter.addOneRandomMod(equipment);
+        ModInstance added = Crafter.addOneRandomMod(equipment, sb);
         if (added == null) {
-            return "ลบม็อดแล้ว แต่ไม่มีม็อดให้เพิ่มใหม่";
+            return sb.append("ไม่มีม็อดให้เพิ่ม").toString();
         }
 
         int tier = added.getTier();
@@ -35,12 +36,14 @@ public class Two_Toned_Infusion_Shard implements CatalystEffect {
         boolean two_handed = equipment.getWeaponType().twoHanded();
         if (ThreadLocalRandom.current().nextBoolean()) {
             added.setBase_rolled(added.getMod().getMaxModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
+            sb.append("ม็อดถูกเปลี่ยนรีโรลให้กลายเป็นตัวเลขสูงสุด");
         } else {
             added.setBase_rolled(added.getMod().getMinModValueByTier(tier, equipment.getEquipmentType(), two_handed, modifierType));
+            sb.append("ม็อดถูกเปลี่ยนรีโรลให้กลายเป็นตัวเลขต่ำสุด");
         }
         added.resetFinalValue(equipment.getMaterialInstances(), added);
 
-        return "ลบม็อดและเพิ่มใหม่ให้กับ " + equipment.getName() + " แล้ว";
+        return sb.toString();
     }
 
     @Override

@@ -160,6 +160,15 @@ public class CraftedMod {
         this.negative = negative;
     }
 
+    public boolean modifierTypePercentage() {
+        if (modifierType.equals(ModifierType.GLOBAL)) return true;
+        if (modifierType.equals(ModifierType.INCREASED)) return true;
+        if (modifierType.equals(ModifierType.EQUIPMENT)) return true;
+        if (modifierType.equals(ModifierType.PASSIVE)) return true;
+
+        return false;
+    }
+
     public ModifierType getModifierType() {
         return modifierType;
     }

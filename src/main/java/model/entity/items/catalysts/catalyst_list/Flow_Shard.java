@@ -15,9 +15,10 @@ public class Flow_Shard implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
-        Crafter.removeOneRandomMod(equipment);
+        StringBuilder sb = new StringBuilder();
+        Crafter.removeOneRandomMod(equipment, sb);
 
-        return "ลบม็อดออกจาก "+equipment.getName()+" แล้ว";
+        return sb.toString();
     }
 
     @Override

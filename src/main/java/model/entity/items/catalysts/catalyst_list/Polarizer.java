@@ -26,6 +26,7 @@ public class Polarizer implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         WeightedRandom<ModInstance> random_mod = new WeightedRandom<>();
+        StringBuilder sb = new StringBuilder();
         int mod_count = 0;
         for (ModInstance modInstance : equipment.getModInstances()) {
             random_mod.add(modInstance, 10);
@@ -35,7 +36,7 @@ public class Polarizer implements CatalystEffect {
         mod_count /= 2;
         for (int i = 0; i < mod_count; i++) {
             ModInstance modInstance = random_mod.rollAndRemove();
-            if (!Crafter.tryAffect(modInstance)) continue;
+            if (!Crafter.tryAffect(modInstance, equipment, sb)) continue;
             if (i < 2) {
                 if (modInstance.getFinal_value() > 0) {
                     modInstance.multiplyFinal_value(-1);
@@ -43,9 +44,10 @@ public class Polarizer implements CatalystEffect {
             } else {
                 modInstance.multiplyFinal_value(-1);
             }
+            sb.append("ม็อดที่ถูกสลับแล้ว :\n").append(modInstance.toString(equipment));
         }
 
-        return "สลับค่าใน "+equipment.getName()+" แล้ว";
+        return sb.toString();
     }
 
     @Override

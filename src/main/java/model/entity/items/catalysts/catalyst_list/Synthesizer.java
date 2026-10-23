@@ -19,6 +19,7 @@ public class Synthesizer implements CatalystEffect {
 
     @Override
     public String apply(CraftedEquipment equipment) {
+        StringBuilder sb = new StringBuilder();
         ModInstance mod1 = Crafter.randomOneAvailableMod(equipment);
         ModInstance mod2 = Crafter.randomOneAvailableMod(equipment);
 
@@ -30,9 +31,9 @@ public class Synthesizer implements CatalystEffect {
         } else {
             mod_final = mod2;
         }
-        Crafter.putInOneMod(equipment, mod_final);
+        Crafter.putInOneMod(equipment, mod_final, sb);
 
-        return "เพิ่มม็อดให้กับ "+equipment.getName()+" แล้ว";
+        return sb.toString();
     }
 
     @Override

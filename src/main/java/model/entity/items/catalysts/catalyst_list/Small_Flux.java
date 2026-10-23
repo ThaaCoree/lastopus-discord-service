@@ -7,6 +7,8 @@ import model.entity.items.crafted_equipments.Crafter;
 import model.entity.items.crafted_equipments.ModInstance;
 import util.WeightedRandom;
 
+import java.text.DecimalFormat;
+
 public class Small_Flux implements CatalystEffect {
     String catalyst_name = "Small Flux";
 
@@ -18,16 +20,30 @@ public class Small_Flux implements CatalystEffect {
     @Override
     public String apply(CraftedEquipment equipment) {
         WeightedRandom<ModInstance> weightedRandom = new WeightedRandom<>();
-
+        StringBuilder sb = new StringBuilder();
         for (ModInstance modInstance : equipment.getModInstances()) {
             weightedRandom.add(modInstance, 100);
         }
 
-        ModInstance modifying = weightedRandom.roll();
-        if (!Crafter.tryAffect(modifying)) return "ม็อดถูกล็อก";
-        modifying.rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
+        ModInstance modInstance = weightedRandom.roll();
+        if (!Crafter.tryAffect(modInstance, equipment, sb)) return "ม็อดถูกล็อก";
 
-        return "รีโรลค่าของหนึ่งม็อดใน "+equipment.getName()+" แล้ว";
+        sb.append("รีโรลค่าของ\n").append(modInstance.toString(equipment));
+        DecimalFormat df = new DecimalFormat("#.##");
+        double old_roll = modInstance.final_value;
+        if (modInstance.getMod().isStatMod() && modInstance.getMod().getStatType().isPercentage() ||
+                modInstance.getMod().modifierTypePercentage()) {
+            old_roll*=100;
+        }
+        modInstance.rerollBaseAndFinal(equipment.getEquipmentType(), equipment.getWeaponType().twoHanded());
+        double new_roll = modInstance.final_value;
+        if (modInstance.getMod().isStatMod() && modInstance.getMod().getStatType().isPercentage() ||
+                modInstance.getMod().modifierTypePercentage()) {
+            new_roll*=100;
+        }
+        sb.append("[").append(old_roll).append(" -> ").append(new_roll).append("]");
+
+        return sb.toString();
     }
 
     @Override

@@ -29,7 +29,7 @@ public class Night_Shard implements CatalystEffect {
             modInstance.resetFinalValue(equipment.getMaterialInstances(), modInstance);
         }
 
-        return "คราฟท์ "+equipment.getName()+" ใหม่โดยมี Tier เพิ่มขึ้นเป็น 1.5 เท่าแล้ว";
+        return "คราฟท์ "+equipment.getName()+" โดยม็อดที่เพิ่มมาใหม่มี Tier เพิ่มขึ้นเป็น 1.5 เท่าแล้ว";
     }
 
     @Override
