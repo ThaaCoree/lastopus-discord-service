@@ -17,7 +17,7 @@ public class Destiny_Born extends Skill {
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.35);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.01*(1+LUK*0.25)"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.01*(1+LUK*0.08)"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.CRITICAL);
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").setPercent(true);

@@ -25,7 +25,7 @@ public class Wrath_Of_Blaze extends Skill {
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.4);
-        getSkillMultiplier().put("XA",new SkillMultiplier("2*PATK + 2*RATK + 2*MATK"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("0.65*PATK + 0.2*RATK + 0.65*MATK"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").getTags().add(SkillType.STRIKE);
     }

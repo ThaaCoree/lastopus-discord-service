@@ -13389,6 +13389,62 @@
     "material_max_mod" : 6,
     "reveal_usage" : false,
     "pools" : {
+      "Brittle" : {
+        "pool" : {
+          "pool_name" : "Brittle",
+          "weaponMods" : [ {
+            "statType" : "PHYSICALATTACK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "RANGEDATTACK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "armorMods" : [ {
+            "statType" : "PHYSICALBLOCK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALBLOCK",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 700,
+            "fixed" : false
+          }, {
+            "statType" : "PHYSICALDEFENSE",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          }, {
+            "statType" : "MAGICALDEFENSE",
+            "statusType" : null,
+            "negative" : true,
+            "modifierType" : "FLAT",
+            "weight" : 1000,
+            "fixed" : false
+          } ],
+          "accessoryMods" : [ ],
+          "can_duplicate_mod" : true,
+          "description" : "",
+          "fixed_mods_description" : ""
+        },
+        "minTier" : 9,
+        "maxTier" : 12,
+        "maxModsAllowed" : 3
+      },
       "Mana Reactive" : {
         "pool" : {
           "pool_name" : "Mana Reactive",
@@ -13478,63 +13534,7 @@
         },
         "minTier" : 9,
         "maxTier" : 12,
-        "maxModsAllowed" : 6
-      },
-      "Brittle" : {
-        "pool" : {
-          "pool_name" : "Brittle",
-          "weaponMods" : [ {
-            "statType" : "PHYSICALATTACK",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 1000,
-            "fixed" : false
-          }, {
-            "statType" : "RANGEDATTACK",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 1000,
-            "fixed" : false
-          } ],
-          "armorMods" : [ {
-            "statType" : "PHYSICALBLOCK",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 700,
-            "fixed" : false
-          }, {
-            "statType" : "MAGICALBLOCK",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 700,
-            "fixed" : false
-          }, {
-            "statType" : "PHYSICALDEFENSE",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 1000,
-            "fixed" : false
-          }, {
-            "statType" : "MAGICALDEFENSE",
-            "statusType" : null,
-            "negative" : true,
-            "modifierType" : "FLAT",
-            "weight" : 1000,
-            "fixed" : false
-          } ],
-          "accessoryMods" : [ ],
-          "can_duplicate_mod" : true,
-          "description" : "",
-          "fixed_mods_description" : ""
-        },
-        "minTier" : 9,
-        "maxTier" : 12,
-        "maxModsAllowed" : 3
+        "maxModsAllowed" : 5
       }
     },
     "modBoost" : {

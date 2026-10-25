@@ -25,7 +25,7 @@ public class Malice_Eater extends Skill {
         setCooldown(1);
         setManaReservePercent(0.1);
         setCooldown_can_change(false);
-        getSkillMultiplier().put("XA",new SkillMultiplier("0.4*PATK + 0.4*MATK + 0.4*RATK"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("1.2*PATK + 1.2*MATK + 1.2*RATK"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.STRIKE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
 

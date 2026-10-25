@@ -26,13 +26,13 @@ public class Sword_Of_God_Farlai extends Skill {
         setManaCost(0);
         setCooldown(0);
         setManaReservePercent(0.1);
-        getSkillMultiplier().put("XA",new SkillMultiplier("1.75"));
+        getSkillMultiplier().put("XA",new SkillMultiplier("2.35"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XA").getTags().add(SkillType.FIGHTING_STYLE);
         getSkillMultiplier().get("XA").getTags().add(SkillType.LIMIT);
         getSkillMultiplier().get("XA").setPercent(true);
 
-        getSkillMultiplier().put("XB",new SkillMultiplier("0.25"));
+        getSkillMultiplier().put("XB",new SkillMultiplier("0.3"));
         getSkillMultiplier().get("XB").getTags().add(SkillType.SCALING);
         getSkillMultiplier().get("XB").getTags().add(SkillType.FIGHTING_STYLE);
         getSkillMultiplier().get("XB").getTags().add(SkillType.LIMIT);

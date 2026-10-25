@@ -53,10 +53,18 @@ public class Pre_Battle_Setup extends Skill implements SkillWithCondition {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
+        for (Unit ally : getAllies(combatFlow)) {
+            ConditionManager.removeCondition(ally, "Pre-Setup");
+        }
         int duration = 99;
         Conditions condition = combatFlow.findCondition("Pre-Setup");
         sendActionEvent(combatFlow.getEventBus(),
                 ActionEvent.builder(getName(),getUser(), getAllies(combatFlow))
+                        .condition(condition, duration)
+                        .addActType(ActType.SKILL_TRIGGER, ActType.CONDITION_GIVEN)
+                        .build());
+        sendActionEvent(combatFlow.getEventBus(),
+                ActionEvent.builder(getName(),getUser(), getUser())
                         .condition(condition, duration)
                         .addActType(ActType.SKILL_TRIGGER, ActType.CONDITION_GIVEN)
                         .build());
