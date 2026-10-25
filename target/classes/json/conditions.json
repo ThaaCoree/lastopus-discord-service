@@ -35861,122 +35861,6 @@
     "conditionType" : "BUFF",
     "conditionTierType" : "ADVANCED"
   },
-  "Golden Blessing" : {
-    "name" : "Golden Blessing",
-    "description" : "ได้รับ Action 1.0 หน่วย",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Divine Critical" : {
-    "name" : "Divine Critical",
-    "description" : "",
-    "statusDescription" : "31.77% Global CritChance\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "CRITCHANCE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.3177223856742291,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "BUFF",
-    "conditionTierType" : "UNDISPELLABLE"
-  },
-  "Fickle Fate" : {
-    "name" : "Fickle Fate",
-    "description" : "ไม่สามารถใช้งานแอคชันได้",
-    "statusDescription" : "\n",
-    "modifiers" : {
-      "statModifiers" : { },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Fate Fracture" : {
-    "name" : "Fate Fracture",
-    "description" : "",
-    "statusDescription" : "62.71% Global PDEF\n62.71% Global MDEF\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.6271272340088028,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALDEFENSE" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.6271272340088028,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
-  },
-  "Twisted Fate" : {
-    "name" : "Twisted Fate",
-    "description" : "",
-    "statusDescription" : "27.51% Global PATK\n27.51% Global MATK\n27.51% Global RATK\n\n",
-    "modifiers" : {
-      "statModifiers" : {
-        "PHYSICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.2750558043898258,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "MAGICALATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.2750558043898258,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        },
-        "RANGEDATTACK" : {
-          "flat" : 0.0,
-          "mult" : 0.0,
-          "override" : "NaN",
-          "globalMult" : 0.2750558043898258,
-          "equipmentMult" : 0.0,
-          "passiveMult" : 0.0
-        }
-      },
-      "statusModifiers" : { },
-      "transferModifiers" : { },
-      "skillModifiers" : { }
-    },
-    "conditionType" : "DEBUFF",
-    "conditionTierType" : "BOUND"
-  },
   "Shadow Field" : {
     "name" : "Shadow Field",
     "description" : "",
@@ -38454,10 +38338,10 @@
   "Venom Sip" : {
     "name" : "Venom Sip",
     "description" : "",
-    "statusDescription" : "600% Global MDEF\n600% Global PDEF\n\n",
+    "statusDescription" : "600% Global PDEF\n600% Global MDEF\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALDEFENSE" : {
+        "PHYSICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -38465,7 +38349,7 @@
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "PHYSICALDEFENSE" : {
+        "MAGICALDEFENSE" : {
           "flat" : 0.0,
           "mult" : 0.0,
           "override" : "NaN",
@@ -38522,19 +38406,19 @@
   "Pre-Setup" : {
     "name" : "Pre-Setup",
     "description" : "",
-    "statusDescription" : "0.7 Speed\n1 Evasion\n\n",
+    "statusDescription" : "1 Evasion\n0.7 Speed\n\n",
     "modifiers" : {
       "statModifiers" : {
-        "SPEED" : {
-          "flat" : 0.7000000000000001,
+        "EVASION" : {
+          "flat" : 1.0,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "EVASION" : {
-          "flat" : 1.0,
+        "SPEED" : {
+          "flat" : 0.7000000000000001,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -38561,5 +38445,121 @@
     },
     "conditionType" : "NEUTRAL",
     "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Golden Blessing" : {
+    "name" : "Golden Blessing",
+    "description" : "ได้รับ Action 1.0 หน่วย",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Divine Critical" : {
+    "name" : "Divine Critical",
+    "description" : "",
+    "statusDescription" : "34.99% Global CritChance\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "CRITCHANCE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.3499168619369553,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "BUFF",
+    "conditionTierType" : "UNDISPELLABLE"
+  },
+  "Fickle Fate" : {
+    "name" : "Fickle Fate",
+    "description" : "ไม่สามารถใช้งานแอคชันได้",
+    "statusDescription" : "\n",
+    "modifiers" : {
+      "statModifiers" : { },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Fate Fracture" : {
+    "name" : "Fate Fracture",
+    "description" : "",
+    "statusDescription" : "66.48% Global PDEF\n66.48% Global MDEF\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "PHYSICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.6648420376802151,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALDEFENSE" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.6648420376802151,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
+  },
+  "Twisted Fate" : {
+    "name" : "Twisted Fate",
+    "description" : "",
+    "statusDescription" : "29.16% Global RATK\n29.16% Global PATK\n29.16% Global MATK\n\n",
+    "modifiers" : {
+      "statModifiers" : {
+        "RANGEDATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2915973849474628,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "PHYSICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2915973849474628,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALATTACK" : {
+          "flat" : 0.0,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.2915973849474628,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : { },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "conditionType" : "DEBUFF",
+    "conditionTierType" : "BOUND"
   }
 }

@@ -3,7 +3,7 @@ package manager;
 import model.entity.items.Item;
 import model.entity.units.Unit;
 
-import java.util.Map;
+import java.util.*;
 
 public class InventoryManager {
     Unit unit;
@@ -191,5 +191,30 @@ public class InventoryManager {
 
     public Integer getQuantityFromInventory(int slotNum) {
         return unit.getInventoryItemAmount().get(slotNum);
+    }
+
+    public void sortInventories() {
+        List<Map.Entry<Item, Integer>> entries = new ArrayList<>();
+
+        for (Map.Entry<Integer, Item> e : unit.getInventoryItems().entrySet()) {
+            int slot = e.getKey();
+            Integer amount = unit.getInventoryItemAmount().get(slot);
+            entries.add(new AbstractMap.SimpleEntry<>(e.getValue(), amount == null ? 0 : amount));
+        }
+
+        entries.sort(Comparator
+                .comparing((Map.Entry<Item, Integer> e) -> e.getKey().getName().isEmpty()) // ช่องว่างไปท้าย
+                .thenComparing(e -> e.getKey().getItemType())
+                .thenComparing(e -> e.getKey().getName()));
+
+        unit.getInventoryItems().clear();
+        unit.getInventoryItemAmount().clear();
+
+        int slot = 0;
+        for (Map.Entry<Item, Integer> e : entries) {
+            unit.getInventoryItems().put(slot, e.getKey());
+            unit.getInventoryItemAmount().put(slot, e.getValue());
+            slot++;
+        }
     }
 }

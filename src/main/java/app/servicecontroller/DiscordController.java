@@ -366,12 +366,30 @@ public class DiscordController {
         Unit updater = database.findPlayer(name);
 
         if (updater != null) {
-            var credentials = database.load_credentials();
-
-            updater.writeToSheet(credentials);
+            writeintoSheet(updater);
 
             System.out.println("Total: " + (System.currentTimeMillis() - start) + "ms");
             return "อัพเดทชีทของ " + updater.getName() + " เสร็จสิ้น";
+        } else {
+            return "No Role!";
+        }
+    }
+
+    @PostMapping("/sort")
+    public String sort(@RequestBody PlayerMessage playerMessage) {
+        long start = System.currentTimeMillis();
+        long t;
+
+        String name = getPlayerName(playerMessage.roles);
+
+        Unit updater = database.findPlayer(name);
+
+        if (updater != null) {
+            updater.getInventoryManager().sortInventories();
+            writeintoSheet(updater);
+
+            System.out.println("Total: " + (System.currentTimeMillis() - start) + "ms");
+            return "จัดไอเทมและอัพเดทชีทของ " + updater.getName() + " เสร็จสิ้น";
         } else {
             return "No Role!";
         }
