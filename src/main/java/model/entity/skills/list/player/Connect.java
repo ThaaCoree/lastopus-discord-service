@@ -15,7 +15,7 @@ public class Connect extends Skill implements SkillWithCondition {
     public Connect() {
         super();
         setDescription("เลือกบัพให้สองเป้าหมายเป็นระยะเวลา XB รอบเทิร์น เมื่อผู้ถือครองบัพจู่โจม จะจู่โจมออกไปพร้อมกันด้วย การจู่โจมด้วยผลของสกิลนี้สามารถส่งผลได้สูงสุดสามครั้งต่อเทิร์นของผู้ได้รับบัพและความเสียหายที่ทำได้จะลดลง XA\n" +
-                "เมื่อจู่โจมด้วยผลพิเศษนี้ครบ 5 ครั้ง คูลดาวน์สกิลทั้งหมดของผู้ถือครองบัพจะลดลงหนึ่งรอบเทิร์น");
+                "เมื่อ Shiranui ฮีล, ยูนิตที่ได้รับผลของสกิลนี้จะได้รับฮีลจำนวนเท่ากันด้วย");
         setActionType("Action");
         setManaCost(9);
         setCooldown(4);
@@ -97,17 +97,26 @@ public class Connect extends Skill implements SkillWithCondition {
                                 .addActType(ActType.CAST, ActType.STRIKE)
                                 .build()
                 );
-                getUser().counterIncrement(CounterName.CONNECT_STRIKE);
-                if (getUser().getCounter().get(CounterName.CONNECT_STRIKE) >= 5) {
-                    for (Unit unit : combatFlow.getAllUnit().values()) {
-                        if (unit.hasCondition("Connect")) {
-                            for (SkillInstance instance : unit.getAllSkill().values()) {
-                                instance.cooldownDecrement();
-                            }
-                        }
-                    }
-                    getUser().counterSet(CounterName.CONNECT_STRIKE, 0);
+            }
+        });
+
+        combatFlow.getEventBus().register(ActionEvent.class, EventPhase.POST, 0, event -> {
+            if (!event.hasActType(ActType.HEAL)) return;
+            if (event.unit_source != getUser()) return;
+            if (event.event_source.equals(this.getName())) return;
+            
+            for (Unit unit : event.unit_target) {
+                int heal_times = event.heal_times;
+                if (unit.hasCondition("Connect")) {
+                    double heal = event.getHeal(unit.getName());
+                    sendActionEvent(combatFlow.getEventBus(),
+                            ActionEvent.builder(getName(), getUser(), event.unit_target)
+                                    .effect(ActionEffectType.HEALTH_RECOVER, heal, heal_times)
+                                    .addActType(ActType.SKILL_TRIGGER, ActType.HEAL, ActType.HEALTH_RECOVER)
+                                    .build()
+                    );
                 }
+
             }
         });
     }

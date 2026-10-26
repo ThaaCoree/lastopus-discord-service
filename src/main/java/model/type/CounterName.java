@@ -51,7 +51,8 @@ public enum CounterName {
     TRAP_TRIGGERED("Trap Triggered"),
     THE_SUNS("The Suns"),
     FUEL_AND_COG("Fuel & Cog"),
-    MALICE_POINT("Malice Point");
+    MALICE_POINT("Malice Point"),
+    TWISTED("Twisted");
 
     private final String displayName;
 

@@ -37419,8 +37419,22 @@
               "pool" : {
                 "pool_name" : "Fire Proof",
                 "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -38078,7 +38092,7 @@
           "conditionsGiven" : [ ]
         },
         "price" : "Buy 2.5 Silver",
-        "stock" : 25,
+        "stock" : 22,
         "price_in_copper" : 25
       },
       "26" : {
@@ -38371,9 +38385,37 @@
             "Blaze" : {
               "pool" : {
                 "pool_name" : "Blaze",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -38982,7 +39024,7 @@
           "price_in_copper" : 0
         },
         "price" : "Buy 4 Silver",
-        "stock" : 5,
+        "stock" : 1,
         "price_in_copper" : 40
       },
       "9" : {
@@ -39394,7 +39436,7 @@
           "conditionsGiven" : [ ]
         },
         "price" : "Buy 7 Copper",
-        "stock" : 41,
+        "stock" : 40,
         "price_in_copper" : 7
       },
       "25" : {
@@ -41197,9 +41239,37 @@
             "Flammable" : {
               "pool" : {
                 "pool_name" : "Flammable",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : true,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : true,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -41392,8 +41462,22 @@
               "pool" : {
                 "pool_name" : "Fire Proof",
                 "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -42227,8 +42311,22 @@
               "pool" : {
                 "pool_name" : "Fire Proof",
                 "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -44239,9 +44337,37 @@
             "Blaze" : {
               "pool" : {
                 "pool_name" : "Blaze",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -45196,9 +45322,37 @@
             "Flammable" : {
               "pool" : {
                 "pool_name" : "Flammable",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : true,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : true,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -46325,9 +46479,37 @@
             "Blaze" : {
               "pool" : {
                 "pool_name" : "Blaze",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -47150,9 +47332,37 @@
             "Blaze" : {
               "pool" : {
                 "pool_name" : "Blaze",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "FIREPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "FIRERESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -48458,7 +48668,7 @@
           "unique_boost" : false
         },
         "price" : "",
-        "stock" : 35,
+        "stock" : 25,
         "price_in_copper" : 80
       },
       "33" : {
@@ -48482,7 +48692,7 @@
           "unique_boost" : true
         },
         "price" : "",
-        "stock" : 39,
+        "stock" : 36,
         "price_in_copper" : 375
       },
       "34" : {
@@ -50016,9 +50226,37 @@
             "Breeze" : {
               "pool" : {
                 "pool_name" : "Breeze",
-                "weaponMods" : [ ],
-                "armorMods" : [ ],
-                "accessoryMods" : [ ],
+                "weaponMods" : [ {
+                  "statType" : "WINDPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                } ],
+                "armorMods" : [ {
+                  "statType" : "WINDRESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
+                "accessoryMods" : [ {
+                  "statType" : "WINDPENETRATION",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 500,
+                  "fixed" : false
+                }, {
+                  "statType" : "WINDRESISTANCE",
+                  "statusType" : null,
+                  "negative" : false,
+                  "modifierType" : "FLAT",
+                  "weight" : 1000,
+                  "fixed" : false
+                } ],
                 "can_duplicate_mod" : true,
                 "description" : "",
                 "fixed_mods_description" : ""
@@ -50302,7 +50540,7 @@
           "price_in_copper" : 0
         },
         "price" : "",
-        "stock" : 356,
+        "stock" : 336,
         "price_in_copper" : 59
       },
       "45" : {

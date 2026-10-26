@@ -5501,9 +5501,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -5866,9 +5894,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -8352,9 +8408,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -10039,9 +10123,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -10404,9 +10516,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -12844,9 +12984,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -13028,9 +13196,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -16247,8 +16443,22 @@
             "pool" : {
               "pool_name" : "Fire Proof",
               "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -16388,8 +16598,22 @@
             "pool" : {
               "pool_name" : "Fire Proof",
               "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -20720,9 +20944,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -20904,9 +21156,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -21534,9 +21814,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -21933,9 +22241,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -22117,9 +22453,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -22358,9 +22722,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -24534,9 +24926,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -25403,9 +25823,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -28777,9 +29225,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -30042,9 +30518,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -30407,9 +30911,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -35364,9 +35896,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -37821,9 +38381,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -38005,9 +38593,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -40271,9 +40887,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -40455,9 +41099,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -40639,9 +41311,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -45532,9 +46232,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -45897,9 +46625,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -46262,9 +47018,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -53555,9 +54339,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -53739,9 +54551,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -56202,9 +57042,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -56932,9 +57800,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -57116,9 +58012,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -57300,9 +58224,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -57484,9 +58436,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -57563,9 +58543,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -61756,7 +62764,7 @@
     "name" : "Darkday",
     "itemType" : "EQUIPMENT",
     "description" : "",
-    "statusDescription" : "205.22 MDEF\n275.18 Deflection\n190.3 Evasion\n-0.89 Speed\n\n",
+    "statusDescription" : "37.2 AGI\n339.62 Evasion\n-347.14 Deflection\n-690.56 MDEF\n8.43% Wind Resist\n\n",
     "lore" : "",
     "price" : "",
     "weight" : 5,
@@ -61765,8 +62773,8 @@
     "weaponType" : "NOT_A_WEAPON",
     "modifiers" : {
       "statModifiers" : {
-        "MAGICALDEFENSE" : {
-          "flat" : 205.22454002915447,
+        "EVASION" : {
+          "flat" : 339.6221266215006,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -61774,23 +62782,23 @@
           "passiveMult" : 0.0
         },
         "DEFLECTION" : {
-          "flat" : 275.1765660068421,
+          "flat" : -347.1401208329664,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "EVASION" : {
-          "flat" : 190.3007686600746,
+        "MAGICALDEFENSE" : {
+          "flat" : -690.559640998609,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
           "equipmentMult" : 0.0,
           "passiveMult" : 0.0
         },
-        "SPEED" : {
-          "flat" : -0.8888358192189668,
+        "WINDRESISTANCE" : {
+          "flat" : 0.08431263547186037,
           "mult" : 0.0,
           "override" : "NaN",
           "globalMult" : 0.0,
@@ -61798,23 +62806,32 @@
           "passiveMult" : 0.0
         }
       },
-      "statusModifiers" : { },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 37.19689506450027,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
       "transferModifiers" : { },
       "skillModifiers" : { }
     },
     "skills" : { },
     "backpackSlot" : 0,
     "modInstances" : [ {
-      "mod_id" : 7,
+      "mod_id" : 0,
       "base_material_id" : 0,
-      "pool_name" : "Magic Medium",
+      "pool_name" : "Swaying",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
-      "tier" : 11,
-      "base_rolled" : 189.9015791178514,
-      "final_value" : -316.1186703202477,
+      "tier" : 10,
+      "base_rolled" : 150.2407037612513,
+      "final_value" : 339.6221266215006,
       "mod" : {
-        "statType" : "MAGICALDEFENSE",
+        "statType" : "EVASION",
         "statusType" : null,
         "negative" : false,
         "modifierType" : "FLAT",
@@ -61824,14 +62841,14 @@
       "locked" : false,
       "fixed" : false
     }, {
-      "mod_id" : 8,
+      "mod_id" : 1,
       "base_material_id" : 0,
       "pool_name" : "Swaying",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
       "tier" : 10,
-      "base_rolled" : 172.8691068503279,
-      "final_value" : 275.1765660068421,
+      "base_rolled" : 169.04297398710472,
+      "final_value" : -347.1401208329664,
       "mod" : {
         "statType" : "DEFLECTION",
         "statusType" : null,
@@ -61843,52 +62860,33 @@
       "locked" : false,
       "fixed" : false
     }, {
-      "mod_id" : 9,
-      "base_material_id" : 0,
-      "pool_name" : "Magic Medium",
-      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
-      "catalyst_ids" : [ ],
-      "tier" : 9,
-      "base_rolled" : 159.35983329034116,
-      "final_value" : 256.04933491604413,
-      "mod" : {
-        "statType" : "MAGICALDEFENSE",
-        "statusType" : null,
-        "negative" : false,
-        "modifierType" : "FLAT",
-        "weight" : 1000,
-        "fixed" : false
-      },
-      "locked" : false,
-      "fixed" : false
-    }, {
-      "mod_id" : 10,
+      "mod_id" : 2,
       "base_material_id" : 0,
       "pool_name" : "Swaying",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
       "tier" : 9,
-      "base_rolled" : 129.91062026852788,
-      "final_value" : 321.5514045503425,
+      "base_rolled" : 15.827346526168869,
+      "final_value" : 37.19689506450027,
       "mod" : {
-        "statType" : "EVASION",
-        "statusType" : null,
+        "statType" : null,
+        "statusType" : "AGILITY",
         "negative" : false,
         "modifierType" : "FLAT",
-        "weight" : 1000,
+        "weight" : 400,
         "fixed" : false
       },
       "locked" : false,
       "fixed" : false
     }, {
-      "mod_id" : 11,
+      "mod_id" : 3,
       "base_material_id" : 0,
       "pool_name" : "Magic Medium",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
-      "tier" : 10,
-      "base_rolled" : 166.45448182418286,
-      "final_value" : 265.29387543335804,
+      "tier" : 11,
+      "base_rolled" : 179.6026324769984,
+      "final_value" : -306.5822422860704,
       "mod" : {
         "statType" : "MAGICALDEFENSE",
         "statusType" : null,
@@ -61900,18 +62898,37 @@
       "locked" : false,
       "fixed" : false
     }, {
-      "mod_id" : 12,
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
+      "catalyst_ids" : [ ],
+      "tier" : 9,
+      "base_rolled" : 140.46703849473394,
+      "final_value" : -263.51529396694167,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 5,
       "base_material_id" : 2,
-      "pool_name" : "Lightweight",
+      "pool_name" : "Small",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
       "tier" : 5,
-      "base_rolled" : 0.5108958116975598,
-      "final_value" : -0.8888358192189668,
+      "base_rolled" : -64.66611807535999,
+      "final_value" : -120.46210474559686,
       "mod" : {
-        "statType" : "SPEED",
+        "statType" : "MAGICALDEFENSE",
         "statusType" : null,
-        "negative" : false,
+        "negative" : true,
         "modifierType" : "FLAT",
         "weight" : 500,
         "fixed" : false
@@ -61919,20 +62936,20 @@
       "locked" : false,
       "fixed" : false
     }, {
-      "mod_id" : 13,
+      "mod_id" : 6,
       "base_material_id" : 2,
-      "pool_name" : "Small",
+      "pool_name" : "Breeze",
       "boost_material_ids" : [ 0, 1, 2, 0, 1, 2 ],
       "catalyst_ids" : [ ],
       "tier" : 5,
-      "base_rolled" : 61.67155000190574,
-      "final_value" : -131.25063589026792,
+      "base_rolled" : 0.040079001177685564,
+      "final_value" : 0.08431263547186037,
       "mod" : {
-        "statType" : "EVASION",
+        "statType" : "WINDRESISTANCE",
         "statusType" : null,
         "negative" : false,
         "modifierType" : "FLAT",
-        "weight" : 1500,
+        "weight" : 1000,
         "fixed" : false
       },
       "locked" : false,
@@ -62344,9 +63361,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -62496,10 +63541,61 @@
     }, {
       "catalyst_id" : 13,
       "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 0,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 1,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 2,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 3,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 4,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 5,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 6,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 7,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 8,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 9,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 10,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 11,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 12,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 13,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 14,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 15,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 16,
+      "catalyst_name" : "Unstable Shard"
     } ],
     "statModifiers" : {
-      "MAGICALDEFENSE" : {
-        "flat" : 205.22454002915447,
+      "EVASION" : {
+        "flat" : 339.6221266215006,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -62507,23 +63603,23 @@
         "passiveMult" : 0.0
       },
       "DEFLECTION" : {
-        "flat" : 275.1765660068421,
+        "flat" : -347.1401208329664,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "EVASION" : {
-        "flat" : 190.3007686600746,
+      "MAGICALDEFENSE" : {
+        "flat" : -690.559640998609,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
         "equipmentMult" : 0.0,
         "passiveMult" : 0.0
       },
-      "SPEED" : {
-        "flat" : -0.8888358192189668,
+      "WINDRESISTANCE" : {
+        "flat" : 0.08431263547186037,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,
@@ -62532,7 +63628,16 @@
       }
     },
     "transferModifiers" : { },
-    "statusModifiers" : { }
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 37.19689506450027,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
   },
   "Shadow's Bound" : {
     "name" : "Shadow's Bound",
@@ -69211,9 +70316,37 @@
           "Flammable" : {
             "pool" : {
               "pool_name" : "Flammable",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -69459,9 +70592,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -70135,9 +71296,37 @@
           "Breeze" : {
             "pool" : {
               "pool_name" : "Breeze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "WINDPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "WINDRESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -70732,9 +71921,37 @@
           "Flammable" : {
             "pool" : {
               "pool_name" : "Flammable",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -70882,9 +72099,37 @@
           "Flammable" : {
             "pool" : {
               "pool_name" : "Flammable",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -94039,9 +95284,37 @@
           "Blaze" : {
             "pool" : {
               "pool_name" : "Blaze",
-              "weaponMods" : [ ],
-              "armorMods" : [ ],
-              "accessoryMods" : [ ],
+              "weaponMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "FIREPENETRATION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "FIRERESISTANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
               "can_duplicate_mod" : true,
               "description" : "",
               "fixed_mods_description" : ""
@@ -105053,6 +106326,2112 @@
     "statusModifiers" : {
       "INTELLIGENCE" : {
         "flat" : -12.507750379761575,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    }
+  },
+  "flashyes" : {
+    "name" : "flashyes",
+    "itemType" : "EQUIPMENT",
+    "description" : "",
+    "statusDescription" : "40.98 AGI\n306.02 MDEF\n-35.04 MBLOCK\n4.64 MSPD\n\n",
+    "lore" : "",
+    "price" : "",
+    "weight" : 5,
+    "price_in_copper" : 0,
+    "equipmentType" : "GLOVES",
+    "weaponType" : "NOT_A_WEAPON",
+    "modifiers" : {
+      "statModifiers" : {
+        "MAGICALDEFENSE" : {
+          "flat" : 306.0186922120728,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MAGICALBLOCK" : {
+          "flat" : -35.04216207806989,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        },
+        "MOVEMENTSPEED" : {
+          "flat" : 4.643993016311924,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "statusModifiers" : {
+        "AGILITY" : {
+          "flat" : 40.97873936766992,
+          "mult" : 0.0,
+          "override" : "NaN",
+          "globalMult" : 0.0,
+          "equipmentMult" : 0.0,
+          "passiveMult" : 0.0
+        }
+      },
+      "transferModifiers" : { },
+      "skillModifiers" : { }
+    },
+    "skills" : { },
+    "backpackSlot" : 0,
+    "modInstances" : [ {
+      "mod_id" : 0,
+      "base_material_id" : 0,
+      "pool_name" : "Utility\t",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 6.721431872555487,
+      "final_value" : 6.721431872555487,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 1,
+      "base_material_id" : 0,
+      "pool_name" : "Swaying",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 8.869637639178082,
+      "final_value" : 8.869637639178082,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 400,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 2,
+      "base_material_id" : 0,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 68.69906720719655,
+      "final_value" : 68.69906720719655,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 3,
+      "base_material_id" : 0,
+      "pool_name" : "Durable",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 69.66275902436836,
+      "final_value" : 69.66275902436836,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 4,
+      "base_material_id" : 0,
+      "pool_name" : "Tough",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 94.23456374120533,
+      "final_value" : 94.23456374120533,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 5,
+      "base_material_id" : 1,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 10.430709297695042,
+      "final_value" : 10.430709297695042,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 6,
+      "base_material_id" : 1,
+      "pool_name" : "Brittle",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : -14.740949976683028,
+      "final_value" : -14.740949976683028,
+      "mod" : {
+        "statType" : "MAGICALBLOCK",
+        "statusType" : null,
+        "negative" : true,
+        "modifierType" : "FLAT",
+        "weight" : 700,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 7,
+      "base_material_id" : 1,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 2.4288886668430485,
+      "final_value" : 2.4288886668430485,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 8,
+      "base_material_id" : 2,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 7.972921227513918,
+      "final_value" : 7.972921227513918,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 9,
+      "base_material_id" : 2,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : 2.2151043494688762,
+      "final_value" : 2.2151043494688762,
+      "mod" : {
+        "statType" : "MOVEMENTSPEED",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 10,
+      "base_material_id" : 2,
+      "pool_name" : "Brittle",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 6,
+      "base_rolled" : -9.811088129695115,
+      "final_value" : -9.811088129695115,
+      "mod" : {
+        "statType" : "MAGICALBLOCK",
+        "statusType" : null,
+        "negative" : true,
+        "modifierType" : "FLAT",
+        "weight" : 700,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 11,
+      "base_material_id" : 3,
+      "pool_name" : "Magic Medium",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 73.42230223930255,
+      "final_value" : 73.42230223930255,
+      "mod" : {
+        "statType" : "MAGICALDEFENSE",
+        "statusType" : null,
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 1000,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 12,
+      "base_material_id" : 3,
+      "pool_name" : "Lightweight",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : 6.984039330727388,
+      "final_value" : 6.984039330727388,
+      "mod" : {
+        "statType" : null,
+        "statusType" : "AGILITY",
+        "negative" : false,
+        "modifierType" : "FLAT",
+        "weight" : 500,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    }, {
+      "mod_id" : 13,
+      "base_material_id" : 3,
+      "pool_name" : "Brittle",
+      "boost_material_ids" : [ 0, 1, 2, 3, 0, 1, 2, 3 ],
+      "catalyst_ids" : [ ],
+      "tier" : 5,
+      "base_rolled" : -10.490123971691752,
+      "final_value" : -10.490123971691752,
+      "mod" : {
+        "statType" : "MAGICALBLOCK",
+        "statusType" : null,
+        "negative" : true,
+        "modifierType" : "FLAT",
+        "weight" : 700,
+        "fixed" : false
+      },
+      "locked" : false,
+      "fixed" : false
+    } ],
+    "materialInstances" : [ {
+      "material_id" : 0,
+      "material" : {
+        "name" : "Hob Goblin Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nDefense (100.0%)\nStrike (100.0%)\n\nMaterial Toughness : 75%",
+        "lore" : "กระดูกของฮ็อบก็อบลิน มีความทนทานเป็นอย่างมาก เป็นพื้นฐานที่ยอดเยี่ยมสำหรับอุปกรณ์ทุกชนิด",
+        "price" : "",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 75,
+        "material_max_mod" : 5,
+        "reveal_usage" : false,
+        "pools" : {
+          "Durable" : {
+            "pool" : {
+              "pool_name" : "Durable",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 7,
+            "maxModsAllowed" : 2
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 7,
+            "maxModsAllowed" : 2
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 7,
+            "maxModsAllowed" : 1
+          },
+          "Sharp" : {
+            "pool" : {
+              "pool_name" : "Sharp",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALPENETRATE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 7,
+            "maxModsAllowed" : 1
+          },
+          "Swaying" : {
+            "pool" : {
+              "pool_name" : "Swaying",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "CASTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "DEFLECTION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 600,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 400,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 7,
+            "maxModsAllowed" : 1
+          },
+          "Utility\t" : {
+            "pool" : {
+              "pool_name" : "Utility\t",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "LUCK",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "LUCK",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "STRENGTH",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "DEXTERITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "WISDOM",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "INTELLIGENCE",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : null,
+                "statusType" : "LUCK",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 300,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 5,
+            "maxModsAllowed" : 1
+          }
+        },
+        "modBoost" : {
+          "DEFENSE" : 1.0,
+          "STRIKE" : 1.0
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 1,
+      "material" : {
+        "name" : "Sea Zephyr Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (50.0%)\nMagic (50.0%)\nControl (-50.0%)\n\nMaterial Toughness : 45%",
+        "lore" : "กระดูกของนกซีเซเฟียร์ เบาหวิว อีกทั้งยังเปราะบางมาก\nแต่ดูเหมือนจะมีคุณสมบัติความเข้ากันได้ดีกับเวทมนตร์บางชนิด",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 45,
+        "material_max_mod" : 3,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          },
+          "Brittle" : {
+            "pool" : {
+              "pool_name" : "Brittle",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 1
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 0.5,
+          "MAGIC" : 0.5,
+          "CONTROL" : -0.5
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 2,
+      "material" : {
+        "name" : "Sea Zephyr Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (50.0%)\nMagic (50.0%)\nControl (-50.0%)\n\nMaterial Toughness : 45%",
+        "lore" : "กระดูกของนกซีเซเฟียร์ เบาหวิว อีกทั้งยังเปราะบางมาก\nแต่ดูเหมือนจะมีคุณสมบัติความเข้ากันได้ดีกับเวทมนตร์บางชนิด",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 45,
+        "material_max_mod" : 3,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          },
+          "Brittle" : {
+            "pool" : {
+              "pool_name" : "Brittle",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 1
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 0.5,
+          "MAGIC" : 0.5,
+          "CONTROL" : -0.5
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 3,
+      "material" : {
+        "name" : "Sea Zephyr Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (50.0%)\nMagic (50.0%)\nControl (-50.0%)\n\nMaterial Toughness : 45%",
+        "lore" : "กระดูกของนกซีเซเฟียร์ เบาหวิว อีกทั้งยังเปราะบางมาก\nแต่ดูเหมือนจะมีคุณสมบัติความเข้ากันได้ดีกับเวทมนตร์บางชนิด",
+        "price" : "",
+        "weight" : 1,
+        "price_in_copper" : 0,
+        "material_toughness" : 45,
+        "material_max_mod" : 3,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          },
+          "Brittle" : {
+            "pool" : {
+              "pool_name" : "Brittle",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALBLOCK",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 700,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 1
+          },
+          "Magic Medium" : {
+            "pool" : {
+              "pool_name" : "Magic Medium",
+              "weaponMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : "MAGICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : true,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 5,
+            "maxTier" : 6,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 0.5,
+          "MAGIC" : 0.5,
+          "CONTROL" : -0.5
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BASE"
+    }, {
+      "material_id" : 4,
+      "material" : {
+        "name" : "Runt Wolf Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (100.0%)\nMagic (-25.0%)\n\nMaterial Toughness : 30%",
+        "lore" : "กระดูกของหมาป่าแคระ มีขนาดค่อนข้างเล็ก แต่ตรงกันข้ามกับขนของมันที่นุ่มนวล ตัวกระดูกมีความแข็งและอาจใช้สร้างอุปกรณ์ที่ทนทานได้ดี ลักษณะพิเศษอย่างมากของกระดูกหมาป่าแคระคือน้ำหนักที่เบา",
+        "price" : "Sell 9 Copper",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 30,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 2
+          },
+          "Solid" : {
+            "pool" : {
+              "pool_name" : "Solid",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          },
+          "Small" : {
+            "pool" : {
+              "pool_name" : "Small",
+              "weaponMods" : [ {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 1.0,
+          "MAGIC" : -0.25
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BOOST"
+    }, {
+      "material_id" : 5,
+      "material" : {
+        "name" : "Runt Wolf Bone",
+        "itemType" : "MATERIAL",
+        "description" : "",
+        "statusDescription" : "Boost : \nSpeed (100.0%)\nMagic (-25.0%)\n\nMaterial Toughness : 30%",
+        "lore" : "กระดูกของหมาป่าแคระ มีขนาดค่อนข้างเล็ก แต่ตรงกันข้ามกับขนของมันที่นุ่มนวล ตัวกระดูกมีความแข็งและอาจใช้สร้างอุปกรณ์ที่ทนทานได้ดี ลักษณะพิเศษอย่างมากของกระดูกหมาป่าแคระคือน้ำหนักที่เบา",
+        "price" : "Sell 9 Copper",
+        "weight" : 2,
+        "price_in_copper" : 0,
+        "material_toughness" : 30,
+        "material_max_mod" : 2,
+        "reveal_usage" : false,
+        "pools" : {
+          "Lightweight" : {
+            "pool" : {
+              "pool_name" : "Lightweight",
+              "weaponMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "ATTACKSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MOVEMENTSPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "AGILITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "SPEED",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 3,
+            "maxTier" : 3,
+            "maxModsAllowed" : 2
+          },
+          "Solid" : {
+            "pool" : {
+              "pool_name" : "Solid",
+              "weaponMods" : [ {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          },
+          "Small" : {
+            "pool" : {
+              "pool_name" : "Small",
+              "weaponMods" : [ {
+                "statType" : "CRITDAMAGE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "CRITCHANCE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "armorMods" : [ {
+                "statType" : "EVASION",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1500,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : true,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          },
+          "Tough" : {
+            "pool" : {
+              "pool_name" : "Tough",
+              "weaponMods" : [ ],
+              "armorMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "HEALTHPOINT",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              }, {
+                "statType" : "MAGICALDEFENSE",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 1000,
+                "fixed" : false
+              } ],
+              "accessoryMods" : [ {
+                "statType" : null,
+                "statusType" : "VITALITY",
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 200,
+                "fixed" : false
+              }, {
+                "statType" : "PHYSICALATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              }, {
+                "statType" : "RANGEDATTACK",
+                "statusType" : null,
+                "negative" : false,
+                "modifierType" : "FLAT",
+                "weight" : 500,
+                "fixed" : false
+              } ],
+              "can_duplicate_mod" : false,
+              "description" : "",
+              "fixed_mods_description" : ""
+            },
+            "minTier" : 2,
+            "maxTier" : 2,
+            "maxModsAllowed" : 2
+          }
+        },
+        "modBoost" : {
+          "SPEED" : 1.0,
+          "MAGIC" : -0.25
+        },
+        "unique_boost" : false
+      },
+      "material_role" : "BOOST"
+    } ],
+    "catalystInstances" : [ {
+      "catalyst_id" : 0,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 1,
+      "catalyst_name" : "Unstable Shard"
+    }, {
+      "catalyst_id" : 2,
+      "catalyst_name" : "Unstable Shard"
+    } ],
+    "statModifiers" : {
+      "MAGICALDEFENSE" : {
+        "flat" : 306.0186922120728,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MAGICALBLOCK" : {
+        "flat" : -35.04216207806989,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      },
+      "MOVEMENTSPEED" : {
+        "flat" : 4.643993016311924,
+        "mult" : 0.0,
+        "override" : "NaN",
+        "globalMult" : 0.0,
+        "equipmentMult" : 0.0,
+        "passiveMult" : 0.0
+      }
+    },
+    "transferModifiers" : { },
+    "statusModifiers" : {
+      "AGILITY" : {
+        "flat" : 40.97873936766992,
         "mult" : 0.0,
         "override" : "NaN",
         "globalMult" : 0.0,

@@ -335,9 +335,37 @@
   },
   "Flammable" : {
     "pool_name" : "Flammable",
-    "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "weaponMods" : [ {
+      "statType" : "FIREPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "FIREPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : true,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
@@ -345,8 +373,22 @@
   "Fire Proof" : {
     "pool_name" : "Fire Proof",
     "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "armorMods" : [ {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
@@ -490,36 +532,148 @@
   },
   "Blaze" : {
     "pool_name" : "Blaze",
-    "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "weaponMods" : [ {
+      "statType" : "FIREPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "FIREPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "FIRERESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
   "Breeze" : {
     "pool_name" : "Breeze",
-    "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "weaponMods" : [ {
+      "statType" : "WINDPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "WINDRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "WINDPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "WINDRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
   "Terra" : {
     "pool_name" : "Terra",
-    "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "weaponMods" : [ {
+      "statType" : "EARTHPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "EARTHRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "EARTHPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "EARTHRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
   "Hydro" : {
     "pool_name" : "Hydro",
-    "weaponMods" : [ ],
-    "armorMods" : [ ],
-    "accessoryMods" : [ ],
+    "weaponMods" : [ {
+      "statType" : "WATERPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : "WATERRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : "WATERPENETRATION",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "WATERRESISTANCE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
     "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
