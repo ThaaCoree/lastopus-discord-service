@@ -15,7 +15,7 @@ public class Connect extends Skill implements SkillWithCondition {
     public Connect() {
         super();
         setDescription("เลือกบัพให้สองเป้าหมายเป็นระยะเวลา XB รอบเทิร์น เมื่อผู้ถือครองบัพจู่โจม จะจู่โจมออกไปพร้อมกันด้วย การจู่โจมด้วยผลของสกิลนี้สามารถส่งผลได้สูงสุดสามครั้งต่อเทิร์นของผู้ได้รับบัพและความเสียหายที่ทำได้จะลดลง XA\n" +
-                "เมื่อ Shiranui ฮีล, ยูนิตที่ได้รับผลของสกิลนี้จะได้รับฮีลจำนวนเท่ากันด้วย");
+                "เมื่อ Shiranui ฮีล, ยูนิตที่ได้รับผลของสกิลนี้และตัว Shiranui จะได้รับฮีล XC ของจำนวนนั้นด้วย");
         setActionType("Action");
         setManaCost(9);
         setCooldown(4);
@@ -27,6 +27,11 @@ public class Connect extends Skill implements SkillWithCondition {
 
         getSkillMultiplier().put("XB",new SkillMultiplier("3"));
         getSkillMultiplier().get("XB").getTags().add(SkillType.DURATION);
+
+        addMultiplier("XC", "0.5");
+        addTag("XC", SkillType.SCALING);
+        addTag("XC", SkillType.LIMIT);
+        addTag("XC", SkillType.RECOVERY);
     }
 
     @Override
@@ -104,11 +109,12 @@ public class Connect extends Skill implements SkillWithCondition {
             if (!event.hasActType(ActType.HEAL)) return;
             if (event.unit_source != getUser()) return;
             if (event.event_source.equals(this.getName())) return;
-            
+
             for (Unit unit : event.unit_target) {
                 int heal_times = event.heal_times;
                 if (unit.hasCondition("Connect")) {
                     double heal = event.getHeal(unit.getName());
+                    heal *= getMultiplierResult("XC");
                     sendActionEvent(combatFlow.getEventBus(),
                             ActionEvent.builder(getName(), getUser(), event.unit_target)
                                     .effect(ActionEffectType.HEALTH_RECOVER, heal, heal_times)
