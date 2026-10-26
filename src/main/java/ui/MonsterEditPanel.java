@@ -123,7 +123,6 @@ public class MonsterEditPanel extends ScrollPane {
             database.getAllMonsterMap().put(toMake.getName(),toMake);
             database.getAllCardMap().put(toMake.getName() + " Card", new Card(toMake.getName() + " Card"));
             database.mapEverything();
-            database.initCounterAllUnit();
             database.translateEverything();
             listPane.getMonsterList().setAll(database.getAllMonsterMap().values());
             listPane.getListView().refresh();

@@ -52,7 +52,6 @@ public class Database {
         loadItemFromJson();
         mapEverything();
         updateEverything();
-        initCounterAllUnit();
         if (combatFlow != null) {
             combatFlow.registerDatabase(this);
             combatFlow.initCombatFlow();
@@ -616,16 +615,6 @@ public class Database {
             for (CraftingMaterial material : allMaterials.values()) {
                 material.createUsageDescription();
             }
-        }
-    }
-
-    public void initCounterAllUnit() {
-        for (Unit unit : allUnit.values()) {
-            unit.initCounter();
-        }
-
-        for (Summon summon : allSummon.values()) {
-            summon.initCounter();
         }
     }
 

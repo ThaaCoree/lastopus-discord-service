@@ -80,9 +80,6 @@ public class Unit {
 
     @JsonIgnore
     @Transient
-    private ObservableMap<CounterName, Double> counter = FXCollections.observableHashMap();
-    @JsonIgnore
-    @Transient
     private StatCalculator statCalculator;
     @JsonIgnore
     @Transient
@@ -772,10 +769,6 @@ public class Unit {
         requests.add(GoogleSheetsUtil.buildUpdateCellsRequest(sheetId, range, toAppend));
     }
 
-    public void initCounter() {
-        counter = FXCollections.observableMap(new LinkedHashMap<>(rawCounterMap));
-    }
-
     public int getLevel() {
         return level;
     }
@@ -1309,27 +1302,19 @@ public class Unit {
     }
 
     public void counterIncrement(CounterName counterName) {
-        counter.merge(counterName, 1.0, Double::sum);
         rawCounterMap.merge(counterName, 1.0, Double::sum);
     }
 
     public void counterDecrement(CounterName counterName) {
-        counter.merge(counterName, -1.0, Double::sum);
         rawCounterMap.merge(counterName, -1.0, Double::sum);
     }
 
     public void counterSet(CounterName counterName, double numberToPut) {
-        counter.put(counterName, numberToPut);
         rawCounterMap.put(counterName, numberToPut);
     }
 
     public void counterSum(CounterName counterName, double toSum) {
-        counter.merge(counterName, toSum, Double::sum);
         rawCounterMap.merge(counterName, toSum, Double::sum);
-    }
-
-    public void setCounter(ObservableMap<CounterName, Double> counter) {
-        this.counter = counter;
     }
 
     public Map<String, Summon> getSummons() {

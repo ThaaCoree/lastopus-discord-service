@@ -73,7 +73,6 @@ public class CombatFlow {
         linkAllUnitToDatabase();
         mapAllUnitToAll();
         allUnitUpdate();
-        initMonsterUnitCounter();
         setSessionInfo();
     }
 
@@ -185,12 +184,6 @@ public class CombatFlow {
             if (unit.isPlayer() || unit.isNpc()) {
                 unit.setInSession(true);
             }
-        }
-    }
-
-    public void initMonsterUnitCounter() {
-        for (Unit unit : monsterUnit.values()) {
-            unit.initCounter();
         }
     }
 

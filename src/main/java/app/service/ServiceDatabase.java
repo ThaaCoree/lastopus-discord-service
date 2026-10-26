@@ -64,7 +64,6 @@ public class ServiceDatabase {
         mapAllUnit();
         mapEverything();
         updateEverything();
-        initCounterAllUnit();
     }
 
     public void reloadDatabase() {
@@ -72,7 +71,6 @@ public class ServiceDatabase {
         mapAllUnit();
         mapEverything();
         updateEverything();
-        initCounterAllUnit();
     }
 
     public Equipment findEquipment(String name) {
@@ -80,16 +78,6 @@ public class ServiceDatabase {
             return allEquipmentMap.get(name);
         }
         return null;
-    }
-
-    public void initCounterAllUnit() {
-        for (Unit unit : allUnit.values()) {
-            unit.initCounter();
-        }
-
-        for (Summon summon : allSummon.values()) {
-            summon.initCounter();
-        }
     }
 
     public void updateEverything() {
