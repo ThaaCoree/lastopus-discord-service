@@ -171,6 +171,24 @@ public class Rune extends Item {
                     {false, true, true,  true ,true}
             };
         }
+
+        if (name.equals("Leo")) {
+            this.shape = new boolean[][]{
+                    {false, true, true, true, false},
+                    {true, true,  false, true, false},
+                    {true, true,  false, true, false},
+                    {false, false, false,  true ,true}
+            };
+        }
+
+        if (name.equals("Gemini")) {
+            this.shape = new boolean[][]{
+                    {true, true, true, true, true},
+                    {false, true, false, true, false},
+                    {false, true, false,  true ,false},
+                    {true, true, true,  true ,true}
+            };
+        }
     }
 
     @JsonIgnore
@@ -288,6 +306,24 @@ public class Rune extends Item {
                     {false, true, true,  true ,true}
             })) {
                 return "Cancer";
+            }
+
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
+                    {false, true, true, true, false},
+                    {true, true,  false, true, false},
+                    {true, true,  false, true, false},
+                    {false, false, false,  true ,true}
+            })) {
+                return "Leo";
+            }
+
+            if (Arrays.deepEquals(copy_shape, new boolean[][]{
+                    {true, true, true, true, true},
+                    {false, true, false, true, false},
+                    {false, true, false,  true ,false},
+                    {true, true, true,  true ,true}
+            })) {
+                return "Gemini";
             }
 
             copy_shape = rotate90(copy_shape);

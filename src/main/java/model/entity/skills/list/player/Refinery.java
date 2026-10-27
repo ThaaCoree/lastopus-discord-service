@@ -8,6 +8,8 @@ import model.entity.skills.*;
 import model.entity.units.Unit;
 import model.type.*;
 
+import java.util.List;
+
 public class Refinery extends Skill implements SkillWithCondition {
 
     public static String NAME = "Refinery";
@@ -41,13 +43,12 @@ public class Refinery extends Skill implements SkillWithCondition {
     @Override
     public SkillInputSpec getInputSpec(CombatFlow combatFlow) {
         SkillInputSpec spec = new SkillInputSpec(combatFlow, getUser()
-//                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
+                , new SkillInputSpec.TargetConstruct(SkillInputSpec.TargetType.UNITS, 0)
         );
-//        spec    .addFields(
-//                new SkillInputSpec.InputField<String>("Mode", SkillInputSpec.InputType.SELECT, 0)
-//                        .options(List.of("choice","choice"), 0)
-//                        .labelProvider(String::toString, 0)
-//        , 0, 0)
+        spec    .addFields(
+                new SkillInputSpec.InputField<String>("Malice Point Used", SkillInputSpec.InputType.NUMBER, 0)
+                        .labelProvider(String::toString, 0)
+        , 0, 0);
 //                .addFields(
 //                        new SkillInputSpec.InputField<String>("Damage", SkillInputSpec.InputType.NUMBER,1)
 //                , 0, 1);
@@ -78,8 +79,8 @@ public class Refinery extends Skill implements SkillWithCondition {
     @Override
     public void refreshCondition(CombatFlow combatFlow) {
         Conditions condition = new Conditions("Dentel Shell");
-        condition.getStatModifiers(StatType.MOVEMENTSPEED).setGlobalMult(getSkillMultiplier().get("XA").getResult());
-        condition.getStatModifiers(StatType.EVASION).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        condition.getStatModifiers(StatType.PHYSICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XA").getResult());
+        condition.getStatModifiers(StatType.MAGICALDEFENSE).setGlobalMult(getSkillMultiplier().get("XA").getResult());
 
         condition.setConditionType(ConditionType.BUFF);
         condition.setConditionTierType(ConditionTierType.GENERAL);

@@ -40,7 +40,7 @@ public class Polarizer implements CatalystEffect {
             if (!Crafter.tryAffect(modInstance, equipment, sb)) continue;
             if (i < 2) {
                 modInstance.negativeFinal_value();
-                sb.append(modInstance.toString(equipment)).append(" (กลายเป็นติดลบจากผลของ Polarizer)");
+                sb.append(" (กลายเป็นติดลบจากผลของ Polarizer) ").append(modInstance.toString(equipment));
             } else {
                 modInstance.multiplyFinal_value(-1);
                 sb.append(modInstance.toString(equipment));

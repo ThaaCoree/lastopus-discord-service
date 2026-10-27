@@ -79,6 +79,7 @@ public class Imagetion extends Skill {
                 if (!event.hasActType(ActType.STRIKE)) return;
                 LogWriterUtil.log(event.unit_source.getName()+"'s Imagetion Activated");
                 double xa = getSkillMultiplier().get("XA").getResult();
+                double xb = getMultiplierResult("XB");
                 Unit heal_target = new Unit();
                 double health_amount = Double.MAX_VALUE;
                 for (Unit unit : getAllies(combatFlow)) {
@@ -91,7 +92,8 @@ public class Imagetion extends Skill {
                 sendActionEvent(combatFlow.getEventBus(),
                         ActionEvent.builder(getName(), getUser(), heal_target)
                                 .effect(ActionEffectType.HEALTH_RECOVER, xa, 1)
-                                .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER)
+                                .effect(ActionEffectType.CREATE_DEBRIS, xb, 1)
+                                .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER, ActType.CREATE_DEBRIS)
                                 .build()
                 );
                 getUser().counterIncrement(CounterName.TWISTED);
@@ -102,6 +104,7 @@ public class Imagetion extends Skill {
             if (event.source == getUser()) {
                 LogWriterUtil.log(event.source.getName()+"'s Imagetion Activated");
                 double xa = getSkillMultiplier().get("XA").getResult();
+                double xb = getMultiplierResult("XB");
                 Unit heal_target = new Unit();
                 double health_amount = Double.MAX_VALUE;
                 for (Unit unit : getAllies(combatFlow)) {
@@ -114,7 +117,8 @@ public class Imagetion extends Skill {
                 sendActionEvent(combatFlow.getEventBus(),
                         ActionEvent.builder(getName(), getUser(), heal_target)
                                 .effect(ActionEffectType.HEALTH_RECOVER, xa, 1)
-                                .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER)
+                                .effect(ActionEffectType.CREATE_DEBRIS, xb, 1)
+                                .addActType(ActType.HEAL, ActType.HEALTH_RECOVER, ActType.SKILL_TRIGGER, ActType.CREATE_DEBRIS)
                                 .build()
                 );
                 getUser().counterIncrement(CounterName.TWISTED);

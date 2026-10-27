@@ -88,7 +88,7 @@
       "weight" : 500,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -125,7 +125,7 @@
       "fixed" : false
     } ],
     "accessoryMods" : [ ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -169,7 +169,7 @@
       "fixed" : false
     } ],
     "accessoryMods" : [ ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -227,7 +227,7 @@
       "fixed" : false
     } ],
     "accessoryMods" : [ ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -285,7 +285,7 @@
       "weight" : 500,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -329,7 +329,7 @@
       "weight" : 1000,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -468,7 +468,7 @@
       "weight" : 500,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -502,6 +502,13 @@
       "modifierType" : "FLAT",
       "weight" : 1500,
       "fixed" : false
+    }, {
+      "statType" : "ACCURACY",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
     } ],
     "armorMods" : [ ],
     "accessoryMods" : [ {
@@ -526,7 +533,7 @@
       "weight" : 700,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -876,7 +883,7 @@
       "weight" : 400,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -992,7 +999,7 @@
       "weight" : 800,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -1113,7 +1120,7 @@
       "weight" : 300,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -1178,7 +1185,7 @@
       "weight" : 800,
       "fixed" : false
     } ],
-    "can_duplicate_mod" : false,
+    "can_duplicate_mod" : true,
     "description" : "",
     "fixed_mods_description" : ""
   },
@@ -1899,6 +1906,288 @@
       "negative" : false,
       "modifierType" : "FLAT",
       "weight" : 500,
+      "fixed" : false
+    } ],
+    "can_duplicate_mod" : true,
+    "description" : "",
+    "fixed_mods_description" : ""
+  },
+  "Adaptive" : {
+    "pool_name" : "Adaptive",
+    "weaponMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "HEALAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "armorMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "HEALAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    } ],
+    "accessoryMods" : [ {
+      "statType" : null,
+      "statusType" : "STRENGTH",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "AGILITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "VITALITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "DEXTERITY",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "WISDOM",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "INTELLIGENCE",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : null,
+      "statusType" : "LUCK",
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 500,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "RANGEDATTACK",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "PHYSICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "MAGICALDEFENSE",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 1000,
+      "fixed" : false
+    }, {
+      "statType" : "HEALAMPLIFIER",
+      "statusType" : null,
+      "negative" : false,
+      "modifierType" : "FLAT",
+      "weight" : 100,
       "fixed" : false
     } ],
     "can_duplicate_mod" : true,

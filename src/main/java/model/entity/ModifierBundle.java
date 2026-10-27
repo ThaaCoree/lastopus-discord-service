@@ -86,6 +86,7 @@ public class ModifierBundle {
         for (BasicModifier modifier : statusModifiers.values()) {
             if (modifier == null) continue;
             modifier.setFlat(modifier.getFlat() * multiplier);
+            modifier.setMult(modifier.getMult() * multiplier);
             modifier.setGlobalMult(modifier.getGlobalMult() * multiplier);
             modifier.setPassiveMult(modifier.getPassiveMult() * multiplier);
             modifier.setEquipmentMult(modifier.getEquipmentMult() * multiplier);
@@ -96,6 +97,7 @@ public class ModifierBundle {
         for (BasicModifier modifier : statModifiers.values()) {
             if (modifier == null) continue;
             modifier.setFlat(modifier.getFlat() * multiplier);
+            modifier.setMult(modifier.getMult() * multiplier);
             modifier.setGlobalMult(modifier.getGlobalMult() * multiplier);
             modifier.setPassiveMult(modifier.getPassiveMult() * multiplier);
             modifier.setEquipmentMult(modifier.getEquipmentMult() * multiplier);

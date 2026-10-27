@@ -141,8 +141,6 @@ public class Crafter {
         return modifier;
     }
 
-
-
     public static boolean shatterItem(CraftedEquipment equipment) {
         int base_materials = 0;
         int boost_materials = 0;
@@ -533,6 +531,20 @@ public class Crafter {
                 maxModsFromPools += poolMax;
             } else {
                 maxModsFromPools += Math.min(availableCount, poolMax);
+            }
+
+            if (equipment.getEquipmentType().equals(EquipmentType.WEAPON) && !equipment.getWeaponType().equals(WeaponType.CHAIN) && !equipment.getWeaponType().equals(WeaponType.SHIELD)) {
+                for (CraftedMod mod : poolEntry.getPool().getWeaponMods()) {
+                    if (mod.fixed) maxModsFromPools++;
+                }
+            } else if (equipment.getEquipmentType().equals(EquipmentType.ACCESSORY)) {
+                for (CraftedMod mod : poolEntry.getPool().getAccessoryMods()) {
+                    if (mod.fixed) maxModsFromPools++;
+                }
+            } else {
+                for (CraftedMod mod : poolEntry.getPool().getArmorMods()) {
+                    if (mod.fixed) maxModsFromPools++;
+                }
             }
         }
 
