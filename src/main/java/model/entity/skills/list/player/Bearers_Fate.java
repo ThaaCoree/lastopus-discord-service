@@ -21,9 +21,9 @@ public class Bearers_Fate extends Skill {
 
     public Bearers_Fate() {
         super();
-        setDescription("หากกำลังสวมใส่อาวุธที่มอบ ATK ประเภทเดียว, Convert XA ของ ATK อีกสองค่าให้ตรงกับ ATK ที่อาวุธกำลังมอบให้");
+        setDescription("Convert XA ของ ATK อีกสองค่าให้ตรงกับ ATK ที่มีผลรวมมากที่สุดจากอาวุธทั้งหมดที่สวมใส่ และทำให้อาวุธทุกชนิดที่สวมโจมตีออกเป็นค่า ATK นั้น");
         setActionType("Passive");
-        setManaReservePercent(0.8);
+        setManaReservePercent(0.9);
 
         getSkillMultiplier().put("XA",new SkillMultiplier("1"));
         getSkillMultiplier().get("XA").getTags().add(SkillType.FIGHTING_STYLE);
@@ -52,22 +52,22 @@ public class Bearers_Fate extends Skill {
     public void calculateExtra() {
         double xa = getSkillMultiplier().get("XA").getResult();
 
-        int givingPATK = 0;
-        int givingMATK = 0;
-        int givingRATK = 0;
+        double givingPATK = 0;
+        double givingMATK = 0;
+        double givingRATK = 0;
 
         for (Map.Entry<Integer, EquipmentSlot> entry : getUser().getEquipmentSlots().entrySet()) {
             if (entry.getValue().getEquipment() == null) continue;
             if (entry.getValue().getEquipmentType().equals(EquipmentType.WEAPON)) {
                 Equipment equipment = entry.getValue().getEquipment();
                 if (equipment.getStatModifiers().get(StatType.PHYSICALATTACK) != null) {
-                    givingPATK = 1;
+                    givingPATK += equipment.getStatModifiers().get(StatType.PHYSICALATTACK).getFlat();
                 }
                 if (equipment.getStatModifiers().get(StatType.MAGICALATTACK) != null) {
-                    givingMATK = 1;
+                    givingMATK += equipment.getStatModifiers().get(StatType.MAGICALATTACK).getFlat();
                 }
                 if (equipment.getStatModifiers().get(StatType.RANGEDATTACK) != null) {
-                    givingRATK = 1;
+                    givingRATK += equipment.getStatModifiers().get(StatType.RANGEDATTACK).getFlat();
                 }
             }
         }
@@ -77,19 +77,19 @@ public class Bearers_Fate extends Skill {
         TransferModifier transfer2 = new TransferModifier();
         transfer2.setTransferType(TransferType.CONVERSION);
 
-        if (givingPATK == 1 && givingMATK == 0 && givingRATK == 0) {
+        if (givingPATK > givingMATK && givingPATK > givingRATK) {
             transfer1.setSourceStat(StatType.RANGEDATTACK);
             transfer1.setTargetStat(StatType.PHYSICALATTACK);
             transfer2.setSourceStat(StatType.MAGICALATTACK);
             transfer2.setTargetStat(StatType.PHYSICALATTACK);
         }
-        if (givingPATK == 0 && givingMATK == 1 && givingRATK == 0) {
+        if (givingMATK > givingPATK && givingMATK > givingRATK) {
             transfer1.setSourceStat(StatType.RANGEDATTACK);
             transfer1.setTargetStat(StatType.MAGICALATTACK);
             transfer2.setSourceStat(StatType.PHYSICALATTACK);
             transfer2.setTargetStat(StatType.MAGICALATTACK);
         }
-        if (givingPATK == 0 && givingMATK == 0 && givingRATK == 1) {
+        if (givingRATK > givingMATK && givingRATK > givingPATK) {
             transfer1.setSourceStat(StatType.PHYSICALATTACK);
             transfer1.setTargetStat(StatType.RANGEDATTACK);
             transfer2.setSourceStat(StatType.MAGICALATTACK);

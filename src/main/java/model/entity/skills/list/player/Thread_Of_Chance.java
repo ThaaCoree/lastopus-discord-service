@@ -17,13 +17,13 @@ public class Thread_Of_Chance extends Skill {
 
     public Thread_Of_Chance() {
         super();
-        setDescription("เมื่อใช้งาน สุ่มระหว่าง ฟื้นฟูพลังชีวิต XA หน่วย หรือ ได้รับมานาที่ใช้สกิลไปคืนกลับมา");
-        setActionType("Combine");
+        setDescription("เมื่อใช้งาน สุ่มระหว่าง เลือกสลับตำแหน่งกับยูนิตอื่นในสนามหนึ่งยูนิต หรือ ได้รับมานาที่ใช้สกิลไปคืนกลับมา\n" +
+                "ใช้งานได้ไม่เกิน XA ครั้งต่อรอบเทิร์น");
+        setActionType("Reaction");
         setManaCost(8);
-        setCooldown(2);
-        getSkillMultiplier().put("XA",new SkillMultiplier("1*PATK + 1*MATK + 1*RATK"));
-        getSkillMultiplier().get("XA").getTags().add(SkillType.SPELL);
-        getSkillMultiplier().get("XA").getTags().add(SkillType.RECOVERY);
+        setCooldown(0);
+        getSkillMultiplier().put("XA",new SkillMultiplier("3"));
+        getSkillMultiplier().get("XA").getTags().add(SkillType.LIMIT);
     }
 
     @Override
@@ -49,19 +49,11 @@ public class Thread_Of_Chance extends Skill {
 
     @Override
     public void calculateBehavior(CombatFlow combatFlow, SkillTarget skillTarget) {
-        double xa = getSkillMultiplier().get("XA").getResult();
         WeightedRandom<Boolean> weightedRandom = new WeightedRandom<>();
         weightedRandom.add(true, 1);
         weightedRandom.add(false, 1);
 
         if (weightedRandom.roll()) {
-            sendActionEvent(combatFlow.getEventBus(),
-                    ActionEvent.builder(getName(), getUser(), getUser())
-                            .effect(ActionEffectType.HEALTH_RECOVER, xa, 1)
-                            .addActType(ActType.HEALTH_RECOVER, ActType.CAST)
-                            .build()
-            );
-        } else {
             sendActionEvent(combatFlow.getEventBus(),
                     ActionEvent.builder(getName(), getUser(), getUser())
                             .effect(ActionEffectType.MANA_RECOVER, getManaCost(), 1)

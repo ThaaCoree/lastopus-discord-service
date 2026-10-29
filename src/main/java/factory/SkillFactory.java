@@ -665,6 +665,9 @@ public class SkillFactory {
         skillMap.put(Wrath_Of_Blaze.NAME, Wrath_Of_Blaze::new);
         skillMap.put(Curve_Of_Certainty.NAME, Curve_Of_Certainty::new);
         skillMap.put(Perfect_Recurve.NAME, Perfect_Recurve::new);
+        skillMap.put(Varkha_Tel.NAME, Varkha_Tel::new);
+        skillMap.put(Terra_Shield.NAME, Terra_Shield::new);
+        skillMap.put(Take_My_Shield.NAME, Take_My_Shield::new);
         skillNames = new ArrayList<>(skillMap.keySet());
     }
 

@@ -1523,9 +1523,9 @@
     }, {
       "statType" : "RESERVATION",
       "statusType" : null,
-      "negative" : true,
+      "negative" : false,
       "modifierType" : "FLAT",
-      "weight" : 200,
+      "weight" : 500,
       "fixed" : false
     } ],
     "accessoryMods" : [ {
@@ -1547,7 +1547,7 @@
       "statusType" : null,
       "negative" : false,
       "modifierType" : "FLAT",
-      "weight" : 300,
+      "weight" : 200,
       "fixed" : false
     } ],
     "can_duplicate_mod" : true,

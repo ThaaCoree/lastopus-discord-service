@@ -52,7 +52,9 @@ public enum CounterName {
     THE_SUNS("The Suns"),
     FUEL_AND_COG("Fuel & Cog"),
     MALICE_POINT("Malice Point"),
-    TWISTED("Twisted");
+    TWISTED("Twisted"),
+    VARKHA_TEL("Varkha'Tel"),
+    VARKHA_TEL_STIMULATE("Varkha'Tel Stimulate");
 
     private final String displayName;
 
